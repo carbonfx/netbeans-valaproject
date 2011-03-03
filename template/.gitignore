@@ -1,0 +1,10 @@
+/bin
+/CMakeFiles
+/nbproject
+/makefile
+/Makefile
+/CMakeCache.txt
+/cmake_install.cmake
+/gen
+/Makefile-template.mk
+/.dep.inc

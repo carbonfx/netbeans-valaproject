@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN" "http://www.netbeans.org/dtds/filesystem-1_2.dtd">
+<filesystem>
+    <folder name="Loaders">
+        <folder name="text">
+            <folder name="x-vala">
+                <folder name="Actions">
+                    <file name="org-openide-actions-CopyAction.shadow">
+                        <attr name="originalFile" stringvalue="Actions/Edit/org-openide-actions-CopyAction.instance"/>
+                        <attr name="position" intvalue="400"/>
+                    </file>
+                    <file name="org-openide-actions-CutAction.shadow">
+                        <attr name="originalFile" stringvalue="Actions/Edit/org-openide-actions-CutAction.instance"/>
+                        <attr name="position" intvalue="300"/>
+                    </file>
+                    <file name="org-openide-actions-DeleteAction.shadow">
+                        <attr name="originalFile" stringvalue="Actions/Edit/org-openide-actions-DeleteAction.instance"/>
+                        <attr name="position" intvalue="600"/>
+                    </file>
+                    <file name="org-openide-actions-FileSystemAction.shadow">
+                        <attr name="originalFile" stringvalue="Actions/System/org-openide-actions-FileSystemAction.instance"/>
+                        <attr name="position" intvalue="1100"/>
+                    </file>
+                    <file name="org-openide-actions-OpenAction.shadow">
+                        <attr name="originalFile" stringvalue="Actions/System/org-openide-actions-OpenAction.instance"/>
+                        <attr name="position" intvalue="100"/>
+                    </file>
+                    <file name="org-openide-actions-PropertiesAction.shadow">
+                        <attr name="originalFile" stringvalue="Actions/System/org-openide-actions-PropertiesAction.instance"/>
+                        <attr name="position" intvalue="1400"/>
+                    </file>
+                    <file name="org-openide-actions-RenameAction.shadow">
+                        <attr name="originalFile" stringvalue="Actions/System/org-openide-actions-RenameAction.instance"/>
+                        <attr name="position" intvalue="700"/>
+                    </file>
+                    <file name="org-openide-actions-SaveAsTemplateAction.shadow">
+                        <attr name="originalFile" stringvalue="Actions/System/org-openide-actions-SaveAsTemplateAction.instance"/>
+                        <attr name="position" intvalue="900"/>
+                    </file>
+                    <file name="org-openide-actions-ToolsAction.shadow">
+                        <attr name="originalFile" stringvalue="Actions/System/org-openide-actions-ToolsAction.instance"/>
+                        <attr name="position" intvalue="1300"/>
+                    </file>
+                    <file name="sep-1.instance">
+                        <attr name="instanceClass" stringvalue="javax.swing.JSeparator"/>
+                        <attr name="position" intvalue="200"/>
+                    </file>
+                    <file name="sep-2.instance">
+                        <attr name="instanceClass" stringvalue="javax.swing.JSeparator"/>
+                        <attr name="position" intvalue="500"/>
+                    </file>
+                    <file name="sep-3.instance">
+                        <attr name="instanceClass" stringvalue="javax.swing.JSeparator"/>
+                        <attr name="position" intvalue="800"/>
+                    </file>
+                    <file name="sep-4.instance">
+                        <attr name="instanceClass" stringvalue="javax.swing.JSeparator"/>
+                        <attr name="position" intvalue="1000"/>
+                    </file>
+                    <file name="sep-5.instance">
+                        <attr name="instanceClass" stringvalue="javax.swing.JSeparator"/>
+                        <attr name="position" intvalue="1200"/>
+                    </file>
+                </folder>
+                <folder name="Factories">
+                    <file name="ValaDataLoader.instance">
+						<attr name="SystemFileSystem.icon" urlvalue="nbresloc:/org/carbonfx/valaproject/vala.png"/>
+                        <attr name="dataObjectClass" stringvalue="org.carbonfx.valaproject.ValaDataObject"/>
+                        <attr name="instanceCreate" methodvalue="org.openide.loaders.DataLoaderPool.factory"/>
+                        <attr name="mimeType" stringvalue="text/x-vala"/>
+                    </file>
+                </folder>
+            </folder>
+            <folder name="x-vapi">
+                <folder name="Actions">
+                    <file name="org-openide-actions-CopyAction.shadow">
+                        <attr name="originalFile" stringvalue="Actions/Edit/org-openide-actions-CopyAction.instance"/>
+                        <attr name="position" intvalue="400"/>
+                    </file>
+                    <file name="org-openide-actions-CutAction.shadow">
+                        <attr name="originalFile" stringvalue="Actions/Edit/org-openide-actions-CutAction.instance"/>
+                        <attr name="position" intvalue="300"/>
+                    </file>
+                    <file name="org-openide-actions-DeleteAction.shadow">
+                        <attr name="originalFile" stringvalue="Actions/Edit/org-openide-actions-DeleteAction.instance"/>
+                        <attr name="position" intvalue="600"/>
+                    </file>
+                    <file name="org-openide-actions-FileSystemAction.shadow">
+                        <attr name="originalFile" stringvalue="Actions/System/org-openide-actions-FileSystemAction.instance"/>
+                        <attr name="position" intvalue="1100"/>
+                    </file>
+                    <file name="org-openide-actions-OpenAction.shadow">
+                        <attr name="originalFile" stringvalue="Actions/System/org-openide-actions-OpenAction.instance"/>
+                        <attr name="position" intvalue="100"/>
+                    </file>
+                    <file name="org-openide-actions-PropertiesAction.shadow">
+                        <attr name="originalFile" stringvalue="Actions/System/org-openide-actions-PropertiesAction.instance"/>
+                        <attr name="position" intvalue="1400"/>
+                    </file>
+                    <file name="org-openide-actions-RenameAction.shadow">
+                        <attr name="originalFile" stringvalue="Actions/System/org-openide-actions-RenameAction.instance"/>
+                        <attr name="position" intvalue="700"/>
+                    </file>
+                    <file name="org-openide-actions-SaveAsTemplateAction.shadow">
+                        <attr name="originalFile" stringvalue="Actions/System/org-openide-actions-SaveAsTemplateAction.instance"/>
+                        <attr name="position" intvalue="900"/>
+                    </file>
+                    <file name="org-openide-actions-ToolsAction.shadow">
+                        <attr name="originalFile" stringvalue="Actions/System/org-openide-actions-ToolsAction.instance"/>
+                        <attr name="position" intvalue="1300"/>
+                    </file>
+                    <file name="sep-1.instance">
+                        <attr name="instanceClass" stringvalue="javax.swing.JSeparator"/>
+                        <attr name="position" intvalue="200"/>
+                    </file>
+                    <file name="sep-2.instance">
+                        <attr name="instanceClass" stringvalue="javax.swing.JSeparator"/>
+                        <attr name="position" intvalue="500"/>
+                    </file>
+                    <file name="sep-3.instance">
+                        <attr name="instanceClass" stringvalue="javax.swing.JSeparator"/>
+                        <attr name="position" intvalue="800"/>
+                    </file>
+                    <file name="sep-4.instance">
+                        <attr name="instanceClass" stringvalue="javax.swing.JSeparator"/>
+                        <attr name="position" intvalue="1000"/>
+                    </file>
+                    <file name="sep-5.instance">
+                        <attr name="instanceClass" stringvalue="javax.swing.JSeparator"/>
+                        <attr name="position" intvalue="1200"/>
+                    </file>
+                </folder>
+                <folder name="Factories">
+                    <file name="VapiDataLoader.instance">
+                        <attr name="SystemFileSystem.icon" urlvalue="nbresloc:/org/carbonfx/valaproject/vapi.png"/>
+                        <attr name="dataObjectClass" stringvalue="org.carbonfx.valaproject.VapiDataObject"/>
+                        <attr name="instanceCreate" methodvalue="org.openide.loaders.DataLoaderPool.factory"/>
+                        <attr name="mimeType" stringvalue="text/x-vapi"/>
+                    </file>
+                </folder>
+            </folder>
+        </folder>
+    </folder>
+    <folder name="Services">
+        <folder name="MIMEResolver">
+            <file name="ValaResolver.xml" url="ValaResolver.xml">
+                <attr name="displayName" bundlevalue="org.carbonfx.valaproject.Bundle#Services/MIMEResolver/ValaResolver.xml"/>
+            </file>
+            <file name="VapiResolver.xml" url="VapiResolver.xml">
+                <attr name="displayName" bundlevalue="org.carbonfx.valaproject.Bundle#Services/MIMEResolver/VapiResolver.xml"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="Templates">
+        <folder name="Vala">
+            <file name="file.vala" url="ValaTemplate.vala">
+                <attr name="displayName" bundlevalue="org.carbonfx.valaproject.Bundle#Templates/Vala/ValaTemplate.vala"/>
+                <attr name="template" boolvalue="true"/>
+            </file>
+            <file name="file.vapi" url="VapiTemplate.vapi">
+                <attr name="displayName" bundlevalue="org.carbonfx.valaproject.Bundle#Templates/Vala/VapiTemplate.vapi"/>
+                <attr name="template" boolvalue="true"/>
+            </file>
+        </folder>
+    </folder>
+	<folder name="Editors">
+		<folder name="text">
+			<folder name="x-vala">
+				<file name="org-netbeans-modules-editor-NbEditorKit.instance"/>
+				<file name="language.instance">
+					<attr name="instanceCreate" methodvalue="org.carbonfx.valaproject.lexer.ValaTokenId.getLanguage"/>
+					<attr name="instanceOf" stringvalue="org.netbeans.api.lexer.Language"/>
+				</file>
+				<attr name="SystemFileSystem.localizingBundle" stringvalue="org.carbonfx.valaproject.Bundle"/>
+				<folder name="FontsColors">
+					<folder name="NetBeans">
+						<folder name="Defaults">
+							<file name="FontAndColors.xml" url="FontAndColors.xml">
+								<attr name="SystemFileSystem.localizingBundle" stringvalue="org.carbonfx.valaproject.Bundle"/>
+							</file>
+						</folder>
+					</folder>
+				</folder>
+
+                <folder name="Preferences">
+                    <folder name="Defaults">
+                        <file name="org.carbonfx.valaproject-editor-preferences.xml" url="editor-preferences.xml"/>
+                    </folder>
+                </folder>
+
+				<file name="org-carbonfx-valaproject-parser-ValaParserFactory.instance"/>
+				<file name="org-carbonfx-valaproject-parser-SyntaxErrorsHighlightingTaskFactory.instance"/>
+	            <file name="org-carbonfx-valaproject-editor-ValaIndentTaskFactory.instance"/>
+			</folder>
+			<folder name="x-vapi">
+				<file name="org-netbeans-modules-editor-NbEditorKit.instance"/>
+				<file name="language.instance">
+					<attr name="instanceCreate" methodvalue="org.carbonfx.valaproject.lexer.ValaTokenId.getLanguage"/>
+					<attr name="instanceOf" stringvalue="org.netbeans.api.lexer.Language"/>
+				</file>
+				<attr name="SystemFileSystem.localizingBundle" stringvalue="org.carbonfx.valaproject.Bundle"/>
+
+                <folder name="Preferences">
+                    <folder name="Defaults">
+                        <file name="org.carbonfx.valaproject-editor-preferences.xml" url="editor-preferences.xml"/>
+                    </folder>
+                </folder>
+
+				<file name="org-carbonfx-valaproject-parser-ValaParserFactory.instance"/>
+				<file name="org-carbonfx-valaproject-parser-SyntaxErrorsHighlightingTaskFactory.instance"/>
+	            <file name="org-carbonfx-valaproject-editor-ValaIndentTaskFactory.instance"/>
+			</folder>
+		</folder>
+	</folder>
+	<folder name="OptionsDialog">
+		<folder name="PreviewExamples">
+			<folder name="text">
+				<file name="x-vala" url="ValaExample.vala"/>
+			</folder>
+		</folder>
+       <folder name="Editor">
+          <folder name="Formatting">
+              <attr name="position" intvalue="0"/>
+              <folder name="text">
+                  <folder name="x-vala">
+                      <file name="TabsAndIndents.instance">
+                            <attr name="instanceOf" stringvalue="org.netbeans.modules.options.editor.spi.PreferencesCustomizer$Factory"/>
+                            <attr name="instanceCreate" methodvalue="org.netbeans.modules.options.editor.spi.CustomizerFactories.createDefaultTabsAndIndentsCustomizerFactory"/>
+							<attr name="position" intvalue="100"/>
+                      </file>
+                  </folder>
+                  <!--folder name="x-vapi">
+                      <file name="TabsAndIndents.instance">
+                            <attr name="instanceOf" stringvalue="org.netbeans.modules.options.editor.spi.PreferencesCustomizer$Factory"/>
+                            <attr name="instanceCreate" methodvalue="org.netbeans.modules.options.editor.spi.CustomizerFactories.createDefaultTabsAndIndentsCustomizerFactory"/>
+							<attr name="position" intvalue="100"/>
+                      </file>
+                  </folder-->
+			  </folder>
+          </folder>
+      </folder>
+    </folder>
+</filesystem>

@@ -1,4 +1,4 @@
-// $ANTLR 3.3 Nov 30, 2010 12:45:30 c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g 2011-02-26 20:10:42
+// $ANTLR 3.3 Nov 30, 2010 12:45:30 c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g 2011-03-04 03:00:41
  package org.carbonfx.valaproject.antlr; 
 
 import org.antlr.runtime.*;
@@ -139,12 +139,13 @@ public class ValaLexer extends Lexer {
     public static final int LINE_COMMENT=132;
     public static final int HEXDIGIT=133;
     public static final int ESCAPE=134;
-    public static final int RANGE=135;
-    public static final int DIGITS=136;
-    public static final int EXPONENT=137;
-    public static final int LINE_COMMAND=138;
-    public static final int UNICODE=139;
-    public static final int OCTAL=140;
+    public static final int BACKSLASH=135;
+    public static final int RANGE=136;
+    public static final int DIGITS=137;
+    public static final int EXPONENT=138;
+    public static final int LINE_COMMAND=139;
+    public static final int UNICODE=140;
+    public static final int OCTAL=141;
 
     // delegates
     // delegators
@@ -157,15 +158,15 @@ public class ValaLexer extends Lexer {
         super(input,state);
 
     }
-    public String getGrammarFileName() { return "c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g"; }
+    public String getGrammarFileName() { return "c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g"; }
 
     // $ANTLR start "WHITESPACE"
     public final void mWHITESPACE() throws RecognitionException {
         try {
             int _type = WHITESPACE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1184:12: ( ( ' ' | '\\t' | '\\r' | '\\n' | '\\u000C' ) )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1185:2: ( ' ' | '\\t' | '\\r' | '\\n' | '\\u000C' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1191:12: ( ( ' ' | '\\t' | '\\r' | '\\n' | '\\u000C' ) )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1192:2: ( ' ' | '\\t' | '\\r' | '\\n' | '\\u000C' )
             {
             if ( (input.LA(1)>='\t' && input.LA(1)<='\n')||(input.LA(1)>='\f' && input.LA(1)<='\r')||input.LA(1)==' ' ) {
                 input.consume();
@@ -193,8 +194,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = COMMENT_JAVADOC;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1193:16: ()
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1193:18: 
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1200:16: ()
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1200:18: 
             {
             }
 
@@ -211,12 +212,12 @@ public class ValaLexer extends Lexer {
         try {
             int _type = COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1196:5: ( '/*' ({...}? => ( '*' ) | ) ( options {greedy=false; } : . )* '*/' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1196:9: '/*' ({...}? => ( '*' ) | ) ( options {greedy=false; } : . )* '*/'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1203:5: ( '/*' ({...}? => ( '*' ) | ) ( options {greedy=false; } : . )* '*/' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1203:9: '/*' ({...}? => ( '*' ) | ) ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1197:6: ({...}? => ( '*' ) | )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1204:6: ({...}? => ( '*' ) | )
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -247,13 +248,13 @@ public class ValaLexer extends Lexer {
             }
             switch (alt1) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1198:7: {...}? => ( '*' )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1205:7: {...}? => ( '*' )
                     {
                     if ( !((input.LA(1) == '*')) ) {
                         throw new FailedPredicateException(input, "COMMENT", "input.LA(1) == '*'");
                     }
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1199:7: ( '*' )
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1199:8: '*'
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1206:7: ( '*' )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1206:8: '*'
                     {
                     match('*'); 
                      _type = COMMENT_JAVADOC; 
@@ -264,7 +265,7 @@ public class ValaLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1200:9: 
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1207:9: 
                     {
                      _type = COMMENT; 
 
@@ -273,7 +274,7 @@ public class ValaLexer extends Lexer {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1202:2: ( options {greedy=false; } : . )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1209:2: ( options {greedy=false; } : . )*
             loop2:
             do {
                 int alt2=2;
@@ -298,7 +299,7 @@ public class ValaLexer extends Lexer {
 
                 switch (alt2) {
             	case 1 :
-            	    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1202:29: .
+            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1209:29: .
             	    {
             	    matchAny(); 
 
@@ -329,19 +330,19 @@ public class ValaLexer extends Lexer {
         try {
             int _type = LINE_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1208:6: ( ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r\\n' | '\\r' | '\\n' ) | '//' (~ ( '\\n' | '\\r' ) )* ) )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1209:6: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r\\n' | '\\r' | '\\n' ) | '//' (~ ( '\\n' | '\\r' ) )* )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1215:6: ( ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r\\n' | '\\r' | '\\n' ) | '//' (~ ( '\\n' | '\\r' ) )* ) )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1216:6: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r\\n' | '\\r' | '\\n' ) | '//' (~ ( '\\n' | '\\r' ) )* )
             {
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1209:6: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r\\n' | '\\r' | '\\n' ) | '//' (~ ( '\\n' | '\\r' ) )* )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1216:6: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r\\n' | '\\r' | '\\n' ) | '//' (~ ( '\\n' | '\\r' ) )* )
             int alt6=2;
             alt6 = dfa6.predict(input);
             switch (alt6) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1210:7: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r\\n' | '\\r' | '\\n' )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1217:7: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r\\n' | '\\r' | '\\n' )
                     {
                     match("//"); 
 
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1211:7: (~ ( '\\n' | '\\r' ) )*
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1218:7: (~ ( '\\n' | '\\r' ) )*
                     loop3:
                     do {
                         int alt3=2;
@@ -354,7 +355,7 @@ public class ValaLexer extends Lexer {
 
                         switch (alt3) {
                     	case 1 :
-                    	    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1211:7: ~ ( '\\n' | '\\r' )
+                    	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1218:7: ~ ( '\\n' | '\\r' )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -374,7 +375,7 @@ public class ValaLexer extends Lexer {
                         }
                     } while (true);
 
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1212:3: ( '\\r\\n' | '\\r' | '\\n' )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1219:3: ( '\\r\\n' | '\\r' | '\\n' )
                     int alt4=3;
                     int LA4_0 = input.LA(1);
 
@@ -398,7 +399,7 @@ public class ValaLexer extends Lexer {
                     }
                     switch (alt4) {
                         case 1 :
-                            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1212:4: '\\r\\n'
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1219:4: '\\r\\n'
                             {
                             match("\r\n"); 
 
@@ -406,14 +407,14 @@ public class ValaLexer extends Lexer {
                             }
                             break;
                         case 2 :
-                            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1212:13: '\\r'
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1219:13: '\\r'
                             {
                             match('\r'); 
 
                             }
                             break;
                         case 3 :
-                            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1212:20: '\\n'
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1219:20: '\\n'
                             {
                             match('\n'); 
 
@@ -426,11 +427,11 @@ public class ValaLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1214:7: '//' (~ ( '\\n' | '\\r' ) )*
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1221:7: '//' (~ ( '\\n' | '\\r' ) )*
                     {
                     match("//"); 
 
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1214:12: (~ ( '\\n' | '\\r' ) )*
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1221:12: (~ ( '\\n' | '\\r' ) )*
                     loop5:
                     do {
                         int alt5=2;
@@ -443,7 +444,7 @@ public class ValaLexer extends Lexer {
 
                         switch (alt5) {
                     	case 1 :
-                    	    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1214:12: ~ ( '\\n' | '\\r' )
+                    	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1221:12: ~ ( '\\n' | '\\r' )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -486,8 +487,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_USING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1220:2: ( 'using' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1220:4: 'using'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1227:2: ( 'using' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1227:4: 'using'
             {
             match("using"); 
 
@@ -507,8 +508,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_CONSTRUCT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1223:2: ( 'construct' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1223:4: 'construct'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1230:2: ( 'construct' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1230:4: 'construct'
             {
             match("construct"); 
 
@@ -528,8 +529,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_SET;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1226:2: ( 'set' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1226:4: 'set'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1233:2: ( 'set' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1233:4: 'set'
             {
             match("set"); 
 
@@ -549,8 +550,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_GET;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1229:2: ( 'get' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1229:4: 'get'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1236:2: ( 'get' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1236:4: 'get'
             {
             match("get"); 
 
@@ -570,8 +571,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_IN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1232:2: ( 'in' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1232:4: 'in'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1239:2: ( 'in' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1239:4: 'in'
             {
             match("in"); 
 
@@ -591,8 +592,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_IS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1235:2: ( 'is' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1235:4: 'is'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1242:2: ( 'is' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1242:4: 'is'
             {
             match("is"); 
 
@@ -612,8 +613,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_AS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1238:2: ( 'as' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1238:4: 'as'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1245:2: ( 'as' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1245:4: 'as'
             {
             match("as"); 
 
@@ -633,8 +634,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_VOID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1241:2: ( 'void' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1241:4: 'void'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1248:2: ( 'void' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1248:4: 'void'
             {
             match("void"); 
 
@@ -654,8 +655,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_DYNAMIC;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1244:2: ( 'dynamic' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1244:4: 'dynamic'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1251:2: ( 'dynamic' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1251:4: 'dynamic'
             {
             match("dynamic"); 
 
@@ -675,8 +676,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_OWNED;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1247:2: ( 'owned' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1247:4: 'owned'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1254:2: ( 'owned' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1254:4: 'owned'
             {
             match("owned"); 
 
@@ -696,8 +697,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_WEAK;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1250:2: ( 'weak' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1250:4: 'weak'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1257:2: ( 'weak' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1257:4: 'weak'
             {
             match("weak"); 
 
@@ -717,8 +718,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_UNOWNED;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1253:2: ( 'unowned' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1253:4: 'unowned'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1260:2: ( 'unowned' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1260:4: 'unowned'
             {
             match("unowned"); 
 
@@ -738,8 +739,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_TRUE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1256:2: ( 'true' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1256:4: 'true'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1263:2: ( 'true' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1263:4: 'true'
             {
             match("true"); 
 
@@ -759,8 +760,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_FALSE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1259:2: ( 'false' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1259:4: 'false'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1266:2: ( 'false' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1266:4: 'false'
             {
             match("false"); 
 
@@ -780,8 +781,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_NULL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1262:2: ( 'null' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1262:4: 'null'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1269:2: ( 'null' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1269:4: 'null'
             {
             match("null"); 
 
@@ -801,8 +802,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_NEW;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1265:2: ( 'new' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1265:4: 'new'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1272:2: ( 'new' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1272:4: 'new'
             {
             match("new"); 
 
@@ -822,8 +823,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_YIELD;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1268:2: ( 'yield' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1268:4: 'yield'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1275:2: ( 'yield' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1275:4: 'yield'
             {
             match("yield"); 
 
@@ -843,8 +844,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_SIZEOF;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1271:2: ( 'sizeof' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1271:4: 'sizeof'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1278:2: ( 'sizeof' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1278:4: 'sizeof'
             {
             match("sizeof"); 
 
@@ -864,8 +865,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_TYPEOF;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1274:2: ( 'typeof' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1274:4: 'typeof'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1281:2: ( 'typeof' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1281:4: 'typeof'
             {
             match("typeof"); 
 
@@ -885,8 +886,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_ASYNC;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1277:2: ( 'async' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1277:4: 'async'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1284:2: ( 'async' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1284:4: 'async'
             {
             match("async"); 
 
@@ -906,8 +907,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_CLASS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1280:2: ( 'class' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1280:4: 'class'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1287:2: ( 'class' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1287:4: 'class'
             {
             match("class"); 
 
@@ -927,8 +928,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_STRUCT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1283:2: ( 'struct' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1283:4: 'struct'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1290:2: ( 'struct' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1290:4: 'struct'
             {
             match("struct"); 
 
@@ -948,8 +949,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_EXTERN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1286:2: ( 'extern' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1286:4: 'extern'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1293:2: ( 'extern' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1293:4: 'extern'
             {
             match("extern"); 
 
@@ -969,8 +970,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_INLINE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1289:2: ( 'inline' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1289:4: 'inline'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1296:2: ( 'inline' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1296:4: 'inline'
             {
             match("inline"); 
 
@@ -990,8 +991,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_STATIC;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1292:2: ( 'static' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1292:4: 'static'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1299:2: ( 'static' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1299:4: 'static'
             {
             match("static"); 
 
@@ -1011,8 +1012,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_ABSTRACT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1295:2: ( 'abstract' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1295:4: 'abstract'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1302:2: ( 'abstract' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1302:4: 'abstract'
             {
             match("abstract"); 
 
@@ -1032,8 +1033,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_VIRTUAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1298:2: ( 'virtual' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1298:4: 'virtual'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1305:2: ( 'virtual' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1305:4: 'virtual'
             {
             match("virtual"); 
 
@@ -1053,8 +1054,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_OVERRIDE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1301:2: ( 'override' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1301:4: 'override'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1308:2: ( 'override' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1308:4: 'override'
             {
             match("override"); 
 
@@ -1074,8 +1075,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_PRIVATE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1304:2: ( 'private' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1304:4: 'private'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1311:2: ( 'private' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1311:4: 'private'
             {
             match("private"); 
 
@@ -1095,8 +1096,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_PROTECTED;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1307:2: ( 'protected' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1307:4: 'protected'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1314:2: ( 'protected' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1314:4: 'protected'
             {
             match("protected"); 
 
@@ -1116,8 +1117,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_PUBLIC;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1310:2: ( 'public' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1310:4: 'public'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1317:2: ( 'public' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1317:4: 'public'
             {
             match("public"); 
 
@@ -1137,8 +1138,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_INTERNAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1313:2: ( 'internal' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1313:4: 'internal'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1320:2: ( 'internal' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1320:4: 'internal'
             {
             match("internal"); 
 
@@ -1158,8 +1159,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_ENUM;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1316:2: ( 'enum' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1316:4: 'enum'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1323:2: ( 'enum' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1323:4: 'enum'
             {
             match("enum"); 
 
@@ -1179,8 +1180,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_ERRORDOMAIN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1319:2: ( 'errordomain' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1319:4: 'errordomain'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1326:2: ( 'errordomain' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1326:4: 'errordomain'
             {
             match("errordomain"); 
 
@@ -1200,8 +1201,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_INTERFACE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1322:2: ( 'interface' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1322:4: 'interface'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1329:2: ( 'interface' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1329:4: 'interface'
             {
             match("interface"); 
 
@@ -1221,8 +1222,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_NAMESPACE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1325:2: ( 'namespace' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1325:4: 'namespace'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1332:2: ( 'namespace' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1332:4: 'namespace'
             {
             match("namespace"); 
 
@@ -1242,8 +1243,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_OUT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1328:2: ( 'out' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1328:4: 'out'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1335:2: ( 'out' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1335:4: 'out'
             {
             match("out"); 
 
@@ -1263,8 +1264,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_REF;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1331:2: ( 'ref' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1331:4: 'ref'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1338:2: ( 'ref' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1338:4: 'ref'
             {
             match("ref"); 
 
@@ -1284,8 +1285,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_PARAMS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1334:2: ( 'params' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1334:4: 'params'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1341:2: ( 'params' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1341:4: 'params'
             {
             match("params"); 
 
@@ -1305,8 +1306,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_TRY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1337:2: ( 'try' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1337:4: 'try'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1344:2: ( 'try' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1344:4: 'try'
             {
             match("try"); 
 
@@ -1326,8 +1327,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_CATCH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1340:2: ( 'catch' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1340:4: 'catch'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1347:2: ( 'catch' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1347:4: 'catch'
             {
             match("catch"); 
 
@@ -1347,8 +1348,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_FINALLY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1343:2: ( 'finally' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1343:4: 'finally'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1350:2: ( 'finally' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1350:4: 'finally'
             {
             match("finally"); 
 
@@ -1368,8 +1369,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_LOCK;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1346:2: ( 'lock' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1346:4: 'lock'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1353:2: ( 'lock' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1353:4: 'lock'
             {
             match("lock"); 
 
@@ -1389,8 +1390,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_DELETE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1349:2: ( 'delete' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1349:4: 'delete'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1356:2: ( 'delete' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1356:4: 'delete'
             {
             match("delete"); 
 
@@ -1410,8 +1411,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_FOREACH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1352:2: ( 'foreach' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1352:4: 'foreach'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1359:2: ( 'foreach' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1359:4: 'foreach'
             {
             match("foreach"); 
 
@@ -1431,8 +1432,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_CONTINUE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1355:2: ( 'continue' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1355:4: 'continue'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1362:2: ( 'continue' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1362:4: 'continue'
             {
             match("continue"); 
 
@@ -1452,8 +1453,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_RETURN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1358:2: ( 'return' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1358:4: 'return'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1365:2: ( 'return' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1365:4: 'return'
             {
             match("return"); 
 
@@ -1473,8 +1474,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_BREAK;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1361:2: ( 'break' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1361:4: 'break'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1368:2: ( 'break' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1368:4: 'break'
             {
             match("break"); 
 
@@ -1494,8 +1495,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_VAR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1364:2: ( 'var' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1364:4: 'var'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1371:2: ( 'var' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1371:4: 'var'
             {
             match("var"); 
 
@@ -1515,8 +1516,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_THROW;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1367:2: ( 'throw' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1367:4: 'throw'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1374:2: ( 'throw' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1374:4: 'throw'
             {
             match("throw"); 
 
@@ -1536,8 +1537,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_THIS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1370:2: ( 'this' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1370:4: 'this'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1377:2: ( 'this' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1377:4: 'this'
             {
             match("this"); 
 
@@ -1557,8 +1558,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_BASE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1373:2: ( 'base' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1373:4: 'base'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1380:2: ( 'base' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1380:4: 'base'
             {
             match("base"); 
 
@@ -1578,8 +1579,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_THROWS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1376:2: ( 'throws' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1376:4: 'throws'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1383:2: ( 'throws' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1383:4: 'throws'
             {
             match("throws"); 
 
@@ -1599,8 +1600,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_REQUIRES;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1379:2: ( 'requires' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1379:4: 'requires'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1386:2: ( 'requires' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1386:4: 'requires'
             {
             match("requires"); 
 
@@ -1620,8 +1621,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_ENSURES;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1382:2: ( 'ensures' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1382:4: 'ensures'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1389:2: ( 'ensures' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1389:4: 'ensures'
             {
             match("ensures"); 
 
@@ -1641,8 +1642,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_DELEGATE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1385:2: ( 'delegate' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1385:4: 'delegate'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1392:2: ( 'delegate' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1392:4: 'delegate'
             {
             match("delegate"); 
 
@@ -1662,8 +1663,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_SIGNAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1388:2: ( 'signal' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1388:4: 'signal'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1395:2: ( 'signal' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1395:4: 'signal'
             {
             match("signal"); 
 
@@ -1683,8 +1684,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_CONST;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1391:2: ( 'const' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1391:4: 'const'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1398:2: ( 'const' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1398:4: 'const'
             {
             match("const"); 
 
@@ -1704,8 +1705,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_DEFAULT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1394:2: ( 'default' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1394:4: 'default'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1401:2: ( 'default' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1401:4: 'default'
             {
             match("default"); 
 
@@ -1725,8 +1726,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_IF;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1397:2: ( 'if' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1397:4: 'if'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1404:2: ( 'if' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1404:4: 'if'
             {
             match("if"); 
 
@@ -1746,8 +1747,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_ELSE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1400:2: ( 'else' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1400:4: 'else'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1407:2: ( 'else' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1407:4: 'else'
             {
             match("else"); 
 
@@ -1767,8 +1768,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_SWITCH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1403:2: ( 'switch' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1403:4: 'switch'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1410:2: ( 'switch' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1410:4: 'switch'
             {
             match("switch"); 
 
@@ -1788,8 +1789,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_CASE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1406:2: ( 'case' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1406:4: 'case'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1413:2: ( 'case' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1413:4: 'case'
             {
             match("case"); 
 
@@ -1809,8 +1810,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_WHILE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1409:2: ( 'while' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1409:4: 'while'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1416:2: ( 'while' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1416:4: 'while'
             {
             match("while"); 
 
@@ -1830,8 +1831,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_DO;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1412:2: ( 'do' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1412:4: 'do'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1419:2: ( 'do' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1419:4: 'do'
             {
             match("do"); 
 
@@ -1851,8 +1852,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = KW_FOR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1415:2: ( 'for' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1415:4: 'for'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1422:2: ( 'for' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1422:4: 'for'
             {
             match("for"); 
 
@@ -1872,12 +1873,12 @@ public class ValaLexer extends Lexer {
         try {
             int _type = HEX;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1418:2: ( '0x' ( HEXDIGIT )+ )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1419:2: '0x' ( HEXDIGIT )+
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1425:2: ( '0x' ( HEXDIGIT )+ )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1426:2: '0x' ( HEXDIGIT )+
             {
             match("0x"); 
 
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1420:2: ( HEXDIGIT )+
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1427:2: ( HEXDIGIT )+
             int cnt7=0;
             loop7:
             do {
@@ -1891,7 +1892,7 @@ public class ValaLexer extends Lexer {
 
                 switch (alt7) {
             	case 1 :
-            	    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1420:3: HEXDIGIT
+            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1427:3: HEXDIGIT
             	    {
             	    mHEXDIGIT(); 
 
@@ -1923,7 +1924,7 @@ public class ValaLexer extends Lexer {
         try {
             int _type = IDENTIFIER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1424:2: ( ( '@' ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )+ ) | ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* | ( '0' .. '9' )+ ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) )+ ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1431:2: ( ( '@' ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )+ ) | ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* | ( '0' .. '9' )+ ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) )+ ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* )
             int alt13=3;
             switch ( input.LA(1) ) {
             case '@':
@@ -2011,13 +2012,13 @@ public class ValaLexer extends Lexer {
 
             switch (alt13) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1425:2: ( '@' ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )+ )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1432:2: ( '@' ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )+ )
                     {
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1425:2: ( '@' ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )+ )
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1425:4: '@' ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )+
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1432:2: ( '@' ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )+ )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1432:4: '@' ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )+
                     {
                     match('@'); 
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1425:8: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )+
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1432:8: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )+
                     int cnt8=0;
                     loop8:
                     do {
@@ -2031,7 +2032,7 @@ public class ValaLexer extends Lexer {
 
                         switch (alt8) {
                     	case 1 :
-                    	    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:
+                    	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:
                     	    {
                     	    if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z') ) {
                     	        input.consume();
@@ -2062,7 +2063,7 @@ public class ValaLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1429:2: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1436:2: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
                     {
                     if ( (input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z') ) {
                         input.consume();
@@ -2073,7 +2074,7 @@ public class ValaLexer extends Lexer {
                         recover(mse);
                         throw mse;}
 
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1430:2: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1437:2: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
                     loop9:
                     do {
                         int alt9=2;
@@ -2086,7 +2087,7 @@ public class ValaLexer extends Lexer {
 
                         switch (alt9) {
                     	case 1 :
-                    	    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:
+                    	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:
                     	    {
                     	    if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z') ) {
                     	        input.consume();
@@ -2110,9 +2111,9 @@ public class ValaLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1434:2: ( '0' .. '9' )+ ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) )+ ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1441:2: ( '0' .. '9' )+ ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) )+ ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
                     {
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1434:2: ( '0' .. '9' )+
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1441:2: ( '0' .. '9' )+
                     int cnt10=0;
                     loop10:
                     do {
@@ -2126,7 +2127,7 @@ public class ValaLexer extends Lexer {
 
                         switch (alt10) {
                     	case 1 :
-                    	    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1434:3: '0' .. '9'
+                    	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1441:3: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -2142,7 +2143,7 @@ public class ValaLexer extends Lexer {
                         cnt10++;
                     } while (true);
 
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1435:2: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) )+
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1442:2: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) )+
                     int cnt11=0;
                     loop11:
                     do {
@@ -2156,7 +2157,7 @@ public class ValaLexer extends Lexer {
 
                         switch (alt11) {
                     	case 1 :
-                    	    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1435:3: ( 'a' .. 'z' | 'A' .. 'Z' | '_' )
+                    	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1442:3: ( 'a' .. 'z' | 'A' .. 'Z' | '_' )
                     	    {
                     	    if ( (input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z') ) {
                     	        input.consume();
@@ -2180,7 +2181,7 @@ public class ValaLexer extends Lexer {
                         cnt11++;
                     } while (true);
 
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1436:2: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1443:2: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
                     loop12:
                     do {
                         int alt12=2;
@@ -2193,7 +2194,7 @@ public class ValaLexer extends Lexer {
 
                         switch (alt12) {
                     	case 1 :
-                    	    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:
+                    	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:
                     	    {
                     	    if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z') ) {
                     	        input.consume();
@@ -2231,12 +2232,12 @@ public class ValaLexer extends Lexer {
         try {
             int _type = VERBATIM_LITERAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1440:2: ( '\"\"\"' ( options {greedy=false; } : . )* '\"\"\"' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1441:2: '\"\"\"' ( options {greedy=false; } : . )* '\"\"\"'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1447:2: ( '\"\"\"' ( options {greedy=false; } : . )* '\"\"\"' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1448:2: '\"\"\"' ( options {greedy=false; } : . )* '\"\"\"'
             {
             match("\"\"\""); 
 
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1442:2: ( options {greedy=false; } : . )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1449:2: ( options {greedy=false; } : . )*
             loop14:
             do {
                 int alt14=2;
@@ -2270,7 +2271,7 @@ public class ValaLexer extends Lexer {
 
                 switch (alt14) {
             	case 1 :
-            	    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1442:29: .
+            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1449:29: .
             	    {
             	    matchAny(); 
 
@@ -2300,11 +2301,11 @@ public class ValaLexer extends Lexer {
         try {
             int _type = STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1447:2: ( '\"' ( ESCAPE | ~ ( '\\\\' | '\"' ) )* '\"' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1448:2: '\"' ( ESCAPE | ~ ( '\\\\' | '\"' ) )* '\"'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1454:2: ( '\"' ( ESCAPE | ~ ( BACKSLASH | QUOT ) )* '\"' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1455:2: '\"' ( ESCAPE | ~ ( BACKSLASH | QUOT ) )* '\"'
             {
             match('\"'); 
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1449:2: ( ESCAPE | ~ ( '\\\\' | '\"' ) )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1456:2: ( ESCAPE | ~ ( BACKSLASH | QUOT ) )*
             loop15:
             do {
                 int alt15=3;
@@ -2320,14 +2321,14 @@ public class ValaLexer extends Lexer {
 
                 switch (alt15) {
             	case 1 :
-            	    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1450:3: ESCAPE
+            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1457:3: ESCAPE
             	    {
             	    mESCAPE(); 
 
             	    }
             	    break;
             	case 2 :
-            	    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1451:5: ~ ( '\\\\' | '\"' )
+            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1458:5: ~ ( BACKSLASH | QUOT )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -2364,8 +2365,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = SHIFT_LEFT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1457:2: ( '<<' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1458:2: '<<'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1464:2: ( '<<' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1465:2: '<<'
             {
             match("<<"); 
 
@@ -2385,8 +2386,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = COMMA;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1461:2: ( ',' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1461:4: ','
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1468:2: ( ',' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1468:4: ','
             {
             match(','); 
 
@@ -2405,8 +2406,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = SEMICOLON;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1464:2: ( ';' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1464:4: ';'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1471:2: ( ';' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1471:4: ';'
             {
             match(';'); 
 
@@ -2425,8 +2426,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = LBRACKET;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1467:2: ( '[' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1467:4: '['
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1474:2: ( '[' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1474:4: '['
             {
             match('['); 
 
@@ -2445,8 +2446,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = RBRACKET;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1470:2: ( ']' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1470:4: ']'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1477:2: ( ']' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1477:4: ']'
             {
             match(']'); 
 
@@ -2465,8 +2466,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = LPAREN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1473:2: ( '(' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1473:4: '('
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1480:2: ( '(' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1480:4: '('
             {
             match('('); 
 
@@ -2485,8 +2486,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = RPAREN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1476:2: ( ')' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1476:4: ')'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1483:2: ( ')' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1483:4: ')'
             {
             match(')'); 
 
@@ -2505,8 +2506,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = INCR_ASSIGN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1479:2: ( '+=' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1479:4: '+='
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1486:2: ( '+=' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1486:4: '+='
             {
             match("+="); 
 
@@ -2526,8 +2527,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = DECR_ASSIGN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1482:2: ( '-=' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1482:4: '-='
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1489:2: ( '-=' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1489:4: '-='
             {
             match("-="); 
 
@@ -2547,8 +2548,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = OR_ASSIGN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1485:2: ( '|=' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1485:4: '|='
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1492:2: ( '|=' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1492:4: '|='
             {
             match("|="); 
 
@@ -2568,8 +2569,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = AND_ASSIGN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1488:2: ( '&=' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1488:4: '&='
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1495:2: ( '&=' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1495:4: '&='
             {
             match("&="); 
 
@@ -2589,8 +2590,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = XOR_ASSIGN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1491:2: ( '^=' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1491:4: '^='
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1498:2: ( '^=' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1498:4: '^='
             {
             match("^="); 
 
@@ -2610,8 +2611,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = DIV_ASSIGN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1494:2: ( '/=' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1494:4: '/='
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1501:2: ( '/=' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1501:4: '/='
             {
             match("/="); 
 
@@ -2631,8 +2632,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = MUL_ASSIGN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1497:2: ( '*=' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1497:4: '*='
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1504:2: ( '*=' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1504:4: '*='
             {
             match("*="); 
 
@@ -2652,8 +2653,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = MOD_ASSIGN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1500:2: ( '%=' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1500:4: '%='
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1507:2: ( '%=' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1507:4: '%='
             {
             match("%="); 
 
@@ -2673,8 +2674,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = SHL_ASSIGN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1503:2: ( '<<=' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1503:4: '<<='
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1510:2: ( '<<=' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1510:4: '<<='
             {
             match("<<="); 
 
@@ -2692,8 +2693,8 @@ public class ValaLexer extends Lexer {
     // $ANTLR start "SHR_ASSIGN"
     public final void mSHR_ASSIGN() throws RecognitionException {
         try {
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1507:2: ()
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1507:4: 
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1514:2: ()
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1514:4: 
             {
             }
 
@@ -2706,8 +2707,8 @@ public class ValaLexer extends Lexer {
     // $ANTLR start "GTEQ"
     public final void mGTEQ() throws RecognitionException {
         try {
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1511:2: ()
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1511:4: 
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1518:2: ()
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1518:4: 
             {
             }
 
@@ -2722,11 +2723,11 @@ public class ValaLexer extends Lexer {
         try {
             int _type = GT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1514:2: ( '>' ( ({...}? => ( '>=' ) ) | ({...}? => ( '=' ) ) | () ) )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1515:2: '>' ( ({...}? => ( '>=' ) ) | ({...}? => ( '=' ) ) | () )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1521:2: ( '>' ( ({...}? => ( '>=' ) ) | ({...}? => ( '=' ) ) | () ) )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1522:2: '>' ( ({...}? => ( '>=' ) ) | ({...}? => ( '=' ) ) | () )
             {
             match('>'); 
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1516:2: ( ({...}? => ( '>=' ) ) | ({...}? => ( '=' ) ) | () )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1523:2: ( ({...}? => ( '>=' ) ) | ({...}? => ( '=' ) ) | () )
             int alt16=3;
             int LA16_0 = input.LA(1);
 
@@ -2740,16 +2741,16 @@ public class ValaLexer extends Lexer {
                 alt16=3;}
             switch (alt16) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1517:3: ({...}? => ( '>=' ) )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1524:3: ({...}? => ( '>=' ) )
                     {
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1517:3: ({...}? => ( '>=' ) )
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1518:4: {...}? => ( '>=' )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1524:3: ({...}? => ( '>=' ) )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1525:4: {...}? => ( '>=' )
                     {
                     if ( !(( input.LA(1) == '>' && input.LA(2) == '=' )) ) {
                         throw new FailedPredicateException(input, "GT", " input.LA(1) == '>' && input.LA(2) == '=' ");
                     }
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1519:4: ( '>=' )
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1519:5: '>='
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1526:4: ( '>=' )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1526:5: '>='
                     {
                     match(">="); 
 
@@ -2764,16 +2765,16 @@ public class ValaLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1522:3: ({...}? => ( '=' ) )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1529:3: ({...}? => ( '=' ) )
                     {
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1522:3: ({...}? => ( '=' ) )
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1523:4: {...}? => ( '=' )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1529:3: ({...}? => ( '=' ) )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1530:4: {...}? => ( '=' )
                     {
                     if ( !(( input.LA(1) == '=' )) ) {
                         throw new FailedPredicateException(input, "GT", " input.LA(1) == '=' ");
                     }
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1524:4: ( '=' )
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1524:5: '='
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1531:4: ( '=' )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1531:5: '='
                     {
                     match('='); 
                      _type = GTEQ; /*System.out.println("GTEQ!");*/ 
@@ -2787,10 +2788,10 @@ public class ValaLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1527:3: ()
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1534:3: ()
                     {
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1527:3: ()
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1527:4: 
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1534:3: ()
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1534:4: 
                     {
                     _type = GT; /*System.out.println("GT!");*/ 
 
@@ -2818,8 +2819,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = QUESTION;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1531:2: ( '?' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1531:4: '?'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1538:2: ( '?' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1538:4: '?'
             {
             match('?'); 
 
@@ -2838,8 +2839,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = COALESCE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1534:2: ( '??' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1534:4: '??'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1541:2: ( '??' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1541:4: '??'
             {
             match("??"); 
 
@@ -2859,8 +2860,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = COLON;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1537:2: ( ':' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1537:4: ':'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1544:2: ( ':' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1544:4: ':'
             {
             match(':'); 
 
@@ -2879,8 +2880,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = BOOL_OR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1540:2: ( '||' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1540:4: '||'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1547:2: ( '||' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1547:4: '||'
             {
             match("||"); 
 
@@ -2900,8 +2901,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = BOOL_AND;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1543:2: ( '&&' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1543:4: '&&'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1550:2: ( '&&' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1550:4: '&&'
             {
             match("&&"); 
 
@@ -2921,8 +2922,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = OR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1546:2: ( '|' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1546:4: '|'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1553:2: ( '|' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1553:4: '|'
             {
             match('|'); 
 
@@ -2941,8 +2942,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = AND;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1549:2: ( '&' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1549:4: '&'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1556:2: ( '&' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1556:4: '&'
             {
             match('&'); 
 
@@ -2961,8 +2962,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = XOR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1552:2: ( '^' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1552:4: '^'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1559:2: ( '^' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1559:4: '^'
             {
             match('^'); 
 
@@ -2981,8 +2982,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = EQUAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1555:2: ( '==' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1555:4: '=='
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1562:2: ( '==' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1562:4: '=='
             {
             match("=="); 
 
@@ -3002,8 +3003,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = NOT_EQUAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1558:2: ( '!=' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1558:4: '!='
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1565:2: ( '!=' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1565:4: '!='
             {
             match("!="); 
 
@@ -3023,8 +3024,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = LTEQ;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1561:2: ( '<=' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1561:4: '<='
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1568:2: ( '<=' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1568:4: '<='
             {
             match("<="); 
 
@@ -3044,8 +3045,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = MULTIPLY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1564:2: ( '*' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1564:4: '*'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1571:2: ( '*' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1571:4: '*'
             {
             match('*'); 
 
@@ -3064,8 +3065,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = PLUS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1567:2: ( '+' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1567:4: '+'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1574:2: ( '+' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1574:4: '+'
             {
             match('+'); 
 
@@ -3084,8 +3085,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = MINUS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1570:2: ( '-' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1570:4: '-'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1577:2: ( '-' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1577:4: '-'
             {
             match('-'); 
 
@@ -3104,8 +3105,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = DIV;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1573:2: ( '/' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1573:4: '/'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1580:2: ( '/' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1580:4: '/'
             {
             match('/'); 
 
@@ -3124,8 +3125,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = MOD;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1576:2: ( '%' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1576:4: '%'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1583:2: ( '%' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1583:4: '%'
             {
             match('%'); 
 
@@ -3144,8 +3145,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = NOT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1579:2: ( '!' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1579:4: '!'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1586:2: ( '!' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1586:4: '!'
             {
             match('!'); 
 
@@ -3164,8 +3165,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = BITWISE_NOT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1582:2: ( '~' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1582:4: '~'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1589:2: ( '~' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1589:4: '~'
             {
             match('~'); 
 
@@ -3184,8 +3185,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = INCREMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1585:2: ( '++' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1585:4: '++'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1592:2: ( '++' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1592:4: '++'
             {
             match("++"); 
 
@@ -3205,8 +3206,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = DECREMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1588:2: ( '--' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1588:4: '--'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1595:2: ( '--' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1595:4: '--'
             {
             match("--"); 
 
@@ -3226,8 +3227,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = POINTER_ACCESS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1591:2: ( '->' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1591:4: '->'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1598:2: ( '->' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1598:4: '->'
             {
             match("->"); 
 
@@ -3247,8 +3248,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = LCURL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1594:2: ( '{' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1594:4: '{'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1601:2: ( '{' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1601:4: '{'
             {
             match('{'); 
 
@@ -3267,8 +3268,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = RCURL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1597:2: ( '}' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1597:4: '}'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1604:2: ( '}' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1604:4: '}'
             {
             match('}'); 
 
@@ -3287,8 +3288,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = TEMPLATE_START;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1600:2: ( '@\"' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1600:4: '@\"'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1607:2: ( '@\"' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1607:4: '@\"'
             {
             match("@\""); 
 
@@ -3308,8 +3309,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = QUOT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1603:2: ( '\"' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1603:4: '\"'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1610:2: ( '\"' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1610:4: '\"'
             {
             match('\"'); 
 
@@ -3328,8 +3329,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = LAMBDA;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1606:2: ( '=>' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1606:4: '=>'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1613:2: ( '=>' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1613:4: '=>'
             {
             match("=>"); 
 
@@ -3349,8 +3350,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = ELIPSIS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1609:2: ( '...' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1609:4: '...'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1616:2: ( '...' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1616:4: '...'
             {
             match("..."); 
 
@@ -3370,8 +3371,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = LT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1611:4: ( '<' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1612:2: '<'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1618:4: ( '<' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1619:2: '<'
             {
             match('<'); 
 
@@ -3390,8 +3391,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = ASSIGNMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1615:2: ( '=' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1616:2: '='
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1622:2: ( '=' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1623:2: '='
             {
             match('='); 
 
@@ -3408,8 +3409,8 @@ public class ValaLexer extends Lexer {
     // $ANTLR start "INTEGER"
     public final void mINTEGER() throws RecognitionException {
         try {
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1618:18: ()
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1618:20: 
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1625:18: ()
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1625:20: 
             {
             }
 
@@ -3422,8 +3423,8 @@ public class ValaLexer extends Lexer {
     // $ANTLR start "RANGE"
     public final void mRANGE() throws RecognitionException {
         try {
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1619:16: ()
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1619:18: 
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1626:16: ()
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1626:18: 
             {
             }
 
@@ -3436,8 +3437,8 @@ public class ValaLexer extends Lexer {
     // $ANTLR start "DOT"
     public final void mDOT() throws RecognitionException {
         try {
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1620:14: ( '.' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1620:16: '.'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1627:14: ( '.' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1627:16: '.'
             {
             match('.'); 
 
@@ -3454,14 +3455,14 @@ public class ValaLexer extends Lexer {
         try {
             int _type = REAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1623:2: ( ( DIGITS )+ ({...}? => DOT ( DIGITS )? ( EXPONENT )? ( 'd' | 'D' | 'f' | 'F' )? () | ( EXPONENT | ) ) | DIGITS ( 'd' | 'D' | 'f' | 'F' ) | DOT ({...}? => ( DIGITS ( EXPONENT )? ( 'd' | 'D' | 'f' | 'F' )? ) | DOT | ) )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1630:2: ( ( DIGITS )+ ({...}? => DOT ( DIGITS )? ( EXPONENT )? ( 'd' | 'D' | 'f' | 'F' )? () | ( EXPONENT | ) ) | DIGITS ( 'd' | 'D' | 'f' | 'F' ) | DOT ({...}? => ( DIGITS ( EXPONENT )? ( 'd' | 'D' | 'f' | 'F' )? ) | DOT | ) )
             int alt26=3;
             alt26 = dfa26.predict(input);
             switch (alt26) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1624:2: ( DIGITS )+ ({...}? => DOT ( DIGITS )? ( EXPONENT )? ( 'd' | 'D' | 'f' | 'F' )? () | ( EXPONENT | ) )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1631:2: ( DIGITS )+ ({...}? => DOT ( DIGITS )? ( EXPONENT )? ( 'd' | 'D' | 'f' | 'F' )? () | ( EXPONENT | ) )
                     {
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1624:2: ( DIGITS )+
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1631:2: ( DIGITS )+
                     int cnt17=0;
                     loop17:
                     do {
@@ -3475,7 +3476,7 @@ public class ValaLexer extends Lexer {
 
                         switch (alt17) {
                     	case 1 :
-                    	    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1624:2: DIGITS
+                    	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1631:2: DIGITS
                     	    {
                     	    mDIGITS(); 
 
@@ -3491,7 +3492,7 @@ public class ValaLexer extends Lexer {
                         cnt17++;
                     } while (true);
 
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1625:2: ({...}? => DOT ( DIGITS )? ( EXPONENT )? ( 'd' | 'D' | 'f' | 'F' )? () | ( EXPONENT | ) )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1632:2: ({...}? => DOT ( DIGITS )? ( EXPONENT )? ( 'd' | 'D' | 'f' | 'F' )? () | ( EXPONENT | ) )
                     int alt22=2;
                     int LA22_0 = input.LA(1);
 
@@ -3505,7 +3506,7 @@ public class ValaLexer extends Lexer {
                         alt22=2;}
                     switch (alt22) {
                         case 1 :
-                            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1626:3: {...}? => DOT ( DIGITS )? ( EXPONENT )? ( 'd' | 'D' | 'f' | 'F' )? ()
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1633:3: {...}? => DOT ( DIGITS )? ( EXPONENT )? ( 'd' | 'D' | 'f' | 'F' )? ()
                             {
                             if ( !((
                             			!((input.LA(2) >= 'a' && input.LA(2) <= 'z')
@@ -3514,7 +3515,7 @@ public class ValaLexer extends Lexer {
                                 throw new FailedPredicateException(input, "REAL", "\r\n\t\t\t!((input.LA(2) >= 'a' && input.LA(2) <= 'z')\r\n\t\t\t|| (input.LA(2) >= 'A' && input.LA(2) <= 'Z'))\r\n\t\t");
                             }
                             mDOT(); 
-                            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1630:7: ( DIGITS )?
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1637:7: ( DIGITS )?
                             int alt18=2;
                             int LA18_0 = input.LA(1);
 
@@ -3523,7 +3524,7 @@ public class ValaLexer extends Lexer {
                             }
                             switch (alt18) {
                                 case 1 :
-                                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1630:7: DIGITS
+                                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1637:7: DIGITS
                                     {
                                     mDIGITS(); 
 
@@ -3532,7 +3533,7 @@ public class ValaLexer extends Lexer {
 
                             }
 
-                            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1630:15: ( EXPONENT )?
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1637:15: ( EXPONENT )?
                             int alt19=2;
                             int LA19_0 = input.LA(1);
 
@@ -3541,7 +3542,7 @@ public class ValaLexer extends Lexer {
                             }
                             switch (alt19) {
                                 case 1 :
-                                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1630:15: EXPONENT
+                                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1637:15: EXPONENT
                                     {
                                     mEXPONENT(); 
 
@@ -3550,7 +3551,7 @@ public class ValaLexer extends Lexer {
 
                             }
 
-                            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1630:25: ( 'd' | 'D' | 'f' | 'F' )?
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1637:25: ( 'd' | 'D' | 'f' | 'F' )?
                             int alt20=2;
                             int LA20_0 = input.LA(1);
 
@@ -3559,7 +3560,7 @@ public class ValaLexer extends Lexer {
                             }
                             switch (alt20) {
                                 case 1 :
-                                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:
+                                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:
                                     {
                                     if ( input.LA(1)=='D'||input.LA(1)=='F'||input.LA(1)=='d'||input.LA(1)=='f' ) {
                                         input.consume();
@@ -3576,8 +3577,8 @@ public class ValaLexer extends Lexer {
 
                             }
 
-                            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1631:3: ()
-                            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1632:4: 
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1638:3: ()
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1639:4: 
                             {
                              _type = REAL; 
 
@@ -3587,9 +3588,9 @@ public class ValaLexer extends Lexer {
                             }
                             break;
                         case 2 :
-                            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1635:3: ( EXPONENT | )
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1642:3: ( EXPONENT | )
                             {
-                            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1635:3: ( EXPONENT | )
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1642:3: ( EXPONENT | )
                             int alt21=2;
                             int LA21_0 = input.LA(1);
 
@@ -3600,7 +3601,7 @@ public class ValaLexer extends Lexer {
                                 alt21=2;}
                             switch (alt21) {
                                 case 1 :
-                                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1636:4: EXPONENT
+                                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1643:4: EXPONENT
                                     {
                                     mEXPONENT(); 
                                      _type = REAL; 
@@ -3608,7 +3609,7 @@ public class ValaLexer extends Lexer {
                                     }
                                     break;
                                 case 2 :
-                                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1639:4: 
+                                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1646:4: 
                                     {
                                      _type = INTEGER; 
 
@@ -3627,7 +3628,7 @@ public class ValaLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1643:3: DIGITS ( 'd' | 'D' | 'f' | 'F' )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1650:3: DIGITS ( 'd' | 'D' | 'f' | 'F' )
                     {
                     mDIGITS(); 
                     if ( input.LA(1)=='D'||input.LA(1)=='F'||input.LA(1)=='d'||input.LA(1)=='f' ) {
@@ -3644,10 +3645,10 @@ public class ValaLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1648:2: DOT ({...}? => ( DIGITS ( EXPONENT )? ( 'd' | 'D' | 'f' | 'F' )? ) | DOT | )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1655:2: DOT ({...}? => ( DIGITS ( EXPONENT )? ( 'd' | 'D' | 'f' | 'F' )? ) | DOT | )
                     {
                     mDOT(); 
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1649:2: ({...}? => ( DIGITS ( EXPONENT )? ( 'd' | 'D' | 'f' | 'F' )? ) | DOT | )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1656:2: ({...}? => ( DIGITS ( EXPONENT )? ( 'd' | 'D' | 'f' | 'F' )? ) | DOT | )
                     int alt25=3;
                     int LA25_0 = input.LA(1);
 
@@ -3664,7 +3665,7 @@ public class ValaLexer extends Lexer {
                         alt25=3;}
                     switch (alt25) {
                         case 1 :
-                            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1650:3: {...}? => ( DIGITS ( EXPONENT )? ( 'd' | 'D' | 'f' | 'F' )? )
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1657:3: {...}? => ( DIGITS ( EXPONENT )? ( 'd' | 'D' | 'f' | 'F' )? )
                             {
                             if ( !((
                             			!((input.LA(-2) >= 'a' && input.LA(-2) <= 'z')
@@ -3672,11 +3673,11 @@ public class ValaLexer extends Lexer {
                             		)) ) {
                                 throw new FailedPredicateException(input, "REAL", "\r\n\t\t\t!((input.LA(-2) >= 'a' && input.LA(-2) <= 'z')\r\n\t\t\t|| (input.LA(-2) >= 'A' && input.LA(-2) <= 'Z'))\r\n\t\t");
                             }
-                            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1654:3: ( DIGITS ( EXPONENT )? ( 'd' | 'D' | 'f' | 'F' )? )
-                            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1655:4: DIGITS ( EXPONENT )? ( 'd' | 'D' | 'f' | 'F' )?
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1661:3: ( DIGITS ( EXPONENT )? ( 'd' | 'D' | 'f' | 'F' )? )
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1662:4: DIGITS ( EXPONENT )? ( 'd' | 'D' | 'f' | 'F' )?
                             {
                             mDIGITS(); 
-                            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1655:11: ( EXPONENT )?
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1662:11: ( EXPONENT )?
                             int alt23=2;
                             int LA23_0 = input.LA(1);
 
@@ -3685,7 +3686,7 @@ public class ValaLexer extends Lexer {
                             }
                             switch (alt23) {
                                 case 1 :
-                                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1655:11: EXPONENT
+                                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1662:11: EXPONENT
                                     {
                                     mEXPONENT(); 
 
@@ -3694,7 +3695,7 @@ public class ValaLexer extends Lexer {
 
                             }
 
-                            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1655:21: ( 'd' | 'D' | 'f' | 'F' )?
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1662:21: ( 'd' | 'D' | 'f' | 'F' )?
                             int alt24=2;
                             int LA24_0 = input.LA(1);
 
@@ -3703,7 +3704,7 @@ public class ValaLexer extends Lexer {
                             }
                             switch (alt24) {
                                 case 1 :
-                                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:
+                                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:
                                     {
                                     if ( input.LA(1)=='D'||input.LA(1)=='F'||input.LA(1)=='d'||input.LA(1)=='f' ) {
                                         input.consume();
@@ -3728,7 +3729,7 @@ public class ValaLexer extends Lexer {
                             }
                             break;
                         case 2 :
-                            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1659:3: DOT
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1666:3: DOT
                             {
                             mDOT(); 
                              _type = RANGE; 
@@ -3736,7 +3737,7 @@ public class ValaLexer extends Lexer {
                             }
                             break;
                         case 3 :
-                            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1662:3: 
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1669:3: 
                             {
                              _type = DOT; 
 
@@ -3761,10 +3762,10 @@ public class ValaLexer extends Lexer {
     // $ANTLR start "DIGITS"
     public final void mDIGITS() throws RecognitionException {
         try {
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1668:5: ( ( '0' .. '9' )+ )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1668:9: ( '0' .. '9' )+
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1675:5: ( ( '0' .. '9' )+ )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1675:9: ( '0' .. '9' )+
             {
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1668:9: ( '0' .. '9' )+
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1675:9: ( '0' .. '9' )+
             int cnt27=0;
             loop27:
             do {
@@ -3778,7 +3779,7 @@ public class ValaLexer extends Lexer {
 
                 switch (alt27) {
             	case 1 :
-            	    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1668:10: '0' .. '9'
+            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1675:10: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -3808,11 +3809,11 @@ public class ValaLexer extends Lexer {
         try {
             int _type = CHAR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1672:2: ( '\\'' ( ESCAPE | ~ ( '\\'' | '\\\\' ) ) '\\'' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1672:5: '\\'' ( ESCAPE | ~ ( '\\'' | '\\\\' ) ) '\\''
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1679:2: ( '\\'' ( ESCAPE | ~ ( '\\'' | BACKSLASH ) ) '\\'' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1679:5: '\\'' ( ESCAPE | ~ ( '\\'' | BACKSLASH ) ) '\\''
             {
             match('\''); 
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1672:11: ( ESCAPE | ~ ( '\\'' | '\\\\' ) )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1679:11: ( ESCAPE | ~ ( '\\'' | BACKSLASH ) )
             int alt28=2;
             int LA28_0 = input.LA(1);
 
@@ -3830,14 +3831,14 @@ public class ValaLexer extends Lexer {
             }
             switch (alt28) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1672:13: ESCAPE
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1679:13: ESCAPE
                     {
                     mESCAPE(); 
 
                     }
                     break;
                 case 2 :
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1672:22: ~ ( '\\'' | '\\\\' )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1679:22: ~ ( '\\'' | BACKSLASH )
                     {
                     if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                         input.consume();
@@ -3871,14 +3872,14 @@ public class ValaLexer extends Lexer {
         try {
             int _type = LINE_COMMAND;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1676:2: ( ( '#' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' ) )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1677:2: ( '#' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1683:2: ( ( '#' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' ) )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1684:2: ( '#' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' )
             {
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1677:2: ( '#' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1677:3: '#' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1684:2: ( '#' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1684:3: '#' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
             {
             match('#'); 
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1678:2: (~ ( '\\n' | '\\r' ) )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1685:2: (~ ( '\\n' | '\\r' ) )*
             loop29:
             do {
                 int alt29=2;
@@ -3891,7 +3892,7 @@ public class ValaLexer extends Lexer {
 
                 switch (alt29) {
             	case 1 :
-            	    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1678:2: ~ ( '\\n' | '\\r' )
+            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1685:2: ~ ( '\\n' | '\\r' )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -3911,7 +3912,7 @@ public class ValaLexer extends Lexer {
                 }
             } while (true);
 
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1679:2: ( '\\r' )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1686:2: ( '\\r' )?
             int alt30=2;
             int LA30_0 = input.LA(1);
 
@@ -3920,7 +3921,7 @@ public class ValaLexer extends Lexer {
             }
             switch (alt30) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1679:2: '\\r'
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1686:2: '\\r'
                     {
                     match('\r'); 
 
@@ -3948,8 +3949,8 @@ public class ValaLexer extends Lexer {
     // $ANTLR start "EXPONENT"
     public final void mEXPONENT() throws RecognitionException {
         try {
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1685:10: ( ( 'e' | 'E' ) ( '+' | '-' )? ( '0' .. '9' )+ )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1685:12: ( 'e' | 'E' ) ( '+' | '-' )? ( '0' .. '9' )+
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1692:10: ( ( 'e' | 'E' ) ( '+' | '-' )? ( '0' .. '9' )+ )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1692:12: ( 'e' | 'E' ) ( '+' | '-' )? ( '0' .. '9' )+
             {
             if ( input.LA(1)=='E'||input.LA(1)=='e' ) {
                 input.consume();
@@ -3960,7 +3961,7 @@ public class ValaLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1685:22: ( '+' | '-' )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1692:22: ( '+' | '-' )?
             int alt31=2;
             int LA31_0 = input.LA(1);
 
@@ -3969,7 +3970,7 @@ public class ValaLexer extends Lexer {
             }
             switch (alt31) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:
                     {
                     if ( input.LA(1)=='+'||input.LA(1)=='-' ) {
                         input.consume();
@@ -3986,7 +3987,7 @@ public class ValaLexer extends Lexer {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1685:33: ( '0' .. '9' )+
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1692:33: ( '0' .. '9' )+
             int cnt32=0;
             loop32:
             do {
@@ -4000,7 +4001,7 @@ public class ValaLexer extends Lexer {
 
                 switch (alt32) {
             	case 1 :
-            	    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1685:34: '0' .. '9'
+            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1692:34: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -4028,8 +4029,8 @@ public class ValaLexer extends Lexer {
     // $ANTLR start "HEXDIGIT"
     public final void mHEXDIGIT() throws RecognitionException {
         try {
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1688:10: ( ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1688:12: ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1695:10: ( ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1695:12: ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' )
             {
             if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='F')||(input.LA(1)>='a' && input.LA(1)<='f') ) {
                 input.consume();
@@ -4052,7 +4053,7 @@ public class ValaLexer extends Lexer {
     // $ANTLR start "ESCAPE"
     public final void mESCAPE() throws RecognitionException {
         try {
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1692:6: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' ) | UNICODE | OCTAL )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1699:6: ( BACKSLASH ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | BACKSLASH ) | UNICODE | OCTAL )
             int alt33=3;
             int LA33_0 = input.LA(1);
 
@@ -4103,9 +4104,9 @@ public class ValaLexer extends Lexer {
             }
             switch (alt33) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1692:8: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1699:8: BACKSLASH ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | BACKSLASH )
                     {
-                    match('\\'); 
+                    mBACKSLASH(); 
                     if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||input.LA(1)=='t' ) {
                         input.consume();
 
@@ -4119,14 +4120,14 @@ public class ValaLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1693:8: UNICODE
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1700:8: UNICODE
                     {
                     mUNICODE(); 
 
                     }
                     break;
                 case 3 :
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1694:8: OCTAL
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1701:8: OCTAL
                     {
                     mOCTAL(); 
 
@@ -4143,7 +4144,7 @@ public class ValaLexer extends Lexer {
     // $ANTLR start "OCTAL"
     public final void mOCTAL() throws RecognitionException {
         try {
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1699:2: ( '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1706:2: ( BACKSLASH ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' ) | BACKSLASH ( '0' .. '7' ) ( '0' .. '7' ) | BACKSLASH ( '0' .. '7' ) )
             int alt34=3;
             int LA34_0 = input.LA(1);
 
@@ -4189,25 +4190,25 @@ public class ValaLexer extends Lexer {
             }
             switch (alt34) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1699:4: '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1706:4: BACKSLASH ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' )
                     {
-                    match('\\'); 
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1699:10: ( '0' .. '3' )
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1699:11: '0' .. '3'
+                    mBACKSLASH(); 
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1706:14: ( '0' .. '3' )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1706:15: '0' .. '3'
                     {
                     matchRange('0','3'); 
 
                     }
 
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1699:21: ( '0' .. '7' )
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1699:22: '0' .. '7'
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1706:25: ( '0' .. '7' )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1706:26: '0' .. '7'
                     {
                     matchRange('0','7'); 
 
                     }
 
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1699:32: ( '0' .. '7' )
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1699:33: '0' .. '7'
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1706:36: ( '0' .. '7' )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1706:37: '0' .. '7'
                     {
                     matchRange('0','7'); 
 
@@ -4217,18 +4218,18 @@ public class ValaLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1700:4: '\\\\' ( '0' .. '7' ) ( '0' .. '7' )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1707:4: BACKSLASH ( '0' .. '7' ) ( '0' .. '7' )
                     {
-                    match('\\'); 
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1700:10: ( '0' .. '7' )
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1700:11: '0' .. '7'
+                    mBACKSLASH(); 
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1707:14: ( '0' .. '7' )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1707:15: '0' .. '7'
                     {
                     matchRange('0','7'); 
 
                     }
 
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1700:21: ( '0' .. '7' )
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1700:22: '0' .. '7'
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1707:25: ( '0' .. '7' )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1707:26: '0' .. '7'
                     {
                     matchRange('0','7'); 
 
@@ -4238,11 +4239,11 @@ public class ValaLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1701:4: '\\\\' ( '0' .. '7' )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1708:4: BACKSLASH ( '0' .. '7' )
                     {
-                    match('\\'); 
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1701:10: ( '0' .. '7' )
-                    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1701:11: '0' .. '7'
+                    mBACKSLASH(); 
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1708:14: ( '0' .. '7' )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1708:15: '0' .. '7'
                     {
                     matchRange('0','7'); 
 
@@ -4262,10 +4263,10 @@ public class ValaLexer extends Lexer {
     // $ANTLR start "UNICODE"
     public final void mUNICODE() throws RecognitionException {
         try {
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1706:6: ( '\\\\' 'u' HEXDIGIT HEXDIGIT HEXDIGIT HEXDIGIT )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1706:10: '\\\\' 'u' HEXDIGIT HEXDIGIT HEXDIGIT HEXDIGIT
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1713:6: ( BACKSLASH 'u' HEXDIGIT HEXDIGIT HEXDIGIT HEXDIGIT )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1713:10: BACKSLASH 'u' HEXDIGIT HEXDIGIT HEXDIGIT HEXDIGIT
             {
-            match('\\'); 
+            mBACKSLASH(); 
             match('u'); 
             mHEXDIGIT(); 
             mHEXDIGIT(); 
@@ -4285,8 +4286,8 @@ public class ValaLexer extends Lexer {
         try {
             int _type = GLOBAL_NS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1710:2: ( 'global::' )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1711:2: 'global::'
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1717:2: ( 'global::' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1718:2: 'global::'
             {
             match("global::"); 
 
@@ -4301,13 +4302,33 @@ public class ValaLexer extends Lexer {
     }
     // $ANTLR end "GLOBAL_NS"
 
+    // $ANTLR start "BACKSLASH"
+    public final void mBACKSLASH() throws RecognitionException {
+        try {
+            int _type = BACKSLASH;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1721:2: ( '\\\\' )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1721:4: '\\\\'
+            {
+            match('\\'); 
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "BACKSLASH"
+
     // $ANTLR start "REGEX_LITERAL"
     public final void mREGEX_LITERAL() throws RecognitionException {
         try {
             int _type = REGEX_LITERAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1715:2: ( '/--this-is-not-complete-yet--' {...}? => (~ ( '/' ) | '\\\\/' )+ '/' ( 'g' | 'm' | 'i' )* )
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1716:2: '/--this-is-not-complete-yet--' {...}? => (~ ( '/' ) | '\\\\/' )+ '/' ( 'g' | 'm' | 'i' )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1725:2: ( '/--this-is-not-complete-yet--' {...}? => (~ ( '/' ) | '\\\\/' )+ '/' ( 'g' | 'm' | 'i' )* )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1726:2: '/--this-is-not-complete-yet--' {...}? => (~ ( '/' ) | '\\\\/' )+ '/' ( 'g' | 'm' | 'i' )*
             {
             match("/--this-is-not-complete-yet--"); 
 
@@ -4316,7 +4337,7 @@ public class ValaLexer extends Lexer {
             	)) ) {
                 throw new FailedPredicateException(input, "REGEX_LITERAL", "\r\n\t\tinput.LA(-1) == '/'\r\n\t");
             }
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1720:2: (~ ( '/' ) | '\\\\/' )+
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1730:2: (~ ( '/' ) | '\\\\/' )+
             int cnt35=0;
             loop35:
             do {
@@ -4324,7 +4345,7 @@ public class ValaLexer extends Lexer {
                 alt35 = dfa35.predict(input);
                 switch (alt35) {
             	case 1 :
-            	    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1720:3: ~ ( '/' )
+            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1730:3: ~ ( '/' )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='.')||(input.LA(1)>='0' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -4339,7 +4360,7 @@ public class ValaLexer extends Lexer {
             	    }
             	    break;
             	case 2 :
-            	    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1721:4: '\\\\/'
+            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1731:4: '\\\\/'
             	    {
             	    match("\\/"); 
 
@@ -4357,7 +4378,7 @@ public class ValaLexer extends Lexer {
             } while (true);
 
             match('/'); 
-            // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1723:2: ( 'g' | 'm' | 'i' )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1733:2: ( 'g' | 'm' | 'i' )*
             loop36:
             do {
                 int alt36=2;
@@ -4370,7 +4391,7 @@ public class ValaLexer extends Lexer {
 
                 switch (alt36) {
             	case 1 :
-            	    // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:
+            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:
             	    {
             	    if ( input.LA(1)=='g'||input.LA(1)=='i'||input.LA(1)=='m' ) {
             	        input.consume();
@@ -4402,880 +4423,887 @@ public class ValaLexer extends Lexer {
     // $ANTLR end "REGEX_LITERAL"
 
     public void mTokens() throws RecognitionException {
-        // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:8: ( WHITESPACE | COMMENT_JAVADOC | COMMENT | LINE_COMMENT | KW_USING | KW_CONSTRUCT | KW_SET | KW_GET | KW_IN | KW_IS | KW_AS | KW_VOID | KW_DYNAMIC | KW_OWNED | KW_WEAK | KW_UNOWNED | KW_TRUE | KW_FALSE | KW_NULL | KW_NEW | KW_YIELD | KW_SIZEOF | KW_TYPEOF | KW_ASYNC | KW_CLASS | KW_STRUCT | KW_EXTERN | KW_INLINE | KW_STATIC | KW_ABSTRACT | KW_VIRTUAL | KW_OVERRIDE | KW_PRIVATE | KW_PROTECTED | KW_PUBLIC | KW_INTERNAL | KW_ENUM | KW_ERRORDOMAIN | KW_INTERFACE | KW_NAMESPACE | KW_OUT | KW_REF | KW_PARAMS | KW_TRY | KW_CATCH | KW_FINALLY | KW_LOCK | KW_DELETE | KW_FOREACH | KW_CONTINUE | KW_RETURN | KW_BREAK | KW_VAR | KW_THROW | KW_THIS | KW_BASE | KW_THROWS | KW_REQUIRES | KW_ENSURES | KW_DELEGATE | KW_SIGNAL | KW_CONST | KW_DEFAULT | KW_IF | KW_ELSE | KW_SWITCH | KW_CASE | KW_WHILE | KW_DO | KW_FOR | HEX | IDENTIFIER | VERBATIM_LITERAL | STRING | SHIFT_LEFT | COMMA | SEMICOLON | LBRACKET | RBRACKET | LPAREN | RPAREN | INCR_ASSIGN | DECR_ASSIGN | OR_ASSIGN | AND_ASSIGN | XOR_ASSIGN | DIV_ASSIGN | MUL_ASSIGN | MOD_ASSIGN | SHL_ASSIGN | GT | QUESTION | COALESCE | COLON | BOOL_OR | BOOL_AND | OR | AND | XOR | EQUAL | NOT_EQUAL | LTEQ | MULTIPLY | PLUS | MINUS | DIV | MOD | NOT | BITWISE_NOT | INCREMENT | DECREMENT | POINTER_ACCESS | LCURL | RCURL | TEMPLATE_START | QUOT | LAMBDA | ELIPSIS | LT | ASSIGNMENT | REAL | CHAR | LINE_COMMAND | GLOBAL_NS | REGEX_LITERAL )
-        int alt37=125;
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:8: ( WHITESPACE | COMMENT_JAVADOC | COMMENT | LINE_COMMENT | KW_USING | KW_CONSTRUCT | KW_SET | KW_GET | KW_IN | KW_IS | KW_AS | KW_VOID | KW_DYNAMIC | KW_OWNED | KW_WEAK | KW_UNOWNED | KW_TRUE | KW_FALSE | KW_NULL | KW_NEW | KW_YIELD | KW_SIZEOF | KW_TYPEOF | KW_ASYNC | KW_CLASS | KW_STRUCT | KW_EXTERN | KW_INLINE | KW_STATIC | KW_ABSTRACT | KW_VIRTUAL | KW_OVERRIDE | KW_PRIVATE | KW_PROTECTED | KW_PUBLIC | KW_INTERNAL | KW_ENUM | KW_ERRORDOMAIN | KW_INTERFACE | KW_NAMESPACE | KW_OUT | KW_REF | KW_PARAMS | KW_TRY | KW_CATCH | KW_FINALLY | KW_LOCK | KW_DELETE | KW_FOREACH | KW_CONTINUE | KW_RETURN | KW_BREAK | KW_VAR | KW_THROW | KW_THIS | KW_BASE | KW_THROWS | KW_REQUIRES | KW_ENSURES | KW_DELEGATE | KW_SIGNAL | KW_CONST | KW_DEFAULT | KW_IF | KW_ELSE | KW_SWITCH | KW_CASE | KW_WHILE | KW_DO | KW_FOR | HEX | IDENTIFIER | VERBATIM_LITERAL | STRING | SHIFT_LEFT | COMMA | SEMICOLON | LBRACKET | RBRACKET | LPAREN | RPAREN | INCR_ASSIGN | DECR_ASSIGN | OR_ASSIGN | AND_ASSIGN | XOR_ASSIGN | DIV_ASSIGN | MUL_ASSIGN | MOD_ASSIGN | SHL_ASSIGN | GT | QUESTION | COALESCE | COLON | BOOL_OR | BOOL_AND | OR | AND | XOR | EQUAL | NOT_EQUAL | LTEQ | MULTIPLY | PLUS | MINUS | DIV | MOD | NOT | BITWISE_NOT | INCREMENT | DECREMENT | POINTER_ACCESS | LCURL | RCURL | TEMPLATE_START | QUOT | LAMBDA | ELIPSIS | LT | ASSIGNMENT | REAL | CHAR | LINE_COMMAND | GLOBAL_NS | BACKSLASH | REGEX_LITERAL )
+        int alt37=126;
         alt37 = dfa37.predict(input);
         switch (alt37) {
             case 1 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:10: WHITESPACE
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:10: WHITESPACE
                 {
                 mWHITESPACE(); 
 
                 }
                 break;
             case 2 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:21: COMMENT_JAVADOC
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:21: COMMENT_JAVADOC
                 {
                 mCOMMENT_JAVADOC(); 
 
                 }
                 break;
             case 3 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:37: COMMENT
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:37: COMMENT
                 {
                 mCOMMENT(); 
 
                 }
                 break;
             case 4 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:45: LINE_COMMENT
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:45: LINE_COMMENT
                 {
                 mLINE_COMMENT(); 
 
                 }
                 break;
             case 5 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:58: KW_USING
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:58: KW_USING
                 {
                 mKW_USING(); 
 
                 }
                 break;
             case 6 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:67: KW_CONSTRUCT
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:67: KW_CONSTRUCT
                 {
                 mKW_CONSTRUCT(); 
 
                 }
                 break;
             case 7 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:80: KW_SET
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:80: KW_SET
                 {
                 mKW_SET(); 
 
                 }
                 break;
             case 8 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:87: KW_GET
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:87: KW_GET
                 {
                 mKW_GET(); 
 
                 }
                 break;
             case 9 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:94: KW_IN
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:94: KW_IN
                 {
                 mKW_IN(); 
 
                 }
                 break;
             case 10 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:100: KW_IS
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:100: KW_IS
                 {
                 mKW_IS(); 
 
                 }
                 break;
             case 11 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:106: KW_AS
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:106: KW_AS
                 {
                 mKW_AS(); 
 
                 }
                 break;
             case 12 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:112: KW_VOID
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:112: KW_VOID
                 {
                 mKW_VOID(); 
 
                 }
                 break;
             case 13 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:120: KW_DYNAMIC
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:120: KW_DYNAMIC
                 {
                 mKW_DYNAMIC(); 
 
                 }
                 break;
             case 14 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:131: KW_OWNED
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:131: KW_OWNED
                 {
                 mKW_OWNED(); 
 
                 }
                 break;
             case 15 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:140: KW_WEAK
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:140: KW_WEAK
                 {
                 mKW_WEAK(); 
 
                 }
                 break;
             case 16 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:148: KW_UNOWNED
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:148: KW_UNOWNED
                 {
                 mKW_UNOWNED(); 
 
                 }
                 break;
             case 17 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:159: KW_TRUE
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:159: KW_TRUE
                 {
                 mKW_TRUE(); 
 
                 }
                 break;
             case 18 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:167: KW_FALSE
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:167: KW_FALSE
                 {
                 mKW_FALSE(); 
 
                 }
                 break;
             case 19 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:176: KW_NULL
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:176: KW_NULL
                 {
                 mKW_NULL(); 
 
                 }
                 break;
             case 20 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:184: KW_NEW
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:184: KW_NEW
                 {
                 mKW_NEW(); 
 
                 }
                 break;
             case 21 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:191: KW_YIELD
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:191: KW_YIELD
                 {
                 mKW_YIELD(); 
 
                 }
                 break;
             case 22 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:200: KW_SIZEOF
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:200: KW_SIZEOF
                 {
                 mKW_SIZEOF(); 
 
                 }
                 break;
             case 23 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:210: KW_TYPEOF
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:210: KW_TYPEOF
                 {
                 mKW_TYPEOF(); 
 
                 }
                 break;
             case 24 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:220: KW_ASYNC
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:220: KW_ASYNC
                 {
                 mKW_ASYNC(); 
 
                 }
                 break;
             case 25 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:229: KW_CLASS
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:229: KW_CLASS
                 {
                 mKW_CLASS(); 
 
                 }
                 break;
             case 26 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:238: KW_STRUCT
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:238: KW_STRUCT
                 {
                 mKW_STRUCT(); 
 
                 }
                 break;
             case 27 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:248: KW_EXTERN
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:248: KW_EXTERN
                 {
                 mKW_EXTERN(); 
 
                 }
                 break;
             case 28 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:258: KW_INLINE
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:258: KW_INLINE
                 {
                 mKW_INLINE(); 
 
                 }
                 break;
             case 29 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:268: KW_STATIC
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:268: KW_STATIC
                 {
                 mKW_STATIC(); 
 
                 }
                 break;
             case 30 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:278: KW_ABSTRACT
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:278: KW_ABSTRACT
                 {
                 mKW_ABSTRACT(); 
 
                 }
                 break;
             case 31 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:290: KW_VIRTUAL
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:290: KW_VIRTUAL
                 {
                 mKW_VIRTUAL(); 
 
                 }
                 break;
             case 32 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:301: KW_OVERRIDE
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:301: KW_OVERRIDE
                 {
                 mKW_OVERRIDE(); 
 
                 }
                 break;
             case 33 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:313: KW_PRIVATE
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:313: KW_PRIVATE
                 {
                 mKW_PRIVATE(); 
 
                 }
                 break;
             case 34 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:324: KW_PROTECTED
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:324: KW_PROTECTED
                 {
                 mKW_PROTECTED(); 
 
                 }
                 break;
             case 35 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:337: KW_PUBLIC
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:337: KW_PUBLIC
                 {
                 mKW_PUBLIC(); 
 
                 }
                 break;
             case 36 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:347: KW_INTERNAL
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:347: KW_INTERNAL
                 {
                 mKW_INTERNAL(); 
 
                 }
                 break;
             case 37 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:359: KW_ENUM
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:359: KW_ENUM
                 {
                 mKW_ENUM(); 
 
                 }
                 break;
             case 38 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:367: KW_ERRORDOMAIN
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:367: KW_ERRORDOMAIN
                 {
                 mKW_ERRORDOMAIN(); 
 
                 }
                 break;
             case 39 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:382: KW_INTERFACE
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:382: KW_INTERFACE
                 {
                 mKW_INTERFACE(); 
 
                 }
                 break;
             case 40 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:395: KW_NAMESPACE
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:395: KW_NAMESPACE
                 {
                 mKW_NAMESPACE(); 
 
                 }
                 break;
             case 41 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:408: KW_OUT
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:408: KW_OUT
                 {
                 mKW_OUT(); 
 
                 }
                 break;
             case 42 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:415: KW_REF
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:415: KW_REF
                 {
                 mKW_REF(); 
 
                 }
                 break;
             case 43 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:422: KW_PARAMS
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:422: KW_PARAMS
                 {
                 mKW_PARAMS(); 
 
                 }
                 break;
             case 44 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:432: KW_TRY
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:432: KW_TRY
                 {
                 mKW_TRY(); 
 
                 }
                 break;
             case 45 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:439: KW_CATCH
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:439: KW_CATCH
                 {
                 mKW_CATCH(); 
 
                 }
                 break;
             case 46 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:448: KW_FINALLY
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:448: KW_FINALLY
                 {
                 mKW_FINALLY(); 
 
                 }
                 break;
             case 47 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:459: KW_LOCK
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:459: KW_LOCK
                 {
                 mKW_LOCK(); 
 
                 }
                 break;
             case 48 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:467: KW_DELETE
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:467: KW_DELETE
                 {
                 mKW_DELETE(); 
 
                 }
                 break;
             case 49 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:477: KW_FOREACH
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:477: KW_FOREACH
                 {
                 mKW_FOREACH(); 
 
                 }
                 break;
             case 50 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:488: KW_CONTINUE
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:488: KW_CONTINUE
                 {
                 mKW_CONTINUE(); 
 
                 }
                 break;
             case 51 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:500: KW_RETURN
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:500: KW_RETURN
                 {
                 mKW_RETURN(); 
 
                 }
                 break;
             case 52 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:510: KW_BREAK
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:510: KW_BREAK
                 {
                 mKW_BREAK(); 
 
                 }
                 break;
             case 53 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:519: KW_VAR
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:519: KW_VAR
                 {
                 mKW_VAR(); 
 
                 }
                 break;
             case 54 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:526: KW_THROW
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:526: KW_THROW
                 {
                 mKW_THROW(); 
 
                 }
                 break;
             case 55 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:535: KW_THIS
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:535: KW_THIS
                 {
                 mKW_THIS(); 
 
                 }
                 break;
             case 56 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:543: KW_BASE
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:543: KW_BASE
                 {
                 mKW_BASE(); 
 
                 }
                 break;
             case 57 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:551: KW_THROWS
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:551: KW_THROWS
                 {
                 mKW_THROWS(); 
 
                 }
                 break;
             case 58 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:561: KW_REQUIRES
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:561: KW_REQUIRES
                 {
                 mKW_REQUIRES(); 
 
                 }
                 break;
             case 59 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:573: KW_ENSURES
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:573: KW_ENSURES
                 {
                 mKW_ENSURES(); 
 
                 }
                 break;
             case 60 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:584: KW_DELEGATE
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:584: KW_DELEGATE
                 {
                 mKW_DELEGATE(); 
 
                 }
                 break;
             case 61 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:596: KW_SIGNAL
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:596: KW_SIGNAL
                 {
                 mKW_SIGNAL(); 
 
                 }
                 break;
             case 62 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:606: KW_CONST
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:606: KW_CONST
                 {
                 mKW_CONST(); 
 
                 }
                 break;
             case 63 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:615: KW_DEFAULT
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:615: KW_DEFAULT
                 {
                 mKW_DEFAULT(); 
 
                 }
                 break;
             case 64 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:626: KW_IF
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:626: KW_IF
                 {
                 mKW_IF(); 
 
                 }
                 break;
             case 65 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:632: KW_ELSE
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:632: KW_ELSE
                 {
                 mKW_ELSE(); 
 
                 }
                 break;
             case 66 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:640: KW_SWITCH
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:640: KW_SWITCH
                 {
                 mKW_SWITCH(); 
 
                 }
                 break;
             case 67 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:650: KW_CASE
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:650: KW_CASE
                 {
                 mKW_CASE(); 
 
                 }
                 break;
             case 68 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:658: KW_WHILE
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:658: KW_WHILE
                 {
                 mKW_WHILE(); 
 
                 }
                 break;
             case 69 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:667: KW_DO
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:667: KW_DO
                 {
                 mKW_DO(); 
 
                 }
                 break;
             case 70 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:673: KW_FOR
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:673: KW_FOR
                 {
                 mKW_FOR(); 
 
                 }
                 break;
             case 71 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:680: HEX
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:680: HEX
                 {
                 mHEX(); 
 
                 }
                 break;
             case 72 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:684: IDENTIFIER
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:684: IDENTIFIER
                 {
                 mIDENTIFIER(); 
 
                 }
                 break;
             case 73 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:695: VERBATIM_LITERAL
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:695: VERBATIM_LITERAL
                 {
                 mVERBATIM_LITERAL(); 
 
                 }
                 break;
             case 74 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:712: STRING
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:712: STRING
                 {
                 mSTRING(); 
 
                 }
                 break;
             case 75 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:719: SHIFT_LEFT
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:719: SHIFT_LEFT
                 {
                 mSHIFT_LEFT(); 
 
                 }
                 break;
             case 76 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:730: COMMA
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:730: COMMA
                 {
                 mCOMMA(); 
 
                 }
                 break;
             case 77 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:736: SEMICOLON
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:736: SEMICOLON
                 {
                 mSEMICOLON(); 
 
                 }
                 break;
             case 78 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:746: LBRACKET
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:746: LBRACKET
                 {
                 mLBRACKET(); 
 
                 }
                 break;
             case 79 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:755: RBRACKET
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:755: RBRACKET
                 {
                 mRBRACKET(); 
 
                 }
                 break;
             case 80 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:764: LPAREN
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:764: LPAREN
                 {
                 mLPAREN(); 
 
                 }
                 break;
             case 81 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:771: RPAREN
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:771: RPAREN
                 {
                 mRPAREN(); 
 
                 }
                 break;
             case 82 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:778: INCR_ASSIGN
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:778: INCR_ASSIGN
                 {
                 mINCR_ASSIGN(); 
 
                 }
                 break;
             case 83 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:790: DECR_ASSIGN
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:790: DECR_ASSIGN
                 {
                 mDECR_ASSIGN(); 
 
                 }
                 break;
             case 84 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:802: OR_ASSIGN
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:802: OR_ASSIGN
                 {
                 mOR_ASSIGN(); 
 
                 }
                 break;
             case 85 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:812: AND_ASSIGN
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:812: AND_ASSIGN
                 {
                 mAND_ASSIGN(); 
 
                 }
                 break;
             case 86 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:823: XOR_ASSIGN
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:823: XOR_ASSIGN
                 {
                 mXOR_ASSIGN(); 
 
                 }
                 break;
             case 87 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:834: DIV_ASSIGN
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:834: DIV_ASSIGN
                 {
                 mDIV_ASSIGN(); 
 
                 }
                 break;
             case 88 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:845: MUL_ASSIGN
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:845: MUL_ASSIGN
                 {
                 mMUL_ASSIGN(); 
 
                 }
                 break;
             case 89 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:856: MOD_ASSIGN
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:856: MOD_ASSIGN
                 {
                 mMOD_ASSIGN(); 
 
                 }
                 break;
             case 90 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:867: SHL_ASSIGN
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:867: SHL_ASSIGN
                 {
                 mSHL_ASSIGN(); 
 
                 }
                 break;
             case 91 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:878: GT
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:878: GT
                 {
                 mGT(); 
 
                 }
                 break;
             case 92 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:881: QUESTION
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:881: QUESTION
                 {
                 mQUESTION(); 
 
                 }
                 break;
             case 93 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:890: COALESCE
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:890: COALESCE
                 {
                 mCOALESCE(); 
 
                 }
                 break;
             case 94 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:899: COLON
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:899: COLON
                 {
                 mCOLON(); 
 
                 }
                 break;
             case 95 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:905: BOOL_OR
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:905: BOOL_OR
                 {
                 mBOOL_OR(); 
 
                 }
                 break;
             case 96 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:913: BOOL_AND
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:913: BOOL_AND
                 {
                 mBOOL_AND(); 
 
                 }
                 break;
             case 97 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:922: OR
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:922: OR
                 {
                 mOR(); 
 
                 }
                 break;
             case 98 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:925: AND
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:925: AND
                 {
                 mAND(); 
 
                 }
                 break;
             case 99 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:929: XOR
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:929: XOR
                 {
                 mXOR(); 
 
                 }
                 break;
             case 100 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:933: EQUAL
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:933: EQUAL
                 {
                 mEQUAL(); 
 
                 }
                 break;
             case 101 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:939: NOT_EQUAL
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:939: NOT_EQUAL
                 {
                 mNOT_EQUAL(); 
 
                 }
                 break;
             case 102 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:949: LTEQ
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:949: LTEQ
                 {
                 mLTEQ(); 
 
                 }
                 break;
             case 103 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:954: MULTIPLY
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:954: MULTIPLY
                 {
                 mMULTIPLY(); 
 
                 }
                 break;
             case 104 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:963: PLUS
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:963: PLUS
                 {
                 mPLUS(); 
 
                 }
                 break;
             case 105 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:968: MINUS
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:968: MINUS
                 {
                 mMINUS(); 
 
                 }
                 break;
             case 106 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:974: DIV
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:974: DIV
                 {
                 mDIV(); 
 
                 }
                 break;
             case 107 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:978: MOD
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:978: MOD
                 {
                 mMOD(); 
 
                 }
                 break;
             case 108 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:982: NOT
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:982: NOT
                 {
                 mNOT(); 
 
                 }
                 break;
             case 109 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:986: BITWISE_NOT
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:986: BITWISE_NOT
                 {
                 mBITWISE_NOT(); 
 
                 }
                 break;
             case 110 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:998: INCREMENT
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:998: INCREMENT
                 {
                 mINCREMENT(); 
 
                 }
                 break;
             case 111 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:1008: DECREMENT
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:1008: DECREMENT
                 {
                 mDECREMENT(); 
 
                 }
                 break;
             case 112 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:1018: POINTER_ACCESS
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:1018: POINTER_ACCESS
                 {
                 mPOINTER_ACCESS(); 
 
                 }
                 break;
             case 113 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:1033: LCURL
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:1033: LCURL
                 {
                 mLCURL(); 
 
                 }
                 break;
             case 114 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:1039: RCURL
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:1039: RCURL
                 {
                 mRCURL(); 
 
                 }
                 break;
             case 115 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:1045: TEMPLATE_START
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:1045: TEMPLATE_START
                 {
                 mTEMPLATE_START(); 
 
                 }
                 break;
             case 116 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:1060: QUOT
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:1060: QUOT
                 {
                 mQUOT(); 
 
                 }
                 break;
             case 117 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:1065: LAMBDA
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:1065: LAMBDA
                 {
                 mLAMBDA(); 
 
                 }
                 break;
             case 118 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:1072: ELIPSIS
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:1072: ELIPSIS
                 {
                 mELIPSIS(); 
 
                 }
                 break;
             case 119 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:1080: LT
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:1080: LT
                 {
                 mLT(); 
 
                 }
                 break;
             case 120 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:1083: ASSIGNMENT
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:1083: ASSIGNMENT
                 {
                 mASSIGNMENT(); 
 
                 }
                 break;
             case 121 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:1094: REAL
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:1094: REAL
                 {
                 mREAL(); 
 
                 }
                 break;
             case 122 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:1099: CHAR
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:1099: CHAR
                 {
                 mCHAR(); 
 
                 }
                 break;
             case 123 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:1104: LINE_COMMAND
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:1104: LINE_COMMAND
                 {
                 mLINE_COMMAND(); 
 
                 }
                 break;
             case 124 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:1117: GLOBAL_NS
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:1117: GLOBAL_NS
                 {
                 mGLOBAL_NS(); 
 
                 }
                 break;
             case 125 :
-                // c:\\maqdev\\dev\\carbonfx\\vala-netbeans\\antlr\\Vala.g:1:1127: REGEX_LITERAL
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:1127: BACKSLASH
+                {
+                mBACKSLASH(); 
+
+                }
+                break;
+            case 126 :
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1:1137: REGEX_LITERAL
                 {
                 mREGEX_LITERAL(); 
 
@@ -5302,7 +5330,7 @@ public class ValaLexer extends Lexer {
     static final String DFA6_acceptS =
         "\4\uffff\1\1\1\2";
     static final String DFA6_specialS =
-        "\2\uffff\1\0\1\1\2\uffff}>";
+        "\2\uffff\1\1\1\0\2\uffff}>";
     static final String[] DFA6_transitionS = {
             "\1\1",
             "\1\2",
@@ -5342,31 +5370,31 @@ public class ValaLexer extends Lexer {
             this.transition = DFA6_transition;
         }
         public String getDescription() {
-            return "1209:6: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r\\n' | '\\r' | '\\n' ) | '//' (~ ( '\\n' | '\\r' ) )* )";
+            return "1216:6: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r\\n' | '\\r' | '\\n' ) | '//' (~ ( '\\n' | '\\r' ) )* )";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             IntStream input = _input;
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA6_2 = input.LA(1);
-
-                        s = -1;
-                        if ( ((LA6_2>='\u0000' && LA6_2<='\t')||(LA6_2>='\u000B' && LA6_2<='\f')||(LA6_2>='\u000E' && LA6_2<='\uFFFF')) ) {s = 3;}
-
-                        else if ( (LA6_2=='\n'||LA6_2=='\r') ) {s = 4;}
-
-                        else s = 5;
-
-                        if ( s>=0 ) return s;
-                        break;
-                    case 1 : 
                         int LA6_3 = input.LA(1);
 
                         s = -1;
                         if ( (LA6_3=='\n'||LA6_3=='\r') ) {s = 4;}
 
                         else if ( ((LA6_3>='\u0000' && LA6_3<='\t')||(LA6_3>='\u000B' && LA6_3<='\f')||(LA6_3>='\u000E' && LA6_3<='\uFFFF')) ) {s = 3;}
+
+                        else s = 5;
+
+                        if ( s>=0 ) return s;
+                        break;
+                    case 1 : 
+                        int LA6_2 = input.LA(1);
+
+                        s = -1;
+                        if ( ((LA6_2>='\u0000' && LA6_2<='\t')||(LA6_2>='\u000B' && LA6_2<='\f')||(LA6_2>='\u000E' && LA6_2<='\uFFFF')) ) {s = 3;}
+
+                        else if ( (LA6_2=='\n'||LA6_2=='\r') ) {s = 4;}
 
                         else s = 5;
 
@@ -5429,7 +5457,7 @@ public class ValaLexer extends Lexer {
             this.transition = DFA26_transition;
         }
         public String getDescription() {
-            return "1622:1: REAL : ( ( DIGITS )+ ({...}? => DOT ( DIGITS )? ( EXPONENT )? ( 'd' | 'D' | 'f' | 'F' )? () | ( EXPONENT | ) ) | DIGITS ( 'd' | 'D' | 'f' | 'F' ) | DOT ({...}? => ( DIGITS ( EXPONENT )? ( 'd' | 'D' | 'f' | 'F' )? ) | DOT | ) );";
+            return "1629:1: REAL : ( ( DIGITS )+ ({...}? => DOT ( DIGITS )? ( EXPONENT )? ( 'd' | 'D' | 'f' | 'F' )? () | ( EXPONENT | ) ) | DIGITS ( 'd' | 'D' | 'f' | 'F' ) | DOT ({...}? => ( DIGITS ( EXPONENT )? ( 'd' | 'D' | 'f' | 'F' )? ) | DOT | ) );";
         }
     }
     static final String DFA35_eotS =
@@ -5443,7 +5471,7 @@ public class ValaLexer extends Lexer {
     static final String DFA35_acceptS =
         "\1\uffff\1\3\1\uffff\1\1\1\uffff\1\2\1\uffff";
     static final String DFA35_specialS =
-        "\1\3\1\uffff\1\2\1\uffff\1\0\1\uffff\1\1}>";
+        "\1\3\1\uffff\1\1\1\uffff\1\2\1\uffff\1\0}>";
     static final String[] DFA35_transitionS = {
             "\57\3\1\1\54\3\1\2\uffa3\3",
             "",
@@ -5484,25 +5512,13 @@ public class ValaLexer extends Lexer {
             this.transition = DFA35_transition;
         }
         public String getDescription() {
-            return "()+ loopback of 1720:2: (~ ( '/' ) | '\\\\/' )+";
+            return "()+ loopback of 1730:2: (~ ( '/' ) | '\\\\/' )+";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             IntStream input = _input;
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA35_4 = input.LA(1);
-
-                        s = -1;
-                        if ( ((LA35_4>='\u0000' && LA35_4<='f')||LA35_4=='h'||(LA35_4>='j' && LA35_4<='l')||(LA35_4>='n' && LA35_4<='\uFFFF')) ) {s = 5;}
-
-                        else if ( (LA35_4=='g'||LA35_4=='i'||LA35_4=='m') ) {s = 6;}
-
-                        else s = 3;
-
-                        if ( s>=0 ) return s;
-                        break;
-                    case 1 : 
                         int LA35_6 = input.LA(1);
 
                         s = -1;
@@ -5514,13 +5530,25 @@ public class ValaLexer extends Lexer {
 
                         if ( s>=0 ) return s;
                         break;
-                    case 2 : 
+                    case 1 : 
                         int LA35_2 = input.LA(1);
 
                         s = -1;
                         if ( (LA35_2=='/') ) {s = 4;}
 
                         else if ( ((LA35_2>='\u0000' && LA35_2<='.')||(LA35_2>='0' && LA35_2<='\uFFFF')) ) {s = 3;}
+
+                        if ( s>=0 ) return s;
+                        break;
+                    case 2 : 
+                        int LA35_4 = input.LA(1);
+
+                        s = -1;
+                        if ( ((LA35_4>='\u0000' && LA35_4<='f')||LA35_4=='h'||(LA35_4>='j' && LA35_4<='l')||(LA35_4>='n' && LA35_4<='\uFFFF')) ) {s = 5;}
+
+                        else if ( (LA35_4=='g'||LA35_4=='i'||LA35_4=='m') ) {s = 6;}
+
+                        else s = 3;
 
                         if ( s>=0 ) return s;
                         break;
@@ -5544,36 +5572,36 @@ public class ValaLexer extends Lexer {
         }
     }
     static final String DFA37_eotS =
-        "\1\2\2\uffff\1\71\23\31\1\154\2\uffff\1\154\1\161\1\164\6\uffff"+
-        "\1\167\1\173\1\176\1\u0081\1\u0083\1\u0085\1\u0087\1\uffff\1\u0089"+
-        "\1\uffff\1\u008c\1\u008e\3\uffff\1\154\7\uffff\13\31\1\u00a0\1\u00a1"+
-        "\1\u00a2\1\u00a4\6\31\1\u00ac\34\31\3\uffff\1\160\2\uffff\1\u00d2"+
-        "\34\uffff\1\154\6\31\1\u00db\5\31\1\u00e1\3\31\3\uffff\1\31\1\uffff"+
-        "\3\31\1\u00e9\3\31\1\uffff\2\31\1\u00ef\3\31\1\u00f3\5\31\1\u00fa"+
-        "\1\31\1\u00fc\13\31\1\u0108\5\31\2\u010e\1\31\4\uffff\6\31\1\u0115"+
-        "\1\uffff\5\31\1\uffff\5\31\1\u0120\1\31\1\uffff\5\31\1\uffff\1\u0128"+
-        "\1\31\1\u012a\1\uffff\2\31\1\u012d\3\31\1\uffff\1\u0131\1\uffff"+
-        "\3\31\1\u0135\2\31\1\u0138\4\31\1\uffff\2\31\1\u013f\1\31\1\u0141"+
-        "\1\uffff\1\u0142\1\31\1\u0145\1\31\1\u0147\1\u0148\1\uffff\10\31"+
-        "\1\u0152\1\31\1\uffff\5\31\1\u0159\1\31\1\uffff\1\u015b\1\uffff"+
-        "\1\31\1\u015e\1\uffff\1\u015f\2\31\1\uffff\1\31\1\u0163\1\31\1\uffff"+
-        "\2\31\1\uffff\6\31\1\uffff\1\u016d\2\uffff\2\31\1\uffff\1\31\2\uffff"+
-        "\1\u0171\1\u0172\1\u0173\1\u0174\1\u0175\1\31\1\u0177\2\31\1\uffff"+
-        "\3\31\1\u017d\2\31\1\uffff\1\31\1\uffff\1\u0181\1\u0182\2\uffff"+
-        "\3\31\1\uffff\1\u0186\4\31\1\u018b\1\u018c\1\u018d\1\31\1\uffff"+
-        "\1\u018f\2\31\7\uffff\3\31\1\u0195\1\u0196\1\uffff\1\31\1\u0198"+
-        "\1\31\2\uffff\1\u019a\1\u019b\1\31\1\uffff\1\u019d\1\31\1\u019f"+
-        "\1\31\3\uffff\1\31\1\uffff\1\31\1\u01a3\1\u01a4\1\31\1\u01a6\2\uffff"+
-        "\1\u01a7\1\uffff\1\u01a8\2\uffff\1\31\1\uffff\1\31\1\uffff\1\31"+
-        "\1\u01ac\1\u01ad\2\uffff\1\u01ae\3\uffff\1\u01af\1\31\1\u01b1\4"+
-        "\uffff\1\31\1\uffff\1\u01b3\1\uffff";
+        "\1\2\2\uffff\1\72\23\31\1\155\2\uffff\1\155\1\162\1\165\6\uffff"+
+        "\1\170\1\174\1\177\1\u0082\1\u0084\1\u0086\1\u0088\1\uffff\1\u008a"+
+        "\1\uffff\1\u008d\1\u008f\3\uffff\1\155\10\uffff\13\31\1\u00a1\1"+
+        "\u00a2\1\u00a3\1\u00a5\6\31\1\u00ad\34\31\3\uffff\1\161\2\uffff"+
+        "\1\u00d3\34\uffff\1\155\6\31\1\u00dc\5\31\1\u00e2\3\31\3\uffff\1"+
+        "\31\1\uffff\3\31\1\u00ea\3\31\1\uffff\2\31\1\u00f0\3\31\1\u00f4"+
+        "\5\31\1\u00fb\1\31\1\u00fd\13\31\1\u0109\5\31\2\u010f\1\31\4\uffff"+
+        "\6\31\1\u0116\1\uffff\5\31\1\uffff\5\31\1\u0121\1\31\1\uffff\5\31"+
+        "\1\uffff\1\u0129\1\31\1\u012b\1\uffff\2\31\1\u012e\3\31\1\uffff"+
+        "\1\u0132\1\uffff\3\31\1\u0136\2\31\1\u0139\4\31\1\uffff\2\31\1\u0140"+
+        "\1\31\1\u0142\1\uffff\1\u0143\1\31\1\u0146\1\31\1\u0148\1\u0149"+
+        "\1\uffff\10\31\1\u0153\1\31\1\uffff\5\31\1\u015a\1\31\1\uffff\1"+
+        "\u015c\1\uffff\1\31\1\u015f\1\uffff\1\u0160\2\31\1\uffff\1\31\1"+
+        "\u0164\1\31\1\uffff\2\31\1\uffff\6\31\1\uffff\1\u016e\2\uffff\2"+
+        "\31\1\uffff\1\31\2\uffff\1\u0172\1\u0173\1\u0174\1\u0175\1\u0176"+
+        "\1\31\1\u0178\2\31\1\uffff\3\31\1\u017e\2\31\1\uffff\1\31\1\uffff"+
+        "\1\u0182\1\u0183\2\uffff\3\31\1\uffff\1\u0187\4\31\1\u018c\1\u018d"+
+        "\1\u018e\1\31\1\uffff\1\u0190\2\31\7\uffff\3\31\1\u0196\1\u0197"+
+        "\1\uffff\1\31\1\u0199\1\31\2\uffff\1\u019b\1\u019c\1\31\1\uffff"+
+        "\1\u019e\1\31\1\u01a0\1\31\3\uffff\1\31\1\uffff\1\31\1\u01a4\1\u01a5"+
+        "\1\31\1\u01a7\2\uffff\1\u01a8\1\uffff\1\u01a9\2\uffff\1\31\1\uffff"+
+        "\1\31\1\uffff\1\31\1\u01ad\1\u01ae\2\uffff\1\u01af\3\uffff\1\u01b0"+
+        "\1\31\1\u01b2\4\uffff\1\31\1\uffff\1\u01b4\1\uffff";
     static final String DFA37_eofS =
-        "\u01b4\uffff";
+        "\u01b5\uffff";
     static final String DFA37_minS =
         "\1\11\2\uffff\1\52\1\156\1\141\2\145\1\146\1\142\1\141\1\145\1"+
         "\165\1\145\1\150\2\141\1\151\1\154\1\141\1\145\1\157\1\141\1\60"+
         "\1\42\1\uffff\1\60\1\0\1\74\6\uffff\1\53\1\55\1\75\1\46\3\75\1\uffff"+
-        "\1\77\1\uffff\2\75\3\uffff\1\56\7\uffff\1\151\1\157\1\156\1\141"+
+        "\1\77\1\uffff\2\75\3\uffff\1\56\10\uffff\1\151\1\157\1\156\1\141"+
         "\1\163\1\164\1\147\1\141\1\151\1\164\1\157\4\60\1\163\1\151\2\162"+
         "\1\156\1\146\1\60\1\156\1\145\1\164\1\141\1\151\1\165\1\160\1\151"+
         "\1\154\1\156\1\162\1\154\1\167\1\155\1\145\1\164\1\163\1\162\1\163"+
@@ -5606,8 +5634,8 @@ public class ValaLexer extends Lexer {
         "\1\176\2\uffff\1\75\1\163\1\157\1\167\1\154\2\163\1\157\1\171\1"+
         "\167\1\150\1\171\1\157\1\165\1\151\1\170\1\165\1\145\1\157\1\162"+
         "\2\172\1\uffff\1\172\1\uffff\1\75\6\uffff\1\75\1\76\1\174\4\75\1"+
-        "\uffff\1\77\1\uffff\1\76\1\75\3\uffff\1\56\7\uffff\1\151\1\157\1"+
-        "\156\1\141\2\164\1\172\1\162\1\151\1\164\1\157\4\172\1\163\1\151"+
+        "\uffff\1\77\1\uffff\1\76\1\75\3\uffff\1\56\10\uffff\1\151\1\157"+
+        "\1\156\1\141\2\164\1\172\1\162\1\151\1\164\1\157\4\172\1\163\1\151"+
         "\2\162\1\156\1\154\1\172\1\156\1\145\1\164\1\141\1\151\1\171\1\160"+
         "\1\162\1\154\1\156\1\162\1\154\1\167\1\155\1\145\1\164\1\165\1\162"+
         "\1\163\1\157\1\142\1\162\1\164\1\143\1\145\1\163\1\146\1\71\3\uffff"+
@@ -5639,124 +5667,124 @@ public class ValaLexer extends Lexer {
     static final String DFA37_acceptS =
         "\1\uffff\1\1\1\2\26\uffff\1\110\3\uffff\1\114\1\115\1\116\1\117"+
         "\1\120\1\121\7\uffff\1\133\1\uffff\1\136\2\uffff\1\155\1\161\1\162"+
-        "\1\uffff\1\172\1\173\1\3\1\4\1\127\1\175\1\152\62\uffff\1\171\1"+
-        "\110\1\163\1\uffff\1\112\1\164\1\uffff\1\146\1\167\1\122\1\156\1"+
-        "\150\1\123\1\157\1\160\1\151\1\124\1\137\1\141\1\125\1\140\1\142"+
-        "\1\126\1\143\1\130\1\147\1\131\1\153\1\135\1\134\1\144\1\165\1\170"+
-        "\1\145\1\154\21\uffff\1\11\1\12\1\100\1\uffff\1\13\7\uffff\1\105"+
-        "\43\uffff\1\111\1\132\1\113\1\166\7\uffff\1\7\5\uffff\1\10\7\uffff"+
-        "\1\65\5\uffff\1\51\3\uffff\1\54\6\uffff\1\106\1\uffff\1\24\13\uffff"+
-        "\1\52\5\uffff\1\107\6\uffff\1\103\12\uffff\1\14\7\uffff\1\17\1\uffff"+
-        "\1\21\2\uffff\1\67\3\uffff\1\23\3\uffff\1\45\2\uffff\1\101\6\uffff"+
-        "\1\57\1\uffff\1\70\1\5\2\uffff\1\76\1\uffff\1\31\1\55\11\uffff\1"+
-        "\30\6\uffff\1\16\1\uffff\1\104\2\uffff\1\66\1\22\3\uffff\1\25\11"+
-        "\uffff\1\64\3\uffff\1\26\1\75\1\32\1\35\1\102\1\174\1\34\5\uffff"+
-        "\1\60\3\uffff\1\27\1\71\3\uffff\1\33\4\uffff\1\43\1\53\1\63\1\uffff"+
-        "\1\20\5\uffff\1\37\1\15\1\uffff\1\77\1\uffff\1\56\1\61\1\uffff\1"+
-        "\73\1\uffff\1\41\3\uffff\1\62\1\44\1\uffff\1\36\1\74\1\40\3\uffff"+
-        "\1\72\1\6\1\47\1\50\1\uffff\1\42\1\uffff\1\46";
+        "\1\uffff\1\172\1\173\1\175\1\3\1\4\1\127\1\176\1\152\62\uffff\1"+
+        "\171\1\110\1\163\1\uffff\1\112\1\164\1\uffff\1\146\1\167\1\122\1"+
+        "\156\1\150\1\123\1\157\1\160\1\151\1\124\1\137\1\141\1\125\1\140"+
+        "\1\142\1\126\1\143\1\130\1\147\1\131\1\153\1\135\1\134\1\144\1\165"+
+        "\1\170\1\145\1\154\21\uffff\1\11\1\12\1\100\1\uffff\1\13\7\uffff"+
+        "\1\105\43\uffff\1\111\1\132\1\113\1\166\7\uffff\1\7\5\uffff\1\10"+
+        "\7\uffff\1\65\5\uffff\1\51\3\uffff\1\54\6\uffff\1\106\1\uffff\1"+
+        "\24\13\uffff\1\52\5\uffff\1\107\6\uffff\1\103\12\uffff\1\14\7\uffff"+
+        "\1\17\1\uffff\1\21\2\uffff\1\67\3\uffff\1\23\3\uffff\1\45\2\uffff"+
+        "\1\101\6\uffff\1\57\1\uffff\1\70\1\5\2\uffff\1\76\1\uffff\1\31\1"+
+        "\55\11\uffff\1\30\6\uffff\1\16\1\uffff\1\104\2\uffff\1\66\1\22\3"+
+        "\uffff\1\25\11\uffff\1\64\3\uffff\1\26\1\75\1\32\1\35\1\102\1\174"+
+        "\1\34\5\uffff\1\60\3\uffff\1\27\1\71\3\uffff\1\33\4\uffff\1\43\1"+
+        "\53\1\63\1\uffff\1\20\5\uffff\1\37\1\15\1\uffff\1\77\1\uffff\1\56"+
+        "\1\61\1\uffff\1\73\1\uffff\1\41\3\uffff\1\62\1\44\1\uffff\1\36\1"+
+        "\74\1\40\3\uffff\1\72\1\6\1\47\1\50\1\uffff\1\42\1\uffff\1\46";
     static final String DFA37_specialS =
-        "\33\uffff\1\0\u0198\uffff}>";
+        "\33\uffff\1\0\u0199\uffff}>";
     static final String[] DFA37_transitionS = {
             "\2\1\1\uffff\2\1\22\uffff\1\1\1\56\1\33\1\64\1\uffff\1\51\1"+
             "\46\1\63\1\41\1\42\1\50\1\43\1\35\1\44\1\62\1\3\1\27\11\32\1"+
-            "\54\1\36\1\34\1\55\1\52\1\53\1\30\32\31\1\37\1\uffff\1\40\1"+
-            "\47\1\31\1\uffff\1\11\1\26\1\5\1\13\1\22\1\17\1\7\1\31\1\10"+
-            "\2\31\1\25\1\31\1\20\1\14\1\23\1\31\1\24\1\6\1\16\1\4\1\12\1"+
-            "\15\1\31\1\21\1\31\1\60\1\45\1\61\1\57",
+            "\54\1\36\1\34\1\55\1\52\1\53\1\30\32\31\1\37\1\65\1\40\1\47"+
+            "\1\31\1\uffff\1\11\1\26\1\5\1\13\1\22\1\17\1\7\1\31\1\10\2\31"+
+            "\1\25\1\31\1\20\1\14\1\23\1\31\1\24\1\6\1\16\1\4\1\12\1\15\1"+
+            "\31\1\21\1\31\1\60\1\45\1\61\1\57",
             "",
             "",
-            "\1\65\2\uffff\1\70\1\uffff\1\66\15\uffff\1\67",
-            "\1\73\4\uffff\1\72",
-            "\1\76\12\uffff\1\75\2\uffff\1\74",
-            "\1\77\3\uffff\1\100\12\uffff\1\101\2\uffff\1\102",
-            "\1\103\6\uffff\1\104",
-            "\1\107\7\uffff\1\105\4\uffff\1\106",
-            "\1\111\20\uffff\1\110",
-            "\1\114\7\uffff\1\113\5\uffff\1\112",
-            "\1\116\11\uffff\1\117\11\uffff\1\115",
-            "\1\122\1\121\1\120",
-            "\1\123\2\uffff\1\124",
-            "\1\127\11\uffff\1\125\6\uffff\1\126",
-            "\1\130\7\uffff\1\131\5\uffff\1\132",
-            "\1\135\3\uffff\1\134\17\uffff\1\133",
-            "\1\136",
-            "\1\142\1\uffff\1\140\3\uffff\1\141\5\uffff\1\137",
-            "\1\145\20\uffff\1\143\2\uffff\1\144",
-            "\1\146",
+            "\1\66\2\uffff\1\71\1\uffff\1\67\15\uffff\1\70",
+            "\1\74\4\uffff\1\73",
+            "\1\77\12\uffff\1\76\2\uffff\1\75",
+            "\1\100\3\uffff\1\101\12\uffff\1\102\2\uffff\1\103",
+            "\1\104\6\uffff\1\105",
+            "\1\110\7\uffff\1\106\4\uffff\1\107",
+            "\1\112\20\uffff\1\111",
+            "\1\115\7\uffff\1\114\5\uffff\1\113",
+            "\1\117\11\uffff\1\120\11\uffff\1\116",
+            "\1\123\1\122\1\121",
+            "\1\124\2\uffff\1\125",
+            "\1\130\11\uffff\1\126\6\uffff\1\127",
+            "\1\131\7\uffff\1\132\5\uffff\1\133",
+            "\1\136\3\uffff\1\135\17\uffff\1\134",
+            "\1\137",
+            "\1\143\1\uffff\1\141\3\uffff\1\142\5\uffff\1\140",
+            "\1\146\20\uffff\1\144\2\uffff\1\145",
             "\1\147",
-            "\1\151\20\uffff\1\150",
-            "\12\32\7\uffff\3\31\1\155\1\153\1\155\24\31\4\uffff\1\31\1"+
-            "\uffff\3\31\1\155\1\153\1\155\21\31\1\152\2\31",
-            "\1\156\15\uffff\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32"+
+            "\1\150",
+            "\1\152\20\uffff\1\151",
+            "\12\32\7\uffff\3\31\1\156\1\154\1\156\24\31\4\uffff\1\31\1"+
+            "\uffff\3\31\1\156\1\154\1\156\21\31\1\153\2\31",
+            "\1\157\15\uffff\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32"+
             "\31",
             "",
-            "\12\32\7\uffff\3\31\1\155\1\153\1\155\24\31\4\uffff\1\31\1"+
-            "\uffff\3\31\1\155\1\153\1\155\24\31",
-            "\42\160\1\157\uffdd\160",
-            "\1\162\1\163",
+            "\12\32\7\uffff\3\31\1\156\1\154\1\156\24\31\4\uffff\1\31\1"+
+            "\uffff\3\31\1\156\1\154\1\156\24\31",
+            "\42\161\1\160\uffdd\161",
+            "\1\163\1\164",
             "",
             "",
             "",
             "",
             "",
             "",
-            "\1\166\21\uffff\1\165",
-            "\1\171\17\uffff\1\170\1\172",
-            "\1\174\76\uffff\1\175",
-            "\1\u0080\26\uffff\1\177",
-            "\1\u0082",
-            "\1\u0084",
-            "\1\u0086",
+            "\1\167\21\uffff\1\166",
+            "\1\172\17\uffff\1\171\1\173",
+            "\1\175\76\uffff\1\176",
+            "\1\u0081\26\uffff\1\u0080",
+            "\1\u0083",
+            "\1\u0085",
+            "\1\u0087",
             "",
-            "\1\u0088",
+            "\1\u0089",
             "",
-            "\1\u008a\1\u008b",
-            "\1\u008d",
-            "",
-            "",
-            "",
-            "\1\u008f",
-            "",
-            "",
-            "",
-            "",
+            "\1\u008b\1\u008c",
+            "\1\u008e",
             "",
             "",
             "",
             "\1\u0090",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "\1\u0091",
             "\1\u0092",
             "\1\u0093",
-            "\1\u0095\1\u0094",
-            "\1\u0096",
-            "\1\u0098\22\uffff\1\u0097",
-            "\1\u009a\20\uffff\1\u0099",
-            "\1\u009b",
+            "\1\u0094",
+            "\1\u0096\1\u0095",
+            "\1\u0097",
+            "\1\u0099\22\uffff\1\u0098",
+            "\1\u009b\20\uffff\1\u009a",
             "\1\u009c",
             "\1\u009d",
-            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\13\31\1\u009e\7"+
-            "\31\1\u009f\6\31",
+            "\1\u009e",
+            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\13\31\1\u009f\7"+
+            "\31\1\u00a0\6\31",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\30\31\1\u00a3\1"+
+            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\30\31\1\u00a4\1"+
             "\31",
-            "\1\u00a5",
             "\1\u00a6",
             "\1\u00a7",
             "\1\u00a8",
             "\1\u00a9",
-            "\1\u00ab\5\uffff\1\u00aa",
+            "\1\u00aa",
+            "\1\u00ac\5\uffff\1\u00ab",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\1\u00ad",
             "\1\u00ae",
             "\1\u00af",
             "\1\u00b0",
             "\1\u00b1",
-            "\1\u00b2\3\uffff\1\u00b3",
-            "\1\u00b4",
-            "\1\u00b6\10\uffff\1\u00b5",
-            "\1\u00b7",
+            "\1\u00b2",
+            "\1\u00b3\3\uffff\1\u00b4",
+            "\1\u00b5",
+            "\1\u00b7\10\uffff\1\u00b6",
             "\1\u00b8",
             "\1\u00b9",
             "\1\u00ba",
@@ -5764,27 +5792,26 @@ public class ValaLexer extends Lexer {
             "\1\u00bc",
             "\1\u00bd",
             "\1\u00be",
-            "\1\u00c0\1\uffff\1\u00bf",
-            "\1\u00c1",
+            "\1\u00bf",
+            "\1\u00c1\1\uffff\1\u00c0",
             "\1\u00c2",
-            "\1\u00c3\5\uffff\1\u00c4",
-            "\1\u00c5",
+            "\1\u00c3",
+            "\1\u00c4\5\uffff\1\u00c5",
             "\1\u00c6",
-            "\1\u00c7\12\uffff\1\u00c9\2\uffff\1\u00c8",
-            "\1\u00ca",
+            "\1\u00c7",
+            "\1\u00c8\12\uffff\1\u00ca\2\uffff\1\u00c9",
             "\1\u00cb",
             "\1\u00cc",
-            "\12\u00ce\7\uffff\6\u00cd\32\uffff\6\u00cd",
-            "\1\154\1\uffff\1\154\2\uffff\12\u00cf",
+            "\1\u00cd",
+            "\12\u00cf\7\uffff\6\u00ce\32\uffff\6\u00ce",
+            "\1\155\1\uffff\1\155\2\uffff\12\u00d0",
             "",
-            "",
-            "",
-            "\1\u00d0",
             "",
             "",
             "\1\u00d1",
             "",
             "",
+            "\1\u00d2",
             "",
             "",
             "",
@@ -5811,53 +5838,54 @@ public class ValaLexer extends Lexer {
             "",
             "",
             "",
-            "\1\u00d3",
+            "",
+            "",
             "\1\u00d4",
             "\1\u00d5",
-            "\1\u00d6\1\u00d7",
-            "\1\u00d8",
+            "\1\u00d6",
+            "\1\u00d7\1\u00d8",
             "\1\u00d9",
             "\1\u00da",
+            "\1\u00db",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\1\u00dc",
             "\1\u00dd",
             "\1\u00de",
             "\1\u00df",
             "\1\u00e0",
+            "\1\u00e1",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\1\u00e2",
             "\1\u00e3",
             "\1\u00e4",
-            "",
-            "",
-            "",
             "\1\u00e5",
             "",
+            "",
+            "",
             "\1\u00e6",
+            "",
             "\1\u00e7",
             "\1\u00e8",
+            "\1\u00e9",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\1\u00ea",
             "\1\u00eb",
             "\1\u00ec",
-            "",
             "\1\u00ed",
+            "",
             "\1\u00ee",
+            "\1\u00ef",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\1\u00f0",
             "\1\u00f1",
             "\1\u00f2",
+            "\1\u00f3",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\1\u00f4",
             "\1\u00f5",
             "\1\u00f6",
             "\1\u00f7",
             "\1\u00f8",
-            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\4\31\1\u00f9\25"+
+            "\1\u00f9",
+            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\4\31\1\u00fa\25"+
             "\31",
-            "\1\u00fb",
+            "\1\u00fc",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\1\u00fd",
             "\1\u00fe",
             "\1\u00ff",
             "\1\u0100",
@@ -5868,228 +5896,229 @@ public class ValaLexer extends Lexer {
             "\1\u0105",
             "\1\u0106",
             "\1\u0107",
+            "\1\u0108",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\1\u0109",
             "\1\u010a",
             "\1\u010b",
             "\1\u010c",
             "\1\u010d",
-            "\12\u00ce\7\uffff\6\u00cd\24\31\4\uffff\1\31\1\uffff\6\u00cd"+
+            "\1\u010e",
+            "\12\u00cf\7\uffff\6\u00ce\24\31\4\uffff\1\31\1\uffff\6\u00ce"+
             "\24\31",
-            "\12\u00ce\7\uffff\6\u00ce\24\31\4\uffff\1\31\1\uffff\6\u00ce"+
+            "\12\u00cf\7\uffff\6\u00cf\24\31\4\uffff\1\31\1\uffff\6\u00cf"+
             "\24\31",
-            "\12\u00cf",
+            "\12\u00d0",
             "",
             "",
             "",
             "",
-            "\1\u010f",
             "\1\u0110",
             "\1\u0111",
             "\1\u0112",
             "\1\u0113",
             "\1\u0114",
+            "\1\u0115",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
             "",
-            "\1\u0116",
             "\1\u0117",
             "\1\u0118",
             "\1\u0119",
             "\1\u011a",
-            "",
             "\1\u011b",
+            "",
             "\1\u011c",
             "\1\u011d",
             "\1\u011e",
             "\1\u011f",
+            "\1\u0120",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\1\u0121",
-            "",
             "\1\u0122",
-            "\1\u0124\14\uffff\1\u0123",
-            "\1\u0125",
+            "",
+            "\1\u0123",
+            "\1\u0125\14\uffff\1\u0124",
             "\1\u0126",
             "\1\u0127",
+            "\1\u0128",
             "",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\1\u0129",
+            "\1\u012a",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
             "",
-            "\1\u012b",
             "\1\u012c",
+            "\1\u012d",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\1\u012e",
             "\1\u012f",
             "\1\u0130",
+            "\1\u0131",
             "",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
             "",
-            "\1\u0132",
             "\1\u0133",
             "\1\u0134",
+            "\1\u0135",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\1\u0136",
             "\1\u0137",
+            "\1\u0138",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\1\u0139",
             "\1\u013a",
             "\1\u013b",
             "\1\u013c",
-            "",
             "\1\u013d",
+            "",
             "\1\u013e",
+            "\1\u013f",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\1\u0140",
+            "\1\u0141",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
             "",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\1\u0143",
-            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\21\31\1\u0144\10"+
+            "\1\u0144",
+            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\21\31\1\u0145\10"+
             "\31",
-            "\1\u0146",
+            "\1\u0147",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
             "",
-            "\1\u0149",
             "\1\u014a",
             "\1\u014b",
             "\1\u014c",
             "\1\u014d",
             "\1\u014e",
             "\1\u014f",
-            "\1\u0151\7\uffff\1\u0150",
+            "\1\u0150",
+            "\1\u0152\7\uffff\1\u0151",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\1\u0153",
-            "",
             "\1\u0154",
+            "",
             "\1\u0155",
             "\1\u0156",
             "\1\u0157",
             "\1\u0158",
+            "\1\u0159",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\1\u015a",
+            "\1\u015b",
             "",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
             "",
-            "\1\u015c",
-            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\22\31\1\u015d\7"+
+            "\1\u015d",
+            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\22\31\1\u015e\7"+
             "\31",
             "",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\1\u0160",
             "\1\u0161",
-            "",
             "\1\u0162",
+            "",
+            "\1\u0163",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\1\u0164",
-            "",
             "\1\u0165",
-            "\1\u0166",
             "",
+            "\1\u0166",
             "\1\u0167",
+            "",
             "\1\u0168",
             "\1\u0169",
             "\1\u016a",
             "\1\u016b",
             "\1\u016c",
+            "\1\u016d",
             "",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
             "",
             "",
-            "\1\u016e",
             "\1\u016f",
-            "",
             "\1\u0170",
             "",
+            "\1\u0171",
+            "",
             "",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\1\u0176",
+            "\1\u0177",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\1\u0178",
             "\1\u0179",
-            "",
             "\1\u017a",
+            "",
             "\1\u017b",
             "\1\u017c",
+            "\1\u017d",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\1\u017e",
             "\1\u017f",
-            "",
             "\1\u0180",
             "",
+            "\1\u0181",
+            "",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
             "",
             "",
-            "\1\u0183",
             "\1\u0184",
             "\1\u0185",
+            "\1\u0186",
             "",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\1\u0187",
             "\1\u0188",
             "\1\u0189",
             "\1\u018a",
+            "\1\u018b",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\1\u018e",
+            "\1\u018f",
             "",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\1\u0190",
             "\1\u0191",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
             "\1\u0192",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "\1\u0193",
             "\1\u0194",
+            "\1\u0195",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
             "",
-            "\1\u0197",
+            "\1\u0198",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\1\u0199",
+            "\1\u019a",
             "",
-            "",
-            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\1\u019c",
             "",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\1\u019e",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\1\u01a0",
+            "\1\u019d",
             "",
-            "",
-            "",
+            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
+            "\1\u019f",
+            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
             "\1\u01a1",
             "",
+            "",
+            "",
             "\1\u01a2",
-            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\1\u01a5",
-            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
             "",
-            "",
+            "\1\u01a3",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "",
+            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
+            "\1\u01a6",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
             "",
             "",
-            "\1\u01a9",
+            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
+            "",
+            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
+            "",
             "",
             "\1\u01aa",
             "",
             "\1\u01ab",
+            "",
+            "\1\u01ac",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
             "",
@@ -6099,13 +6128,13 @@ public class ValaLexer extends Lexer {
             "",
             "",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
-            "\1\u01b0",
+            "\1\u01b1",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
             "",
             "",
             "",
             "",
-            "\1\u01b2",
+            "\1\u01b3",
             "",
             "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
             ""
@@ -6141,7 +6170,7 @@ public class ValaLexer extends Lexer {
             this.transition = DFA37_transition;
         }
         public String getDescription() {
-            return "1:1: Tokens : ( WHITESPACE | COMMENT_JAVADOC | COMMENT | LINE_COMMENT | KW_USING | KW_CONSTRUCT | KW_SET | KW_GET | KW_IN | KW_IS | KW_AS | KW_VOID | KW_DYNAMIC | KW_OWNED | KW_WEAK | KW_UNOWNED | KW_TRUE | KW_FALSE | KW_NULL | KW_NEW | KW_YIELD | KW_SIZEOF | KW_TYPEOF | KW_ASYNC | KW_CLASS | KW_STRUCT | KW_EXTERN | KW_INLINE | KW_STATIC | KW_ABSTRACT | KW_VIRTUAL | KW_OVERRIDE | KW_PRIVATE | KW_PROTECTED | KW_PUBLIC | KW_INTERNAL | KW_ENUM | KW_ERRORDOMAIN | KW_INTERFACE | KW_NAMESPACE | KW_OUT | KW_REF | KW_PARAMS | KW_TRY | KW_CATCH | KW_FINALLY | KW_LOCK | KW_DELETE | KW_FOREACH | KW_CONTINUE | KW_RETURN | KW_BREAK | KW_VAR | KW_THROW | KW_THIS | KW_BASE | KW_THROWS | KW_REQUIRES | KW_ENSURES | KW_DELEGATE | KW_SIGNAL | KW_CONST | KW_DEFAULT | KW_IF | KW_ELSE | KW_SWITCH | KW_CASE | KW_WHILE | KW_DO | KW_FOR | HEX | IDENTIFIER | VERBATIM_LITERAL | STRING | SHIFT_LEFT | COMMA | SEMICOLON | LBRACKET | RBRACKET | LPAREN | RPAREN | INCR_ASSIGN | DECR_ASSIGN | OR_ASSIGN | AND_ASSIGN | XOR_ASSIGN | DIV_ASSIGN | MUL_ASSIGN | MOD_ASSIGN | SHL_ASSIGN | GT | QUESTION | COALESCE | COLON | BOOL_OR | BOOL_AND | OR | AND | XOR | EQUAL | NOT_EQUAL | LTEQ | MULTIPLY | PLUS | MINUS | DIV | MOD | NOT | BITWISE_NOT | INCREMENT | DECREMENT | POINTER_ACCESS | LCURL | RCURL | TEMPLATE_START | QUOT | LAMBDA | ELIPSIS | LT | ASSIGNMENT | REAL | CHAR | LINE_COMMAND | GLOBAL_NS | REGEX_LITERAL );";
+            return "1:1: Tokens : ( WHITESPACE | COMMENT_JAVADOC | COMMENT | LINE_COMMENT | KW_USING | KW_CONSTRUCT | KW_SET | KW_GET | KW_IN | KW_IS | KW_AS | KW_VOID | KW_DYNAMIC | KW_OWNED | KW_WEAK | KW_UNOWNED | KW_TRUE | KW_FALSE | KW_NULL | KW_NEW | KW_YIELD | KW_SIZEOF | KW_TYPEOF | KW_ASYNC | KW_CLASS | KW_STRUCT | KW_EXTERN | KW_INLINE | KW_STATIC | KW_ABSTRACT | KW_VIRTUAL | KW_OVERRIDE | KW_PRIVATE | KW_PROTECTED | KW_PUBLIC | KW_INTERNAL | KW_ENUM | KW_ERRORDOMAIN | KW_INTERFACE | KW_NAMESPACE | KW_OUT | KW_REF | KW_PARAMS | KW_TRY | KW_CATCH | KW_FINALLY | KW_LOCK | KW_DELETE | KW_FOREACH | KW_CONTINUE | KW_RETURN | KW_BREAK | KW_VAR | KW_THROW | KW_THIS | KW_BASE | KW_THROWS | KW_REQUIRES | KW_ENSURES | KW_DELEGATE | KW_SIGNAL | KW_CONST | KW_DEFAULT | KW_IF | KW_ELSE | KW_SWITCH | KW_CASE | KW_WHILE | KW_DO | KW_FOR | HEX | IDENTIFIER | VERBATIM_LITERAL | STRING | SHIFT_LEFT | COMMA | SEMICOLON | LBRACKET | RBRACKET | LPAREN | RPAREN | INCR_ASSIGN | DECR_ASSIGN | OR_ASSIGN | AND_ASSIGN | XOR_ASSIGN | DIV_ASSIGN | MUL_ASSIGN | MOD_ASSIGN | SHL_ASSIGN | GT | QUESTION | COALESCE | COLON | BOOL_OR | BOOL_AND | OR | AND | XOR | EQUAL | NOT_EQUAL | LTEQ | MULTIPLY | PLUS | MINUS | DIV | MOD | NOT | BITWISE_NOT | INCREMENT | DECREMENT | POINTER_ACCESS | LCURL | RCURL | TEMPLATE_START | QUOT | LAMBDA | ELIPSIS | LT | ASSIGNMENT | REAL | CHAR | LINE_COMMAND | GLOBAL_NS | BACKSLASH | REGEX_LITERAL );";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             IntStream input = _input;
@@ -6151,11 +6180,11 @@ public class ValaLexer extends Lexer {
                         int LA37_27 = input.LA(1);
 
                         s = -1;
-                        if ( (LA37_27=='\"') ) {s = 111;}
+                        if ( (LA37_27=='\"') ) {s = 112;}
 
-                        else if ( ((LA37_27>='\u0000' && LA37_27<='!')||(LA37_27>='#' && LA37_27<='\uFFFF')) ) {s = 112;}
+                        else if ( ((LA37_27>='\u0000' && LA37_27<='!')||(LA37_27>='#' && LA37_27<='\uFFFF')) ) {s = 113;}
 
-                        else s = 113;
+                        else s = 114;
 
                         if ( s>=0 ) return s;
                         break;

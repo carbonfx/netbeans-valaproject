@@ -14,12 +14,19 @@ tokens { UNKNOWN_CHAIN; }
 
 @members {
 	public List<SyntaxError> syntaxErrors = new ArrayList<SyntaxError>();
+	private java.util.regex.Pattern msgPattern = java.util.regex.Pattern.compile(".*missing KW_([A-Z]*) at (.*)");
 
 	@Override
 	public String getErrorMessage(RecognitionException e, String[] tokenNames) {
 		String message = super.getErrorMessage(e, tokenNames);
 		SyntaxError syntaxError = new SyntaxError();
 		syntaxError.exception = e;
+		
+		java.util.regex.Matcher m = msgPattern.matcher(message);
+		if (m.matches()) {
+			message = "'"+m.group(1).toLowerCase() + "' expected at " + m.group(2);
+		}
+		
 		syntaxError.message = message;
 		syntaxErrors.add(syntaxError);
 		return message;
@@ -72,8 +79,8 @@ namespace_member
 	| errordomain_declaration 
 	| method_declaration 
 	| delegate_declaration 
-	| field_declaration 
-	| constant_declaration );
+	| constant_declaration	
+	| field_declaration );
 
 attributes 
 	: (attribute
@@ -1448,7 +1455,7 @@ STRING
 	'"'  
 	( 
 		ESCAPE 
-		| ~('\\' | '"') 
+		| ~(BACKSLASH | QUOT) 
 	)* 
 	'"'
     	;
@@ -1667,9 +1674,9 @@ fragment
 DIGITS
     :   ('0'..'9')+
     ;
-	
+    
 CHAR
-	:  '\''  ( ESCAPE | ~('\''|'\\') ) '\''
+	:  '\''  ( ESCAPE | ~('\'' | BACKSLASH) ) '\''
 	;
 	
 LINE_COMMAND 
@@ -1689,26 +1696,29 @@ HEXDIGIT : ('0'..'9'|'a'..'f'|'A'..'F') ;
 
 fragment
 ESCAPE
-    	: '\\'  ('b'|'t'|'n'|'f'|'r'|'\"'|'\''|'\\')
+    	: BACKSLASH  ('b'|'t'|'n'|'f'|'r'|'\"'|'\''|BACKSLASH)
     	| UNICODE
     	| OCTAL
     	;
 
 fragment
 OCTAL
-	: '\\'  ('0'..'3') ('0'..'7') ('0'..'7')
-	| '\\'  ('0'..'7') ('0'..'7')
-	| '\\'  ('0'..'7')
+	: BACKSLASH ('0'..'3') ('0'..'7') ('0'..'7')
+	| BACKSLASH ('0'..'7') ('0'..'7')
+	| BACKSLASH ('0'..'7')
 	;
 
 fragment
 UNICODE
-	    :   '\\'  'u' HEXDIGIT HEXDIGIT HEXDIGIT HEXDIGIT
+	    :   BACKSLASH 'u' HEXDIGIT HEXDIGIT HEXDIGIT HEXDIGIT
 	    ;
 	    
 GLOBAL_NS
 	:
 	'global::';
+	
+BACKSLASH 
+	: '\\';
 
 // todo: implement regular expressions
 REGEX_LITERAL

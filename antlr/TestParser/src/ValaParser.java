@@ -1,4 +1,4 @@
-// $ANTLR 3.3 Nov 30, 2010 12:45:30 c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g 2011-03-04 03:00:39
+// $ANTLR 3.3 Nov 30, 2010 12:45:30 c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g 2011-03-04 18:45:38
  package org.carbonfx.valaproject.antlr; 
 
 import org.antlr.runtime.*;
@@ -12,7 +12,7 @@ import org.antlr.runtime.tree.*;
 
 public class ValaParser extends Parser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "UNKNOWN_CHAIN", "KW_USING", "COMMA", "SEMICOLON", "DOT", "GLOBAL_NS", "IDENTIFIER", "LBRACKET", "RBRACKET", "LPAREN", "RPAREN", "ASSIGNMENT", "INCR_ASSIGN", "DECR_ASSIGN", "OR_ASSIGN", "AND_ASSIGN", "XOR_ASSIGN", "DIV_ASSIGN", "MUL_ASSIGN", "MOD_ASSIGN", "SHL_ASSIGN", "SHR_ASSIGN", "QUESTION", "COLON", "COALESCE", "BOOL_OR", "BOOL_AND", "KW_IN", "OR", "XOR", "AND", "EQUAL", "NOT_EQUAL", "LT", "GT", "LTEQ", "GTEQ", "KW_IS", "KW_AS", "KW_VOID", "MULTIPLY", "KW_DYNAMIC", "KW_OWNED", "KW_UNOWNED", "KW_WEAK", "SHIFT_LEFT", "PLUS", "MINUS", "DIV", "MOD", "NOT", "BITWISE_NOT", "INCREMENT", "DECREMENT", "KW_CONSTRUCT", "KW_SET", "KW_GET", "KW_TRUE", "KW_FALSE", "KW_NULL", "KW_NEW", "KW_YIELD", "KW_SIZEOF", "KW_TYPEOF", "KW_ASYNC", "KW_CLASS", "KW_STRUCT", "KW_EXTERN", "KW_INLINE", "KW_STATIC", "KW_ABSTRACT", "KW_VIRTUAL", "KW_OVERRIDE", "KW_PRIVATE", "KW_PROTECTED", "KW_PUBLIC", "KW_INTERNAL", "KW_ENUM", "KW_ERRORDOMAIN", "KW_INTERFACE", "KW_NAMESPACE", "KW_OUT", "KW_REF", "KW_PARAMS", "KW_TRY", "KW_CATCH", "KW_FINALLY", "KW_LOCK", "KW_DELETE", "KW_FOREACH", "KW_CONTINUE", "KW_RETURN", "KW_BREAK", "KW_VAR", "KW_THROW", "POINTER_ACCESS", "INTEGER", "REAL", "STRING", "HEX", "CHAR", "REGEX_LITERAL", "VERBATIM_LITERAL", "LCURL", "RCURL", "TEMPLATE_START", "QUOT", "KW_THIS", "KW_BASE", "LAMBDA", "KW_THROWS", "KW_REQUIRES", "ELIPSIS", "KW_ENSURES", "KW_DELEGATE", "KW_SIGNAL", "KW_CONST", "KW_DEFAULT", "KW_IF", "KW_ELSE", "KW_SWITCH", "KW_CASE", "KW_WHILE", "KW_DO", "KW_FOR", "WHITESPACE", "COMMENT_JAVADOC", "COMMENT", "LINE_COMMENT", "HEXDIGIT", "ESCAPE", "BACKSLASH", "RANGE", "DIGITS", "EXPONENT", "LINE_COMMAND", "UNICODE", "OCTAL"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "UNKNOWN_CHAIN", "KW_USING", "COMMA", "SEMICOLON", "DOT", "GLOBAL_NS", "IDENTIFIER", "LBRACKET", "RBRACKET", "LPAREN", "RPAREN", "ASSIGNMENT", "INCR_ASSIGN", "DECR_ASSIGN", "OR_ASSIGN", "AND_ASSIGN", "XOR_ASSIGN", "DIV_ASSIGN", "MUL_ASSIGN", "MOD_ASSIGN", "SHL_ASSIGN", "SHR_ASSIGN", "QUESTION", "COLON", "COALESCE", "BOOL_OR", "BOOL_AND", "KW_IN", "OR", "XOR", "AND", "EQUAL", "NOT_EQUAL", "LT", "GT", "LTEQ", "GTEQ", "KW_IS", "KW_AS", "KW_VOID", "MULTIPLY", "KW_DYNAMIC", "KW_OWNED", "KW_UNOWNED", "KW_WEAK", "SHIFT_LEFT", "PLUS", "MINUS", "DIV", "MOD", "NOT", "BITWISE_NOT", "INCREMENT", "DECREMENT", "KW_CONSTRUCT", "KW_SET", "KW_GET", "KW_TRUE", "KW_FALSE", "KW_NULL", "KW_NEW", "KW_YIELD", "KW_SIZEOF", "KW_TYPEOF", "KW_ASYNC", "KW_CLASS", "KW_STRUCT", "KW_EXTERN", "KW_INLINE", "KW_STATIC", "KW_ABSTRACT", "KW_VIRTUAL", "KW_OVERRIDE", "KW_PRIVATE", "KW_PROTECTED", "KW_PUBLIC", "KW_INTERNAL", "KW_ENUM", "KW_ERRORDOMAIN", "KW_INTERFACE", "KW_NAMESPACE", "KW_OUT", "KW_REF", "KW_PARAMS", "KW_TRY", "KW_CATCH", "KW_FINALLY", "KW_LOCK", "KW_DELETE", "KW_FOREACH", "KW_CONTINUE", "KW_RETURN", "KW_BREAK", "KW_VAR", "KW_THROW", "KW_SIGNAL", "KW_REQUIRES", "POINTER_ACCESS", "INTEGER", "REAL", "STRING", "HEX", "CHAR", "REGEX_LITERAL", "VERBATIM_LITERAL", "LCURL", "RCURL", "TEMPLATE_START", "QUOT", "KW_THIS", "KW_BASE", "LAMBDA", "KW_THROWS", "ELIPSIS", "KW_ENSURES", "KW_DELEGATE", "KW_CONST", "KW_DEFAULT", "KW_IF", "KW_ELSE", "KW_SWITCH", "KW_CASE", "KW_WHILE", "KW_DO", "KW_FOR", "WHITESPACE", "COMMENT_JAVADOC", "COMMENT", "LINE_COMMENT", "HEXDIGIT", "ESCAPE", "BACKSLASH", "RANGE", "DIGITS", "EXPONENT", "LINE_COMMAND", "UNICODE", "OCTAL", "UNICODE_CHAR"
     };
     public static final int EOF=-1;
     public static final int UNKNOWN_CHAIN=4;
@@ -110,27 +110,27 @@ public class ValaParser extends Parser {
     public static final int KW_BREAK=96;
     public static final int KW_VAR=97;
     public static final int KW_THROW=98;
-    public static final int POINTER_ACCESS=99;
-    public static final int INTEGER=100;
-    public static final int REAL=101;
-    public static final int STRING=102;
-    public static final int HEX=103;
-    public static final int CHAR=104;
-    public static final int REGEX_LITERAL=105;
-    public static final int VERBATIM_LITERAL=106;
-    public static final int LCURL=107;
-    public static final int RCURL=108;
-    public static final int TEMPLATE_START=109;
-    public static final int QUOT=110;
-    public static final int KW_THIS=111;
-    public static final int KW_BASE=112;
-    public static final int LAMBDA=113;
-    public static final int KW_THROWS=114;
-    public static final int KW_REQUIRES=115;
-    public static final int ELIPSIS=116;
-    public static final int KW_ENSURES=117;
-    public static final int KW_DELEGATE=118;
-    public static final int KW_SIGNAL=119;
+    public static final int KW_SIGNAL=99;
+    public static final int KW_REQUIRES=100;
+    public static final int POINTER_ACCESS=101;
+    public static final int INTEGER=102;
+    public static final int REAL=103;
+    public static final int STRING=104;
+    public static final int HEX=105;
+    public static final int CHAR=106;
+    public static final int REGEX_LITERAL=107;
+    public static final int VERBATIM_LITERAL=108;
+    public static final int LCURL=109;
+    public static final int RCURL=110;
+    public static final int TEMPLATE_START=111;
+    public static final int QUOT=112;
+    public static final int KW_THIS=113;
+    public static final int KW_BASE=114;
+    public static final int LAMBDA=115;
+    public static final int KW_THROWS=116;
+    public static final int ELIPSIS=117;
+    public static final int KW_ENSURES=118;
+    public static final int KW_DELEGATE=119;
     public static final int KW_CONST=120;
     public static final int KW_DEFAULT=121;
     public static final int KW_IF=122;
@@ -153,6 +153,7 @@ public class ValaParser extends Parser {
     public static final int LINE_COMMAND=139;
     public static final int UNICODE=140;
     public static final int OCTAL=141;
+    public static final int UNICODE_CHAR=142;
 
     // delegates
     // delegators
@@ -163,7 +164,7 @@ public class ValaParser extends Parser {
         }
         public ValaParser(TokenStream input, RecognizerSharedState state) {
             super(input, state);
-            this.state.ruleMemo = new HashMap[566+1];
+            this.state.ruleMemo = new HashMap[568+1];
              
              
         }
@@ -249,7 +250,7 @@ public class ValaParser extends Parser {
             	case 1 :
             	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:45:3: using_directive
             	    {
-            	    pushFollow(FOLLOW_using_directive_in_compilation_unit89);
+            	    pushFollow(FOLLOW_using_directive_in_compilation_unit90);
             	    using_directive1=using_directive();
 
             	    state._fsp--;
@@ -270,7 +271,7 @@ public class ValaParser extends Parser {
                 int alt2=2;
                 int LA2_0 = input.LA(1);
 
-                if ( ((LA2_0>=GLOBAL_NS && LA2_0<=LBRACKET)||LA2_0==KW_VOID||(LA2_0>=KW_DYNAMIC && LA2_0<=KW_WEAK)||LA2_0==KW_NEW||(LA2_0>=KW_ASYNC && LA2_0<=KW_NAMESPACE)||LA2_0==KW_DELEGATE||LA2_0==KW_CONST) ) {
+                if ( ((LA2_0>=GLOBAL_NS && LA2_0<=LBRACKET)||LA2_0==KW_VOID||(LA2_0>=KW_DYNAMIC && LA2_0<=KW_WEAK)||LA2_0==KW_NEW||(LA2_0>=KW_ASYNC && LA2_0<=KW_NAMESPACE)||(LA2_0>=KW_DELEGATE && LA2_0<=KW_CONST)) ) {
                     alt2=1;
                 }
 
@@ -279,7 +280,7 @@ public class ValaParser extends Parser {
             	case 1 :
             	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:46:3: namespace_member
             	    {
-            	    pushFollow(FOLLOW_namespace_member_in_compilation_unit95);
+            	    pushFollow(FOLLOW_namespace_member_in_compilation_unit96);
             	    namespace_member2=namespace_member();
 
             	    state._fsp--;
@@ -350,12 +351,12 @@ public class ValaParser extends Parser {
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            KW_USING3=(Token)match(input,KW_USING,FOLLOW_KW_USING_in_using_directive109); if (state.failed) return retval;
+            KW_USING3=(Token)match(input,KW_USING,FOLLOW_KW_USING_in_using_directive110); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             KW_USING3_tree = (CommonTree)adaptor.create(KW_USING3);
             adaptor.addChild(root_0, KW_USING3_tree);
             }
-            pushFollow(FOLLOW_symbol_in_using_directive112);
+            pushFollow(FOLLOW_symbol_in_using_directive113);
             symbol4=symbol();
 
             state._fsp--;
@@ -376,12 +377,12 @@ public class ValaParser extends Parser {
             	case 1 :
             	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:53:3: COMMA symbol
             	    {
-            	    COMMA5=(Token)match(input,COMMA,FOLLOW_COMMA_in_using_directive120); if (state.failed) return retval;
+            	    COMMA5=(Token)match(input,COMMA,FOLLOW_COMMA_in_using_directive121); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
             	    COMMA5_tree = (CommonTree)adaptor.create(COMMA5);
             	    adaptor.addChild(root_0, COMMA5_tree);
             	    }
-            	    pushFollow(FOLLOW_symbol_in_using_directive125);
+            	    pushFollow(FOLLOW_symbol_in_using_directive126);
             	    symbol6=symbol();
 
             	    state._fsp--;
@@ -396,7 +397,7 @@ public class ValaParser extends Parser {
                 }
             } while (true);
 
-            SEMICOLON7=(Token)match(input,SEMICOLON,FOLLOW_SEMICOLON_in_using_directive133); if (state.failed) return retval;
+            SEMICOLON7=(Token)match(input,SEMICOLON,FOLLOW_SEMICOLON_in_using_directive134); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             SEMICOLON7_tree = (CommonTree)adaptor.create(SEMICOLON7);
             adaptor.addChild(root_0, SEMICOLON7_tree);
@@ -453,7 +454,7 @@ public class ValaParser extends Parser {
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            pushFollow(FOLLOW_symbol_part_in_symbol144);
+            pushFollow(FOLLOW_symbol_part_in_symbol145);
             symbol_part8=symbol_part();
 
             state._fsp--;
@@ -474,12 +475,12 @@ public class ValaParser extends Parser {
             	case 1 :
             	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:62:3: DOT symbol_part
             	    {
-            	    DOT9=(Token)match(input,DOT,FOLLOW_DOT_in_symbol152); if (state.failed) return retval;
+            	    DOT9=(Token)match(input,DOT,FOLLOW_DOT_in_symbol153); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
             	    DOT9_tree = (CommonTree)adaptor.create(DOT9);
             	    adaptor.addChild(root_0, DOT9_tree);
             	    }
-            	    pushFollow(FOLLOW_symbol_part_in_symbol156);
+            	    pushFollow(FOLLOW_symbol_part_in_symbol157);
             	    symbol_part10=symbol_part();
 
             	    state._fsp--;
@@ -567,12 +568,12 @@ public class ValaParser extends Parser {
                     // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:68:2: ( GLOBAL_NS IDENTIFIER )
                     // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:68:4: GLOBAL_NS IDENTIFIER
                     {
-                    GLOBAL_NS11=(Token)match(input,GLOBAL_NS,FOLLOW_GLOBAL_NS_in_symbol_part174); if (state.failed) return retval;
+                    GLOBAL_NS11=(Token)match(input,GLOBAL_NS,FOLLOW_GLOBAL_NS_in_symbol_part175); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     GLOBAL_NS11_tree = (CommonTree)adaptor.create(GLOBAL_NS11);
                     adaptor.addChild(root_0, GLOBAL_NS11_tree);
                     }
-                    IDENTIFIER12=(Token)match(input,IDENTIFIER,FOLLOW_IDENTIFIER_in_symbol_part176); if (state.failed) return retval;
+                    IDENTIFIER12=(Token)match(input,IDENTIFIER,FOLLOW_IDENTIFIER_in_symbol_part177); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     IDENTIFIER12_tree = (CommonTree)adaptor.create(IDENTIFIER12);
                     adaptor.addChild(root_0, IDENTIFIER12_tree);
@@ -588,7 +589,7 @@ public class ValaParser extends Parser {
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    IDENTIFIER13=(Token)match(input,IDENTIFIER,FOLLOW_IDENTIFIER_in_symbol_part184); if (state.failed) return retval;
+                    IDENTIFIER13=(Token)match(input,IDENTIFIER,FOLLOW_IDENTIFIER_in_symbol_part185); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     IDENTIFIER13_tree = (CommonTree)adaptor.create(IDENTIFIER13);
                     adaptor.addChild(root_0, IDENTIFIER13_tree);
@@ -674,7 +675,7 @@ public class ValaParser extends Parser {
                 case 1 :
                     // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:73:3: attributes
                     {
-                    pushFollow(FOLLOW_attributes_in_namespace_member196);
+                    pushFollow(FOLLOW_attributes_in_namespace_member197);
                     attributes14=attributes();
 
                     state._fsp--;
@@ -693,7 +694,7 @@ public class ValaParser extends Parser {
                 case 1 :
                     // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:74:4: namespace_declaration
                     {
-                    pushFollow(FOLLOW_namespace_declaration_in_namespace_member203);
+                    pushFollow(FOLLOW_namespace_declaration_in_namespace_member204);
                     namespace_declaration15=namespace_declaration();
 
                     state._fsp--;
@@ -705,7 +706,7 @@ public class ValaParser extends Parser {
                 case 2 :
                     // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:75:4: class_declaration
                     {
-                    pushFollow(FOLLOW_class_declaration_in_namespace_member208);
+                    pushFollow(FOLLOW_class_declaration_in_namespace_member209);
                     class_declaration16=class_declaration();
 
                     state._fsp--;
@@ -717,7 +718,7 @@ public class ValaParser extends Parser {
                 case 3 :
                     // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:76:4: interface_declaration
                     {
-                    pushFollow(FOLLOW_interface_declaration_in_namespace_member214);
+                    pushFollow(FOLLOW_interface_declaration_in_namespace_member215);
                     interface_declaration17=interface_declaration();
 
                     state._fsp--;
@@ -729,7 +730,7 @@ public class ValaParser extends Parser {
                 case 4 :
                     // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:77:4: struct_declaration
                     {
-                    pushFollow(FOLLOW_struct_declaration_in_namespace_member220);
+                    pushFollow(FOLLOW_struct_declaration_in_namespace_member221);
                     struct_declaration18=struct_declaration();
 
                     state._fsp--;
@@ -741,7 +742,7 @@ public class ValaParser extends Parser {
                 case 5 :
                     // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:78:4: enum_declaration
                     {
-                    pushFollow(FOLLOW_enum_declaration_in_namespace_member226);
+                    pushFollow(FOLLOW_enum_declaration_in_namespace_member227);
                     enum_declaration19=enum_declaration();
 
                     state._fsp--;
@@ -753,7 +754,7 @@ public class ValaParser extends Parser {
                 case 6 :
                     // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:79:4: errordomain_declaration
                     {
-                    pushFollow(FOLLOW_errordomain_declaration_in_namespace_member232);
+                    pushFollow(FOLLOW_errordomain_declaration_in_namespace_member233);
                     errordomain_declaration20=errordomain_declaration();
 
                     state._fsp--;
@@ -765,7 +766,7 @@ public class ValaParser extends Parser {
                 case 7 :
                     // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:80:4: method_declaration
                     {
-                    pushFollow(FOLLOW_method_declaration_in_namespace_member238);
+                    pushFollow(FOLLOW_method_declaration_in_namespace_member239);
                     method_declaration21=method_declaration();
 
                     state._fsp--;
@@ -777,7 +778,7 @@ public class ValaParser extends Parser {
                 case 8 :
                     // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:81:4: delegate_declaration
                     {
-                    pushFollow(FOLLOW_delegate_declaration_in_namespace_member244);
+                    pushFollow(FOLLOW_delegate_declaration_in_namespace_member245);
                     delegate_declaration22=delegate_declaration();
 
                     state._fsp--;
@@ -789,7 +790,7 @@ public class ValaParser extends Parser {
                 case 9 :
                     // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:82:4: constant_declaration
                     {
-                    pushFollow(FOLLOW_constant_declaration_in_namespace_member250);
+                    pushFollow(FOLLOW_constant_declaration_in_namespace_member251);
                     constant_declaration23=constant_declaration();
 
                     state._fsp--;
@@ -801,7 +802,7 @@ public class ValaParser extends Parser {
                 case 10 :
                     // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:83:4: field_declaration
                     {
-                    pushFollow(FOLLOW_field_declaration_in_namespace_member256);
+                    pushFollow(FOLLOW_field_declaration_in_namespace_member257);
                     field_declaration24=field_declaration();
 
                     state._fsp--;
@@ -956,7 +957,7 @@ public class ValaParser extends Parser {
             LBRACKET26_tree = (CommonTree)adaptor.create(LBRACKET26);
             adaptor.addChild(root_0, LBRACKET26_tree);
             }
-            pushFollow(FOLLOW_identifier_in_attribute289);
+            pushFollow(FOLLOW_identifier_in_attribute288);
             identifier27=identifier();
 
             state._fsp--;
@@ -973,7 +974,7 @@ public class ValaParser extends Parser {
                 case 1 :
                     // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:93:3: attribute_arguments
                     {
-                    pushFollow(FOLLOW_attribute_arguments_in_attribute294);
+                    pushFollow(FOLLOW_attribute_arguments_in_attribute292);
                     attribute_arguments28=attribute_arguments();
 
                     state._fsp--;
@@ -985,7 +986,7 @@ public class ValaParser extends Parser {
 
             }
 
-            RBRACKET29=(Token)match(input,RBRACKET,FOLLOW_RBRACKET_in_attribute302); if (state.failed) return retval;
+            RBRACKET29=(Token)match(input,RBRACKET,FOLLOW_RBRACKET_in_attribute299); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             RBRACKET29_tree = (CommonTree)adaptor.create(RBRACKET29);
             adaptor.addChild(root_0, RBRACKET29_tree);
@@ -1046,12 +1047,12 @@ public class ValaParser extends Parser {
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            LPAREN30=(Token)match(input,LPAREN,FOLLOW_LPAREN_in_attribute_arguments314); if (state.failed) return retval;
+            LPAREN30=(Token)match(input,LPAREN,FOLLOW_LPAREN_in_attribute_arguments309); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             LPAREN30_tree = (CommonTree)adaptor.create(LPAREN30);
             adaptor.addChild(root_0, LPAREN30_tree);
             }
-            pushFollow(FOLLOW_attribute_argument_in_attribute_arguments316);
+            pushFollow(FOLLOW_attribute_argument_in_attribute_arguments311);
             attribute_argument31=attribute_argument();
 
             state._fsp--;
@@ -1072,12 +1073,12 @@ public class ValaParser extends Parser {
             	case 1 :
             	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:100:3: COMMA attribute_argument
             	    {
-            	    COMMA32=(Token)match(input,COMMA,FOLLOW_COMMA_in_attribute_arguments321); if (state.failed) return retval;
+            	    COMMA32=(Token)match(input,COMMA,FOLLOW_COMMA_in_attribute_arguments316); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
             	    COMMA32_tree = (CommonTree)adaptor.create(COMMA32);
             	    adaptor.addChild(root_0, COMMA32_tree);
             	    }
-            	    pushFollow(FOLLOW_attribute_argument_in_attribute_arguments323);
+            	    pushFollow(FOLLOW_attribute_argument_in_attribute_arguments318);
             	    attribute_argument33=attribute_argument();
 
             	    state._fsp--;
@@ -1092,7 +1093,7 @@ public class ValaParser extends Parser {
                 }
             } while (true);
 
-            RPAREN34=(Token)match(input,RPAREN,FOLLOW_RPAREN_in_attribute_arguments329); if (state.failed) return retval;
+            RPAREN34=(Token)match(input,RPAREN,FOLLOW_RPAREN_in_attribute_arguments324); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             RPAREN34_tree = (CommonTree)adaptor.create(RPAREN34);
             adaptor.addChild(root_0, RPAREN34_tree);
@@ -1149,18 +1150,18 @@ public class ValaParser extends Parser {
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            pushFollow(FOLLOW_identifier_in_attribute_argument339);
+            pushFollow(FOLLOW_identifier_in_attribute_argument333);
             identifier35=identifier();
 
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, identifier35.getTree());
-            ASSIGNMENT36=(Token)match(input,ASSIGNMENT,FOLLOW_ASSIGNMENT_in_attribute_argument341); if (state.failed) return retval;
+            ASSIGNMENT36=(Token)match(input,ASSIGNMENT,FOLLOW_ASSIGNMENT_in_attribute_argument335); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             ASSIGNMENT36_tree = (CommonTree)adaptor.create(ASSIGNMENT36);
             adaptor.addChild(root_0, ASSIGNMENT36_tree);
             }
-            pushFollow(FOLLOW_expression_in_attribute_argument343);
+            pushFollow(FOLLOW_expression_in_attribute_argument337);
             expression37=expression();
 
             state._fsp--;
@@ -1224,7 +1225,7 @@ public class ValaParser extends Parser {
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    pushFollow(FOLLOW_lambda_expression_in_expression355);
+                    pushFollow(FOLLOW_lambda_expression_in_expression347);
                     lambda_expression38=lambda_expression();
 
                     state._fsp--;
@@ -1241,7 +1242,7 @@ public class ValaParser extends Parser {
                     // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:110:2: ( conditional_expression ( assignment_operator expression )? )
                     // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:110:4: conditional_expression ( assignment_operator expression )?
                     {
-                    pushFollow(FOLLOW_conditional_expression_in_expression365);
+                    pushFollow(FOLLOW_conditional_expression_in_expression355);
                     conditional_expression39=conditional_expression();
 
                     state._fsp--;
@@ -1262,13 +1263,13 @@ public class ValaParser extends Parser {
                         case 1 :
                             // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:110:28: assignment_operator expression
                             {
-                            pushFollow(FOLLOW_assignment_operator_in_expression368);
+                            pushFollow(FOLLOW_assignment_operator_in_expression358);
                             assignment_operator40=assignment_operator();
 
                             state._fsp--;
                             if (state.failed) return retval;
                             if ( state.backtracking==0 ) adaptor.addChild(root_0, assignment_operator40.getTree());
-                            pushFollow(FOLLOW_expression_in_expression370);
+                            pushFollow(FOLLOW_expression_in_expression360);
                             expression41=expression();
 
                             state._fsp--;
@@ -1401,7 +1402,7 @@ public class ValaParser extends Parser {
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            pushFollow(FOLLOW_coalescing_expression_in_conditional_expression436);
+            pushFollow(FOLLOW_coalescing_expression_in_conditional_expression426);
             coalescing_expression43=coalescing_expression();
 
             state._fsp--;
@@ -1418,23 +1419,23 @@ public class ValaParser extends Parser {
                 case 1 :
                     // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:118:3: QUESTION expression COLON expression
                     {
-                    QUESTION44=(Token)match(input,QUESTION,FOLLOW_QUESTION_in_conditional_expression441); if (state.failed) return retval;
+                    QUESTION44=(Token)match(input,QUESTION,FOLLOW_QUESTION_in_conditional_expression431); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     QUESTION44_tree = (CommonTree)adaptor.create(QUESTION44);
                     adaptor.addChild(root_0, QUESTION44_tree);
                     }
-                    pushFollow(FOLLOW_expression_in_conditional_expression443);
+                    pushFollow(FOLLOW_expression_in_conditional_expression433);
                     expression45=expression();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) adaptor.addChild(root_0, expression45.getTree());
-                    COLON46=(Token)match(input,COLON,FOLLOW_COLON_in_conditional_expression445); if (state.failed) return retval;
+                    COLON46=(Token)match(input,COLON,FOLLOW_COLON_in_conditional_expression435); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     COLON46_tree = (CommonTree)adaptor.create(COLON46);
                     adaptor.addChild(root_0, COLON46_tree);
                     }
-                    pushFollow(FOLLOW_expression_in_conditional_expression447);
+                    pushFollow(FOLLOW_expression_in_conditional_expression437);
                     expression47=expression();
 
                     state._fsp--;
@@ -1498,7 +1499,7 @@ public class ValaParser extends Parser {
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            pushFollow(FOLLOW_conditional_or_expression_in_coalescing_expression461);
+            pushFollow(FOLLOW_conditional_or_expression_in_coalescing_expression451);
             conditional_or_expression48=conditional_or_expression();
 
             state._fsp--;
@@ -1515,12 +1516,12 @@ public class ValaParser extends Parser {
                 case 1 :
                     // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:123:3: COALESCE coalescing_expression
                     {
-                    COALESCE49=(Token)match(input,COALESCE,FOLLOW_COALESCE_in_coalescing_expression466); if (state.failed) return retval;
+                    COALESCE49=(Token)match(input,COALESCE,FOLLOW_COALESCE_in_coalescing_expression456); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     COALESCE49_tree = (CommonTree)adaptor.create(COALESCE49);
                     adaptor.addChild(root_0, COALESCE49_tree);
                     }
-                    pushFollow(FOLLOW_coalescing_expression_in_coalescing_expression468);
+                    pushFollow(FOLLOW_coalescing_expression_in_coalescing_expression458);
                     coalescing_expression50=coalescing_expression();
 
                     state._fsp--;
@@ -1584,7 +1585,7 @@ public class ValaParser extends Parser {
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            pushFollow(FOLLOW_conditional_and_expression_in_conditional_or_expression482);
+            pushFollow(FOLLOW_conditional_and_expression_in_conditional_or_expression472);
             conditional_and_expression51=conditional_and_expression();
 
             state._fsp--;
@@ -1605,12 +1606,12 @@ public class ValaParser extends Parser {
             	case 1 :
             	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:128:3: BOOL_OR conditional_and_expression
             	    {
-            	    BOOL_OR52=(Token)match(input,BOOL_OR,FOLLOW_BOOL_OR_in_conditional_or_expression487); if (state.failed) return retval;
+            	    BOOL_OR52=(Token)match(input,BOOL_OR,FOLLOW_BOOL_OR_in_conditional_or_expression477); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
             	    BOOL_OR52_tree = (CommonTree)adaptor.create(BOOL_OR52);
             	    adaptor.addChild(root_0, BOOL_OR52_tree);
             	    }
-            	    pushFollow(FOLLOW_conditional_and_expression_in_conditional_or_expression489);
+            	    pushFollow(FOLLOW_conditional_and_expression_in_conditional_or_expression479);
             	    conditional_and_expression53=conditional_and_expression();
 
             	    state._fsp--;
@@ -1677,7 +1678,7 @@ public class ValaParser extends Parser {
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            pushFollow(FOLLOW_in_expression_in_conditional_and_expression503);
+            pushFollow(FOLLOW_in_expression_in_conditional_and_expression493);
             in_expression54=in_expression();
 
             state._fsp--;
@@ -1698,12 +1699,12 @@ public class ValaParser extends Parser {
             	case 1 :
             	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:133:3: BOOL_AND in_expression
             	    {
-            	    BOOL_AND55=(Token)match(input,BOOL_AND,FOLLOW_BOOL_AND_in_conditional_and_expression508); if (state.failed) return retval;
+            	    BOOL_AND55=(Token)match(input,BOOL_AND,FOLLOW_BOOL_AND_in_conditional_and_expression498); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
             	    BOOL_AND55_tree = (CommonTree)adaptor.create(BOOL_AND55);
             	    adaptor.addChild(root_0, BOOL_AND55_tree);
             	    }
-            	    pushFollow(FOLLOW_in_expression_in_conditional_and_expression510);
+            	    pushFollow(FOLLOW_in_expression_in_conditional_and_expression500);
             	    in_expression56=in_expression();
 
             	    state._fsp--;
@@ -1770,7 +1771,7 @@ public class ValaParser extends Parser {
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            pushFollow(FOLLOW_inclusive_or_expression_in_in_expression524);
+            pushFollow(FOLLOW_inclusive_or_expression_in_in_expression514);
             inclusive_or_expression57=inclusive_or_expression();
 
             state._fsp--;
@@ -1783,12 +1784,12 @@ public class ValaParser extends Parser {
                 case 1 :
                     // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:138:3: KW_IN inclusive_or_expression
                     {
-                    KW_IN58=(Token)match(input,KW_IN,FOLLOW_KW_IN_in_in_expression529); if (state.failed) return retval;
+                    KW_IN58=(Token)match(input,KW_IN,FOLLOW_KW_IN_in_in_expression519); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     KW_IN58_tree = (CommonTree)adaptor.create(KW_IN58);
                     adaptor.addChild(root_0, KW_IN58_tree);
                     }
-                    pushFollow(FOLLOW_inclusive_or_expression_in_in_expression531);
+                    pushFollow(FOLLOW_inclusive_or_expression_in_in_expression521);
                     inclusive_or_expression59=inclusive_or_expression();
 
                     state._fsp--;
@@ -1852,7 +1853,7 @@ public class ValaParser extends Parser {
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            pushFollow(FOLLOW_exclusive_or_expression_in_inclusive_or_expression545);
+            pushFollow(FOLLOW_exclusive_or_expression_in_inclusive_or_expression535);
             exclusive_or_expression60=exclusive_or_expression();
 
             state._fsp--;
@@ -1873,12 +1874,12 @@ public class ValaParser extends Parser {
             	case 1 :
             	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:143:3: OR exclusive_or_expression
             	    {
-            	    OR61=(Token)match(input,OR,FOLLOW_OR_in_inclusive_or_expression550); if (state.failed) return retval;
+            	    OR61=(Token)match(input,OR,FOLLOW_OR_in_inclusive_or_expression540); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
             	    OR61_tree = (CommonTree)adaptor.create(OR61);
             	    adaptor.addChild(root_0, OR61_tree);
             	    }
-            	    pushFollow(FOLLOW_exclusive_or_expression_in_inclusive_or_expression552);
+            	    pushFollow(FOLLOW_exclusive_or_expression_in_inclusive_or_expression542);
             	    exclusive_or_expression62=exclusive_or_expression();
 
             	    state._fsp--;
@@ -1945,7 +1946,7 @@ public class ValaParser extends Parser {
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            pushFollow(FOLLOW_and_expression_in_exclusive_or_expression566);
+            pushFollow(FOLLOW_and_expression_in_exclusive_or_expression556);
             and_expression63=and_expression();
 
             state._fsp--;
@@ -1962,12 +1963,12 @@ public class ValaParser extends Parser {
                 case 1 :
                     // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:148:3: XOR and_expression
                     {
-                    XOR64=(Token)match(input,XOR,FOLLOW_XOR_in_exclusive_or_expression571); if (state.failed) return retval;
+                    XOR64=(Token)match(input,XOR,FOLLOW_XOR_in_exclusive_or_expression561); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     XOR64_tree = (CommonTree)adaptor.create(XOR64);
                     adaptor.addChild(root_0, XOR64_tree);
                     }
-                    pushFollow(FOLLOW_and_expression_in_exclusive_or_expression573);
+                    pushFollow(FOLLOW_and_expression_in_exclusive_or_expression563);
                     and_expression65=and_expression();
 
                     state._fsp--;
@@ -2031,7 +2032,7 @@ public class ValaParser extends Parser {
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            pushFollow(FOLLOW_equality_expression_in_and_expression587);
+            pushFollow(FOLLOW_equality_expression_in_and_expression577);
             equality_expression66=equality_expression();
 
             state._fsp--;
@@ -2052,12 +2053,12 @@ public class ValaParser extends Parser {
             	case 1 :
             	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:153:3: AND equality_expression
             	    {
-            	    AND67=(Token)match(input,AND,FOLLOW_AND_in_and_expression592); if (state.failed) return retval;
+            	    AND67=(Token)match(input,AND,FOLLOW_AND_in_and_expression582); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
             	    AND67_tree = (CommonTree)adaptor.create(AND67);
             	    adaptor.addChild(root_0, AND67_tree);
             	    }
-            	    pushFollow(FOLLOW_equality_expression_in_and_expression594);
+            	    pushFollow(FOLLOW_equality_expression_in_and_expression584);
             	    equality_expression68=equality_expression();
 
             	    state._fsp--;
@@ -2124,7 +2125,7 @@ public class ValaParser extends Parser {
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            pushFollow(FOLLOW_relational_expression_in_equality_expression608);
+            pushFollow(FOLLOW_relational_expression_in_equality_expression598);
             relational_expression69=relational_expression();
 
             state._fsp--;
@@ -2157,7 +2158,7 @@ public class ValaParser extends Parser {
             	        throw mse;
             	    }
 
-            	    pushFollow(FOLLOW_relational_expression_in_equality_expression623);
+            	    pushFollow(FOLLOW_relational_expression_in_equality_expression613);
             	    relational_expression71=relational_expression();
 
             	    state._fsp--;
@@ -2232,7 +2233,7 @@ public class ValaParser extends Parser {
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            pushFollow(FOLLOW_shift_expression_in_relational_expression637);
+            pushFollow(FOLLOW_shift_expression_in_relational_expression627);
             shift_expression72=shift_expression();
 
             state._fsp--;
@@ -2262,7 +2263,7 @@ public class ValaParser extends Parser {
             	        throw mse;
             	    }
 
-            	    pushFollow(FOLLOW_shift_expression_in_relational_expression666);
+            	    pushFollow(FOLLOW_shift_expression_in_relational_expression656);
             	    shift_expression74=shift_expression();
 
             	    state._fsp--;
@@ -2280,12 +2281,12 @@ public class ValaParser extends Parser {
             	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:166:4: ( KW_IS type )
             	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:166:6: KW_IS type
             	    {
-            	    KW_IS75=(Token)match(input,KW_IS,FOLLOW_KW_IS_in_relational_expression681); if (state.failed) return retval;
+            	    KW_IS75=(Token)match(input,KW_IS,FOLLOW_KW_IS_in_relational_expression671); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
             	    KW_IS75_tree = (CommonTree)adaptor.create(KW_IS75);
             	    adaptor.addChild(root_0, KW_IS75_tree);
             	    }
-            	    pushFollow(FOLLOW_type_in_relational_expression683);
+            	    pushFollow(FOLLOW_type_in_relational_expression673);
             	    type76=type();
 
             	    state._fsp--;
@@ -2303,12 +2304,12 @@ public class ValaParser extends Parser {
             	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:168:4: ( KW_AS type )
             	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:168:6: KW_AS type
             	    {
-            	    KW_AS77=(Token)match(input,KW_AS,FOLLOW_KW_AS_in_relational_expression698); if (state.failed) return retval;
+            	    KW_AS77=(Token)match(input,KW_AS,FOLLOW_KW_AS_in_relational_expression688); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
             	    KW_AS77_tree = (CommonTree)adaptor.create(KW_AS77);
             	    adaptor.addChild(root_0, KW_AS77_tree);
             	    }
-            	    pushFollow(FOLLOW_type_in_relational_expression700);
+            	    pushFollow(FOLLOW_type_in_relational_expression690);
             	    type78=type();
 
             	    state._fsp--;
@@ -2411,7 +2412,7 @@ public class ValaParser extends Parser {
                     // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:173:2: ( KW_VOID ( MULTIPLY )* )
                     // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:174:3: KW_VOID ( MULTIPLY )*
                     {
-                    KW_VOID79=(Token)match(input,KW_VOID,FOLLOW_KW_VOID_in_type724); if (state.failed) return retval;
+                    KW_VOID79=(Token)match(input,KW_VOID,FOLLOW_KW_VOID_in_type714); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     KW_VOID79_tree = (CommonTree)adaptor.create(KW_VOID79);
                     adaptor.addChild(root_0, KW_VOID79_tree);
@@ -2431,7 +2432,7 @@ public class ValaParser extends Parser {
                     	case 1 :
                     	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:175:4: MULTIPLY
                     	    {
-                    	    MULTIPLY80=(Token)match(input,MULTIPLY,FOLLOW_MULTIPLY_in_type729); if (state.failed) return retval;
+                    	    MULTIPLY80=(Token)match(input,MULTIPLY,FOLLOW_MULTIPLY_in_type719); if (state.failed) return retval;
                     	    if ( state.backtracking==0 ) {
                     	    MULTIPLY80_tree = (CommonTree)adaptor.create(MULTIPLY80);
                     	    adaptor.addChild(root_0, MULTIPLY80_tree);
@@ -2470,7 +2471,7 @@ public class ValaParser extends Parser {
                         case 1 :
                             // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:179:4: KW_DYNAMIC
                             {
-                            KW_DYNAMIC81=(Token)match(input,KW_DYNAMIC,FOLLOW_KW_DYNAMIC_in_type749); if (state.failed) return retval;
+                            KW_DYNAMIC81=(Token)match(input,KW_DYNAMIC,FOLLOW_KW_DYNAMIC_in_type739); if (state.failed) return retval;
                             if ( state.backtracking==0 ) {
                             KW_DYNAMIC81_tree = (CommonTree)adaptor.create(KW_DYNAMIC81);
                             adaptor.addChild(root_0, KW_DYNAMIC81_tree);
@@ -2510,7 +2511,7 @@ public class ValaParser extends Parser {
 
                     }
 
-                    pushFollow(FOLLOW_symbol_in_type772);
+                    pushFollow(FOLLOW_symbol_in_type762);
                     symbol83=symbol();
 
                     state._fsp--;
@@ -2523,7 +2524,7 @@ public class ValaParser extends Parser {
                         case 1 :
                             // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:182:4: type_arguments
                             {
-                            pushFollow(FOLLOW_type_arguments_in_type778);
+                            pushFollow(FOLLOW_type_arguments_in_type768);
                             type_arguments84=type_arguments();
 
                             state._fsp--;
@@ -2550,7 +2551,7 @@ public class ValaParser extends Parser {
                     	case 1 :
                     	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:183:4: MULTIPLY
                     	    {
-                    	    MULTIPLY85=(Token)match(input,MULTIPLY,FOLLOW_MULTIPLY_in_type786); if (state.failed) return retval;
+                    	    MULTIPLY85=(Token)match(input,MULTIPLY,FOLLOW_MULTIPLY_in_type776); if (state.failed) return retval;
                     	    if ( state.backtracking==0 ) {
                     	    MULTIPLY85_tree = (CommonTree)adaptor.create(MULTIPLY85);
                     	    adaptor.addChild(root_0, MULTIPLY85_tree);
@@ -2571,7 +2572,7 @@ public class ValaParser extends Parser {
                         case 1 :
                             // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:184:4: QUESTION
                             {
-                            QUESTION86=(Token)match(input,QUESTION,FOLLOW_QUESTION_in_type794); if (state.failed) return retval;
+                            QUESTION86=(Token)match(input,QUESTION,FOLLOW_QUESTION_in_type784); if (state.failed) return retval;
                             if ( state.backtracking==0 ) {
                             QUESTION86_tree = (CommonTree)adaptor.create(QUESTION86);
                             adaptor.addChild(root_0, QUESTION86_tree);
@@ -2591,7 +2592,7 @@ public class ValaParser extends Parser {
                     	case 1 :
                     	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:185:4: array_type
                     	    {
-                    	    pushFollow(FOLLOW_array_type_in_type802);
+                    	    pushFollow(FOLLOW_array_type_in_type792);
                     	    array_type87=array_type();
 
                     	    state._fsp--;
@@ -2665,7 +2666,7 @@ public class ValaParser extends Parser {
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            LBRACKET88=(Token)match(input,LBRACKET,FOLLOW_LBRACKET_in_array_type820); if (state.failed) return retval;
+            LBRACKET88=(Token)match(input,LBRACKET,FOLLOW_LBRACKET_in_array_type810); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             LBRACKET88_tree = (CommonTree)adaptor.create(LBRACKET88);
             adaptor.addChild(root_0, LBRACKET88_tree);
@@ -2674,14 +2675,14 @@ public class ValaParser extends Parser {
             int alt31=2;
             int LA31_0 = input.LA(1);
 
-            if ( (LA31_0==KW_USING||(LA31_0>=GLOBAL_NS && LA31_0<=IDENTIFIER)||LA31_0==LPAREN||LA31_0==KW_IN||LA31_0==AND||(LA31_0>=KW_IS && LA31_0<=KW_WEAK)||(LA31_0>=PLUS && LA31_0<=MINUS)||(LA31_0>=NOT && LA31_0<=KW_THROW)||(LA31_0>=INTEGER && LA31_0<=LCURL)||LA31_0==TEMPLATE_START||(LA31_0>=KW_THIS && LA31_0<=KW_BASE)) ) {
+            if ( (LA31_0==KW_USING||(LA31_0>=GLOBAL_NS && LA31_0<=IDENTIFIER)||LA31_0==LPAREN||LA31_0==KW_IN||LA31_0==AND||(LA31_0>=KW_IS && LA31_0<=KW_WEAK)||(LA31_0>=PLUS && LA31_0<=MINUS)||(LA31_0>=NOT && LA31_0<=KW_REQUIRES)||(LA31_0>=INTEGER && LA31_0<=LCURL)||LA31_0==TEMPLATE_START||(LA31_0>=KW_THIS && LA31_0<=KW_BASE)) ) {
                 alt31=1;
             }
             switch (alt31) {
                 case 1 :
                     // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:191:3: array_size
                     {
-                    pushFollow(FOLLOW_array_size_in_array_type825);
+                    pushFollow(FOLLOW_array_size_in_array_type815);
                     array_size89=array_size();
 
                     state._fsp--;
@@ -2693,7 +2694,7 @@ public class ValaParser extends Parser {
 
             }
 
-            RBRACKET90=(Token)match(input,RBRACKET,FOLLOW_RBRACKET_in_array_type830); if (state.failed) return retval;
+            RBRACKET90=(Token)match(input,RBRACKET,FOLLOW_RBRACKET_in_array_type820); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             RBRACKET90_tree = (CommonTree)adaptor.create(RBRACKET90);
             adaptor.addChild(root_0, RBRACKET90_tree);
@@ -2705,7 +2706,7 @@ public class ValaParser extends Parser {
                 case 1 :
                     // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:193:3: QUESTION
                     {
-                    QUESTION91=(Token)match(input,QUESTION,FOLLOW_QUESTION_in_array_type836); if (state.failed) return retval;
+                    QUESTION91=(Token)match(input,QUESTION,FOLLOW_QUESTION_in_array_type826); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     QUESTION91_tree = (CommonTree)adaptor.create(QUESTION91);
                     adaptor.addChild(root_0, QUESTION91_tree);
@@ -2770,7 +2771,7 @@ public class ValaParser extends Parser {
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            pushFollow(FOLLOW_additive_expression_in_shift_expression850);
+            pushFollow(FOLLOW_additive_expression_in_shift_expression840);
             additive_expression92=additive_expression();
 
             state._fsp--;
@@ -2821,7 +2822,7 @@ public class ValaParser extends Parser {
             	        case 1 :
             	            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:199:5: SHIFT_LEFT
             	            {
-            	            SHIFT_LEFT93=(Token)match(input,SHIFT_LEFT,FOLLOW_SHIFT_LEFT_in_shift_expression860); if (state.failed) return retval;
+            	            SHIFT_LEFT93=(Token)match(input,SHIFT_LEFT,FOLLOW_SHIFT_LEFT_in_shift_expression850); if (state.failed) return retval;
             	            if ( state.backtracking==0 ) {
             	            SHIFT_LEFT93_tree = (CommonTree)adaptor.create(SHIFT_LEFT93);
             	            adaptor.addChild(root_0, SHIFT_LEFT93_tree);
@@ -2832,7 +2833,7 @@ public class ValaParser extends Parser {
             	        case 2 :
             	            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:199:18: shift_right
             	            {
-            	            pushFollow(FOLLOW_shift_right_in_shift_expression864);
+            	            pushFollow(FOLLOW_shift_right_in_shift_expression854);
             	            shift_right94=shift_right();
 
             	            state._fsp--;
@@ -2844,7 +2845,7 @@ public class ValaParser extends Parser {
 
             	    }
 
-            	    pushFollow(FOLLOW_additive_expression_in_shift_expression868);
+            	    pushFollow(FOLLOW_additive_expression_in_shift_expression858);
             	    additive_expression95=additive_expression();
 
             	    state._fsp--;
@@ -2909,12 +2910,12 @@ public class ValaParser extends Parser {
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            GT96=(Token)match(input,GT,FOLLOW_GT_in_shift_right882); if (state.failed) return retval;
+            GT96=(Token)match(input,GT,FOLLOW_GT_in_shift_right872); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             GT96_tree = (CommonTree)adaptor.create(GT96);
             adaptor.addChild(root_0, GT96_tree);
             }
-            GT97=(Token)match(input,GT,FOLLOW_GT_in_shift_right884); if (state.failed) return retval;
+            GT97=(Token)match(input,GT,FOLLOW_GT_in_shift_right874); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             GT97_tree = (CommonTree)adaptor.create(GT97);
             adaptor.addChild(root_0, GT97_tree);
@@ -2971,7 +2972,7 @@ public class ValaParser extends Parser {
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            pushFollow(FOLLOW_multiplicative_expression_in_additive_expression896);
+            pushFollow(FOLLOW_multiplicative_expression_in_additive_expression886);
             multiplicative_expression98=multiplicative_expression();
 
             state._fsp--;
@@ -3004,7 +3005,7 @@ public class ValaParser extends Parser {
             	        throw mse;
             	    }
 
-            	    pushFollow(FOLLOW_multiplicative_expression_in_additive_expression914);
+            	    pushFollow(FOLLOW_multiplicative_expression_in_additive_expression904);
             	    multiplicative_expression100=multiplicative_expression();
 
             	    state._fsp--;
@@ -3075,7 +3076,7 @@ public class ValaParser extends Parser {
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            pushFollow(FOLLOW_unary_expression_in_multiplicative_expression930);
+            pushFollow(FOLLOW_unary_expression_in_multiplicative_expression920);
             unary_expression101=unary_expression();
 
             state._fsp--;
@@ -3129,7 +3130,7 @@ public class ValaParser extends Parser {
             	            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:218:3: ( MULTIPLY )
             	            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:218:4: MULTIPLY
             	            {
-            	            MULTIPLY102=(Token)match(input,MULTIPLY,FOLLOW_MULTIPLY_in_multiplicative_expression944); if (state.failed) return retval;
+            	            MULTIPLY102=(Token)match(input,MULTIPLY,FOLLOW_MULTIPLY_in_multiplicative_expression934); if (state.failed) return retval;
             	            if ( state.backtracking==0 ) {
             	            MULTIPLY102_tree = (CommonTree)adaptor.create(MULTIPLY102);
             	            adaptor.addChild(root_0, MULTIPLY102_tree);
@@ -3146,7 +3147,7 @@ public class ValaParser extends Parser {
             	            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:219:5: ( DIV )
             	            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:219:6: DIV
             	            {
-            	            DIV103=(Token)match(input,DIV,FOLLOW_DIV_in_multiplicative_expression952); if (state.failed) return retval;
+            	            DIV103=(Token)match(input,DIV,FOLLOW_DIV_in_multiplicative_expression942); if (state.failed) return retval;
             	            if ( state.backtracking==0 ) {
             	            DIV103_tree = (CommonTree)adaptor.create(DIV103);
             	            adaptor.addChild(root_0, DIV103_tree);
@@ -3163,7 +3164,7 @@ public class ValaParser extends Parser {
             	            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:220:5: ( MOD )
             	            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:220:6: MOD
             	            {
-            	            MOD104=(Token)match(input,MOD,FOLLOW_MOD_in_multiplicative_expression960); if (state.failed) return retval;
+            	            MOD104=(Token)match(input,MOD,FOLLOW_MOD_in_multiplicative_expression950); if (state.failed) return retval;
             	            if ( state.backtracking==0 ) {
             	            MOD104_tree = (CommonTree)adaptor.create(MOD104);
             	            adaptor.addChild(root_0, MOD104_tree);
@@ -3177,7 +3178,7 @@ public class ValaParser extends Parser {
 
             	    }
 
-            	    pushFollow(FOLLOW_unary_expression_in_multiplicative_expression967);
+            	    pushFollow(FOLLOW_unary_expression_in_multiplicative_expression957);
             	    unary_expression105=unary_expression();
 
             	    state._fsp--;
@@ -3251,13 +3252,13 @@ public class ValaParser extends Parser {
                     // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:226:3: ( unary_operator unary_expression )
                     // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:226:5: unary_operator unary_expression
                     {
-                    pushFollow(FOLLOW_unary_operator_in_unary_expression986);
+                    pushFollow(FOLLOW_unary_operator_in_unary_expression976);
                     unary_operator106=unary_operator();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) adaptor.addChild(root_0, unary_operator106.getTree());
-                    pushFollow(FOLLOW_unary_expression_in_unary_expression988);
+                    pushFollow(FOLLOW_unary_expression_in_unary_expression978);
                     unary_expression107=unary_expression();
 
                     state._fsp--;
@@ -3274,7 +3275,7 @@ public class ValaParser extends Parser {
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    pushFollow(FOLLOW_primary_expression_in_unary_expression1000);
+                    pushFollow(FOLLOW_primary_expression_in_unary_expression990);
                     primary_expression108=primary_expression();
 
                     state._fsp--;
@@ -3356,7 +3357,7 @@ public class ValaParser extends Parser {
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    PLUS109=(Token)match(input,PLUS,FOLLOW_PLUS_in_unary_operator1012); if (state.failed) return retval;
+                    PLUS109=(Token)match(input,PLUS,FOLLOW_PLUS_in_unary_operator1002); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     PLUS109_tree = (CommonTree)adaptor.create(PLUS109);
                     adaptor.addChild(root_0, PLUS109_tree);
@@ -3369,7 +3370,7 @@ public class ValaParser extends Parser {
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    MINUS110=(Token)match(input,MINUS,FOLLOW_MINUS_in_unary_operator1018); if (state.failed) return retval;
+                    MINUS110=(Token)match(input,MINUS,FOLLOW_MINUS_in_unary_operator1008); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     MINUS110_tree = (CommonTree)adaptor.create(MINUS110);
                     adaptor.addChild(root_0, MINUS110_tree);
@@ -3382,7 +3383,7 @@ public class ValaParser extends Parser {
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    NOT111=(Token)match(input,NOT,FOLLOW_NOT_in_unary_operator1024); if (state.failed) return retval;
+                    NOT111=(Token)match(input,NOT,FOLLOW_NOT_in_unary_operator1014); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     NOT111_tree = (CommonTree)adaptor.create(NOT111);
                     adaptor.addChild(root_0, NOT111_tree);
@@ -3395,7 +3396,7 @@ public class ValaParser extends Parser {
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    BITWISE_NOT112=(Token)match(input,BITWISE_NOT,FOLLOW_BITWISE_NOT_in_unary_operator1030); if (state.failed) return retval;
+                    BITWISE_NOT112=(Token)match(input,BITWISE_NOT,FOLLOW_BITWISE_NOT_in_unary_operator1020); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     BITWISE_NOT112_tree = (CommonTree)adaptor.create(BITWISE_NOT112);
                     adaptor.addChild(root_0, BITWISE_NOT112_tree);
@@ -3408,7 +3409,7 @@ public class ValaParser extends Parser {
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    INCREMENT113=(Token)match(input,INCREMENT,FOLLOW_INCREMENT_in_unary_operator1036); if (state.failed) return retval;
+                    INCREMENT113=(Token)match(input,INCREMENT,FOLLOW_INCREMENT_in_unary_operator1026); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     INCREMENT113_tree = (CommonTree)adaptor.create(INCREMENT113);
                     adaptor.addChild(root_0, INCREMENT113_tree);
@@ -3421,7 +3422,7 @@ public class ValaParser extends Parser {
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    DECREMENT114=(Token)match(input,DECREMENT,FOLLOW_DECREMENT_in_unary_operator1041); if (state.failed) return retval;
+                    DECREMENT114=(Token)match(input,DECREMENT,FOLLOW_DECREMENT_in_unary_operator1031); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     DECREMENT114_tree = (CommonTree)adaptor.create(DECREMENT114);
                     adaptor.addChild(root_0, DECREMENT114_tree);
@@ -3434,7 +3435,7 @@ public class ValaParser extends Parser {
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    MULTIPLY115=(Token)match(input,MULTIPLY,FOLLOW_MULTIPLY_in_unary_operator1046); if (state.failed) return retval;
+                    MULTIPLY115=(Token)match(input,MULTIPLY,FOLLOW_MULTIPLY_in_unary_operator1036); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     MULTIPLY115_tree = (CommonTree)adaptor.create(MULTIPLY115);
                     adaptor.addChild(root_0, MULTIPLY115_tree);
@@ -3447,7 +3448,7 @@ public class ValaParser extends Parser {
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    AND116=(Token)match(input,AND,FOLLOW_AND_in_unary_operator1052); if (state.failed) return retval;
+                    AND116=(Token)match(input,AND,FOLLOW_AND_in_unary_operator1042); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     AND116_tree = (CommonTree)adaptor.create(AND116);
                     adaptor.addChild(root_0, AND116_tree);
@@ -3460,7 +3461,7 @@ public class ValaParser extends Parser {
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    pushFollow(FOLLOW_cast_operator_in_unary_operator1058);
+                    pushFollow(FOLLOW_cast_operator_in_unary_operator1048);
                     cast_operator117=cast_operator();
 
                     state._fsp--;
@@ -3474,17 +3475,17 @@ public class ValaParser extends Parser {
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    LPAREN118=(Token)match(input,LPAREN,FOLLOW_LPAREN_in_unary_operator1063); if (state.failed) return retval;
+                    LPAREN118=(Token)match(input,LPAREN,FOLLOW_LPAREN_in_unary_operator1053); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     LPAREN118_tree = (CommonTree)adaptor.create(LPAREN118);
                     adaptor.addChild(root_0, LPAREN118_tree);
                     }
-                    NOT119=(Token)match(input,NOT,FOLLOW_NOT_in_unary_operator1065); if (state.failed) return retval;
+                    NOT119=(Token)match(input,NOT,FOLLOW_NOT_in_unary_operator1055); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     NOT119_tree = (CommonTree)adaptor.create(NOT119);
                     adaptor.addChild(root_0, NOT119_tree);
                     }
-                    RPAREN120=(Token)match(input,RPAREN,FOLLOW_RPAREN_in_unary_operator1067); if (state.failed) return retval;
+                    RPAREN120=(Token)match(input,RPAREN,FOLLOW_RPAREN_in_unary_operator1057); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     RPAREN120_tree = (CommonTree)adaptor.create(RPAREN120);
                     adaptor.addChild(root_0, RPAREN120_tree);
@@ -3649,18 +3650,18 @@ public class ValaParser extends Parser {
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    LPAREN121=(Token)match(input,LPAREN,FOLLOW_LPAREN_in_cast_operator1077); if (state.failed) return retval;
+                    LPAREN121=(Token)match(input,LPAREN,FOLLOW_LPAREN_in_cast_operator1067); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     LPAREN121_tree = (CommonTree)adaptor.create(LPAREN121);
                     adaptor.addChild(root_0, LPAREN121_tree);
                     }
-                    pushFollow(FOLLOW_type_in_cast_operator1079);
+                    pushFollow(FOLLOW_type_in_cast_operator1069);
                     type122=type();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) adaptor.addChild(root_0, type122.getTree());
-                    RPAREN123=(Token)match(input,RPAREN,FOLLOW_RPAREN_in_cast_operator1081); if (state.failed) return retval;
+                    RPAREN123=(Token)match(input,RPAREN,FOLLOW_RPAREN_in_cast_operator1071); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     RPAREN123_tree = (CommonTree)adaptor.create(RPAREN123);
                     adaptor.addChild(root_0, RPAREN123_tree);
@@ -3673,17 +3674,17 @@ public class ValaParser extends Parser {
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    LPAREN124=(Token)match(input,LPAREN,FOLLOW_LPAREN_in_cast_operator1086); if (state.failed) return retval;
+                    LPAREN124=(Token)match(input,LPAREN,FOLLOW_LPAREN_in_cast_operator1076); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     LPAREN124_tree = (CommonTree)adaptor.create(LPAREN124);
                     adaptor.addChild(root_0, LPAREN124_tree);
                     }
-                    KW_UNOWNED125=(Token)match(input,KW_UNOWNED,FOLLOW_KW_UNOWNED_in_cast_operator1088); if (state.failed) return retval;
+                    KW_UNOWNED125=(Token)match(input,KW_UNOWNED,FOLLOW_KW_UNOWNED_in_cast_operator1078); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     KW_UNOWNED125_tree = (CommonTree)adaptor.create(KW_UNOWNED125);
                     adaptor.addChild(root_0, KW_UNOWNED125_tree);
                     }
-                    RPAREN126=(Token)match(input,RPAREN,FOLLOW_RPAREN_in_cast_operator1090); if (state.failed) return retval;
+                    RPAREN126=(Token)match(input,RPAREN,FOLLOW_RPAREN_in_cast_operator1080); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     RPAREN126_tree = (CommonTree)adaptor.create(RPAREN126);
                     adaptor.addChild(root_0, RPAREN126_tree);
@@ -3696,17 +3697,17 @@ public class ValaParser extends Parser {
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    LPAREN127=(Token)match(input,LPAREN,FOLLOW_LPAREN_in_cast_operator1095); if (state.failed) return retval;
+                    LPAREN127=(Token)match(input,LPAREN,FOLLOW_LPAREN_in_cast_operator1085); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     LPAREN127_tree = (CommonTree)adaptor.create(LPAREN127);
                     adaptor.addChild(root_0, LPAREN127_tree);
                     }
-                    KW_OWNED128=(Token)match(input,KW_OWNED,FOLLOW_KW_OWNED_in_cast_operator1097); if (state.failed) return retval;
+                    KW_OWNED128=(Token)match(input,KW_OWNED,FOLLOW_KW_OWNED_in_cast_operator1087); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     KW_OWNED128_tree = (CommonTree)adaptor.create(KW_OWNED128);
                     adaptor.addChild(root_0, KW_OWNED128_tree);
                     }
-                    RPAREN129=(Token)match(input,RPAREN,FOLLOW_RPAREN_in_cast_operator1099); if (state.failed) return retval;
+                    RPAREN129=(Token)match(input,RPAREN,FOLLOW_RPAREN_in_cast_operator1089); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     RPAREN129_tree = (CommonTree)adaptor.create(RPAREN129);
                     adaptor.addChild(root_0, RPAREN129_tree);
@@ -3719,17 +3720,17 @@ public class ValaParser extends Parser {
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    LPAREN130=(Token)match(input,LPAREN,FOLLOW_LPAREN_in_cast_operator1104); if (state.failed) return retval;
+                    LPAREN130=(Token)match(input,LPAREN,FOLLOW_LPAREN_in_cast_operator1094); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     LPAREN130_tree = (CommonTree)adaptor.create(LPAREN130);
                     adaptor.addChild(root_0, LPAREN130_tree);
                     }
-                    KW_WEAK131=(Token)match(input,KW_WEAK,FOLLOW_KW_WEAK_in_cast_operator1106); if (state.failed) return retval;
+                    KW_WEAK131=(Token)match(input,KW_WEAK,FOLLOW_KW_WEAK_in_cast_operator1096); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     KW_WEAK131_tree = (CommonTree)adaptor.create(KW_WEAK131);
                     adaptor.addChild(root_0, KW_WEAK131_tree);
                     }
-                    RPAREN132=(Token)match(input,RPAREN,FOLLOW_RPAREN_in_cast_operator1108); if (state.failed) return retval;
+                    RPAREN132=(Token)match(input,RPAREN,FOLLOW_RPAREN_in_cast_operator1098); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     RPAREN132_tree = (CommonTree)adaptor.create(RPAREN132);
                     adaptor.addChild(root_0, RPAREN132_tree);
@@ -3823,7 +3824,7 @@ public class ValaParser extends Parser {
                 case 1 :
                     // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:253:3: literal
                     {
-                    pushFollow(FOLLOW_literal_in_primary_expression1125);
+                    pushFollow(FOLLOW_literal_in_primary_expression1115);
                     literal133=literal();
 
                     state._fsp--;
@@ -3835,7 +3836,7 @@ public class ValaParser extends Parser {
                 case 2 :
                     // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:254:5: initializer
                     {
-                    pushFollow(FOLLOW_initializer_in_primary_expression1131);
+                    pushFollow(FOLLOW_initializer_in_primary_expression1121);
                     initializer134=initializer();
 
                     state._fsp--;
@@ -3847,7 +3848,7 @@ public class ValaParser extends Parser {
                 case 3 :
                     // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:255:5: tuple
                     {
-                    pushFollow(FOLLOW_tuple_in_primary_expression1137);
+                    pushFollow(FOLLOW_tuple_in_primary_expression1127);
                     tuple135=tuple();
 
                     state._fsp--;
@@ -3859,7 +3860,7 @@ public class ValaParser extends Parser {
                 case 4 :
                     // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:256:5: template
                     {
-                    pushFollow(FOLLOW_template_in_primary_expression1143);
+                    pushFollow(FOLLOW_template_in_primary_expression1133);
                     template136=template();
 
                     state._fsp--;
@@ -3871,7 +3872,7 @@ public class ValaParser extends Parser {
                 case 5 :
                     // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:257:5: this_access
                     {
-                    pushFollow(FOLLOW_this_access_in_primary_expression1149);
+                    pushFollow(FOLLOW_this_access_in_primary_expression1139);
                     this_access137=this_access();
 
                     state._fsp--;
@@ -3883,7 +3884,7 @@ public class ValaParser extends Parser {
                 case 6 :
                     // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:258:5: base_access
                     {
-                    pushFollow(FOLLOW_base_access_in_primary_expression1155);
+                    pushFollow(FOLLOW_base_access_in_primary_expression1145);
                     base_access138=base_access();
 
                     state._fsp--;
@@ -3895,7 +3896,7 @@ public class ValaParser extends Parser {
                 case 7 :
                     // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:259:5: object_or_array_creation_expression
                     {
-                    pushFollow(FOLLOW_object_or_array_creation_expression_in_primary_expression1161);
+                    pushFollow(FOLLOW_object_or_array_creation_expression_in_primary_expression1151);
                     object_or_array_creation_expression139=object_or_array_creation_expression();
 
                     state._fsp--;
@@ -3907,7 +3908,7 @@ public class ValaParser extends Parser {
                 case 8 :
                     // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:260:5: yield_expression
                     {
-                    pushFollow(FOLLOW_yield_expression_in_primary_expression1167);
+                    pushFollow(FOLLOW_yield_expression_in_primary_expression1157);
                     yield_expression140=yield_expression();
 
                     state._fsp--;
@@ -3919,7 +3920,7 @@ public class ValaParser extends Parser {
                 case 9 :
                     // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:261:5: sizeof_expression
                     {
-                    pushFollow(FOLLOW_sizeof_expression_in_primary_expression1173);
+                    pushFollow(FOLLOW_sizeof_expression_in_primary_expression1163);
                     sizeof_expression141=sizeof_expression();
 
                     state._fsp--;
@@ -3931,7 +3932,7 @@ public class ValaParser extends Parser {
                 case 10 :
                     // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:262:5: typeof_expression
                     {
-                    pushFollow(FOLLOW_typeof_expression_in_primary_expression1179);
+                    pushFollow(FOLLOW_typeof_expression_in_primary_expression1169);
                     typeof_expression142=typeof_expression();
 
                     state._fsp--;
@@ -3943,7 +3944,7 @@ public class ValaParser extends Parser {
                 case 11 :
                     // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:263:5: simple_name
                     {
-                    pushFollow(FOLLOW_simple_name_in_primary_expression1185);
+                    pushFollow(FOLLOW_simple_name_in_primary_expression1175);
                     simple_name143=simple_name();
 
                     state._fsp--;
@@ -3964,7 +3965,7 @@ public class ValaParser extends Parser {
             	case 1 :
             	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:266:3: member_access
             	    {
-            	    pushFollow(FOLLOW_member_access_in_primary_expression1195);
+            	    pushFollow(FOLLOW_member_access_in_primary_expression1185);
             	    member_access144=member_access();
 
             	    state._fsp--;
@@ -3976,7 +3977,7 @@ public class ValaParser extends Parser {
             	case 2 :
             	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:267:5: pointer_member_access
             	    {
-            	    pushFollow(FOLLOW_pointer_member_access_in_primary_expression1201);
+            	    pushFollow(FOLLOW_pointer_member_access_in_primary_expression1191);
             	    pointer_member_access145=pointer_member_access();
 
             	    state._fsp--;
@@ -3988,7 +3989,7 @@ public class ValaParser extends Parser {
             	case 3 :
             	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:268:5: method_call
             	    {
-            	    pushFollow(FOLLOW_method_call_in_primary_expression1207);
+            	    pushFollow(FOLLOW_method_call_in_primary_expression1197);
             	    method_call146=method_call();
 
             	    state._fsp--;
@@ -4000,7 +4001,7 @@ public class ValaParser extends Parser {
             	case 4 :
             	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:269:5: element_access
             	    {
-            	    pushFollow(FOLLOW_element_access_in_primary_expression1213);
+            	    pushFollow(FOLLOW_element_access_in_primary_expression1203);
             	    element_access147=element_access();
 
             	    state._fsp--;
@@ -4012,7 +4013,7 @@ public class ValaParser extends Parser {
             	case 5 :
             	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:270:5: post_increment_expression
             	    {
-            	    pushFollow(FOLLOW_post_increment_expression_in_primary_expression1219);
+            	    pushFollow(FOLLOW_post_increment_expression_in_primary_expression1209);
             	    post_increment_expression148=post_increment_expression();
 
             	    state._fsp--;
@@ -4024,7 +4025,7 @@ public class ValaParser extends Parser {
             	case 6 :
             	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:271:5: post_decrement_expression
             	    {
-            	    pushFollow(FOLLOW_post_decrement_expression_in_primary_expression1225);
+            	    pushFollow(FOLLOW_post_decrement_expression_in_primary_expression1215);
             	    post_decrement_expression149=post_decrement_expression();
 
             	    state._fsp--;
@@ -4091,12 +4092,12 @@ public class ValaParser extends Parser {
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            DOT150=(Token)match(input,DOT,FOLLOW_DOT_in_member_access1240); if (state.failed) return retval;
+            DOT150=(Token)match(input,DOT,FOLLOW_DOT_in_member_access1230); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             DOT150_tree = (CommonTree)adaptor.create(DOT150);
             adaptor.addChild(root_0, DOT150_tree);
             }
-            pushFollow(FOLLOW_identifier_in_member_access1243);
+            pushFollow(FOLLOW_identifier_in_member_access1233);
             identifier151=identifier();
 
             state._fsp--;
@@ -4109,7 +4110,7 @@ public class ValaParser extends Parser {
                 case 1 :
                     // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:278:3: type_arguments
                     {
-                    pushFollow(FOLLOW_type_arguments_in_member_access1247);
+                    pushFollow(FOLLOW_type_arguments_in_member_access1237);
                     type_arguments152=type_arguments();
 
                     state._fsp--;
@@ -4151,7 +4152,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "identifier"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:280:1: identifier : ( IDENTIFIER | KW_USING | KW_CONSTRUCT | KW_SET | KW_GET | KW_IN | KW_IS | KW_AS | KW_VOID | KW_DYNAMIC | KW_OWNED | KW_WEAK | KW_UNOWNED | KW_TRUE | KW_FALSE | KW_NULL | KW_NEW | KW_YIELD | KW_SIZEOF | KW_TYPEOF | KW_ASYNC | KW_CLASS | KW_STRUCT | KW_EXTERN | KW_INLINE | KW_STATIC | KW_ABSTRACT | KW_VIRTUAL | KW_OVERRIDE | KW_PRIVATE | KW_PROTECTED | KW_PUBLIC | KW_INTERNAL | KW_ENUM | KW_ERRORDOMAIN | KW_INTERFACE | KW_NAMESPACE | KW_OUT | KW_REF | KW_PARAMS | KW_TRY | KW_CATCH | KW_FINALLY | KW_LOCK | KW_DELETE | KW_FOREACH | KW_CONTINUE | KW_RETURN | KW_BREAK | KW_VAR | KW_THROW );
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:280:1: identifier : ( IDENTIFIER | KW_USING | KW_CONSTRUCT | KW_SET | KW_GET | KW_IN | KW_IS | KW_AS | KW_VOID | KW_DYNAMIC | KW_OWNED | KW_WEAK | KW_UNOWNED | KW_TRUE | KW_FALSE | KW_NULL | KW_NEW | KW_YIELD | KW_SIZEOF | KW_TYPEOF | KW_ASYNC | KW_CLASS | KW_STRUCT | KW_EXTERN | KW_INLINE | KW_STATIC | KW_ABSTRACT | KW_VIRTUAL | KW_OVERRIDE | KW_PRIVATE | KW_PROTECTED | KW_PUBLIC | KW_INTERNAL | KW_ENUM | KW_ERRORDOMAIN | KW_INTERFACE | KW_NAMESPACE | KW_OUT | KW_REF | KW_PARAMS | KW_TRY | KW_CATCH | KW_FINALLY | KW_LOCK | KW_DELETE | KW_FOREACH | KW_CONTINUE | KW_RETURN | KW_BREAK | KW_VAR | KW_THROW | KW_SIGNAL | KW_REQUIRES );
     public final ValaParser.identifier_return identifier() throws RecognitionException {
         ValaParser.identifier_return retval = new ValaParser.identifier_return();
         retval.start = input.LT(1);
@@ -4164,13 +4165,13 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 33) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:281:2: ( IDENTIFIER | KW_USING | KW_CONSTRUCT | KW_SET | KW_GET | KW_IN | KW_IS | KW_AS | KW_VOID | KW_DYNAMIC | KW_OWNED | KW_WEAK | KW_UNOWNED | KW_TRUE | KW_FALSE | KW_NULL | KW_NEW | KW_YIELD | KW_SIZEOF | KW_TYPEOF | KW_ASYNC | KW_CLASS | KW_STRUCT | KW_EXTERN | KW_INLINE | KW_STATIC | KW_ABSTRACT | KW_VIRTUAL | KW_OVERRIDE | KW_PRIVATE | KW_PROTECTED | KW_PUBLIC | KW_INTERNAL | KW_ENUM | KW_ERRORDOMAIN | KW_INTERFACE | KW_NAMESPACE | KW_OUT | KW_REF | KW_PARAMS | KW_TRY | KW_CATCH | KW_FINALLY | KW_LOCK | KW_DELETE | KW_FOREACH | KW_CONTINUE | KW_RETURN | KW_BREAK | KW_VAR | KW_THROW )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:281:2: ( IDENTIFIER | KW_USING | KW_CONSTRUCT | KW_SET | KW_GET | KW_IN | KW_IS | KW_AS | KW_VOID | KW_DYNAMIC | KW_OWNED | KW_WEAK | KW_UNOWNED | KW_TRUE | KW_FALSE | KW_NULL | KW_NEW | KW_YIELD | KW_SIZEOF | KW_TYPEOF | KW_ASYNC | KW_CLASS | KW_STRUCT | KW_EXTERN | KW_INLINE | KW_STATIC | KW_ABSTRACT | KW_VIRTUAL | KW_OVERRIDE | KW_PRIVATE | KW_PROTECTED | KW_PUBLIC | KW_INTERNAL | KW_ENUM | KW_ERRORDOMAIN | KW_INTERFACE | KW_NAMESPACE | KW_OUT | KW_REF | KW_PARAMS | KW_TRY | KW_CATCH | KW_FINALLY | KW_LOCK | KW_DELETE | KW_FOREACH | KW_CONTINUE | KW_RETURN | KW_BREAK | KW_VAR | KW_THROW | KW_SIGNAL | KW_REQUIRES )
             // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:
             {
             root_0 = (CommonTree)adaptor.nil();
 
             set153=(Token)input.LT(1);
-            if ( input.LA(1)==KW_USING||input.LA(1)==IDENTIFIER||input.LA(1)==KW_IN||(input.LA(1)>=KW_IS && input.LA(1)<=KW_VOID)||(input.LA(1)>=KW_DYNAMIC && input.LA(1)<=KW_WEAK)||(input.LA(1)>=KW_CONSTRUCT && input.LA(1)<=KW_THROW) ) {
+            if ( input.LA(1)==KW_USING||input.LA(1)==IDENTIFIER||input.LA(1)==KW_IN||(input.LA(1)>=KW_IS && input.LA(1)<=KW_VOID)||(input.LA(1)>=KW_DYNAMIC && input.LA(1)<=KW_WEAK)||(input.LA(1)>=KW_CONSTRUCT && input.LA(1)<=KW_REQUIRES) ) {
                 input.consume();
                 if ( state.backtracking==0 ) adaptor.addChild(root_0, (CommonTree)adaptor.create(set153));
                 state.errorRecovery=false;state.failed=false;
@@ -4211,7 +4212,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "post_increment_expression"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:334:1: post_increment_expression : INCREMENT ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:336:1: post_increment_expression : INCREMENT ;
     public final ValaParser.post_increment_expression_return post_increment_expression() throws RecognitionException {
         ValaParser.post_increment_expression_return retval = new ValaParser.post_increment_expression_return();
         retval.start = input.LT(1);
@@ -4224,8 +4225,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 34) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:335:2: ( INCREMENT )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:335:4: INCREMENT
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:337:2: ( INCREMENT )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:337:4: INCREMENT
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -4264,7 +4265,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "post_decrement_expression"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:337:1: post_decrement_expression : DECREMENT ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:339:1: post_decrement_expression : DECREMENT ;
     public final ValaParser.post_decrement_expression_return post_decrement_expression() throws RecognitionException {
         ValaParser.post_decrement_expression_return retval = new ValaParser.post_decrement_expression_return();
         retval.start = input.LT(1);
@@ -4277,8 +4278,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 35) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:338:2: ( DECREMENT )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:338:4: DECREMENT
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:340:2: ( DECREMENT )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:340:4: DECREMENT
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -4317,7 +4318,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "element_access"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:340:1: element_access : LBRACKET expression ( slice_array )? RBRACKET ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:342:1: element_access : LBRACKET expression ( slice_array )? RBRACKET ;
     public final ValaParser.element_access_return element_access() throws RecognitionException {
         ValaParser.element_access_return retval = new ValaParser.element_access_return();
         retval.start = input.LT(1);
@@ -4336,8 +4337,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 36) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:341:2: ( LBRACKET expression ( slice_array )? RBRACKET )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:342:2: LBRACKET expression ( slice_array )? RBRACKET
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:343:2: ( LBRACKET expression ( slice_array )? RBRACKET )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:344:2: LBRACKET expression ( slice_array )? RBRACKET
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -4352,7 +4353,7 @@ public class ValaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, expression157.getTree());
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:344:2: ( slice_array )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:346:2: ( slice_array )?
             int alt44=2;
             int LA44_0 = input.LA(1);
 
@@ -4361,7 +4362,7 @@ public class ValaParser extends Parser {
             }
             switch (alt44) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:344:3: slice_array
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:346:3: slice_array
                     {
                     pushFollow(FOLLOW_slice_array_in_element_access1553);
                     slice_array158=slice_array();
@@ -4410,7 +4411,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "slice_array"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:347:1: slice_array : COLON expression ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:349:1: slice_array : COLON expression ;
     public final ValaParser.slice_array_return slice_array() throws RecognitionException {
         ValaParser.slice_array_return retval = new ValaParser.slice_array_return();
         retval.start = input.LT(1);
@@ -4425,8 +4426,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 37) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:348:2: ( COLON expression )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:349:2: COLON expression
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:350:2: ( COLON expression )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:351:2: COLON expression
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -4471,7 +4472,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "pointer_member_access"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:352:1: pointer_member_access : POINTER_ACCESS identifier ( type_arguments )? ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:354:1: pointer_member_access : POINTER_ACCESS identifier ( type_arguments )? ;
     public final ValaParser.pointer_member_access_return pointer_member_access() throws RecognitionException {
         ValaParser.pointer_member_access_return retval = new ValaParser.pointer_member_access_return();
         retval.start = input.LT(1);
@@ -4488,8 +4489,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 38) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:353:2: ( POINTER_ACCESS identifier ( type_arguments )? )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:354:2: POINTER_ACCESS identifier ( type_arguments )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:355:2: ( POINTER_ACCESS identifier ( type_arguments )? )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:356:2: POINTER_ACCESS identifier ( type_arguments )?
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -4504,12 +4505,12 @@ public class ValaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, identifier163.getTree());
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:356:2: ( type_arguments )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:358:2: ( type_arguments )?
             int alt45=2;
             alt45 = dfa45.predict(input);
             switch (alt45) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:356:3: type_arguments
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:358:3: type_arguments
                     {
                     pushFollow(FOLLOW_type_arguments_in_pointer_member_access1593);
                     type_arguments164=type_arguments();
@@ -4553,7 +4554,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "literal"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:358:1: literal : ( boolean_literal | null_literal | open_regex_literal | vertbatim_string_literal | integer_literal | hex_literal | real_literal | char_literal | string_literal );
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:360:1: literal : ( boolean_literal | null_literal | open_regex_literal | vertbatim_string_literal | integer_literal | hex_literal | real_literal | char_literal | string_literal );
     public final ValaParser.literal_return literal() throws RecognitionException {
         ValaParser.literal_return retval = new ValaParser.literal_return();
         retval.start = input.LT(1);
@@ -4582,7 +4583,7 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 39) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:359:2: ( boolean_literal | null_literal | open_regex_literal | vertbatim_string_literal | integer_literal | hex_literal | real_literal | char_literal | string_literal )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:361:2: ( boolean_literal | null_literal | open_regex_literal | vertbatim_string_literal | integer_literal | hex_literal | real_literal | char_literal | string_literal )
             int alt46=9;
             switch ( input.LA(1) ) {
             case KW_TRUE:
@@ -4641,7 +4642,7 @@ public class ValaParser extends Parser {
 
             switch (alt46) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:360:2: boolean_literal
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:362:2: boolean_literal
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -4655,7 +4656,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:361:4: null_literal
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:363:4: null_literal
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -4669,7 +4670,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:362:4: open_regex_literal
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:364:4: open_regex_literal
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -4683,7 +4684,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:363:4: vertbatim_string_literal
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:365:4: vertbatim_string_literal
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -4697,7 +4698,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 5 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:364:4: integer_literal
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:366:4: integer_literal
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -4711,7 +4712,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 6 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:365:4: hex_literal
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:367:4: hex_literal
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -4725,7 +4726,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 7 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:366:4: real_literal
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:368:4: real_literal
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -4739,7 +4740,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 8 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:367:4: char_literal
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:369:4: char_literal
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -4753,7 +4754,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 9 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:368:4: string_literal
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:370:4: string_literal
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -4795,7 +4796,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "integer_literal"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:371:1: integer_literal : INTEGER ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:373:1: integer_literal : INTEGER ;
     public final ValaParser.integer_literal_return integer_literal() throws RecognitionException {
         ValaParser.integer_literal_return retval = new ValaParser.integer_literal_return();
         retval.start = input.LT(1);
@@ -4808,8 +4809,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 40) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:372:2: ( INTEGER )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:373:2: INTEGER
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:374:2: ( INTEGER )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:375:2: INTEGER
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -4848,7 +4849,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "real_literal"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:375:1: real_literal : REAL ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:377:1: real_literal : REAL ;
     public final ValaParser.real_literal_return real_literal() throws RecognitionException {
         ValaParser.real_literal_return retval = new ValaParser.real_literal_return();
         retval.start = input.LT(1);
@@ -4861,8 +4862,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 41) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:376:2: ( REAL )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:377:2: REAL
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:378:2: ( REAL )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:379:2: REAL
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -4901,7 +4902,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "string_literal"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:379:1: string_literal : STRING ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:381:1: string_literal : STRING ;
     public final ValaParser.string_literal_return string_literal() throws RecognitionException {
         ValaParser.string_literal_return retval = new ValaParser.string_literal_return();
         retval.start = input.LT(1);
@@ -4914,8 +4915,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 42) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:380:2: ( STRING )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:381:2: STRING
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:382:2: ( STRING )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:383:2: STRING
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -4954,7 +4955,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "hex_literal"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:383:1: hex_literal : HEX ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:385:1: hex_literal : HEX ;
     public final ValaParser.hex_literal_return hex_literal() throws RecognitionException {
         ValaParser.hex_literal_return retval = new ValaParser.hex_literal_return();
         retval.start = input.LT(1);
@@ -4967,8 +4968,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 43) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:384:2: ( HEX )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:385:2: HEX
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:386:2: ( HEX )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:387:2: HEX
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -5007,7 +5008,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "boolean_literal"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:387:1: boolean_literal : ( KW_TRUE | KW_FALSE );
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:389:1: boolean_literal : ( KW_TRUE | KW_FALSE );
     public final ValaParser.boolean_literal_return boolean_literal() throws RecognitionException {
         ValaParser.boolean_literal_return retval = new ValaParser.boolean_literal_return();
         retval.start = input.LT(1);
@@ -5020,7 +5021,7 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 44) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:388:2: ( KW_TRUE | KW_FALSE )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:390:2: ( KW_TRUE | KW_FALSE )
             // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:
             {
             root_0 = (CommonTree)adaptor.nil();
@@ -5067,7 +5068,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "null_literal"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:390:1: null_literal : KW_NULL ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:392:1: null_literal : KW_NULL ;
     public final ValaParser.null_literal_return null_literal() throws RecognitionException {
         ValaParser.null_literal_return retval = new ValaParser.null_literal_return();
         retval.start = input.LT(1);
@@ -5080,8 +5081,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 45) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:391:2: ( KW_NULL )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:391:4: KW_NULL
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:393:2: ( KW_NULL )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:393:4: KW_NULL
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -5120,7 +5121,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "char_literal"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:393:1: char_literal : CHAR ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:395:1: char_literal : CHAR ;
     public final ValaParser.char_literal_return char_literal() throws RecognitionException {
         ValaParser.char_literal_return retval = new ValaParser.char_literal_return();
         retval.start = input.LT(1);
@@ -5133,8 +5134,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 46) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:394:2: ( CHAR )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:395:2: CHAR
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:396:2: ( CHAR )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:397:2: CHAR
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -5173,7 +5174,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "open_regex_literal"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:397:1: open_regex_literal : REGEX_LITERAL ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:399:1: open_regex_literal : REGEX_LITERAL ;
     public final ValaParser.open_regex_literal_return open_regex_literal() throws RecognitionException {
         ValaParser.open_regex_literal_return retval = new ValaParser.open_regex_literal_return();
         retval.start = input.LT(1);
@@ -5186,8 +5187,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 47) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:398:2: ( REGEX_LITERAL )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:399:2: REGEX_LITERAL
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:400:2: ( REGEX_LITERAL )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:401:2: REGEX_LITERAL
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -5226,7 +5227,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "vertbatim_string_literal"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:401:1: vertbatim_string_literal : VERBATIM_LITERAL ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:403:1: vertbatim_string_literal : VERBATIM_LITERAL ;
     public final ValaParser.vertbatim_string_literal_return vertbatim_string_literal() throws RecognitionException {
         ValaParser.vertbatim_string_literal_return retval = new ValaParser.vertbatim_string_literal_return();
         retval.start = input.LT(1);
@@ -5239,8 +5240,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 48) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:402:2: ( VERBATIM_LITERAL )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:403:2: VERBATIM_LITERAL
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:404:2: ( VERBATIM_LITERAL )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:405:2: VERBATIM_LITERAL
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -5279,7 +5280,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "initializer"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:405:1: initializer : LCURL ( argument ( COMMA argument )* )? RCURL ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:407:1: initializer : LCURL ( argument ( COMMA argument )* )? RCURL ;
     public final ValaParser.initializer_return initializer() throws RecognitionException {
         ValaParser.initializer_return retval = new ValaParser.initializer_return();
         retval.start = input.LT(1);
@@ -5300,8 +5301,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 49) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:406:2: ( LCURL ( argument ( COMMA argument )* )? RCURL )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:407:2: LCURL ( argument ( COMMA argument )* )? RCURL
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:408:2: ( LCURL ( argument ( COMMA argument )* )? RCURL )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:409:2: LCURL ( argument ( COMMA argument )* )? RCURL
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -5310,16 +5311,16 @@ public class ValaParser extends Parser {
             LCURL183_tree = (CommonTree)adaptor.create(LCURL183);
             adaptor.addChild(root_0, LCURL183_tree);
             }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:408:3: ( argument ( COMMA argument )* )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:410:3: ( argument ( COMMA argument )* )?
             int alt48=2;
             int LA48_0 = input.LA(1);
 
-            if ( (LA48_0==KW_USING||(LA48_0>=GLOBAL_NS && LA48_0<=IDENTIFIER)||LA48_0==LPAREN||LA48_0==KW_IN||LA48_0==AND||(LA48_0>=KW_IS && LA48_0<=KW_WEAK)||(LA48_0>=PLUS && LA48_0<=MINUS)||(LA48_0>=NOT && LA48_0<=KW_THROW)||(LA48_0>=KW_OUT && LA48_0<=KW_REF)||(LA48_0>=INTEGER && LA48_0<=LCURL)||LA48_0==TEMPLATE_START||(LA48_0>=KW_THIS && LA48_0<=KW_BASE)) ) {
+            if ( (LA48_0==KW_USING||(LA48_0>=GLOBAL_NS && LA48_0<=IDENTIFIER)||LA48_0==LPAREN||LA48_0==KW_IN||LA48_0==AND||(LA48_0>=KW_IS && LA48_0<=KW_WEAK)||(LA48_0>=PLUS && LA48_0<=MINUS)||(LA48_0>=NOT && LA48_0<=KW_REQUIRES)||(LA48_0>=KW_OUT && LA48_0<=KW_REF)||(LA48_0>=INTEGER && LA48_0<=LCURL)||LA48_0==TEMPLATE_START||(LA48_0>=KW_THIS && LA48_0<=KW_BASE)) ) {
                 alt48=1;
             }
             switch (alt48) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:408:4: argument ( COMMA argument )*
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:410:4: argument ( COMMA argument )*
                     {
                     pushFollow(FOLLOW_argument_in_initializer1775);
                     argument184=argument();
@@ -5327,7 +5328,7 @@ public class ValaParser extends Parser {
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) adaptor.addChild(root_0, argument184.getTree());
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:409:3: ( COMMA argument )*
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:411:3: ( COMMA argument )*
                     loop47:
                     do {
                         int alt47=2;
@@ -5340,7 +5341,7 @@ public class ValaParser extends Parser {
 
                         switch (alt47) {
                     	case 1 :
-                    	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:409:4: COMMA argument
+                    	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:411:4: COMMA argument
                     	    {
                     	    COMMA185=(Token)match(input,COMMA,FOLLOW_COMMA_in_initializer1781); if (state.failed) return retval;
                     	    if ( state.backtracking==0 ) {
@@ -5403,7 +5404,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "arguments"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:412:1: arguments : argument ( COMMA argument )* ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:414:1: arguments : argument ( COMMA argument )* ;
     public final ValaParser.arguments_return arguments() throws RecognitionException {
         ValaParser.arguments_return retval = new ValaParser.arguments_return();
         retval.start = input.LT(1);
@@ -5420,8 +5421,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 50) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:413:2: ( argument ( COMMA argument )* )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:414:2: argument ( COMMA argument )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:415:2: ( argument ( COMMA argument )* )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:416:2: argument ( COMMA argument )*
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -5431,7 +5432,7 @@ public class ValaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, argument188.getTree());
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:415:2: ( COMMA argument )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:417:2: ( COMMA argument )*
             loop49:
             do {
                 int alt49=2;
@@ -5444,7 +5445,7 @@ public class ValaParser extends Parser {
 
                 switch (alt49) {
             	case 1 :
-            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:415:3: COMMA argument
+            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:417:3: COMMA argument
             	    {
             	    COMMA189=(Token)match(input,COMMA,FOLLOW_COMMA_in_arguments1807); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -5496,7 +5497,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "argument"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:417:1: argument : ( identifier COLON )? ( ( KW_REF ) | ( KW_OUT ) )? expression ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:419:1: argument : ( identifier COLON )? ( ( KW_REF ) | ( KW_OUT ) )? expression ;
     public final ValaParser.argument_return argument() throws RecognitionException {
         ValaParser.argument_return retval = new ValaParser.argument_return();
         retval.start = input.LT(1);
@@ -5517,17 +5518,17 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 51) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:418:2: ( ( identifier COLON )? ( ( KW_REF ) | ( KW_OUT ) )? expression )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:419:2: ( identifier COLON )? ( ( KW_REF ) | ( KW_OUT ) )? expression
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:420:2: ( ( identifier COLON )? ( ( KW_REF ) | ( KW_OUT ) )? expression )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:421:2: ( identifier COLON )? ( ( KW_REF ) | ( KW_OUT ) )? expression
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:419:2: ( identifier COLON )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:421:2: ( identifier COLON )?
             int alt50=2;
             alt50 = dfa50.predict(input);
             switch (alt50) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:420:3: identifier COLON
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:422:3: identifier COLON
                     {
                     pushFollow(FOLLOW_identifier_in_argument1826);
                     identifier191=identifier();
@@ -5546,15 +5547,15 @@ public class ValaParser extends Parser {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:423:2: ( ( KW_REF ) | ( KW_OUT ) )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:425:2: ( ( KW_REF ) | ( KW_OUT ) )?
             int alt51=3;
             alt51 = dfa51.predict(input);
             switch (alt51) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:423:3: ( KW_REF )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:425:3: ( KW_REF )
                     {
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:423:3: ( KW_REF )
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:423:4: KW_REF
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:425:3: ( KW_REF )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:425:4: KW_REF
                     {
                     KW_REF193=(Token)match(input,KW_REF,FOLLOW_KW_REF_in_argument1840); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -5568,10 +5569,10 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:423:14: ( KW_OUT )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:425:14: ( KW_OUT )
                     {
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:423:14: ( KW_OUT )
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:423:15: KW_OUT
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:425:14: ( KW_OUT )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:425:15: KW_OUT
                     {
                     KW_OUT194=(Token)match(input,KW_OUT,FOLLOW_KW_OUT_in_argument1846); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -5623,7 +5624,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "tuple"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:426:1: tuple : LPAREN expression ( COMMA expression )* RPAREN ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:428:1: tuple : LPAREN expression ( COMMA expression )* RPAREN ;
     public final ValaParser.tuple_return tuple() throws RecognitionException {
         ValaParser.tuple_return retval = new ValaParser.tuple_return();
         retval.start = input.LT(1);
@@ -5644,8 +5645,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 52) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:427:2: ( LPAREN expression ( COMMA expression )* RPAREN )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:428:2: LPAREN expression ( COMMA expression )* RPAREN
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:429:2: ( LPAREN expression ( COMMA expression )* RPAREN )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:430:2: LPAREN expression ( COMMA expression )* RPAREN
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -5660,7 +5661,7 @@ public class ValaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, expression197.getTree());
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:430:2: ( COMMA expression )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:432:2: ( COMMA expression )*
             loop52:
             do {
                 int alt52=2;
@@ -5673,7 +5674,7 @@ public class ValaParser extends Parser {
 
                 switch (alt52) {
             	case 1 :
-            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:431:3: COMMA expression
+            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:433:3: COMMA expression
             	    {
             	    COMMA198=(Token)match(input,COMMA,FOLLOW_COMMA_in_tuple1876); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -5730,7 +5731,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "template"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:436:1: template : TEMPLATE_START ( expression COMMA )* QUOT ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:438:1: template : TEMPLATE_START ( expression COMMA )* QUOT ;
     public final ValaParser.template_return template() throws RecognitionException {
         ValaParser.template_return retval = new ValaParser.template_return();
         retval.start = input.LT(1);
@@ -5749,8 +5750,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 53) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:437:2: ( TEMPLATE_START ( expression COMMA )* QUOT )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:438:2: TEMPLATE_START ( expression COMMA )* QUOT
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:439:2: ( TEMPLATE_START ( expression COMMA )* QUOT )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:440:2: TEMPLATE_START ( expression COMMA )* QUOT
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -5759,20 +5760,20 @@ public class ValaParser extends Parser {
             TEMPLATE_START201_tree = (CommonTree)adaptor.create(TEMPLATE_START201);
             adaptor.addChild(root_0, TEMPLATE_START201_tree);
             }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:439:2: ( expression COMMA )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:441:2: ( expression COMMA )*
             loop53:
             do {
                 int alt53=2;
                 int LA53_0 = input.LA(1);
 
-                if ( (LA53_0==KW_USING||(LA53_0>=GLOBAL_NS && LA53_0<=IDENTIFIER)||LA53_0==LPAREN||LA53_0==KW_IN||LA53_0==AND||(LA53_0>=KW_IS && LA53_0<=KW_WEAK)||(LA53_0>=PLUS && LA53_0<=MINUS)||(LA53_0>=NOT && LA53_0<=KW_THROW)||(LA53_0>=INTEGER && LA53_0<=LCURL)||LA53_0==TEMPLATE_START||(LA53_0>=KW_THIS && LA53_0<=KW_BASE)) ) {
+                if ( (LA53_0==KW_USING||(LA53_0>=GLOBAL_NS && LA53_0<=IDENTIFIER)||LA53_0==LPAREN||LA53_0==KW_IN||LA53_0==AND||(LA53_0>=KW_IS && LA53_0<=KW_WEAK)||(LA53_0>=PLUS && LA53_0<=MINUS)||(LA53_0>=NOT && LA53_0<=KW_REQUIRES)||(LA53_0>=INTEGER && LA53_0<=LCURL)||LA53_0==TEMPLATE_START||(LA53_0>=KW_THIS && LA53_0<=KW_BASE)) ) {
                     alt53=1;
                 }
 
 
                 switch (alt53) {
             	case 1 :
-            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:439:3: expression COMMA
+            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:441:3: expression COMMA
             	    {
             	    pushFollow(FOLLOW_expression_in_template1904);
             	    expression202=expression();
@@ -5829,7 +5830,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "this_access"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:442:1: this_access : KW_THIS ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:444:1: this_access : KW_THIS ;
     public final ValaParser.this_access_return this_access() throws RecognitionException {
         ValaParser.this_access_return retval = new ValaParser.this_access_return();
         retval.start = input.LT(1);
@@ -5842,8 +5843,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 54) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:443:2: ( KW_THIS )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:443:4: KW_THIS
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:445:2: ( KW_THIS )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:445:4: KW_THIS
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -5882,7 +5883,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "base_access"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:445:1: base_access : KW_BASE ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:447:1: base_access : KW_BASE ;
     public final ValaParser.base_access_return base_access() throws RecognitionException {
         ValaParser.base_access_return retval = new ValaParser.base_access_return();
         retval.start = input.LT(1);
@@ -5895,8 +5896,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 55) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:446:2: ( KW_BASE )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:446:4: KW_BASE
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:448:2: ( KW_BASE )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:448:4: KW_BASE
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -5935,7 +5936,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "object_or_array_creation_expression"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:448:1: object_or_array_creation_expression : KW_NEW member ( object_creation_expression | array_creation_expression ) ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:450:1: object_or_array_creation_expression : KW_NEW member ( object_creation_expression | array_creation_expression ) ;
     public final ValaParser.object_or_array_creation_expression_return object_or_array_creation_expression() throws RecognitionException {
         ValaParser.object_or_array_creation_expression_return retval = new ValaParser.object_or_array_creation_expression_return();
         retval.start = input.LT(1);
@@ -5954,8 +5955,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 56) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:449:2: ( KW_NEW member ( object_creation_expression | array_creation_expression ) )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:450:2: KW_NEW member ( object_creation_expression | array_creation_expression )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:451:2: ( KW_NEW member ( object_creation_expression | array_creation_expression ) )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:452:2: KW_NEW member ( object_creation_expression | array_creation_expression )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -5970,12 +5971,12 @@ public class ValaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, member208.getTree());
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:452:2: ( object_creation_expression | array_creation_expression )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:454:2: ( object_creation_expression | array_creation_expression )
             int alt54=2;
             alt54 = dfa54.predict(input);
             switch (alt54) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:452:4: object_creation_expression
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:454:4: object_creation_expression
                     {
                     pushFollow(FOLLOW_object_creation_expression_in_object_or_array_creation_expression1954);
                     object_creation_expression209=object_creation_expression();
@@ -5987,7 +5988,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:452:33: array_creation_expression
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:454:33: array_creation_expression
                     {
                     pushFollow(FOLLOW_array_creation_expression_in_object_or_array_creation_expression1958);
                     array_creation_expression210=array_creation_expression();
@@ -6031,7 +6032,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "object_creation_expression"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:454:1: object_creation_expression : LPAREN ( arguments )? RPAREN ( object_initializer )? ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:456:1: object_creation_expression : LPAREN ( arguments )? RPAREN ( object_initializer )? ;
     public final ValaParser.object_creation_expression_return object_creation_expression() throws RecognitionException {
         ValaParser.object_creation_expression_return retval = new ValaParser.object_creation_expression_return();
         retval.start = input.LT(1);
@@ -6050,8 +6051,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 57) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:455:2: ( LPAREN ( arguments )? RPAREN ( object_initializer )? )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:456:2: LPAREN ( arguments )? RPAREN ( object_initializer )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:457:2: ( LPAREN ( arguments )? RPAREN ( object_initializer )? )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:458:2: LPAREN ( arguments )? RPAREN ( object_initializer )?
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -6060,16 +6061,16 @@ public class ValaParser extends Parser {
             LPAREN211_tree = (CommonTree)adaptor.create(LPAREN211);
             adaptor.addChild(root_0, LPAREN211_tree);
             }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:457:2: ( arguments )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:459:2: ( arguments )?
             int alt55=2;
             int LA55_0 = input.LA(1);
 
-            if ( (LA55_0==KW_USING||(LA55_0>=GLOBAL_NS && LA55_0<=IDENTIFIER)||LA55_0==LPAREN||LA55_0==KW_IN||LA55_0==AND||(LA55_0>=KW_IS && LA55_0<=KW_WEAK)||(LA55_0>=PLUS && LA55_0<=MINUS)||(LA55_0>=NOT && LA55_0<=KW_THROW)||(LA55_0>=KW_OUT && LA55_0<=KW_REF)||(LA55_0>=INTEGER && LA55_0<=LCURL)||LA55_0==TEMPLATE_START||(LA55_0>=KW_THIS && LA55_0<=KW_BASE)) ) {
+            if ( (LA55_0==KW_USING||(LA55_0>=GLOBAL_NS && LA55_0<=IDENTIFIER)||LA55_0==LPAREN||LA55_0==KW_IN||LA55_0==AND||(LA55_0>=KW_IS && LA55_0<=KW_WEAK)||(LA55_0>=PLUS && LA55_0<=MINUS)||(LA55_0>=NOT && LA55_0<=KW_REQUIRES)||(LA55_0>=KW_OUT && LA55_0<=KW_REF)||(LA55_0>=INTEGER && LA55_0<=LCURL)||LA55_0==TEMPLATE_START||(LA55_0>=KW_THIS && LA55_0<=KW_BASE)) ) {
                 alt55=1;
             }
             switch (alt55) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:457:4: arguments
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:459:4: arguments
                     {
                     pushFollow(FOLLOW_arguments_in_object_creation_expression1979);
                     arguments212=arguments();
@@ -6088,7 +6089,7 @@ public class ValaParser extends Parser {
             RPAREN213_tree = (CommonTree)adaptor.create(RPAREN213);
             adaptor.addChild(root_0, RPAREN213_tree);
             }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:459:2: ( object_initializer )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:461:2: ( object_initializer )?
             int alt56=2;
             int LA56_0 = input.LA(1);
 
@@ -6097,7 +6098,7 @@ public class ValaParser extends Parser {
             }
             switch (alt56) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:459:4: object_initializer
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:461:4: object_initializer
                     {
                     pushFollow(FOLLOW_object_initializer_in_object_creation_expression1993);
                     object_initializer214=object_initializer();
@@ -6141,7 +6142,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "object_initializer"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:461:1: object_initializer : LCURL member_initializer ( COMMA member_initializer )? RCURL ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:463:1: object_initializer : LCURL member_initializer ( COMMA member_initializer )? RCURL ;
     public final ValaParser.object_initializer_return object_initializer() throws RecognitionException {
         ValaParser.object_initializer_return retval = new ValaParser.object_initializer_return();
         retval.start = input.LT(1);
@@ -6162,8 +6163,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 58) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:462:2: ( LCURL member_initializer ( COMMA member_initializer )? RCURL )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:463:2: LCURL member_initializer ( COMMA member_initializer )? RCURL
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:464:2: ( LCURL member_initializer ( COMMA member_initializer )? RCURL )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:465:2: LCURL member_initializer ( COMMA member_initializer )? RCURL
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -6178,7 +6179,7 @@ public class ValaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, member_initializer216.getTree());
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:465:2: ( COMMA member_initializer )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:467:2: ( COMMA member_initializer )?
             int alt57=2;
             int LA57_0 = input.LA(1);
 
@@ -6187,7 +6188,7 @@ public class ValaParser extends Parser {
             }
             switch (alt57) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:466:3: COMMA member_initializer
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:468:3: COMMA member_initializer
                     {
                     COMMA217=(Token)match(input,COMMA,FOLLOW_COMMA_in_object_initializer2020); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -6241,7 +6242,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "member_initializer"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:471:1: member_initializer : identifier ASSIGNMENT expression ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:473:1: member_initializer : identifier ASSIGNMENT expression ;
     public final ValaParser.member_initializer_return member_initializer() throws RecognitionException {
         ValaParser.member_initializer_return retval = new ValaParser.member_initializer_return();
         retval.start = input.LT(1);
@@ -6258,8 +6259,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 59) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:472:2: ( identifier ASSIGNMENT expression )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:472:4: identifier ASSIGNMENT expression
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:474:2: ( identifier ASSIGNMENT expression )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:474:4: identifier ASSIGNMENT expression
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -6310,7 +6311,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "array_creation_expression"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:474:1: array_creation_expression : ( LBRACKET RBRACKET )* ( LBRACKET ( array_size )? RBRACKET )? ( initializer )? ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:476:1: array_creation_expression : ( LBRACKET RBRACKET )* ( LBRACKET ( array_size )? RBRACKET )? ( initializer )? ;
     public final ValaParser.array_creation_expression_return array_creation_expression() throws RecognitionException {
         ValaParser.array_creation_expression_return retval = new ValaParser.array_creation_expression_return();
         retval.start = input.LT(1);
@@ -6333,12 +6334,12 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 60) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:475:2: ( ( LBRACKET RBRACKET )* ( LBRACKET ( array_size )? RBRACKET )? ( initializer )? )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:476:2: ( LBRACKET RBRACKET )* ( LBRACKET ( array_size )? RBRACKET )? ( initializer )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:477:2: ( ( LBRACKET RBRACKET )* ( LBRACKET ( array_size )? RBRACKET )? ( initializer )? )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:478:2: ( LBRACKET RBRACKET )* ( LBRACKET ( array_size )? RBRACKET )? ( initializer )?
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:476:2: ( LBRACKET RBRACKET )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:478:2: ( LBRACKET RBRACKET )*
             loop58:
             do {
                 int alt58=2;
@@ -6350,7 +6351,7 @@ public class ValaParser extends Parser {
                     if ( (LA58_1==RBRACKET) ) {
                         int LA58_3 = input.LA(3);
 
-                        if ( (synpred169_Vala()) ) {
+                        if ( (synpred171_Vala()) ) {
                             alt58=1;
                         }
 
@@ -6363,7 +6364,7 @@ public class ValaParser extends Parser {
 
                 switch (alt58) {
             	case 1 :
-            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:477:3: LBRACKET RBRACKET
+            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:479:3: LBRACKET RBRACKET
             	    {
             	    LBRACKET223=(Token)match(input,LBRACKET,FOLLOW_LBRACKET_in_array_creation_expression2062); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -6384,28 +6385,28 @@ public class ValaParser extends Parser {
                 }
             } while (true);
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:480:2: ( LBRACKET ( array_size )? RBRACKET )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:482:2: ( LBRACKET ( array_size )? RBRACKET )?
             int alt60=2;
             alt60 = dfa60.predict(input);
             switch (alt60) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:481:3: LBRACKET ( array_size )? RBRACKET
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:483:3: LBRACKET ( array_size )? RBRACKET
                     {
                     LBRACKET225=(Token)match(input,LBRACKET,FOLLOW_LBRACKET_in_array_creation_expression2080); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     LBRACKET225_tree = (CommonTree)adaptor.create(LBRACKET225);
                     adaptor.addChild(root_0, LBRACKET225_tree);
                     }
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:482:3: ( array_size )?
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:484:3: ( array_size )?
                     int alt59=2;
                     int LA59_0 = input.LA(1);
 
-                    if ( (LA59_0==KW_USING||(LA59_0>=GLOBAL_NS && LA59_0<=IDENTIFIER)||LA59_0==LPAREN||LA59_0==KW_IN||LA59_0==AND||(LA59_0>=KW_IS && LA59_0<=KW_WEAK)||(LA59_0>=PLUS && LA59_0<=MINUS)||(LA59_0>=NOT && LA59_0<=KW_THROW)||(LA59_0>=INTEGER && LA59_0<=LCURL)||LA59_0==TEMPLATE_START||(LA59_0>=KW_THIS && LA59_0<=KW_BASE)) ) {
+                    if ( (LA59_0==KW_USING||(LA59_0>=GLOBAL_NS && LA59_0<=IDENTIFIER)||LA59_0==LPAREN||LA59_0==KW_IN||LA59_0==AND||(LA59_0>=KW_IS && LA59_0<=KW_WEAK)||(LA59_0>=PLUS && LA59_0<=MINUS)||(LA59_0>=NOT && LA59_0<=KW_REQUIRES)||(LA59_0>=INTEGER && LA59_0<=LCURL)||LA59_0==TEMPLATE_START||(LA59_0>=KW_THIS && LA59_0<=KW_BASE)) ) {
                         alt59=1;
                     }
                     switch (alt59) {
                         case 1 :
-                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:482:4: array_size
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:484:4: array_size
                             {
                             pushFollow(FOLLOW_array_size_in_array_creation_expression2087);
                             array_size226=array_size();
@@ -6430,7 +6431,7 @@ public class ValaParser extends Parser {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:485:2: ( initializer )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:487:2: ( initializer )?
             int alt61=2;
             int LA61_0 = input.LA(1);
 
@@ -6439,7 +6440,7 @@ public class ValaParser extends Parser {
             }
             switch (alt61) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:485:3: initializer
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:487:3: initializer
                     {
                     pushFollow(FOLLOW_initializer_in_array_creation_expression2103);
                     initializer228=initializer();
@@ -6483,7 +6484,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "array_size"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:487:1: array_size : expression ( COMMA expression )* ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:489:1: array_size : expression ( COMMA expression )* ;
     public final ValaParser.array_size_return array_size() throws RecognitionException {
         ValaParser.array_size_return retval = new ValaParser.array_size_return();
         retval.start = input.LT(1);
@@ -6500,8 +6501,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 61) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:488:2: ( expression ( COMMA expression )* )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:489:2: expression ( COMMA expression )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:490:2: ( expression ( COMMA expression )* )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:491:2: expression ( COMMA expression )*
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -6511,7 +6512,7 @@ public class ValaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, expression229.getTree());
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:490:2: ( COMMA expression )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:492:2: ( COMMA expression )*
             loop62:
             do {
                 int alt62=2;
@@ -6524,7 +6525,7 @@ public class ValaParser extends Parser {
 
                 switch (alt62) {
             	case 1 :
-            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:490:3: COMMA expression
+            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:492:3: COMMA expression
             	    {
             	    COMMA230=(Token)match(input,COMMA,FOLLOW_COMMA_in_array_size2122); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -6576,7 +6577,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "member"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:492:1: member : ( GLOBAL_NS identifier | identifier ) ( type_arguments )? ( member_access )* ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:494:1: member : ( GLOBAL_NS identifier | identifier ) ( type_arguments )? ( member_access )* ;
     public final ValaParser.member_return member() throws RecognitionException {
         ValaParser.member_return retval = new ValaParser.member_return();
         retval.start = input.LT(1);
@@ -6597,19 +6598,19 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 62) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:493:2: ( ( GLOBAL_NS identifier | identifier ) ( type_arguments )? ( member_access )* )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:494:2: ( GLOBAL_NS identifier | identifier ) ( type_arguments )? ( member_access )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:495:2: ( ( GLOBAL_NS identifier | identifier ) ( type_arguments )? ( member_access )* )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:496:2: ( GLOBAL_NS identifier | identifier ) ( type_arguments )? ( member_access )*
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:494:2: ( GLOBAL_NS identifier | identifier )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:496:2: ( GLOBAL_NS identifier | identifier )
             int alt63=2;
             int LA63_0 = input.LA(1);
 
             if ( (LA63_0==GLOBAL_NS) ) {
                 alt63=1;
             }
-            else if ( (LA63_0==KW_USING||LA63_0==IDENTIFIER||LA63_0==KW_IN||(LA63_0>=KW_IS && LA63_0<=KW_VOID)||(LA63_0>=KW_DYNAMIC && LA63_0<=KW_WEAK)||(LA63_0>=KW_CONSTRUCT && LA63_0<=KW_THROW)) ) {
+            else if ( (LA63_0==KW_USING||LA63_0==IDENTIFIER||LA63_0==KW_IN||(LA63_0>=KW_IS && LA63_0<=KW_VOID)||(LA63_0>=KW_DYNAMIC && LA63_0<=KW_WEAK)||(LA63_0>=KW_CONSTRUCT && LA63_0<=KW_REQUIRES)) ) {
                 alt63=2;
             }
             else {
@@ -6621,7 +6622,7 @@ public class ValaParser extends Parser {
             }
             switch (alt63) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:495:3: GLOBAL_NS identifier
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:497:3: GLOBAL_NS identifier
                     {
                     GLOBAL_NS232=(Token)match(input,GLOBAL_NS,FOLLOW_GLOBAL_NS_in_member2144); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -6638,7 +6639,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:496:5: identifier
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:498:5: identifier
                     {
                     pushFollow(FOLLOW_identifier_in_member2153);
                     identifier234=identifier();
@@ -6652,12 +6653,12 @@ public class ValaParser extends Parser {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:498:2: ( type_arguments )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:500:2: ( type_arguments )?
             int alt64=2;
             alt64 = dfa64.predict(input);
             switch (alt64) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:498:3: type_arguments
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:500:3: type_arguments
                     {
                     pushFollow(FOLLOW_type_arguments_in_member2162);
                     type_arguments235=type_arguments();
@@ -6671,7 +6672,7 @@ public class ValaParser extends Parser {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:499:2: ( member_access )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:501:2: ( member_access )*
             loop65:
             do {
                 int alt65=2;
@@ -6680,10 +6681,10 @@ public class ValaParser extends Parser {
                 if ( (LA65_0==DOT) ) {
                     int LA65_2 = input.LA(2);
 
-                    if ( (LA65_2==KW_USING||LA65_2==IDENTIFIER||LA65_2==KW_IN||(LA65_2>=KW_IS && LA65_2<=KW_VOID)||(LA65_2>=KW_DYNAMIC && LA65_2<=KW_WEAK)||(LA65_2>=KW_CONSTRUCT && LA65_2<=KW_THROW)) ) {
+                    if ( (LA65_2==KW_USING||LA65_2==IDENTIFIER||LA65_2==KW_IN||(LA65_2>=KW_IS && LA65_2<=KW_VOID)||(LA65_2>=KW_DYNAMIC && LA65_2<=KW_WEAK)||(LA65_2>=KW_CONSTRUCT && LA65_2<=KW_REQUIRES)) ) {
                         int LA65_3 = input.LA(3);
 
-                        if ( (synpred176_Vala()) ) {
+                        if ( (synpred178_Vala()) ) {
                             alt65=1;
                         }
 
@@ -6696,7 +6697,7 @@ public class ValaParser extends Parser {
 
                 switch (alt65) {
             	case 1 :
-            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:499:3: member_access
+            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:501:3: member_access
             	    {
             	    pushFollow(FOLLOW_member_access_in_member2169);
             	    member_access236=member_access();
@@ -6743,7 +6744,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "type_arguments"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:501:1: type_arguments : LT type ( COMMA type )* GT ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:503:1: type_arguments : LT type ( COMMA type )* GT ;
     public final ValaParser.type_arguments_return type_arguments() throws RecognitionException {
         ValaParser.type_arguments_return retval = new ValaParser.type_arguments_return();
         retval.start = input.LT(1);
@@ -6764,8 +6765,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 63) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:502:2: ( LT type ( COMMA type )* GT )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:503:2: LT type ( COMMA type )* GT
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:504:2: ( LT type ( COMMA type )* GT )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:505:2: LT type ( COMMA type )* GT
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -6780,7 +6781,7 @@ public class ValaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, type238.getTree());
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:505:2: ( COMMA type )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:507:2: ( COMMA type )*
             loop66:
             do {
                 int alt66=2;
@@ -6793,7 +6794,7 @@ public class ValaParser extends Parser {
 
                 switch (alt66) {
             	case 1 :
-            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:505:3: COMMA type
+            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:507:3: COMMA type
             	    {
             	    COMMA239=(Token)match(input,COMMA,FOLLOW_COMMA_in_type_arguments2190); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -6850,7 +6851,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "yield_expression"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:508:1: yield_expression : KW_YIELD ( base_access DOT )? member method_call ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:510:1: yield_expression : KW_YIELD ( base_access DOT )? member method_call ;
     public final ValaParser.yield_expression_return yield_expression() throws RecognitionException {
         ValaParser.yield_expression_return retval = new ValaParser.yield_expression_return();
         retval.start = input.LT(1);
@@ -6871,8 +6872,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 64) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:509:2: ( KW_YIELD ( base_access DOT )? member method_call )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:509:4: KW_YIELD ( base_access DOT )? member method_call
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:511:2: ( KW_YIELD ( base_access DOT )? member method_call )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:511:4: KW_YIELD ( base_access DOT )? member method_call
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -6881,7 +6882,7 @@ public class ValaParser extends Parser {
             KW_YIELD242_tree = (CommonTree)adaptor.create(KW_YIELD242);
             adaptor.addChild(root_0, KW_YIELD242_tree);
             }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:509:13: ( base_access DOT )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:511:13: ( base_access DOT )?
             int alt67=2;
             int LA67_0 = input.LA(1);
 
@@ -6890,7 +6891,7 @@ public class ValaParser extends Parser {
             }
             switch (alt67) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:509:14: base_access DOT
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:511:14: base_access DOT
                     {
                     pushFollow(FOLLOW_base_access_in_yield_expression2211);
                     base_access243=base_access();
@@ -6951,7 +6952,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "method_call"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:511:1: method_call : LPAREN ( arguments )? RPAREN ( object_initializer )? ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:513:1: method_call : LPAREN ( arguments )? RPAREN ( object_initializer )? ;
     public final ValaParser.method_call_return method_call() throws RecognitionException {
         ValaParser.method_call_return retval = new ValaParser.method_call_return();
         retval.start = input.LT(1);
@@ -6970,8 +6971,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 65) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:512:2: ( LPAREN ( arguments )? RPAREN ( object_initializer )? )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:513:2: LPAREN ( arguments )? RPAREN ( object_initializer )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:514:2: ( LPAREN ( arguments )? RPAREN ( object_initializer )? )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:515:2: LPAREN ( arguments )? RPAREN ( object_initializer )?
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -6980,16 +6981,16 @@ public class ValaParser extends Parser {
             LPAREN247_tree = (CommonTree)adaptor.create(LPAREN247);
             adaptor.addChild(root_0, LPAREN247_tree);
             }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:514:2: ( arguments )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:516:2: ( arguments )?
             int alt68=2;
             int LA68_0 = input.LA(1);
 
-            if ( (LA68_0==KW_USING||(LA68_0>=GLOBAL_NS && LA68_0<=IDENTIFIER)||LA68_0==LPAREN||LA68_0==KW_IN||LA68_0==AND||(LA68_0>=KW_IS && LA68_0<=KW_WEAK)||(LA68_0>=PLUS && LA68_0<=MINUS)||(LA68_0>=NOT && LA68_0<=KW_THROW)||(LA68_0>=KW_OUT && LA68_0<=KW_REF)||(LA68_0>=INTEGER && LA68_0<=LCURL)||LA68_0==TEMPLATE_START||(LA68_0>=KW_THIS && LA68_0<=KW_BASE)) ) {
+            if ( (LA68_0==KW_USING||(LA68_0>=GLOBAL_NS && LA68_0<=IDENTIFIER)||LA68_0==LPAREN||LA68_0==KW_IN||LA68_0==AND||(LA68_0>=KW_IS && LA68_0<=KW_WEAK)||(LA68_0>=PLUS && LA68_0<=MINUS)||(LA68_0>=NOT && LA68_0<=KW_REQUIRES)||(LA68_0>=KW_OUT && LA68_0<=KW_REF)||(LA68_0>=INTEGER && LA68_0<=LCURL)||LA68_0==TEMPLATE_START||(LA68_0>=KW_THIS && LA68_0<=KW_BASE)) ) {
                 alt68=1;
             }
             switch (alt68) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:514:3: arguments
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:516:3: arguments
                     {
                     pushFollow(FOLLOW_arguments_in_method_call2237);
                     arguments248=arguments();
@@ -7008,7 +7009,7 @@ public class ValaParser extends Parser {
             RPAREN249_tree = (CommonTree)adaptor.create(RPAREN249);
             adaptor.addChild(root_0, RPAREN249_tree);
             }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:516:2: ( object_initializer )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:518:2: ( object_initializer )?
             int alt69=2;
             int LA69_0 = input.LA(1);
 
@@ -7017,7 +7018,7 @@ public class ValaParser extends Parser {
             }
             switch (alt69) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:516:3: object_initializer
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:518:3: object_initializer
                     {
                     pushFollow(FOLLOW_object_initializer_in_method_call2249);
                     object_initializer250=object_initializer();
@@ -7061,7 +7062,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "sizeof_expression"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:518:1: sizeof_expression : KW_SIZEOF LPAREN type RPAREN ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:520:1: sizeof_expression : KW_SIZEOF LPAREN type RPAREN ;
     public final ValaParser.sizeof_expression_return sizeof_expression() throws RecognitionException {
         ValaParser.sizeof_expression_return retval = new ValaParser.sizeof_expression_return();
         retval.start = input.LT(1);
@@ -7080,8 +7081,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 66) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:519:2: ( KW_SIZEOF LPAREN type RPAREN )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:520:2: KW_SIZEOF LPAREN type RPAREN
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:521:2: ( KW_SIZEOF LPAREN type RPAREN )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:522:2: KW_SIZEOF LPAREN type RPAREN
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -7136,7 +7137,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "typeof_expression"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:525:1: typeof_expression : KW_TYPEOF LPAREN type RPAREN ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:527:1: typeof_expression : KW_TYPEOF LPAREN type RPAREN ;
     public final ValaParser.typeof_expression_return typeof_expression() throws RecognitionException {
         ValaParser.typeof_expression_return retval = new ValaParser.typeof_expression_return();
         retval.start = input.LT(1);
@@ -7155,8 +7156,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 67) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:526:2: ( KW_TYPEOF LPAREN type RPAREN )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:526:4: KW_TYPEOF LPAREN type RPAREN
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:528:2: ( KW_TYPEOF LPAREN type RPAREN )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:528:4: KW_TYPEOF LPAREN type RPAREN
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -7211,7 +7212,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "simple_name"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:528:1: simple_name : ( GLOBAL_NS identifier | identifier ) ( type_arguments )? ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:530:1: simple_name : ( GLOBAL_NS identifier | identifier ) ( type_arguments )? ;
     public final ValaParser.simple_name_return simple_name() throws RecognitionException {
         ValaParser.simple_name_return retval = new ValaParser.simple_name_return();
         retval.start = input.LT(1);
@@ -7230,19 +7231,19 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 68) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:529:2: ( ( GLOBAL_NS identifier | identifier ) ( type_arguments )? )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:529:4: ( GLOBAL_NS identifier | identifier ) ( type_arguments )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:531:2: ( ( GLOBAL_NS identifier | identifier ) ( type_arguments )? )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:531:4: ( GLOBAL_NS identifier | identifier ) ( type_arguments )?
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:529:4: ( GLOBAL_NS identifier | identifier )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:531:4: ( GLOBAL_NS identifier | identifier )
             int alt70=2;
             int LA70_0 = input.LA(1);
 
             if ( (LA70_0==GLOBAL_NS) ) {
                 alt70=1;
             }
-            else if ( (LA70_0==KW_USING||LA70_0==IDENTIFIER||LA70_0==KW_IN||(LA70_0>=KW_IS && LA70_0<=KW_VOID)||(LA70_0>=KW_DYNAMIC && LA70_0<=KW_WEAK)||(LA70_0>=KW_CONSTRUCT && LA70_0<=KW_THROW)) ) {
+            else if ( (LA70_0==KW_USING||LA70_0==IDENTIFIER||LA70_0==KW_IN||(LA70_0>=KW_IS && LA70_0<=KW_VOID)||(LA70_0>=KW_DYNAMIC && LA70_0<=KW_WEAK)||(LA70_0>=KW_CONSTRUCT && LA70_0<=KW_REQUIRES)) ) {
                 alt70=2;
             }
             else {
@@ -7254,7 +7255,7 @@ public class ValaParser extends Parser {
             }
             switch (alt70) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:529:6: GLOBAL_NS identifier
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:531:6: GLOBAL_NS identifier
                     {
                     GLOBAL_NS259=(Token)match(input,GLOBAL_NS,FOLLOW_GLOBAL_NS_in_simple_name2302); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -7271,7 +7272,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:529:29: identifier
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:531:29: identifier
                     {
                     pushFollow(FOLLOW_identifier_in_simple_name2308);
                     identifier261=identifier();
@@ -7285,12 +7286,12 @@ public class ValaParser extends Parser {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:529:42: ( type_arguments )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:531:42: ( type_arguments )?
             int alt71=2;
             alt71 = dfa71.predict(input);
             switch (alt71) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:529:43: type_arguments
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:531:43: type_arguments
                     {
                     pushFollow(FOLLOW_type_arguments_in_simple_name2313);
                     type_arguments262=type_arguments();
@@ -7334,7 +7335,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "lambda_expression"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:531:1: lambda_expression : lambda_expression_params LAMBDA lambda_expression_body ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:533:1: lambda_expression : lambda_expression_params LAMBDA lambda_expression_body ;
     public final ValaParser.lambda_expression_return lambda_expression() throws RecognitionException {
         ValaParser.lambda_expression_return retval = new ValaParser.lambda_expression_return();
         retval.start = input.LT(1);
@@ -7351,8 +7352,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 69) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:532:2: ( lambda_expression_params LAMBDA lambda_expression_body )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:532:4: lambda_expression_params LAMBDA lambda_expression_body
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:534:2: ( lambda_expression_params LAMBDA lambda_expression_body )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:534:4: lambda_expression_params LAMBDA lambda_expression_body
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -7403,7 +7404,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "lambda_expression_params"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:534:1: lambda_expression_params : ( identifier | ( LPAREN ( identifier ( COMMA identifier )* )? RPAREN ) );
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:536:1: lambda_expression_params : ( identifier | ( LPAREN ( identifier ( COMMA identifier )* )? RPAREN ) );
     public final ValaParser.lambda_expression_params_return lambda_expression_params() throws RecognitionException {
         ValaParser.lambda_expression_params_return retval = new ValaParser.lambda_expression_params_return();
         retval.start = input.LT(1);
@@ -7426,11 +7427,11 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 70) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:535:2: ( identifier | ( LPAREN ( identifier ( COMMA identifier )* )? RPAREN ) )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:537:2: ( identifier | ( LPAREN ( identifier ( COMMA identifier )* )? RPAREN ) )
             int alt74=2;
             int LA74_0 = input.LA(1);
 
-            if ( (LA74_0==KW_USING||LA74_0==IDENTIFIER||LA74_0==KW_IN||(LA74_0>=KW_IS && LA74_0<=KW_VOID)||(LA74_0>=KW_DYNAMIC && LA74_0<=KW_WEAK)||(LA74_0>=KW_CONSTRUCT && LA74_0<=KW_THROW)) ) {
+            if ( (LA74_0==KW_USING||LA74_0==IDENTIFIER||LA74_0==KW_IN||(LA74_0>=KW_IS && LA74_0<=KW_VOID)||(LA74_0>=KW_DYNAMIC && LA74_0<=KW_WEAK)||(LA74_0>=KW_CONSTRUCT && LA74_0<=KW_REQUIRES)) ) {
                 alt74=1;
             }
             else if ( (LA74_0==LPAREN) ) {
@@ -7445,7 +7446,7 @@ public class ValaParser extends Parser {
             }
             switch (alt74) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:536:2: identifier
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:538:2: identifier
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -7459,28 +7460,28 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:538:2: ( LPAREN ( identifier ( COMMA identifier )* )? RPAREN )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:540:2: ( LPAREN ( identifier ( COMMA identifier )* )? RPAREN )
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:538:2: ( LPAREN ( identifier ( COMMA identifier )* )? RPAREN )
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:539:3: LPAREN ( identifier ( COMMA identifier )* )? RPAREN
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:540:2: ( LPAREN ( identifier ( COMMA identifier )* )? RPAREN )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:541:3: LPAREN ( identifier ( COMMA identifier )* )? RPAREN
                     {
                     LPAREN267=(Token)match(input,LPAREN,FOLLOW_LPAREN_in_lambda_expression_params2353); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     LPAREN267_tree = (CommonTree)adaptor.create(LPAREN267);
                     adaptor.addChild(root_0, LPAREN267_tree);
                     }
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:540:3: ( identifier ( COMMA identifier )* )?
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:542:3: ( identifier ( COMMA identifier )* )?
                     int alt73=2;
                     int LA73_0 = input.LA(1);
 
-                    if ( (LA73_0==KW_USING||LA73_0==IDENTIFIER||LA73_0==KW_IN||(LA73_0>=KW_IS && LA73_0<=KW_VOID)||(LA73_0>=KW_DYNAMIC && LA73_0<=KW_WEAK)||(LA73_0>=KW_CONSTRUCT && LA73_0<=KW_THROW)) ) {
+                    if ( (LA73_0==KW_USING||LA73_0==IDENTIFIER||LA73_0==KW_IN||(LA73_0>=KW_IS && LA73_0<=KW_VOID)||(LA73_0>=KW_DYNAMIC && LA73_0<=KW_WEAK)||(LA73_0>=KW_CONSTRUCT && LA73_0<=KW_REQUIRES)) ) {
                         alt73=1;
                     }
                     switch (alt73) {
                         case 1 :
-                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:540:4: identifier ( COMMA identifier )*
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:542:4: identifier ( COMMA identifier )*
                             {
                             pushFollow(FOLLOW_identifier_in_lambda_expression_params2360);
                             identifier268=identifier();
@@ -7488,7 +7489,7 @@ public class ValaParser extends Parser {
                             state._fsp--;
                             if (state.failed) return retval;
                             if ( state.backtracking==0 ) adaptor.addChild(root_0, identifier268.getTree());
-                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:540:15: ( COMMA identifier )*
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:542:15: ( COMMA identifier )*
                             loop72:
                             do {
                                 int alt72=2;
@@ -7501,7 +7502,7 @@ public class ValaParser extends Parser {
 
                                 switch (alt72) {
                             	case 1 :
-                            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:540:16: COMMA identifier
+                            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:542:16: COMMA identifier
                             	    {
                             	    COMMA269=(Token)match(input,COMMA,FOLLOW_COMMA_in_lambda_expression_params2363); if (state.failed) return retval;
                             	    if ( state.backtracking==0 ) {
@@ -7569,7 +7570,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "lambda_expression_body"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:544:1: lambda_expression_body : ( expression | block );
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:546:1: lambda_expression_body : ( expression | block );
     public final ValaParser.lambda_expression_body_return lambda_expression_body() throws RecognitionException {
         ValaParser.lambda_expression_body_return retval = new ValaParser.lambda_expression_body_return();
         retval.start = input.LT(1);
@@ -7584,12 +7585,12 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 71) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:545:2: ( expression | block )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:547:2: ( expression | block )
             int alt75=2;
             alt75 = dfa75.predict(input);
             switch (alt75) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:545:4: expression
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:547:4: expression
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -7603,7 +7604,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:545:17: block
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:547:17: block
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -7645,7 +7646,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "member_declaration_modifiers"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:547:1: member_declaration_modifiers : ( member_declaration_modifier )+ ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:549:1: member_declaration_modifiers : ( member_declaration_modifier )+ ;
     public final ValaParser.member_declaration_modifiers_return member_declaration_modifiers() throws RecognitionException {
         ValaParser.member_declaration_modifiers_return retval = new ValaParser.member_declaration_modifiers_return();
         retval.start = input.LT(1);
@@ -7658,12 +7659,12 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 72) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:548:2: ( ( member_declaration_modifier )+ )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:548:4: ( member_declaration_modifier )+
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:550:2: ( ( member_declaration_modifier )+ )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:550:4: ( member_declaration_modifier )+
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:548:4: ( member_declaration_modifier )+
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:550:4: ( member_declaration_modifier )+
             int cnt76=0;
             loop76:
             do {
@@ -7729,7 +7730,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "member_declaration_modifier"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:550:1: member_declaration_modifier : ( KW_ASYNC | KW_CLASS | KW_EXTERN | KW_INLINE | KW_STATIC | KW_ABSTRACT | KW_VIRTUAL | KW_OVERRIDE | KW_NEW );
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:552:1: member_declaration_modifier : ( KW_ASYNC | KW_CLASS | KW_EXTERN | KW_INLINE | KW_STATIC | KW_ABSTRACT | KW_VIRTUAL | KW_OVERRIDE | KW_NEW );
     public final ValaParser.member_declaration_modifier_return member_declaration_modifier() throws RecognitionException {
         ValaParser.member_declaration_modifier_return retval = new ValaParser.member_declaration_modifier_return();
         retval.start = input.LT(1);
@@ -7742,7 +7743,7 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 73) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:551:2: ( KW_ASYNC | KW_CLASS | KW_EXTERN | KW_INLINE | KW_STATIC | KW_ABSTRACT | KW_VIRTUAL | KW_OVERRIDE | KW_NEW )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:553:2: ( KW_ASYNC | KW_CLASS | KW_EXTERN | KW_INLINE | KW_STATIC | KW_ABSTRACT | KW_VIRTUAL | KW_OVERRIDE | KW_NEW )
             // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:
             {
             root_0 = (CommonTree)adaptor.nil();
@@ -7789,7 +7790,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "constructor_declaration"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:562:1: constructor_declaration : ( constructor_declaration_modifiers )? KW_CONSTRUCT block ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:564:1: constructor_declaration : ( constructor_declaration_modifiers )? KW_CONSTRUCT block ;
     public final ValaParser.constructor_declaration_return constructor_declaration() throws RecognitionException {
         ValaParser.constructor_declaration_return retval = new ValaParser.constructor_declaration_return();
         retval.start = input.LT(1);
@@ -7806,12 +7807,12 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 74) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:563:2: ( ( constructor_declaration_modifiers )? KW_CONSTRUCT block )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:564:2: ( constructor_declaration_modifiers )? KW_CONSTRUCT block
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:565:2: ( ( constructor_declaration_modifiers )? KW_CONSTRUCT block )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:566:2: ( constructor_declaration_modifiers )? KW_CONSTRUCT block
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:564:2: ( constructor_declaration_modifiers )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:566:2: ( constructor_declaration_modifiers )?
             int alt77=2;
             int LA77_0 = input.LA(1);
 
@@ -7820,7 +7821,7 @@ public class ValaParser extends Parser {
             }
             switch (alt77) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:564:3: constructor_declaration_modifiers
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:566:3: constructor_declaration_modifiers
                     {
                     pushFollow(FOLLOW_constructor_declaration_modifiers_in_constructor_declaration2470);
                     constructor_declaration_modifiers276=constructor_declaration_modifiers();
@@ -7875,7 +7876,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "constructor_declaration_modifiers"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:568:1: constructor_declaration_modifiers : ( constructor_declaration_modifier )+ ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:570:1: constructor_declaration_modifiers : ( constructor_declaration_modifier )+ ;
     public final ValaParser.constructor_declaration_modifiers_return constructor_declaration_modifiers() throws RecognitionException {
         ValaParser.constructor_declaration_modifiers_return retval = new ValaParser.constructor_declaration_modifiers_return();
         retval.start = input.LT(1);
@@ -7888,12 +7889,12 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 75) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:569:2: ( ( constructor_declaration_modifier )+ )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:570:2: ( constructor_declaration_modifier )+
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:571:2: ( ( constructor_declaration_modifier )+ )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:572:2: ( constructor_declaration_modifier )+
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:570:2: ( constructor_declaration_modifier )+
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:572:2: ( constructor_declaration_modifier )+
             int cnt78=0;
             loop78:
             do {
@@ -7959,7 +7960,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "constructor_declaration_modifier"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:572:1: constructor_declaration_modifier : ( KW_ASYNC | KW_CLASS | KW_EXTERN | KW_INLINE | KW_STATIC | KW_ABSTRACT | KW_VIRTUAL | KW_OVERRIDE );
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:574:1: constructor_declaration_modifier : ( KW_ASYNC | KW_CLASS | KW_EXTERN | KW_INLINE | KW_STATIC | KW_ABSTRACT | KW_VIRTUAL | KW_OVERRIDE );
     public final ValaParser.constructor_declaration_modifier_return constructor_declaration_modifier() throws RecognitionException {
         ValaParser.constructor_declaration_modifier_return retval = new ValaParser.constructor_declaration_modifier_return();
         retval.start = input.LT(1);
@@ -7972,7 +7973,7 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 76) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:573:2: ( KW_ASYNC | KW_CLASS | KW_EXTERN | KW_INLINE | KW_STATIC | KW_ABSTRACT | KW_VIRTUAL | KW_OVERRIDE )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:575:2: ( KW_ASYNC | KW_CLASS | KW_EXTERN | KW_INLINE | KW_STATIC | KW_ABSTRACT | KW_VIRTUAL | KW_OVERRIDE )
             // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:
             {
             root_0 = (CommonTree)adaptor.nil();
@@ -8019,7 +8020,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "destructor_declaration"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:583:1: destructor_declaration : ( constructor_declaration_modifiers )? BITWISE_NOT IDENTIFIER LPAREN RPAREN block ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:585:1: destructor_declaration : ( constructor_declaration_modifiers )? BITWISE_NOT IDENTIFIER LPAREN RPAREN block ;
     public final ValaParser.destructor_declaration_return destructor_declaration() throws RecognitionException {
         ValaParser.destructor_declaration_return retval = new ValaParser.destructor_declaration_return();
         retval.start = input.LT(1);
@@ -8042,12 +8043,12 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 77) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:584:2: ( ( constructor_declaration_modifiers )? BITWISE_NOT IDENTIFIER LPAREN RPAREN block )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:585:3: ( constructor_declaration_modifiers )? BITWISE_NOT IDENTIFIER LPAREN RPAREN block
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:586:2: ( ( constructor_declaration_modifiers )? BITWISE_NOT IDENTIFIER LPAREN RPAREN block )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:587:3: ( constructor_declaration_modifiers )? BITWISE_NOT IDENTIFIER LPAREN RPAREN block
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:585:3: ( constructor_declaration_modifiers )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:587:3: ( constructor_declaration_modifiers )?
             int alt79=2;
             int LA79_0 = input.LA(1);
 
@@ -8056,7 +8057,7 @@ public class ValaParser extends Parser {
             }
             switch (alt79) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:585:4: constructor_declaration_modifiers
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:587:4: constructor_declaration_modifiers
                     {
                     pushFollow(FOLLOW_constructor_declaration_modifiers_in_destructor_declaration2560);
                     constructor_declaration_modifiers281=constructor_declaration_modifiers();
@@ -8126,7 +8127,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "class_declaration"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:592:1: class_declaration : ( access_modifier )? ( type_declaration_modifiers )? KW_CLASS symbol ( type_arguments )? ( COLON base_types )? LCURL ( class_member )* RCURL ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:594:1: class_declaration : ( access_modifier )? ( type_declaration_modifiers )? KW_CLASS symbol ( type_arguments )? ( COLON base_types )? LCURL ( class_member )* RCURL ;
     public final ValaParser.class_declaration_return class_declaration() throws RecognitionException {
         ValaParser.class_declaration_return retval = new ValaParser.class_declaration_return();
         retval.start = input.LT(1);
@@ -8157,12 +8158,12 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 78) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:593:2: ( ( access_modifier )? ( type_declaration_modifiers )? KW_CLASS symbol ( type_arguments )? ( COLON base_types )? LCURL ( class_member )* RCURL )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:594:2: ( access_modifier )? ( type_declaration_modifiers )? KW_CLASS symbol ( type_arguments )? ( COLON base_types )? LCURL ( class_member )* RCURL
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:595:2: ( ( access_modifier )? ( type_declaration_modifiers )? KW_CLASS symbol ( type_arguments )? ( COLON base_types )? LCURL ( class_member )* RCURL )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:596:2: ( access_modifier )? ( type_declaration_modifiers )? KW_CLASS symbol ( type_arguments )? ( COLON base_types )? LCURL ( class_member )* RCURL
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:594:2: ( access_modifier )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:596:2: ( access_modifier )?
             int alt80=2;
             int LA80_0 = input.LA(1);
 
@@ -8171,7 +8172,7 @@ public class ValaParser extends Parser {
             }
             switch (alt80) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:594:3: access_modifier
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:596:3: access_modifier
                     {
                     pushFollow(FOLLOW_access_modifier_in_class_declaration2599);
                     access_modifier287=access_modifier();
@@ -8185,7 +8186,7 @@ public class ValaParser extends Parser {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:595:2: ( type_declaration_modifiers )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:597:2: ( type_declaration_modifiers )?
             int alt81=2;
             int LA81_0 = input.LA(1);
 
@@ -8194,7 +8195,7 @@ public class ValaParser extends Parser {
             }
             switch (alt81) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:595:3: type_declaration_modifiers
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:597:3: type_declaration_modifiers
                     {
                     pushFollow(FOLLOW_type_declaration_modifiers_in_class_declaration2606);
                     type_declaration_modifiers288=type_declaration_modifiers();
@@ -8219,7 +8220,7 @@ public class ValaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, symbol290.getTree());
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:598:2: ( type_arguments )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:600:2: ( type_arguments )?
             int alt82=2;
             int LA82_0 = input.LA(1);
 
@@ -8228,7 +8229,7 @@ public class ValaParser extends Parser {
             }
             switch (alt82) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:598:3: type_arguments
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:600:3: type_arguments
                     {
                     pushFollow(FOLLOW_type_arguments_in_class_declaration2620);
                     type_arguments291=type_arguments();
@@ -8242,7 +8243,7 @@ public class ValaParser extends Parser {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:599:2: ( COLON base_types )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:601:2: ( COLON base_types )?
             int alt83=2;
             int LA83_0 = input.LA(1);
 
@@ -8251,7 +8252,7 @@ public class ValaParser extends Parser {
             }
             switch (alt83) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:599:3: COLON base_types
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:601:3: COLON base_types
                     {
                     COLON292=(Token)match(input,COLON,FOLLOW_COLON_in_class_declaration2626); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -8275,20 +8276,20 @@ public class ValaParser extends Parser {
             LCURL294_tree = (CommonTree)adaptor.create(LCURL294);
             adaptor.addChild(root_0, LCURL294_tree);
             }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:601:2: ( class_member )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:603:2: ( class_member )*
             loop84:
             do {
                 int alt84=2;
                 int LA84_0 = input.LA(1);
 
-                if ( (LA84_0==KW_USING||(LA84_0>=GLOBAL_NS && LA84_0<=LBRACKET)||LA84_0==KW_IN||(LA84_0>=KW_IS && LA84_0<=KW_VOID)||(LA84_0>=KW_DYNAMIC && LA84_0<=KW_WEAK)||LA84_0==BITWISE_NOT||(LA84_0>=KW_CONSTRUCT && LA84_0<=KW_THROW)||(LA84_0>=KW_DELEGATE && LA84_0<=KW_CONST)) ) {
+                if ( (LA84_0==KW_USING||(LA84_0>=GLOBAL_NS && LA84_0<=LBRACKET)||LA84_0==KW_IN||(LA84_0>=KW_IS && LA84_0<=KW_VOID)||(LA84_0>=KW_DYNAMIC && LA84_0<=KW_WEAK)||LA84_0==BITWISE_NOT||(LA84_0>=KW_CONSTRUCT && LA84_0<=KW_REQUIRES)||(LA84_0>=KW_DELEGATE && LA84_0<=KW_CONST)) ) {
                     alt84=1;
                 }
 
 
                 switch (alt84) {
             	case 1 :
-            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:601:3: class_member
+            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:603:3: class_member
             	    {
             	    pushFollow(FOLLOW_class_member_in_class_declaration2639);
             	    class_member295=class_member();
@@ -8340,7 +8341,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "base_types"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:604:1: base_types : type ( COMMA type )* ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:606:1: base_types : type ( COMMA type )* ;
     public final ValaParser.base_types_return base_types() throws RecognitionException {
         ValaParser.base_types_return retval = new ValaParser.base_types_return();
         retval.start = input.LT(1);
@@ -8357,8 +8358,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 79) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:605:2: ( type ( COMMA type )* )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:606:2: type ( COMMA type )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:607:2: ( type ( COMMA type )* )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:608:2: type ( COMMA type )*
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -8368,7 +8369,7 @@ public class ValaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, type297.getTree());
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:607:2: ( COMMA type )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:609:2: ( COMMA type )*
             loop85:
             do {
                 int alt85=2;
@@ -8381,7 +8382,7 @@ public class ValaParser extends Parser {
 
                 switch (alt85) {
             	case 1 :
-            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:607:3: COMMA type
+            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:609:3: COMMA type
             	    {
             	    COMMA298=(Token)match(input,COMMA,FOLLOW_COMMA_in_base_types2661); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -8433,7 +8434,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "class_member"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:609:1: class_member : ( attributes )? ( class_declaration | struct_declaration | enum_declaration | delegate_declaration | method_declaration | signal_declaration | field_declaration | constant_declaration | property_declaration | constructor_declaration | creation_method_declaration | destructor_declaration | unknown_chain ) ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:611:1: class_member : ( attributes )? ( class_declaration | struct_declaration | enum_declaration | delegate_declaration | method_declaration | signal_declaration | field_declaration | constant_declaration | property_declaration | constructor_declaration | creation_method_declaration | destructor_declaration | unknown_chain ) ;
     public final ValaParser.class_member_return class_member() throws RecognitionException {
         ValaParser.class_member_return retval = new ValaParser.class_member_return();
         retval.start = input.LT(1);
@@ -8472,12 +8473,12 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 80) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:610:2: ( ( attributes )? ( class_declaration | struct_declaration | enum_declaration | delegate_declaration | method_declaration | signal_declaration | field_declaration | constant_declaration | property_declaration | constructor_declaration | creation_method_declaration | destructor_declaration | unknown_chain ) )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:611:2: ( attributes )? ( class_declaration | struct_declaration | enum_declaration | delegate_declaration | method_declaration | signal_declaration | field_declaration | constant_declaration | property_declaration | constructor_declaration | creation_method_declaration | destructor_declaration | unknown_chain )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:612:2: ( ( attributes )? ( class_declaration | struct_declaration | enum_declaration | delegate_declaration | method_declaration | signal_declaration | field_declaration | constant_declaration | property_declaration | constructor_declaration | creation_method_declaration | destructor_declaration | unknown_chain ) )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:613:2: ( attributes )? ( class_declaration | struct_declaration | enum_declaration | delegate_declaration | method_declaration | signal_declaration | field_declaration | constant_declaration | property_declaration | constructor_declaration | creation_method_declaration | destructor_declaration | unknown_chain )
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:611:2: ( attributes )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:613:2: ( attributes )?
             int alt86=2;
             int LA86_0 = input.LA(1);
 
@@ -8486,7 +8487,7 @@ public class ValaParser extends Parser {
             }
             switch (alt86) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:611:3: attributes
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:613:3: attributes
                     {
                     pushFollow(FOLLOW_attributes_in_class_member2678);
                     attributes300=attributes();
@@ -8500,12 +8501,12 @@ public class ValaParser extends Parser {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:612:2: ( class_declaration | struct_declaration | enum_declaration | delegate_declaration | method_declaration | signal_declaration | field_declaration | constant_declaration | property_declaration | constructor_declaration | creation_method_declaration | destructor_declaration | unknown_chain )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:614:2: ( class_declaration | struct_declaration | enum_declaration | delegate_declaration | method_declaration | signal_declaration | field_declaration | constant_declaration | property_declaration | constructor_declaration | creation_method_declaration | destructor_declaration | unknown_chain )
             int alt87=13;
             alt87 = dfa87.predict(input);
             switch (alt87) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:612:4: class_declaration
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:614:4: class_declaration
                     {
                     pushFollow(FOLLOW_class_declaration_in_class_member2685);
                     class_declaration301=class_declaration();
@@ -8517,7 +8518,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:613:4: struct_declaration
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:615:4: struct_declaration
                     {
                     pushFollow(FOLLOW_struct_declaration_in_class_member2691);
                     struct_declaration302=struct_declaration();
@@ -8529,7 +8530,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:614:4: enum_declaration
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:616:4: enum_declaration
                     {
                     pushFollow(FOLLOW_enum_declaration_in_class_member2697);
                     enum_declaration303=enum_declaration();
@@ -8541,7 +8542,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:615:4: delegate_declaration
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:617:4: delegate_declaration
                     {
                     pushFollow(FOLLOW_delegate_declaration_in_class_member2703);
                     delegate_declaration304=delegate_declaration();
@@ -8553,7 +8554,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 5 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:616:4: method_declaration
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:618:4: method_declaration
                     {
                     pushFollow(FOLLOW_method_declaration_in_class_member2709);
                     method_declaration305=method_declaration();
@@ -8565,7 +8566,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 6 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:617:4: signal_declaration
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:619:4: signal_declaration
                     {
                     pushFollow(FOLLOW_signal_declaration_in_class_member2715);
                     signal_declaration306=signal_declaration();
@@ -8577,7 +8578,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 7 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:618:4: field_declaration
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:620:4: field_declaration
                     {
                     pushFollow(FOLLOW_field_declaration_in_class_member2721);
                     field_declaration307=field_declaration();
@@ -8589,7 +8590,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 8 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:619:4: constant_declaration
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:621:4: constant_declaration
                     {
                     pushFollow(FOLLOW_constant_declaration_in_class_member2727);
                     constant_declaration308=constant_declaration();
@@ -8601,7 +8602,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 9 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:620:4: property_declaration
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:622:4: property_declaration
                     {
                     pushFollow(FOLLOW_property_declaration_in_class_member2733);
                     property_declaration309=property_declaration();
@@ -8613,7 +8614,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 10 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:621:4: constructor_declaration
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:623:4: constructor_declaration
                     {
                     pushFollow(FOLLOW_constructor_declaration_in_class_member2739);
                     constructor_declaration310=constructor_declaration();
@@ -8625,7 +8626,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 11 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:622:4: creation_method_declaration
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:624:4: creation_method_declaration
                     {
                     pushFollow(FOLLOW_creation_method_declaration_in_class_member2745);
                     creation_method_declaration311=creation_method_declaration();
@@ -8637,7 +8638,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 12 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:623:4: destructor_declaration
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:625:4: destructor_declaration
                     {
                     pushFollow(FOLLOW_destructor_declaration_in_class_member2750);
                     destructor_declaration312=destructor_declaration();
@@ -8649,7 +8650,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 13 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:624:4: unknown_chain
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:626:4: unknown_chain
                     {
                     pushFollow(FOLLOW_unknown_chain_in_class_member2756);
                     unknown_chain313=unknown_chain();
@@ -8693,7 +8694,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "access_modifier"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:626:1: access_modifier : ( KW_PRIVATE | KW_PROTECTED | KW_INTERNAL | KW_PUBLIC );
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:628:1: access_modifier : ( KW_PRIVATE | KW_PROTECTED | KW_INTERNAL | KW_PUBLIC );
     public final ValaParser.access_modifier_return access_modifier() throws RecognitionException {
         ValaParser.access_modifier_return retval = new ValaParser.access_modifier_return();
         retval.start = input.LT(1);
@@ -8706,7 +8707,7 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 81) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:627:2: ( KW_PRIVATE | KW_PROTECTED | KW_INTERNAL | KW_PUBLIC )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:629:2: ( KW_PRIVATE | KW_PROTECTED | KW_INTERNAL | KW_PUBLIC )
             // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:
             {
             root_0 = (CommonTree)adaptor.nil();
@@ -8753,7 +8754,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "type_declaration_modifiers"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:633:1: type_declaration_modifiers : ( type_declaration_modifier )+ ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:635:1: type_declaration_modifiers : ( type_declaration_modifier )+ ;
     public final ValaParser.type_declaration_modifiers_return type_declaration_modifiers() throws RecognitionException {
         ValaParser.type_declaration_modifiers_return retval = new ValaParser.type_declaration_modifiers_return();
         retval.start = input.LT(1);
@@ -8766,12 +8767,12 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 82) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:634:2: ( ( type_declaration_modifier )+ )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:634:4: ( type_declaration_modifier )+
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:636:2: ( ( type_declaration_modifier )+ )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:636:4: ( type_declaration_modifier )+
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:634:4: ( type_declaration_modifier )+
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:636:4: ( type_declaration_modifier )+
             int cnt88=0;
             loop88:
             do {
@@ -8837,7 +8838,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "type_declaration_modifier"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:636:1: type_declaration_modifier : ( KW_ABSTRACT | KW_EXTERN | KW_STATIC );
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:638:1: type_declaration_modifier : ( KW_ABSTRACT | KW_EXTERN | KW_STATIC );
     public final ValaParser.type_declaration_modifier_return type_declaration_modifier() throws RecognitionException {
         ValaParser.type_declaration_modifier_return retval = new ValaParser.type_declaration_modifier_return();
         retval.start = input.LT(1);
@@ -8850,7 +8851,7 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 83) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:637:2: ( KW_ABSTRACT | KW_EXTERN | KW_STATIC )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:639:2: ( KW_ABSTRACT | KW_EXTERN | KW_STATIC )
             // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:
             {
             root_0 = (CommonTree)adaptor.nil();
@@ -8897,7 +8898,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "enum_declaration"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:642:1: enum_declaration : ( access_modifier )? ( type_declaration_modifiers )? KW_ENUM symbol LCURL ( enum_member )* RCURL ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:644:1: enum_declaration : ( access_modifier )? ( type_declaration_modifiers )? KW_ENUM symbol LCURL ( enum_member )* RCURL ;
     public final ValaParser.enum_declaration_return enum_declaration() throws RecognitionException {
         ValaParser.enum_declaration_return retval = new ValaParser.enum_declaration_return();
         retval.start = input.LT(1);
@@ -8922,12 +8923,12 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 84) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:643:2: ( ( access_modifier )? ( type_declaration_modifiers )? KW_ENUM symbol LCURL ( enum_member )* RCURL )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:644:2: ( access_modifier )? ( type_declaration_modifiers )? KW_ENUM symbol LCURL ( enum_member )* RCURL
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:645:2: ( ( access_modifier )? ( type_declaration_modifiers )? KW_ENUM symbol LCURL ( enum_member )* RCURL )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:646:2: ( access_modifier )? ( type_declaration_modifiers )? KW_ENUM symbol LCURL ( enum_member )* RCURL
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:644:2: ( access_modifier )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:646:2: ( access_modifier )?
             int alt89=2;
             int LA89_0 = input.LA(1);
 
@@ -8936,7 +8937,7 @@ public class ValaParser extends Parser {
             }
             switch (alt89) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:644:3: access_modifier
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:646:3: access_modifier
                     {
                     pushFollow(FOLLOW_access_modifier_in_enum_declaration2830);
                     access_modifier317=access_modifier();
@@ -8950,7 +8951,7 @@ public class ValaParser extends Parser {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:645:2: ( type_declaration_modifiers )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:647:2: ( type_declaration_modifiers )?
             int alt90=2;
             int LA90_0 = input.LA(1);
 
@@ -8959,7 +8960,7 @@ public class ValaParser extends Parser {
             }
             switch (alt90) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:645:3: type_declaration_modifiers
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:647:3: type_declaration_modifiers
                     {
                     pushFollow(FOLLOW_type_declaration_modifiers_in_enum_declaration2837);
                     type_declaration_modifiers318=type_declaration_modifiers();
@@ -8989,20 +8990,20 @@ public class ValaParser extends Parser {
             LCURL321_tree = (CommonTree)adaptor.create(LCURL321);
             adaptor.addChild(root_0, LCURL321_tree);
             }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:649:2: ( enum_member )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:651:2: ( enum_member )*
             loop91:
             do {
                 int alt91=2;
                 int LA91_0 = input.LA(1);
 
-                if ( (LA91_0==KW_USING||(LA91_0>=GLOBAL_NS && LA91_0<=LBRACKET)||LA91_0==KW_IN||(LA91_0>=KW_IS && LA91_0<=KW_VOID)||(LA91_0>=KW_DYNAMIC && LA91_0<=KW_WEAK)||(LA91_0>=KW_CONSTRUCT && LA91_0<=KW_THROW)||LA91_0==KW_CONST) ) {
+                if ( (LA91_0==KW_USING||(LA91_0>=GLOBAL_NS && LA91_0<=LBRACKET)||LA91_0==KW_IN||(LA91_0>=KW_IS && LA91_0<=KW_VOID)||(LA91_0>=KW_DYNAMIC && LA91_0<=KW_WEAK)||(LA91_0>=KW_CONSTRUCT && LA91_0<=KW_REQUIRES)||LA91_0==KW_CONST) ) {
                     alt91=1;
                 }
 
 
                 switch (alt91) {
             	case 1 :
-            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:649:3: enum_member
+            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:651:3: enum_member
             	    {
             	    pushFollow(FOLLOW_enum_member_in_enum_declaration2854);
             	    enum_member322=enum_member();
@@ -9054,7 +9055,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "enum_member"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:652:1: enum_member : ( ( ( attributes )? ( method_declaration | constant_declaration | unknown_chain ) ) | ( enum_values ) );
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:654:1: enum_member : ( ( ( attributes )? ( method_declaration | constant_declaration | unknown_chain ) ) | ( enum_values ) );
     public final ValaParser.enum_member_return enum_member() throws RecognitionException {
         ValaParser.enum_member_return retval = new ValaParser.enum_member_return();
         retval.start = input.LT(1);
@@ -9075,19 +9076,19 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 85) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:653:2: ( ( ( attributes )? ( method_declaration | constant_declaration | unknown_chain ) ) | ( enum_values ) )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:655:2: ( ( ( attributes )? ( method_declaration | constant_declaration | unknown_chain ) ) | ( enum_values ) )
             int alt94=2;
             alt94 = dfa94.predict(input);
             switch (alt94) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:654:2: ( ( attributes )? ( method_declaration | constant_declaration | unknown_chain ) )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:656:2: ( ( attributes )? ( method_declaration | constant_declaration | unknown_chain ) )
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:654:2: ( ( attributes )? ( method_declaration | constant_declaration | unknown_chain ) )
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:655:3: ( attributes )? ( method_declaration | constant_declaration | unknown_chain )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:656:2: ( ( attributes )? ( method_declaration | constant_declaration | unknown_chain ) )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:657:3: ( attributes )? ( method_declaration | constant_declaration | unknown_chain )
                     {
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:655:3: ( attributes )?
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:657:3: ( attributes )?
                     int alt92=2;
                     int LA92_0 = input.LA(1);
 
@@ -9096,7 +9097,7 @@ public class ValaParser extends Parser {
                     }
                     switch (alt92) {
                         case 1 :
-                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:655:4: attributes
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:657:4: attributes
                             {
                             pushFollow(FOLLOW_attributes_in_enum_member2875);
                             attributes324=attributes();
@@ -9110,12 +9111,12 @@ public class ValaParser extends Parser {
 
                     }
 
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:656:3: ( method_declaration | constant_declaration | unknown_chain )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:658:3: ( method_declaration | constant_declaration | unknown_chain )
                     int alt93=3;
                     alt93 = dfa93.predict(input);
                     switch (alt93) {
                         case 1 :
-                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:657:4: method_declaration
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:659:4: method_declaration
                             {
                             pushFollow(FOLLOW_method_declaration_in_enum_member2886);
                             method_declaration325=method_declaration();
@@ -9127,7 +9128,7 @@ public class ValaParser extends Parser {
                             }
                             break;
                         case 2 :
-                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:658:6: constant_declaration
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:660:6: constant_declaration
                             {
                             pushFollow(FOLLOW_constant_declaration_in_enum_member2894);
                             constant_declaration326=constant_declaration();
@@ -9139,7 +9140,7 @@ public class ValaParser extends Parser {
                             }
                             break;
                         case 3 :
-                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:659:6: unknown_chain
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:661:6: unknown_chain
                             {
                             pushFollow(FOLLOW_unknown_chain_in_enum_member2902);
                             unknown_chain327=unknown_chain();
@@ -9160,12 +9161,12 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:663:2: ( enum_values )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:665:2: ( enum_values )
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:663:2: ( enum_values )
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:663:3: enum_values
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:665:2: ( enum_values )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:665:3: enum_values
                     {
                     pushFollow(FOLLOW_enum_values_in_enum_member2916);
                     enum_values328=enum_values();
@@ -9208,7 +9209,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "enum_values"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:665:1: enum_values : enum_value ( COMMA enum_value )* ( COMMA )? ( SEMICOLON )? ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:667:1: enum_values : enum_value ( COMMA enum_value )* ( COMMA )? ( SEMICOLON )? ;
     public final ValaParser.enum_values_return enum_values() throws RecognitionException {
         ValaParser.enum_values_return retval = new ValaParser.enum_values_return();
         retval.start = input.LT(1);
@@ -9229,8 +9230,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 86) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:666:2: ( enum_value ( COMMA enum_value )* ( COMMA )? ( SEMICOLON )? )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:667:2: enum_value ( COMMA enum_value )* ( COMMA )? ( SEMICOLON )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:668:2: ( enum_value ( COMMA enum_value )* ( COMMA )? ( SEMICOLON )? )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:669:2: enum_value ( COMMA enum_value )* ( COMMA )? ( SEMICOLON )?
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -9240,14 +9241,14 @@ public class ValaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, enum_value329.getTree());
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:668:2: ( COMMA enum_value )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:670:2: ( COMMA enum_value )*
             loop95:
             do {
                 int alt95=2;
                 alt95 = dfa95.predict(input);
                 switch (alt95) {
             	case 1 :
-            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:668:3: COMMA enum_value
+            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:670:3: COMMA enum_value
             	    {
             	    COMMA330=(Token)match(input,COMMA,FOLLOW_COMMA_in_enum_values2934); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -9269,7 +9270,7 @@ public class ValaParser extends Parser {
                 }
             } while (true);
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:669:2: ( COMMA )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:671:2: ( COMMA )?
             int alt96=2;
             int LA96_0 = input.LA(1);
 
@@ -9278,7 +9279,7 @@ public class ValaParser extends Parser {
             }
             switch (alt96) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:669:3: COMMA
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:671:3: COMMA
                     {
                     COMMA332=(Token)match(input,COMMA,FOLLOW_COMMA_in_enum_values2942); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -9291,7 +9292,7 @@ public class ValaParser extends Parser {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:670:2: ( SEMICOLON )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:672:2: ( SEMICOLON )?
             int alt97=2;
             int LA97_0 = input.LA(1);
 
@@ -9300,7 +9301,7 @@ public class ValaParser extends Parser {
             }
             switch (alt97) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:670:3: SEMICOLON
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:672:3: SEMICOLON
                     {
                     SEMICOLON333=(Token)match(input,SEMICOLON,FOLLOW_SEMICOLON_in_enum_values2948); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -9343,7 +9344,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "enum_value"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:672:1: enum_value : ( attributes )? identifier ( ASSIGNMENT expression )? ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:674:1: enum_value : ( attributes )? identifier ( ASSIGNMENT expression )? ;
     public final ValaParser.enum_value_return enum_value() throws RecognitionException {
         ValaParser.enum_value_return retval = new ValaParser.enum_value_return();
         retval.start = input.LT(1);
@@ -9362,12 +9363,12 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 87) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:673:2: ( ( attributes )? identifier ( ASSIGNMENT expression )? )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:674:2: ( attributes )? identifier ( ASSIGNMENT expression )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:675:2: ( ( attributes )? identifier ( ASSIGNMENT expression )? )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:676:2: ( attributes )? identifier ( ASSIGNMENT expression )?
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:674:2: ( attributes )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:676:2: ( attributes )?
             int alt98=2;
             int LA98_0 = input.LA(1);
 
@@ -9376,7 +9377,7 @@ public class ValaParser extends Parser {
             }
             switch (alt98) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:674:3: attributes
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:676:3: attributes
                     {
                     pushFollow(FOLLOW_attributes_in_enum_value2964);
                     attributes334=attributes();
@@ -9396,7 +9397,7 @@ public class ValaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, identifier335.getTree());
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:676:2: ( ASSIGNMENT expression )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:678:2: ( ASSIGNMENT expression )?
             int alt99=2;
             int LA99_0 = input.LA(1);
 
@@ -9405,7 +9406,7 @@ public class ValaParser extends Parser {
             }
             switch (alt99) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:676:3: ASSIGNMENT expression
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:678:3: ASSIGNMENT expression
                     {
                     ASSIGNMENT336=(Token)match(input,ASSIGNMENT,FOLLOW_ASSIGNMENT_in_enum_value2974); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -9454,7 +9455,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "errordomain_declaration"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:678:1: errordomain_declaration : ( access_modifier )? ( type_declaration_modifiers )? KW_ERRORDOMAIN symbol LCURL errorcodes ( SEMICOLON ( method_declaration )* )? RCURL ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:680:1: errordomain_declaration : ( access_modifier )? ( type_declaration_modifiers )? KW_ERRORDOMAIN symbol LCURL errorcodes ( SEMICOLON ( method_declaration )* )? RCURL ;
     public final ValaParser.errordomain_declaration_return errordomain_declaration() throws RecognitionException {
         ValaParser.errordomain_declaration_return retval = new ValaParser.errordomain_declaration_return();
         retval.start = input.LT(1);
@@ -9483,12 +9484,12 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 88) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:679:2: ( ( access_modifier )? ( type_declaration_modifiers )? KW_ERRORDOMAIN symbol LCURL errorcodes ( SEMICOLON ( method_declaration )* )? RCURL )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:680:2: ( access_modifier )? ( type_declaration_modifiers )? KW_ERRORDOMAIN symbol LCURL errorcodes ( SEMICOLON ( method_declaration )* )? RCURL
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:681:2: ( ( access_modifier )? ( type_declaration_modifiers )? KW_ERRORDOMAIN symbol LCURL errorcodes ( SEMICOLON ( method_declaration )* )? RCURL )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:682:2: ( access_modifier )? ( type_declaration_modifiers )? KW_ERRORDOMAIN symbol LCURL errorcodes ( SEMICOLON ( method_declaration )* )? RCURL
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:680:2: ( access_modifier )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:682:2: ( access_modifier )?
             int alt100=2;
             int LA100_0 = input.LA(1);
 
@@ -9497,7 +9498,7 @@ public class ValaParser extends Parser {
             }
             switch (alt100) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:680:3: access_modifier
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:682:3: access_modifier
                     {
                     pushFollow(FOLLOW_access_modifier_in_errordomain_declaration2991);
                     access_modifier338=access_modifier();
@@ -9511,7 +9512,7 @@ public class ValaParser extends Parser {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:681:2: ( type_declaration_modifiers )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:683:2: ( type_declaration_modifiers )?
             int alt101=2;
             int LA101_0 = input.LA(1);
 
@@ -9520,7 +9521,7 @@ public class ValaParser extends Parser {
             }
             switch (alt101) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:681:3: type_declaration_modifiers
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:683:3: type_declaration_modifiers
                     {
                     pushFollow(FOLLOW_type_declaration_modifiers_in_errordomain_declaration2998);
                     type_declaration_modifiers339=type_declaration_modifiers();
@@ -9556,7 +9557,7 @@ public class ValaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, errorcodes343.getTree());
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:686:2: ( SEMICOLON ( method_declaration )* )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:688:2: ( SEMICOLON ( method_declaration )* )?
             int alt103=2;
             int LA103_0 = input.LA(1);
 
@@ -9565,14 +9566,14 @@ public class ValaParser extends Parser {
             }
             switch (alt103) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:686:3: SEMICOLON ( method_declaration )*
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:688:3: SEMICOLON ( method_declaration )*
                     {
                     SEMICOLON344=(Token)match(input,SEMICOLON,FOLLOW_SEMICOLON_in_errordomain_declaration3019); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     SEMICOLON344_tree = (CommonTree)adaptor.create(SEMICOLON344);
                     adaptor.addChild(root_0, SEMICOLON344_tree);
                     }
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:686:14: ( method_declaration )*
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:688:14: ( method_declaration )*
                     loop102:
                     do {
                         int alt102=2;
@@ -9585,7 +9586,7 @@ public class ValaParser extends Parser {
 
                         switch (alt102) {
                     	case 1 :
-                    	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:686:15: method_declaration
+                    	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:688:15: method_declaration
                     	    {
                     	    pushFollow(FOLLOW_method_declaration_in_errordomain_declaration3023);
                     	    method_declaration345=method_declaration();
@@ -9643,7 +9644,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "errorcodes"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:689:1: errorcodes : errorcode ( COMMA errorcode )* ( COMMA )? ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:691:1: errorcodes : errorcode ( COMMA errorcode )* ( COMMA )? ;
     public final ValaParser.errorcodes_return errorcodes() throws RecognitionException {
         ValaParser.errorcodes_return retval = new ValaParser.errorcodes_return();
         retval.start = input.LT(1);
@@ -9662,8 +9663,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 89) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:690:2: ( errorcode ( COMMA errorcode )* ( COMMA )? )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:691:2: errorcode ( COMMA errorcode )* ( COMMA )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:692:2: ( errorcode ( COMMA errorcode )* ( COMMA )? )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:693:2: errorcode ( COMMA errorcode )* ( COMMA )?
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -9673,7 +9674,7 @@ public class ValaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, errorcode347.getTree());
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:692:2: ( COMMA errorcode )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:694:2: ( COMMA errorcode )*
             loop104:
             do {
                 int alt104=2;
@@ -9692,7 +9693,7 @@ public class ValaParser extends Parser {
 
                 switch (alt104) {
             	case 1 :
-            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:692:3: COMMA errorcode
+            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:694:3: COMMA errorcode
             	    {
             	    COMMA348=(Token)match(input,COMMA,FOLLOW_COMMA_in_errorcodes3048); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -9714,7 +9715,7 @@ public class ValaParser extends Parser {
                 }
             } while (true);
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:693:2: ( COMMA )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:695:2: ( COMMA )?
             int alt105=2;
             int LA105_0 = input.LA(1);
 
@@ -9723,7 +9724,7 @@ public class ValaParser extends Parser {
             }
             switch (alt105) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:693:3: COMMA
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:695:3: COMMA
                     {
                     COMMA350=(Token)match(input,COMMA,FOLLOW_COMMA_in_errorcodes3056); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -9766,7 +9767,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "errorcode"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:695:1: errorcode : ( attributes )? IDENTIFIER ( ASSIGNMENT expression )? ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:697:1: errorcode : ( attributes )? IDENTIFIER ( ASSIGNMENT expression )? ;
     public final ValaParser.errorcode_return errorcode() throws RecognitionException {
         ValaParser.errorcode_return retval = new ValaParser.errorcode_return();
         retval.start = input.LT(1);
@@ -9785,12 +9786,12 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 90) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:696:2: ( ( attributes )? IDENTIFIER ( ASSIGNMENT expression )? )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:696:4: ( attributes )? IDENTIFIER ( ASSIGNMENT expression )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:698:2: ( ( attributes )? IDENTIFIER ( ASSIGNMENT expression )? )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:698:4: ( attributes )? IDENTIFIER ( ASSIGNMENT expression )?
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:696:4: ( attributes )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:698:4: ( attributes )?
             int alt106=2;
             int LA106_0 = input.LA(1);
 
@@ -9799,7 +9800,7 @@ public class ValaParser extends Parser {
             }
             switch (alt106) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:696:5: attributes
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:698:5: attributes
                     {
                     pushFollow(FOLLOW_attributes_in_errorcode3070);
                     attributes351=attributes();
@@ -9818,7 +9819,7 @@ public class ValaParser extends Parser {
             IDENTIFIER352_tree = (CommonTree)adaptor.create(IDENTIFIER352);
             adaptor.addChild(root_0, IDENTIFIER352_tree);
             }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:696:29: ( ASSIGNMENT expression )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:698:29: ( ASSIGNMENT expression )?
             int alt107=2;
             int LA107_0 = input.LA(1);
 
@@ -9827,7 +9828,7 @@ public class ValaParser extends Parser {
             }
             switch (alt107) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:696:30: ASSIGNMENT expression
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:698:30: ASSIGNMENT expression
                     {
                     ASSIGNMENT353=(Token)match(input,ASSIGNMENT,FOLLOW_ASSIGNMENT_in_errorcode3077); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -9876,7 +9877,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "interface_declaration"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:698:1: interface_declaration : ( access_modifier )? ( type_declaration_modifiers )? KW_INTERFACE symbol ( type_parameters )? ( COLON base_types )? LCURL ( interface_member )* RCURL ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:700:1: interface_declaration : ( access_modifier )? ( type_declaration_modifiers )? KW_INTERFACE symbol ( type_parameters )? ( COLON base_types )? LCURL ( interface_member )* RCURL ;
     public final ValaParser.interface_declaration_return interface_declaration() throws RecognitionException {
         ValaParser.interface_declaration_return retval = new ValaParser.interface_declaration_return();
         retval.start = input.LT(1);
@@ -9907,12 +9908,12 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 91) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:699:2: ( ( access_modifier )? ( type_declaration_modifiers )? KW_INTERFACE symbol ( type_parameters )? ( COLON base_types )? LCURL ( interface_member )* RCURL )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:700:2: ( access_modifier )? ( type_declaration_modifiers )? KW_INTERFACE symbol ( type_parameters )? ( COLON base_types )? LCURL ( interface_member )* RCURL
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:701:2: ( ( access_modifier )? ( type_declaration_modifiers )? KW_INTERFACE symbol ( type_parameters )? ( COLON base_types )? LCURL ( interface_member )* RCURL )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:702:2: ( access_modifier )? ( type_declaration_modifiers )? KW_INTERFACE symbol ( type_parameters )? ( COLON base_types )? LCURL ( interface_member )* RCURL
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:700:2: ( access_modifier )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:702:2: ( access_modifier )?
             int alt108=2;
             int LA108_0 = input.LA(1);
 
@@ -9921,7 +9922,7 @@ public class ValaParser extends Parser {
             }
             switch (alt108) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:700:3: access_modifier
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:702:3: access_modifier
                     {
                     pushFollow(FOLLOW_access_modifier_in_interface_declaration3094);
                     access_modifier355=access_modifier();
@@ -9935,7 +9936,7 @@ public class ValaParser extends Parser {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:701:2: ( type_declaration_modifiers )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:703:2: ( type_declaration_modifiers )?
             int alt109=2;
             int LA109_0 = input.LA(1);
 
@@ -9944,7 +9945,7 @@ public class ValaParser extends Parser {
             }
             switch (alt109) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:701:3: type_declaration_modifiers
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:703:3: type_declaration_modifiers
                     {
                     pushFollow(FOLLOW_type_declaration_modifiers_in_interface_declaration3101);
                     type_declaration_modifiers356=type_declaration_modifiers();
@@ -9969,7 +9970,7 @@ public class ValaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, symbol358.getTree());
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:704:2: ( type_parameters )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:706:2: ( type_parameters )?
             int alt110=2;
             int LA110_0 = input.LA(1);
 
@@ -9978,7 +9979,7 @@ public class ValaParser extends Parser {
             }
             switch (alt110) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:704:3: type_parameters
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:706:3: type_parameters
                     {
                     pushFollow(FOLLOW_type_parameters_in_interface_declaration3115);
                     type_parameters359=type_parameters();
@@ -9992,7 +9993,7 @@ public class ValaParser extends Parser {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:705:2: ( COLON base_types )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:707:2: ( COLON base_types )?
             int alt111=2;
             int LA111_0 = input.LA(1);
 
@@ -10001,7 +10002,7 @@ public class ValaParser extends Parser {
             }
             switch (alt111) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:705:3: COLON base_types
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:707:3: COLON base_types
                     {
                     COLON360=(Token)match(input,COLON,FOLLOW_COLON_in_interface_declaration3121); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -10025,20 +10026,20 @@ public class ValaParser extends Parser {
             LCURL362_tree = (CommonTree)adaptor.create(LCURL362);
             adaptor.addChild(root_0, LCURL362_tree);
             }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:707:2: ( interface_member )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:709:2: ( interface_member )*
             loop112:
             do {
                 int alt112=2;
                 int LA112_0 = input.LA(1);
 
-                if ( ((LA112_0>=GLOBAL_NS && LA112_0<=LBRACKET)||LA112_0==KW_VOID||(LA112_0>=KW_DYNAMIC && LA112_0<=KW_WEAK)||LA112_0==KW_NEW||(LA112_0>=KW_ASYNC && LA112_0<=KW_ENUM)||(LA112_0>=KW_DELEGATE && LA112_0<=KW_CONST)) ) {
+                if ( ((LA112_0>=GLOBAL_NS && LA112_0<=LBRACKET)||LA112_0==KW_VOID||(LA112_0>=KW_DYNAMIC && LA112_0<=KW_WEAK)||LA112_0==KW_NEW||(LA112_0>=KW_ASYNC && LA112_0<=KW_ENUM)||LA112_0==KW_SIGNAL||(LA112_0>=KW_DELEGATE && LA112_0<=KW_CONST)) ) {
                     alt112=1;
                 }
 
 
                 switch (alt112) {
             	case 1 :
-            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:707:3: interface_member
+            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:709:3: interface_member
             	    {
             	    pushFollow(FOLLOW_interface_member_in_interface_declaration3134);
             	    interface_member363=interface_member();
@@ -10090,7 +10091,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "type_parameters"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:710:1: type_parameters : LT identifier ( COMMA identifier )* GT ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:712:1: type_parameters : LT identifier ( COMMA identifier )* GT ;
     public final ValaParser.type_parameters_return type_parameters() throws RecognitionException {
         ValaParser.type_parameters_return retval = new ValaParser.type_parameters_return();
         retval.start = input.LT(1);
@@ -10111,8 +10112,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 92) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:711:2: ( LT identifier ( COMMA identifier )* GT )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:712:2: LT identifier ( COMMA identifier )* GT
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:713:2: ( LT identifier ( COMMA identifier )* GT )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:714:2: LT identifier ( COMMA identifier )* GT
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -10127,7 +10128,7 @@ public class ValaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, identifier366.getTree());
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:714:2: ( COMMA identifier )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:716:2: ( COMMA identifier )*
             loop113:
             do {
                 int alt113=2;
@@ -10140,7 +10141,7 @@ public class ValaParser extends Parser {
 
                 switch (alt113) {
             	case 1 :
-            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:714:3: COMMA identifier
+            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:716:3: COMMA identifier
             	    {
             	    COMMA367=(Token)match(input,COMMA,FOLLOW_COMMA_in_type_parameters3159); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -10197,7 +10198,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "interface_member"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:717:1: interface_member : ( attributes )? ( class_declaration | struct_declaration | enum_declaration | delegate_declaration | method_declaration | signal_declaration | field_declaration | constant_declaration | property_declaration ) ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:719:1: interface_member : ( attributes )? ( class_declaration | struct_declaration | enum_declaration | delegate_declaration | method_declaration | signal_declaration | field_declaration | constant_declaration | property_declaration ) ;
     public final ValaParser.interface_member_return interface_member() throws RecognitionException {
         ValaParser.interface_member_return retval = new ValaParser.interface_member_return();
         retval.start = input.LT(1);
@@ -10228,12 +10229,12 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 93) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:718:2: ( ( attributes )? ( class_declaration | struct_declaration | enum_declaration | delegate_declaration | method_declaration | signal_declaration | field_declaration | constant_declaration | property_declaration ) )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:718:4: ( attributes )? ( class_declaration | struct_declaration | enum_declaration | delegate_declaration | method_declaration | signal_declaration | field_declaration | constant_declaration | property_declaration )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:720:2: ( ( attributes )? ( class_declaration | struct_declaration | enum_declaration | delegate_declaration | method_declaration | signal_declaration | field_declaration | constant_declaration | property_declaration ) )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:720:4: ( attributes )? ( class_declaration | struct_declaration | enum_declaration | delegate_declaration | method_declaration | signal_declaration | field_declaration | constant_declaration | property_declaration )
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:718:4: ( attributes )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:720:4: ( attributes )?
             int alt114=2;
             int LA114_0 = input.LA(1);
 
@@ -10242,7 +10243,7 @@ public class ValaParser extends Parser {
             }
             switch (alt114) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:718:5: attributes
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:720:5: attributes
                     {
                     pushFollow(FOLLOW_attributes_in_interface_member3178);
                     attributes370=attributes();
@@ -10256,12 +10257,12 @@ public class ValaParser extends Parser {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:719:2: ( class_declaration | struct_declaration | enum_declaration | delegate_declaration | method_declaration | signal_declaration | field_declaration | constant_declaration | property_declaration )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:721:2: ( class_declaration | struct_declaration | enum_declaration | delegate_declaration | method_declaration | signal_declaration | field_declaration | constant_declaration | property_declaration )
             int alt115=9;
             alt115 = dfa115.predict(input);
             switch (alt115) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:720:2: class_declaration
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:722:2: class_declaration
                     {
                     pushFollow(FOLLOW_class_declaration_in_interface_member3187);
                     class_declaration371=class_declaration();
@@ -10273,7 +10274,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:721:4: struct_declaration
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:723:4: struct_declaration
                     {
                     pushFollow(FOLLOW_struct_declaration_in_interface_member3192);
                     struct_declaration372=struct_declaration();
@@ -10285,7 +10286,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:722:4: enum_declaration
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:724:4: enum_declaration
                     {
                     pushFollow(FOLLOW_enum_declaration_in_interface_member3198);
                     enum_declaration373=enum_declaration();
@@ -10297,7 +10298,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:723:4: delegate_declaration
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:725:4: delegate_declaration
                     {
                     pushFollow(FOLLOW_delegate_declaration_in_interface_member3204);
                     delegate_declaration374=delegate_declaration();
@@ -10309,7 +10310,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 5 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:724:4: method_declaration
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:726:4: method_declaration
                     {
                     pushFollow(FOLLOW_method_declaration_in_interface_member3210);
                     method_declaration375=method_declaration();
@@ -10321,7 +10322,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 6 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:725:4: signal_declaration
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:727:4: signal_declaration
                     {
                     pushFollow(FOLLOW_signal_declaration_in_interface_member3216);
                     signal_declaration376=signal_declaration();
@@ -10333,7 +10334,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 7 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:726:4: field_declaration
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:728:4: field_declaration
                     {
                     pushFollow(FOLLOW_field_declaration_in_interface_member3222);
                     field_declaration377=field_declaration();
@@ -10345,7 +10346,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 8 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:727:4: constant_declaration
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:729:4: constant_declaration
                     {
                     pushFollow(FOLLOW_constant_declaration_in_interface_member3228);
                     constant_declaration378=constant_declaration();
@@ -10357,7 +10358,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 9 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:728:4: property_declaration
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:730:4: property_declaration
                     {
                     pushFollow(FOLLOW_property_declaration_in_interface_member3234);
                     property_declaration379=property_declaration();
@@ -10401,7 +10402,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "namespace_declaration"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:730:1: namespace_declaration : KW_NAMESPACE symbol LCURL ( using_directive )* ( namespace_member )* RCURL ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:732:1: namespace_declaration : KW_NAMESPACE symbol LCURL ( using_directive )* ( namespace_member )* RCURL ;
     public final ValaParser.namespace_declaration_return namespace_declaration() throws RecognitionException {
         ValaParser.namespace_declaration_return retval = new ValaParser.namespace_declaration_return();
         retval.start = input.LT(1);
@@ -10424,8 +10425,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 94) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:731:2: ( KW_NAMESPACE symbol LCURL ( using_directive )* ( namespace_member )* RCURL )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:732:2: KW_NAMESPACE symbol LCURL ( using_directive )* ( namespace_member )* RCURL
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:733:2: ( KW_NAMESPACE symbol LCURL ( using_directive )* ( namespace_member )* RCURL )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:734:2: KW_NAMESPACE symbol LCURL ( using_directive )* ( namespace_member )* RCURL
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -10445,7 +10446,7 @@ public class ValaParser extends Parser {
             LCURL382_tree = (CommonTree)adaptor.create(LCURL382);
             adaptor.addChild(root_0, LCURL382_tree);
             }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:735:2: ( using_directive )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:737:2: ( using_directive )*
             loop116:
             do {
                 int alt116=2;
@@ -10458,7 +10459,7 @@ public class ValaParser extends Parser {
 
                 switch (alt116) {
             	case 1 :
-            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:735:3: using_directive
+            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:737:3: using_directive
             	    {
             	    pushFollow(FOLLOW_using_directive_in_namespace_declaration3261);
             	    using_directive383=using_directive();
@@ -10475,20 +10476,20 @@ public class ValaParser extends Parser {
                 }
             } while (true);
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:736:2: ( namespace_member )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:738:2: ( namespace_member )*
             loop117:
             do {
                 int alt117=2;
                 int LA117_0 = input.LA(1);
 
-                if ( ((LA117_0>=GLOBAL_NS && LA117_0<=LBRACKET)||LA117_0==KW_VOID||(LA117_0>=KW_DYNAMIC && LA117_0<=KW_WEAK)||LA117_0==KW_NEW||(LA117_0>=KW_ASYNC && LA117_0<=KW_NAMESPACE)||LA117_0==KW_DELEGATE||LA117_0==KW_CONST) ) {
+                if ( ((LA117_0>=GLOBAL_NS && LA117_0<=LBRACKET)||LA117_0==KW_VOID||(LA117_0>=KW_DYNAMIC && LA117_0<=KW_WEAK)||LA117_0==KW_NEW||(LA117_0>=KW_ASYNC && LA117_0<=KW_NAMESPACE)||(LA117_0>=KW_DELEGATE && LA117_0<=KW_CONST)) ) {
                     alt117=1;
                 }
 
 
                 switch (alt117) {
             	case 1 :
-            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:736:3: namespace_member
+            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:738:3: namespace_member
             	    {
             	    pushFollow(FOLLOW_namespace_member_in_namespace_declaration3268);
             	    namespace_member384=namespace_member();
@@ -10540,7 +10541,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "struct_declaration"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:739:1: struct_declaration : ( access_modifier )? ( type_declaration_modifiers )? KW_STRUCT symbol ( COLON base_types )? LCURL ( struct_member )* RCURL ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:741:1: struct_declaration : ( access_modifier )? ( type_declaration_modifiers )? KW_STRUCT symbol ( COLON base_types )? LCURL ( struct_member )* RCURL ;
     public final ValaParser.struct_declaration_return struct_declaration() throws RecognitionException {
         ValaParser.struct_declaration_return retval = new ValaParser.struct_declaration_return();
         retval.start = input.LT(1);
@@ -10569,12 +10570,12 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 95) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:740:2: ( ( access_modifier )? ( type_declaration_modifiers )? KW_STRUCT symbol ( COLON base_types )? LCURL ( struct_member )* RCURL )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:741:2: ( access_modifier )? ( type_declaration_modifiers )? KW_STRUCT symbol ( COLON base_types )? LCURL ( struct_member )* RCURL
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:742:2: ( ( access_modifier )? ( type_declaration_modifiers )? KW_STRUCT symbol ( COLON base_types )? LCURL ( struct_member )* RCURL )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:743:2: ( access_modifier )? ( type_declaration_modifiers )? KW_STRUCT symbol ( COLON base_types )? LCURL ( struct_member )* RCURL
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:741:2: ( access_modifier )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:743:2: ( access_modifier )?
             int alt118=2;
             int LA118_0 = input.LA(1);
 
@@ -10583,7 +10584,7 @@ public class ValaParser extends Parser {
             }
             switch (alt118) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:741:3: access_modifier
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:743:3: access_modifier
                     {
                     pushFollow(FOLLOW_access_modifier_in_struct_declaration3287);
                     access_modifier386=access_modifier();
@@ -10597,7 +10598,7 @@ public class ValaParser extends Parser {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:742:2: ( type_declaration_modifiers )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:744:2: ( type_declaration_modifiers )?
             int alt119=2;
             int LA119_0 = input.LA(1);
 
@@ -10606,7 +10607,7 @@ public class ValaParser extends Parser {
             }
             switch (alt119) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:742:3: type_declaration_modifiers
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:744:3: type_declaration_modifiers
                     {
                     pushFollow(FOLLOW_type_declaration_modifiers_in_struct_declaration3294);
                     type_declaration_modifiers387=type_declaration_modifiers();
@@ -10631,7 +10632,7 @@ public class ValaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, symbol389.getTree());
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:745:9: ( COLON base_types )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:747:9: ( COLON base_types )?
             int alt120=2;
             int LA120_0 = input.LA(1);
 
@@ -10640,7 +10641,7 @@ public class ValaParser extends Parser {
             }
             switch (alt120) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:745:10: COLON base_types
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:747:10: COLON base_types
                     {
                     COLON390=(Token)match(input,COLON,FOLLOW_COLON_in_struct_declaration3314); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -10664,20 +10665,20 @@ public class ValaParser extends Parser {
             LCURL392_tree = (CommonTree)adaptor.create(LCURL392);
             adaptor.addChild(root_0, LCURL392_tree);
             }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:747:9: ( struct_member )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:749:9: ( struct_member )*
             loop121:
             do {
                 int alt121=2;
                 int LA121_0 = input.LA(1);
 
-                if ( (LA121_0==KW_USING||(LA121_0>=GLOBAL_NS && LA121_0<=LBRACKET)||LA121_0==KW_IN||(LA121_0>=KW_IS && LA121_0<=KW_VOID)||(LA121_0>=KW_DYNAMIC && LA121_0<=KW_WEAK)||(LA121_0>=KW_CONSTRUCT && LA121_0<=KW_THROW)||LA121_0==KW_CONST) ) {
+                if ( (LA121_0==KW_USING||(LA121_0>=GLOBAL_NS && LA121_0<=LBRACKET)||LA121_0==KW_IN||(LA121_0>=KW_IS && LA121_0<=KW_VOID)||(LA121_0>=KW_DYNAMIC && LA121_0<=KW_WEAK)||(LA121_0>=KW_CONSTRUCT && LA121_0<=KW_REQUIRES)||LA121_0==KW_CONST) ) {
                     alt121=1;
                 }
 
 
                 switch (alt121) {
             	case 1 :
-            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:747:10: struct_member
+            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:749:10: struct_member
             	    {
             	    pushFollow(FOLLOW_struct_member_in_struct_declaration3341);
             	    struct_member393=struct_member();
@@ -10729,7 +10730,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "struct_member"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:750:1: struct_member : ( attributes )? ( method_declaration | field_declaration | constant_declaration | property_declaration | creation_method_declaration | unknown_chain ) ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:752:1: struct_member : ( attributes )? ( method_declaration | field_declaration | constant_declaration | property_declaration | creation_method_declaration | unknown_chain ) ;
     public final ValaParser.struct_member_return struct_member() throws RecognitionException {
         ValaParser.struct_member_return retval = new ValaParser.struct_member_return();
         retval.start = input.LT(1);
@@ -10754,12 +10755,12 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 96) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:751:2: ( ( attributes )? ( method_declaration | field_declaration | constant_declaration | property_declaration | creation_method_declaration | unknown_chain ) )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:752:2: ( attributes )? ( method_declaration | field_declaration | constant_declaration | property_declaration | creation_method_declaration | unknown_chain )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:753:2: ( ( attributes )? ( method_declaration | field_declaration | constant_declaration | property_declaration | creation_method_declaration | unknown_chain ) )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:754:2: ( attributes )? ( method_declaration | field_declaration | constant_declaration | property_declaration | creation_method_declaration | unknown_chain )
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:752:2: ( attributes )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:754:2: ( attributes )?
             int alt122=2;
             int LA122_0 = input.LA(1);
 
@@ -10768,7 +10769,7 @@ public class ValaParser extends Parser {
             }
             switch (alt122) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:752:3: attributes
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:754:3: attributes
                     {
                     pushFollow(FOLLOW_attributes_in_struct_member3367);
                     attributes395=attributes();
@@ -10782,12 +10783,12 @@ public class ValaParser extends Parser {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:753:2: ( method_declaration | field_declaration | constant_declaration | property_declaration | creation_method_declaration | unknown_chain )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:755:2: ( method_declaration | field_declaration | constant_declaration | property_declaration | creation_method_declaration | unknown_chain )
             int alt123=6;
             alt123 = dfa123.predict(input);
             switch (alt123) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:754:3: method_declaration
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:756:3: method_declaration
                     {
                     pushFollow(FOLLOW_method_declaration_in_struct_member3378);
                     method_declaration396=method_declaration();
@@ -10799,7 +10800,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:755:5: field_declaration
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:757:5: field_declaration
                     {
                     pushFollow(FOLLOW_field_declaration_in_struct_member3385);
                     field_declaration397=field_declaration();
@@ -10811,7 +10812,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:756:5: constant_declaration
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:758:5: constant_declaration
                     {
                     pushFollow(FOLLOW_constant_declaration_in_struct_member3392);
                     constant_declaration398=constant_declaration();
@@ -10823,7 +10824,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:757:5: property_declaration
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:759:5: property_declaration
                     {
                     pushFollow(FOLLOW_property_declaration_in_struct_member3399);
                     property_declaration399=property_declaration();
@@ -10835,7 +10836,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 5 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:758:5: creation_method_declaration
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:760:5: creation_method_declaration
                     {
                     pushFollow(FOLLOW_creation_method_declaration_in_struct_member3405);
                     creation_method_declaration400=creation_method_declaration();
@@ -10847,7 +10848,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 6 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:759:5: unknown_chain
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:761:5: unknown_chain
                     {
                     pushFollow(FOLLOW_unknown_chain_in_struct_member3411);
                     unknown_chain401=unknown_chain();
@@ -10891,7 +10892,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "creation_method_declaration"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:762:1: creation_method_declaration : ( access_modifier )? ( constructor_declaration_modifiers )? symbol parameters ( throws_part )? ( requires_decl )? ( ensures_decl )? ( SEMICOLON | block ) ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:764:1: creation_method_declaration : ( access_modifier )? ( constructor_declaration_modifiers )? symbol parameters ( throws_part )? ( requires_decl )? ( ensures_decl )? ( SEMICOLON | block ) ;
     public final ValaParser.creation_method_declaration_return creation_method_declaration() throws RecognitionException {
         ValaParser.creation_method_declaration_return retval = new ValaParser.creation_method_declaration_return();
         retval.start = input.LT(1);
@@ -10920,12 +10921,12 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 97) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:763:2: ( ( access_modifier )? ( constructor_declaration_modifiers )? symbol parameters ( throws_part )? ( requires_decl )? ( ensures_decl )? ( SEMICOLON | block ) )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:764:2: ( access_modifier )? ( constructor_declaration_modifiers )? symbol parameters ( throws_part )? ( requires_decl )? ( ensures_decl )? ( SEMICOLON | block )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:765:2: ( ( access_modifier )? ( constructor_declaration_modifiers )? symbol parameters ( throws_part )? ( requires_decl )? ( ensures_decl )? ( SEMICOLON | block ) )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:766:2: ( access_modifier )? ( constructor_declaration_modifiers )? symbol parameters ( throws_part )? ( requires_decl )? ( ensures_decl )? ( SEMICOLON | block )
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:764:2: ( access_modifier )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:766:2: ( access_modifier )?
             int alt124=2;
             int LA124_0 = input.LA(1);
 
@@ -10934,7 +10935,7 @@ public class ValaParser extends Parser {
             }
             switch (alt124) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:764:3: access_modifier
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:766:3: access_modifier
                     {
                     pushFollow(FOLLOW_access_modifier_in_creation_method_declaration3427);
                     access_modifier402=access_modifier();
@@ -10948,7 +10949,7 @@ public class ValaParser extends Parser {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:765:2: ( constructor_declaration_modifiers )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:767:2: ( constructor_declaration_modifiers )?
             int alt125=2;
             int LA125_0 = input.LA(1);
 
@@ -10957,7 +10958,7 @@ public class ValaParser extends Parser {
             }
             switch (alt125) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:765:3: constructor_declaration_modifiers
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:767:3: constructor_declaration_modifiers
                     {
                     pushFollow(FOLLOW_constructor_declaration_modifiers_in_creation_method_declaration3434);
                     constructor_declaration_modifiers403=constructor_declaration_modifiers();
@@ -10983,7 +10984,7 @@ public class ValaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, parameters405.getTree());
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:768:2: ( throws_part )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:770:2: ( throws_part )?
             int alt126=2;
             int LA126_0 = input.LA(1);
 
@@ -10992,7 +10993,7 @@ public class ValaParser extends Parser {
             }
             switch (alt126) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:768:3: throws_part
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:770:3: throws_part
                     {
                     pushFollow(FOLLOW_throws_part_in_creation_method_declaration3449);
                     throws_part406=throws_part();
@@ -11006,7 +11007,7 @@ public class ValaParser extends Parser {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:769:2: ( requires_decl )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:771:2: ( requires_decl )?
             int alt127=2;
             int LA127_0 = input.LA(1);
 
@@ -11015,7 +11016,7 @@ public class ValaParser extends Parser {
             }
             switch (alt127) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:769:3: requires_decl
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:771:3: requires_decl
                     {
                     pushFollow(FOLLOW_requires_decl_in_creation_method_declaration3456);
                     requires_decl407=requires_decl();
@@ -11029,7 +11030,7 @@ public class ValaParser extends Parser {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:770:2: ( ensures_decl )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:772:2: ( ensures_decl )?
             int alt128=2;
             int LA128_0 = input.LA(1);
 
@@ -11038,7 +11039,7 @@ public class ValaParser extends Parser {
             }
             switch (alt128) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:770:3: ensures_decl
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:772:3: ensures_decl
                     {
                     pushFollow(FOLLOW_ensures_decl_in_creation_method_declaration3463);
                     ensures_decl408=ensures_decl();
@@ -11052,7 +11053,7 @@ public class ValaParser extends Parser {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:771:2: ( SEMICOLON | block )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:773:2: ( SEMICOLON | block )
             int alt129=2;
             int LA129_0 = input.LA(1);
 
@@ -11071,7 +11072,7 @@ public class ValaParser extends Parser {
             }
             switch (alt129) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:771:3: SEMICOLON
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:773:3: SEMICOLON
                     {
                     SEMICOLON409=(Token)match(input,SEMICOLON,FOLLOW_SEMICOLON_in_creation_method_declaration3470); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -11082,7 +11083,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:771:15: block
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:773:15: block
                     {
                     pushFollow(FOLLOW_block_in_creation_method_declaration3474);
                     block410=block();
@@ -11126,7 +11127,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "throws_part"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:773:1: throws_part : KW_THROWS type ( COMMA type )* ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:775:1: throws_part : KW_THROWS type ( COMMA type )* ;
     public final ValaParser.throws_part_return throws_part() throws RecognitionException {
         ValaParser.throws_part_return retval = new ValaParser.throws_part_return();
         retval.start = input.LT(1);
@@ -11145,8 +11146,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 98) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:774:2: ( KW_THROWS type ( COMMA type )* )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:775:2: KW_THROWS type ( COMMA type )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:776:2: ( KW_THROWS type ( COMMA type )* )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:777:2: KW_THROWS type ( COMMA type )*
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -11161,7 +11162,7 @@ public class ValaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, type412.getTree());
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:777:2: ( COMMA type )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:779:2: ( COMMA type )*
             loop130:
             do {
                 int alt130=2;
@@ -11174,7 +11175,7 @@ public class ValaParser extends Parser {
 
                 switch (alt130) {
             	case 1 :
-            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:777:3: COMMA type
+            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:779:3: COMMA type
             	    {
             	    COMMA413=(Token)match(input,COMMA,FOLLOW_COMMA_in_throws_part3494); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -11226,7 +11227,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "parameters"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:779:1: parameters : LPAREN ( parameters_decl )? RPAREN ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:781:1: parameters : LPAREN ( parameters_decl )? RPAREN ;
     public final ValaParser.parameters_return parameters() throws RecognitionException {
         ValaParser.parameters_return retval = new ValaParser.parameters_return();
         retval.start = input.LT(1);
@@ -11243,8 +11244,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 99) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:780:2: ( LPAREN ( parameters_decl )? RPAREN )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:781:2: LPAREN ( parameters_decl )? RPAREN
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:782:2: ( LPAREN ( parameters_decl )? RPAREN )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:783:2: LPAREN ( parameters_decl )? RPAREN
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -11253,7 +11254,7 @@ public class ValaParser extends Parser {
             LPAREN415_tree = (CommonTree)adaptor.create(LPAREN415);
             adaptor.addChild(root_0, LPAREN415_tree);
             }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:782:2: ( parameters_decl )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:784:2: ( parameters_decl )?
             int alt131=2;
             int LA131_0 = input.LA(1);
 
@@ -11262,7 +11263,7 @@ public class ValaParser extends Parser {
             }
             switch (alt131) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:782:3: parameters_decl
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:784:3: parameters_decl
                     {
                     pushFollow(FOLLOW_parameters_decl_in_parameters3515);
                     parameters_decl416=parameters_decl();
@@ -11311,7 +11312,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "parameters_decl"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:785:1: parameters_decl : parameter ( COMMA parameter )* ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:787:1: parameters_decl : parameter ( COMMA parameter )* ;
     public final ValaParser.parameters_decl_return parameters_decl() throws RecognitionException {
         ValaParser.parameters_decl_return retval = new ValaParser.parameters_decl_return();
         retval.start = input.LT(1);
@@ -11328,8 +11329,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 100) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:786:2: ( parameter ( COMMA parameter )* )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:787:2: parameter ( COMMA parameter )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:788:2: ( parameter ( COMMA parameter )* )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:789:2: parameter ( COMMA parameter )*
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -11339,7 +11340,7 @@ public class ValaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, parameter418.getTree());
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:788:2: ( COMMA parameter )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:790:2: ( COMMA parameter )*
             loop132:
             do {
                 int alt132=2;
@@ -11352,7 +11353,7 @@ public class ValaParser extends Parser {
 
                 switch (alt132) {
             	case 1 :
-            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:788:3: COMMA parameter
+            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:790:3: COMMA parameter
             	    {
             	    COMMA419=(Token)match(input,COMMA,FOLLOW_COMMA_in_parameters_decl3534); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -11404,7 +11405,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "requires_decl"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:792:1: requires_decl : KW_REQUIRES LPAREN expression RPAREN ( requires_decl )? ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:794:1: requires_decl : KW_REQUIRES LPAREN expression RPAREN ( requires_decl )? ;
     public final ValaParser.requires_decl_return requires_decl() throws RecognitionException {
         ValaParser.requires_decl_return retval = new ValaParser.requires_decl_return();
         retval.start = input.LT(1);
@@ -11425,8 +11426,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 101) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:793:2: ( KW_REQUIRES LPAREN expression RPAREN ( requires_decl )? )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:794:2: KW_REQUIRES LPAREN expression RPAREN ( requires_decl )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:795:2: ( KW_REQUIRES LPAREN expression RPAREN ( requires_decl )? )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:796:2: KW_REQUIRES LPAREN expression RPAREN ( requires_decl )?
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -11451,7 +11452,7 @@ public class ValaParser extends Parser {
             RPAREN424_tree = (CommonTree)adaptor.create(RPAREN424);
             adaptor.addChild(root_0, RPAREN424_tree);
             }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:798:2: ( requires_decl )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:800:2: ( requires_decl )?
             int alt133=2;
             int LA133_0 = input.LA(1);
 
@@ -11460,7 +11461,7 @@ public class ValaParser extends Parser {
             }
             switch (alt133) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:798:3: requires_decl
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:800:3: requires_decl
                     {
                     pushFollow(FOLLOW_requires_decl_in_requires_decl3569);
                     requires_decl425=requires_decl();
@@ -11504,7 +11505,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "parameter"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:800:1: parameter : ( attributes )? ( ELIPSIS | ( ( KW_PARAMS )? ( ( KW_OWNED ) | ( KW_UNOWNED ) )? ( ( KW_REF ) | ( KW_OUT ) )? type identifier ( ASSIGNMENT expression )? ) ) ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:802:1: parameter : ( attributes )? ( ELIPSIS | ( ( KW_PARAMS )? ( ( KW_OWNED ) | ( KW_UNOWNED ) )? ( ( KW_REF ) | ( KW_OUT ) )? type identifier ( ASSIGNMENT expression )? ) ) ;
     public final ValaParser.parameter_return parameter() throws RecognitionException {
         ValaParser.parameter_return retval = new ValaParser.parameter_return();
         retval.start = input.LT(1);
@@ -11537,12 +11538,12 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 102) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:801:2: ( ( attributes )? ( ELIPSIS | ( ( KW_PARAMS )? ( ( KW_OWNED ) | ( KW_UNOWNED ) )? ( ( KW_REF ) | ( KW_OUT ) )? type identifier ( ASSIGNMENT expression )? ) ) )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:802:2: ( attributes )? ( ELIPSIS | ( ( KW_PARAMS )? ( ( KW_OWNED ) | ( KW_UNOWNED ) )? ( ( KW_REF ) | ( KW_OUT ) )? type identifier ( ASSIGNMENT expression )? ) )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:803:2: ( ( attributes )? ( ELIPSIS | ( ( KW_PARAMS )? ( ( KW_OWNED ) | ( KW_UNOWNED ) )? ( ( KW_REF ) | ( KW_OUT ) )? type identifier ( ASSIGNMENT expression )? ) ) )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:804:2: ( attributes )? ( ELIPSIS | ( ( KW_PARAMS )? ( ( KW_OWNED ) | ( KW_UNOWNED ) )? ( ( KW_REF ) | ( KW_OUT ) )? type identifier ( ASSIGNMENT expression )? ) )
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:802:2: ( attributes )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:804:2: ( attributes )?
             int alt134=2;
             int LA134_0 = input.LA(1);
 
@@ -11551,7 +11552,7 @@ public class ValaParser extends Parser {
             }
             switch (alt134) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:802:3: attributes
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:804:3: attributes
                     {
                     pushFollow(FOLLOW_attributes_in_parameter3585);
                     attributes426=attributes();
@@ -11565,7 +11566,7 @@ public class ValaParser extends Parser {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:803:2: ( ELIPSIS | ( ( KW_PARAMS )? ( ( KW_OWNED ) | ( KW_UNOWNED ) )? ( ( KW_REF ) | ( KW_OUT ) )? type identifier ( ASSIGNMENT expression )? ) )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:805:2: ( ELIPSIS | ( ( KW_PARAMS )? ( ( KW_OWNED ) | ( KW_UNOWNED ) )? ( ( KW_REF ) | ( KW_OUT ) )? type identifier ( ASSIGNMENT expression )? ) )
             int alt139=2;
             int LA139_0 = input.LA(1);
 
@@ -11584,7 +11585,7 @@ public class ValaParser extends Parser {
             }
             switch (alt139) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:804:3: ELIPSIS
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:806:3: ELIPSIS
                     {
                     ELIPSIS427=(Token)match(input,ELIPSIS,FOLLOW_ELIPSIS_in_parameter3597); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -11595,12 +11596,12 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:806:3: ( ( KW_PARAMS )? ( ( KW_OWNED ) | ( KW_UNOWNED ) )? ( ( KW_REF ) | ( KW_OUT ) )? type identifier ( ASSIGNMENT expression )? )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:808:3: ( ( KW_PARAMS )? ( ( KW_OWNED ) | ( KW_UNOWNED ) )? ( ( KW_REF ) | ( KW_OUT ) )? type identifier ( ASSIGNMENT expression )? )
                     {
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:806:3: ( ( KW_PARAMS )? ( ( KW_OWNED ) | ( KW_UNOWNED ) )? ( ( KW_REF ) | ( KW_OUT ) )? type identifier ( ASSIGNMENT expression )? )
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:807:4: ( KW_PARAMS )? ( ( KW_OWNED ) | ( KW_UNOWNED ) )? ( ( KW_REF ) | ( KW_OUT ) )? type identifier ( ASSIGNMENT expression )?
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:808:3: ( ( KW_PARAMS )? ( ( KW_OWNED ) | ( KW_UNOWNED ) )? ( ( KW_REF ) | ( KW_OUT ) )? type identifier ( ASSIGNMENT expression )? )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:809:4: ( KW_PARAMS )? ( ( KW_OWNED ) | ( KW_UNOWNED ) )? ( ( KW_REF ) | ( KW_OUT ) )? type identifier ( ASSIGNMENT expression )?
                     {
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:807:4: ( KW_PARAMS )?
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:809:4: ( KW_PARAMS )?
                     int alt135=2;
                     int LA135_0 = input.LA(1);
 
@@ -11609,7 +11610,7 @@ public class ValaParser extends Parser {
                     }
                     switch (alt135) {
                         case 1 :
-                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:807:5: KW_PARAMS
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:809:5: KW_PARAMS
                             {
                             KW_PARAMS428=(Token)match(input,KW_PARAMS,FOLLOW_KW_PARAMS_in_parameter3614); if (state.failed) return retval;
                             if ( state.backtracking==0 ) {
@@ -11622,30 +11623,30 @@ public class ValaParser extends Parser {
 
                     }
 
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:808:4: ( ( KW_OWNED ) | ( KW_UNOWNED ) )?
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:810:4: ( ( KW_OWNED ) | ( KW_UNOWNED ) )?
                     int alt136=3;
                     int LA136_0 = input.LA(1);
 
                     if ( (LA136_0==KW_OWNED) ) {
                         int LA136_1 = input.LA(2);
 
-                        if ( (synpred291_Vala()) ) {
+                        if ( (synpred293_Vala()) ) {
                             alt136=1;
                         }
                     }
                     else if ( (LA136_0==KW_UNOWNED) ) {
                         int LA136_2 = input.LA(2);
 
-                        if ( (synpred292_Vala()) ) {
+                        if ( (synpred294_Vala()) ) {
                             alt136=2;
                         }
                     }
                     switch (alt136) {
                         case 1 :
-                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:808:5: ( KW_OWNED )
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:810:5: ( KW_OWNED )
                             {
-                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:808:5: ( KW_OWNED )
-                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:808:6: KW_OWNED
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:810:5: ( KW_OWNED )
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:810:6: KW_OWNED
                             {
                             KW_OWNED429=(Token)match(input,KW_OWNED,FOLLOW_KW_OWNED_in_parameter3623); if (state.failed) return retval;
                             if ( state.backtracking==0 ) {
@@ -11659,10 +11660,10 @@ public class ValaParser extends Parser {
                             }
                             break;
                         case 2 :
-                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:808:18: ( KW_UNOWNED )
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:810:18: ( KW_UNOWNED )
                             {
-                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:808:18: ( KW_UNOWNED )
-                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:808:19: KW_UNOWNED
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:810:18: ( KW_UNOWNED )
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:810:19: KW_UNOWNED
                             {
                             KW_UNOWNED430=(Token)match(input,KW_UNOWNED,FOLLOW_KW_UNOWNED_in_parameter3629); if (state.failed) return retval;
                             if ( state.backtracking==0 ) {
@@ -11678,7 +11679,7 @@ public class ValaParser extends Parser {
 
                     }
 
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:809:4: ( ( KW_REF ) | ( KW_OUT ) )?
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:811:4: ( ( KW_REF ) | ( KW_OUT ) )?
                     int alt137=3;
                     int LA137_0 = input.LA(1);
 
@@ -11690,10 +11691,10 @@ public class ValaParser extends Parser {
                     }
                     switch (alt137) {
                         case 1 :
-                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:809:5: ( KW_REF )
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:811:5: ( KW_REF )
                             {
-                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:809:5: ( KW_REF )
-                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:809:6: KW_REF
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:811:5: ( KW_REF )
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:811:6: KW_REF
                             {
                             KW_REF431=(Token)match(input,KW_REF,FOLLOW_KW_REF_in_parameter3639); if (state.failed) return retval;
                             if ( state.backtracking==0 ) {
@@ -11707,10 +11708,10 @@ public class ValaParser extends Parser {
                             }
                             break;
                         case 2 :
-                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:809:16: ( KW_OUT )
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:811:16: ( KW_OUT )
                             {
-                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:809:16: ( KW_OUT )
-                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:809:17: KW_OUT
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:811:16: ( KW_OUT )
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:811:17: KW_OUT
                             {
                             KW_OUT432=(Token)match(input,KW_OUT,FOLLOW_KW_OUT_in_parameter3645); if (state.failed) return retval;
                             if ( state.backtracking==0 ) {
@@ -11738,7 +11739,7 @@ public class ValaParser extends Parser {
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) adaptor.addChild(root_0, identifier434.getTree());
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:812:4: ( ASSIGNMENT expression )?
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:814:4: ( ASSIGNMENT expression )?
                     int alt138=2;
                     int LA138_0 = input.LA(1);
 
@@ -11747,7 +11748,7 @@ public class ValaParser extends Parser {
                     }
                     switch (alt138) {
                         case 1 :
-                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:812:5: ASSIGNMENT expression
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:814:5: ASSIGNMENT expression
                             {
                             ASSIGNMENT435=(Token)match(input,ASSIGNMENT,FOLLOW_ASSIGNMENT_in_parameter3666); if (state.failed) return retval;
                             if ( state.backtracking==0 ) {
@@ -11805,7 +11806,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "ensures_decl"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:816:1: ensures_decl : KW_ENSURES LPAREN expression RPAREN ( ensures_decl )? ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:818:1: ensures_decl : KW_ENSURES LPAREN expression RPAREN ( ensures_decl )? ;
     public final ValaParser.ensures_decl_return ensures_decl() throws RecognitionException {
         ValaParser.ensures_decl_return retval = new ValaParser.ensures_decl_return();
         retval.start = input.LT(1);
@@ -11826,8 +11827,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 103) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:817:2: ( KW_ENSURES LPAREN expression RPAREN ( ensures_decl )? )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:818:2: KW_ENSURES LPAREN expression RPAREN ( ensures_decl )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:819:2: ( KW_ENSURES LPAREN expression RPAREN ( ensures_decl )? )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:820:2: KW_ENSURES LPAREN expression RPAREN ( ensures_decl )?
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -11852,7 +11853,7 @@ public class ValaParser extends Parser {
             RPAREN440_tree = (CommonTree)adaptor.create(RPAREN440);
             adaptor.addChild(root_0, RPAREN440_tree);
             }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:822:2: ( ensures_decl )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:824:2: ( ensures_decl )?
             int alt140=2;
             int LA140_0 = input.LA(1);
 
@@ -11861,7 +11862,7 @@ public class ValaParser extends Parser {
             }
             switch (alt140) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:822:3: ensures_decl
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:824:3: ensures_decl
                     {
                     pushFollow(FOLLOW_ensures_decl_in_ensures_decl3710);
                     ensures_decl441=ensures_decl();
@@ -11905,7 +11906,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "delegate_declaration"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:824:1: delegate_declaration : ( access_modifier )? ( delegate_declaration_modifiers )? KW_DELEGATE type symbol ( type_parameters )? parameters ( throws_part )? SEMICOLON ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:826:1: delegate_declaration : ( access_modifier )? ( delegate_declaration_modifiers )? KW_DELEGATE type symbol ( type_parameters )? parameters ( throws_part )? SEMICOLON ;
     public final ValaParser.delegate_declaration_return delegate_declaration() throws RecognitionException {
         ValaParser.delegate_declaration_return retval = new ValaParser.delegate_declaration_return();
         retval.start = input.LT(1);
@@ -11934,12 +11935,12 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 104) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:825:2: ( ( access_modifier )? ( delegate_declaration_modifiers )? KW_DELEGATE type symbol ( type_parameters )? parameters ( throws_part )? SEMICOLON )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:826:2: ( access_modifier )? ( delegate_declaration_modifiers )? KW_DELEGATE type symbol ( type_parameters )? parameters ( throws_part )? SEMICOLON
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:827:2: ( ( access_modifier )? ( delegate_declaration_modifiers )? KW_DELEGATE type symbol ( type_parameters )? parameters ( throws_part )? SEMICOLON )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:828:2: ( access_modifier )? ( delegate_declaration_modifiers )? KW_DELEGATE type symbol ( type_parameters )? parameters ( throws_part )? SEMICOLON
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:826:2: ( access_modifier )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:828:2: ( access_modifier )?
             int alt141=2;
             int LA141_0 = input.LA(1);
 
@@ -11948,7 +11949,7 @@ public class ValaParser extends Parser {
             }
             switch (alt141) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:826:3: access_modifier
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:828:3: access_modifier
                     {
                     pushFollow(FOLLOW_access_modifier_in_delegate_declaration3725);
                     access_modifier442=access_modifier();
@@ -11962,7 +11963,7 @@ public class ValaParser extends Parser {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:827:2: ( delegate_declaration_modifiers )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:829:2: ( delegate_declaration_modifiers )?
             int alt142=2;
             int LA142_0 = input.LA(1);
 
@@ -11971,7 +11972,7 @@ public class ValaParser extends Parser {
             }
             switch (alt142) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:827:3: delegate_declaration_modifiers
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:829:3: delegate_declaration_modifiers
                     {
                     pushFollow(FOLLOW_delegate_declaration_modifiers_in_delegate_declaration3732);
                     delegate_declaration_modifiers443=delegate_declaration_modifiers();
@@ -12002,7 +12003,7 @@ public class ValaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, symbol446.getTree());
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:831:2: ( type_parameters )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:833:2: ( type_parameters )?
             int alt143=2;
             int LA143_0 = input.LA(1);
 
@@ -12011,7 +12012,7 @@ public class ValaParser extends Parser {
             }
             switch (alt143) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:831:3: type_parameters
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:833:3: type_parameters
                     {
                     pushFollow(FOLLOW_type_parameters_in_delegate_declaration3750);
                     type_parameters447=type_parameters();
@@ -12031,7 +12032,7 @@ public class ValaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, parameters448.getTree());
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:833:2: ( throws_part )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:835:2: ( throws_part )?
             int alt144=2;
             int LA144_0 = input.LA(1);
 
@@ -12040,7 +12041,7 @@ public class ValaParser extends Parser {
             }
             switch (alt144) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:833:3: throws_part
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:835:3: throws_part
                     {
                     pushFollow(FOLLOW_throws_part_in_delegate_declaration3759);
                     throws_part449=throws_part();
@@ -12089,7 +12090,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "delegate_declaration_modifiers"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:836:1: delegate_declaration_modifiers : ( delegate_declaration_modifier )+ ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:838:1: delegate_declaration_modifiers : ( delegate_declaration_modifier )+ ;
     public final ValaParser.delegate_declaration_modifiers_return delegate_declaration_modifiers() throws RecognitionException {
         ValaParser.delegate_declaration_modifiers_return retval = new ValaParser.delegate_declaration_modifiers_return();
         retval.start = input.LT(1);
@@ -12102,12 +12103,12 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 105) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:837:2: ( ( delegate_declaration_modifier )+ )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:837:4: ( delegate_declaration_modifier )+
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:839:2: ( ( delegate_declaration_modifier )+ )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:839:4: ( delegate_declaration_modifier )+
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:837:4: ( delegate_declaration_modifier )+
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:839:4: ( delegate_declaration_modifier )+
             int cnt145=0;
             loop145:
             do {
@@ -12173,7 +12174,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "delegate_declaration_modifier"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:839:1: delegate_declaration_modifier : ( KW_ASYNC | KW_CLASS | KW_EXTERN | KW_INLINE | KW_ABSTRACT | KW_VIRTUAL | KW_OVERRIDE | KW_STATIC );
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:841:1: delegate_declaration_modifier : ( KW_ASYNC | KW_CLASS | KW_EXTERN | KW_INLINE | KW_ABSTRACT | KW_VIRTUAL | KW_OVERRIDE | KW_STATIC );
     public final ValaParser.delegate_declaration_modifier_return delegate_declaration_modifier() throws RecognitionException {
         ValaParser.delegate_declaration_modifier_return retval = new ValaParser.delegate_declaration_modifier_return();
         retval.start = input.LT(1);
@@ -12186,7 +12187,7 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 106) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:840:2: ( KW_ASYNC | KW_CLASS | KW_EXTERN | KW_INLINE | KW_ABSTRACT | KW_VIRTUAL | KW_OVERRIDE | KW_STATIC )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:842:2: ( KW_ASYNC | KW_CLASS | KW_EXTERN | KW_INLINE | KW_ABSTRACT | KW_VIRTUAL | KW_OVERRIDE | KW_STATIC )
             // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:
             {
             root_0 = (CommonTree)adaptor.nil();
@@ -12233,7 +12234,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "signal_declaration"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:850:1: signal_declaration : ( access_modifier )? ( signal_declaration_modifiers )? KW_SIGNAL type IDENTIFIER parameters ( SEMICOLON | block ) ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:852:1: signal_declaration : ( access_modifier )? ( signal_declaration_modifiers )? KW_SIGNAL type IDENTIFIER parameters ( SEMICOLON | block ) ;
     public final ValaParser.signal_declaration_return signal_declaration() throws RecognitionException {
         ValaParser.signal_declaration_return retval = new ValaParser.signal_declaration_return();
         retval.start = input.LT(1);
@@ -12260,12 +12261,12 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 107) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:851:2: ( ( access_modifier )? ( signal_declaration_modifiers )? KW_SIGNAL type IDENTIFIER parameters ( SEMICOLON | block ) )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:852:2: ( access_modifier )? ( signal_declaration_modifiers )? KW_SIGNAL type IDENTIFIER parameters ( SEMICOLON | block )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:853:2: ( ( access_modifier )? ( signal_declaration_modifiers )? KW_SIGNAL type IDENTIFIER parameters ( SEMICOLON | block ) )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:854:2: ( access_modifier )? ( signal_declaration_modifiers )? KW_SIGNAL type IDENTIFIER parameters ( SEMICOLON | block )
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:852:2: ( access_modifier )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:854:2: ( access_modifier )?
             int alt146=2;
             int LA146_0 = input.LA(1);
 
@@ -12274,7 +12275,7 @@ public class ValaParser extends Parser {
             }
             switch (alt146) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:852:3: access_modifier
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:854:3: access_modifier
                     {
                     pushFollow(FOLLOW_access_modifier_in_signal_declaration3840);
                     access_modifier453=access_modifier();
@@ -12288,7 +12289,7 @@ public class ValaParser extends Parser {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:853:2: ( signal_declaration_modifiers )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:855:2: ( signal_declaration_modifiers )?
             int alt147=2;
             int LA147_0 = input.LA(1);
 
@@ -12297,7 +12298,7 @@ public class ValaParser extends Parser {
             }
             switch (alt147) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:853:3: signal_declaration_modifiers
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:855:3: signal_declaration_modifiers
                     {
                     pushFollow(FOLLOW_signal_declaration_modifiers_in_signal_declaration3847);
                     signal_declaration_modifiers454=signal_declaration_modifiers();
@@ -12333,7 +12334,7 @@ public class ValaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, parameters458.getTree());
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:858:2: ( SEMICOLON | block )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:860:2: ( SEMICOLON | block )
             int alt148=2;
             int LA148_0 = input.LA(1);
 
@@ -12352,7 +12353,7 @@ public class ValaParser extends Parser {
             }
             switch (alt148) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:858:4: SEMICOLON
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:860:4: SEMICOLON
                     {
                     SEMICOLON459=(Token)match(input,SEMICOLON,FOLLOW_SEMICOLON_in_signal_declaration3868); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -12363,7 +12364,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:858:16: block
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:860:16: block
                     {
                     pushFollow(FOLLOW_block_in_signal_declaration3872);
                     block460=block();
@@ -12407,7 +12408,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "signal_declaration_modifiers"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:860:1: signal_declaration_modifiers : ( signal_declaration_modifier )+ ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:862:1: signal_declaration_modifiers : ( signal_declaration_modifier )+ ;
     public final ValaParser.signal_declaration_modifiers_return signal_declaration_modifiers() throws RecognitionException {
         ValaParser.signal_declaration_modifiers_return retval = new ValaParser.signal_declaration_modifiers_return();
         retval.start = input.LT(1);
@@ -12420,12 +12421,12 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 108) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:861:2: ( ( signal_declaration_modifier )+ )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:861:4: ( signal_declaration_modifier )+
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:863:2: ( ( signal_declaration_modifier )+ )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:863:4: ( signal_declaration_modifier )+
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:861:4: ( signal_declaration_modifier )+
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:863:4: ( signal_declaration_modifier )+
             int cnt149=0;
             loop149:
             do {
@@ -12491,7 +12492,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "signal_declaration_modifier"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:863:1: signal_declaration_modifier : ( KW_ASYNC | KW_EXTERN | KW_INLINE | KW_ABSTRACT | KW_VIRTUAL | KW_OVERRIDE | KW_NEW );
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:865:1: signal_declaration_modifier : ( KW_ASYNC | KW_EXTERN | KW_INLINE | KW_ABSTRACT | KW_VIRTUAL | KW_OVERRIDE | KW_NEW );
     public final ValaParser.signal_declaration_modifier_return signal_declaration_modifier() throws RecognitionException {
         ValaParser.signal_declaration_modifier_return retval = new ValaParser.signal_declaration_modifier_return();
         retval.start = input.LT(1);
@@ -12504,7 +12505,7 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 109) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:864:2: ( KW_ASYNC | KW_EXTERN | KW_INLINE | KW_ABSTRACT | KW_VIRTUAL | KW_OVERRIDE | KW_NEW )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:866:2: ( KW_ASYNC | KW_EXTERN | KW_INLINE | KW_ABSTRACT | KW_VIRTUAL | KW_OVERRIDE | KW_NEW )
             // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:
             {
             root_0 = (CommonTree)adaptor.nil();
@@ -12551,7 +12552,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "method_declaration"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:873:1: method_declaration : ( access_modifier )? ( member_declaration_modifiers )? type identifier ( type_parameters )? parameters ( throws_part )? ( requires_decl )? ( ensures_decl )? ( SEMICOLON | block ) ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:875:1: method_declaration : ( access_modifier )? ( member_declaration_modifiers )? type identifier ( type_parameters )? parameters ( throws_part )? ( requires_decl )? ( ensures_decl )? ( SEMICOLON | block ) ;
     public final ValaParser.method_declaration_return method_declaration() throws RecognitionException {
         ValaParser.method_declaration_return retval = new ValaParser.method_declaration_return();
         retval.start = input.LT(1);
@@ -12584,12 +12585,12 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 110) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:874:2: ( ( access_modifier )? ( member_declaration_modifiers )? type identifier ( type_parameters )? parameters ( throws_part )? ( requires_decl )? ( ensures_decl )? ( SEMICOLON | block ) )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:875:2: ( access_modifier )? ( member_declaration_modifiers )? type identifier ( type_parameters )? parameters ( throws_part )? ( requires_decl )? ( ensures_decl )? ( SEMICOLON | block )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:876:2: ( ( access_modifier )? ( member_declaration_modifiers )? type identifier ( type_parameters )? parameters ( throws_part )? ( requires_decl )? ( ensures_decl )? ( SEMICOLON | block ) )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:877:2: ( access_modifier )? ( member_declaration_modifiers )? type identifier ( type_parameters )? parameters ( throws_part )? ( requires_decl )? ( ensures_decl )? ( SEMICOLON | block )
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:875:2: ( access_modifier )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:877:2: ( access_modifier )?
             int alt150=2;
             int LA150_0 = input.LA(1);
 
@@ -12598,7 +12599,7 @@ public class ValaParser extends Parser {
             }
             switch (alt150) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:875:3: access_modifier
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:877:3: access_modifier
                     {
                     pushFollow(FOLLOW_access_modifier_in_method_declaration3940);
                     access_modifier463=access_modifier();
@@ -12612,7 +12613,7 @@ public class ValaParser extends Parser {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:876:2: ( member_declaration_modifiers )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:878:2: ( member_declaration_modifiers )?
             int alt151=2;
             int LA151_0 = input.LA(1);
 
@@ -12621,7 +12622,7 @@ public class ValaParser extends Parser {
             }
             switch (alt151) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:876:3: member_declaration_modifiers
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:878:3: member_declaration_modifiers
                     {
                     pushFollow(FOLLOW_member_declaration_modifiers_in_method_declaration3947);
                     member_declaration_modifiers464=member_declaration_modifiers();
@@ -12647,7 +12648,7 @@ public class ValaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, identifier466.getTree());
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:879:2: ( type_parameters )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:881:2: ( type_parameters )?
             int alt152=2;
             int LA152_0 = input.LA(1);
 
@@ -12656,7 +12657,7 @@ public class ValaParser extends Parser {
             }
             switch (alt152) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:879:3: type_parameters
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:881:3: type_parameters
                     {
                     pushFollow(FOLLOW_type_parameters_in_method_declaration3962);
                     type_parameters467=type_parameters();
@@ -12676,7 +12677,7 @@ public class ValaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, parameters468.getTree());
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:881:2: ( throws_part )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:883:2: ( throws_part )?
             int alt153=2;
             int LA153_0 = input.LA(1);
 
@@ -12685,7 +12686,7 @@ public class ValaParser extends Parser {
             }
             switch (alt153) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:881:3: throws_part
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:883:3: throws_part
                     {
                     pushFollow(FOLLOW_throws_part_in_method_declaration3979);
                     throws_part469=throws_part();
@@ -12699,7 +12700,7 @@ public class ValaParser extends Parser {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:882:2: ( requires_decl )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:884:2: ( requires_decl )?
             int alt154=2;
             int LA154_0 = input.LA(1);
 
@@ -12708,7 +12709,7 @@ public class ValaParser extends Parser {
             }
             switch (alt154) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:882:3: requires_decl
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:884:3: requires_decl
                     {
                     pushFollow(FOLLOW_requires_decl_in_method_declaration3986);
                     requires_decl470=requires_decl();
@@ -12722,7 +12723,7 @@ public class ValaParser extends Parser {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:883:2: ( ensures_decl )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:885:2: ( ensures_decl )?
             int alt155=2;
             int LA155_0 = input.LA(1);
 
@@ -12731,7 +12732,7 @@ public class ValaParser extends Parser {
             }
             switch (alt155) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:883:3: ensures_decl
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:885:3: ensures_decl
                     {
                     pushFollow(FOLLOW_ensures_decl_in_method_declaration3993);
                     ensures_decl471=ensures_decl();
@@ -12745,7 +12746,7 @@ public class ValaParser extends Parser {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:884:2: ( SEMICOLON | block )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:886:2: ( SEMICOLON | block )
             int alt156=2;
             int LA156_0 = input.LA(1);
 
@@ -12764,7 +12765,7 @@ public class ValaParser extends Parser {
             }
             switch (alt156) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:884:4: SEMICOLON
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:886:4: SEMICOLON
                     {
                     SEMICOLON472=(Token)match(input,SEMICOLON,FOLLOW_SEMICOLON_in_method_declaration4001); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -12775,7 +12776,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:884:16: block
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:886:16: block
                     {
                     pushFollow(FOLLOW_block_in_method_declaration4005);
                     block473=block();
@@ -12819,7 +12820,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "constant_declaration"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:886:1: constant_declaration : ( access_modifier )? ( member_declaration_modifiers )? KW_CONST type IDENTIFIER ( inline_array_type )? ( ASSIGNMENT expression )? SEMICOLON ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:888:1: constant_declaration : ( access_modifier )? ( member_declaration_modifiers )? KW_CONST type IDENTIFIER ( inline_array_type )? ( ASSIGNMENT expression )? SEMICOLON ;
     public final ValaParser.constant_declaration_return constant_declaration() throws RecognitionException {
         ValaParser.constant_declaration_return retval = new ValaParser.constant_declaration_return();
         retval.start = input.LT(1);
@@ -12848,12 +12849,12 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 111) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:887:2: ( ( access_modifier )? ( member_declaration_modifiers )? KW_CONST type IDENTIFIER ( inline_array_type )? ( ASSIGNMENT expression )? SEMICOLON )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:888:2: ( access_modifier )? ( member_declaration_modifiers )? KW_CONST type IDENTIFIER ( inline_array_type )? ( ASSIGNMENT expression )? SEMICOLON
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:889:2: ( ( access_modifier )? ( member_declaration_modifiers )? KW_CONST type IDENTIFIER ( inline_array_type )? ( ASSIGNMENT expression )? SEMICOLON )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:890:2: ( access_modifier )? ( member_declaration_modifiers )? KW_CONST type IDENTIFIER ( inline_array_type )? ( ASSIGNMENT expression )? SEMICOLON
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:888:2: ( access_modifier )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:890:2: ( access_modifier )?
             int alt157=2;
             int LA157_0 = input.LA(1);
 
@@ -12862,7 +12863,7 @@ public class ValaParser extends Parser {
             }
             switch (alt157) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:888:3: access_modifier
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:890:3: access_modifier
                     {
                     pushFollow(FOLLOW_access_modifier_in_constant_declaration4020);
                     access_modifier474=access_modifier();
@@ -12876,7 +12877,7 @@ public class ValaParser extends Parser {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:889:2: ( member_declaration_modifiers )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:891:2: ( member_declaration_modifiers )?
             int alt158=2;
             int LA158_0 = input.LA(1);
 
@@ -12885,7 +12886,7 @@ public class ValaParser extends Parser {
             }
             switch (alt158) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:889:3: member_declaration_modifiers
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:891:3: member_declaration_modifiers
                     {
                     pushFollow(FOLLOW_member_declaration_modifiers_in_constant_declaration4027);
                     member_declaration_modifiers475=member_declaration_modifiers();
@@ -12915,7 +12916,7 @@ public class ValaParser extends Parser {
             IDENTIFIER478_tree = (CommonTree)adaptor.create(IDENTIFIER478);
             adaptor.addChild(root_0, IDENTIFIER478_tree);
             }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:893:2: ( inline_array_type )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:895:2: ( inline_array_type )?
             int alt159=2;
             int LA159_0 = input.LA(1);
 
@@ -12924,7 +12925,7 @@ public class ValaParser extends Parser {
             }
             switch (alt159) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:893:3: inline_array_type
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:895:3: inline_array_type
                     {
                     pushFollow(FOLLOW_inline_array_type_in_constant_declaration4045);
                     inline_array_type479=inline_array_type();
@@ -12938,7 +12939,7 @@ public class ValaParser extends Parser {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:894:2: ( ASSIGNMENT expression )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:896:2: ( ASSIGNMENT expression )?
             int alt160=2;
             int LA160_0 = input.LA(1);
 
@@ -12947,7 +12948,7 @@ public class ValaParser extends Parser {
             }
             switch (alt160) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:894:3: ASSIGNMENT expression
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:896:3: ASSIGNMENT expression
                     {
                     ASSIGNMENT480=(Token)match(input,ASSIGNMENT,FOLLOW_ASSIGNMENT_in_constant_declaration4051); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -13001,7 +13002,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "inline_array_type"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:897:1: inline_array_type : LBRACKET INTEGER RBRACKET ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:899:1: inline_array_type : LBRACKET INTEGER RBRACKET ;
     public final ValaParser.inline_array_type_return inline_array_type() throws RecognitionException {
         ValaParser.inline_array_type_return retval = new ValaParser.inline_array_type_return();
         retval.start = input.LT(1);
@@ -13018,8 +13019,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 112) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:898:2: ( LBRACKET INTEGER RBRACKET )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:899:2: LBRACKET INTEGER RBRACKET
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:900:2: ( LBRACKET INTEGER RBRACKET )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:901:2: LBRACKET INTEGER RBRACKET
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -13068,7 +13069,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "field_declaration"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:903:1: field_declaration : ( access_modifier )? ( member_declaration_modifiers )? type identifier ( LBRACKET RBRACKET )? ( ASSIGNMENT expression )? SEMICOLON ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:905:1: field_declaration : ( access_modifier )? ( member_declaration_modifiers )? type identifier ( LBRACKET RBRACKET )? ( ASSIGNMENT expression )? SEMICOLON ;
     public final ValaParser.field_declaration_return field_declaration() throws RecognitionException {
         ValaParser.field_declaration_return retval = new ValaParser.field_declaration_return();
         retval.start = input.LT(1);
@@ -13097,12 +13098,12 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 113) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:904:2: ( ( access_modifier )? ( member_declaration_modifiers )? type identifier ( LBRACKET RBRACKET )? ( ASSIGNMENT expression )? SEMICOLON )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:905:2: ( access_modifier )? ( member_declaration_modifiers )? type identifier ( LBRACKET RBRACKET )? ( ASSIGNMENT expression )? SEMICOLON
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:906:2: ( ( access_modifier )? ( member_declaration_modifiers )? type identifier ( LBRACKET RBRACKET )? ( ASSIGNMENT expression )? SEMICOLON )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:907:2: ( access_modifier )? ( member_declaration_modifiers )? type identifier ( LBRACKET RBRACKET )? ( ASSIGNMENT expression )? SEMICOLON
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:905:2: ( access_modifier )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:907:2: ( access_modifier )?
             int alt161=2;
             int LA161_0 = input.LA(1);
 
@@ -13111,7 +13112,7 @@ public class ValaParser extends Parser {
             }
             switch (alt161) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:905:3: access_modifier
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:907:3: access_modifier
                     {
                     pushFollow(FOLLOW_access_modifier_in_field_declaration4091);
                     access_modifier486=access_modifier();
@@ -13125,7 +13126,7 @@ public class ValaParser extends Parser {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:906:2: ( member_declaration_modifiers )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:908:2: ( member_declaration_modifiers )?
             int alt162=2;
             int LA162_0 = input.LA(1);
 
@@ -13134,7 +13135,7 @@ public class ValaParser extends Parser {
             }
             switch (alt162) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:906:3: member_declaration_modifiers
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:908:3: member_declaration_modifiers
                     {
                     pushFollow(FOLLOW_member_declaration_modifiers_in_field_declaration4098);
                     member_declaration_modifiers487=member_declaration_modifiers();
@@ -13160,7 +13161,7 @@ public class ValaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, identifier489.getTree());
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:909:2: ( LBRACKET RBRACKET )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:911:2: ( LBRACKET RBRACKET )?
             int alt163=2;
             int LA163_0 = input.LA(1);
 
@@ -13169,7 +13170,7 @@ public class ValaParser extends Parser {
             }
             switch (alt163) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:909:3: LBRACKET RBRACKET
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:911:3: LBRACKET RBRACKET
                     {
                     LBRACKET490=(Token)match(input,LBRACKET,FOLLOW_LBRACKET_in_field_declaration4112); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -13187,7 +13188,7 @@ public class ValaParser extends Parser {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:910:2: ( ASSIGNMENT expression )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:912:2: ( ASSIGNMENT expression )?
             int alt164=2;
             int LA164_0 = input.LA(1);
 
@@ -13196,7 +13197,7 @@ public class ValaParser extends Parser {
             }
             switch (alt164) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:910:3: ASSIGNMENT expression
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:912:3: ASSIGNMENT expression
                     {
                     ASSIGNMENT492=(Token)match(input,ASSIGNMENT,FOLLOW_ASSIGNMENT_in_field_declaration4121); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -13250,7 +13251,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "property_declaration"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:913:1: property_declaration : ( access_modifier )? ( property_declaration_modifiers )? type identifier LCURL ( property_declaration_part )* RCURL ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:915:1: property_declaration : ( access_modifier )? ( property_declaration_modifiers )? type identifier LCURL ( property_declaration_part )* RCURL ;
     public final ValaParser.property_declaration_return property_declaration() throws RecognitionException {
         ValaParser.property_declaration_return retval = new ValaParser.property_declaration_return();
         retval.start = input.LT(1);
@@ -13275,12 +13276,12 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 114) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:914:2: ( ( access_modifier )? ( property_declaration_modifiers )? type identifier LCURL ( property_declaration_part )* RCURL )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:915:2: ( access_modifier )? ( property_declaration_modifiers )? type identifier LCURL ( property_declaration_part )* RCURL
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:916:2: ( ( access_modifier )? ( property_declaration_modifiers )? type identifier LCURL ( property_declaration_part )* RCURL )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:917:2: ( access_modifier )? ( property_declaration_modifiers )? type identifier LCURL ( property_declaration_part )* RCURL
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:915:2: ( access_modifier )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:917:2: ( access_modifier )?
             int alt165=2;
             int LA165_0 = input.LA(1);
 
@@ -13289,7 +13290,7 @@ public class ValaParser extends Parser {
             }
             switch (alt165) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:915:3: access_modifier
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:917:3: access_modifier
                     {
                     pushFollow(FOLLOW_access_modifier_in_property_declaration4142);
                     access_modifier495=access_modifier();
@@ -13303,7 +13304,7 @@ public class ValaParser extends Parser {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:916:2: ( property_declaration_modifiers )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:918:2: ( property_declaration_modifiers )?
             int alt166=2;
             int LA166_0 = input.LA(1);
 
@@ -13312,7 +13313,7 @@ public class ValaParser extends Parser {
             }
             switch (alt166) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:916:3: property_declaration_modifiers
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:918:3: property_declaration_modifiers
                     {
                     pushFollow(FOLLOW_property_declaration_modifiers_in_property_declaration4149);
                     property_declaration_modifiers496=property_declaration_modifiers();
@@ -13343,7 +13344,7 @@ public class ValaParser extends Parser {
             LCURL499_tree = (CommonTree)adaptor.create(LCURL499);
             adaptor.addChild(root_0, LCURL499_tree);
             }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:919:9: ( property_declaration_part )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:921:9: ( property_declaration_part )*
             loop167:
             do {
                 int alt167=2;
@@ -13356,7 +13357,7 @@ public class ValaParser extends Parser {
 
                 switch (alt167) {
             	case 1 :
-            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:919:10: property_declaration_part
+            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:921:10: property_declaration_part
             	    {
             	    pushFollow(FOLLOW_property_declaration_part_in_property_declaration4179);
             	    property_declaration_part500=property_declaration_part();
@@ -13408,7 +13409,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "property_declaration_part"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:922:1: property_declaration_part : ( ( KW_DEFAULT ASSIGNMENT expression SEMICOLON ) | property_accessor );
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:924:1: property_declaration_part : ( ( KW_DEFAULT ASSIGNMENT expression SEMICOLON ) | property_accessor );
     public final ValaParser.property_declaration_part_return property_declaration_part() throws RecognitionException {
         ValaParser.property_declaration_part_return retval = new ValaParser.property_declaration_part_return();
         retval.start = input.LT(1);
@@ -13429,7 +13430,7 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 115) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:923:2: ( ( KW_DEFAULT ASSIGNMENT expression SEMICOLON ) | property_accessor )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:925:2: ( ( KW_DEFAULT ASSIGNMENT expression SEMICOLON ) | property_accessor )
             int alt168=2;
             int LA168_0 = input.LA(1);
 
@@ -13448,12 +13449,12 @@ public class ValaParser extends Parser {
             }
             switch (alt168) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:924:2: ( KW_DEFAULT ASSIGNMENT expression SEMICOLON )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:926:2: ( KW_DEFAULT ASSIGNMENT expression SEMICOLON )
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:924:2: ( KW_DEFAULT ASSIGNMENT expression SEMICOLON )
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:925:3: KW_DEFAULT ASSIGNMENT expression SEMICOLON
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:926:2: ( KW_DEFAULT ASSIGNMENT expression SEMICOLON )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:927:3: KW_DEFAULT ASSIGNMENT expression SEMICOLON
                     {
                     KW_DEFAULT502=(Token)match(input,KW_DEFAULT,FOLLOW_KW_DEFAULT_in_property_declaration_part4209); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -13483,7 +13484,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:930:4: property_accessor
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:932:4: property_accessor
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -13525,7 +13526,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "property_accessor"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:932:1: property_accessor : ( attributes )? ( access_modifier )? ( ( property_get_accessor property_set_construct_accessor ) | ( property_set_construct_accessor property_get_accessor ) | ( property_set_construct_accessor ) | ( property_get_accessor ) ) ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:934:1: property_accessor : ( attributes )? ( access_modifier )? ( ( property_get_accessor property_set_construct_accessor ) | ( property_set_construct_accessor property_get_accessor ) | ( property_set_construct_accessor ) | ( property_get_accessor ) ) ;
     public final ValaParser.property_accessor_return property_accessor() throws RecognitionException {
         ValaParser.property_accessor_return retval = new ValaParser.property_accessor_return();
         retval.start = input.LT(1);
@@ -13552,12 +13553,12 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 116) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:933:2: ( ( attributes )? ( access_modifier )? ( ( property_get_accessor property_set_construct_accessor ) | ( property_set_construct_accessor property_get_accessor ) | ( property_set_construct_accessor ) | ( property_get_accessor ) ) )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:934:2: ( attributes )? ( access_modifier )? ( ( property_get_accessor property_set_construct_accessor ) | ( property_set_construct_accessor property_get_accessor ) | ( property_set_construct_accessor ) | ( property_get_accessor ) )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:935:2: ( ( attributes )? ( access_modifier )? ( ( property_get_accessor property_set_construct_accessor ) | ( property_set_construct_accessor property_get_accessor ) | ( property_set_construct_accessor ) | ( property_get_accessor ) ) )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:936:2: ( attributes )? ( access_modifier )? ( ( property_get_accessor property_set_construct_accessor ) | ( property_set_construct_accessor property_get_accessor ) | ( property_set_construct_accessor ) | ( property_get_accessor ) )
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:934:2: ( attributes )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:936:2: ( attributes )?
             int alt169=2;
             int LA169_0 = input.LA(1);
 
@@ -13566,7 +13567,7 @@ public class ValaParser extends Parser {
             }
             switch (alt169) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:934:3: attributes
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:936:3: attributes
                     {
                     pushFollow(FOLLOW_attributes_in_property_accessor4246);
                     attributes507=attributes();
@@ -13580,20 +13581,20 @@ public class ValaParser extends Parser {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:935:2: ( access_modifier )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:937:2: ( access_modifier )?
             int alt170=2;
             int LA170_0 = input.LA(1);
 
             if ( ((LA170_0>=KW_PRIVATE && LA170_0<=KW_INTERNAL)) ) {
                 int LA170_1 = input.LA(2);
 
-                if ( (synpred339_Vala()) ) {
+                if ( (synpred341_Vala()) ) {
                     alt170=1;
                 }
             }
             switch (alt170) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:935:3: access_modifier
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:937:3: access_modifier
                     {
                     pushFollow(FOLLOW_access_modifier_in_property_accessor4253);
                     access_modifier508=access_modifier();
@@ -13607,7 +13608,7 @@ public class ValaParser extends Parser {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:936:2: ( ( property_get_accessor property_set_construct_accessor ) | ( property_set_construct_accessor property_get_accessor ) | ( property_set_construct_accessor ) | ( property_get_accessor ) )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:938:2: ( ( property_get_accessor property_set_construct_accessor ) | ( property_set_construct_accessor property_get_accessor ) | ( property_set_construct_accessor ) | ( property_get_accessor ) )
             int alt171=4;
             switch ( input.LA(1) ) {
             case KW_PRIVATE:
@@ -13617,13 +13618,13 @@ public class ValaParser extends Parser {
                 {
                 int LA171_1 = input.LA(2);
 
-                if ( (synpred340_Vala()) ) {
+                if ( (synpred342_Vala()) ) {
                     alt171=1;
                 }
-                else if ( (synpred341_Vala()) ) {
+                else if ( (synpred343_Vala()) ) {
                     alt171=2;
                 }
-                else if ( (synpred342_Vala()) ) {
+                else if ( (synpred344_Vala()) ) {
                     alt171=3;
                 }
                 else if ( (true) ) {
@@ -13642,7 +13643,7 @@ public class ValaParser extends Parser {
                 {
                 int LA171_2 = input.LA(2);
 
-                if ( (synpred340_Vala()) ) {
+                if ( (synpred342_Vala()) ) {
                     alt171=1;
                 }
                 else if ( (true) ) {
@@ -13661,10 +13662,10 @@ public class ValaParser extends Parser {
                 {
                 int LA171_3 = input.LA(2);
 
-                if ( (synpred341_Vala()) ) {
+                if ( (synpred343_Vala()) ) {
                     alt171=2;
                 }
-                else if ( (synpred342_Vala()) ) {
+                else if ( (synpred344_Vala()) ) {
                     alt171=3;
                 }
                 else {
@@ -13680,10 +13681,10 @@ public class ValaParser extends Parser {
                 {
                 int LA171_4 = input.LA(2);
 
-                if ( (synpred341_Vala()) ) {
+                if ( (synpred343_Vala()) ) {
                     alt171=2;
                 }
-                else if ( (synpred342_Vala()) ) {
+                else if ( (synpred344_Vala()) ) {
                     alt171=3;
                 }
                 else {
@@ -13705,10 +13706,10 @@ public class ValaParser extends Parser {
 
             switch (alt171) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:937:3: ( property_get_accessor property_set_construct_accessor )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:939:3: ( property_get_accessor property_set_construct_accessor )
                     {
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:937:3: ( property_get_accessor property_set_construct_accessor )
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:937:4: property_get_accessor property_set_construct_accessor
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:939:3: ( property_get_accessor property_set_construct_accessor )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:939:4: property_get_accessor property_set_construct_accessor
                     {
                     pushFollow(FOLLOW_property_get_accessor_in_property_accessor4263);
                     property_get_accessor509=property_get_accessor();
@@ -13729,10 +13730,10 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:938:5: ( property_set_construct_accessor property_get_accessor )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:940:5: ( property_set_construct_accessor property_get_accessor )
                     {
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:938:5: ( property_set_construct_accessor property_get_accessor )
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:938:6: property_set_construct_accessor property_get_accessor
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:940:5: ( property_set_construct_accessor property_get_accessor )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:940:6: property_set_construct_accessor property_get_accessor
                     {
                     pushFollow(FOLLOW_property_set_construct_accessor_in_property_accessor4273);
                     property_set_construct_accessor511=property_set_construct_accessor();
@@ -13753,10 +13754,10 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:939:5: ( property_set_construct_accessor )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:941:5: ( property_set_construct_accessor )
                     {
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:939:5: ( property_set_construct_accessor )
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:939:6: property_set_construct_accessor
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:941:5: ( property_set_construct_accessor )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:941:6: property_set_construct_accessor
                     {
                     pushFollow(FOLLOW_property_set_construct_accessor_in_property_accessor4283);
                     property_set_construct_accessor513=property_set_construct_accessor();
@@ -13771,10 +13772,10 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:940:5: ( property_get_accessor )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:942:5: ( property_get_accessor )
                     {
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:940:5: ( property_get_accessor )
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:940:6: property_get_accessor
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:942:5: ( property_get_accessor )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:942:6: property_get_accessor
                     {
                     pushFollow(FOLLOW_property_get_accessor_in_property_accessor4293);
                     property_get_accessor514=property_get_accessor();
@@ -13821,7 +13822,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "property_get_accessor"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:943:1: property_get_accessor : ( access_modifier )? KW_GET ( SEMICOLON | block ) ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:945:1: property_get_accessor : ( access_modifier )? KW_GET ( SEMICOLON | block ) ;
     public final ValaParser.property_get_accessor_return property_get_accessor() throws RecognitionException {
         ValaParser.property_get_accessor_return retval = new ValaParser.property_get_accessor_return();
         retval.start = input.LT(1);
@@ -13840,12 +13841,12 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 117) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:944:2: ( ( access_modifier )? KW_GET ( SEMICOLON | block ) )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:945:2: ( access_modifier )? KW_GET ( SEMICOLON | block )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:946:2: ( ( access_modifier )? KW_GET ( SEMICOLON | block ) )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:947:2: ( access_modifier )? KW_GET ( SEMICOLON | block )
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:945:2: ( access_modifier )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:947:2: ( access_modifier )?
             int alt172=2;
             int LA172_0 = input.LA(1);
 
@@ -13854,7 +13855,7 @@ public class ValaParser extends Parser {
             }
             switch (alt172) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:945:3: access_modifier
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:947:3: access_modifier
                     {
                     pushFollow(FOLLOW_access_modifier_in_property_get_accessor4313);
                     access_modifier515=access_modifier();
@@ -13873,7 +13874,7 @@ public class ValaParser extends Parser {
             KW_GET516_tree = (CommonTree)adaptor.create(KW_GET516);
             adaptor.addChild(root_0, KW_GET516_tree);
             }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:947:2: ( SEMICOLON | block )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:949:2: ( SEMICOLON | block )
             int alt173=2;
             int LA173_0 = input.LA(1);
 
@@ -13892,7 +13893,7 @@ public class ValaParser extends Parser {
             }
             switch (alt173) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:947:4: SEMICOLON
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:949:4: SEMICOLON
                     {
                     SEMICOLON517=(Token)match(input,SEMICOLON,FOLLOW_SEMICOLON_in_property_get_accessor4323); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -13903,7 +13904,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:947:16: block
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:949:16: block
                     {
                     pushFollow(FOLLOW_block_in_property_get_accessor4327);
                     block518=block();
@@ -13947,7 +13948,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "property_set_construct_accessor"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:949:1: property_set_construct_accessor : ( ( access_modifier )? ( ( KW_SET ( KW_CONSTRUCT )? ) | ( KW_CONSTRUCT ) | ( KW_CONSTRUCT KW_SET ) ) ) ( SEMICOLON | block ) ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:951:1: property_set_construct_accessor : ( ( access_modifier )? ( ( KW_SET ( KW_CONSTRUCT )? ) | ( KW_CONSTRUCT ) | ( KW_CONSTRUCT KW_SET ) ) ) ( SEMICOLON | block ) ;
     public final ValaParser.property_set_construct_accessor_return property_set_construct_accessor() throws RecognitionException {
         ValaParser.property_set_construct_accessor_return retval = new ValaParser.property_set_construct_accessor_return();
         retval.start = input.LT(1);
@@ -13974,15 +13975,15 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 118) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:950:2: ( ( ( access_modifier )? ( ( KW_SET ( KW_CONSTRUCT )? ) | ( KW_CONSTRUCT ) | ( KW_CONSTRUCT KW_SET ) ) ) ( SEMICOLON | block ) )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:951:2: ( ( access_modifier )? ( ( KW_SET ( KW_CONSTRUCT )? ) | ( KW_CONSTRUCT ) | ( KW_CONSTRUCT KW_SET ) ) ) ( SEMICOLON | block )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:952:2: ( ( ( access_modifier )? ( ( KW_SET ( KW_CONSTRUCT )? ) | ( KW_CONSTRUCT ) | ( KW_CONSTRUCT KW_SET ) ) ) ( SEMICOLON | block ) )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:953:2: ( ( access_modifier )? ( ( KW_SET ( KW_CONSTRUCT )? ) | ( KW_CONSTRUCT ) | ( KW_CONSTRUCT KW_SET ) ) ) ( SEMICOLON | block )
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:951:2: ( ( access_modifier )? ( ( KW_SET ( KW_CONSTRUCT )? ) | ( KW_CONSTRUCT ) | ( KW_CONSTRUCT KW_SET ) ) )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:952:3: ( access_modifier )? ( ( KW_SET ( KW_CONSTRUCT )? ) | ( KW_CONSTRUCT ) | ( KW_CONSTRUCT KW_SET ) )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:953:2: ( ( access_modifier )? ( ( KW_SET ( KW_CONSTRUCT )? ) | ( KW_CONSTRUCT ) | ( KW_CONSTRUCT KW_SET ) ) )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:954:3: ( access_modifier )? ( ( KW_SET ( KW_CONSTRUCT )? ) | ( KW_CONSTRUCT ) | ( KW_CONSTRUCT KW_SET ) )
             {
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:952:3: ( access_modifier )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:954:3: ( access_modifier )?
             int alt174=2;
             int LA174_0 = input.LA(1);
 
@@ -13991,7 +13992,7 @@ public class ValaParser extends Parser {
             }
             switch (alt174) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:952:4: access_modifier
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:954:4: access_modifier
                     {
                     pushFollow(FOLLOW_access_modifier_in_property_set_construct_accessor4346);
                     access_modifier519=access_modifier();
@@ -14005,7 +14006,7 @@ public class ValaParser extends Parser {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:953:3: ( ( KW_SET ( KW_CONSTRUCT )? ) | ( KW_CONSTRUCT ) | ( KW_CONSTRUCT KW_SET ) )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:955:3: ( ( KW_SET ( KW_CONSTRUCT )? ) | ( KW_CONSTRUCT ) | ( KW_CONSTRUCT KW_SET ) )
             int alt176=3;
             int LA176_0 = input.LA(1);
 
@@ -14038,17 +14039,17 @@ public class ValaParser extends Parser {
             }
             switch (alt176) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:954:4: ( KW_SET ( KW_CONSTRUCT )? )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:956:4: ( KW_SET ( KW_CONSTRUCT )? )
                     {
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:954:4: ( KW_SET ( KW_CONSTRUCT )? )
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:954:6: KW_SET ( KW_CONSTRUCT )?
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:956:4: ( KW_SET ( KW_CONSTRUCT )? )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:956:6: KW_SET ( KW_CONSTRUCT )?
                     {
                     KW_SET520=(Token)match(input,KW_SET,FOLLOW_KW_SET_in_property_set_construct_accessor4359); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     KW_SET520_tree = (CommonTree)adaptor.create(KW_SET520);
                     adaptor.addChild(root_0, KW_SET520_tree);
                     }
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:954:13: ( KW_CONSTRUCT )?
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:956:13: ( KW_CONSTRUCT )?
                     int alt175=2;
                     int LA175_0 = input.LA(1);
 
@@ -14057,7 +14058,7 @@ public class ValaParser extends Parser {
                     }
                     switch (alt175) {
                         case 1 :
-                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:954:14: KW_CONSTRUCT
+                            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:956:14: KW_CONSTRUCT
                             {
                             KW_CONSTRUCT521=(Token)match(input,KW_CONSTRUCT,FOLLOW_KW_CONSTRUCT_in_property_set_construct_accessor4362); if (state.failed) return retval;
                             if ( state.backtracking==0 ) {
@@ -14077,10 +14078,10 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:955:6: ( KW_CONSTRUCT )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:957:6: ( KW_CONSTRUCT )
                     {
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:955:6: ( KW_CONSTRUCT )
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:955:8: KW_CONSTRUCT
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:957:6: ( KW_CONSTRUCT )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:957:8: KW_CONSTRUCT
                     {
                     KW_CONSTRUCT522=(Token)match(input,KW_CONSTRUCT,FOLLOW_KW_CONSTRUCT_in_property_set_construct_accessor4376); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -14094,10 +14095,10 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:956:6: ( KW_CONSTRUCT KW_SET )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:958:6: ( KW_CONSTRUCT KW_SET )
                     {
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:956:6: ( KW_CONSTRUCT KW_SET )
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:956:8: KW_CONSTRUCT KW_SET
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:958:6: ( KW_CONSTRUCT KW_SET )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:958:8: KW_CONSTRUCT KW_SET
                     {
                     KW_CONSTRUCT523=(Token)match(input,KW_CONSTRUCT,FOLLOW_KW_CONSTRUCT_in_property_set_construct_accessor4387); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -14121,7 +14122,7 @@ public class ValaParser extends Parser {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:959:2: ( SEMICOLON | block )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:961:2: ( SEMICOLON | block )
             int alt177=2;
             int LA177_0 = input.LA(1);
 
@@ -14140,7 +14141,7 @@ public class ValaParser extends Parser {
             }
             switch (alt177) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:960:3: SEMICOLON
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:962:3: SEMICOLON
                     {
                     SEMICOLON525=(Token)match(input,SEMICOLON,FOLLOW_SEMICOLON_in_property_set_construct_accessor4406); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -14151,7 +14152,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:961:5: block
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:963:5: block
                     {
                     pushFollow(FOLLOW_block_in_property_set_construct_accessor4413);
                     block526=block();
@@ -14195,7 +14196,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "property_declaration_modifiers"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:964:1: property_declaration_modifiers : ( property_declaration_modifier )+ ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:966:1: property_declaration_modifiers : ( property_declaration_modifier )+ ;
     public final ValaParser.property_declaration_modifiers_return property_declaration_modifiers() throws RecognitionException {
         ValaParser.property_declaration_modifiers_return retval = new ValaParser.property_declaration_modifiers_return();
         retval.start = input.LT(1);
@@ -14208,12 +14209,12 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 119) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:965:2: ( ( property_declaration_modifier )+ )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:965:4: ( property_declaration_modifier )+
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:967:2: ( ( property_declaration_modifier )+ )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:967:4: ( property_declaration_modifier )+
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:965:4: ( property_declaration_modifier )+
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:967:4: ( property_declaration_modifier )+
             int cnt178=0;
             loop178:
             do {
@@ -14279,7 +14280,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "property_declaration_modifier"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:967:1: property_declaration_modifier : ( KW_CLASS | KW_STATIC | KW_EXTERN | KW_INLINE | KW_ABSTRACT | KW_VIRTUAL | KW_OVERRIDE | KW_NEW );
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:969:1: property_declaration_modifier : ( KW_CLASS | KW_STATIC | KW_EXTERN | KW_INLINE | KW_ABSTRACT | KW_VIRTUAL | KW_OVERRIDE | KW_NEW );
     public final ValaParser.property_declaration_modifier_return property_declaration_modifier() throws RecognitionException {
         ValaParser.property_declaration_modifier_return retval = new ValaParser.property_declaration_modifier_return();
         retval.start = input.LT(1);
@@ -14292,7 +14293,7 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 120) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:968:2: ( KW_CLASS | KW_STATIC | KW_EXTERN | KW_INLINE | KW_ABSTRACT | KW_VIRTUAL | KW_OVERRIDE | KW_NEW )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:970:2: ( KW_CLASS | KW_STATIC | KW_EXTERN | KW_INLINE | KW_ABSTRACT | KW_VIRTUAL | KW_OVERRIDE | KW_NEW )
             // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:
             {
             root_0 = (CommonTree)adaptor.nil();
@@ -14339,7 +14340,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "block"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:978:1: block : LCURL ( statement )* RCURL ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:980:1: block : LCURL ( statement )* RCURL ;
     public final ValaParser.block_return block() throws RecognitionException {
         ValaParser.block_return retval = new ValaParser.block_return();
         retval.start = input.LT(1);
@@ -14356,8 +14357,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 121) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:979:2: ( LCURL ( statement )* RCURL )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:980:2: LCURL ( statement )* RCURL
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:981:2: ( LCURL ( statement )* RCURL )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:982:2: LCURL ( statement )* RCURL
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -14366,20 +14367,20 @@ public class ValaParser extends Parser {
             LCURL529_tree = (CommonTree)adaptor.create(LCURL529);
             adaptor.addChild(root_0, LCURL529_tree);
             }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:981:2: ( statement )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:983:2: ( statement )*
             loop179:
             do {
                 int alt179=2;
                 int LA179_0 = input.LA(1);
 
-                if ( (LA179_0==KW_USING||LA179_0==SEMICOLON||(LA179_0>=GLOBAL_NS && LA179_0<=IDENTIFIER)||LA179_0==LPAREN||LA179_0==KW_IN||LA179_0==AND||(LA179_0>=KW_IS && LA179_0<=KW_WEAK)||(LA179_0>=PLUS && LA179_0<=MINUS)||(LA179_0>=NOT && LA179_0<=KW_THROW)||(LA179_0>=INTEGER && LA179_0<=LCURL)||LA179_0==TEMPLATE_START||(LA179_0>=KW_THIS && LA179_0<=KW_BASE)||LA179_0==KW_IF||LA179_0==KW_SWITCH||(LA179_0>=KW_WHILE && LA179_0<=KW_FOR)) ) {
+                if ( (LA179_0==KW_USING||LA179_0==SEMICOLON||(LA179_0>=GLOBAL_NS && LA179_0<=IDENTIFIER)||LA179_0==LPAREN||LA179_0==KW_IN||LA179_0==AND||(LA179_0>=KW_IS && LA179_0<=KW_WEAK)||(LA179_0>=PLUS && LA179_0<=MINUS)||(LA179_0>=NOT && LA179_0<=KW_REQUIRES)||(LA179_0>=INTEGER && LA179_0<=LCURL)||LA179_0==TEMPLATE_START||(LA179_0>=KW_THIS && LA179_0<=KW_BASE)||LA179_0==KW_IF||LA179_0==KW_SWITCH||(LA179_0>=KW_WHILE && LA179_0<=KW_FOR)) ) {
                     alt179=1;
                 }
 
 
                 switch (alt179) {
             	case 1 :
-            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:981:3: statement
+            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:983:3: statement
             	    {
             	    pushFollow(FOLLOW_statement_in_block4493);
             	    statement530=statement();
@@ -14431,7 +14432,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "statement"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:984:1: statement : ( block | SEMICOLON | if_statement | switch_statement | while_statement | do_statement | for_statement | foreach_statement | break_statement | continue_statement | return_statement | yield_statement | throw_statement | try_statement | lock_statement | delete_statement | local_variable_declarations | expression_statement );
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:986:1: statement : ( block | SEMICOLON | if_statement | switch_statement | while_statement | do_statement | for_statement | foreach_statement | break_statement | continue_statement | return_statement | yield_statement | throw_statement | try_statement | lock_statement | delete_statement | local_variable_declarations | expression_statement );
     public final ValaParser.statement_return statement() throws RecognitionException {
         ValaParser.statement_return retval = new ValaParser.statement_return();
         retval.start = input.LT(1);
@@ -14478,12 +14479,12 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 122) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:985:2: ( block | SEMICOLON | if_statement | switch_statement | while_statement | do_statement | for_statement | foreach_statement | break_statement | continue_statement | return_statement | yield_statement | throw_statement | try_statement | lock_statement | delete_statement | local_variable_declarations | expression_statement )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:987:2: ( block | SEMICOLON | if_statement | switch_statement | while_statement | do_statement | for_statement | foreach_statement | break_statement | continue_statement | return_statement | yield_statement | throw_statement | try_statement | lock_statement | delete_statement | local_variable_declarations | expression_statement )
             int alt180=18;
             alt180 = dfa180.predict(input);
             switch (alt180) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:986:2: block
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:988:2: block
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -14497,7 +14498,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:987:4: SEMICOLON
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:989:4: SEMICOLON
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -14510,7 +14511,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:988:4: if_statement
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:990:4: if_statement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -14524,7 +14525,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:989:4: switch_statement
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:991:4: switch_statement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -14538,7 +14539,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 5 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:990:4: while_statement
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:992:4: while_statement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -14552,7 +14553,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 6 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:991:4: do_statement
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:993:4: do_statement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -14566,7 +14567,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 7 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:992:4: for_statement
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:994:4: for_statement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -14580,7 +14581,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 8 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:993:4: foreach_statement
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:995:4: foreach_statement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -14594,7 +14595,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 9 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:994:4: break_statement
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:996:4: break_statement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -14608,7 +14609,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 10 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:995:4: continue_statement
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:997:4: continue_statement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -14622,7 +14623,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 11 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:996:4: return_statement
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:998:4: return_statement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -14636,7 +14637,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 12 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:997:4: yield_statement
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:999:4: yield_statement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -14650,7 +14651,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 13 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:998:4: throw_statement
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1000:4: throw_statement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -14664,7 +14665,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 14 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:999:4: try_statement
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1001:4: try_statement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -14678,7 +14679,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 15 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1000:4: lock_statement
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1002:4: lock_statement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -14692,7 +14693,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 16 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1001:4: delete_statement
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1003:4: delete_statement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -14706,7 +14707,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 17 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1002:4: local_variable_declarations
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1004:4: local_variable_declarations
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -14720,7 +14721,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 18 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1003:4: expression_statement
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1005:4: expression_statement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -14762,7 +14763,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "if_statement"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1005:1: if_statement : KW_IF LPAREN expression RPAREN embedded_statement ( KW_ELSE embedded_statement )? ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1007:1: if_statement : KW_IF LPAREN expression RPAREN embedded_statement ( KW_ELSE embedded_statement )? ;
     public final ValaParser.if_statement_return if_statement() throws RecognitionException {
         ValaParser.if_statement_return retval = new ValaParser.if_statement_return();
         retval.start = input.LT(1);
@@ -14787,8 +14788,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 123) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1006:2: ( KW_IF LPAREN expression RPAREN embedded_statement ( KW_ELSE embedded_statement )? )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1007:2: KW_IF LPAREN expression RPAREN embedded_statement ( KW_ELSE embedded_statement )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1008:2: ( KW_IF LPAREN expression RPAREN embedded_statement ( KW_ELSE embedded_statement )? )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1009:2: KW_IF LPAREN expression RPAREN embedded_statement ( KW_ELSE embedded_statement )?
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -14819,20 +14820,20 @@ public class ValaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, embedded_statement554.getTree());
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1012:2: ( KW_ELSE embedded_statement )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1014:2: ( KW_ELSE embedded_statement )?
             int alt181=2;
             int LA181_0 = input.LA(1);
 
             if ( (LA181_0==KW_ELSE) ) {
                 int LA181_1 = input.LA(2);
 
-                if ( (synpred376_Vala()) ) {
+                if ( (synpred378_Vala()) ) {
                     alt181=1;
                 }
             }
             switch (alt181) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1013:3: KW_ELSE embedded_statement
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1015:3: KW_ELSE embedded_statement
                     {
                     KW_ELSE555=(Token)match(input,KW_ELSE,FOLLOW_KW_ELSE_in_if_statement4646); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -14881,7 +14882,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "embedded_statement"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1017:1: embedded_statement : ( block | embedded_statement_without_block );
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1019:1: embedded_statement : ( block | embedded_statement_without_block );
     public final ValaParser.embedded_statement_return embedded_statement() throws RecognitionException {
         ValaParser.embedded_statement_return retval = new ValaParser.embedded_statement_return();
         retval.start = input.LT(1);
@@ -14896,12 +14897,12 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 124) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1018:2: ( block | embedded_statement_without_block )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1020:2: ( block | embedded_statement_without_block )
             int alt182=2;
             alt182 = dfa182.predict(input);
             switch (alt182) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1019:2: block
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1021:2: block
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -14915,7 +14916,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1020:4: embedded_statement_without_block
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1022:4: embedded_statement_without_block
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -14957,7 +14958,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "embedded_statement_without_block"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1022:1: embedded_statement_without_block : ( SEMICOLON | if_statement | switch_statement | while_statement | do_statement | for_statement | foreach_statement | break_statement | continue_statement | return_statement | yield_statement | throw_statement | try_statement | lock_statement | delete_statement | expression_statement );
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1024:1: embedded_statement_without_block : ( SEMICOLON | if_statement | switch_statement | while_statement | do_statement | for_statement | foreach_statement | break_statement | continue_statement | return_statement | yield_statement | throw_statement | try_statement | lock_statement | delete_statement | expression_statement );
     public final ValaParser.embedded_statement_without_block_return embedded_statement_without_block() throws RecognitionException {
         ValaParser.embedded_statement_without_block_return retval = new ValaParser.embedded_statement_without_block_return();
         retval.start = input.LT(1);
@@ -15000,12 +15001,12 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 125) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1023:2: ( SEMICOLON | if_statement | switch_statement | while_statement | do_statement | for_statement | foreach_statement | break_statement | continue_statement | return_statement | yield_statement | throw_statement | try_statement | lock_statement | delete_statement | expression_statement )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1025:2: ( SEMICOLON | if_statement | switch_statement | while_statement | do_statement | for_statement | foreach_statement | break_statement | continue_statement | return_statement | yield_statement | throw_statement | try_statement | lock_statement | delete_statement | expression_statement )
             int alt183=16;
             alt183 = dfa183.predict(input);
             switch (alt183) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1024:2: SEMICOLON
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1026:2: SEMICOLON
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -15018,7 +15019,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1025:4: if_statement
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1027:4: if_statement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -15032,7 +15033,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1026:4: switch_statement
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1028:4: switch_statement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -15046,7 +15047,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1027:4: while_statement
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1029:4: while_statement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -15060,7 +15061,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 5 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1028:4: do_statement
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1030:4: do_statement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -15074,7 +15075,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 6 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1029:4: for_statement
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1031:4: for_statement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -15088,7 +15089,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 7 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1030:4: foreach_statement
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1032:4: foreach_statement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -15102,7 +15103,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 8 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1031:4: break_statement
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1033:4: break_statement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -15116,7 +15117,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 9 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1032:4: continue_statement
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1034:4: continue_statement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -15130,7 +15131,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 10 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1033:4: return_statement
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1035:4: return_statement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -15144,7 +15145,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 11 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1034:4: yield_statement
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1036:4: yield_statement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -15158,7 +15159,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 12 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1035:4: throw_statement
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1037:4: throw_statement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -15172,7 +15173,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 13 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1036:4: try_statement
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1038:4: try_statement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -15186,7 +15187,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 14 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1037:4: lock_statement
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1039:4: lock_statement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -15200,7 +15201,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 15 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1038:4: delete_statement
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1040:4: delete_statement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -15214,7 +15215,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 16 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1039:4: expression_statement
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1041:4: expression_statement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -15256,7 +15257,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "switch_statement"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1041:1: switch_statement : KW_SWITCH LPAREN expression RPAREN LCURL ( switch_section )* RCURL ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1043:1: switch_statement : KW_SWITCH LPAREN expression RPAREN LCURL ( switch_section )* RCURL ;
     public final ValaParser.switch_statement_return switch_statement() throws RecognitionException {
         ValaParser.switch_statement_return retval = new ValaParser.switch_statement_return();
         retval.start = input.LT(1);
@@ -15281,8 +15282,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 126) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1042:2: ( KW_SWITCH LPAREN expression RPAREN LCURL ( switch_section )* RCURL )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1043:2: KW_SWITCH LPAREN expression RPAREN LCURL ( switch_section )* RCURL
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1044:2: ( KW_SWITCH LPAREN expression RPAREN LCURL ( switch_section )* RCURL )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1045:2: KW_SWITCH LPAREN expression RPAREN LCURL ( switch_section )* RCURL
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -15312,7 +15313,7 @@ public class ValaParser extends Parser {
             LCURL579_tree = (CommonTree)adaptor.create(LCURL579);
             adaptor.addChild(root_0, LCURL579_tree);
             }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1048:2: ( switch_section )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1050:2: ( switch_section )*
             loop184:
             do {
                 int alt184=2;
@@ -15325,7 +15326,7 @@ public class ValaParser extends Parser {
 
                 switch (alt184) {
             	case 1 :
-            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1048:3: switch_section
+            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1050:3: switch_section
             	    {
             	    pushFollow(FOLLOW_switch_section_in_switch_statement4806);
             	    switch_section580=switch_section();
@@ -15377,7 +15378,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "switch_section"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1051:1: switch_section : ( ( KW_CASE expression ) | ( KW_DEFAULT ) ) COLON ( statement )* ( KW_BREAK )? ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1053:1: switch_section : ( ( KW_CASE expression ) | ( KW_DEFAULT ) ) COLON ( statement )* ( KW_BREAK )? ;
     public final ValaParser.switch_section_return switch_section() throws RecognitionException {
         ValaParser.switch_section_return retval = new ValaParser.switch_section_return();
         retval.start = input.LT(1);
@@ -15400,12 +15401,12 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 127) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1052:2: ( ( ( KW_CASE expression ) | ( KW_DEFAULT ) ) COLON ( statement )* ( KW_BREAK )? )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1053:2: ( ( KW_CASE expression ) | ( KW_DEFAULT ) ) COLON ( statement )* ( KW_BREAK )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1054:2: ( ( ( KW_CASE expression ) | ( KW_DEFAULT ) ) COLON ( statement )* ( KW_BREAK )? )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1055:2: ( ( KW_CASE expression ) | ( KW_DEFAULT ) ) COLON ( statement )* ( KW_BREAK )?
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1053:2: ( ( KW_CASE expression ) | ( KW_DEFAULT ) )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1055:2: ( ( KW_CASE expression ) | ( KW_DEFAULT ) )
             int alt185=2;
             int LA185_0 = input.LA(1);
 
@@ -15424,10 +15425,10 @@ public class ValaParser extends Parser {
             }
             switch (alt185) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1054:3: ( KW_CASE expression )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1056:3: ( KW_CASE expression )
                     {
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1054:3: ( KW_CASE expression )
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1054:5: KW_CASE expression
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1056:3: ( KW_CASE expression )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1056:5: KW_CASE expression
                     {
                     KW_CASE582=(Token)match(input,KW_CASE,FOLLOW_KW_CASE_in_switch_section4830); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -15447,10 +15448,10 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1055:5: ( KW_DEFAULT )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1057:5: ( KW_DEFAULT )
                     {
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1055:5: ( KW_DEFAULT )
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1055:7: KW_DEFAULT
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1057:5: ( KW_DEFAULT )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1057:7: KW_DEFAULT
                     {
                     KW_DEFAULT584=(Token)match(input,KW_DEFAULT,FOLLOW_KW_DEFAULT_in_switch_section4842); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -15471,7 +15472,7 @@ public class ValaParser extends Parser {
             COLON585_tree = (CommonTree)adaptor.create(COLON585);
             adaptor.addChild(root_0, COLON585_tree);
             }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1058:2: ( statement )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1060:2: ( statement )*
             loop186:
             do {
                 int alt186=2;
@@ -15486,14 +15487,14 @@ public class ValaParser extends Parser {
 
 
                 }
-                else if ( (LA186_0==KW_USING||LA186_0==SEMICOLON||(LA186_0>=GLOBAL_NS && LA186_0<=IDENTIFIER)||LA186_0==LPAREN||LA186_0==KW_IN||LA186_0==AND||(LA186_0>=KW_IS && LA186_0<=KW_WEAK)||(LA186_0>=PLUS && LA186_0<=MINUS)||(LA186_0>=NOT && LA186_0<=KW_RETURN)||(LA186_0>=KW_VAR && LA186_0<=KW_THROW)||(LA186_0>=INTEGER && LA186_0<=LCURL)||LA186_0==TEMPLATE_START||(LA186_0>=KW_THIS && LA186_0<=KW_BASE)||LA186_0==KW_IF||LA186_0==KW_SWITCH||(LA186_0>=KW_WHILE && LA186_0<=KW_FOR)) ) {
+                else if ( (LA186_0==KW_USING||LA186_0==SEMICOLON||(LA186_0>=GLOBAL_NS && LA186_0<=IDENTIFIER)||LA186_0==LPAREN||LA186_0==KW_IN||LA186_0==AND||(LA186_0>=KW_IS && LA186_0<=KW_WEAK)||(LA186_0>=PLUS && LA186_0<=MINUS)||(LA186_0>=NOT && LA186_0<=KW_RETURN)||(LA186_0>=KW_VAR && LA186_0<=KW_REQUIRES)||(LA186_0>=INTEGER && LA186_0<=LCURL)||LA186_0==TEMPLATE_START||(LA186_0>=KW_THIS && LA186_0<=KW_BASE)||LA186_0==KW_IF||LA186_0==KW_SWITCH||(LA186_0>=KW_WHILE && LA186_0<=KW_FOR)) ) {
                     alt186=1;
                 }
 
 
                 switch (alt186) {
             	case 1 :
-            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1058:3: statement
+            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1060:3: statement
             	    {
             	    pushFollow(FOLLOW_statement_in_switch_section4855);
             	    statement586=statement();
@@ -15510,7 +15511,7 @@ public class ValaParser extends Parser {
                 }
             } while (true);
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1059:2: ( KW_BREAK )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1061:2: ( KW_BREAK )?
             int alt187=2;
             int LA187_0 = input.LA(1);
 
@@ -15519,7 +15520,7 @@ public class ValaParser extends Parser {
             }
             switch (alt187) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1059:3: KW_BREAK
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1061:3: KW_BREAK
                     {
                     KW_BREAK587=(Token)match(input,KW_BREAK,FOLLOW_KW_BREAK_in_switch_section4861); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -15562,7 +15563,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "while_statement"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1061:1: while_statement : KW_WHILE LPAREN expression RPAREN embedded_statement ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1063:1: while_statement : KW_WHILE LPAREN expression RPAREN embedded_statement ;
     public final ValaParser.while_statement_return while_statement() throws RecognitionException {
         ValaParser.while_statement_return retval = new ValaParser.while_statement_return();
         retval.start = input.LT(1);
@@ -15583,8 +15584,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 128) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1062:2: ( KW_WHILE LPAREN expression RPAREN embedded_statement )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1062:4: KW_WHILE LPAREN expression RPAREN embedded_statement
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1064:2: ( KW_WHILE LPAREN expression RPAREN embedded_statement )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1064:4: KW_WHILE LPAREN expression RPAREN embedded_statement
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -15645,7 +15646,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "do_statement"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1064:1: do_statement : KW_DO embedded_statement KW_WHILE LPAREN expression RPAREN SEMICOLON ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1066:1: do_statement : KW_DO embedded_statement KW_WHILE LPAREN expression RPAREN SEMICOLON ;
     public final ValaParser.do_statement_return do_statement() throws RecognitionException {
         ValaParser.do_statement_return retval = new ValaParser.do_statement_return();
         retval.start = input.LT(1);
@@ -15670,8 +15671,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 129) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1065:2: ( KW_DO embedded_statement KW_WHILE LPAREN expression RPAREN SEMICOLON )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1065:4: KW_DO embedded_statement KW_WHILE LPAREN expression RPAREN SEMICOLON
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1067:2: ( KW_DO embedded_statement KW_WHILE LPAREN expression RPAREN SEMICOLON )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1067:4: KW_DO embedded_statement KW_WHILE LPAREN expression RPAREN SEMICOLON
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -15742,7 +15743,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "for_statement"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1067:1: for_statement : KW_FOR LPAREN ( SEMICOLON | ( for_initializer ) ) ( expression )? SEMICOLON ( for_iterator )? RPAREN embedded_statement ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1069:1: for_statement : KW_FOR LPAREN ( SEMICOLON | ( for_initializer ) ) ( expression )? SEMICOLON ( for_iterator )? RPAREN embedded_statement ;
     public final ValaParser.for_statement_return for_statement() throws RecognitionException {
         ValaParser.for_statement_return retval = new ValaParser.for_statement_return();
         retval.start = input.LT(1);
@@ -15771,8 +15772,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 130) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1068:2: ( KW_FOR LPAREN ( SEMICOLON | ( for_initializer ) ) ( expression )? SEMICOLON ( for_iterator )? RPAREN embedded_statement )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1069:2: KW_FOR LPAREN ( SEMICOLON | ( for_initializer ) ) ( expression )? SEMICOLON ( for_iterator )? RPAREN embedded_statement
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1070:2: ( KW_FOR LPAREN ( SEMICOLON | ( for_initializer ) ) ( expression )? SEMICOLON ( for_iterator )? RPAREN embedded_statement )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1071:2: KW_FOR LPAREN ( SEMICOLON | ( for_initializer ) ) ( expression )? SEMICOLON ( for_iterator )? RPAREN embedded_statement
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -15786,14 +15787,14 @@ public class ValaParser extends Parser {
             LPAREN601_tree = (CommonTree)adaptor.create(LPAREN601);
             adaptor.addChild(root_0, LPAREN601_tree);
             }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1071:2: ( SEMICOLON | ( for_initializer ) )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1073:2: ( SEMICOLON | ( for_initializer ) )
             int alt188=2;
             int LA188_0 = input.LA(1);
 
             if ( (LA188_0==SEMICOLON) ) {
                 alt188=1;
             }
-            else if ( (LA188_0==KW_USING||(LA188_0>=GLOBAL_NS && LA188_0<=IDENTIFIER)||LA188_0==LPAREN||LA188_0==KW_IN||LA188_0==AND||(LA188_0>=KW_IS && LA188_0<=KW_WEAK)||(LA188_0>=PLUS && LA188_0<=MINUS)||(LA188_0>=NOT && LA188_0<=KW_THROW)||(LA188_0>=INTEGER && LA188_0<=LCURL)||LA188_0==TEMPLATE_START||(LA188_0>=KW_THIS && LA188_0<=KW_BASE)) ) {
+            else if ( (LA188_0==KW_USING||(LA188_0>=GLOBAL_NS && LA188_0<=IDENTIFIER)||LA188_0==LPAREN||LA188_0==KW_IN||LA188_0==AND||(LA188_0>=KW_IS && LA188_0<=KW_WEAK)||(LA188_0>=PLUS && LA188_0<=MINUS)||(LA188_0>=NOT && LA188_0<=KW_REQUIRES)||(LA188_0>=INTEGER && LA188_0<=LCURL)||LA188_0==TEMPLATE_START||(LA188_0>=KW_THIS && LA188_0<=KW_BASE)) ) {
                 alt188=2;
             }
             else {
@@ -15805,7 +15806,7 @@ public class ValaParser extends Parser {
             }
             switch (alt188) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1072:3: SEMICOLON
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1074:3: SEMICOLON
                     {
                     SEMICOLON602=(Token)match(input,SEMICOLON,FOLLOW_SEMICOLON_in_for_statement4930); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -15816,10 +15817,10 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1073:5: ( for_initializer )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1075:5: ( for_initializer )
                     {
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1073:5: ( for_initializer )
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1073:6: for_initializer
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1075:5: ( for_initializer )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1075:6: for_initializer
                     {
                     pushFollow(FOLLOW_for_initializer_in_for_statement4937);
                     for_initializer603=for_initializer();
@@ -15836,16 +15837,16 @@ public class ValaParser extends Parser {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1075:2: ( expression )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1077:2: ( expression )?
             int alt189=2;
             int LA189_0 = input.LA(1);
 
-            if ( (LA189_0==KW_USING||(LA189_0>=GLOBAL_NS && LA189_0<=IDENTIFIER)||LA189_0==LPAREN||LA189_0==KW_IN||LA189_0==AND||(LA189_0>=KW_IS && LA189_0<=KW_WEAK)||(LA189_0>=PLUS && LA189_0<=MINUS)||(LA189_0>=NOT && LA189_0<=KW_THROW)||(LA189_0>=INTEGER && LA189_0<=LCURL)||LA189_0==TEMPLATE_START||(LA189_0>=KW_THIS && LA189_0<=KW_BASE)) ) {
+            if ( (LA189_0==KW_USING||(LA189_0>=GLOBAL_NS && LA189_0<=IDENTIFIER)||LA189_0==LPAREN||LA189_0==KW_IN||LA189_0==AND||(LA189_0>=KW_IS && LA189_0<=KW_WEAK)||(LA189_0>=PLUS && LA189_0<=MINUS)||(LA189_0>=NOT && LA189_0<=KW_REQUIRES)||(LA189_0>=INTEGER && LA189_0<=LCURL)||LA189_0==TEMPLATE_START||(LA189_0>=KW_THIS && LA189_0<=KW_BASE)) ) {
                 alt189=1;
             }
             switch (alt189) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1075:3: expression
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1077:3: expression
                     {
                     pushFollow(FOLLOW_expression_in_for_statement4945);
                     expression604=expression();
@@ -15864,16 +15865,16 @@ public class ValaParser extends Parser {
             SEMICOLON605_tree = (CommonTree)adaptor.create(SEMICOLON605);
             adaptor.addChild(root_0, SEMICOLON605_tree);
             }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1077:2: ( for_iterator )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1079:2: ( for_iterator )?
             int alt190=2;
             int LA190_0 = input.LA(1);
 
-            if ( (LA190_0==KW_USING||(LA190_0>=GLOBAL_NS && LA190_0<=IDENTIFIER)||LA190_0==LPAREN||LA190_0==KW_IN||LA190_0==AND||(LA190_0>=KW_IS && LA190_0<=KW_WEAK)||(LA190_0>=PLUS && LA190_0<=MINUS)||(LA190_0>=NOT && LA190_0<=KW_THROW)||(LA190_0>=INTEGER && LA190_0<=LCURL)||LA190_0==TEMPLATE_START||(LA190_0>=KW_THIS && LA190_0<=KW_BASE)) ) {
+            if ( (LA190_0==KW_USING||(LA190_0>=GLOBAL_NS && LA190_0<=IDENTIFIER)||LA190_0==LPAREN||LA190_0==KW_IN||LA190_0==AND||(LA190_0>=KW_IS && LA190_0<=KW_WEAK)||(LA190_0>=PLUS && LA190_0<=MINUS)||(LA190_0>=NOT && LA190_0<=KW_REQUIRES)||(LA190_0>=INTEGER && LA190_0<=LCURL)||LA190_0==TEMPLATE_START||(LA190_0>=KW_THIS && LA190_0<=KW_BASE)) ) {
                 alt190=1;
             }
             switch (alt190) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1077:3: for_iterator
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1079:3: for_iterator
                     {
                     pushFollow(FOLLOW_for_iterator_in_for_statement4957);
                     for_iterator606=for_iterator();
@@ -15928,7 +15929,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "for_initializer"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1081:1: for_initializer : ( local_variable_declarations | ( statement_expression ( COMMA statement_expression )* SEMICOLON ) );
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1083:1: for_initializer : ( local_variable_declarations | ( statement_expression ( COMMA statement_expression )* SEMICOLON ) );
     public final ValaParser.for_initializer_return for_initializer() throws RecognitionException {
         ValaParser.for_initializer_return retval = new ValaParser.for_initializer_return();
         retval.start = input.LT(1);
@@ -15949,12 +15950,12 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 131) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1082:2: ( local_variable_declarations | ( statement_expression ( COMMA statement_expression )* SEMICOLON ) )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1084:2: ( local_variable_declarations | ( statement_expression ( COMMA statement_expression )* SEMICOLON ) )
             int alt192=2;
             alt192 = dfa192.predict(input);
             switch (alt192) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1082:4: local_variable_declarations
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1084:4: local_variable_declarations
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -15968,12 +15969,12 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1084:2: ( statement_expression ( COMMA statement_expression )* SEMICOLON )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1086:2: ( statement_expression ( COMMA statement_expression )* SEMICOLON )
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1084:2: ( statement_expression ( COMMA statement_expression )* SEMICOLON )
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1085:3: statement_expression ( COMMA statement_expression )* SEMICOLON
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1086:2: ( statement_expression ( COMMA statement_expression )* SEMICOLON )
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1087:3: statement_expression ( COMMA statement_expression )* SEMICOLON
                     {
                     pushFollow(FOLLOW_statement_expression_in_for_initializer4990);
                     statement_expression610=statement_expression();
@@ -15981,7 +15982,7 @@ public class ValaParser extends Parser {
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) adaptor.addChild(root_0, statement_expression610.getTree());
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1086:3: ( COMMA statement_expression )*
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1088:3: ( COMMA statement_expression )*
                     loop191:
                     do {
                         int alt191=2;
@@ -15994,7 +15995,7 @@ public class ValaParser extends Parser {
 
                         switch (alt191) {
                     	case 1 :
-                    	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1086:4: COMMA statement_expression
+                    	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1088:4: COMMA statement_expression
                     	    {
                     	    COMMA611=(Token)match(input,COMMA,FOLLOW_COMMA_in_for_initializer4996); if (state.failed) return retval;
                     	    if ( state.backtracking==0 ) {
@@ -16056,7 +16057,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "for_iterator"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1090:1: for_iterator : statement_expression ( COMMA statement_expression )* ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1092:1: for_iterator : statement_expression ( COMMA statement_expression )* ;
     public final ValaParser.for_iterator_return for_iterator() throws RecognitionException {
         ValaParser.for_iterator_return retval = new ValaParser.for_iterator_return();
         retval.start = input.LT(1);
@@ -16073,8 +16074,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 132) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1091:2: ( statement_expression ( COMMA statement_expression )* )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1092:2: statement_expression ( COMMA statement_expression )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1093:2: ( statement_expression ( COMMA statement_expression )* )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1094:2: statement_expression ( COMMA statement_expression )*
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -16084,7 +16085,7 @@ public class ValaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, statement_expression614.getTree());
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1093:2: ( COMMA statement_expression )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1095:2: ( COMMA statement_expression )*
             loop193:
             do {
                 int alt193=2;
@@ -16097,7 +16098,7 @@ public class ValaParser extends Parser {
 
                 switch (alt193) {
             	case 1 :
-            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1093:3: COMMA statement_expression
+            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1095:3: COMMA statement_expression
             	    {
             	    COMMA615=(Token)match(input,COMMA,FOLLOW_COMMA_in_for_iterator5025); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -16149,7 +16150,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "statement_expression"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1095:1: statement_expression : expression ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1097:1: statement_expression : expression ;
     public final ValaParser.statement_expression_return statement_expression() throws RecognitionException {
         ValaParser.statement_expression_return retval = new ValaParser.statement_expression_return();
         retval.start = input.LT(1);
@@ -16162,8 +16163,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 133) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1096:2: ( expression )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1096:4: expression
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1098:2: ( expression )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1098:4: expression
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -16203,7 +16204,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "foreach_statement"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1098:1: foreach_statement : KW_FOREACH LPAREN ( type | KW_VAR ) IDENTIFIER KW_IN expression RPAREN embedded_statement ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1100:1: foreach_statement : KW_FOREACH LPAREN ( type | KW_VAR ) IDENTIFIER KW_IN expression RPAREN embedded_statement ;
     public final ValaParser.foreach_statement_return foreach_statement() throws RecognitionException {
         ValaParser.foreach_statement_return retval = new ValaParser.foreach_statement_return();
         retval.start = input.LT(1);
@@ -16232,8 +16233,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 134) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1099:2: ( KW_FOREACH LPAREN ( type | KW_VAR ) IDENTIFIER KW_IN expression RPAREN embedded_statement )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1100:2: KW_FOREACH LPAREN ( type | KW_VAR ) IDENTIFIER KW_IN expression RPAREN embedded_statement
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1101:2: ( KW_FOREACH LPAREN ( type | KW_VAR ) IDENTIFIER KW_IN expression RPAREN embedded_statement )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1102:2: KW_FOREACH LPAREN ( type | KW_VAR ) IDENTIFIER KW_IN expression RPAREN embedded_statement
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -16247,7 +16248,7 @@ public class ValaParser extends Parser {
             LPAREN619_tree = (CommonTree)adaptor.create(LPAREN619);
             adaptor.addChild(root_0, LPAREN619_tree);
             }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1102:2: ( type | KW_VAR )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1104:2: ( type | KW_VAR )
             int alt194=2;
             int LA194_0 = input.LA(1);
 
@@ -16266,7 +16267,7 @@ public class ValaParser extends Parser {
             }
             switch (alt194) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1103:3: type
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1105:3: type
                     {
                     pushFollow(FOLLOW_type_in_foreach_statement5061);
                     type620=type();
@@ -16278,7 +16279,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1104:5: KW_VAR
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1106:5: KW_VAR
                     {
                     KW_VAR621=(Token)match(input,KW_VAR,FOLLOW_KW_VAR_in_foreach_statement5067); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -16348,7 +16349,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "break_statement"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1112:1: break_statement : KW_BREAK SEMICOLON ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1114:1: break_statement : KW_BREAK SEMICOLON ;
     public final ValaParser.break_statement_return break_statement() throws RecognitionException {
         ValaParser.break_statement_return retval = new ValaParser.break_statement_return();
         retval.start = input.LT(1);
@@ -16363,8 +16364,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 135) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1113:2: ( KW_BREAK SEMICOLON )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1113:4: KW_BREAK SEMICOLON
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1115:2: ( KW_BREAK SEMICOLON )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1115:4: KW_BREAK SEMICOLON
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -16408,7 +16409,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "continue_statement"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1115:1: continue_statement : KW_CONTINUE SEMICOLON ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1117:1: continue_statement : KW_CONTINUE SEMICOLON ;
     public final ValaParser.continue_statement_return continue_statement() throws RecognitionException {
         ValaParser.continue_statement_return retval = new ValaParser.continue_statement_return();
         retval.start = input.LT(1);
@@ -16423,8 +16424,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 136) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1116:2: ( KW_CONTINUE SEMICOLON )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1116:4: KW_CONTINUE SEMICOLON
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1118:2: ( KW_CONTINUE SEMICOLON )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1118:4: KW_CONTINUE SEMICOLON
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -16468,7 +16469,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "return_statement"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1118:1: return_statement : KW_RETURN ( expression )? SEMICOLON ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1120:1: return_statement : KW_RETURN ( expression )? SEMICOLON ;
     public final ValaParser.return_statement_return return_statement() throws RecognitionException {
         ValaParser.return_statement_return retval = new ValaParser.return_statement_return();
         retval.start = input.LT(1);
@@ -16485,8 +16486,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 137) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1119:2: ( KW_RETURN ( expression )? SEMICOLON )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1119:4: KW_RETURN ( expression )? SEMICOLON
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1121:2: ( KW_RETURN ( expression )? SEMICOLON )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1121:4: KW_RETURN ( expression )? SEMICOLON
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -16495,16 +16496,16 @@ public class ValaParser extends Parser {
             KW_RETURN631_tree = (CommonTree)adaptor.create(KW_RETURN631);
             adaptor.addChild(root_0, KW_RETURN631_tree);
             }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1119:15: ( expression )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1121:15: ( expression )?
             int alt195=2;
             int LA195_0 = input.LA(1);
 
-            if ( (LA195_0==KW_USING||(LA195_0>=GLOBAL_NS && LA195_0<=IDENTIFIER)||LA195_0==LPAREN||LA195_0==KW_IN||LA195_0==AND||(LA195_0>=KW_IS && LA195_0<=KW_WEAK)||(LA195_0>=PLUS && LA195_0<=MINUS)||(LA195_0>=NOT && LA195_0<=KW_THROW)||(LA195_0>=INTEGER && LA195_0<=LCURL)||LA195_0==TEMPLATE_START||(LA195_0>=KW_THIS && LA195_0<=KW_BASE)) ) {
+            if ( (LA195_0==KW_USING||(LA195_0>=GLOBAL_NS && LA195_0<=IDENTIFIER)||LA195_0==LPAREN||LA195_0==KW_IN||LA195_0==AND||(LA195_0>=KW_IS && LA195_0<=KW_WEAK)||(LA195_0>=PLUS && LA195_0<=MINUS)||(LA195_0>=NOT && LA195_0<=KW_REQUIRES)||(LA195_0>=INTEGER && LA195_0<=LCURL)||LA195_0==TEMPLATE_START||(LA195_0>=KW_THIS && LA195_0<=KW_BASE)) ) {
                 alt195=1;
             }
             switch (alt195) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1119:16: expression
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1121:16: expression
                     {
                     pushFollow(FOLLOW_expression_in_return_statement5128);
                     expression632=expression();
@@ -16553,7 +16554,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "yield_statement"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1122:1: yield_statement : KW_YIELD ( expression_statement | KW_RETURN expression )? SEMICOLON ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1124:1: yield_statement : KW_YIELD ( expression_statement | KW_RETURN expression )? SEMICOLON ;
     public final ValaParser.yield_statement_return yield_statement() throws RecognitionException {
         ValaParser.yield_statement_return retval = new ValaParser.yield_statement_return();
         retval.start = input.LT(1);
@@ -16574,8 +16575,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 138) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1123:2: ( KW_YIELD ( expression_statement | KW_RETURN expression )? SEMICOLON )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1123:4: KW_YIELD ( expression_statement | KW_RETURN expression )? SEMICOLON
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1125:2: ( KW_YIELD ( expression_statement | KW_RETURN expression )? SEMICOLON )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1125:4: KW_YIELD ( expression_statement | KW_RETURN expression )? SEMICOLON
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -16584,12 +16585,12 @@ public class ValaParser extends Parser {
             KW_YIELD634_tree = (CommonTree)adaptor.create(KW_YIELD634);
             adaptor.addChild(root_0, KW_YIELD634_tree);
             }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1123:14: ( expression_statement | KW_RETURN expression )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1125:14: ( expression_statement | KW_RETURN expression )?
             int alt196=3;
             alt196 = dfa196.predict(input);
             switch (alt196) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1123:15: expression_statement
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1125:15: expression_statement
                     {
                     pushFollow(FOLLOW_expression_statement_in_yield_statement5148);
                     expression_statement635=expression_statement();
@@ -16601,7 +16602,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1123:38: KW_RETURN expression
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1125:38: KW_RETURN expression
                     {
                     KW_RETURN636=(Token)match(input,KW_RETURN,FOLLOW_KW_RETURN_in_yield_statement5152); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -16655,7 +16656,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "throw_statement"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1126:1: throw_statement : KW_THROW expression SEMICOLON ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1128:1: throw_statement : KW_THROW expression SEMICOLON ;
     public final ValaParser.throw_statement_return throw_statement() throws RecognitionException {
         ValaParser.throw_statement_return retval = new ValaParser.throw_statement_return();
         retval.start = input.LT(1);
@@ -16672,8 +16673,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 139) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1127:2: ( KW_THROW expression SEMICOLON )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1127:4: KW_THROW expression SEMICOLON
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1129:2: ( KW_THROW expression SEMICOLON )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1129:4: KW_THROW expression SEMICOLON
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -16723,7 +16724,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "try_statement"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1129:1: try_statement : KW_TRY block ( catch_clause )* ( finally_clause )? ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1131:1: try_statement : KW_TRY block ( catch_clause )* ( finally_clause )? ;
     public final ValaParser.try_statement_return try_statement() throws RecognitionException {
         ValaParser.try_statement_return retval = new ValaParser.try_statement_return();
         retval.start = input.LT(1);
@@ -16742,8 +16743,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 140) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1130:2: ( KW_TRY block ( catch_clause )* ( finally_clause )? )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1131:2: KW_TRY block ( catch_clause )* ( finally_clause )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1132:2: ( KW_TRY block ( catch_clause )* ( finally_clause )? )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1133:2: KW_TRY block ( catch_clause )* ( finally_clause )?
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -16758,14 +16759,14 @@ public class ValaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, block643.getTree());
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1133:2: ( catch_clause )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1135:2: ( catch_clause )*
             loop197:
             do {
                 int alt197=2;
                 alt197 = dfa197.predict(input);
                 switch (alt197) {
             	case 1 :
-            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1133:3: catch_clause
+            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1135:3: catch_clause
             	    {
             	    pushFollow(FOLLOW_catch_clause_in_try_statement5195);
             	    catch_clause644=catch_clause();
@@ -16782,7 +16783,7 @@ public class ValaParser extends Parser {
                 }
             } while (true);
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1134:2: ( finally_clause )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1136:2: ( finally_clause )?
             int alt198=2;
             int LA198_0 = input.LA(1);
 
@@ -16795,7 +16796,7 @@ public class ValaParser extends Parser {
             }
             switch (alt198) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1134:3: finally_clause
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1136:3: finally_clause
                     {
                     pushFollow(FOLLOW_finally_clause_in_try_statement5201);
                     finally_clause645=finally_clause();
@@ -16839,7 +16840,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "catch_clause"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1136:1: catch_clause : KW_CATCH ( LPAREN type IDENTIFIER RPAREN )? block ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1138:1: catch_clause : KW_CATCH ( LPAREN type IDENTIFIER RPAREN )? block ;
     public final ValaParser.catch_clause_return catch_clause() throws RecognitionException {
         ValaParser.catch_clause_return retval = new ValaParser.catch_clause_return();
         retval.start = input.LT(1);
@@ -16862,8 +16863,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 141) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1137:2: ( KW_CATCH ( LPAREN type IDENTIFIER RPAREN )? block )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1137:4: KW_CATCH ( LPAREN type IDENTIFIER RPAREN )? block
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1139:2: ( KW_CATCH ( LPAREN type IDENTIFIER RPAREN )? block )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1139:4: KW_CATCH ( LPAREN type IDENTIFIER RPAREN )? block
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -16872,7 +16873,7 @@ public class ValaParser extends Parser {
             KW_CATCH646_tree = (CommonTree)adaptor.create(KW_CATCH646);
             adaptor.addChild(root_0, KW_CATCH646_tree);
             }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1137:14: ( LPAREN type IDENTIFIER RPAREN )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1139:14: ( LPAREN type IDENTIFIER RPAREN )?
             int alt199=2;
             int LA199_0 = input.LA(1);
 
@@ -16881,7 +16882,7 @@ public class ValaParser extends Parser {
             }
             switch (alt199) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1137:15: LPAREN type IDENTIFIER RPAREN
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1139:15: LPAREN type IDENTIFIER RPAREN
                     {
                     LPAREN647=(Token)match(input,LPAREN,FOLLOW_LPAREN_in_catch_clause5217); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -16946,7 +16947,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "finally_clause"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1139:1: finally_clause : KW_FINALLY block ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1141:1: finally_clause : KW_FINALLY block ;
     public final ValaParser.finally_clause_return finally_clause() throws RecognitionException {
         ValaParser.finally_clause_return retval = new ValaParser.finally_clause_return();
         retval.start = input.LT(1);
@@ -16961,8 +16962,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 142) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1140:2: ( KW_FINALLY block )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1141:2: KW_FINALLY block
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1142:2: ( KW_FINALLY block )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1143:2: KW_FINALLY block
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -17007,7 +17008,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "lock_statement"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1144:1: lock_statement : KW_LOCK LPAREN expression RPAREN embedded_statement ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1146:1: lock_statement : KW_LOCK LPAREN expression RPAREN embedded_statement ;
     public final ValaParser.lock_statement_return lock_statement() throws RecognitionException {
         ValaParser.lock_statement_return retval = new ValaParser.lock_statement_return();
         retval.start = input.LT(1);
@@ -17028,8 +17029,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 143) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1145:2: ( KW_LOCK LPAREN expression RPAREN embedded_statement )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1145:4: KW_LOCK LPAREN expression RPAREN embedded_statement
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1147:2: ( KW_LOCK LPAREN expression RPAREN embedded_statement )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1147:4: KW_LOCK LPAREN expression RPAREN embedded_statement
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -17090,7 +17091,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "delete_statement"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1147:1: delete_statement : KW_DELETE expression SEMICOLON ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1149:1: delete_statement : KW_DELETE expression SEMICOLON ;
     public final ValaParser.delete_statement_return delete_statement() throws RecognitionException {
         ValaParser.delete_statement_return retval = new ValaParser.delete_statement_return();
         retval.start = input.LT(1);
@@ -17107,8 +17108,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 144) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1148:2: ( KW_DELETE expression SEMICOLON )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1148:4: KW_DELETE expression SEMICOLON
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1150:2: ( KW_DELETE expression SEMICOLON )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1150:4: KW_DELETE expression SEMICOLON
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -17158,7 +17159,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "local_variable_declarations"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1150:1: local_variable_declarations : ( KW_VAR | type ) local_variable_declaration ( COMMA local_variable_declaration )* ( SEMICOLON ) ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1152:1: local_variable_declarations : ( KW_VAR | type ) local_variable_declaration ( COMMA local_variable_declaration )* ( SEMICOLON ) ;
     public final ValaParser.local_variable_declarations_return local_variable_declarations() throws RecognitionException {
         ValaParser.local_variable_declarations_return retval = new ValaParser.local_variable_declarations_return();
         retval.start = input.LT(1);
@@ -17181,12 +17182,12 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 145) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1151:2: ( ( KW_VAR | type ) local_variable_declaration ( COMMA local_variable_declaration )* ( SEMICOLON ) )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1152:2: ( KW_VAR | type ) local_variable_declaration ( COMMA local_variable_declaration )* ( SEMICOLON )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1153:2: ( ( KW_VAR | type ) local_variable_declaration ( COMMA local_variable_declaration )* ( SEMICOLON ) )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1154:2: ( KW_VAR | type ) local_variable_declaration ( COMMA local_variable_declaration )* ( SEMICOLON )
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1152:2: ( KW_VAR | type )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1154:2: ( KW_VAR | type )
             int alt200=2;
             int LA200_0 = input.LA(1);
 
@@ -17205,7 +17206,7 @@ public class ValaParser extends Parser {
             }
             switch (alt200) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1152:4: KW_VAR
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1154:4: KW_VAR
                     {
                     KW_VAR662=(Token)match(input,KW_VAR,FOLLOW_KW_VAR_in_local_variable_declarations5290); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -17216,7 +17217,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1152:13: type
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1154:13: type
                     {
                     pushFollow(FOLLOW_type_in_local_variable_declarations5294);
                     type663=type();
@@ -17236,7 +17237,7 @@ public class ValaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, local_variable_declaration664.getTree());
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1154:2: ( COMMA local_variable_declaration )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1156:2: ( COMMA local_variable_declaration )*
             loop201:
             do {
                 int alt201=2;
@@ -17249,7 +17250,7 @@ public class ValaParser extends Parser {
 
                 switch (alt201) {
             	case 1 :
-            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1154:3: COMMA local_variable_declaration
+            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1156:3: COMMA local_variable_declaration
             	    {
             	    COMMA665=(Token)match(input,COMMA,FOLLOW_COMMA_in_local_variable_declarations5305); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -17271,8 +17272,8 @@ public class ValaParser extends Parser {
                 }
             } while (true);
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1155:2: ( SEMICOLON )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1155:3: SEMICOLON
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1157:2: ( SEMICOLON )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1157:3: SEMICOLON
             {
             SEMICOLON667=(Token)match(input,SEMICOLON,FOLLOW_SEMICOLON_in_local_variable_declarations5313); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
@@ -17312,7 +17313,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "local_variable_declaration"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1157:1: local_variable_declaration : ( local_tuple_declaration | local_variable );
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1159:1: local_variable_declaration : ( local_tuple_declaration | local_variable );
     public final ValaParser.local_variable_declaration_return local_variable_declaration() throws RecognitionException {
         ValaParser.local_variable_declaration_return retval = new ValaParser.local_variable_declaration_return();
         retval.start = input.LT(1);
@@ -17327,14 +17328,14 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 146) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1158:2: ( local_tuple_declaration | local_variable )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1160:2: ( local_tuple_declaration | local_variable )
             int alt202=2;
             int LA202_0 = input.LA(1);
 
             if ( (LA202_0==LPAREN) ) {
                 alt202=1;
             }
-            else if ( (LA202_0==KW_USING||LA202_0==IDENTIFIER||LA202_0==KW_IN||(LA202_0>=KW_IS && LA202_0<=KW_VOID)||(LA202_0>=KW_DYNAMIC && LA202_0<=KW_WEAK)||(LA202_0>=KW_CONSTRUCT && LA202_0<=KW_THROW)) ) {
+            else if ( (LA202_0==KW_USING||LA202_0==IDENTIFIER||LA202_0==KW_IN||(LA202_0>=KW_IS && LA202_0<=KW_VOID)||(LA202_0>=KW_DYNAMIC && LA202_0<=KW_WEAK)||(LA202_0>=KW_CONSTRUCT && LA202_0<=KW_REQUIRES)) ) {
                 alt202=2;
             }
             else {
@@ -17346,7 +17347,7 @@ public class ValaParser extends Parser {
             }
             switch (alt202) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1159:2: local_tuple_declaration
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1161:2: local_tuple_declaration
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -17360,7 +17361,7 @@ public class ValaParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1160:4: local_variable
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1162:4: local_variable
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -17402,7 +17403,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "local_tuple_declaration"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1162:1: local_tuple_declaration : LPAREN IDENTIFIER ( COMMA IDENTIFIER )* RPAREN ASSIGNMENT expression ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1164:1: local_tuple_declaration : LPAREN IDENTIFIER ( COMMA IDENTIFIER )* RPAREN ASSIGNMENT expression ;
     public final ValaParser.local_tuple_declaration_return local_tuple_declaration() throws RecognitionException {
         ValaParser.local_tuple_declaration_return retval = new ValaParser.local_tuple_declaration_return();
         retval.start = input.LT(1);
@@ -17427,8 +17428,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 147) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1163:2: ( LPAREN IDENTIFIER ( COMMA IDENTIFIER )* RPAREN ASSIGNMENT expression )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1164:2: LPAREN IDENTIFIER ( COMMA IDENTIFIER )* RPAREN ASSIGNMENT expression
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1165:2: ( LPAREN IDENTIFIER ( COMMA IDENTIFIER )* RPAREN ASSIGNMENT expression )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1166:2: LPAREN IDENTIFIER ( COMMA IDENTIFIER )* RPAREN ASSIGNMENT expression
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -17442,7 +17443,7 @@ public class ValaParser extends Parser {
             IDENTIFIER671_tree = (CommonTree)adaptor.create(IDENTIFIER671);
             adaptor.addChild(root_0, IDENTIFIER671_tree);
             }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1166:2: ( COMMA IDENTIFIER )*
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1168:2: ( COMMA IDENTIFIER )*
             loop203:
             do {
                 int alt203=2;
@@ -17455,7 +17456,7 @@ public class ValaParser extends Parser {
 
                 switch (alt203) {
             	case 1 :
-            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1166:3: COMMA IDENTIFIER
+            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1168:3: COMMA IDENTIFIER
             	    {
             	    COMMA672=(Token)match(input,COMMA,FOLLOW_COMMA_in_local_tuple_declaration5352); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -17522,7 +17523,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "local_variable"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1171:1: local_variable : identifier ( inline_array_type )? ( ASSIGNMENT expression )? ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1173:1: local_variable : identifier ( inline_array_type )? ( ASSIGNMENT expression )? ;
     public final ValaParser.local_variable_return local_variable() throws RecognitionException {
         ValaParser.local_variable_return retval = new ValaParser.local_variable_return();
         retval.start = input.LT(1);
@@ -17541,8 +17542,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 148) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1172:2: ( identifier ( inline_array_type )? ( ASSIGNMENT expression )? )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1173:2: identifier ( inline_array_type )? ( ASSIGNMENT expression )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1174:2: ( identifier ( inline_array_type )? ( ASSIGNMENT expression )? )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1175:2: identifier ( inline_array_type )? ( ASSIGNMENT expression )?
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -17552,7 +17553,7 @@ public class ValaParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, identifier677.getTree());
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1174:2: ( inline_array_type )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1176:2: ( inline_array_type )?
             int alt204=2;
             int LA204_0 = input.LA(1);
 
@@ -17561,7 +17562,7 @@ public class ValaParser extends Parser {
             }
             switch (alt204) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1174:3: inline_array_type
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1176:3: inline_array_type
                     {
                     pushFollow(FOLLOW_inline_array_type_in_local_variable5386);
                     inline_array_type678=inline_array_type();
@@ -17575,7 +17576,7 @@ public class ValaParser extends Parser {
 
             }
 
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1175:2: ( ASSIGNMENT expression )?
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1177:2: ( ASSIGNMENT expression )?
             int alt205=2;
             int LA205_0 = input.LA(1);
 
@@ -17584,7 +17585,7 @@ public class ValaParser extends Parser {
             }
             switch (alt205) {
                 case 1 :
-                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1175:3: ASSIGNMENT expression
+                    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1177:3: ASSIGNMENT expression
                     {
                     ASSIGNMENT679=(Token)match(input,ASSIGNMENT,FOLLOW_ASSIGNMENT_in_local_variable5393); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -17633,7 +17634,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "expression_statement"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1177:1: expression_statement : statement_expression SEMICOLON ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1179:1: expression_statement : statement_expression SEMICOLON ;
     public final ValaParser.expression_statement_return expression_statement() throws RecognitionException {
         ValaParser.expression_statement_return retval = new ValaParser.expression_statement_return();
         retval.start = input.LT(1);
@@ -17648,8 +17649,8 @@ public class ValaParser extends Parser {
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 149) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1178:2: ( statement_expression SEMICOLON )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1179:2: statement_expression SEMICOLON
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1180:2: ( statement_expression SEMICOLON )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1181:2: statement_expression SEMICOLON
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -17694,7 +17695,7 @@ public class ValaParser extends Parser {
     };
 
     // $ANTLR start "unknown_chain"
-    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1181:1: unknown_chain : ( identifier )+ SEMICOLON -> ^( UNKNOWN_CHAIN ( identifier )+ ) ;
+    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1183:1: unknown_chain : ( identifier )+ SEMICOLON -> ^( UNKNOWN_CHAIN ( identifier )+ ) ;
     public final ValaParser.unknown_chain_return unknown_chain() throws RecognitionException {
         ValaParser.unknown_chain_return retval = new ValaParser.unknown_chain_return();
         retval.start = input.LT(1);
@@ -17710,24 +17711,24 @@ public class ValaParser extends Parser {
         RewriteRuleSubtreeStream stream_identifier=new RewriteRuleSubtreeStream(adaptor,"rule identifier");
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 150) ) { return retval; }
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1182:2: ( ( identifier )+ SEMICOLON -> ^( UNKNOWN_CHAIN ( identifier )+ ) )
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1183:2: ( identifier )+ SEMICOLON
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1184:2: ( ( identifier )+ SEMICOLON -> ^( UNKNOWN_CHAIN ( identifier )+ ) )
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1185:2: ( identifier )+ SEMICOLON
             {
-            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1183:2: ( identifier )+
+            // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1185:2: ( identifier )+
             int cnt206=0;
             loop206:
             do {
                 int alt206=2;
                 int LA206_0 = input.LA(1);
 
-                if ( (LA206_0==KW_USING||LA206_0==IDENTIFIER||LA206_0==KW_IN||(LA206_0>=KW_IS && LA206_0<=KW_VOID)||(LA206_0>=KW_DYNAMIC && LA206_0<=KW_WEAK)||(LA206_0>=KW_CONSTRUCT && LA206_0<=KW_THROW)) ) {
+                if ( (LA206_0==KW_USING||LA206_0==IDENTIFIER||LA206_0==KW_IN||(LA206_0>=KW_IS && LA206_0<=KW_VOID)||(LA206_0>=KW_DYNAMIC && LA206_0<=KW_WEAK)||(LA206_0>=KW_CONSTRUCT && LA206_0<=KW_REQUIRES)) ) {
                     alt206=1;
                 }
 
 
                 switch (alt206) {
             	case 1 :
-            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1183:3: identifier
+            	    // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1185:3: identifier
             	    {
             	    pushFollow(FOLLOW_identifier_in_unknown_chain5423);
             	    identifier683=identifier();
@@ -17766,9 +17767,9 @@ public class ValaParser extends Parser {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 1185:3: -> ^( UNKNOWN_CHAIN ( identifier )+ )
+            // 1187:3: -> ^( UNKNOWN_CHAIN ( identifier )+ )
             {
-                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1185:6: ^( UNKNOWN_CHAIN ( identifier )+ )
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1187:6: ^( UNKNOWN_CHAIN ( identifier )+ )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(UNKNOWN_CHAIN, "UNKNOWN_CHAIN"), root_1);
@@ -17816,7 +17817,7 @@ public class ValaParser extends Parser {
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:75:4: ( class_declaration )
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:75:4: class_declaration
         {
-        pushFollow(FOLLOW_class_declaration_in_synpred8_Vala208);
+        pushFollow(FOLLOW_class_declaration_in_synpred8_Vala209);
         class_declaration();
 
         state._fsp--;
@@ -17831,7 +17832,7 @@ public class ValaParser extends Parser {
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:76:4: ( interface_declaration )
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:76:4: interface_declaration
         {
-        pushFollow(FOLLOW_interface_declaration_in_synpred9_Vala214);
+        pushFollow(FOLLOW_interface_declaration_in_synpred9_Vala215);
         interface_declaration();
 
         state._fsp--;
@@ -17846,7 +17847,7 @@ public class ValaParser extends Parser {
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:77:4: ( struct_declaration )
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:77:4: struct_declaration
         {
-        pushFollow(FOLLOW_struct_declaration_in_synpred10_Vala220);
+        pushFollow(FOLLOW_struct_declaration_in_synpred10_Vala221);
         struct_declaration();
 
         state._fsp--;
@@ -17861,7 +17862,7 @@ public class ValaParser extends Parser {
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:78:4: ( enum_declaration )
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:78:4: enum_declaration
         {
-        pushFollow(FOLLOW_enum_declaration_in_synpred11_Vala226);
+        pushFollow(FOLLOW_enum_declaration_in_synpred11_Vala227);
         enum_declaration();
 
         state._fsp--;
@@ -17876,7 +17877,7 @@ public class ValaParser extends Parser {
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:79:4: ( errordomain_declaration )
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:79:4: errordomain_declaration
         {
-        pushFollow(FOLLOW_errordomain_declaration_in_synpred12_Vala232);
+        pushFollow(FOLLOW_errordomain_declaration_in_synpred12_Vala233);
         errordomain_declaration();
 
         state._fsp--;
@@ -17891,7 +17892,7 @@ public class ValaParser extends Parser {
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:80:4: ( method_declaration )
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:80:4: method_declaration
         {
-        pushFollow(FOLLOW_method_declaration_in_synpred13_Vala238);
+        pushFollow(FOLLOW_method_declaration_in_synpred13_Vala239);
         method_declaration();
 
         state._fsp--;
@@ -17906,7 +17907,7 @@ public class ValaParser extends Parser {
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:81:4: ( delegate_declaration )
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:81:4: delegate_declaration
         {
-        pushFollow(FOLLOW_delegate_declaration_in_synpred14_Vala244);
+        pushFollow(FOLLOW_delegate_declaration_in_synpred14_Vala245);
         delegate_declaration();
 
         state._fsp--;
@@ -17921,7 +17922,7 @@ public class ValaParser extends Parser {
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:82:4: ( constant_declaration )
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:82:4: constant_declaration
         {
-        pushFollow(FOLLOW_constant_declaration_in_synpred15_Vala250);
+        pushFollow(FOLLOW_constant_declaration_in_synpred15_Vala251);
         constant_declaration();
 
         state._fsp--;
@@ -17936,12 +17937,12 @@ public class ValaParser extends Parser {
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:110:28: ( assignment_operator expression )
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:110:28: assignment_operator expression
         {
-        pushFollow(FOLLOW_assignment_operator_in_synpred20_Vala368);
+        pushFollow(FOLLOW_assignment_operator_in_synpred20_Vala358);
         assignment_operator();
 
         state._fsp--;
         if (state.failed) return ;
-        pushFollow(FOLLOW_expression_in_synpred20_Vala370);
+        pushFollow(FOLLOW_expression_in_synpred20_Vala360);
         expression();
 
         state._fsp--;
@@ -17956,8 +17957,8 @@ public class ValaParser extends Parser {
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:138:3: ( KW_IN inclusive_or_expression )
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:138:3: KW_IN inclusive_or_expression
         {
-        match(input,KW_IN,FOLLOW_KW_IN_in_synpred35_Vala529); if (state.failed) return ;
-        pushFollow(FOLLOW_inclusive_or_expression_in_synpred35_Vala531);
+        match(input,KW_IN,FOLLOW_KW_IN_in_synpred35_Vala519); if (state.failed) return ;
+        pushFollow(FOLLOW_inclusive_or_expression_in_synpred35_Vala521);
         inclusive_or_expression();
 
         state._fsp--;
@@ -17975,8 +17976,8 @@ public class ValaParser extends Parser {
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:166:4: ( KW_IS type )
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:166:6: KW_IS type
         {
-        match(input,KW_IS,FOLLOW_KW_IS_in_synpred45_Vala681); if (state.failed) return ;
-        pushFollow(FOLLOW_type_in_synpred45_Vala683);
+        match(input,KW_IS,FOLLOW_KW_IS_in_synpred45_Vala671); if (state.failed) return ;
+        pushFollow(FOLLOW_type_in_synpred45_Vala673);
         type();
 
         state._fsp--;
@@ -17997,8 +17998,8 @@ public class ValaParser extends Parser {
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:168:4: ( KW_AS type )
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:168:6: KW_AS type
         {
-        match(input,KW_AS,FOLLOW_KW_AS_in_synpred46_Vala698); if (state.failed) return ;
-        pushFollow(FOLLOW_type_in_synpred46_Vala700);
+        match(input,KW_AS,FOLLOW_KW_AS_in_synpred46_Vala688); if (state.failed) return ;
+        pushFollow(FOLLOW_type_in_synpred46_Vala690);
         type();
 
         state._fsp--;
@@ -18016,7 +18017,7 @@ public class ValaParser extends Parser {
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:182:4: ( type_arguments )
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:182:4: type_arguments
         {
-        pushFollow(FOLLOW_type_arguments_in_synpred53_Vala778);
+        pushFollow(FOLLOW_type_arguments_in_synpred53_Vala768);
         type_arguments();
 
         state._fsp--;
@@ -18031,7 +18032,7 @@ public class ValaParser extends Parser {
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:184:4: ( QUESTION )
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:184:4: QUESTION
         {
-        match(input,QUESTION,FOLLOW_QUESTION_in_synpred55_Vala794); if (state.failed) return ;
+        match(input,QUESTION,FOLLOW_QUESTION_in_synpred55_Vala784); if (state.failed) return ;
 
         }
     }
@@ -18042,7 +18043,7 @@ public class ValaParser extends Parser {
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:185:4: ( array_type )
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:185:4: array_type
         {
-        pushFollow(FOLLOW_array_type_in_synpred56_Vala802);
+        pushFollow(FOLLOW_array_type_in_synpred56_Vala792);
         array_type();
 
         state._fsp--;
@@ -18057,7 +18058,7 @@ public class ValaParser extends Parser {
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:193:3: ( QUESTION )
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:193:3: QUESTION
         {
-        match(input,QUESTION,FOLLOW_QUESTION_in_synpred58_Vala836); if (state.failed) return ;
+        match(input,QUESTION,FOLLOW_QUESTION_in_synpred58_Vala826); if (state.failed) return ;
 
         }
     }
@@ -18071,12 +18072,12 @@ public class ValaParser extends Parser {
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:226:3: ( unary_operator unary_expression )
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:226:5: unary_operator unary_expression
         {
-        pushFollow(FOLLOW_unary_operator_in_synpred66_Vala986);
+        pushFollow(FOLLOW_unary_operator_in_synpred66_Vala976);
         unary_operator();
 
         state._fsp--;
         if (state.failed) return ;
-        pushFollow(FOLLOW_unary_expression_in_synpred66_Vala988);
+        pushFollow(FOLLOW_unary_expression_in_synpred66_Vala978);
         unary_expression();
 
         state._fsp--;
@@ -18094,7 +18095,7 @@ public class ValaParser extends Parser {
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:253:3: ( literal )
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:253:3: literal
         {
-        pushFollow(FOLLOW_literal_in_synpred79_Vala1125);
+        pushFollow(FOLLOW_literal_in_synpred79_Vala1115);
         literal();
 
         state._fsp--;
@@ -18109,7 +18110,7 @@ public class ValaParser extends Parser {
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:259:5: ( object_or_array_creation_expression )
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:259:5: object_or_array_creation_expression
         {
-        pushFollow(FOLLOW_object_or_array_creation_expression_in_synpred85_Vala1161);
+        pushFollow(FOLLOW_object_or_array_creation_expression_in_synpred85_Vala1151);
         object_or_array_creation_expression();
 
         state._fsp--;
@@ -18124,7 +18125,7 @@ public class ValaParser extends Parser {
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:260:5: ( yield_expression )
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:260:5: yield_expression
         {
-        pushFollow(FOLLOW_yield_expression_in_synpred86_Vala1167);
+        pushFollow(FOLLOW_yield_expression_in_synpred86_Vala1157);
         yield_expression();
 
         state._fsp--;
@@ -18139,7 +18140,7 @@ public class ValaParser extends Parser {
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:261:5: ( sizeof_expression )
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:261:5: sizeof_expression
         {
-        pushFollow(FOLLOW_sizeof_expression_in_synpred87_Vala1173);
+        pushFollow(FOLLOW_sizeof_expression_in_synpred87_Vala1163);
         sizeof_expression();
 
         state._fsp--;
@@ -18154,7 +18155,7 @@ public class ValaParser extends Parser {
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:262:5: ( typeof_expression )
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:262:5: typeof_expression
         {
-        pushFollow(FOLLOW_typeof_expression_in_synpred88_Vala1179);
+        pushFollow(FOLLOW_typeof_expression_in_synpred88_Vala1169);
         typeof_expression();
 
         state._fsp--;
@@ -18169,7 +18170,7 @@ public class ValaParser extends Parser {
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:269:5: ( element_access )
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:269:5: element_access
         {
-        pushFollow(FOLLOW_element_access_in_synpred92_Vala1213);
+        pushFollow(FOLLOW_element_access_in_synpred92_Vala1203);
         element_access();
 
         state._fsp--;
@@ -18184,7 +18185,7 @@ public class ValaParser extends Parser {
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:278:3: ( type_arguments )
         // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:278:3: type_arguments
         {
-        pushFollow(FOLLOW_type_arguments_in_synpred95_Vala1247);
+        pushFollow(FOLLOW_type_arguments_in_synpred95_Vala1237);
         type_arguments();
 
         state._fsp--;
@@ -18194,12 +18195,12 @@ public class ValaParser extends Parser {
     }
     // $ANTLR end synpred95_Vala
 
-    // $ANTLR start synpred147_Vala
-    public final void synpred147_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:356:3: ( type_arguments )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:356:3: type_arguments
+    // $ANTLR start synpred149_Vala
+    public final void synpred149_Vala_fragment() throws RecognitionException {   
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:358:3: ( type_arguments )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:358:3: type_arguments
         {
-        pushFollow(FOLLOW_type_arguments_in_synpred147_Vala1593);
+        pushFollow(FOLLOW_type_arguments_in_synpred149_Vala1593);
         type_arguments();
 
         state._fsp--;
@@ -18207,48 +18208,48 @@ public class ValaParser extends Parser {
 
         }
     }
-    // $ANTLR end synpred147_Vala
+    // $ANTLR end synpred149_Vala
 
-    // $ANTLR start synpred161_Vala
-    public final void synpred161_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:423:3: ( ( KW_REF ) )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:423:3: ( KW_REF )
+    // $ANTLR start synpred163_Vala
+    public final void synpred163_Vala_fragment() throws RecognitionException {   
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:425:3: ( ( KW_REF ) )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:425:3: ( KW_REF )
         {
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:423:3: ( KW_REF )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:423:4: KW_REF
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:425:3: ( KW_REF )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:425:4: KW_REF
         {
-        match(input,KW_REF,FOLLOW_KW_REF_in_synpred161_Vala1840); if (state.failed) return ;
+        match(input,KW_REF,FOLLOW_KW_REF_in_synpred163_Vala1840); if (state.failed) return ;
 
         }
 
 
         }
     }
-    // $ANTLR end synpred161_Vala
+    // $ANTLR end synpred163_Vala
 
-    // $ANTLR start synpred162_Vala
-    public final void synpred162_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:423:14: ( ( KW_OUT ) )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:423:14: ( KW_OUT )
+    // $ANTLR start synpred164_Vala
+    public final void synpred164_Vala_fragment() throws RecognitionException {   
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:425:14: ( ( KW_OUT ) )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:425:14: ( KW_OUT )
         {
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:423:14: ( KW_OUT )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:423:15: KW_OUT
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:425:14: ( KW_OUT )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:425:15: KW_OUT
         {
-        match(input,KW_OUT,FOLLOW_KW_OUT_in_synpred162_Vala1846); if (state.failed) return ;
+        match(input,KW_OUT,FOLLOW_KW_OUT_in_synpred164_Vala1846); if (state.failed) return ;
 
         }
 
 
         }
     }
-    // $ANTLR end synpred162_Vala
+    // $ANTLR end synpred164_Vala
 
-    // $ANTLR start synpred165_Vala
-    public final void synpred165_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:452:4: ( object_creation_expression )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:452:4: object_creation_expression
+    // $ANTLR start synpred167_Vala
+    public final void synpred167_Vala_fragment() throws RecognitionException {   
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:454:4: ( object_creation_expression )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:454:4: object_creation_expression
         {
-        pushFollow(FOLLOW_object_creation_expression_in_synpred165_Vala1954);
+        pushFollow(FOLLOW_object_creation_expression_in_synpred167_Vala1954);
         object_creation_expression();
 
         state._fsp--;
@@ -18256,38 +18257,38 @@ public class ValaParser extends Parser {
 
         }
     }
-    // $ANTLR end synpred165_Vala
-
-    // $ANTLR start synpred169_Vala
-    public final void synpred169_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:477:3: ( LBRACKET RBRACKET )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:477:3: LBRACKET RBRACKET
-        {
-        match(input,LBRACKET,FOLLOW_LBRACKET_in_synpred169_Vala2062); if (state.failed) return ;
-        match(input,RBRACKET,FOLLOW_RBRACKET_in_synpred169_Vala2068); if (state.failed) return ;
-
-        }
-    }
-    // $ANTLR end synpred169_Vala
+    // $ANTLR end synpred167_Vala
 
     // $ANTLR start synpred171_Vala
     public final void synpred171_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:481:3: ( LBRACKET ( array_size )? RBRACKET )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:481:3: LBRACKET ( array_size )? RBRACKET
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:479:3: ( LBRACKET RBRACKET )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:479:3: LBRACKET RBRACKET
         {
-        match(input,LBRACKET,FOLLOW_LBRACKET_in_synpred171_Vala2080); if (state.failed) return ;
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:482:3: ( array_size )?
+        match(input,LBRACKET,FOLLOW_LBRACKET_in_synpred171_Vala2062); if (state.failed) return ;
+        match(input,RBRACKET,FOLLOW_RBRACKET_in_synpred171_Vala2068); if (state.failed) return ;
+
+        }
+    }
+    // $ANTLR end synpred171_Vala
+
+    // $ANTLR start synpred173_Vala
+    public final void synpred173_Vala_fragment() throws RecognitionException {   
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:483:3: ( LBRACKET ( array_size )? RBRACKET )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:483:3: LBRACKET ( array_size )? RBRACKET
+        {
+        match(input,LBRACKET,FOLLOW_LBRACKET_in_synpred173_Vala2080); if (state.failed) return ;
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:484:3: ( array_size )?
         int alt211=2;
         int LA211_0 = input.LA(1);
 
-        if ( (LA211_0==KW_USING||(LA211_0>=GLOBAL_NS && LA211_0<=IDENTIFIER)||LA211_0==LPAREN||LA211_0==KW_IN||LA211_0==AND||(LA211_0>=KW_IS && LA211_0<=KW_WEAK)||(LA211_0>=PLUS && LA211_0<=MINUS)||(LA211_0>=NOT && LA211_0<=KW_THROW)||(LA211_0>=INTEGER && LA211_0<=LCURL)||LA211_0==TEMPLATE_START||(LA211_0>=KW_THIS && LA211_0<=KW_BASE)) ) {
+        if ( (LA211_0==KW_USING||(LA211_0>=GLOBAL_NS && LA211_0<=IDENTIFIER)||LA211_0==LPAREN||LA211_0==KW_IN||LA211_0==AND||(LA211_0>=KW_IS && LA211_0<=KW_WEAK)||(LA211_0>=PLUS && LA211_0<=MINUS)||(LA211_0>=NOT && LA211_0<=KW_REQUIRES)||(LA211_0>=INTEGER && LA211_0<=LCURL)||LA211_0==TEMPLATE_START||(LA211_0>=KW_THIS && LA211_0<=KW_BASE)) ) {
             alt211=1;
         }
         switch (alt211) {
             case 1 :
-                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:482:4: array_size
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:484:4: array_size
                 {
-                pushFollow(FOLLOW_array_size_in_synpred171_Vala2087);
+                pushFollow(FOLLOW_array_size_in_synpred173_Vala2087);
                 array_size();
 
                 state._fsp--;
@@ -18298,18 +18299,18 @@ public class ValaParser extends Parser {
 
         }
 
-        match(input,RBRACKET,FOLLOW_RBRACKET_in_synpred171_Vala2094); if (state.failed) return ;
+        match(input,RBRACKET,FOLLOW_RBRACKET_in_synpred173_Vala2094); if (state.failed) return ;
 
         }
     }
-    // $ANTLR end synpred171_Vala
+    // $ANTLR end synpred173_Vala
 
-    // $ANTLR start synpred175_Vala
-    public final void synpred175_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:498:3: ( type_arguments )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:498:3: type_arguments
+    // $ANTLR start synpred177_Vala
+    public final void synpred177_Vala_fragment() throws RecognitionException {   
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:500:3: ( type_arguments )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:500:3: type_arguments
         {
-        pushFollow(FOLLOW_type_arguments_in_synpred175_Vala2162);
+        pushFollow(FOLLOW_type_arguments_in_synpred177_Vala2162);
         type_arguments();
 
         state._fsp--;
@@ -18317,14 +18318,14 @@ public class ValaParser extends Parser {
 
         }
     }
-    // $ANTLR end synpred175_Vala
+    // $ANTLR end synpred177_Vala
 
-    // $ANTLR start synpred176_Vala
-    public final void synpred176_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:499:3: ( member_access )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:499:3: member_access
+    // $ANTLR start synpred178_Vala
+    public final void synpred178_Vala_fragment() throws RecognitionException {   
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:501:3: ( member_access )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:501:3: member_access
         {
-        pushFollow(FOLLOW_member_access_in_synpred176_Vala2169);
+        pushFollow(FOLLOW_member_access_in_synpred178_Vala2169);
         member_access();
 
         state._fsp--;
@@ -18332,14 +18333,14 @@ public class ValaParser extends Parser {
 
         }
     }
-    // $ANTLR end synpred176_Vala
+    // $ANTLR end synpred178_Vala
 
-    // $ANTLR start synpred182_Vala
-    public final void synpred182_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:529:43: ( type_arguments )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:529:43: type_arguments
+    // $ANTLR start synpred184_Vala
+    public final void synpred184_Vala_fragment() throws RecognitionException {   
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:531:43: ( type_arguments )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:531:43: type_arguments
         {
-        pushFollow(FOLLOW_type_arguments_in_synpred182_Vala2313);
+        pushFollow(FOLLOW_type_arguments_in_synpred184_Vala2313);
         type_arguments();
 
         state._fsp--;
@@ -18347,14 +18348,14 @@ public class ValaParser extends Parser {
 
         }
     }
-    // $ANTLR end synpred182_Vala
+    // $ANTLR end synpred184_Vala
 
-    // $ANTLR start synpred186_Vala
-    public final void synpred186_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:545:4: ( expression )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:545:4: expression
+    // $ANTLR start synpred188_Vala
+    public final void synpred188_Vala_fragment() throws RecognitionException {   
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:547:4: ( expression )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:547:4: expression
         {
-        pushFollow(FOLLOW_expression_in_synpred186_Vala2389);
+        pushFollow(FOLLOW_expression_in_synpred188_Vala2389);
         expression();
 
         state._fsp--;
@@ -18362,45 +18363,15 @@ public class ValaParser extends Parser {
 
         }
     }
-    // $ANTLR end synpred186_Vala
-
-    // $ANTLR start synpred213_Vala
-    public final void synpred213_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:612:4: ( class_declaration )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:612:4: class_declaration
-        {
-        pushFollow(FOLLOW_class_declaration_in_synpred213_Vala2685);
-        class_declaration();
-
-        state._fsp--;
-        if (state.failed) return ;
-
-        }
-    }
-    // $ANTLR end synpred213_Vala
-
-    // $ANTLR start synpred214_Vala
-    public final void synpred214_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:613:4: ( struct_declaration )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:613:4: struct_declaration
-        {
-        pushFollow(FOLLOW_struct_declaration_in_synpred214_Vala2691);
-        struct_declaration();
-
-        state._fsp--;
-        if (state.failed) return ;
-
-        }
-    }
-    // $ANTLR end synpred214_Vala
+    // $ANTLR end synpred188_Vala
 
     // $ANTLR start synpred215_Vala
     public final void synpred215_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:614:4: ( enum_declaration )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:614:4: enum_declaration
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:614:4: ( class_declaration )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:614:4: class_declaration
         {
-        pushFollow(FOLLOW_enum_declaration_in_synpred215_Vala2697);
-        enum_declaration();
+        pushFollow(FOLLOW_class_declaration_in_synpred215_Vala2685);
+        class_declaration();
 
         state._fsp--;
         if (state.failed) return ;
@@ -18411,11 +18382,11 @@ public class ValaParser extends Parser {
 
     // $ANTLR start synpred216_Vala
     public final void synpred216_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:615:4: ( delegate_declaration )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:615:4: delegate_declaration
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:615:4: ( struct_declaration )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:615:4: struct_declaration
         {
-        pushFollow(FOLLOW_delegate_declaration_in_synpred216_Vala2703);
-        delegate_declaration();
+        pushFollow(FOLLOW_struct_declaration_in_synpred216_Vala2691);
+        struct_declaration();
 
         state._fsp--;
         if (state.failed) return ;
@@ -18426,11 +18397,11 @@ public class ValaParser extends Parser {
 
     // $ANTLR start synpred217_Vala
     public final void synpred217_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:616:4: ( method_declaration )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:616:4: method_declaration
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:616:4: ( enum_declaration )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:616:4: enum_declaration
         {
-        pushFollow(FOLLOW_method_declaration_in_synpred217_Vala2709);
-        method_declaration();
+        pushFollow(FOLLOW_enum_declaration_in_synpred217_Vala2697);
+        enum_declaration();
 
         state._fsp--;
         if (state.failed) return ;
@@ -18441,11 +18412,11 @@ public class ValaParser extends Parser {
 
     // $ANTLR start synpred218_Vala
     public final void synpred218_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:617:4: ( signal_declaration )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:617:4: signal_declaration
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:617:4: ( delegate_declaration )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:617:4: delegate_declaration
         {
-        pushFollow(FOLLOW_signal_declaration_in_synpred218_Vala2715);
-        signal_declaration();
+        pushFollow(FOLLOW_delegate_declaration_in_synpred218_Vala2703);
+        delegate_declaration();
 
         state._fsp--;
         if (state.failed) return ;
@@ -18456,11 +18427,11 @@ public class ValaParser extends Parser {
 
     // $ANTLR start synpred219_Vala
     public final void synpred219_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:618:4: ( field_declaration )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:618:4: field_declaration
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:618:4: ( method_declaration )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:618:4: method_declaration
         {
-        pushFollow(FOLLOW_field_declaration_in_synpred219_Vala2721);
-        field_declaration();
+        pushFollow(FOLLOW_method_declaration_in_synpred219_Vala2709);
+        method_declaration();
 
         state._fsp--;
         if (state.failed) return ;
@@ -18471,11 +18442,11 @@ public class ValaParser extends Parser {
 
     // $ANTLR start synpred220_Vala
     public final void synpred220_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:619:4: ( constant_declaration )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:619:4: constant_declaration
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:619:4: ( signal_declaration )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:619:4: signal_declaration
         {
-        pushFollow(FOLLOW_constant_declaration_in_synpred220_Vala2727);
-        constant_declaration();
+        pushFollow(FOLLOW_signal_declaration_in_synpred220_Vala2715);
+        signal_declaration();
 
         state._fsp--;
         if (state.failed) return ;
@@ -18486,11 +18457,11 @@ public class ValaParser extends Parser {
 
     // $ANTLR start synpred221_Vala
     public final void synpred221_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:620:4: ( property_declaration )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:620:4: property_declaration
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:620:4: ( field_declaration )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:620:4: field_declaration
         {
-        pushFollow(FOLLOW_property_declaration_in_synpred221_Vala2733);
-        property_declaration();
+        pushFollow(FOLLOW_field_declaration_in_synpred221_Vala2721);
+        field_declaration();
 
         state._fsp--;
         if (state.failed) return ;
@@ -18501,11 +18472,11 @@ public class ValaParser extends Parser {
 
     // $ANTLR start synpred222_Vala
     public final void synpred222_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:621:4: ( constructor_declaration )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:621:4: constructor_declaration
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:621:4: ( constant_declaration )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:621:4: constant_declaration
         {
-        pushFollow(FOLLOW_constructor_declaration_in_synpred222_Vala2739);
-        constructor_declaration();
+        pushFollow(FOLLOW_constant_declaration_in_synpred222_Vala2727);
+        constant_declaration();
 
         state._fsp--;
         if (state.failed) return ;
@@ -18516,11 +18487,11 @@ public class ValaParser extends Parser {
 
     // $ANTLR start synpred223_Vala
     public final void synpred223_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:622:4: ( creation_method_declaration )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:622:4: creation_method_declaration
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:622:4: ( property_declaration )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:622:4: property_declaration
         {
-        pushFollow(FOLLOW_creation_method_declaration_in_synpred223_Vala2745);
-        creation_method_declaration();
+        pushFollow(FOLLOW_property_declaration_in_synpred223_Vala2733);
+        property_declaration();
 
         state._fsp--;
         if (state.failed) return ;
@@ -18531,11 +18502,11 @@ public class ValaParser extends Parser {
 
     // $ANTLR start synpred224_Vala
     public final void synpred224_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:623:4: ( destructor_declaration )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:623:4: destructor_declaration
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:623:4: ( constructor_declaration )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:623:4: constructor_declaration
         {
-        pushFollow(FOLLOW_destructor_declaration_in_synpred224_Vala2750);
-        destructor_declaration();
+        pushFollow(FOLLOW_constructor_declaration_in_synpred224_Vala2739);
+        constructor_declaration();
 
         state._fsp--;
         if (state.failed) return ;
@@ -18544,15 +18515,45 @@ public class ValaParser extends Parser {
     }
     // $ANTLR end synpred224_Vala
 
-    // $ANTLR start synpred237_Vala
-    public final void synpred237_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:654:2: ( ( ( attributes )? ( method_declaration | constant_declaration | unknown_chain ) ) )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:654:2: ( ( attributes )? ( method_declaration | constant_declaration | unknown_chain ) )
+    // $ANTLR start synpred225_Vala
+    public final void synpred225_Vala_fragment() throws RecognitionException {   
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:624:4: ( creation_method_declaration )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:624:4: creation_method_declaration
         {
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:654:2: ( ( attributes )? ( method_declaration | constant_declaration | unknown_chain ) )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:655:3: ( attributes )? ( method_declaration | constant_declaration | unknown_chain )
+        pushFollow(FOLLOW_creation_method_declaration_in_synpred225_Vala2745);
+        creation_method_declaration();
+
+        state._fsp--;
+        if (state.failed) return ;
+
+        }
+    }
+    // $ANTLR end synpred225_Vala
+
+    // $ANTLR start synpred226_Vala
+    public final void synpred226_Vala_fragment() throws RecognitionException {   
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:625:4: ( destructor_declaration )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:625:4: destructor_declaration
         {
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:655:3: ( attributes )?
+        pushFollow(FOLLOW_destructor_declaration_in_synpred226_Vala2750);
+        destructor_declaration();
+
+        state._fsp--;
+        if (state.failed) return ;
+
+        }
+    }
+    // $ANTLR end synpred226_Vala
+
+    // $ANTLR start synpred239_Vala
+    public final void synpred239_Vala_fragment() throws RecognitionException {   
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:656:2: ( ( ( attributes )? ( method_declaration | constant_declaration | unknown_chain ) ) )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:656:2: ( ( attributes )? ( method_declaration | constant_declaration | unknown_chain ) )
+        {
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:656:2: ( ( attributes )? ( method_declaration | constant_declaration | unknown_chain ) )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:657:3: ( attributes )? ( method_declaration | constant_declaration | unknown_chain )
+        {
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:657:3: ( attributes )?
         int alt213=2;
         int LA213_0 = input.LA(1);
 
@@ -18561,9 +18562,9 @@ public class ValaParser extends Parser {
         }
         switch (alt213) {
             case 1 :
-                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:655:4: attributes
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:657:4: attributes
                 {
-                pushFollow(FOLLOW_attributes_in_synpred237_Vala2875);
+                pushFollow(FOLLOW_attributes_in_synpred239_Vala2875);
                 attributes();
 
                 state._fsp--;
@@ -18574,14 +18575,14 @@ public class ValaParser extends Parser {
 
         }
 
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:656:3: ( method_declaration | constant_declaration | unknown_chain )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:658:3: ( method_declaration | constant_declaration | unknown_chain )
         int alt214=3;
         alt214 = dfa214.predict(input);
         switch (alt214) {
             case 1 :
-                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:657:4: method_declaration
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:659:4: method_declaration
                 {
-                pushFollow(FOLLOW_method_declaration_in_synpred237_Vala2886);
+                pushFollow(FOLLOW_method_declaration_in_synpred239_Vala2886);
                 method_declaration();
 
                 state._fsp--;
@@ -18590,9 +18591,9 @@ public class ValaParser extends Parser {
                 }
                 break;
             case 2 :
-                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:658:6: constant_declaration
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:660:6: constant_declaration
                 {
-                pushFollow(FOLLOW_constant_declaration_in_synpred237_Vala2894);
+                pushFollow(FOLLOW_constant_declaration_in_synpred239_Vala2894);
                 constant_declaration();
 
                 state._fsp--;
@@ -18601,9 +18602,9 @@ public class ValaParser extends Parser {
                 }
                 break;
             case 3 :
-                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:659:6: unknown_chain
+                // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:661:6: unknown_chain
                 {
-                pushFollow(FOLLOW_unknown_chain_in_synpred237_Vala2902);
+                pushFollow(FOLLOW_unknown_chain_in_synpred239_Vala2902);
                 unknown_chain();
 
                 state._fsp--;
@@ -18620,15 +18621,15 @@ public class ValaParser extends Parser {
 
         }
     }
-    // $ANTLR end synpred237_Vala
+    // $ANTLR end synpred239_Vala
 
-    // $ANTLR start synpred238_Vala
-    public final void synpred238_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:668:3: ( COMMA enum_value )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:668:3: COMMA enum_value
+    // $ANTLR start synpred240_Vala
+    public final void synpred240_Vala_fragment() throws RecognitionException {   
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:670:3: ( COMMA enum_value )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:670:3: COMMA enum_value
         {
-        match(input,COMMA,FOLLOW_COMMA_in_synpred238_Vala2934); if (state.failed) return ;
-        pushFollow(FOLLOW_enum_value_in_synpred238_Vala2936);
+        match(input,COMMA,FOLLOW_COMMA_in_synpred240_Vala2934); if (state.failed) return ;
+        pushFollow(FOLLOW_enum_value_in_synpred240_Vala2936);
         enum_value();
 
         state._fsp--;
@@ -18636,45 +18637,15 @@ public class ValaParser extends Parser {
 
         }
     }
-    // $ANTLR end synpred238_Vala
-
-    // $ANTLR start synpred258_Vala
-    public final void synpred258_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:720:2: ( class_declaration )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:720:2: class_declaration
-        {
-        pushFollow(FOLLOW_class_declaration_in_synpred258_Vala3187);
-        class_declaration();
-
-        state._fsp--;
-        if (state.failed) return ;
-
-        }
-    }
-    // $ANTLR end synpred258_Vala
-
-    // $ANTLR start synpred259_Vala
-    public final void synpred259_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:721:4: ( struct_declaration )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:721:4: struct_declaration
-        {
-        pushFollow(FOLLOW_struct_declaration_in_synpred259_Vala3192);
-        struct_declaration();
-
-        state._fsp--;
-        if (state.failed) return ;
-
-        }
-    }
-    // $ANTLR end synpred259_Vala
+    // $ANTLR end synpred240_Vala
 
     // $ANTLR start synpred260_Vala
     public final void synpred260_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:722:4: ( enum_declaration )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:722:4: enum_declaration
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:722:2: ( class_declaration )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:722:2: class_declaration
         {
-        pushFollow(FOLLOW_enum_declaration_in_synpred260_Vala3198);
-        enum_declaration();
+        pushFollow(FOLLOW_class_declaration_in_synpred260_Vala3187);
+        class_declaration();
 
         state._fsp--;
         if (state.failed) return ;
@@ -18685,11 +18656,11 @@ public class ValaParser extends Parser {
 
     // $ANTLR start synpred261_Vala
     public final void synpred261_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:723:4: ( delegate_declaration )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:723:4: delegate_declaration
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:723:4: ( struct_declaration )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:723:4: struct_declaration
         {
-        pushFollow(FOLLOW_delegate_declaration_in_synpred261_Vala3204);
-        delegate_declaration();
+        pushFollow(FOLLOW_struct_declaration_in_synpred261_Vala3192);
+        struct_declaration();
 
         state._fsp--;
         if (state.failed) return ;
@@ -18700,11 +18671,11 @@ public class ValaParser extends Parser {
 
     // $ANTLR start synpred262_Vala
     public final void synpred262_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:724:4: ( method_declaration )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:724:4: method_declaration
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:724:4: ( enum_declaration )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:724:4: enum_declaration
         {
-        pushFollow(FOLLOW_method_declaration_in_synpred262_Vala3210);
-        method_declaration();
+        pushFollow(FOLLOW_enum_declaration_in_synpred262_Vala3198);
+        enum_declaration();
 
         state._fsp--;
         if (state.failed) return ;
@@ -18715,11 +18686,11 @@ public class ValaParser extends Parser {
 
     // $ANTLR start synpred263_Vala
     public final void synpred263_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:725:4: ( signal_declaration )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:725:4: signal_declaration
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:725:4: ( delegate_declaration )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:725:4: delegate_declaration
         {
-        pushFollow(FOLLOW_signal_declaration_in_synpred263_Vala3216);
-        signal_declaration();
+        pushFollow(FOLLOW_delegate_declaration_in_synpred263_Vala3204);
+        delegate_declaration();
 
         state._fsp--;
         if (state.failed) return ;
@@ -18730,11 +18701,11 @@ public class ValaParser extends Parser {
 
     // $ANTLR start synpred264_Vala
     public final void synpred264_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:726:4: ( field_declaration )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:726:4: field_declaration
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:726:4: ( method_declaration )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:726:4: method_declaration
         {
-        pushFollow(FOLLOW_field_declaration_in_synpred264_Vala3222);
-        field_declaration();
+        pushFollow(FOLLOW_method_declaration_in_synpred264_Vala3210);
+        method_declaration();
 
         state._fsp--;
         if (state.failed) return ;
@@ -18745,11 +18716,11 @@ public class ValaParser extends Parser {
 
     // $ANTLR start synpred265_Vala
     public final void synpred265_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:727:4: ( constant_declaration )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:727:4: constant_declaration
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:727:4: ( signal_declaration )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:727:4: signal_declaration
         {
-        pushFollow(FOLLOW_constant_declaration_in_synpred265_Vala3228);
-        constant_declaration();
+        pushFollow(FOLLOW_signal_declaration_in_synpred265_Vala3216);
+        signal_declaration();
 
         state._fsp--;
         if (state.failed) return ;
@@ -18758,27 +18729,12 @@ public class ValaParser extends Parser {
     }
     // $ANTLR end synpred265_Vala
 
-    // $ANTLR start synpred273_Vala
-    public final void synpred273_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:754:3: ( method_declaration )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:754:3: method_declaration
+    // $ANTLR start synpred266_Vala
+    public final void synpred266_Vala_fragment() throws RecognitionException {   
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:728:4: ( field_declaration )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:728:4: field_declaration
         {
-        pushFollow(FOLLOW_method_declaration_in_synpred273_Vala3378);
-        method_declaration();
-
-        state._fsp--;
-        if (state.failed) return ;
-
-        }
-    }
-    // $ANTLR end synpred273_Vala
-
-    // $ANTLR start synpred274_Vala
-    public final void synpred274_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:755:5: ( field_declaration )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:755:5: field_declaration
-        {
-        pushFollow(FOLLOW_field_declaration_in_synpred274_Vala3385);
+        pushFollow(FOLLOW_field_declaration_in_synpred266_Vala3222);
         field_declaration();
 
         state._fsp--;
@@ -18786,15 +18742,30 @@ public class ValaParser extends Parser {
 
         }
     }
-    // $ANTLR end synpred274_Vala
+    // $ANTLR end synpred266_Vala
+
+    // $ANTLR start synpred267_Vala
+    public final void synpred267_Vala_fragment() throws RecognitionException {   
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:729:4: ( constant_declaration )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:729:4: constant_declaration
+        {
+        pushFollow(FOLLOW_constant_declaration_in_synpred267_Vala3228);
+        constant_declaration();
+
+        state._fsp--;
+        if (state.failed) return ;
+
+        }
+    }
+    // $ANTLR end synpred267_Vala
 
     // $ANTLR start synpred275_Vala
     public final void synpred275_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:756:5: ( constant_declaration )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:756:5: constant_declaration
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:756:3: ( method_declaration )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:756:3: method_declaration
         {
-        pushFollow(FOLLOW_constant_declaration_in_synpred275_Vala3392);
-        constant_declaration();
+        pushFollow(FOLLOW_method_declaration_in_synpred275_Vala3378);
+        method_declaration();
 
         state._fsp--;
         if (state.failed) return ;
@@ -18805,11 +18776,11 @@ public class ValaParser extends Parser {
 
     // $ANTLR start synpred276_Vala
     public final void synpred276_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:757:5: ( property_declaration )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:757:5: property_declaration
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:757:5: ( field_declaration )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:757:5: field_declaration
         {
-        pushFollow(FOLLOW_property_declaration_in_synpred276_Vala3399);
-        property_declaration();
+        pushFollow(FOLLOW_field_declaration_in_synpred276_Vala3385);
+        field_declaration();
 
         state._fsp--;
         if (state.failed) return ;
@@ -18820,11 +18791,11 @@ public class ValaParser extends Parser {
 
     // $ANTLR start synpred277_Vala
     public final void synpred277_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:758:5: ( creation_method_declaration )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:758:5: creation_method_declaration
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:758:5: ( constant_declaration )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:758:5: constant_declaration
         {
-        pushFollow(FOLLOW_creation_method_declaration_in_synpred277_Vala3405);
-        creation_method_declaration();
+        pushFollow(FOLLOW_constant_declaration_in_synpred277_Vala3392);
+        constant_declaration();
 
         state._fsp--;
         if (state.failed) return ;
@@ -18833,46 +18804,76 @@ public class ValaParser extends Parser {
     }
     // $ANTLR end synpred277_Vala
 
-    // $ANTLR start synpred291_Vala
-    public final void synpred291_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:808:5: ( ( KW_OWNED ) )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:808:5: ( KW_OWNED )
+    // $ANTLR start synpred278_Vala
+    public final void synpred278_Vala_fragment() throws RecognitionException {   
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:759:5: ( property_declaration )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:759:5: property_declaration
         {
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:808:5: ( KW_OWNED )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:808:6: KW_OWNED
+        pushFollow(FOLLOW_property_declaration_in_synpred278_Vala3399);
+        property_declaration();
+
+        state._fsp--;
+        if (state.failed) return ;
+
+        }
+    }
+    // $ANTLR end synpred278_Vala
+
+    // $ANTLR start synpred279_Vala
+    public final void synpred279_Vala_fragment() throws RecognitionException {   
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:760:5: ( creation_method_declaration )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:760:5: creation_method_declaration
         {
-        match(input,KW_OWNED,FOLLOW_KW_OWNED_in_synpred291_Vala3623); if (state.failed) return ;
+        pushFollow(FOLLOW_creation_method_declaration_in_synpred279_Vala3405);
+        creation_method_declaration();
+
+        state._fsp--;
+        if (state.failed) return ;
+
+        }
+    }
+    // $ANTLR end synpred279_Vala
+
+    // $ANTLR start synpred293_Vala
+    public final void synpred293_Vala_fragment() throws RecognitionException {   
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:810:5: ( ( KW_OWNED ) )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:810:5: ( KW_OWNED )
+        {
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:810:5: ( KW_OWNED )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:810:6: KW_OWNED
+        {
+        match(input,KW_OWNED,FOLLOW_KW_OWNED_in_synpred293_Vala3623); if (state.failed) return ;
 
         }
 
 
         }
     }
-    // $ANTLR end synpred291_Vala
+    // $ANTLR end synpred293_Vala
 
-    // $ANTLR start synpred292_Vala
-    public final void synpred292_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:808:18: ( ( KW_UNOWNED ) )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:808:18: ( KW_UNOWNED )
+    // $ANTLR start synpred294_Vala
+    public final void synpred294_Vala_fragment() throws RecognitionException {   
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:810:18: ( ( KW_UNOWNED ) )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:810:18: ( KW_UNOWNED )
         {
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:808:18: ( KW_UNOWNED )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:808:19: KW_UNOWNED
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:810:18: ( KW_UNOWNED )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:810:19: KW_UNOWNED
         {
-        match(input,KW_UNOWNED,FOLLOW_KW_UNOWNED_in_synpred292_Vala3629); if (state.failed) return ;
+        match(input,KW_UNOWNED,FOLLOW_KW_UNOWNED_in_synpred294_Vala3629); if (state.failed) return ;
 
         }
 
 
         }
     }
-    // $ANTLR end synpred292_Vala
+    // $ANTLR end synpred294_Vala
 
-    // $ANTLR start synpred339_Vala
-    public final void synpred339_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:935:3: ( access_modifier )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:935:3: access_modifier
+    // $ANTLR start synpred341_Vala
+    public final void synpred341_Vala_fragment() throws RecognitionException {   
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:937:3: ( access_modifier )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:937:3: access_modifier
         {
-        pushFollow(FOLLOW_access_modifier_in_synpred339_Vala4253);
+        pushFollow(FOLLOW_access_modifier_in_synpred341_Vala4253);
         access_modifier();
 
         state._fsp--;
@@ -18880,69 +18881,22 @@ public class ValaParser extends Parser {
 
         }
     }
-    // $ANTLR end synpred339_Vala
-
-    // $ANTLR start synpred340_Vala
-    public final void synpred340_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:937:3: ( ( property_get_accessor property_set_construct_accessor ) )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:937:3: ( property_get_accessor property_set_construct_accessor )
-        {
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:937:3: ( property_get_accessor property_set_construct_accessor )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:937:4: property_get_accessor property_set_construct_accessor
-        {
-        pushFollow(FOLLOW_property_get_accessor_in_synpred340_Vala4263);
-        property_get_accessor();
-
-        state._fsp--;
-        if (state.failed) return ;
-        pushFollow(FOLLOW_property_set_construct_accessor_in_synpred340_Vala4265);
-        property_set_construct_accessor();
-
-        state._fsp--;
-        if (state.failed) return ;
-
-        }
-
-
-        }
-    }
-    // $ANTLR end synpred340_Vala
-
-    // $ANTLR start synpred341_Vala
-    public final void synpred341_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:938:5: ( ( property_set_construct_accessor property_get_accessor ) )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:938:5: ( property_set_construct_accessor property_get_accessor )
-        {
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:938:5: ( property_set_construct_accessor property_get_accessor )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:938:6: property_set_construct_accessor property_get_accessor
-        {
-        pushFollow(FOLLOW_property_set_construct_accessor_in_synpred341_Vala4273);
-        property_set_construct_accessor();
-
-        state._fsp--;
-        if (state.failed) return ;
-        pushFollow(FOLLOW_property_get_accessor_in_synpred341_Vala4275);
-        property_get_accessor();
-
-        state._fsp--;
-        if (state.failed) return ;
-
-        }
-
-
-        }
-    }
     // $ANTLR end synpred341_Vala
 
     // $ANTLR start synpred342_Vala
     public final void synpred342_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:939:5: ( ( property_set_construct_accessor ) )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:939:5: ( property_set_construct_accessor )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:939:3: ( ( property_get_accessor property_set_construct_accessor ) )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:939:3: ( property_get_accessor property_set_construct_accessor )
         {
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:939:5: ( property_set_construct_accessor )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:939:6: property_set_construct_accessor
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:939:3: ( property_get_accessor property_set_construct_accessor )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:939:4: property_get_accessor property_set_construct_accessor
         {
-        pushFollow(FOLLOW_property_set_construct_accessor_in_synpred342_Vala4283);
+        pushFollow(FOLLOW_property_get_accessor_in_synpred342_Vala4263);
+        property_get_accessor();
+
+        state._fsp--;
+        if (state.failed) return ;
+        pushFollow(FOLLOW_property_set_construct_accessor_in_synpred342_Vala4265);
         property_set_construct_accessor();
 
         state._fsp--;
@@ -18955,12 +18909,59 @@ public class ValaParser extends Parser {
     }
     // $ANTLR end synpred342_Vala
 
-    // $ANTLR start synpred359_Vala
-    public final void synpred359_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:986:2: ( block )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:986:2: block
+    // $ANTLR start synpred343_Vala
+    public final void synpred343_Vala_fragment() throws RecognitionException {   
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:940:5: ( ( property_set_construct_accessor property_get_accessor ) )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:940:5: ( property_set_construct_accessor property_get_accessor )
         {
-        pushFollow(FOLLOW_block_in_synpred359_Vala4511);
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:940:5: ( property_set_construct_accessor property_get_accessor )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:940:6: property_set_construct_accessor property_get_accessor
+        {
+        pushFollow(FOLLOW_property_set_construct_accessor_in_synpred343_Vala4273);
+        property_set_construct_accessor();
+
+        state._fsp--;
+        if (state.failed) return ;
+        pushFollow(FOLLOW_property_get_accessor_in_synpred343_Vala4275);
+        property_get_accessor();
+
+        state._fsp--;
+        if (state.failed) return ;
+
+        }
+
+
+        }
+    }
+    // $ANTLR end synpred343_Vala
+
+    // $ANTLR start synpred344_Vala
+    public final void synpred344_Vala_fragment() throws RecognitionException {   
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:941:5: ( ( property_set_construct_accessor ) )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:941:5: ( property_set_construct_accessor )
+        {
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:941:5: ( property_set_construct_accessor )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:941:6: property_set_construct_accessor
+        {
+        pushFollow(FOLLOW_property_set_construct_accessor_in_synpred344_Vala4283);
+        property_set_construct_accessor();
+
+        state._fsp--;
+        if (state.failed) return ;
+
+        }
+
+
+        }
+    }
+    // $ANTLR end synpred344_Vala
+
+    // $ANTLR start synpred361_Vala
+    public final void synpred361_Vala_fragment() throws RecognitionException {   
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:988:2: ( block )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:988:2: block
+        {
+        pushFollow(FOLLOW_block_in_synpred361_Vala4511);
         block();
 
         state._fsp--;
@@ -18968,45 +18969,15 @@ public class ValaParser extends Parser {
 
         }
     }
-    // $ANTLR end synpred359_Vala
-
-    // $ANTLR start synpred366_Vala
-    public final void synpred366_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:993:4: ( foreach_statement )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:993:4: foreach_statement
-        {
-        pushFollow(FOLLOW_foreach_statement_in_synpred366_Vala4551);
-        foreach_statement();
-
-        state._fsp--;
-        if (state.failed) return ;
-
-        }
-    }
-    // $ANTLR end synpred366_Vala
-
-    // $ANTLR start synpred367_Vala
-    public final void synpred367_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:994:4: ( break_statement )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:994:4: break_statement
-        {
-        pushFollow(FOLLOW_break_statement_in_synpred367_Vala4557);
-        break_statement();
-
-        state._fsp--;
-        if (state.failed) return ;
-
-        }
-    }
-    // $ANTLR end synpred367_Vala
+    // $ANTLR end synpred361_Vala
 
     // $ANTLR start synpred368_Vala
     public final void synpred368_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:995:4: ( continue_statement )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:995:4: continue_statement
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:995:4: ( foreach_statement )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:995:4: foreach_statement
         {
-        pushFollow(FOLLOW_continue_statement_in_synpred368_Vala4563);
-        continue_statement();
+        pushFollow(FOLLOW_foreach_statement_in_synpred368_Vala4551);
+        foreach_statement();
 
         state._fsp--;
         if (state.failed) return ;
@@ -19017,11 +18988,11 @@ public class ValaParser extends Parser {
 
     // $ANTLR start synpred369_Vala
     public final void synpred369_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:996:4: ( return_statement )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:996:4: return_statement
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:996:4: ( break_statement )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:996:4: break_statement
         {
-        pushFollow(FOLLOW_return_statement_in_synpred369_Vala4569);
-        return_statement();
+        pushFollow(FOLLOW_break_statement_in_synpred369_Vala4557);
+        break_statement();
 
         state._fsp--;
         if (state.failed) return ;
@@ -19032,11 +19003,11 @@ public class ValaParser extends Parser {
 
     // $ANTLR start synpred370_Vala
     public final void synpred370_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:997:4: ( yield_statement )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:997:4: yield_statement
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:997:4: ( continue_statement )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:997:4: continue_statement
         {
-        pushFollow(FOLLOW_yield_statement_in_synpred370_Vala4575);
-        yield_statement();
+        pushFollow(FOLLOW_continue_statement_in_synpred370_Vala4563);
+        continue_statement();
 
         state._fsp--;
         if (state.failed) return ;
@@ -19047,11 +19018,11 @@ public class ValaParser extends Parser {
 
     // $ANTLR start synpred371_Vala
     public final void synpred371_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:998:4: ( throw_statement )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:998:4: throw_statement
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:998:4: ( return_statement )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:998:4: return_statement
         {
-        pushFollow(FOLLOW_throw_statement_in_synpred371_Vala4581);
-        throw_statement();
+        pushFollow(FOLLOW_return_statement_in_synpred371_Vala4569);
+        return_statement();
 
         state._fsp--;
         if (state.failed) return ;
@@ -19062,11 +19033,11 @@ public class ValaParser extends Parser {
 
     // $ANTLR start synpred372_Vala
     public final void synpred372_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:999:4: ( try_statement )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:999:4: try_statement
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:999:4: ( yield_statement )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:999:4: yield_statement
         {
-        pushFollow(FOLLOW_try_statement_in_synpred372_Vala4587);
-        try_statement();
+        pushFollow(FOLLOW_yield_statement_in_synpred372_Vala4575);
+        yield_statement();
 
         state._fsp--;
         if (state.failed) return ;
@@ -19077,11 +19048,11 @@ public class ValaParser extends Parser {
 
     // $ANTLR start synpred373_Vala
     public final void synpred373_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1000:4: ( lock_statement )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1000:4: lock_statement
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1000:4: ( throw_statement )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1000:4: throw_statement
         {
-        pushFollow(FOLLOW_lock_statement_in_synpred373_Vala4593);
-        lock_statement();
+        pushFollow(FOLLOW_throw_statement_in_synpred373_Vala4581);
+        throw_statement();
 
         state._fsp--;
         if (state.failed) return ;
@@ -19092,11 +19063,11 @@ public class ValaParser extends Parser {
 
     // $ANTLR start synpred374_Vala
     public final void synpred374_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1001:4: ( delete_statement )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1001:4: delete_statement
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1001:4: ( try_statement )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1001:4: try_statement
         {
-        pushFollow(FOLLOW_delete_statement_in_synpred374_Vala4599);
-        delete_statement();
+        pushFollow(FOLLOW_try_statement_in_synpred374_Vala4587);
+        try_statement();
 
         state._fsp--;
         if (state.failed) return ;
@@ -19107,11 +19078,11 @@ public class ValaParser extends Parser {
 
     // $ANTLR start synpred375_Vala
     public final void synpred375_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1002:4: ( local_variable_declarations )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1002:4: local_variable_declarations
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1002:4: ( lock_statement )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1002:4: lock_statement
         {
-        pushFollow(FOLLOW_local_variable_declarations_in_synpred375_Vala4605);
-        local_variable_declarations();
+        pushFollow(FOLLOW_lock_statement_in_synpred375_Vala4593);
+        lock_statement();
 
         state._fsp--;
         if (state.failed) return ;
@@ -19122,12 +19093,11 @@ public class ValaParser extends Parser {
 
     // $ANTLR start synpred376_Vala
     public final void synpred376_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1013:3: ( KW_ELSE embedded_statement )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1013:3: KW_ELSE embedded_statement
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1003:4: ( delete_statement )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1003:4: delete_statement
         {
-        match(input,KW_ELSE,FOLLOW_KW_ELSE_in_synpred376_Vala4646); if (state.failed) return ;
-        pushFollow(FOLLOW_embedded_statement_in_synpred376_Vala4650);
-        embedded_statement();
+        pushFollow(FOLLOW_delete_statement_in_synpred376_Vala4599);
+        delete_statement();
 
         state._fsp--;
         if (state.failed) return ;
@@ -19138,11 +19108,11 @@ public class ValaParser extends Parser {
 
     // $ANTLR start synpred377_Vala
     public final void synpred377_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1019:2: ( block )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1019:2: block
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1004:4: ( local_variable_declarations )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1004:4: local_variable_declarations
         {
-        pushFollow(FOLLOW_block_in_synpred377_Vala4666);
-        block();
+        pushFollow(FOLLOW_local_variable_declarations_in_synpred377_Vala4605);
+        local_variable_declarations();
 
         state._fsp--;
         if (state.failed) return ;
@@ -19151,43 +19121,44 @@ public class ValaParser extends Parser {
     }
     // $ANTLR end synpred377_Vala
 
-    // $ANTLR start synpred384_Vala
-    public final void synpred384_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1030:4: ( foreach_statement )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1030:4: foreach_statement
+    // $ANTLR start synpred378_Vala
+    public final void synpred378_Vala_fragment() throws RecognitionException {   
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1015:3: ( KW_ELSE embedded_statement )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1015:3: KW_ELSE embedded_statement
         {
-        pushFollow(FOLLOW_foreach_statement_in_synpred384_Vala4719);
-        foreach_statement();
+        match(input,KW_ELSE,FOLLOW_KW_ELSE_in_synpred378_Vala4646); if (state.failed) return ;
+        pushFollow(FOLLOW_embedded_statement_in_synpred378_Vala4650);
+        embedded_statement();
 
         state._fsp--;
         if (state.failed) return ;
 
         }
     }
-    // $ANTLR end synpred384_Vala
+    // $ANTLR end synpred378_Vala
 
-    // $ANTLR start synpred385_Vala
-    public final void synpred385_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1031:4: ( break_statement )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1031:4: break_statement
+    // $ANTLR start synpred379_Vala
+    public final void synpred379_Vala_fragment() throws RecognitionException {   
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1021:2: ( block )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1021:2: block
         {
-        pushFollow(FOLLOW_break_statement_in_synpred385_Vala4725);
-        break_statement();
+        pushFollow(FOLLOW_block_in_synpred379_Vala4666);
+        block();
 
         state._fsp--;
         if (state.failed) return ;
 
         }
     }
-    // $ANTLR end synpred385_Vala
+    // $ANTLR end synpred379_Vala
 
     // $ANTLR start synpred386_Vala
     public final void synpred386_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1032:4: ( continue_statement )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1032:4: continue_statement
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1032:4: ( foreach_statement )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1032:4: foreach_statement
         {
-        pushFollow(FOLLOW_continue_statement_in_synpred386_Vala4731);
-        continue_statement();
+        pushFollow(FOLLOW_foreach_statement_in_synpred386_Vala4719);
+        foreach_statement();
 
         state._fsp--;
         if (state.failed) return ;
@@ -19198,11 +19169,11 @@ public class ValaParser extends Parser {
 
     // $ANTLR start synpred387_Vala
     public final void synpred387_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1033:4: ( return_statement )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1033:4: return_statement
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1033:4: ( break_statement )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1033:4: break_statement
         {
-        pushFollow(FOLLOW_return_statement_in_synpred387_Vala4737);
-        return_statement();
+        pushFollow(FOLLOW_break_statement_in_synpred387_Vala4725);
+        break_statement();
 
         state._fsp--;
         if (state.failed) return ;
@@ -19213,11 +19184,11 @@ public class ValaParser extends Parser {
 
     // $ANTLR start synpred388_Vala
     public final void synpred388_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1034:4: ( yield_statement )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1034:4: yield_statement
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1034:4: ( continue_statement )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1034:4: continue_statement
         {
-        pushFollow(FOLLOW_yield_statement_in_synpred388_Vala4743);
-        yield_statement();
+        pushFollow(FOLLOW_continue_statement_in_synpred388_Vala4731);
+        continue_statement();
 
         state._fsp--;
         if (state.failed) return ;
@@ -19228,11 +19199,11 @@ public class ValaParser extends Parser {
 
     // $ANTLR start synpred389_Vala
     public final void synpred389_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1035:4: ( throw_statement )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1035:4: throw_statement
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1035:4: ( return_statement )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1035:4: return_statement
         {
-        pushFollow(FOLLOW_throw_statement_in_synpred389_Vala4749);
-        throw_statement();
+        pushFollow(FOLLOW_return_statement_in_synpred389_Vala4737);
+        return_statement();
 
         state._fsp--;
         if (state.failed) return ;
@@ -19243,11 +19214,11 @@ public class ValaParser extends Parser {
 
     // $ANTLR start synpred390_Vala
     public final void synpred390_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1036:4: ( try_statement )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1036:4: try_statement
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1036:4: ( yield_statement )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1036:4: yield_statement
         {
-        pushFollow(FOLLOW_try_statement_in_synpred390_Vala4755);
-        try_statement();
+        pushFollow(FOLLOW_yield_statement_in_synpred390_Vala4743);
+        yield_statement();
 
         state._fsp--;
         if (state.failed) return ;
@@ -19258,11 +19229,11 @@ public class ValaParser extends Parser {
 
     // $ANTLR start synpred391_Vala
     public final void synpred391_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1037:4: ( lock_statement )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1037:4: lock_statement
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1037:4: ( throw_statement )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1037:4: throw_statement
         {
-        pushFollow(FOLLOW_lock_statement_in_synpred391_Vala4761);
-        lock_statement();
+        pushFollow(FOLLOW_throw_statement_in_synpred391_Vala4749);
+        throw_statement();
 
         state._fsp--;
         if (state.failed) return ;
@@ -19273,11 +19244,11 @@ public class ValaParser extends Parser {
 
     // $ANTLR start synpred392_Vala
     public final void synpred392_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1038:4: ( delete_statement )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1038:4: delete_statement
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1038:4: ( try_statement )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1038:4: try_statement
         {
-        pushFollow(FOLLOW_delete_statement_in_synpred392_Vala4767);
-        delete_statement();
+        pushFollow(FOLLOW_try_statement_in_synpred392_Vala4755);
+        try_statement();
 
         state._fsp--;
         if (state.failed) return ;
@@ -19286,12 +19257,42 @@ public class ValaParser extends Parser {
     }
     // $ANTLR end synpred392_Vala
 
-    // $ANTLR start synpred400_Vala
-    public final void synpred400_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1082:4: ( local_variable_declarations )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1082:4: local_variable_declarations
+    // $ANTLR start synpred393_Vala
+    public final void synpred393_Vala_fragment() throws RecognitionException {   
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1039:4: ( lock_statement )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1039:4: lock_statement
         {
-        pushFollow(FOLLOW_local_variable_declarations_in_synpred400_Vala4978);
+        pushFollow(FOLLOW_lock_statement_in_synpred393_Vala4761);
+        lock_statement();
+
+        state._fsp--;
+        if (state.failed) return ;
+
+        }
+    }
+    // $ANTLR end synpred393_Vala
+
+    // $ANTLR start synpred394_Vala
+    public final void synpred394_Vala_fragment() throws RecognitionException {   
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1040:4: ( delete_statement )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1040:4: delete_statement
+        {
+        pushFollow(FOLLOW_delete_statement_in_synpred394_Vala4767);
+        delete_statement();
+
+        state._fsp--;
+        if (state.failed) return ;
+
+        }
+    }
+    // $ANTLR end synpred394_Vala
+
+    // $ANTLR start synpred402_Vala
+    public final void synpred402_Vala_fragment() throws RecognitionException {   
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1084:4: ( local_variable_declarations )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1084:4: local_variable_declarations
+        {
+        pushFollow(FOLLOW_local_variable_declarations_in_synpred402_Vala4978);
         local_variable_declarations();
 
         state._fsp--;
@@ -19299,46 +19300,15 @@ public class ValaParser extends Parser {
 
         }
     }
-    // $ANTLR end synpred400_Vala
-
-    // $ANTLR start synpred405_Vala
-    public final void synpred405_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1123:15: ( expression_statement )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1123:15: expression_statement
-        {
-        pushFollow(FOLLOW_expression_statement_in_synpred405_Vala5148);
-        expression_statement();
-
-        state._fsp--;
-        if (state.failed) return ;
-
-        }
-    }
-    // $ANTLR end synpred405_Vala
-
-    // $ANTLR start synpred406_Vala
-    public final void synpred406_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1123:38: ( KW_RETURN expression )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1123:38: KW_RETURN expression
-        {
-        match(input,KW_RETURN,FOLLOW_KW_RETURN_in_synpred406_Vala5152); if (state.failed) return ;
-        pushFollow(FOLLOW_expression_in_synpred406_Vala5154);
-        expression();
-
-        state._fsp--;
-        if (state.failed) return ;
-
-        }
-    }
-    // $ANTLR end synpred406_Vala
+    // $ANTLR end synpred402_Vala
 
     // $ANTLR start synpred407_Vala
     public final void synpred407_Vala_fragment() throws RecognitionException {   
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1133:3: ( catch_clause )
-        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1133:3: catch_clause
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1125:15: ( expression_statement )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1125:15: expression_statement
         {
-        pushFollow(FOLLOW_catch_clause_in_synpred407_Vala5195);
-        catch_clause();
+        pushFollow(FOLLOW_expression_statement_in_synpred407_Vala5148);
+        expression_statement();
 
         state._fsp--;
         if (state.failed) return ;
@@ -19347,36 +19317,39 @@ public class ValaParser extends Parser {
     }
     // $ANTLR end synpred407_Vala
 
+    // $ANTLR start synpred408_Vala
+    public final void synpred408_Vala_fragment() throws RecognitionException {   
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1125:38: ( KW_RETURN expression )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1125:38: KW_RETURN expression
+        {
+        match(input,KW_RETURN,FOLLOW_KW_RETURN_in_synpred408_Vala5152); if (state.failed) return ;
+        pushFollow(FOLLOW_expression_in_synpred408_Vala5154);
+        expression();
+
+        state._fsp--;
+        if (state.failed) return ;
+
+        }
+    }
+    // $ANTLR end synpred408_Vala
+
+    // $ANTLR start synpred409_Vala
+    public final void synpred409_Vala_fragment() throws RecognitionException {   
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1135:3: ( catch_clause )
+        // c:\\maqdev\\dev\\carbonfx\\netbeans-valaproject\\antlr\\Vala.g:1135:3: catch_clause
+        {
+        pushFollow(FOLLOW_catch_clause_in_synpred409_Vala5195);
+        catch_clause();
+
+        state._fsp--;
+        if (state.failed) return ;
+
+        }
+    }
+    // $ANTLR end synpred409_Vala
+
     // Delegated rules
 
-    public final boolean synpred385_Vala() {
-        state.backtracking++;
-        int start = input.mark();
-        try {
-            synpred385_Vala_fragment(); // can never throw exception
-        } catch (RecognitionException re) {
-            System.err.println("impossible: "+re);
-        }
-        boolean success = !state.failed;
-        input.rewind(start);
-        state.backtracking--;
-        state.failed=false;
-        return success;
-    }
-    public final boolean synpred405_Vala() {
-        state.backtracking++;
-        int start = input.mark();
-        try {
-            synpred405_Vala_fragment(); // can never throw exception
-        } catch (RecognitionException re) {
-            System.err.println("impossible: "+re);
-        }
-        boolean success = !state.failed;
-        input.rewind(start);
-        state.backtracking--;
-        state.failed=false;
-        return success;
-    }
     public final boolean synpred46_Vala() {
         state.backtracking++;
         int start = input.mark();
@@ -19405,11 +19378,25 @@ public class ValaParser extends Parser {
         state.failed=false;
         return success;
     }
-    public final boolean synpred147_Vala() {
+    public final boolean synpred267_Vala() {
         state.backtracking++;
         int start = input.mark();
         try {
-            synpred147_Vala_fragment(); // can never throw exception
+            synpred267_Vala_fragment(); // can never throw exception
+        } catch (RecognitionException re) {
+            System.err.println("impossible: "+re);
+        }
+        boolean success = !state.failed;
+        input.rewind(start);
+        state.backtracking--;
+        state.failed=false;
+        return success;
+    }
+    public final boolean synpred239_Vala() {
+        state.backtracking++;
+        int start = input.mark();
+        try {
+            synpred239_Vala_fragment(); // can never throw exception
         } catch (RecognitionException re) {
             System.err.println("impossible: "+re);
         }
@@ -19447,20 +19434,6 @@ public class ValaParser extends Parser {
         state.failed=false;
         return success;
     }
-    public final boolean synpred339_Vala() {
-        state.backtracking++;
-        int start = input.mark();
-        try {
-            synpred339_Vala_fragment(); // can never throw exception
-        } catch (RecognitionException re) {
-            System.err.println("impossible: "+re);
-        }
-        boolean success = !state.failed;
-        input.rewind(start);
-        state.backtracking--;
-        state.failed=false;
-        return success;
-    }
     public final boolean synpred217_Vala() {
         state.backtracking++;
         int start = input.mark();
@@ -19475,11 +19448,11 @@ public class ValaParser extends Parser {
         state.failed=false;
         return success;
     }
-    public final boolean synpred213_Vala() {
+    public final boolean synpred240_Vala() {
         state.backtracking++;
         int start = input.mark();
         try {
-            synpred213_Vala_fragment(); // can never throw exception
+            synpred240_Vala_fragment(); // can never throw exception
         } catch (RecognitionException re) {
             System.err.println("impossible: "+re);
         }
@@ -19489,11 +19462,11 @@ public class ValaParser extends Parser {
         state.failed=false;
         return success;
     }
-    public final boolean synpred186_Vala() {
+    public final boolean synpred408_Vala() {
         state.backtracking++;
         int start = input.mark();
         try {
-            synpred186_Vala_fragment(); // can never throw exception
+            synpred408_Vala_fragment(); // can never throw exception
         } catch (RecognitionException re) {
             System.err.println("impossible: "+re);
         }
@@ -19573,20 +19546,6 @@ public class ValaParser extends Parser {
         state.failed=false;
         return success;
     }
-    public final boolean synpred175_Vala() {
-        state.backtracking++;
-        int start = input.mark();
-        try {
-            synpred175_Vala_fragment(); // can never throw exception
-        } catch (RecognitionException re) {
-            System.err.println("impossible: "+re);
-        }
-        boolean success = !state.failed;
-        input.rewind(start);
-        state.backtracking--;
-        state.failed=false;
-        return success;
-    }
     public final boolean synpred88_Vala() {
         state.backtracking++;
         int start = input.mark();
@@ -19606,20 +19565,6 @@ public class ValaParser extends Parser {
         int start = input.mark();
         try {
             synpred12_Vala_fragment(); // can never throw exception
-        } catch (RecognitionException re) {
-            System.err.println("impossible: "+re);
-        }
-        boolean success = !state.failed;
-        input.rewind(start);
-        state.backtracking--;
-        state.failed=false;
-        return success;
-    }
-    public final boolean synpred165_Vala() {
-        state.backtracking++;
-        int start = input.mark();
-        try {
-            synpred165_Vala_fragment(); // can never throw exception
         } catch (RecognitionException re) {
             System.err.println("impossible: "+re);
         }
@@ -19657,11 +19602,11 @@ public class ValaParser extends Parser {
         state.failed=false;
         return success;
     }
-    public final boolean synpred366_Vala() {
+    public final boolean synpred164_Vala() {
         state.backtracking++;
         int start = input.mark();
         try {
-            synpred366_Vala_fragment(); // can never throw exception
+            synpred164_Vala_fragment(); // can never throw exception
         } catch (RecognitionException re) {
             System.err.println("impossible: "+re);
         }
@@ -19671,11 +19616,11 @@ public class ValaParser extends Parser {
         state.failed=false;
         return success;
     }
-    public final boolean synpred273_Vala() {
+    public final boolean synpred173_Vala() {
         state.backtracking++;
         int start = input.mark();
         try {
-            synpred273_Vala_fragment(); // can never throw exception
+            synpred173_Vala_fragment(); // can never throw exception
         } catch (RecognitionException re) {
             System.err.println("impossible: "+re);
         }
@@ -19685,11 +19630,11 @@ public class ValaParser extends Parser {
         state.failed=false;
         return success;
     }
-    public final boolean synpred291_Vala() {
+    public final boolean synpred225_Vala() {
         state.backtracking++;
         int start = input.mark();
         try {
-            synpred291_Vala_fragment(); // can never throw exception
+            synpred225_Vala_fragment(); // can never throw exception
         } catch (RecognitionException re) {
             System.err.println("impossible: "+re);
         }
@@ -19704,6 +19649,20 @@ public class ValaParser extends Parser {
         int start = input.mark();
         try {
             synpred265_Vala_fragment(); // can never throw exception
+        } catch (RecognitionException re) {
+            System.err.println("impossible: "+re);
+        }
+        boolean success = !state.failed;
+        input.rewind(start);
+        state.backtracking--;
+        state.failed=false;
+        return success;
+    }
+    public final boolean synpred409_Vala() {
+        state.backtracking++;
+        int start = input.mark();
+        try {
+            synpred409_Vala_fragment(); // can never throw exception
         } catch (RecognitionException re) {
             System.err.println("impossible: "+re);
         }
@@ -19783,11 +19742,11 @@ public class ValaParser extends Parser {
         state.failed=false;
         return success;
     }
-    public final boolean synpred176_Vala() {
+    public final boolean synpred344_Vala() {
         state.backtracking++;
         int start = input.mark();
         try {
-            synpred176_Vala_fragment(); // can never throw exception
+            synpred344_Vala_fragment(); // can never throw exception
         } catch (RecognitionException re) {
             System.err.println("impossible: "+re);
         }
@@ -19909,6 +19868,20 @@ public class ValaParser extends Parser {
         state.failed=false;
         return success;
     }
+    public final boolean synpred163_Vala() {
+        state.backtracking++;
+        int start = input.mark();
+        try {
+            synpred163_Vala_fragment(); // can never throw exception
+        } catch (RecognitionException re) {
+            System.err.println("impossible: "+re);
+        }
+        boolean success = !state.failed;
+        input.rewind(start);
+        state.backtracking--;
+        state.failed=false;
+        return success;
+    }
     public final boolean synpred263_Vala() {
         state.backtracking++;
         int start = input.mark();
@@ -19923,39 +19896,11 @@ public class ValaParser extends Parser {
         state.failed=false;
         return success;
     }
-    public final boolean synpred274_Vala() {
-        state.backtracking++;
-        int start = input.mark();
-        try {
-            synpred274_Vala_fragment(); // can never throw exception
-        } catch (RecognitionException re) {
-            System.err.println("impossible: "+re);
-        }
-        boolean success = !state.failed;
-        input.rewind(start);
-        state.backtracking--;
-        state.failed=false;
-        return success;
-    }
     public final boolean synpred53_Vala() {
         state.backtracking++;
         int start = input.mark();
         try {
             synpred53_Vala_fragment(); // can never throw exception
-        } catch (RecognitionException re) {
-            System.err.println("impossible: "+re);
-        }
-        boolean success = !state.failed;
-        input.rewind(start);
-        state.backtracking--;
-        state.failed=false;
-        return success;
-    }
-    public final boolean synpred162_Vala() {
-        state.backtracking++;
-        int start = input.mark();
-        try {
-            synpred162_Vala_fragment(); // can never throw exception
         } catch (RecognitionException re) {
             System.err.println("impossible: "+re);
         }
@@ -20021,11 +19966,11 @@ public class ValaParser extends Parser {
         state.failed=false;
         return success;
     }
-    public final boolean synpred292_Vala() {
+    public final boolean synpred177_Vala() {
         state.backtracking++;
         int start = input.mark();
         try {
-            synpred292_Vala_fragment(); // can never throw exception
+            synpred177_Vala_fragment(); // can never throw exception
         } catch (RecognitionException re) {
             System.err.println("impossible: "+re);
         }
@@ -20035,11 +19980,11 @@ public class ValaParser extends Parser {
         state.failed=false;
         return success;
     }
-    public final boolean synpred340_Vala() {
+    public final boolean synpred184_Vala() {
         state.backtracking++;
         int start = input.mark();
         try {
-            synpred340_Vala_fragment(); // can never throw exception
+            synpred184_Vala_fragment(); // can never throw exception
         } catch (RecognitionException re) {
             System.err.println("impossible: "+re);
         }
@@ -20063,11 +20008,11 @@ public class ValaParser extends Parser {
         state.failed=false;
         return success;
     }
-    public final boolean synpred258_Vala() {
+    public final boolean synpred342_Vala() {
         state.backtracking++;
         int start = input.mark();
         try {
-            synpred258_Vala_fragment(); // can never throw exception
+            synpred342_Vala_fragment(); // can never throw exception
         } catch (RecognitionException re) {
             System.err.println("impossible: "+re);
         }
@@ -20077,11 +20022,11 @@ public class ValaParser extends Parser {
         state.failed=false;
         return success;
     }
-    public final boolean synpred342_Vala() {
+    public final boolean synpred167_Vala() {
         state.backtracking++;
         int start = input.mark();
         try {
-            synpred342_Vala_fragment(); // can never throw exception
+            synpred167_Vala_fragment(); // can never throw exception
         } catch (RecognitionException re) {
             System.err.println("impossible: "+re);
         }
@@ -20147,20 +20092,6 @@ public class ValaParser extends Parser {
         state.failed=false;
         return success;
     }
-    public final boolean synpred238_Vala() {
-        state.backtracking++;
-        int start = input.mark();
-        try {
-            synpred238_Vala_fragment(); // can never throw exception
-        } catch (RecognitionException re) {
-            System.err.println("impossible: "+re);
-        }
-        boolean success = !state.failed;
-        input.rewind(start);
-        state.backtracking--;
-        state.failed=false;
-        return success;
-    }
     public final boolean synpred386_Vala() {
         state.backtracking++;
         int start = input.mark();
@@ -20203,11 +20134,11 @@ public class ValaParser extends Parser {
         state.failed=false;
         return success;
     }
-    public final boolean synpred182_Vala() {
+    public final boolean synpred379_Vala() {
         state.backtracking++;
         int start = input.mark();
         try {
-            synpred182_Vala_fragment(); // can never throw exception
+            synpred379_Vala_fragment(); // can never throw exception
         } catch (RecognitionException re) {
             System.err.println("impossible: "+re);
         }
@@ -20217,11 +20148,11 @@ public class ValaParser extends Parser {
         state.failed=false;
         return success;
     }
-    public final boolean synpred259_Vala() {
+    public final boolean synpred343_Vala() {
         state.backtracking++;
         int start = input.mark();
         try {
-            synpred259_Vala_fragment(); // can never throw exception
+            synpred343_Vala_fragment(); // can never throw exception
         } catch (RecognitionException re) {
             System.err.println("impossible: "+re);
         }
@@ -20231,11 +20162,11 @@ public class ValaParser extends Parser {
         state.failed=false;
         return success;
     }
-    public final boolean synpred169_Vala() {
+    public final boolean synpred279_Vala() {
         state.backtracking++;
         int start = input.mark();
         try {
-            synpred169_Vala_fragment(); // can never throw exception
+            synpred279_Vala_fragment(); // can never throw exception
         } catch (RecognitionException re) {
             System.err.println("impossible: "+re);
         }
@@ -20245,11 +20176,67 @@ public class ValaParser extends Parser {
         state.failed=false;
         return success;
     }
-    public final boolean synpred237_Vala() {
+    public final boolean synpred178_Vala() {
         state.backtracking++;
         int start = input.mark();
         try {
-            synpred237_Vala_fragment(); // can never throw exception
+            synpred178_Vala_fragment(); // can never throw exception
+        } catch (RecognitionException re) {
+            System.err.println("impossible: "+re);
+        }
+        boolean success = !state.failed;
+        input.rewind(start);
+        state.backtracking--;
+        state.failed=false;
+        return success;
+    }
+    public final boolean synpred226_Vala() {
+        state.backtracking++;
+        int start = input.mark();
+        try {
+            synpred226_Vala_fragment(); // can never throw exception
+        } catch (RecognitionException re) {
+            System.err.println("impossible: "+re);
+        }
+        boolean success = !state.failed;
+        input.rewind(start);
+        state.backtracking--;
+        state.failed=false;
+        return success;
+    }
+    public final boolean synpred278_Vala() {
+        state.backtracking++;
+        int start = input.mark();
+        try {
+            synpred278_Vala_fragment(); // can never throw exception
+        } catch (RecognitionException re) {
+            System.err.println("impossible: "+re);
+        }
+        boolean success = !state.failed;
+        input.rewind(start);
+        state.backtracking--;
+        state.failed=false;
+        return success;
+    }
+    public final boolean synpred361_Vala() {
+        state.backtracking++;
+        int start = input.mark();
+        try {
+            synpred361_Vala_fragment(); // can never throw exception
+        } catch (RecognitionException re) {
+            System.err.println("impossible: "+re);
+        }
+        boolean success = !state.failed;
+        input.rewind(start);
+        state.backtracking--;
+        state.failed=false;
+        return success;
+    }
+    public final boolean synpred402_Vala() {
+        state.backtracking++;
+        int start = input.mark();
+        try {
+            synpred402_Vala_fragment(); // can never throw exception
         } catch (RecognitionException re) {
             System.err.println("impossible: "+re);
         }
@@ -20264,6 +20251,34 @@ public class ValaParser extends Parser {
         int start = input.mark();
         try {
             synpred86_Vala_fragment(); // can never throw exception
+        } catch (RecognitionException re) {
+            System.err.println("impossible: "+re);
+        }
+        boolean success = !state.failed;
+        input.rewind(start);
+        state.backtracking--;
+        state.failed=false;
+        return success;
+    }
+    public final boolean synpred294_Vala() {
+        state.backtracking++;
+        int start = input.mark();
+        try {
+            synpred294_Vala_fragment(); // can never throw exception
+        } catch (RecognitionException re) {
+            System.err.println("impossible: "+re);
+        }
+        boolean success = !state.failed;
+        input.rewind(start);
+        state.backtracking--;
+        state.failed=false;
+        return success;
+    }
+    public final boolean synpred188_Vala() {
+        state.backtracking++;
+        int start = input.mark();
+        try {
+            synpred188_Vala_fragment(); // can never throw exception
         } catch (RecognitionException re) {
             System.err.println("impossible: "+re);
         }
@@ -20315,11 +20330,11 @@ public class ValaParser extends Parser {
         state.failed=false;
         return success;
     }
-    public final boolean synpred214_Vala() {
+    public final boolean synpred266_Vala() {
         state.backtracking++;
         int start = input.mark();
         try {
-            synpred214_Vala_fragment(); // can never throw exception
+            synpred266_Vala_fragment(); // can never throw exception
         } catch (RecognitionException re) {
             System.err.println("impossible: "+re);
         }
@@ -20334,6 +20349,20 @@ public class ValaParser extends Parser {
         int start = input.mark();
         try {
             synpred376_Vala_fragment(); // can never throw exception
+        } catch (RecognitionException re) {
+            System.err.println("impossible: "+re);
+        }
+        boolean success = !state.failed;
+        input.rewind(start);
+        state.backtracking--;
+        state.failed=false;
+        return success;
+    }
+    public final boolean synpred378_Vala() {
+        state.backtracking++;
+        int start = input.mark();
+        try {
+            synpred378_Vala_fragment(); // can never throw exception
         } catch (RecognitionException re) {
             System.err.println("impossible: "+re);
         }
@@ -20371,67 +20400,11 @@ public class ValaParser extends Parser {
         state.failed=false;
         return success;
     }
-    public final boolean synpred400_Vala() {
-        state.backtracking++;
-        int start = input.mark();
-        try {
-            synpred400_Vala_fragment(); // can never throw exception
-        } catch (RecognitionException re) {
-            System.err.println("impossible: "+re);
-        }
-        boolean success = !state.failed;
-        input.rewind(start);
-        state.backtracking--;
-        state.failed=false;
-        return success;
-    }
-    public final boolean synpred367_Vala() {
-        state.backtracking++;
-        int start = input.mark();
-        try {
-            synpred367_Vala_fragment(); // can never throw exception
-        } catch (RecognitionException re) {
-            System.err.println("impossible: "+re);
-        }
-        boolean success = !state.failed;
-        input.rewind(start);
-        state.backtracking--;
-        state.failed=false;
-        return success;
-    }
-    public final boolean synpred406_Vala() {
-        state.backtracking++;
-        int start = input.mark();
-        try {
-            synpred406_Vala_fragment(); // can never throw exception
-        } catch (RecognitionException re) {
-            System.err.println("impossible: "+re);
-        }
-        boolean success = !state.failed;
-        input.rewind(start);
-        state.backtracking--;
-        state.failed=false;
-        return success;
-    }
     public final boolean synpred45_Vala() {
         state.backtracking++;
         int start = input.mark();
         try {
             synpred45_Vala_fragment(); // can never throw exception
-        } catch (RecognitionException re) {
-            System.err.println("impossible: "+re);
-        }
-        boolean success = !state.failed;
-        input.rewind(start);
-        state.backtracking--;
-        state.failed=false;
-        return success;
-    }
-    public final boolean synpred384_Vala() {
-        state.backtracking++;
-        int start = input.mark();
-        try {
-            synpred384_Vala_fragment(); // can never throw exception
         } catch (RecognitionException re) {
             System.err.println("impossible: "+re);
         }
@@ -20455,11 +20428,39 @@ public class ValaParser extends Parser {
         state.failed=false;
         return success;
     }
+    public final boolean synpred393_Vala() {
+        state.backtracking++;
+        int start = input.mark();
+        try {
+            synpred393_Vala_fragment(); // can never throw exception
+        } catch (RecognitionException re) {
+            System.err.println("impossible: "+re);
+        }
+        boolean success = !state.failed;
+        input.rewind(start);
+        state.backtracking--;
+        state.failed=false;
+        return success;
+    }
     public final boolean synpred377_Vala() {
         state.backtracking++;
         int start = input.mark();
         try {
             synpred377_Vala_fragment(); // can never throw exception
+        } catch (RecognitionException re) {
+            System.err.println("impossible: "+re);
+        }
+        boolean success = !state.failed;
+        input.rewind(start);
+        state.backtracking--;
+        state.failed=false;
+        return success;
+    }
+    public final boolean synpred293_Vala() {
+        state.backtracking++;
+        int start = input.mark();
+        try {
+            synpred293_Vala_fragment(); // can never throw exception
         } catch (RecognitionException re) {
             System.err.println("impossible: "+re);
         }
@@ -20567,11 +20568,11 @@ public class ValaParser extends Parser {
         state.failed=false;
         return success;
     }
-    public final boolean synpred161_Vala() {
+    public final boolean synpred262_Vala() {
         state.backtracking++;
         int start = input.mark();
         try {
-            synpred161_Vala_fragment(); // can never throw exception
+            synpred262_Vala_fragment(); // can never throw exception
         } catch (RecognitionException re) {
             System.err.println("impossible: "+re);
         }
@@ -20581,11 +20582,11 @@ public class ValaParser extends Parser {
         state.failed=false;
         return success;
     }
-    public final boolean synpred262_Vala() {
+    public final boolean synpred394_Vala() {
         state.backtracking++;
         int start = input.mark();
         try {
-            synpred262_Vala_fragment(); // can never throw exception
+            synpred394_Vala_fragment(); // can never throw exception
         } catch (RecognitionException re) {
             System.err.println("impossible: "+re);
         }
@@ -20637,11 +20638,11 @@ public class ValaParser extends Parser {
         state.failed=false;
         return success;
     }
-    public final boolean synpred359_Vala() {
+    public final boolean synpred149_Vala() {
         state.backtracking++;
         int start = input.mark();
         try {
-            synpred359_Vala_fragment(); // can never throw exception
+            synpred149_Vala_fragment(); // can never throw exception
         } catch (RecognitionException re) {
             System.err.println("impossible: "+re);
         }
@@ -20702,8 +20703,8 @@ public class ValaParser extends Parser {
         "\2\uffff\1\0\1\1\1\2\4\uffff\1\3\1\4\1\5\1\6\1\7\1\10\1\11\5\uffff}>";
     static final String[] DFA7_transitionS = {
             "\1\15\1\16\40\uffff\1\12\1\uffff\1\13\3\14\17\uffff\1\17\3"+
-            "\uffff\1\11\1\4\1\6\1\3\1\11\2\3\2\11\4\2\1\7\1\10\1\5\1\1\41"+
-            "\uffff\1\20\1\uffff\1\21",
+            "\uffff\1\11\1\4\1\6\1\3\1\11\2\3\2\11\4\2\1\7\1\10\1\5\1\1\42"+
+            "\uffff\1\20\1\21",
             "",
             "\1\uffff",
             "\1\uffff",
@@ -20967,8 +20968,8 @@ public class ValaParser extends Parser {
     static final String DFA12_minS =
         "\3\5\1\uffff\6\5\1\uffff\10\6\2\5\3\6\6\5\2\6\2\5\3\6";
     static final String DFA12_maxS =
-        "\1\160\1\170\1\160\1\uffff\6\170\1\uffff\15\161\1\170\1\160\4\170"+
-        "\7\161";
+        "\1\162\1\170\1\162\1\uffff\6\170\1\uffff\15\163\1\170\1\162\4\170"+
+        "\7\163";
     static final String DFA12_acceptS =
         "\3\uffff\1\2\6\uffff\1\1\32\uffff";
     static final String DFA12_specialS =
@@ -20976,82 +20977,82 @@ public class ValaParser extends Parser {
     static final String[] DFA12_transitionS = {
             "\1\11\3\uffff\1\3\1\11\2\uffff\1\2\21\uffff\1\11\2\uffff\1"+
             "\3\6\uffff\3\11\1\3\4\11\1\uffff\2\3\2\uffff\4\3\3\11\2\1\1"+
-            "\4\1\5\1\6\1\7\1\10\37\11\1\uffff\10\3\1\uffff\1\3\1\uffff\2"+
+            "\4\1\5\1\6\1\7\1\10\41\11\1\uffff\10\3\1\uffff\1\3\1\uffff\2"+
             "\3",
-            "\61\3\2\uffff\54\3\10\uffff\1\3\4\uffff\1\12\6\uffff\1\3",
+            "\61\3\2\uffff\56\3\10\uffff\1\3\4\uffff\1\12\4\uffff\1\3",
             "\1\27\3\uffff\1\3\1\20\2\uffff\1\3\1\12\20\uffff\1\27\2\uffff"+
             "\1\3\6\uffff\2\27\1\16\1\3\1\17\1\14\1\13\1\15\1\uffff\2\3\2"+
-            "\uffff\4\3\3\27\2\21\1\22\1\23\1\24\1\25\1\26\37\27\1\uffff"+
+            "\uffff\4\3\3\27\2\21\1\22\1\23\1\24\1\25\1\26\41\27\1\uffff"+
             "\10\3\1\uffff\1\3\1\uffff\2\3",
             "",
-            "\61\3\2\uffff\54\3\10\uffff\1\3\4\uffff\1\12\6\uffff\1\3",
-            "\61\3\2\uffff\54\3\10\uffff\1\3\4\uffff\1\12\6\uffff\1\3",
-            "\61\3\2\uffff\54\3\10\uffff\1\3\3\uffff\1\3\1\12\6\uffff\1"+
+            "\61\3\2\uffff\56\3\10\uffff\1\3\4\uffff\1\12\4\uffff\1\3",
+            "\61\3\2\uffff\56\3\10\uffff\1\3\4\uffff\1\12\4\uffff\1\3",
+            "\61\3\2\uffff\56\3\10\uffff\1\3\3\uffff\1\3\1\12\4\uffff\1"+
             "\3",
-            "\61\3\2\uffff\54\3\10\uffff\1\3\4\uffff\1\12\6\uffff\1\3",
-            "\61\3\2\uffff\54\3\10\uffff\1\3\4\uffff\1\12\6\uffff\1\3",
-            "\61\3\2\uffff\54\3\10\uffff\1\3\4\uffff\1\12\6\uffff\1\3",
+            "\61\3\2\uffff\56\3\10\uffff\1\3\4\uffff\1\12\4\uffff\1\3",
+            "\61\3\2\uffff\56\3\10\uffff\1\3\4\uffff\1\12\4\uffff\1\3",
+            "\61\3\2\uffff\56\3\10\uffff\1\3\4\uffff\1\12\4\uffff\1\3",
             "",
             "\1\31\1\uffff\4\3\1\uffff\1\3\1\30\14\3\1\uffff\17\3\1\uffff"+
-            "\1\3\4\uffff\5\3\2\uffff\2\3\51\uffff\1\3\15\uffff\1\3",
+            "\1\3\4\uffff\5\3\2\uffff\2\3\53\uffff\1\3\15\uffff\1\3",
             "\1\31\1\uffff\4\3\1\uffff\1\3\1\32\14\3\1\uffff\17\3\1\uffff"+
-            "\1\3\4\uffff\5\3\2\uffff\2\3\51\uffff\1\3\15\uffff\1\3",
+            "\1\3\4\uffff\5\3\2\uffff\2\3\53\uffff\1\3\15\uffff\1\3",
             "\1\31\1\uffff\4\3\1\uffff\1\3\1\33\14\3\1\uffff\17\3\1\uffff"+
-            "\1\3\4\uffff\5\3\2\uffff\2\3\51\uffff\1\3\15\uffff\1\3",
+            "\1\3\4\uffff\5\3\2\uffff\2\3\53\uffff\1\3\15\uffff\1\3",
             "\1\31\1\uffff\1\3\2\uffff\1\3\1\uffff\1\3\1\34\14\3\1\uffff"+
-            "\17\3\1\uffff\1\3\4\uffff\5\3\2\uffff\2\3\51\uffff\1\3\15\uffff"+
+            "\17\3\1\uffff\1\3\4\uffff\5\3\2\uffff\2\3\53\uffff\1\3\15\uffff"+
             "\1\3",
             "\1\31\1\uffff\4\3\1\uffff\1\3\1\35\14\3\1\uffff\17\3\1\uffff"+
-            "\1\3\1\uffff\10\3\2\uffff\2\3\51\uffff\1\3\15\uffff\1\3",
+            "\1\3\1\uffff\10\3\2\uffff\2\3\53\uffff\1\3\15\uffff\1\3",
             "\1\31\1\uffff\1\3\2\uffff\1\3\1\uffff\1\3\1\34\14\3\1\uffff"+
-            "\17\3\1\uffff\1\3\4\uffff\5\3\2\uffff\2\3\51\uffff\1\3\15\uffff"+
+            "\17\3\1\uffff\1\3\4\uffff\5\3\2\uffff\2\3\53\uffff\1\3\15\uffff"+
             "\1\3",
             "\1\31\1\uffff\1\3\2\uffff\1\3\1\uffff\1\3\1\35\14\3\1\uffff"+
-            "\17\3\1\uffff\1\3\4\uffff\5\3\2\uffff\2\3\51\uffff\1\3\15\uffff"+
+            "\17\3\1\uffff\1\3\4\uffff\5\3\2\uffff\2\3\53\uffff\1\3\15\uffff"+
             "\1\3",
             "\1\31\1\uffff\1\3\2\uffff\1\3\1\uffff\1\3\1\35\14\3\1\uffff"+
-            "\17\3\1\uffff\1\3\4\uffff\5\3\2\uffff\2\3\51\uffff\1\3\15\uffff"+
+            "\17\3\1\uffff\1\3\4\uffff\5\3\2\uffff\2\3\53\uffff\1\3\15\uffff"+
             "\1\3",
             "\1\3\1\31\1\uffff\4\3\1\uffff\1\3\1\35\14\3\1\uffff\32\3\2"+
-            "\uffff\54\3\15\uffff\1\3",
+            "\uffff\56\3\15\uffff\1\3",
             "\1\3\1\31\1\uffff\4\3\1\uffff\1\3\1\35\14\3\1\uffff\32\3\2"+
-            "\uffff\54\3\14\uffff\2\3",
+            "\uffff\56\3\14\uffff\2\3",
             "\1\31\1\uffff\1\3\2\uffff\1\3\1\uffff\1\3\1\35\14\3\1\uffff"+
-            "\17\3\1\uffff\1\3\4\uffff\5\3\2\uffff\2\3\51\uffff\1\3\15\uffff"+
+            "\17\3\1\uffff\1\3\4\uffff\5\3\2\uffff\2\3\53\uffff\1\3\15\uffff"+
             "\1\3",
             "\1\31\1\uffff\1\3\2\uffff\1\3\1\uffff\1\3\1\35\14\3\1\uffff"+
-            "\17\3\1\uffff\1\3\4\uffff\5\3\2\uffff\2\3\51\uffff\1\3\15\uffff"+
+            "\17\3\1\uffff\1\3\4\uffff\5\3\2\uffff\2\3\53\uffff\1\3\15\uffff"+
             "\1\3",
             "\1\31\1\uffff\1\3\2\uffff\1\3\1\uffff\1\3\1\35\14\3\1\uffff"+
-            "\17\3\1\uffff\1\3\4\uffff\5\3\2\uffff\2\3\51\uffff\1\3\15\uffff"+
+            "\17\3\1\uffff\1\3\4\uffff\5\3\2\uffff\2\3\53\uffff\1\3\15\uffff"+
             "\1\3",
-            "\151\3\1\uffff\2\3\1\12\6\uffff\1\3",
+            "\153\3\1\uffff\2\3\1\12\4\uffff\1\3",
             "\1\44\3\uffff\1\3\1\44\2\uffff\1\3\21\uffff\1\44\2\uffff\1"+
             "\3\6\uffff\3\44\1\3\4\44\1\uffff\2\3\2\uffff\4\3\3\44\2\36\1"+
-            "\37\1\40\1\41\1\42\1\43\37\44\1\uffff\10\3\1\uffff\1\3\1\uffff"+
+            "\37\1\40\1\41\1\42\1\43\41\44\1\uffff\10\3\1\uffff\1\3\1\uffff"+
             "\2\3",
-            "\151\3\1\uffff\2\3\1\12\6\uffff\1\3",
-            "\151\3\1\uffff\2\3\1\12\6\uffff\1\3",
-            "\151\3\1\uffff\2\3\1\12\6\uffff\1\3",
-            "\61\3\2\uffff\54\3\10\uffff\1\3\4\uffff\1\12\6\uffff\1\3",
+            "\153\3\1\uffff\2\3\1\12\4\uffff\1\3",
+            "\153\3\1\uffff\2\3\1\12\4\uffff\1\3",
+            "\153\3\1\uffff\2\3\1\12\4\uffff\1\3",
+            "\61\3\2\uffff\56\3\10\uffff\1\3\4\uffff\1\12\4\uffff\1\3",
             "\1\31\1\uffff\1\3\2\uffff\1\3\1\uffff\1\3\1\35\14\3\1\uffff"+
-            "\17\3\1\uffff\1\3\4\uffff\5\3\2\uffff\2\3\51\uffff\1\3\15\uffff"+
+            "\17\3\1\uffff\1\3\4\uffff\5\3\2\uffff\2\3\53\uffff\1\3\15\uffff"+
             "\1\3",
             "\1\31\1\uffff\1\3\2\uffff\1\3\1\uffff\1\3\1\35\14\3\1\uffff"+
-            "\17\3\1\uffff\1\3\4\uffff\5\3\2\uffff\2\3\51\uffff\1\3\15\uffff"+
+            "\17\3\1\uffff\1\3\4\uffff\5\3\2\uffff\2\3\53\uffff\1\3\15\uffff"+
             "\1\3",
             "\1\3\1\31\1\uffff\4\3\1\uffff\1\3\1\35\14\3\1\uffff\32\3\2"+
-            "\uffff\54\3\15\uffff\1\3",
+            "\uffff\56\3\15\uffff\1\3",
             "\1\3\1\31\1\uffff\4\3\1\uffff\1\3\1\35\14\3\1\uffff\32\3\2"+
-            "\uffff\54\3\14\uffff\2\3",
+            "\uffff\56\3\14\uffff\2\3",
             "\1\31\1\uffff\1\3\2\uffff\1\3\1\uffff\1\3\1\35\14\3\1\uffff"+
-            "\17\3\1\uffff\1\3\4\uffff\5\3\2\uffff\2\3\51\uffff\1\3\15\uffff"+
+            "\17\3\1\uffff\1\3\4\uffff\5\3\2\uffff\2\3\53\uffff\1\3\15\uffff"+
             "\1\3",
             "\1\31\1\uffff\1\3\2\uffff\1\3\1\uffff\1\3\1\35\14\3\1\uffff"+
-            "\17\3\1\uffff\1\3\4\uffff\5\3\2\uffff\2\3\51\uffff\1\3\15\uffff"+
+            "\17\3\1\uffff\1\3\4\uffff\5\3\2\uffff\2\3\53\uffff\1\3\15\uffff"+
             "\1\3",
             "\1\31\1\uffff\1\3\2\uffff\1\3\1\uffff\1\3\1\35\14\3\1\uffff"+
-            "\17\3\1\uffff\1\3\4\uffff\5\3\2\uffff\2\3\51\uffff\1\3\15\uffff"+
+            "\17\3\1\uffff\1\3\4\uffff\5\3\2\uffff\2\3\53\uffff\1\3\15\uffff"+
             "\1\3"
     };
 
@@ -21102,7 +21103,7 @@ public class ValaParser extends Parser {
         "\1\uffff\1\0\27\uffff}>";
     static final String[] DFA17_transitionS = {
             "\3\2\1\uffff\4\2\1\uffff\21\2\1\1\11\uffff\3\2\1\uffff\4\2"+
-            "\11\uffff\51\2\11\uffff\1\2\13\uffff\1\2",
+            "\11\uffff\53\2\11\uffff\1\2\11\uffff\1\2",
             "\1\uffff",
             "",
             "",
@@ -21202,7 +21203,7 @@ public class ValaParser extends Parser {
         "\33\uffff\1\0\1\uffff\1\1\3\uffff}>";
     static final String[] DFA22_transitionS = {
             "\3\1\1\uffff\4\1\1\uffff\27\1\4\34\1\33\1\35\1\1\1\uffff\4"+
-            "\1\11\uffff\51\1\11\uffff\1\1\13\uffff\1\1",
+            "\1\11\uffff\53\1\11\uffff\1\1\11\uffff\1\1",
             "",
             "",
             "",
@@ -21324,8 +21325,8 @@ public class ValaParser extends Parser {
     static final String DFA26_specialS =
         "\1\uffff\1\0\45\uffff}>";
     static final String[] DFA26_transitionS = {
-            "\3\2\1\uffff\34\2\1\1\13\2\11\uffff\51\2\10\uffff\2\2\6\uffff"+
-            "\1\2\1\uffff\1\2\2\uffff\1\2",
+            "\3\2\1\uffff\34\2\1\1\13\2\11\uffff\53\2\10\uffff\2\2\7\uffff"+
+            "\1\2\1\uffff\1\2",
             "\1\uffff",
             "",
             "",
@@ -21438,8 +21439,8 @@ public class ValaParser extends Parser {
     static final String DFA28_specialS =
         "\1\uffff\1\0\43\uffff}>";
     static final String[] DFA28_transitionS = {
-            "\3\2\1\uffff\21\2\1\1\21\2\1\uffff\4\2\11\uffff\51\2\10\uffff"+
-            "\2\2\6\uffff\1\2\1\uffff\1\2\2\uffff\1\2",
+            "\3\2\1\uffff\21\2\1\1\21\2\1\uffff\4\2\11\uffff\53\2\10\uffff"+
+            "\2\2\7\uffff\1\2\1\uffff\1\2",
             "\1\uffff",
             "",
             "",
@@ -21550,8 +21551,8 @@ public class ValaParser extends Parser {
     static final String DFA29_specialS =
         "\22\uffff\1\0\22\uffff}>";
     static final String[] DFA29_transitionS = {
-            "\3\1\1\uffff\2\1\1\22\40\1\1\uffff\4\1\11\uffff\51\1\10\uffff"+
-            "\2\1\6\uffff\1\1\1\uffff\1\1\2\uffff\1\1",
+            "\3\1\1\uffff\2\1\1\22\40\1\1\uffff\4\1\11\uffff\53\1\10\uffff"+
+            "\2\1\7\uffff\1\1\1\uffff\1\1",
             "",
             "",
             "",
@@ -21662,8 +21663,8 @@ public class ValaParser extends Parser {
     static final String DFA32_specialS =
         "\1\uffff\1\0\43\uffff}>";
     static final String[] DFA32_transitionS = {
-            "\3\2\1\uffff\21\2\1\1\21\2\1\uffff\4\2\11\uffff\51\2\10\uffff"+
-            "\2\2\6\uffff\1\2\1\uffff\1\2\2\uffff\1\2",
+            "\3\2\1\uffff\21\2\1\1\21\2\1\uffff\4\2\11\uffff\53\2\10\uffff"+
+            "\2\2\7\uffff\1\2\1\uffff\1\2",
             "\1\uffff",
             "",
             "",
@@ -21768,14 +21769,14 @@ public class ValaParser extends Parser {
     static final String DFA38_minS =
         "\1\5\10\uffff\1\0\23\uffff";
     static final String DFA38_maxS =
-        "\1\160\10\uffff\1\0\23\uffff";
+        "\1\162\10\uffff\1\0\23\uffff";
     static final String DFA38_acceptS =
         "\1\uffff\1\1\10\uffff\1\2\22\uffff";
     static final String DFA38_specialS =
         "\11\uffff\1\0\23\uffff}>";
     static final String[] DFA38_transitionS = {
             "\1\12\3\uffff\2\12\2\uffff\1\11\21\uffff\1\12\2\uffff\1\1\6"+
-            "\uffff\3\12\1\1\4\12\1\uffff\2\1\2\uffff\4\1\51\12\1\uffff\10"+
+            "\uffff\3\12\1\1\4\12\1\uffff\2\1\2\uffff\4\1\53\12\1\uffff\10"+
             "\12\1\uffff\1\12\1\uffff\2\12",
             "",
             "",
@@ -21934,7 +21935,7 @@ public class ValaParser extends Parser {
     static final String DFA41_minS =
         "\1\5\2\0\14\uffff\4\0\6\uffff";
     static final String DFA41_maxS =
-        "\1\160\2\0\14\uffff\4\0\6\uffff";
+        "\1\162\2\0\14\uffff\4\0\6\uffff";
     static final String DFA41_acceptS =
         "\3\uffff\1\1\6\uffff\1\2\1\3\1\4\1\5\1\6\4\uffff\1\13\1\uffff\1"+
         "\7\1\10\1\11\1\12";
@@ -21942,7 +21943,7 @@ public class ValaParser extends Parser {
         "\1\uffff\1\0\1\1\14\uffff\1\2\1\3\1\4\1\5\6\uffff}>";
     static final String[] DFA41_transitionS = {
             "\1\23\3\uffff\2\23\2\uffff\1\13\21\uffff\1\23\11\uffff\3\23"+
-            "\1\uffff\4\23\11\uffff\3\23\2\1\1\2\1\17\1\20\1\21\1\22\37\23"+
+            "\1\uffff\4\23\11\uffff\3\23\2\1\1\2\1\17\1\20\1\21\1\22\41\23"+
             "\1\uffff\7\3\1\12\1\uffff\1\14\1\uffff\1\15\1\16",
             "\1\uffff",
             "\1\uffff",
@@ -22117,8 +22118,8 @@ public class ValaParser extends Parser {
     static final String DFA42_specialS =
         "\33\uffff\1\0\17\uffff}>";
     static final String[] DFA42_transitionS = {
-            "\3\1\1\45\2\1\1\33\1\1\1\47\50\1\2\uffff\1\50\1\51\51\1\1\46"+
-            "\10\uffff\1\1\13\uffff\1\1",
+            "\3\1\1\45\2\1\1\33\1\1\1\47\50\1\2\uffff\1\50\1\51\53\1\1\46"+
+            "\10\uffff\1\1\11\uffff\1\1",
             "",
             "",
             "",
@@ -22235,7 +22236,7 @@ public class ValaParser extends Parser {
     static final String DFA43_specialS =
         "\1\uffff\1\0\53\uffff}>";
     static final String[] DFA43_transitionS = {
-            "\40\2\1\1\20\2\2\uffff\54\2\7\uffff\2\2\13\uffff\1\2",
+            "\40\2\1\1\20\2\2\uffff\56\2\7\uffff\2\2\11\uffff\1\2",
             "\1\uffff",
             "",
             "",
@@ -22354,7 +22355,7 @@ public class ValaParser extends Parser {
     static final String DFA45_specialS =
         "\1\uffff\1\0\52\uffff}>";
     static final String[] DFA45_transitionS = {
-            "\40\2\1\1\20\2\2\uffff\54\2\10\uffff\1\2\13\uffff\1\2",
+            "\40\2\1\1\20\2\2\uffff\56\2\10\uffff\1\2\11\uffff\1\2",
             "\1\uffff",
             "",
             "",
@@ -22430,7 +22431,7 @@ public class ValaParser extends Parser {
             this.transition = DFA45_transition;
         }
         public String getDescription() {
-            return "356:2: ( type_arguments )?";
+            return "358:2: ( type_arguments )?";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -22443,7 +22444,7 @@ public class ValaParser extends Parser {
                         int index45_1 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred147_Vala()) ) {s = 43;}
+                        if ( (synpred149_Vala()) ) {s = 43;}
 
                         else if ( (true) ) {s = 2;}
 
@@ -22466,7 +22467,7 @@ public class ValaParser extends Parser {
     static final String DFA50_minS =
         "\3\5\1\6\1\uffff\1\6\2\5\3\6\1\uffff";
     static final String DFA50_maxS =
-        "\1\160\3\161\1\uffff\6\161\1\uffff";
+        "\1\162\3\163\1\uffff\6\163\1\uffff";
     static final String DFA50_acceptS =
         "\4\uffff\1\2\6\uffff\1\1";
     static final String DFA50_specialS =
@@ -22474,29 +22475,29 @@ public class ValaParser extends Parser {
     static final String[] DFA50_transitionS = {
             "\1\12\3\uffff\1\4\1\12\2\uffff\1\4\21\uffff\1\12\2\uffff\1"+
             "\4\6\uffff\3\12\1\4\4\12\1\uffff\2\4\2\uffff\4\4\3\12\2\3\1"+
-            "\5\1\6\1\7\1\10\1\11\21\12\1\2\1\1\14\12\1\uffff\10\4\1\uffff"+
+            "\5\1\6\1\7\1\10\1\11\21\12\1\2\1\1\16\12\1\uffff\10\4\1\uffff"+
             "\1\4\1\uffff\2\4",
-            "\2\4\1\uffff\4\4\1\uffff\16\4\1\13\122\4\1\uffff\3\4",
-            "\2\4\1\uffff\4\4\1\uffff\16\4\1\13\122\4\1\uffff\3\4",
+            "\2\4\1\uffff\4\4\1\uffff\16\4\1\13\124\4\1\uffff\3\4",
+            "\2\4\1\uffff\4\4\1\uffff\16\4\1\13\124\4\1\uffff\3\4",
             "\1\4\1\uffff\1\4\2\uffff\1\4\1\uffff\16\4\1\13\17\4\1\uffff"+
-            "\1\4\4\uffff\5\4\2\uffff\2\4\51\uffff\1\4\10\uffff\1\4\4\uffff"+
+            "\1\4\4\uffff\5\4\2\uffff\2\4\53\uffff\1\4\10\uffff\1\4\4\uffff"+
             "\1\4",
             "",
             "\1\4\1\uffff\1\4\2\uffff\1\4\1\uffff\16\4\1\13\17\4\1\uffff"+
-            "\1\4\4\uffff\5\4\2\uffff\2\4\51\uffff\1\4\10\uffff\1\4\4\uffff"+
+            "\1\4\4\uffff\5\4\2\uffff\2\4\53\uffff\1\4\10\uffff\1\4\4\uffff"+
             "\1\4",
-            "\2\4\1\uffff\4\4\1\uffff\16\4\1\13\32\4\2\uffff\54\4\10\uffff"+
+            "\2\4\1\uffff\4\4\1\uffff\16\4\1\13\32\4\2\uffff\56\4\10\uffff"+
             "\1\4\4\uffff\1\4",
-            "\2\4\1\uffff\4\4\1\uffff\16\4\1\13\32\4\2\uffff\54\4\10\uffff"+
+            "\2\4\1\uffff\4\4\1\uffff\16\4\1\13\32\4\2\uffff\56\4\10\uffff"+
             "\1\4\3\uffff\2\4",
             "\1\4\1\uffff\1\4\2\uffff\1\4\1\uffff\16\4\1\13\17\4\1\uffff"+
-            "\1\4\4\uffff\5\4\2\uffff\2\4\51\uffff\1\4\10\uffff\1\4\4\uffff"+
+            "\1\4\4\uffff\5\4\2\uffff\2\4\53\uffff\1\4\10\uffff\1\4\4\uffff"+
             "\1\4",
             "\1\4\1\uffff\1\4\2\uffff\1\4\1\uffff\16\4\1\13\17\4\1\uffff"+
-            "\1\4\4\uffff\5\4\2\uffff\2\4\51\uffff\1\4\10\uffff\1\4\4\uffff"+
+            "\1\4\4\uffff\5\4\2\uffff\2\4\53\uffff\1\4\10\uffff\1\4\4\uffff"+
             "\1\4",
             "\1\4\1\uffff\1\4\2\uffff\1\4\1\uffff\16\4\1\13\17\4\1\uffff"+
-            "\1\4\4\uffff\5\4\2\uffff\2\4\51\uffff\1\4\10\uffff\1\4\4\uffff"+
+            "\1\4\4\uffff\5\4\2\uffff\2\4\53\uffff\1\4\10\uffff\1\4\4\uffff"+
             "\1\4",
             ""
     };
@@ -22531,7 +22532,7 @@ public class ValaParser extends Parser {
             this.transition = DFA50_transition;
         }
         public String getDescription() {
-            return "419:2: ( identifier COLON )?";
+            return "421:2: ( identifier COLON )?";
         }
     }
     static final String DFA51_eotS =
@@ -22541,14 +22542,14 @@ public class ValaParser extends Parser {
     static final String DFA51_minS =
         "\1\5\2\0\36\uffff";
     static final String DFA51_maxS =
-        "\1\160\2\0\36\uffff";
+        "\1\162\2\0\36\uffff";
     static final String DFA51_acceptS =
         "\3\uffff\1\3\33\uffff\1\1\1\2";
     static final String DFA51_specialS =
         "\1\uffff\1\0\1\1\36\uffff}>";
     static final String[] DFA51_transitionS = {
             "\1\3\3\uffff\2\3\2\uffff\1\3\21\uffff\1\3\2\uffff\1\3\6\uffff"+
-            "\10\3\1\uffff\2\3\2\uffff\37\3\1\2\1\1\14\3\1\uffff\10\3\1\uffff"+
+            "\10\3\1\uffff\2\3\2\uffff\37\3\1\2\1\1\16\3\1\uffff\10\3\1\uffff"+
             "\1\3\1\uffff\2\3",
             "\1\uffff",
             "\1\uffff",
@@ -22614,7 +22615,7 @@ public class ValaParser extends Parser {
             this.transition = DFA51_transition;
         }
         public String getDescription() {
-            return "423:2: ( ( KW_REF ) | ( KW_OUT ) )?";
+            return "425:2: ( ( KW_REF ) | ( KW_OUT ) )?";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -22627,7 +22628,7 @@ public class ValaParser extends Parser {
                         int index51_1 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred161_Vala()) ) {s = 31;}
+                        if ( (synpred163_Vala()) ) {s = 31;}
 
                         else if ( (true) ) {s = 3;}
 
@@ -22642,7 +22643,7 @@ public class ValaParser extends Parser {
                         int index51_2 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred162_Vala()) ) {s = 32;}
+                        if ( (synpred164_Vala()) ) {s = 32;}
 
                         else if ( (true) ) {s = 3;}
 
@@ -22671,7 +22672,7 @@ public class ValaParser extends Parser {
     static final String DFA54_specialS =
         "\1\uffff\1\0\52\uffff}>";
     static final String[] DFA54_transitionS = {
-            "\10\2\1\1\50\2\2\uffff\54\2\7\uffff\2\2\13\uffff\1\2",
+            "\10\2\1\1\50\2\2\uffff\56\2\7\uffff\2\2\11\uffff\1\2",
             "\1\uffff",
             "",
             "",
@@ -22747,7 +22748,7 @@ public class ValaParser extends Parser {
             this.transition = DFA54_transition;
         }
         public String getDescription() {
-            return "452:2: ( object_creation_expression | array_creation_expression )";
+            return "454:2: ( object_creation_expression | array_creation_expression )";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -22760,7 +22761,7 @@ public class ValaParser extends Parser {
                         int index54_1 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred165_Vala()) ) {s = 43;}
+                        if ( (synpred167_Vala()) ) {s = 43;}
 
                         else if ( (true) ) {s = 2;}
 
@@ -22789,7 +22790,7 @@ public class ValaParser extends Parser {
     static final String DFA60_specialS =
         "\1\uffff\1\0\52\uffff}>";
     static final String[] DFA60_transitionS = {
-            "\6\2\1\1\52\2\2\uffff\54\2\7\uffff\2\2\13\uffff\1\2",
+            "\6\2\1\1\52\2\2\uffff\56\2\7\uffff\2\2\11\uffff\1\2",
             "\1\uffff",
             "",
             "",
@@ -22865,7 +22866,7 @@ public class ValaParser extends Parser {
             this.transition = DFA60_transition;
         }
         public String getDescription() {
-            return "480:2: ( LBRACKET ( array_size )? RBRACKET )?";
+            return "482:2: ( LBRACKET ( array_size )? RBRACKET )?";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -22878,7 +22879,7 @@ public class ValaParser extends Parser {
                         int index60_1 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred171_Vala()) ) {s = 43;}
+                        if ( (synpred173_Vala()) ) {s = 43;}
 
                         else if ( (true) ) {s = 2;}
 
@@ -22907,7 +22908,7 @@ public class ValaParser extends Parser {
     static final String DFA64_specialS =
         "\1\uffff\1\0\53\uffff}>";
     static final String[] DFA64_transitionS = {
-            "\40\2\1\1\20\2\2\uffff\54\2\7\uffff\2\2\13\uffff\1\2",
+            "\40\2\1\1\20\2\2\uffff\56\2\7\uffff\2\2\11\uffff\1\2",
             "\1\uffff",
             "",
             "",
@@ -22984,7 +22985,7 @@ public class ValaParser extends Parser {
             this.transition = DFA64_transition;
         }
         public String getDescription() {
-            return "498:2: ( type_arguments )?";
+            return "500:2: ( type_arguments )?";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -22997,7 +22998,7 @@ public class ValaParser extends Parser {
                         int index64_1 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred175_Vala()) ) {s = 44;}
+                        if ( (synpred177_Vala()) ) {s = 44;}
 
                         else if ( (true) ) {s = 2;}
 
@@ -23026,7 +23027,7 @@ public class ValaParser extends Parser {
     static final String DFA71_specialS =
         "\1\uffff\1\0\52\uffff}>";
     static final String[] DFA71_transitionS = {
-            "\40\2\1\1\20\2\2\uffff\54\2\10\uffff\1\2\13\uffff\1\2",
+            "\40\2\1\1\20\2\2\uffff\56\2\10\uffff\1\2\11\uffff\1\2",
             "\1\uffff",
             "",
             "",
@@ -23102,7 +23103,7 @@ public class ValaParser extends Parser {
             this.transition = DFA71_transition;
         }
         public String getDescription() {
-            return "529:42: ( type_arguments )?";
+            return "531:42: ( type_arguments )?";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -23115,7 +23116,7 @@ public class ValaParser extends Parser {
                         int index71_1 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred182_Vala()) ) {s = 43;}
+                        if ( (synpred184_Vala()) ) {s = 43;}
 
                         else if ( (true) ) {s = 2;}
 
@@ -23138,14 +23139,14 @@ public class ValaParser extends Parser {
     static final String DFA75_minS =
         "\1\5\23\uffff\1\0\11\uffff";
     static final String DFA75_maxS =
-        "\1\160\23\uffff\1\0\11\uffff";
+        "\1\162\23\uffff\1\0\11\uffff";
     static final String DFA75_acceptS =
         "\1\uffff\1\1\33\uffff\1\2";
     static final String DFA75_specialS =
         "\24\uffff\1\0\11\uffff}>";
     static final String[] DFA75_transitionS = {
             "\1\1\3\uffff\2\1\2\uffff\1\1\21\uffff\1\1\2\uffff\1\1\6\uffff"+
-            "\10\1\1\uffff\2\1\2\uffff\55\1\1\uffff\7\1\1\24\1\uffff\1\1"+
+            "\10\1\1\uffff\2\1\2\uffff\57\1\1\uffff\7\1\1\24\1\uffff\1\1"+
             "\1\uffff\2\1",
             "",
             "",
@@ -23208,7 +23209,7 @@ public class ValaParser extends Parser {
             this.transition = DFA75_transition;
         }
         public String getDescription() {
-            return "544:1: lambda_expression_body : ( expression | block );";
+            return "546:1: lambda_expression_body : ( expression | block );";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -23221,7 +23222,7 @@ public class ValaParser extends Parser {
                         int index75_20 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred186_Vala()) ) {s = 1;}
+                        if ( (synpred188_Vala()) ) {s = 1;}
 
                         else if ( (true) ) {s = 29;}
 
@@ -23238,24 +23239,24 @@ public class ValaParser extends Parser {
         }
     }
     static final String DFA87_eotS =
-        "\35\uffff";
+        "\36\uffff";
     static final String DFA87_eofS =
-        "\35\uffff";
+        "\36\uffff";
     static final String DFA87_minS =
-        "\1\5\6\0\1\uffff\7\0\2\uffff\2\0\12\uffff";
+        "\1\5\6\0\1\uffff\10\0\1\uffff\2\0\13\uffff";
     static final String DFA87_maxS =
-        "\1\170\6\0\1\uffff\7\0\2\uffff\2\0\12\uffff";
+        "\1\170\6\0\1\uffff\10\0\1\uffff\2\0\13\uffff";
     static final String DFA87_acceptS =
-        "\7\uffff\1\4\7\uffff\1\6\1\10\2\uffff\1\14\1\15\1\1\1\2\1\3\1\5"+
-        "\1\7\1\11\1\13\1\12";
+        "\7\uffff\1\4\10\uffff\1\10\2\uffff\1\14\1\15\1\1\1\2\1\3\1\5\1"+
+        "\6\1\7\1\11\1\13\1\12";
     static final String DFA87_specialS =
         "\1\uffff\1\0\1\1\1\2\1\3\1\4\1\5\1\uffff\1\6\1\7\1\10\1\11\1\12"+
-        "\1\13\1\14\2\uffff\1\15\1\16\12\uffff}>";
+        "\1\13\1\14\1\15\1\uffff\1\16\1\17\13\uffff}>";
     static final String[] DFA87_transitionS = {
             "\1\24\3\uffff\1\14\1\15\24\uffff\1\24\11\uffff\2\24\1\11\1"+
             "\uffff\1\12\3\13\6\uffff\1\23\2\uffff\1\22\5\24\1\10\3\24\1"+
-            "\21\1\3\1\4\1\2\1\6\1\16\1\2\2\6\4\1\1\5\21\24\23\uffff\1\7"+
-            "\1\17\1\20",
+            "\21\1\3\1\4\1\2\1\6\1\16\1\2\2\6\4\1\1\5\21\24\1\17\1\24\22"+
+            "\uffff\1\7\1\20",
             "\1\uffff",
             "\1\uffff",
             "\1\uffff",
@@ -23270,10 +23271,11 @@ public class ValaParser extends Parser {
             "\1\uffff",
             "\1\uffff",
             "\1\uffff",
-            "",
+            "\1\uffff",
             "",
             "\1\uffff",
             "\1\uffff",
+            "",
             "",
             "",
             "",
@@ -23316,7 +23318,7 @@ public class ValaParser extends Parser {
             this.transition = DFA87_transition;
         }
         public String getDescription() {
-            return "612:2: ( class_declaration | struct_declaration | enum_declaration | delegate_declaration | method_declaration | signal_declaration | field_declaration | constant_declaration | property_declaration | constructor_declaration | creation_method_declaration | destructor_declaration | unknown_chain )";
+            return "614:2: ( class_declaration | struct_declaration | enum_declaration | delegate_declaration | method_declaration | signal_declaration | field_declaration | constant_declaration | property_declaration | constructor_declaration | creation_method_declaration | destructor_declaration | unknown_chain )";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -23329,25 +23331,25 @@ public class ValaParser extends Parser {
                         int index87_1 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred213_Vala()) ) {s = 21;}
+                        if ( (synpred215_Vala()) ) {s = 21;}
 
-                        else if ( (synpred214_Vala()) ) {s = 22;}
+                        else if ( (synpred216_Vala()) ) {s = 22;}
 
-                        else if ( (synpred215_Vala()) ) {s = 23;}
+                        else if ( (synpred217_Vala()) ) {s = 23;}
 
-                        else if ( (synpred216_Vala()) ) {s = 7;}
+                        else if ( (synpred218_Vala()) ) {s = 7;}
 
-                        else if ( (synpred217_Vala()) ) {s = 24;}
+                        else if ( (synpred219_Vala()) ) {s = 24;}
 
-                        else if ( (synpred218_Vala()) ) {s = 15;}
-
-                        else if ( (synpred219_Vala()) ) {s = 25;}
-
-                        else if ( (synpred220_Vala()) ) {s = 16;}
+                        else if ( (synpred220_Vala()) ) {s = 25;}
 
                         else if ( (synpred221_Vala()) ) {s = 26;}
 
+                        else if ( (synpred222_Vala()) ) {s = 16;}
+
                         else if ( (synpred223_Vala()) ) {s = 27;}
+
+                        else if ( (synpred225_Vala()) ) {s = 28;}
 
                         else if ( (true) ) {s = 20;}
 
@@ -23362,29 +23364,29 @@ public class ValaParser extends Parser {
                         int index87_2 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred213_Vala()) ) {s = 21;}
+                        if ( (synpred215_Vala()) ) {s = 21;}
 
-                        else if ( (synpred214_Vala()) ) {s = 22;}
+                        else if ( (synpred216_Vala()) ) {s = 22;}
 
-                        else if ( (synpred215_Vala()) ) {s = 23;}
+                        else if ( (synpred217_Vala()) ) {s = 23;}
 
-                        else if ( (synpred216_Vala()) ) {s = 7;}
+                        else if ( (synpred218_Vala()) ) {s = 7;}
 
-                        else if ( (synpred217_Vala()) ) {s = 24;}
+                        else if ( (synpred219_Vala()) ) {s = 24;}
 
-                        else if ( (synpred218_Vala()) ) {s = 15;}
-
-                        else if ( (synpred219_Vala()) ) {s = 25;}
-
-                        else if ( (synpred220_Vala()) ) {s = 16;}
+                        else if ( (synpred220_Vala()) ) {s = 25;}
 
                         else if ( (synpred221_Vala()) ) {s = 26;}
 
-                        else if ( (synpred222_Vala()) ) {s = 28;}
+                        else if ( (synpred222_Vala()) ) {s = 16;}
 
                         else if ( (synpred223_Vala()) ) {s = 27;}
 
-                        else if ( (synpred224_Vala()) ) {s = 19;}
+                        else if ( (synpred224_Vala()) ) {s = 29;}
+
+                        else if ( (synpred225_Vala()) ) {s = 28;}
+
+                        else if ( (synpred226_Vala()) ) {s = 19;}
 
                         else if ( (true) ) {s = 20;}
 
@@ -23399,23 +23401,23 @@ public class ValaParser extends Parser {
                         int index87_3 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred213_Vala()) ) {s = 21;}
+                        if ( (synpred215_Vala()) ) {s = 21;}
 
-                        else if ( (synpred216_Vala()) ) {s = 7;}
+                        else if ( (synpred218_Vala()) ) {s = 7;}
 
-                        else if ( (synpred217_Vala()) ) {s = 24;}
-
-                        else if ( (synpred219_Vala()) ) {s = 25;}
-
-                        else if ( (synpred220_Vala()) ) {s = 16;}
+                        else if ( (synpred219_Vala()) ) {s = 24;}
 
                         else if ( (synpred221_Vala()) ) {s = 26;}
 
-                        else if ( (synpred222_Vala()) ) {s = 28;}
+                        else if ( (synpred222_Vala()) ) {s = 16;}
 
                         else if ( (synpred223_Vala()) ) {s = 27;}
 
-                        else if ( (synpred224_Vala()) ) {s = 19;}
+                        else if ( (synpred224_Vala()) ) {s = 29;}
+
+                        else if ( (synpred225_Vala()) ) {s = 28;}
+
+                        else if ( (synpred226_Vala()) ) {s = 19;}
 
                         else if ( (true) ) {s = 20;}
 
@@ -23430,7 +23432,7 @@ public class ValaParser extends Parser {
                         int index87_4 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred214_Vala()) ) {s = 22;}
+                        if ( (synpred216_Vala()) ) {s = 22;}
 
                         else if ( (true) ) {s = 20;}
 
@@ -23445,7 +23447,7 @@ public class ValaParser extends Parser {
                         int index87_5 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred215_Vala()) ) {s = 23;}
+                        if ( (synpred217_Vala()) ) {s = 23;}
 
                         else if ( (true) ) {s = 20;}
 
@@ -23460,23 +23462,23 @@ public class ValaParser extends Parser {
                         int index87_6 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred216_Vala()) ) {s = 7;}
+                        if ( (synpred218_Vala()) ) {s = 7;}
 
-                        else if ( (synpred217_Vala()) ) {s = 24;}
+                        else if ( (synpred219_Vala()) ) {s = 24;}
 
-                        else if ( (synpred218_Vala()) ) {s = 15;}
-
-                        else if ( (synpred219_Vala()) ) {s = 25;}
-
-                        else if ( (synpred220_Vala()) ) {s = 16;}
+                        else if ( (synpred220_Vala()) ) {s = 25;}
 
                         else if ( (synpred221_Vala()) ) {s = 26;}
 
-                        else if ( (synpred222_Vala()) ) {s = 28;}
+                        else if ( (synpred222_Vala()) ) {s = 16;}
 
                         else if ( (synpred223_Vala()) ) {s = 27;}
 
-                        else if ( (synpred224_Vala()) ) {s = 19;}
+                        else if ( (synpred224_Vala()) ) {s = 29;}
+
+                        else if ( (synpred225_Vala()) ) {s = 28;}
+
+                        else if ( (synpred226_Vala()) ) {s = 19;}
 
                         else if ( (true) ) {s = 20;}
 
@@ -23491,15 +23493,15 @@ public class ValaParser extends Parser {
                         int index87_8 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred217_Vala()) ) {s = 24;}
+                        if ( (synpred219_Vala()) ) {s = 24;}
 
-                        else if ( (synpred218_Vala()) ) {s = 15;}
-
-                        else if ( (synpred219_Vala()) ) {s = 25;}
-
-                        else if ( (synpred220_Vala()) ) {s = 16;}
+                        else if ( (synpred220_Vala()) ) {s = 25;}
 
                         else if ( (synpred221_Vala()) ) {s = 26;}
+
+                        else if ( (synpred222_Vala()) ) {s = 16;}
+
+                        else if ( (synpred223_Vala()) ) {s = 27;}
 
                         else if ( (true) ) {s = 20;}
 
@@ -23514,11 +23516,11 @@ public class ValaParser extends Parser {
                         int index87_9 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred217_Vala()) ) {s = 24;}
-
-                        else if ( (synpred219_Vala()) ) {s = 25;}
+                        if ( (synpred219_Vala()) ) {s = 24;}
 
                         else if ( (synpred221_Vala()) ) {s = 26;}
+
+                        else if ( (synpred223_Vala()) ) {s = 27;}
 
                         else if ( (true) ) {s = 20;}
 
@@ -23533,11 +23535,11 @@ public class ValaParser extends Parser {
                         int index87_10 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred217_Vala()) ) {s = 24;}
-
-                        else if ( (synpred219_Vala()) ) {s = 25;}
+                        if ( (synpred219_Vala()) ) {s = 24;}
 
                         else if ( (synpred221_Vala()) ) {s = 26;}
+
+                        else if ( (synpred223_Vala()) ) {s = 27;}
 
                         else if ( (true) ) {s = 20;}
 
@@ -23552,11 +23554,11 @@ public class ValaParser extends Parser {
                         int index87_11 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred217_Vala()) ) {s = 24;}
-
-                        else if ( (synpred219_Vala()) ) {s = 25;}
+                        if ( (synpred219_Vala()) ) {s = 24;}
 
                         else if ( (synpred221_Vala()) ) {s = 26;}
+
+                        else if ( (synpred223_Vala()) ) {s = 27;}
 
                         else if ( (true) ) {s = 20;}
 
@@ -23571,13 +23573,13 @@ public class ValaParser extends Parser {
                         int index87_12 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred217_Vala()) ) {s = 24;}
-
-                        else if ( (synpred219_Vala()) ) {s = 25;}
+                        if ( (synpred219_Vala()) ) {s = 24;}
 
                         else if ( (synpred221_Vala()) ) {s = 26;}
 
                         else if ( (synpred223_Vala()) ) {s = 27;}
+
+                        else if ( (synpred225_Vala()) ) {s = 28;}
 
                          
                         input.seek(index87_12);
@@ -23590,13 +23592,13 @@ public class ValaParser extends Parser {
                         int index87_13 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred217_Vala()) ) {s = 24;}
-
-                        else if ( (synpred219_Vala()) ) {s = 25;}
+                        if ( (synpred219_Vala()) ) {s = 24;}
 
                         else if ( (synpred221_Vala()) ) {s = 26;}
 
                         else if ( (synpred223_Vala()) ) {s = 27;}
+
+                        else if ( (synpred225_Vala()) ) {s = 28;}
 
                         else if ( (true) ) {s = 20;}
 
@@ -23611,27 +23613,27 @@ public class ValaParser extends Parser {
                         int index87_14 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred213_Vala()) ) {s = 21;}
+                        if ( (synpred215_Vala()) ) {s = 21;}
 
-                        else if ( (synpred214_Vala()) ) {s = 22;}
+                        else if ( (synpred216_Vala()) ) {s = 22;}
 
-                        else if ( (synpred215_Vala()) ) {s = 23;}
+                        else if ( (synpred217_Vala()) ) {s = 23;}
 
-                        else if ( (synpred216_Vala()) ) {s = 7;}
+                        else if ( (synpred218_Vala()) ) {s = 7;}
 
-                        else if ( (synpred217_Vala()) ) {s = 24;}
-
-                        else if ( (synpred219_Vala()) ) {s = 25;}
-
-                        else if ( (synpred220_Vala()) ) {s = 16;}
+                        else if ( (synpred219_Vala()) ) {s = 24;}
 
                         else if ( (synpred221_Vala()) ) {s = 26;}
 
-                        else if ( (synpred222_Vala()) ) {s = 28;}
+                        else if ( (synpred222_Vala()) ) {s = 16;}
 
                         else if ( (synpred223_Vala()) ) {s = 27;}
 
-                        else if ( (synpred224_Vala()) ) {s = 19;}
+                        else if ( (synpred224_Vala()) ) {s = 29;}
+
+                        else if ( (synpred225_Vala()) ) {s = 28;}
+
+                        else if ( (synpred226_Vala()) ) {s = 19;}
 
                         else if ( (true) ) {s = 20;}
 
@@ -23640,27 +23642,42 @@ public class ValaParser extends Parser {
                         if ( s>=0 ) return s;
                         break;
                     case 13 : 
+                        int LA87_15 = input.LA(1);
+
+                         
+                        int index87_15 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( (synpred220_Vala()) ) {s = 25;}
+
+                        else if ( (true) ) {s = 20;}
+
+                         
+                        input.seek(index87_15);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 14 : 
                         int LA87_17 = input.LA(1);
 
                          
                         int index87_17 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred216_Vala()) ) {s = 7;}
+                        if ( (synpred218_Vala()) ) {s = 7;}
 
-                        else if ( (synpred217_Vala()) ) {s = 24;}
+                        else if ( (synpred219_Vala()) ) {s = 24;}
 
-                        else if ( (synpred218_Vala()) ) {s = 15;}
+                        else if ( (synpred220_Vala()) ) {s = 25;}
 
-                        else if ( (synpred219_Vala()) ) {s = 25;}
+                        else if ( (synpred221_Vala()) ) {s = 26;}
 
-                        else if ( (synpred220_Vala()) ) {s = 16;}
+                        else if ( (synpred222_Vala()) ) {s = 16;}
 
-                        else if ( (synpred222_Vala()) ) {s = 28;}
+                        else if ( (synpred224_Vala()) ) {s = 29;}
 
-                        else if ( (synpred223_Vala()) ) {s = 27;}
+                        else if ( (synpred225_Vala()) ) {s = 28;}
 
-                        else if ( (synpred224_Vala()) ) {s = 19;}
+                        else if ( (synpred226_Vala()) ) {s = 19;}
 
                         else if ( (true) ) {s = 20;}
 
@@ -23668,14 +23685,14 @@ public class ValaParser extends Parser {
                         input.seek(index87_17);
                         if ( s>=0 ) return s;
                         break;
-                    case 14 : 
+                    case 15 : 
                         int LA87_18 = input.LA(1);
 
                          
                         int index87_18 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred222_Vala()) ) {s = 28;}
+                        if ( (synpred224_Vala()) ) {s = 29;}
 
                         else if ( (true) ) {s = 20;}
 
@@ -23705,8 +23722,8 @@ public class ValaParser extends Parser {
         "\1\uffff\1\0\1\1\1\2\1\3\1\4\1\5\1\uffff\1\6\1\uffff\1\7\1\uffff}>";
     static final String[] DFA94_transitionS = {
             "\1\12\3\uffff\1\7\1\10\1\1\23\uffff\1\12\11\uffff\2\12\1\4"+
-            "\1\uffff\1\5\3\6\11\uffff\6\12\1\3\3\12\2\3\1\12\6\3\4\2\22"+
-            "\12\25\uffff\1\7",
+            "\1\uffff\1\5\3\6\11\uffff\6\12\1\3\3\12\2\3\1\12\6\3\4\2\24"+
+            "\12\23\uffff\1\7",
             "\1\uffff",
             "\1\uffff",
             "\1\uffff",
@@ -23750,7 +23767,7 @@ public class ValaParser extends Parser {
             this.transition = DFA94_transition;
         }
         public String getDescription() {
-            return "652:1: enum_member : ( ( ( attributes )? ( method_declaration | constant_declaration | unknown_chain ) ) | ( enum_values ) );";
+            return "654:1: enum_member : ( ( ( attributes )? ( method_declaration | constant_declaration | unknown_chain ) ) | ( enum_values ) );";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -23763,7 +23780,7 @@ public class ValaParser extends Parser {
                         int index94_1 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred237_Vala()) ) {s = 7;}
+                        if ( (synpred239_Vala()) ) {s = 7;}
 
                         else if ( (true) ) {s = 11;}
 
@@ -23778,7 +23795,7 @@ public class ValaParser extends Parser {
                         int index94_2 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred237_Vala()) ) {s = 7;}
+                        if ( (synpred239_Vala()) ) {s = 7;}
 
                         else if ( (true) ) {s = 11;}
 
@@ -23793,7 +23810,7 @@ public class ValaParser extends Parser {
                         int index94_3 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred237_Vala()) ) {s = 7;}
+                        if ( (synpred239_Vala()) ) {s = 7;}
 
                         else if ( (true) ) {s = 11;}
 
@@ -23808,7 +23825,7 @@ public class ValaParser extends Parser {
                         int index94_4 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred237_Vala()) ) {s = 7;}
+                        if ( (synpred239_Vala()) ) {s = 7;}
 
                         else if ( (true) ) {s = 11;}
 
@@ -23823,7 +23840,7 @@ public class ValaParser extends Parser {
                         int index94_5 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred237_Vala()) ) {s = 7;}
+                        if ( (synpred239_Vala()) ) {s = 7;}
 
                         else if ( (true) ) {s = 11;}
 
@@ -23838,7 +23855,7 @@ public class ValaParser extends Parser {
                         int index94_6 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred237_Vala()) ) {s = 7;}
+                        if ( (synpred239_Vala()) ) {s = 7;}
 
                         else if ( (true) ) {s = 11;}
 
@@ -23853,7 +23870,7 @@ public class ValaParser extends Parser {
                         int index94_8 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred237_Vala()) ) {s = 7;}
+                        if ( (synpred239_Vala()) ) {s = 7;}
 
                         else if ( (true) ) {s = 11;}
 
@@ -23868,7 +23885,7 @@ public class ValaParser extends Parser {
                         int index94_10 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred237_Vala()) ) {s = 7;}
+                        if ( (synpred239_Vala()) ) {s = 7;}
 
                         else if ( (true) ) {s = 11;}
 
@@ -23891,34 +23908,34 @@ public class ValaParser extends Parser {
     static final String DFA93_minS =
         "\6\5\1\uffff\1\5\2\uffff\1\5";
     static final String DFA93_maxS =
-        "\3\170\3\142\1\uffff\1\142\2\uffff\1\142";
+        "\3\170\3\144\1\uffff\1\144\2\uffff\1\144";
     static final String DFA93_acceptS =
         "\6\uffff\1\1\1\uffff\1\2\1\3\1\uffff";
     static final String DFA93_specialS =
         "\13\uffff}>";
     static final String[] DFA93_transitionS = {
             "\1\11\3\uffff\1\6\1\7\24\uffff\1\11\11\uffff\2\11\1\3\1\uffff"+
-            "\1\4\3\5\11\uffff\6\11\1\2\3\11\2\2\1\11\6\2\4\1\22\11\25\uffff"+
+            "\1\4\3\5\11\uffff\6\11\1\2\3\11\2\2\1\11\6\2\4\1\24\11\23\uffff"+
             "\1\10",
             "\1\11\1\uffff\1\11\1\uffff\1\6\1\7\24\uffff\1\11\11\uffff"+
             "\2\11\1\3\1\uffff\1\4\3\5\11\uffff\6\11\1\2\3\11\2\2\1\11\6"+
-            "\2\26\11\25\uffff\1\10",
+            "\2\30\11\23\uffff\1\10",
             "\1\11\1\uffff\1\11\1\uffff\1\6\1\7\24\uffff\1\11\11\uffff"+
             "\2\11\1\3\1\uffff\1\4\3\5\11\uffff\6\11\1\2\3\11\2\2\1\11\6"+
-            "\2\26\11\25\uffff\1\10",
+            "\2\30\11\23\uffff\1\10",
             "\1\12\1\uffff\1\11\2\uffff\1\12\24\uffff\1\12\11\uffff\3\12"+
-            "\1\6\4\12\11\uffff\51\12",
+            "\1\6\4\12\11\uffff\53\12",
             "\1\11\1\uffff\1\11\1\uffff\1\6\1\7\24\uffff\1\11\11\uffff"+
-            "\3\11\1\uffff\1\11\3\5\11\uffff\51\11",
+            "\3\11\1\uffff\1\11\3\5\11\uffff\53\11",
             "\1\11\1\uffff\1\11\1\uffff\1\6\1\7\24\uffff\1\11\11\uffff"+
-            "\3\11\1\uffff\4\11\11\uffff\51\11",
+            "\3\11\1\uffff\4\11\11\uffff\53\11",
             "",
             "\1\12\1\uffff\1\11\1\6\1\uffff\1\12\1\6\16\uffff\1\6\4\uffff"+
-            "\1\12\5\uffff\1\6\3\uffff\3\12\1\6\4\12\11\uffff\51\12",
+            "\1\12\5\uffff\1\6\3\uffff\3\12\1\6\4\12\11\uffff\53\12",
             "",
             "",
             "\1\11\1\uffff\1\11\2\uffff\1\11\2\uffff\1\6\21\uffff\1\11"+
-            "\5\uffff\1\6\3\uffff\3\11\1\uffff\4\11\11\uffff\51\11"
+            "\5\uffff\1\6\3\uffff\3\11\1\uffff\4\11\11\uffff\53\11"
     };
 
     static final short[] DFA93_eot = DFA.unpackEncodedString(DFA93_eotS);
@@ -23951,7 +23968,7 @@ public class ValaParser extends Parser {
             this.transition = DFA93_transition;
         }
         public String getDescription() {
-            return "656:3: ( method_declaration | constant_declaration | unknown_chain )";
+            return "658:3: ( method_declaration | constant_declaration | unknown_chain )";
         }
     }
     static final String DFA95_eotS =
@@ -23968,7 +23985,7 @@ public class ValaParser extends Parser {
         "\1\uffff\1\0\16\uffff}>";
     static final String[] DFA95_transitionS = {
             "\1\2\1\1\1\2\1\uffff\3\2\23\uffff\1\2\11\uffff\3\2\1\uffff"+
-            "\4\2\11\uffff\51\2\11\uffff\1\2\13\uffff\1\2",
+            "\4\2\11\uffff\53\2\11\uffff\1\2\11\uffff\1\2",
             "\1\uffff",
             "",
             "",
@@ -24016,7 +24033,7 @@ public class ValaParser extends Parser {
             this.transition = DFA95_transition;
         }
         public String getDescription() {
-            return "()* loopback of 668:2: ( COMMA enum_value )*";
+            return "()* loopback of 670:2: ( COMMA enum_value )*";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -24029,7 +24046,7 @@ public class ValaParser extends Parser {
                         int index95_1 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred238_Vala()) ) {s = 15;}
+                        if ( (synpred240_Vala()) ) {s = 15;}
 
                         else if ( (true) ) {s = 2;}
 
@@ -24061,8 +24078,8 @@ public class ValaParser extends Parser {
         "\11\1\12\2\uffff\1\13\4\uffff}>";
     static final String[] DFA115_transitionS = {
             "\1\14\1\15\40\uffff\1\11\1\uffff\1\12\3\13\17\uffff\1\10\3"+
-            "\uffff\1\21\1\3\1\4\1\2\1\6\1\16\1\2\2\6\4\1\1\5\44\uffff\1"+
-            "\7\1\17\1\20",
+            "\uffff\1\21\1\3\1\4\1\2\1\6\1\16\1\2\2\6\4\1\1\5\21\uffff\1"+
+            "\17\23\uffff\1\7\1\20",
             "\1\uffff",
             "\1\uffff",
             "\1\uffff",
@@ -24116,7 +24133,7 @@ public class ValaParser extends Parser {
             this.transition = DFA115_transition;
         }
         public String getDescription() {
-            return "719:2: ( class_declaration | struct_declaration | enum_declaration | delegate_declaration | method_declaration | signal_declaration | field_declaration | constant_declaration | property_declaration )";
+            return "721:2: ( class_declaration | struct_declaration | enum_declaration | delegate_declaration | method_declaration | signal_declaration | field_declaration | constant_declaration | property_declaration )";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -24129,21 +24146,21 @@ public class ValaParser extends Parser {
                         int index115_1 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred258_Vala()) ) {s = 18;}
+                        if ( (synpred260_Vala()) ) {s = 18;}
 
-                        else if ( (synpred259_Vala()) ) {s = 4;}
+                        else if ( (synpred261_Vala()) ) {s = 4;}
 
-                        else if ( (synpred260_Vala()) ) {s = 5;}
+                        else if ( (synpred262_Vala()) ) {s = 5;}
 
-                        else if ( (synpred261_Vala()) ) {s = 7;}
+                        else if ( (synpred263_Vala()) ) {s = 7;}
 
-                        else if ( (synpred262_Vala()) ) {s = 19;}
+                        else if ( (synpred264_Vala()) ) {s = 19;}
 
-                        else if ( (synpred263_Vala()) ) {s = 15;}
+                        else if ( (synpred265_Vala()) ) {s = 15;}
 
-                        else if ( (synpred264_Vala()) ) {s = 20;}
+                        else if ( (synpred266_Vala()) ) {s = 20;}
 
-                        else if ( (synpred265_Vala()) ) {s = 16;}
+                        else if ( (synpred267_Vala()) ) {s = 16;}
 
                         else if ( (true) ) {s = 21;}
 
@@ -24158,21 +24175,21 @@ public class ValaParser extends Parser {
                         int index115_2 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred258_Vala()) ) {s = 18;}
+                        if ( (synpred260_Vala()) ) {s = 18;}
 
-                        else if ( (synpred259_Vala()) ) {s = 4;}
+                        else if ( (synpred261_Vala()) ) {s = 4;}
 
-                        else if ( (synpred260_Vala()) ) {s = 5;}
+                        else if ( (synpred262_Vala()) ) {s = 5;}
 
-                        else if ( (synpred261_Vala()) ) {s = 7;}
+                        else if ( (synpred263_Vala()) ) {s = 7;}
 
-                        else if ( (synpred262_Vala()) ) {s = 19;}
+                        else if ( (synpred264_Vala()) ) {s = 19;}
 
-                        else if ( (synpred263_Vala()) ) {s = 15;}
+                        else if ( (synpred265_Vala()) ) {s = 15;}
 
-                        else if ( (synpred264_Vala()) ) {s = 20;}
+                        else if ( (synpred266_Vala()) ) {s = 20;}
 
-                        else if ( (synpred265_Vala()) ) {s = 16;}
+                        else if ( (synpred267_Vala()) ) {s = 16;}
 
                         else if ( (true) ) {s = 21;}
 
@@ -24187,15 +24204,15 @@ public class ValaParser extends Parser {
                         int index115_3 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred258_Vala()) ) {s = 18;}
+                        if ( (synpred260_Vala()) ) {s = 18;}
 
-                        else if ( (synpred261_Vala()) ) {s = 7;}
+                        else if ( (synpred263_Vala()) ) {s = 7;}
 
-                        else if ( (synpred262_Vala()) ) {s = 19;}
+                        else if ( (synpred264_Vala()) ) {s = 19;}
 
-                        else if ( (synpred264_Vala()) ) {s = 20;}
+                        else if ( (synpred266_Vala()) ) {s = 20;}
 
-                        else if ( (synpred265_Vala()) ) {s = 16;}
+                        else if ( (synpred267_Vala()) ) {s = 16;}
 
                         else if ( (true) ) {s = 21;}
 
@@ -24210,15 +24227,15 @@ public class ValaParser extends Parser {
                         int index115_6 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred261_Vala()) ) {s = 7;}
+                        if ( (synpred263_Vala()) ) {s = 7;}
 
-                        else if ( (synpred262_Vala()) ) {s = 19;}
+                        else if ( (synpred264_Vala()) ) {s = 19;}
 
-                        else if ( (synpred263_Vala()) ) {s = 15;}
+                        else if ( (synpred265_Vala()) ) {s = 15;}
 
-                        else if ( (synpred264_Vala()) ) {s = 20;}
+                        else if ( (synpred266_Vala()) ) {s = 20;}
 
-                        else if ( (synpred265_Vala()) ) {s = 16;}
+                        else if ( (synpred267_Vala()) ) {s = 16;}
 
                         else if ( (true) ) {s = 21;}
 
@@ -24233,13 +24250,13 @@ public class ValaParser extends Parser {
                         int index115_8 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred262_Vala()) ) {s = 19;}
+                        if ( (synpred264_Vala()) ) {s = 19;}
 
-                        else if ( (synpred263_Vala()) ) {s = 15;}
+                        else if ( (synpred265_Vala()) ) {s = 15;}
 
-                        else if ( (synpred264_Vala()) ) {s = 20;}
+                        else if ( (synpred266_Vala()) ) {s = 20;}
 
-                        else if ( (synpred265_Vala()) ) {s = 16;}
+                        else if ( (synpred267_Vala()) ) {s = 16;}
 
                         else if ( (true) ) {s = 21;}
 
@@ -24254,9 +24271,9 @@ public class ValaParser extends Parser {
                         int index115_9 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred262_Vala()) ) {s = 19;}
+                        if ( (synpred264_Vala()) ) {s = 19;}
 
-                        else if ( (synpred264_Vala()) ) {s = 20;}
+                        else if ( (synpred266_Vala()) ) {s = 20;}
 
                         else if ( (true) ) {s = 21;}
 
@@ -24271,9 +24288,9 @@ public class ValaParser extends Parser {
                         int index115_10 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred262_Vala()) ) {s = 19;}
+                        if ( (synpred264_Vala()) ) {s = 19;}
 
-                        else if ( (synpred264_Vala()) ) {s = 20;}
+                        else if ( (synpred266_Vala()) ) {s = 20;}
 
                         else if ( (true) ) {s = 21;}
 
@@ -24288,9 +24305,9 @@ public class ValaParser extends Parser {
                         int index115_11 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred262_Vala()) ) {s = 19;}
+                        if ( (synpred264_Vala()) ) {s = 19;}
 
-                        else if ( (synpred264_Vala()) ) {s = 20;}
+                        else if ( (synpred266_Vala()) ) {s = 20;}
 
                         else if ( (true) ) {s = 21;}
 
@@ -24305,9 +24322,9 @@ public class ValaParser extends Parser {
                         int index115_12 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred262_Vala()) ) {s = 19;}
+                        if ( (synpred264_Vala()) ) {s = 19;}
 
-                        else if ( (synpred264_Vala()) ) {s = 20;}
+                        else if ( (synpred266_Vala()) ) {s = 20;}
 
                         else if ( (true) ) {s = 21;}
 
@@ -24322,9 +24339,9 @@ public class ValaParser extends Parser {
                         int index115_13 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred262_Vala()) ) {s = 19;}
+                        if ( (synpred264_Vala()) ) {s = 19;}
 
-                        else if ( (synpred264_Vala()) ) {s = 20;}
+                        else if ( (synpred266_Vala()) ) {s = 20;}
 
                         else if ( (true) ) {s = 21;}
 
@@ -24339,19 +24356,19 @@ public class ValaParser extends Parser {
                         int index115_14 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred258_Vala()) ) {s = 18;}
+                        if ( (synpred260_Vala()) ) {s = 18;}
 
-                        else if ( (synpred259_Vala()) ) {s = 4;}
+                        else if ( (synpred261_Vala()) ) {s = 4;}
 
-                        else if ( (synpred260_Vala()) ) {s = 5;}
+                        else if ( (synpred262_Vala()) ) {s = 5;}
 
-                        else if ( (synpred261_Vala()) ) {s = 7;}
+                        else if ( (synpred263_Vala()) ) {s = 7;}
 
-                        else if ( (synpred262_Vala()) ) {s = 19;}
+                        else if ( (synpred264_Vala()) ) {s = 19;}
 
-                        else if ( (synpred264_Vala()) ) {s = 20;}
+                        else if ( (synpred266_Vala()) ) {s = 20;}
 
-                        else if ( (synpred265_Vala()) ) {s = 16;}
+                        else if ( (synpred267_Vala()) ) {s = 16;}
 
                         else if ( (true) ) {s = 21;}
 
@@ -24366,15 +24383,15 @@ public class ValaParser extends Parser {
                         int index115_17 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred261_Vala()) ) {s = 7;}
+                        if ( (synpred263_Vala()) ) {s = 7;}
 
-                        else if ( (synpred262_Vala()) ) {s = 19;}
+                        else if ( (synpred264_Vala()) ) {s = 19;}
 
-                        else if ( (synpred263_Vala()) ) {s = 15;}
+                        else if ( (synpred265_Vala()) ) {s = 15;}
 
-                        else if ( (synpred264_Vala()) ) {s = 20;}
+                        else if ( (synpred266_Vala()) ) {s = 20;}
 
-                        else if ( (synpred265_Vala()) ) {s = 16;}
+                        else if ( (synpred267_Vala()) ) {s = 16;}
 
                          
                         input.seek(index115_17);
@@ -24402,8 +24419,8 @@ public class ValaParser extends Parser {
         "\1\uffff\1\0\1\1\1\2\1\3\1\4\1\5\1\6\1\uffff\1\7\1\10\5\uffff}>";
     static final String[] DFA123_transitionS = {
             "\1\13\3\uffff\1\6\1\7\24\uffff\1\13\11\uffff\2\13\1\3\1\uffff"+
-            "\1\4\3\5\11\uffff\6\13\1\12\3\13\1\11\1\2\1\13\6\2\4\1\22\13"+
-            "\25\uffff\1\10",
+            "\1\4\3\5\11\uffff\6\13\1\12\3\13\1\11\1\2\1\13\6\2\4\1\24\13"+
+            "\23\uffff\1\10",
             "\1\uffff",
             "\1\uffff",
             "\1\uffff",
@@ -24451,7 +24468,7 @@ public class ValaParser extends Parser {
             this.transition = DFA123_transition;
         }
         public String getDescription() {
-            return "753:2: ( method_declaration | field_declaration | constant_declaration | property_declaration | creation_method_declaration | unknown_chain )";
+            return "755:2: ( method_declaration | field_declaration | constant_declaration | property_declaration | creation_method_declaration | unknown_chain )";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -24464,15 +24481,15 @@ public class ValaParser extends Parser {
                         int index123_1 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred273_Vala()) ) {s = 12;}
+                        if ( (synpred275_Vala()) ) {s = 12;}
 
-                        else if ( (synpred274_Vala()) ) {s = 13;}
+                        else if ( (synpred276_Vala()) ) {s = 13;}
 
-                        else if ( (synpred275_Vala()) ) {s = 8;}
+                        else if ( (synpred277_Vala()) ) {s = 8;}
 
-                        else if ( (synpred276_Vala()) ) {s = 14;}
+                        else if ( (synpred278_Vala()) ) {s = 14;}
 
-                        else if ( (synpred277_Vala()) ) {s = 15;}
+                        else if ( (synpred279_Vala()) ) {s = 15;}
 
                         else if ( (true) ) {s = 11;}
 
@@ -24487,15 +24504,15 @@ public class ValaParser extends Parser {
                         int index123_2 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred273_Vala()) ) {s = 12;}
+                        if ( (synpred275_Vala()) ) {s = 12;}
 
-                        else if ( (synpred274_Vala()) ) {s = 13;}
+                        else if ( (synpred276_Vala()) ) {s = 13;}
 
-                        else if ( (synpred275_Vala()) ) {s = 8;}
+                        else if ( (synpred277_Vala()) ) {s = 8;}
 
-                        else if ( (synpred276_Vala()) ) {s = 14;}
+                        else if ( (synpred278_Vala()) ) {s = 14;}
 
-                        else if ( (synpred277_Vala()) ) {s = 15;}
+                        else if ( (synpred279_Vala()) ) {s = 15;}
 
                         else if ( (true) ) {s = 11;}
 
@@ -24510,11 +24527,11 @@ public class ValaParser extends Parser {
                         int index123_3 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred273_Vala()) ) {s = 12;}
+                        if ( (synpred275_Vala()) ) {s = 12;}
 
-                        else if ( (synpred274_Vala()) ) {s = 13;}
+                        else if ( (synpred276_Vala()) ) {s = 13;}
 
-                        else if ( (synpred276_Vala()) ) {s = 14;}
+                        else if ( (synpred278_Vala()) ) {s = 14;}
 
                         else if ( (true) ) {s = 11;}
 
@@ -24529,11 +24546,11 @@ public class ValaParser extends Parser {
                         int index123_4 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred273_Vala()) ) {s = 12;}
+                        if ( (synpred275_Vala()) ) {s = 12;}
 
-                        else if ( (synpred274_Vala()) ) {s = 13;}
+                        else if ( (synpred276_Vala()) ) {s = 13;}
 
-                        else if ( (synpred276_Vala()) ) {s = 14;}
+                        else if ( (synpred278_Vala()) ) {s = 14;}
 
                         else if ( (true) ) {s = 11;}
 
@@ -24548,11 +24565,11 @@ public class ValaParser extends Parser {
                         int index123_5 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred273_Vala()) ) {s = 12;}
+                        if ( (synpred275_Vala()) ) {s = 12;}
 
-                        else if ( (synpred274_Vala()) ) {s = 13;}
+                        else if ( (synpred276_Vala()) ) {s = 13;}
 
-                        else if ( (synpred276_Vala()) ) {s = 14;}
+                        else if ( (synpred278_Vala()) ) {s = 14;}
 
                         else if ( (true) ) {s = 11;}
 
@@ -24567,13 +24584,13 @@ public class ValaParser extends Parser {
                         int index123_6 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred273_Vala()) ) {s = 12;}
+                        if ( (synpred275_Vala()) ) {s = 12;}
 
-                        else if ( (synpred274_Vala()) ) {s = 13;}
+                        else if ( (synpred276_Vala()) ) {s = 13;}
 
-                        else if ( (synpred276_Vala()) ) {s = 14;}
+                        else if ( (synpred278_Vala()) ) {s = 14;}
 
-                        else if ( (synpred277_Vala()) ) {s = 15;}
+                        else if ( (synpred279_Vala()) ) {s = 15;}
 
                          
                         input.seek(index123_6);
@@ -24586,13 +24603,13 @@ public class ValaParser extends Parser {
                         int index123_7 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred273_Vala()) ) {s = 12;}
+                        if ( (synpred275_Vala()) ) {s = 12;}
 
-                        else if ( (synpred274_Vala()) ) {s = 13;}
+                        else if ( (synpred276_Vala()) ) {s = 13;}
 
-                        else if ( (synpred276_Vala()) ) {s = 14;}
+                        else if ( (synpred278_Vala()) ) {s = 14;}
 
-                        else if ( (synpred277_Vala()) ) {s = 15;}
+                        else if ( (synpred279_Vala()) ) {s = 15;}
 
                         else if ( (true) ) {s = 11;}
 
@@ -24607,13 +24624,13 @@ public class ValaParser extends Parser {
                         int index123_9 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred273_Vala()) ) {s = 12;}
+                        if ( (synpred275_Vala()) ) {s = 12;}
 
-                        else if ( (synpred274_Vala()) ) {s = 13;}
+                        else if ( (synpred276_Vala()) ) {s = 13;}
 
-                        else if ( (synpred275_Vala()) ) {s = 8;}
+                        else if ( (synpred277_Vala()) ) {s = 8;}
 
-                        else if ( (synpred277_Vala()) ) {s = 15;}
+                        else if ( (synpred279_Vala()) ) {s = 15;}
 
                         else if ( (true) ) {s = 11;}
 
@@ -24628,13 +24645,13 @@ public class ValaParser extends Parser {
                         int index123_10 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred273_Vala()) ) {s = 12;}
+                        if ( (synpred275_Vala()) ) {s = 12;}
 
-                        else if ( (synpred274_Vala()) ) {s = 13;}
+                        else if ( (synpred276_Vala()) ) {s = 13;}
 
-                        else if ( (synpred275_Vala()) ) {s = 8;}
+                        else if ( (synpred277_Vala()) ) {s = 8;}
 
-                        else if ( (synpred276_Vala()) ) {s = 14;}
+                        else if ( (synpred278_Vala()) ) {s = 14;}
 
                         else if ( (true) ) {s = 11;}
 
@@ -24668,8 +24685,8 @@ public class ValaParser extends Parser {
             "\1\27\1\uffff\1\2\1\uffff\1\25\1\26\2\uffff\1\27\21\uffff\1"+
             "\27\2\uffff\1\27\6\uffff\2\27\1\22\1\27\1\23\3\24\1\uffff\2"+
             "\27\2\uffff\13\27\1\14\26\27\1\16\2\27\1\17\1\20\1\10\1\12\1"+
-            "\13\1\11\1\21\1\15\1\uffff\7\27\1\1\1\uffff\1\27\1\uffff\2\27"+
-            "\11\uffff\1\3\1\uffff\1\4\1\uffff\1\5\1\6\1\7",
+            "\13\1\11\1\21\1\15\2\27\1\uffff\7\27\1\1\1\uffff\1\27\1\uffff"+
+            "\2\27\7\uffff\1\3\1\uffff\1\4\1\uffff\1\5\1\6\1\7",
             "\1\uffff",
             "",
             "",
@@ -24760,7 +24777,7 @@ public class ValaParser extends Parser {
             this.transition = DFA180_transition;
         }
         public String getDescription() {
-            return "984:1: statement : ( block | SEMICOLON | if_statement | switch_statement | while_statement | do_statement | for_statement | foreach_statement | break_statement | continue_statement | return_statement | yield_statement | throw_statement | try_statement | lock_statement | delete_statement | local_variable_declarations | expression_statement );";
+            return "986:1: statement : ( block | SEMICOLON | if_statement | switch_statement | while_statement | do_statement | for_statement | foreach_statement | break_statement | continue_statement | return_statement | yield_statement | throw_statement | try_statement | lock_statement | delete_statement | local_variable_declarations | expression_statement );";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -24773,7 +24790,7 @@ public class ValaParser extends Parser {
                         int index180_1 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred359_Vala()) ) {s = 48;}
+                        if ( (synpred361_Vala()) ) {s = 48;}
 
                         else if ( (true) ) {s = 23;}
 
@@ -24788,7 +24805,7 @@ public class ValaParser extends Parser {
                         int index180_8 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred366_Vala()) ) {s = 49;}
+                        if ( (synpred368_Vala()) ) {s = 49;}
 
                         else if ( (true) ) {s = 23;}
 
@@ -24803,7 +24820,7 @@ public class ValaParser extends Parser {
                         int index180_9 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred367_Vala()) ) {s = 50;}
+                        if ( (synpred369_Vala()) ) {s = 50;}
 
                         else if ( (true) ) {s = 23;}
 
@@ -24818,7 +24835,7 @@ public class ValaParser extends Parser {
                         int index180_10 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred368_Vala()) ) {s = 51;}
+                        if ( (synpred370_Vala()) ) {s = 51;}
 
                         else if ( (true) ) {s = 23;}
 
@@ -24833,7 +24850,7 @@ public class ValaParser extends Parser {
                         int index180_11 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred369_Vala()) ) {s = 52;}
+                        if ( (synpred371_Vala()) ) {s = 52;}
 
                         else if ( (true) ) {s = 23;}
 
@@ -24848,7 +24865,7 @@ public class ValaParser extends Parser {
                         int index180_12 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred370_Vala()) ) {s = 53;}
+                        if ( (synpred372_Vala()) ) {s = 53;}
 
                         else if ( (true) ) {s = 23;}
 
@@ -24863,7 +24880,7 @@ public class ValaParser extends Parser {
                         int index180_13 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred371_Vala()) ) {s = 54;}
+                        if ( (synpred373_Vala()) ) {s = 54;}
 
                         else if ( (true) ) {s = 23;}
 
@@ -24878,7 +24895,7 @@ public class ValaParser extends Parser {
                         int index180_14 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred372_Vala()) ) {s = 55;}
+                        if ( (synpred374_Vala()) ) {s = 55;}
 
                         else if ( (true) ) {s = 23;}
 
@@ -24893,7 +24910,7 @@ public class ValaParser extends Parser {
                         int index180_15 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred373_Vala()) ) {s = 56;}
+                        if ( (synpred375_Vala()) ) {s = 56;}
 
                         else if ( (true) ) {s = 23;}
 
@@ -24908,7 +24925,7 @@ public class ValaParser extends Parser {
                         int index180_16 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred374_Vala()) ) {s = 57;}
+                        if ( (synpred376_Vala()) ) {s = 57;}
 
                         else if ( (true) ) {s = 23;}
 
@@ -24923,7 +24940,7 @@ public class ValaParser extends Parser {
                         int index180_17 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred375_Vala()) ) {s = 58;}
+                        if ( (synpred377_Vala()) ) {s = 58;}
 
                         else if ( (true) ) {s = 23;}
 
@@ -24938,7 +24955,7 @@ public class ValaParser extends Parser {
                         int index180_18 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred375_Vala()) ) {s = 58;}
+                        if ( (synpred377_Vala()) ) {s = 58;}
 
                         else if ( (true) ) {s = 23;}
 
@@ -24953,7 +24970,7 @@ public class ValaParser extends Parser {
                         int index180_19 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred375_Vala()) ) {s = 58;}
+                        if ( (synpred377_Vala()) ) {s = 58;}
 
                         else if ( (true) ) {s = 23;}
 
@@ -24968,7 +24985,7 @@ public class ValaParser extends Parser {
                         int index180_20 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred375_Vala()) ) {s = 58;}
+                        if ( (synpred377_Vala()) ) {s = 58;}
 
                         else if ( (true) ) {s = 23;}
 
@@ -24983,7 +25000,7 @@ public class ValaParser extends Parser {
                         int index180_21 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred375_Vala()) ) {s = 58;}
+                        if ( (synpred377_Vala()) ) {s = 58;}
 
                         else if ( (true) ) {s = 23;}
 
@@ -24998,7 +25015,7 @@ public class ValaParser extends Parser {
                         int index180_22 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred375_Vala()) ) {s = 58;}
+                        if ( (synpred377_Vala()) ) {s = 58;}
 
                         else if ( (true) ) {s = 23;}
 
@@ -25028,8 +25045,8 @@ public class ValaParser extends Parser {
         "\1\uffff\1\0\52\uffff}>";
     static final String[] DFA182_transitionS = {
             "\1\2\1\uffff\1\2\1\uffff\2\2\2\uffff\1\2\21\uffff\1\2\2\uffff"+
-            "\1\2\6\uffff\10\2\1\uffff\2\2\2\uffff\55\2\1\uffff\7\2\1\1\1"+
-            "\uffff\1\2\1\uffff\2\2\11\uffff\1\2\1\uffff\1\2\1\uffff\3\2",
+            "\1\2\6\uffff\10\2\1\uffff\2\2\2\uffff\57\2\1\uffff\7\2\1\1\1"+
+            "\uffff\1\2\1\uffff\2\2\7\uffff\1\2\1\uffff\1\2\1\uffff\3\2",
             "\1\uffff",
             "",
             "",
@@ -25105,7 +25122,7 @@ public class ValaParser extends Parser {
             this.transition = DFA182_transition;
         }
         public String getDescription() {
-            return "1017:1: embedded_statement : ( block | embedded_statement_without_block );";
+            return "1019:1: embedded_statement : ( block | embedded_statement_without_block );";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -25118,7 +25135,7 @@ public class ValaParser extends Parser {
                         int index182_1 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred377_Vala()) ) {s = 43;}
+                        if ( (synpred379_Vala()) ) {s = 43;}
 
                         else if ( (true) ) {s = 2;}
 
@@ -25150,9 +25167,9 @@ public class ValaParser extends Parser {
     static final String[] DFA183_transitionS = {
             "\1\20\1\uffff\1\1\1\uffff\2\20\2\uffff\1\20\21\uffff\1\20\2"+
             "\uffff\1\20\6\uffff\10\20\1\uffff\2\20\2\uffff\13\20\1\13\26"+
-            "\20\1\15\2\20\1\16\1\17\1\7\1\11\1\12\1\10\1\20\1\14\1\uffff"+
-            "\10\20\1\uffff\1\20\1\uffff\2\20\11\uffff\1\2\1\uffff\1\3\1"+
-            "\uffff\1\4\1\5\1\6",
+            "\20\1\15\2\20\1\16\1\17\1\7\1\11\1\12\1\10\1\20\1\14\2\20\1"+
+            "\uffff\10\20\1\uffff\1\20\1\uffff\2\20\7\uffff\1\2\1\uffff\1"+
+            "\3\1\uffff\1\4\1\5\1\6",
             "",
             "",
             "",
@@ -25236,7 +25253,7 @@ public class ValaParser extends Parser {
             this.transition = DFA183_transition;
         }
         public String getDescription() {
-            return "1022:1: embedded_statement_without_block : ( SEMICOLON | if_statement | switch_statement | while_statement | do_statement | for_statement | foreach_statement | break_statement | continue_statement | return_statement | yield_statement | throw_statement | try_statement | lock_statement | delete_statement | expression_statement );";
+            return "1024:1: embedded_statement_without_block : ( SEMICOLON | if_statement | switch_statement | while_statement | do_statement | for_statement | foreach_statement | break_statement | continue_statement | return_statement | yield_statement | throw_statement | try_statement | lock_statement | delete_statement | expression_statement );";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -25249,7 +25266,7 @@ public class ValaParser extends Parser {
                         int index183_7 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred384_Vala()) ) {s = 43;}
+                        if ( (synpred386_Vala()) ) {s = 43;}
 
                         else if ( (true) ) {s = 16;}
 
@@ -25264,7 +25281,7 @@ public class ValaParser extends Parser {
                         int index183_8 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred385_Vala()) ) {s = 44;}
+                        if ( (synpred387_Vala()) ) {s = 44;}
 
                         else if ( (true) ) {s = 16;}
 
@@ -25279,7 +25296,7 @@ public class ValaParser extends Parser {
                         int index183_9 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred386_Vala()) ) {s = 45;}
+                        if ( (synpred388_Vala()) ) {s = 45;}
 
                         else if ( (true) ) {s = 16;}
 
@@ -25294,7 +25311,7 @@ public class ValaParser extends Parser {
                         int index183_10 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred387_Vala()) ) {s = 46;}
+                        if ( (synpred389_Vala()) ) {s = 46;}
 
                         else if ( (true) ) {s = 16;}
 
@@ -25309,7 +25326,7 @@ public class ValaParser extends Parser {
                         int index183_11 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred388_Vala()) ) {s = 47;}
+                        if ( (synpred390_Vala()) ) {s = 47;}
 
                         else if ( (true) ) {s = 16;}
 
@@ -25324,7 +25341,7 @@ public class ValaParser extends Parser {
                         int index183_12 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred389_Vala()) ) {s = 48;}
+                        if ( (synpred391_Vala()) ) {s = 48;}
 
                         else if ( (true) ) {s = 16;}
 
@@ -25339,7 +25356,7 @@ public class ValaParser extends Parser {
                         int index183_13 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred390_Vala()) ) {s = 49;}
+                        if ( (synpred392_Vala()) ) {s = 49;}
 
                         else if ( (true) ) {s = 16;}
 
@@ -25354,7 +25371,7 @@ public class ValaParser extends Parser {
                         int index183_14 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred391_Vala()) ) {s = 50;}
+                        if ( (synpred393_Vala()) ) {s = 50;}
 
                         else if ( (true) ) {s = 16;}
 
@@ -25369,7 +25386,7 @@ public class ValaParser extends Parser {
                         int index183_15 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred392_Vala()) ) {s = 51;}
+                        if ( (synpred394_Vala()) ) {s = 51;}
 
                         else if ( (true) ) {s = 16;}
 
@@ -25392,14 +25409,14 @@ public class ValaParser extends Parser {
     static final String DFA192_minS =
         "\1\5\6\0\34\uffff";
     static final String DFA192_maxS =
-        "\1\160\6\0\34\uffff";
+        "\1\162\6\0\34\uffff";
     static final String DFA192_acceptS =
         "\7\uffff\1\2\32\uffff\1\1";
     static final String DFA192_specialS =
         "\1\uffff\1\0\1\1\1\2\1\3\1\4\1\5\34\uffff}>";
     static final String[] DFA192_transitionS = {
             "\1\7\3\uffff\1\5\1\6\2\uffff\1\7\21\uffff\1\7\2\uffff\1\7\6"+
-            "\uffff\2\7\1\2\1\7\1\3\3\4\1\uffff\2\7\2\uffff\53\7\1\1\1\7"+
+            "\uffff\2\7\1\2\1\7\1\3\3\4\1\uffff\2\7\2\uffff\53\7\1\1\3\7"+
             "\1\uffff\10\7\1\uffff\1\7\1\uffff\2\7",
             "\1\uffff",
             "\1\uffff",
@@ -25467,7 +25484,7 @@ public class ValaParser extends Parser {
             this.transition = DFA192_transition;
         }
         public String getDescription() {
-            return "1081:1: for_initializer : ( local_variable_declarations | ( statement_expression ( COMMA statement_expression )* SEMICOLON ) );";
+            return "1083:1: for_initializer : ( local_variable_declarations | ( statement_expression ( COMMA statement_expression )* SEMICOLON ) );";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -25480,7 +25497,7 @@ public class ValaParser extends Parser {
                         int index192_1 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred400_Vala()) ) {s = 34;}
+                        if ( (synpred402_Vala()) ) {s = 34;}
 
                         else if ( (true) ) {s = 7;}
 
@@ -25495,7 +25512,7 @@ public class ValaParser extends Parser {
                         int index192_2 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred400_Vala()) ) {s = 34;}
+                        if ( (synpred402_Vala()) ) {s = 34;}
 
                         else if ( (true) ) {s = 7;}
 
@@ -25510,7 +25527,7 @@ public class ValaParser extends Parser {
                         int index192_3 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred400_Vala()) ) {s = 34;}
+                        if ( (synpred402_Vala()) ) {s = 34;}
 
                         else if ( (true) ) {s = 7;}
 
@@ -25525,7 +25542,7 @@ public class ValaParser extends Parser {
                         int index192_4 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred400_Vala()) ) {s = 34;}
+                        if ( (synpred402_Vala()) ) {s = 34;}
 
                         else if ( (true) ) {s = 7;}
 
@@ -25540,7 +25557,7 @@ public class ValaParser extends Parser {
                         int index192_5 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred400_Vala()) ) {s = 34;}
+                        if ( (synpred402_Vala()) ) {s = 34;}
 
                         else if ( (true) ) {s = 7;}
 
@@ -25555,7 +25572,7 @@ public class ValaParser extends Parser {
                         int index192_6 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred400_Vala()) ) {s = 34;}
+                        if ( (synpred402_Vala()) ) {s = 34;}
 
                         else if ( (true) ) {s = 7;}
 
@@ -25578,14 +25595,14 @@ public class ValaParser extends Parser {
     static final String DFA196_minS =
         "\1\5\32\uffff\1\0\4\uffff";
     static final String DFA196_maxS =
-        "\1\160\32\uffff\1\0\4\uffff";
+        "\1\162\32\uffff\1\0\4\uffff";
     static final String DFA196_acceptS =
         "\1\uffff\1\1\34\uffff\1\3\1\2";
     static final String DFA196_specialS =
         "\33\uffff\1\0\4\uffff}>";
     static final String[] DFA196_transitionS = {
             "\1\1\1\uffff\1\36\1\uffff\2\1\2\uffff\1\1\21\uffff\1\1\2\uffff"+
-            "\1\1\6\uffff\10\1\1\uffff\2\1\2\uffff\51\1\1\33\3\1\1\uffff"+
+            "\1\1\6\uffff\10\1\1\uffff\2\1\2\uffff\51\1\1\33\5\1\1\uffff"+
             "\10\1\1\uffff\1\1\1\uffff\2\1",
             "",
             "",
@@ -25650,7 +25667,7 @@ public class ValaParser extends Parser {
             this.transition = DFA196_transition;
         }
         public String getDescription() {
-            return "1123:14: ( expression_statement | KW_RETURN expression )?";
+            return "1125:14: ( expression_statement | KW_RETURN expression )?";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -25663,9 +25680,9 @@ public class ValaParser extends Parser {
                         int index196_27 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred405_Vala()) ) {s = 1;}
+                        if ( (synpred407_Vala()) ) {s = 1;}
 
-                        else if ( (synpred406_Vala()) ) {s = 31;}
+                        else if ( (synpred408_Vala()) ) {s = 31;}
 
                          
                         input.seek(index196_27);
@@ -25693,8 +25710,8 @@ public class ValaParser extends Parser {
         "\61\uffff\1\0\6\uffff}>";
     static final String[] DFA197_transitionS = {
             "\1\1\1\uffff\1\1\1\uffff\2\1\2\uffff\1\1\21\uffff\1\1\2\uffff"+
-            "\1\1\6\uffff\10\1\1\uffff\2\1\2\uffff\43\1\1\61\11\1\1\uffff"+
-            "\12\1\1\uffff\2\1\10\uffff\10\1",
+            "\1\1\6\uffff\10\1\1\uffff\2\1\2\uffff\43\1\1\61\13\1\1\uffff"+
+            "\12\1\1\uffff\2\1\6\uffff\10\1",
             "",
             "",
             "",
@@ -25782,7 +25799,7 @@ public class ValaParser extends Parser {
             this.transition = DFA197_transition;
         }
         public String getDescription() {
-            return "()* loopback of 1133:2: ( catch_clause )*";
+            return "()* loopback of 1135:2: ( catch_clause )*";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -25795,7 +25812,7 @@ public class ValaParser extends Parser {
                         int index197_49 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred407_Vala()) ) {s = 55;}
+                        if ( (synpred409_Vala()) ) {s = 55;}
 
                         else if ( (true) ) {s = 1;}
 
@@ -25818,34 +25835,34 @@ public class ValaParser extends Parser {
     static final String DFA214_minS =
         "\6\5\1\uffff\1\5\2\uffff\1\5";
     static final String DFA214_maxS =
-        "\3\170\3\142\1\uffff\1\142\2\uffff\1\142";
+        "\3\170\3\144\1\uffff\1\144\2\uffff\1\144";
     static final String DFA214_acceptS =
         "\6\uffff\1\1\1\uffff\1\2\1\3\1\uffff";
     static final String DFA214_specialS =
         "\13\uffff}>";
     static final String[] DFA214_transitionS = {
             "\1\11\3\uffff\1\6\1\7\24\uffff\1\11\11\uffff\2\11\1\3\1\uffff"+
-            "\1\4\3\5\11\uffff\6\11\1\2\3\11\2\2\1\11\6\2\4\1\22\11\25\uffff"+
+            "\1\4\3\5\11\uffff\6\11\1\2\3\11\2\2\1\11\6\2\4\1\24\11\23\uffff"+
             "\1\10",
             "\1\11\1\uffff\1\11\1\uffff\1\6\1\7\24\uffff\1\11\11\uffff"+
             "\2\11\1\3\1\uffff\1\4\3\5\11\uffff\6\11\1\2\3\11\2\2\1\11\6"+
-            "\2\26\11\25\uffff\1\10",
+            "\2\30\11\23\uffff\1\10",
             "\1\11\1\uffff\1\11\1\uffff\1\6\1\7\24\uffff\1\11\11\uffff"+
             "\2\11\1\3\1\uffff\1\4\3\5\11\uffff\6\11\1\2\3\11\2\2\1\11\6"+
-            "\2\26\11\25\uffff\1\10",
+            "\2\30\11\23\uffff\1\10",
             "\1\12\1\uffff\1\11\2\uffff\1\12\24\uffff\1\12\11\uffff\3\12"+
-            "\1\6\4\12\11\uffff\51\12",
+            "\1\6\4\12\11\uffff\53\12",
             "\1\11\1\uffff\1\11\1\uffff\1\6\1\7\24\uffff\1\11\11\uffff"+
-            "\3\11\1\uffff\1\11\3\5\11\uffff\51\11",
+            "\3\11\1\uffff\1\11\3\5\11\uffff\53\11",
             "\1\11\1\uffff\1\11\1\uffff\1\6\1\7\24\uffff\1\11\11\uffff"+
-            "\3\11\1\uffff\4\11\11\uffff\51\11",
+            "\3\11\1\uffff\4\11\11\uffff\53\11",
             "",
             "\1\12\1\uffff\1\11\1\6\1\uffff\1\12\1\6\16\uffff\1\6\4\uffff"+
-            "\1\12\5\uffff\1\6\3\uffff\3\12\1\6\4\12\11\uffff\51\12",
+            "\1\12\5\uffff\1\6\3\uffff\3\12\1\6\4\12\11\uffff\53\12",
             "",
             "",
             "\1\11\1\uffff\1\11\2\uffff\1\11\2\uffff\1\6\21\uffff\1\11"+
-            "\5\uffff\1\6\3\uffff\3\11\1\uffff\4\11\11\uffff\51\11"
+            "\5\uffff\1\6\3\uffff\3\11\1\uffff\4\11\11\uffff\53\11"
     };
 
     static final short[] DFA214_eot = DFA.unpackEncodedString(DFA214_eotS);
@@ -25878,173 +25895,173 @@ public class ValaParser extends Parser {
             this.transition = DFA214_transition;
         }
         public String getDescription() {
-            return "656:3: ( method_declaration | constant_declaration | unknown_chain )";
+            return "658:3: ( method_declaration | constant_declaration | unknown_chain )";
         }
     }
  
 
-    public static final BitSet FOLLOW_using_directive_in_compilation_unit89 = new BitSet(new long[]{0x0001E80000000E22L,0x01400000001FFFF1L});
-    public static final BitSet FOLLOW_namespace_member_in_compilation_unit95 = new BitSet(new long[]{0x0001E80000000E02L,0x01400000001FFFF1L});
-    public static final BitSet FOLLOW_KW_USING_in_using_directive109 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
-    public static final BitSet FOLLOW_symbol_in_using_directive112 = new BitSet(new long[]{0x00000000000000C0L});
-    public static final BitSet FOLLOW_COMMA_in_using_directive120 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
-    public static final BitSet FOLLOW_symbol_in_using_directive125 = new BitSet(new long[]{0x00000000000000C0L});
-    public static final BitSet FOLLOW_SEMICOLON_in_using_directive133 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_symbol_part_in_symbol144 = new BitSet(new long[]{0x0000000000000102L});
-    public static final BitSet FOLLOW_DOT_in_symbol152 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
-    public static final BitSet FOLLOW_symbol_part_in_symbol156 = new BitSet(new long[]{0x0000000000000102L});
-    public static final BitSet FOLLOW_GLOBAL_NS_in_symbol_part174 = new BitSet(new long[]{0x0000000000000400L});
-    public static final BitSet FOLLOW_IDENTIFIER_in_symbol_part176 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_IDENTIFIER_in_symbol_part184 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_attributes_in_namespace_member196 = new BitSet(new long[]{0x0001E80000000E00L,0x01400000001FFFF1L});
-    public static final BitSet FOLLOW_namespace_declaration_in_namespace_member203 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_class_declaration_in_namespace_member208 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_interface_declaration_in_namespace_member214 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_struct_declaration_in_namespace_member220 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_enum_declaration_in_namespace_member226 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_errordomain_declaration_in_namespace_member232 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_method_declaration_in_namespace_member238 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_delegate_declaration_in_namespace_member244 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_constant_declaration_in_namespace_member250 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_field_declaration_in_namespace_member256 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_using_directive_in_compilation_unit90 = new BitSet(new long[]{0x0001E80000000E22L,0x01800000001FFFF1L});
+    public static final BitSet FOLLOW_namespace_member_in_compilation_unit96 = new BitSet(new long[]{0x0001E80000000E02L,0x01800000001FFFF1L});
+    public static final BitSet FOLLOW_KW_USING_in_using_directive110 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
+    public static final BitSet FOLLOW_symbol_in_using_directive113 = new BitSet(new long[]{0x00000000000000C0L});
+    public static final BitSet FOLLOW_COMMA_in_using_directive121 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
+    public static final BitSet FOLLOW_symbol_in_using_directive126 = new BitSet(new long[]{0x00000000000000C0L});
+    public static final BitSet FOLLOW_SEMICOLON_in_using_directive134 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_symbol_part_in_symbol145 = new BitSet(new long[]{0x0000000000000102L});
+    public static final BitSet FOLLOW_DOT_in_symbol153 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
+    public static final BitSet FOLLOW_symbol_part_in_symbol157 = new BitSet(new long[]{0x0000000000000102L});
+    public static final BitSet FOLLOW_GLOBAL_NS_in_symbol_part175 = new BitSet(new long[]{0x0000000000000400L});
+    public static final BitSet FOLLOW_IDENTIFIER_in_symbol_part177 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_IDENTIFIER_in_symbol_part185 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_attributes_in_namespace_member197 = new BitSet(new long[]{0x0001E80000000E00L,0x01800000001FFFF1L});
+    public static final BitSet FOLLOW_namespace_declaration_in_namespace_member204 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_class_declaration_in_namespace_member209 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_interface_declaration_in_namespace_member215 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_struct_declaration_in_namespace_member221 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_enum_declaration_in_namespace_member227 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_errordomain_declaration_in_namespace_member233 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_method_declaration_in_namespace_member239 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_delegate_declaration_in_namespace_member245 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_constant_declaration_in_namespace_member251 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_field_declaration_in_namespace_member257 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_attribute_in_attributes269 = new BitSet(new long[]{0x0000000000000802L});
-    public static final BitSet FOLLOW_LBRACKET_in_attribute285 = new BitSet(new long[]{0xFC01EE0080000420L,0x00000007FFFFFFFFL});
-    public static final BitSet FOLLOW_identifier_in_attribute289 = new BitSet(new long[]{0x0000000000003000L});
-    public static final BitSet FOLLOW_attribute_arguments_in_attribute294 = new BitSet(new long[]{0x0000000000001000L});
-    public static final BitSet FOLLOW_RBRACKET_in_attribute302 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_LPAREN_in_attribute_arguments314 = new BitSet(new long[]{0xFC01EE0080000420L,0x00000007FFFFFFFFL});
-    public static final BitSet FOLLOW_attribute_argument_in_attribute_arguments316 = new BitSet(new long[]{0x0000000000004040L});
-    public static final BitSet FOLLOW_COMMA_in_attribute_arguments321 = new BitSet(new long[]{0xFC01EE0080000420L,0x00000007FFFFFFFFL});
-    public static final BitSet FOLLOW_attribute_argument_in_attribute_arguments323 = new BitSet(new long[]{0x0000000000004040L});
-    public static final BitSet FOLLOW_RPAREN_in_attribute_arguments329 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_identifier_in_attribute_argument339 = new BitSet(new long[]{0x0000000000008000L});
-    public static final BitSet FOLLOW_ASSIGNMENT_in_attribute_argument341 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
-    public static final BitSet FOLLOW_expression_in_attribute_argument343 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_lambda_expression_in_expression355 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_conditional_expression_in_expression365 = new BitSet(new long[]{0x0000000003FF8002L});
-    public static final BitSet FOLLOW_assignment_operator_in_expression368 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
-    public static final BitSet FOLLOW_expression_in_expression370 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_LBRACKET_in_attribute285 = new BitSet(new long[]{0xFC01EE0080000420L,0x0000001FFFFFFFFFL});
+    public static final BitSet FOLLOW_identifier_in_attribute288 = new BitSet(new long[]{0x0000000000003000L});
+    public static final BitSet FOLLOW_attribute_arguments_in_attribute292 = new BitSet(new long[]{0x0000000000001000L});
+    public static final BitSet FOLLOW_RBRACKET_in_attribute299 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_LPAREN_in_attribute_arguments309 = new BitSet(new long[]{0xFC01EE0080000420L,0x0000001FFFFFFFFFL});
+    public static final BitSet FOLLOW_attribute_argument_in_attribute_arguments311 = new BitSet(new long[]{0x0000000000004040L});
+    public static final BitSet FOLLOW_COMMA_in_attribute_arguments316 = new BitSet(new long[]{0xFC01EE0080000420L,0x0000001FFFFFFFFFL});
+    public static final BitSet FOLLOW_attribute_argument_in_attribute_arguments318 = new BitSet(new long[]{0x0000000000004040L});
+    public static final BitSet FOLLOW_RPAREN_in_attribute_arguments324 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_identifier_in_attribute_argument333 = new BitSet(new long[]{0x0000000000008000L});
+    public static final BitSet FOLLOW_ASSIGNMENT_in_attribute_argument335 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
+    public static final BitSet FOLLOW_expression_in_attribute_argument337 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_lambda_expression_in_expression347 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_conditional_expression_in_expression355 = new BitSet(new long[]{0x0000000003FF8002L});
+    public static final BitSet FOLLOW_assignment_operator_in_expression358 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
+    public static final BitSet FOLLOW_expression_in_expression360 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_set_in_assignment_operator0 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_coalescing_expression_in_conditional_expression436 = new BitSet(new long[]{0x0000000004000002L});
-    public static final BitSet FOLLOW_QUESTION_in_conditional_expression441 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
-    public static final BitSet FOLLOW_expression_in_conditional_expression443 = new BitSet(new long[]{0x0000000008000000L});
-    public static final BitSet FOLLOW_COLON_in_conditional_expression445 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
-    public static final BitSet FOLLOW_expression_in_conditional_expression447 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_conditional_or_expression_in_coalescing_expression461 = new BitSet(new long[]{0x0000000010000002L});
-    public static final BitSet FOLLOW_COALESCE_in_coalescing_expression466 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
-    public static final BitSet FOLLOW_coalescing_expression_in_coalescing_expression468 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_conditional_and_expression_in_conditional_or_expression482 = new BitSet(new long[]{0x0000000020000002L});
-    public static final BitSet FOLLOW_BOOL_OR_in_conditional_or_expression487 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
-    public static final BitSet FOLLOW_conditional_and_expression_in_conditional_or_expression489 = new BitSet(new long[]{0x0000000020000002L});
-    public static final BitSet FOLLOW_in_expression_in_conditional_and_expression503 = new BitSet(new long[]{0x0000000040000002L});
-    public static final BitSet FOLLOW_BOOL_AND_in_conditional_and_expression508 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
-    public static final BitSet FOLLOW_in_expression_in_conditional_and_expression510 = new BitSet(new long[]{0x0000000040000002L});
-    public static final BitSet FOLLOW_inclusive_or_expression_in_in_expression524 = new BitSet(new long[]{0x0000000080000002L});
-    public static final BitSet FOLLOW_KW_IN_in_in_expression529 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
-    public static final BitSet FOLLOW_inclusive_or_expression_in_in_expression531 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_exclusive_or_expression_in_inclusive_or_expression545 = new BitSet(new long[]{0x0000000100000002L});
-    public static final BitSet FOLLOW_OR_in_inclusive_or_expression550 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
-    public static final BitSet FOLLOW_exclusive_or_expression_in_inclusive_or_expression552 = new BitSet(new long[]{0x0000000100000002L});
-    public static final BitSet FOLLOW_and_expression_in_exclusive_or_expression566 = new BitSet(new long[]{0x0000000200000002L});
-    public static final BitSet FOLLOW_XOR_in_exclusive_or_expression571 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
-    public static final BitSet FOLLOW_and_expression_in_exclusive_or_expression573 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_equality_expression_in_and_expression587 = new BitSet(new long[]{0x0000000400000002L});
-    public static final BitSet FOLLOW_AND_in_and_expression592 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
-    public static final BitSet FOLLOW_equality_expression_in_and_expression594 = new BitSet(new long[]{0x0000000400000002L});
-    public static final BitSet FOLLOW_relational_expression_in_equality_expression608 = new BitSet(new long[]{0x0000001800000002L});
-    public static final BitSet FOLLOW_set_in_equality_expression613 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
-    public static final BitSet FOLLOW_relational_expression_in_equality_expression623 = new BitSet(new long[]{0x0000001800000002L});
-    public static final BitSet FOLLOW_shift_expression_in_relational_expression637 = new BitSet(new long[]{0x000007E000000002L});
-    public static final BitSet FOLLOW_set_in_relational_expression648 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
-    public static final BitSet FOLLOW_shift_expression_in_relational_expression666 = new BitSet(new long[]{0x000007E000000002L});
-    public static final BitSet FOLLOW_KW_IS_in_relational_expression681 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
-    public static final BitSet FOLLOW_type_in_relational_expression683 = new BitSet(new long[]{0x000007E000000002L});
-    public static final BitSet FOLLOW_KW_AS_in_relational_expression698 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
-    public static final BitSet FOLLOW_type_in_relational_expression700 = new BitSet(new long[]{0x000007E000000002L});
-    public static final BitSet FOLLOW_KW_VOID_in_type724 = new BitSet(new long[]{0x0000100000000002L});
-    public static final BitSet FOLLOW_MULTIPLY_in_type729 = new BitSet(new long[]{0x0000100000000002L});
-    public static final BitSet FOLLOW_KW_DYNAMIC_in_type749 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
-    public static final BitSet FOLLOW_set_in_type756 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
-    public static final BitSet FOLLOW_symbol_in_type772 = new BitSet(new long[]{0x0000102004000802L});
-    public static final BitSet FOLLOW_type_arguments_in_type778 = new BitSet(new long[]{0x0000100004000802L});
-    public static final BitSet FOLLOW_MULTIPLY_in_type786 = new BitSet(new long[]{0x0000100004000802L});
-    public static final BitSet FOLLOW_QUESTION_in_type794 = new BitSet(new long[]{0x0000000000000802L});
-    public static final BitSet FOLLOW_array_type_in_type802 = new BitSet(new long[]{0x0000000000000802L});
-    public static final BitSet FOLLOW_LBRACKET_in_array_type820 = new BitSet(new long[]{0xFFCDFE0480003620L,0x0001AFF7FFFFFFFFL});
-    public static final BitSet FOLLOW_array_size_in_array_type825 = new BitSet(new long[]{0x0000000000001000L});
-    public static final BitSet FOLLOW_RBRACKET_in_array_type830 = new BitSet(new long[]{0x0000000004000002L});
-    public static final BitSet FOLLOW_QUESTION_in_array_type836 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_additive_expression_in_shift_expression850 = new BitSet(new long[]{0x0002004000000002L});
-    public static final BitSet FOLLOW_SHIFT_LEFT_in_shift_expression860 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
-    public static final BitSet FOLLOW_shift_right_in_shift_expression864 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
-    public static final BitSet FOLLOW_additive_expression_in_shift_expression868 = new BitSet(new long[]{0x0002004000000002L});
-    public static final BitSet FOLLOW_GT_in_shift_right882 = new BitSet(new long[]{0x0000004000000000L});
-    public static final BitSet FOLLOW_GT_in_shift_right884 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_multiplicative_expression_in_additive_expression896 = new BitSet(new long[]{0x000C000000000002L});
-    public static final BitSet FOLLOW_set_in_additive_expression904 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
-    public static final BitSet FOLLOW_multiplicative_expression_in_additive_expression914 = new BitSet(new long[]{0x000C000000000002L});
-    public static final BitSet FOLLOW_unary_expression_in_multiplicative_expression930 = new BitSet(new long[]{0x0030100000000002L});
-    public static final BitSet FOLLOW_MULTIPLY_in_multiplicative_expression944 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
-    public static final BitSet FOLLOW_DIV_in_multiplicative_expression952 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
-    public static final BitSet FOLLOW_MOD_in_multiplicative_expression960 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
-    public static final BitSet FOLLOW_unary_expression_in_multiplicative_expression967 = new BitSet(new long[]{0x0030100000000002L});
-    public static final BitSet FOLLOW_unary_operator_in_unary_expression986 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
-    public static final BitSet FOLLOW_unary_expression_in_unary_expression988 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_primary_expression_in_unary_expression1000 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_PLUS_in_unary_operator1012 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_MINUS_in_unary_operator1018 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_NOT_in_unary_operator1024 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_BITWISE_NOT_in_unary_operator1030 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_INCREMENT_in_unary_operator1036 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_DECREMENT_in_unary_operator1041 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_MULTIPLY_in_unary_operator1046 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_AND_in_unary_operator1052 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_cast_operator_in_unary_operator1058 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_LPAREN_in_unary_operator1063 = new BitSet(new long[]{0x0040000000000000L});
-    public static final BitSet FOLLOW_NOT_in_unary_operator1065 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_RPAREN_in_unary_operator1067 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_LPAREN_in_cast_operator1077 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
-    public static final BitSet FOLLOW_type_in_cast_operator1079 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_RPAREN_in_cast_operator1081 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_LPAREN_in_cast_operator1086 = new BitSet(new long[]{0x0000800000000000L});
-    public static final BitSet FOLLOW_KW_UNOWNED_in_cast_operator1088 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_RPAREN_in_cast_operator1090 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_LPAREN_in_cast_operator1095 = new BitSet(new long[]{0x0000400000000000L});
-    public static final BitSet FOLLOW_KW_OWNED_in_cast_operator1097 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_RPAREN_in_cast_operator1099 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_LPAREN_in_cast_operator1104 = new BitSet(new long[]{0x0001000000000000L});
-    public static final BitSet FOLLOW_KW_WEAK_in_cast_operator1106 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_RPAREN_in_cast_operator1108 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_literal_in_primary_expression1125 = new BitSet(new long[]{0x0300000000002902L,0x0000000800000000L});
-    public static final BitSet FOLLOW_initializer_in_primary_expression1131 = new BitSet(new long[]{0x0300000000002902L,0x0000000800000000L});
-    public static final BitSet FOLLOW_tuple_in_primary_expression1137 = new BitSet(new long[]{0x0300000000002902L,0x0000000800000000L});
-    public static final BitSet FOLLOW_template_in_primary_expression1143 = new BitSet(new long[]{0x0300000000002902L,0x0000000800000000L});
-    public static final BitSet FOLLOW_this_access_in_primary_expression1149 = new BitSet(new long[]{0x0300000000002902L,0x0000000800000000L});
-    public static final BitSet FOLLOW_base_access_in_primary_expression1155 = new BitSet(new long[]{0x0300000000002902L,0x0000000800000000L});
-    public static final BitSet FOLLOW_object_or_array_creation_expression_in_primary_expression1161 = new BitSet(new long[]{0x0300000000002902L,0x0000000800000000L});
-    public static final BitSet FOLLOW_yield_expression_in_primary_expression1167 = new BitSet(new long[]{0x0300000000002902L,0x0000000800000000L});
-    public static final BitSet FOLLOW_sizeof_expression_in_primary_expression1173 = new BitSet(new long[]{0x0300000000002902L,0x0000000800000000L});
-    public static final BitSet FOLLOW_typeof_expression_in_primary_expression1179 = new BitSet(new long[]{0x0300000000002902L,0x0000000800000000L});
-    public static final BitSet FOLLOW_simple_name_in_primary_expression1185 = new BitSet(new long[]{0x0300000000002902L,0x0000000800000000L});
-    public static final BitSet FOLLOW_member_access_in_primary_expression1195 = new BitSet(new long[]{0x0300000000002902L,0x0000000800000000L});
-    public static final BitSet FOLLOW_pointer_member_access_in_primary_expression1201 = new BitSet(new long[]{0x0300000000002902L,0x0000000800000000L});
-    public static final BitSet FOLLOW_method_call_in_primary_expression1207 = new BitSet(new long[]{0x0300000000002902L,0x0000000800000000L});
-    public static final BitSet FOLLOW_element_access_in_primary_expression1213 = new BitSet(new long[]{0x0300000000002902L,0x0000000800000000L});
-    public static final BitSet FOLLOW_post_increment_expression_in_primary_expression1219 = new BitSet(new long[]{0x0300000000002902L,0x0000000800000000L});
-    public static final BitSet FOLLOW_post_decrement_expression_in_primary_expression1225 = new BitSet(new long[]{0x0300000000002902L,0x0000000800000000L});
-    public static final BitSet FOLLOW_DOT_in_member_access1240 = new BitSet(new long[]{0xFC01EE0080000420L,0x00000007FFFFFFFFL});
-    public static final BitSet FOLLOW_identifier_in_member_access1243 = new BitSet(new long[]{0x0000002000000002L});
-    public static final BitSet FOLLOW_type_arguments_in_member_access1247 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_coalescing_expression_in_conditional_expression426 = new BitSet(new long[]{0x0000000004000002L});
+    public static final BitSet FOLLOW_QUESTION_in_conditional_expression431 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
+    public static final BitSet FOLLOW_expression_in_conditional_expression433 = new BitSet(new long[]{0x0000000008000000L});
+    public static final BitSet FOLLOW_COLON_in_conditional_expression435 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
+    public static final BitSet FOLLOW_expression_in_conditional_expression437 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_conditional_or_expression_in_coalescing_expression451 = new BitSet(new long[]{0x0000000010000002L});
+    public static final BitSet FOLLOW_COALESCE_in_coalescing_expression456 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
+    public static final BitSet FOLLOW_coalescing_expression_in_coalescing_expression458 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_conditional_and_expression_in_conditional_or_expression472 = new BitSet(new long[]{0x0000000020000002L});
+    public static final BitSet FOLLOW_BOOL_OR_in_conditional_or_expression477 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
+    public static final BitSet FOLLOW_conditional_and_expression_in_conditional_or_expression479 = new BitSet(new long[]{0x0000000020000002L});
+    public static final BitSet FOLLOW_in_expression_in_conditional_and_expression493 = new BitSet(new long[]{0x0000000040000002L});
+    public static final BitSet FOLLOW_BOOL_AND_in_conditional_and_expression498 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
+    public static final BitSet FOLLOW_in_expression_in_conditional_and_expression500 = new BitSet(new long[]{0x0000000040000002L});
+    public static final BitSet FOLLOW_inclusive_or_expression_in_in_expression514 = new BitSet(new long[]{0x0000000080000002L});
+    public static final BitSet FOLLOW_KW_IN_in_in_expression519 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
+    public static final BitSet FOLLOW_inclusive_or_expression_in_in_expression521 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_exclusive_or_expression_in_inclusive_or_expression535 = new BitSet(new long[]{0x0000000100000002L});
+    public static final BitSet FOLLOW_OR_in_inclusive_or_expression540 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
+    public static final BitSet FOLLOW_exclusive_or_expression_in_inclusive_or_expression542 = new BitSet(new long[]{0x0000000100000002L});
+    public static final BitSet FOLLOW_and_expression_in_exclusive_or_expression556 = new BitSet(new long[]{0x0000000200000002L});
+    public static final BitSet FOLLOW_XOR_in_exclusive_or_expression561 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
+    public static final BitSet FOLLOW_and_expression_in_exclusive_or_expression563 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_equality_expression_in_and_expression577 = new BitSet(new long[]{0x0000000400000002L});
+    public static final BitSet FOLLOW_AND_in_and_expression582 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
+    public static final BitSet FOLLOW_equality_expression_in_and_expression584 = new BitSet(new long[]{0x0000000400000002L});
+    public static final BitSet FOLLOW_relational_expression_in_equality_expression598 = new BitSet(new long[]{0x0000001800000002L});
+    public static final BitSet FOLLOW_set_in_equality_expression603 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
+    public static final BitSet FOLLOW_relational_expression_in_equality_expression613 = new BitSet(new long[]{0x0000001800000002L});
+    public static final BitSet FOLLOW_shift_expression_in_relational_expression627 = new BitSet(new long[]{0x000007E000000002L});
+    public static final BitSet FOLLOW_set_in_relational_expression638 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
+    public static final BitSet FOLLOW_shift_expression_in_relational_expression656 = new BitSet(new long[]{0x000007E000000002L});
+    public static final BitSet FOLLOW_KW_IS_in_relational_expression671 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
+    public static final BitSet FOLLOW_type_in_relational_expression673 = new BitSet(new long[]{0x000007E000000002L});
+    public static final BitSet FOLLOW_KW_AS_in_relational_expression688 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
+    public static final BitSet FOLLOW_type_in_relational_expression690 = new BitSet(new long[]{0x000007E000000002L});
+    public static final BitSet FOLLOW_KW_VOID_in_type714 = new BitSet(new long[]{0x0000100000000002L});
+    public static final BitSet FOLLOW_MULTIPLY_in_type719 = new BitSet(new long[]{0x0000100000000002L});
+    public static final BitSet FOLLOW_KW_DYNAMIC_in_type739 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
+    public static final BitSet FOLLOW_set_in_type746 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
+    public static final BitSet FOLLOW_symbol_in_type762 = new BitSet(new long[]{0x0000102004000802L});
+    public static final BitSet FOLLOW_type_arguments_in_type768 = new BitSet(new long[]{0x0000100004000802L});
+    public static final BitSet FOLLOW_MULTIPLY_in_type776 = new BitSet(new long[]{0x0000100004000802L});
+    public static final BitSet FOLLOW_QUESTION_in_type784 = new BitSet(new long[]{0x0000000000000802L});
+    public static final BitSet FOLLOW_array_type_in_type792 = new BitSet(new long[]{0x0000000000000802L});
+    public static final BitSet FOLLOW_LBRACKET_in_array_type810 = new BitSet(new long[]{0xFFCDFE0480003620L,0x0006BFDFFFFFFFFFL});
+    public static final BitSet FOLLOW_array_size_in_array_type815 = new BitSet(new long[]{0x0000000000001000L});
+    public static final BitSet FOLLOW_RBRACKET_in_array_type820 = new BitSet(new long[]{0x0000000004000002L});
+    public static final BitSet FOLLOW_QUESTION_in_array_type826 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_additive_expression_in_shift_expression840 = new BitSet(new long[]{0x0002004000000002L});
+    public static final BitSet FOLLOW_SHIFT_LEFT_in_shift_expression850 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
+    public static final BitSet FOLLOW_shift_right_in_shift_expression854 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
+    public static final BitSet FOLLOW_additive_expression_in_shift_expression858 = new BitSet(new long[]{0x0002004000000002L});
+    public static final BitSet FOLLOW_GT_in_shift_right872 = new BitSet(new long[]{0x0000004000000000L});
+    public static final BitSet FOLLOW_GT_in_shift_right874 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_multiplicative_expression_in_additive_expression886 = new BitSet(new long[]{0x000C000000000002L});
+    public static final BitSet FOLLOW_set_in_additive_expression894 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
+    public static final BitSet FOLLOW_multiplicative_expression_in_additive_expression904 = new BitSet(new long[]{0x000C000000000002L});
+    public static final BitSet FOLLOW_unary_expression_in_multiplicative_expression920 = new BitSet(new long[]{0x0030100000000002L});
+    public static final BitSet FOLLOW_MULTIPLY_in_multiplicative_expression934 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
+    public static final BitSet FOLLOW_DIV_in_multiplicative_expression942 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
+    public static final BitSet FOLLOW_MOD_in_multiplicative_expression950 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
+    public static final BitSet FOLLOW_unary_expression_in_multiplicative_expression957 = new BitSet(new long[]{0x0030100000000002L});
+    public static final BitSet FOLLOW_unary_operator_in_unary_expression976 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
+    public static final BitSet FOLLOW_unary_expression_in_unary_expression978 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_primary_expression_in_unary_expression990 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_PLUS_in_unary_operator1002 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_MINUS_in_unary_operator1008 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_NOT_in_unary_operator1014 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_BITWISE_NOT_in_unary_operator1020 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_INCREMENT_in_unary_operator1026 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_DECREMENT_in_unary_operator1031 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_MULTIPLY_in_unary_operator1036 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_AND_in_unary_operator1042 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_cast_operator_in_unary_operator1048 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_LPAREN_in_unary_operator1053 = new BitSet(new long[]{0x0040000000000000L});
+    public static final BitSet FOLLOW_NOT_in_unary_operator1055 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_RPAREN_in_unary_operator1057 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_LPAREN_in_cast_operator1067 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
+    public static final BitSet FOLLOW_type_in_cast_operator1069 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_RPAREN_in_cast_operator1071 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_LPAREN_in_cast_operator1076 = new BitSet(new long[]{0x0000800000000000L});
+    public static final BitSet FOLLOW_KW_UNOWNED_in_cast_operator1078 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_RPAREN_in_cast_operator1080 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_LPAREN_in_cast_operator1085 = new BitSet(new long[]{0x0000400000000000L});
+    public static final BitSet FOLLOW_KW_OWNED_in_cast_operator1087 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_RPAREN_in_cast_operator1089 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_LPAREN_in_cast_operator1094 = new BitSet(new long[]{0x0001000000000000L});
+    public static final BitSet FOLLOW_KW_WEAK_in_cast_operator1096 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_RPAREN_in_cast_operator1098 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_literal_in_primary_expression1115 = new BitSet(new long[]{0x0300000000002902L,0x0000002000000000L});
+    public static final BitSet FOLLOW_initializer_in_primary_expression1121 = new BitSet(new long[]{0x0300000000002902L,0x0000002000000000L});
+    public static final BitSet FOLLOW_tuple_in_primary_expression1127 = new BitSet(new long[]{0x0300000000002902L,0x0000002000000000L});
+    public static final BitSet FOLLOW_template_in_primary_expression1133 = new BitSet(new long[]{0x0300000000002902L,0x0000002000000000L});
+    public static final BitSet FOLLOW_this_access_in_primary_expression1139 = new BitSet(new long[]{0x0300000000002902L,0x0000002000000000L});
+    public static final BitSet FOLLOW_base_access_in_primary_expression1145 = new BitSet(new long[]{0x0300000000002902L,0x0000002000000000L});
+    public static final BitSet FOLLOW_object_or_array_creation_expression_in_primary_expression1151 = new BitSet(new long[]{0x0300000000002902L,0x0000002000000000L});
+    public static final BitSet FOLLOW_yield_expression_in_primary_expression1157 = new BitSet(new long[]{0x0300000000002902L,0x0000002000000000L});
+    public static final BitSet FOLLOW_sizeof_expression_in_primary_expression1163 = new BitSet(new long[]{0x0300000000002902L,0x0000002000000000L});
+    public static final BitSet FOLLOW_typeof_expression_in_primary_expression1169 = new BitSet(new long[]{0x0300000000002902L,0x0000002000000000L});
+    public static final BitSet FOLLOW_simple_name_in_primary_expression1175 = new BitSet(new long[]{0x0300000000002902L,0x0000002000000000L});
+    public static final BitSet FOLLOW_member_access_in_primary_expression1185 = new BitSet(new long[]{0x0300000000002902L,0x0000002000000000L});
+    public static final BitSet FOLLOW_pointer_member_access_in_primary_expression1191 = new BitSet(new long[]{0x0300000000002902L,0x0000002000000000L});
+    public static final BitSet FOLLOW_method_call_in_primary_expression1197 = new BitSet(new long[]{0x0300000000002902L,0x0000002000000000L});
+    public static final BitSet FOLLOW_element_access_in_primary_expression1203 = new BitSet(new long[]{0x0300000000002902L,0x0000002000000000L});
+    public static final BitSet FOLLOW_post_increment_expression_in_primary_expression1209 = new BitSet(new long[]{0x0300000000002902L,0x0000002000000000L});
+    public static final BitSet FOLLOW_post_decrement_expression_in_primary_expression1215 = new BitSet(new long[]{0x0300000000002902L,0x0000002000000000L});
+    public static final BitSet FOLLOW_DOT_in_member_access1230 = new BitSet(new long[]{0xFC01EE0080000420L,0x0000001FFFFFFFFFL});
+    public static final BitSet FOLLOW_identifier_in_member_access1233 = new BitSet(new long[]{0x0000002000000002L});
+    public static final BitSet FOLLOW_type_arguments_in_member_access1237 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_set_in_identifier0 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_INCREMENT_in_post_increment_expression1525 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_DECREMENT_in_post_decrement_expression1534 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_LBRACKET_in_element_access1545 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_LBRACKET_in_element_access1545 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_expression_in_element_access1549 = new BitSet(new long[]{0x0000000008001000L});
     public static final BitSet FOLLOW_slice_array_in_element_access1553 = new BitSet(new long[]{0x0000000000001000L});
     public static final BitSet FOLLOW_RBRACKET_in_element_access1558 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_COLON_in_slice_array1569 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_COLON_in_slice_array1569 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_expression_in_slice_array1573 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_POINTER_ACCESS_in_pointer_member_access1585 = new BitSet(new long[]{0xFC01EE0080000420L,0x00000007FFFFFFFFL});
+    public static final BitSet FOLLOW_POINTER_ACCESS_in_pointer_member_access1585 = new BitSet(new long[]{0xFC01EE0080000420L,0x0000001FFFFFFFFFL});
     public static final BitSet FOLLOW_identifier_in_pointer_member_access1589 = new BitSet(new long[]{0x0000002000000002L});
     public static final BitSet FOLLOW_type_arguments_in_pointer_member_access1593 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_boolean_literal_in_literal1606 = new BitSet(new long[]{0x0000000000000002L});
@@ -26065,56 +26082,56 @@ public class ValaParser extends Parser {
     public static final BitSet FOLLOW_CHAR_in_char_literal1735 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_REGEX_LITERAL_in_open_regex_literal1746 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_VERBATIM_LITERAL_in_vertbatim_string_literal1757 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_LCURL_in_initializer1769 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001BFF7FFFFFFFFL});
-    public static final BitSet FOLLOW_argument_in_initializer1775 = new BitSet(new long[]{0x0000000000000040L,0x0000100000000000L});
-    public static final BitSet FOLLOW_COMMA_in_initializer1781 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
-    public static final BitSet FOLLOW_argument_in_initializer1783 = new BitSet(new long[]{0x0000000000000040L,0x0000100000000000L});
+    public static final BitSet FOLLOW_LCURL_in_initializer1769 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006FFDFFFFFFFFFL});
+    public static final BitSet FOLLOW_argument_in_initializer1775 = new BitSet(new long[]{0x0000000000000040L,0x0000400000000000L});
+    public static final BitSet FOLLOW_COMMA_in_initializer1781 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
+    public static final BitSet FOLLOW_argument_in_initializer1783 = new BitSet(new long[]{0x0000000000000040L,0x0000400000000000L});
     public static final BitSet FOLLOW_RCURL_in_initializer1790 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_argument_in_arguments1802 = new BitSet(new long[]{0x0000000000000042L});
-    public static final BitSet FOLLOW_COMMA_in_arguments1807 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_COMMA_in_arguments1807 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_argument_in_arguments1809 = new BitSet(new long[]{0x0000000000000042L});
     public static final BitSet FOLLOW_identifier_in_argument1826 = new BitSet(new long[]{0x0000000008000000L});
-    public static final BitSet FOLLOW_COLON_in_argument1830 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
-    public static final BitSet FOLLOW_KW_REF_in_argument1840 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
-    public static final BitSet FOLLOW_KW_OUT_in_argument1846 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_COLON_in_argument1830 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
+    public static final BitSet FOLLOW_KW_REF_in_argument1840 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
+    public static final BitSet FOLLOW_KW_OUT_in_argument1846 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_expression_in_argument1852 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_LPAREN_in_tuple1864 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_LPAREN_in_tuple1864 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_expression_in_tuple1868 = new BitSet(new long[]{0x0000000000004040L});
-    public static final BitSet FOLLOW_COMMA_in_tuple1876 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_COMMA_in_tuple1876 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_expression_in_tuple1881 = new BitSet(new long[]{0x0000000000004040L});
     public static final BitSet FOLLOW_RPAREN_in_tuple1889 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_TEMPLATE_START_in_template1900 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001EFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_TEMPLATE_START_in_template1900 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0007BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_expression_in_template1904 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_COMMA_in_template1906 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001EFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_COMMA_in_template1906 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0007BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_QUOT_in_template1911 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_KW_THIS_in_this_access1922 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_KW_BASE_in_base_access1932 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_KW_NEW_in_object_or_array_creation_expression1944 = new BitSet(new long[]{0xFC01EE0080000620L,0x00000007FFFFFFFFL});
-    public static final BitSet FOLLOW_member_in_object_or_array_creation_expression1948 = new BitSet(new long[]{0x0000000000002800L,0x0000080000000000L});
+    public static final BitSet FOLLOW_KW_NEW_in_object_or_array_creation_expression1944 = new BitSet(new long[]{0xFC01EE0080000620L,0x0000001FFFFFFFFFL});
+    public static final BitSet FOLLOW_member_in_object_or_array_creation_expression1948 = new BitSet(new long[]{0x0000000000002800L,0x0000200000000000L});
     public static final BitSet FOLLOW_object_creation_expression_in_object_or_array_creation_expression1954 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_array_creation_expression_in_object_or_array_creation_expression1958 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_LPAREN_in_object_creation_expression1972 = new BitSet(new long[]{0xFFCDFE0480006620L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_LPAREN_in_object_creation_expression1972 = new BitSet(new long[]{0xFFCDFE0480006620L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_arguments_in_object_creation_expression1979 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_RPAREN_in_object_creation_expression1986 = new BitSet(new long[]{0x0000000000000002L,0x0000080000000000L});
+    public static final BitSet FOLLOW_RPAREN_in_object_creation_expression1986 = new BitSet(new long[]{0x0000000000000002L,0x0000200000000000L});
     public static final BitSet FOLLOW_object_initializer_in_object_creation_expression1993 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_LCURL_in_object_initializer2008 = new BitSet(new long[]{0xFC01EE0080000420L,0x00000007FFFFFFFFL});
-    public static final BitSet FOLLOW_member_initializer_in_object_initializer2012 = new BitSet(new long[]{0x0000000000000040L,0x0000100000000000L});
-    public static final BitSet FOLLOW_COMMA_in_object_initializer2020 = new BitSet(new long[]{0xFC01EE0080000420L,0x00000007FFFFFFFFL});
-    public static final BitSet FOLLOW_member_initializer_in_object_initializer2024 = new BitSet(new long[]{0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_LCURL_in_object_initializer2008 = new BitSet(new long[]{0xFC01EE0080000420L,0x0000001FFFFFFFFFL});
+    public static final BitSet FOLLOW_member_initializer_in_object_initializer2012 = new BitSet(new long[]{0x0000000000000040L,0x0000400000000000L});
+    public static final BitSet FOLLOW_COMMA_in_object_initializer2020 = new BitSet(new long[]{0xFC01EE0080000420L,0x0000001FFFFFFFFFL});
+    public static final BitSet FOLLOW_member_initializer_in_object_initializer2024 = new BitSet(new long[]{0x0000000000000000L,0x0000400000000000L});
     public static final BitSet FOLLOW_RCURL_in_object_initializer2032 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_identifier_in_member_initializer2042 = new BitSet(new long[]{0x0000000000008000L});
-    public static final BitSet FOLLOW_ASSIGNMENT_in_member_initializer2044 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_ASSIGNMENT_in_member_initializer2044 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_expression_in_member_initializer2046 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_LBRACKET_in_array_creation_expression2062 = new BitSet(new long[]{0x0000000000001000L});
-    public static final BitSet FOLLOW_RBRACKET_in_array_creation_expression2068 = new BitSet(new long[]{0x0000000000000802L,0x0000080000000000L});
-    public static final BitSet FOLLOW_LBRACKET_in_array_creation_expression2080 = new BitSet(new long[]{0xFFCDFE0480003620L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_RBRACKET_in_array_creation_expression2068 = new BitSet(new long[]{0x0000000000000802L,0x0000200000000000L});
+    public static final BitSet FOLLOW_LBRACKET_in_array_creation_expression2080 = new BitSet(new long[]{0xFFCDFE0480003620L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_array_size_in_array_creation_expression2087 = new BitSet(new long[]{0x0000000000001000L});
-    public static final BitSet FOLLOW_RBRACKET_in_array_creation_expression2094 = new BitSet(new long[]{0x0000000000000002L,0x0000080000000000L});
+    public static final BitSet FOLLOW_RBRACKET_in_array_creation_expression2094 = new BitSet(new long[]{0x0000000000000002L,0x0000200000000000L});
     public static final BitSet FOLLOW_initializer_in_array_creation_expression2103 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_expression_in_array_size2117 = new BitSet(new long[]{0x0000000000000042L});
-    public static final BitSet FOLLOW_COMMA_in_array_size2122 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_COMMA_in_array_size2122 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_expression_in_array_size2124 = new BitSet(new long[]{0x0000000000000042L});
-    public static final BitSet FOLLOW_GLOBAL_NS_in_member2144 = new BitSet(new long[]{0xFC01EE0080000420L,0x00000007FFFFFFFFL});
+    public static final BitSet FOLLOW_GLOBAL_NS_in_member2144 = new BitSet(new long[]{0xFC01EE0080000420L,0x0000001FFFFFFFFFL});
     public static final BitSet FOLLOW_identifier_in_member2146 = new BitSet(new long[]{0x0000002000000102L});
     public static final BitSet FOLLOW_identifier_in_member2153 = new BitSet(new long[]{0x0000002000000102L});
     public static final BitSet FOLLOW_type_arguments_in_member2162 = new BitSet(new long[]{0x0000000000000102L});
@@ -26124,14 +26141,14 @@ public class ValaParser extends Parser {
     public static final BitSet FOLLOW_COMMA_in_type_arguments2190 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
     public static final BitSet FOLLOW_type_in_type_arguments2192 = new BitSet(new long[]{0x0000004000000040L});
     public static final BitSet FOLLOW_GT_in_type_arguments2198 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_KW_YIELD_in_yield_expression2208 = new BitSet(new long[]{0xFC01EE0080000620L,0x00010007FFFFFFFFL});
+    public static final BitSet FOLLOW_KW_YIELD_in_yield_expression2208 = new BitSet(new long[]{0xFC01EE0080000620L,0x0004001FFFFFFFFFL});
     public static final BitSet FOLLOW_base_access_in_yield_expression2211 = new BitSet(new long[]{0x0000000000000100L});
-    public static final BitSet FOLLOW_DOT_in_yield_expression2213 = new BitSet(new long[]{0xFC01EE0080000620L,0x00000007FFFFFFFFL});
+    public static final BitSet FOLLOW_DOT_in_yield_expression2213 = new BitSet(new long[]{0xFC01EE0080000620L,0x0000001FFFFFFFFFL});
     public static final BitSet FOLLOW_member_in_yield_expression2217 = new BitSet(new long[]{0x0000000000002000L});
     public static final BitSet FOLLOW_method_call_in_yield_expression2219 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_LPAREN_in_method_call2231 = new BitSet(new long[]{0xFFCDFE0480006620L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_LPAREN_in_method_call2231 = new BitSet(new long[]{0xFFCDFE0480006620L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_arguments_in_method_call2237 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_RPAREN_in_method_call2243 = new BitSet(new long[]{0x0000000000000002L,0x0000080000000000L});
+    public static final BitSet FOLLOW_RPAREN_in_method_call2243 = new BitSet(new long[]{0x0000000000000002L,0x0000200000000000L});
     public static final BitSet FOLLOW_object_initializer_in_method_call2249 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_KW_SIZEOF_in_sizeof_expression2263 = new BitSet(new long[]{0x0000000000002000L});
     public static final BitSet FOLLOW_LPAREN_in_sizeof_expression2266 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
@@ -26141,17 +26158,17 @@ public class ValaParser extends Parser {
     public static final BitSet FOLLOW_LPAREN_in_typeof_expression2286 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
     public static final BitSet FOLLOW_type_in_typeof_expression2288 = new BitSet(new long[]{0x0000000000004000L});
     public static final BitSet FOLLOW_RPAREN_in_typeof_expression2290 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_GLOBAL_NS_in_simple_name2302 = new BitSet(new long[]{0xFC01EE0080000420L,0x00000007FFFFFFFFL});
+    public static final BitSet FOLLOW_GLOBAL_NS_in_simple_name2302 = new BitSet(new long[]{0xFC01EE0080000420L,0x0000001FFFFFFFFFL});
     public static final BitSet FOLLOW_identifier_in_simple_name2304 = new BitSet(new long[]{0x0000002000000002L});
     public static final BitSet FOLLOW_identifier_in_simple_name2308 = new BitSet(new long[]{0x0000002000000002L});
     public static final BitSet FOLLOW_type_arguments_in_simple_name2313 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_lambda_expression_params_in_lambda_expression2325 = new BitSet(new long[]{0x0000000000000000L,0x0002000000000000L});
-    public static final BitSet FOLLOW_LAMBDA_in_lambda_expression2327 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_lambda_expression_params_in_lambda_expression2325 = new BitSet(new long[]{0x0000000000000000L,0x0008000000000000L});
+    public static final BitSet FOLLOW_LAMBDA_in_lambda_expression2327 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_lambda_expression_body_in_lambda_expression2329 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_identifier_in_lambda_expression_params2341 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_LPAREN_in_lambda_expression_params2353 = new BitSet(new long[]{0xFC01EE0080004420L,0x00000007FFFFFFFFL});
+    public static final BitSet FOLLOW_LPAREN_in_lambda_expression_params2353 = new BitSet(new long[]{0xFC01EE0080004420L,0x0000001FFFFFFFFFL});
     public static final BitSet FOLLOW_identifier_in_lambda_expression_params2360 = new BitSet(new long[]{0x0000000000004040L});
-    public static final BitSet FOLLOW_COMMA_in_lambda_expression_params2363 = new BitSet(new long[]{0xFC01EE0080000420L,0x00000007FFFFFFFFL});
+    public static final BitSet FOLLOW_COMMA_in_lambda_expression_params2363 = new BitSet(new long[]{0xFC01EE0080000420L,0x0000001FFFFFFFFFL});
     public static final BitSet FOLLOW_identifier_in_lambda_expression_params2365 = new BitSet(new long[]{0x0000000000004040L});
     public static final BitSet FOLLOW_RPAREN_in_lambda_expression_params2375 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_expression_in_lambda_expression_body2389 = new BitSet(new long[]{0x0000000000000002L});
@@ -26159,7 +26176,7 @@ public class ValaParser extends Parser {
     public static final BitSet FOLLOW_member_declaration_modifier_in_member_declaration_modifiers2403 = new BitSet(new long[]{0x0000000000000002L,0x0000000000001FB1L});
     public static final BitSet FOLLOW_set_in_member_declaration_modifier0 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_constructor_declaration_modifiers_in_constructor_declaration2470 = new BitSet(new long[]{0x0400000000000000L});
-    public static final BitSet FOLLOW_KW_CONSTRUCT_in_constructor_declaration2476 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_KW_CONSTRUCT_in_constructor_declaration2476 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_block_in_constructor_declaration2479 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_constructor_declaration_modifier_in_constructor_declaration_modifiers2491 = new BitSet(new long[]{0x0000000000000002L,0x0000000000001FB0L});
     public static final BitSet FOLLOW_set_in_constructor_declaration_modifier0 = new BitSet(new long[]{0x0000000000000002L});
@@ -26167,22 +26184,22 @@ public class ValaParser extends Parser {
     public static final BitSet FOLLOW_BITWISE_NOT_in_destructor_declaration2567 = new BitSet(new long[]{0x0000000000000400L});
     public static final BitSet FOLLOW_IDENTIFIER_in_destructor_declaration2571 = new BitSet(new long[]{0x0000000000002000L});
     public static final BitSet FOLLOW_LPAREN_in_destructor_declaration2575 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_RPAREN_in_destructor_declaration2581 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_RPAREN_in_destructor_declaration2581 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_block_in_destructor_declaration2586 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_access_modifier_in_class_declaration2599 = new BitSet(new long[]{0x0000000000000000L,0x00000000000006A0L});
     public static final BitSet FOLLOW_type_declaration_modifiers_in_class_declaration2606 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000020L});
     public static final BitSet FOLLOW_KW_CLASS_in_class_declaration2612 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
-    public static final BitSet FOLLOW_symbol_in_class_declaration2615 = new BitSet(new long[]{0x0000002008000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_type_arguments_in_class_declaration2620 = new BitSet(new long[]{0x0000000008000000L,0x0000080000000000L});
+    public static final BitSet FOLLOW_symbol_in_class_declaration2615 = new BitSet(new long[]{0x0000002008000000L,0x0000200000000000L});
+    public static final BitSet FOLLOW_type_arguments_in_class_declaration2620 = new BitSet(new long[]{0x0000000008000000L,0x0000200000000000L});
     public static final BitSet FOLLOW_COLON_in_class_declaration2626 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
-    public static final BitSet FOLLOW_base_types_in_class_declaration2628 = new BitSet(new long[]{0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_LCURL_in_class_declaration2634 = new BitSet(new long[]{0xFC81EE0080000E20L,0x01C01007FFFFFFFFL});
-    public static final BitSet FOLLOW_class_member_in_class_declaration2639 = new BitSet(new long[]{0xFC81EE0080000E20L,0x01C01007FFFFFFFFL});
+    public static final BitSet FOLLOW_base_types_in_class_declaration2628 = new BitSet(new long[]{0x0000000000000000L,0x0000200000000000L});
+    public static final BitSet FOLLOW_LCURL_in_class_declaration2634 = new BitSet(new long[]{0xFC81EE0080000E20L,0x0180401FFFFFFFFFL});
+    public static final BitSet FOLLOW_class_member_in_class_declaration2639 = new BitSet(new long[]{0xFC81EE0080000E20L,0x0180401FFFFFFFFFL});
     public static final BitSet FOLLOW_RCURL_in_class_declaration2644 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_type_in_base_types2656 = new BitSet(new long[]{0x0000000000000042L});
     public static final BitSet FOLLOW_COMMA_in_base_types2661 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
     public static final BitSet FOLLOW_type_in_base_types2663 = new BitSet(new long[]{0x0000000000000042L});
-    public static final BitSet FOLLOW_attributes_in_class_member2678 = new BitSet(new long[]{0xFC81EE0080000E20L,0x01C00007FFFFFFFFL});
+    public static final BitSet FOLLOW_attributes_in_class_member2678 = new BitSet(new long[]{0xFC81EE0080000E20L,0x0180001FFFFFFFFFL});
     public static final BitSet FOLLOW_class_declaration_in_class_member2685 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_struct_declaration_in_class_member2691 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_enum_declaration_in_class_member2697 = new BitSet(new long[]{0x0000000000000002L});
@@ -26202,32 +26219,32 @@ public class ValaParser extends Parser {
     public static final BitSet FOLLOW_access_modifier_in_enum_declaration2830 = new BitSet(new long[]{0x0000000000000000L,0x0000000000020680L});
     public static final BitSet FOLLOW_type_declaration_modifiers_in_enum_declaration2837 = new BitSet(new long[]{0x0000000000000000L,0x0000000000020000L});
     public static final BitSet FOLLOW_KW_ENUM_in_enum_declaration2843 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
-    public static final BitSet FOLLOW_symbol_in_enum_declaration2846 = new BitSet(new long[]{0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_LCURL_in_enum_declaration2849 = new BitSet(new long[]{0xFC81EE0080000E20L,0x01C01007FFFFFFFFL});
-    public static final BitSet FOLLOW_enum_member_in_enum_declaration2854 = new BitSet(new long[]{0xFC81EE0080000E20L,0x01C01007FFFFFFFFL});
+    public static final BitSet FOLLOW_symbol_in_enum_declaration2846 = new BitSet(new long[]{0x0000000000000000L,0x0000200000000000L});
+    public static final BitSet FOLLOW_LCURL_in_enum_declaration2849 = new BitSet(new long[]{0xFC81EE0080000E20L,0x0180401FFFFFFFFFL});
+    public static final BitSet FOLLOW_enum_member_in_enum_declaration2854 = new BitSet(new long[]{0xFC81EE0080000E20L,0x0180401FFFFFFFFFL});
     public static final BitSet FOLLOW_RCURL_in_enum_declaration2860 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_attributes_in_enum_member2875 = new BitSet(new long[]{0xFC81EE0080000E20L,0x01C00007FFFFFFFFL});
+    public static final BitSet FOLLOW_attributes_in_enum_member2875 = new BitSet(new long[]{0xFC81EE0080000E20L,0x0180001FFFFFFFFFL});
     public static final BitSet FOLLOW_method_declaration_in_enum_member2886 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_constant_declaration_in_enum_member2894 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_unknown_chain_in_enum_member2902 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_enum_values_in_enum_member2916 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_enum_value_in_enum_values2929 = new BitSet(new long[]{0x00000000000000C2L});
-    public static final BitSet FOLLOW_COMMA_in_enum_values2934 = new BitSet(new long[]{0xFC81EE0080000E20L,0x01C00007FFFFFFFFL});
+    public static final BitSet FOLLOW_COMMA_in_enum_values2934 = new BitSet(new long[]{0xFC81EE0080000E20L,0x0180001FFFFFFFFFL});
     public static final BitSet FOLLOW_enum_value_in_enum_values2936 = new BitSet(new long[]{0x00000000000000C2L});
     public static final BitSet FOLLOW_COMMA_in_enum_values2942 = new BitSet(new long[]{0x0000000000000082L});
     public static final BitSet FOLLOW_SEMICOLON_in_enum_values2948 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_attributes_in_enum_value2964 = new BitSet(new long[]{0xFC01EE0080000420L,0x00000007FFFFFFFFL});
+    public static final BitSet FOLLOW_attributes_in_enum_value2964 = new BitSet(new long[]{0xFC01EE0080000420L,0x0000001FFFFFFFFFL});
     public static final BitSet FOLLOW_identifier_in_enum_value2970 = new BitSet(new long[]{0x0000000000008002L});
-    public static final BitSet FOLLOW_ASSIGNMENT_in_enum_value2974 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_ASSIGNMENT_in_enum_value2974 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_expression_in_enum_value2976 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_access_modifier_in_errordomain_declaration2991 = new BitSet(new long[]{0x0000000000000000L,0x0000000000040680L});
     public static final BitSet FOLLOW_type_declaration_modifiers_in_errordomain_declaration2998 = new BitSet(new long[]{0x0000000000000000L,0x0000000000040000L});
     public static final BitSet FOLLOW_KW_ERRORDOMAIN_in_errordomain_declaration3004 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
-    public static final BitSet FOLLOW_symbol_in_errordomain_declaration3007 = new BitSet(new long[]{0x0000000000000000L,0x0000080000000000L});
+    public static final BitSet FOLLOW_symbol_in_errordomain_declaration3007 = new BitSet(new long[]{0x0000000000000000L,0x0000200000000000L});
     public static final BitSet FOLLOW_LCURL_in_errordomain_declaration3010 = new BitSet(new long[]{0x0000000000000C00L});
-    public static final BitSet FOLLOW_errorcodes_in_errordomain_declaration3014 = new BitSet(new long[]{0x0000000000000080L,0x0000100000000000L});
-    public static final BitSet FOLLOW_SEMICOLON_in_errordomain_declaration3019 = new BitSet(new long[]{0x0001E80000000600L,0x000010000001FFB1L});
-    public static final BitSet FOLLOW_method_declaration_in_errordomain_declaration3023 = new BitSet(new long[]{0x0001E80000000600L,0x000010000001FFB1L});
+    public static final BitSet FOLLOW_errorcodes_in_errordomain_declaration3014 = new BitSet(new long[]{0x0000000000000080L,0x0000400000000000L});
+    public static final BitSet FOLLOW_SEMICOLON_in_errordomain_declaration3019 = new BitSet(new long[]{0x0001E80000000600L,0x000040000001FFB1L});
+    public static final BitSet FOLLOW_method_declaration_in_errordomain_declaration3023 = new BitSet(new long[]{0x0001E80000000600L,0x000040000001FFB1L});
     public static final BitSet FOLLOW_RCURL_in_errordomain_declaration3031 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_errorcode_in_errorcodes3043 = new BitSet(new long[]{0x0000000000000042L});
     public static final BitSet FOLLOW_COMMA_in_errorcodes3048 = new BitSet(new long[]{0x0000000000000C00L});
@@ -26235,24 +26252,24 @@ public class ValaParser extends Parser {
     public static final BitSet FOLLOW_COMMA_in_errorcodes3056 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_attributes_in_errorcode3070 = new BitSet(new long[]{0x0000000000000400L});
     public static final BitSet FOLLOW_IDENTIFIER_in_errorcode3074 = new BitSet(new long[]{0x0000000000008002L});
-    public static final BitSet FOLLOW_ASSIGNMENT_in_errorcode3077 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_ASSIGNMENT_in_errorcode3077 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_expression_in_errorcode3079 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_access_modifier_in_interface_declaration3094 = new BitSet(new long[]{0x0000000000000000L,0x0000000000080680L});
     public static final BitSet FOLLOW_type_declaration_modifiers_in_interface_declaration3101 = new BitSet(new long[]{0x0000000000000000L,0x0000000000080000L});
     public static final BitSet FOLLOW_KW_INTERFACE_in_interface_declaration3107 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
-    public static final BitSet FOLLOW_symbol_in_interface_declaration3110 = new BitSet(new long[]{0x0000002008000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_type_parameters_in_interface_declaration3115 = new BitSet(new long[]{0x0000000008000000L,0x0000080000000000L});
+    public static final BitSet FOLLOW_symbol_in_interface_declaration3110 = new BitSet(new long[]{0x0000002008000000L,0x0000200000000000L});
+    public static final BitSet FOLLOW_type_parameters_in_interface_declaration3115 = new BitSet(new long[]{0x0000000008000000L,0x0000200000000000L});
     public static final BitSet FOLLOW_COLON_in_interface_declaration3121 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
-    public static final BitSet FOLLOW_base_types_in_interface_declaration3123 = new BitSet(new long[]{0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_LCURL_in_interface_declaration3129 = new BitSet(new long[]{0x0001E80000000E00L,0x01C01000001FFFF1L});
-    public static final BitSet FOLLOW_interface_member_in_interface_declaration3134 = new BitSet(new long[]{0x0001E80000000E00L,0x01C01000001FFFF1L});
+    public static final BitSet FOLLOW_base_types_in_interface_declaration3123 = new BitSet(new long[]{0x0000000000000000L,0x0000200000000000L});
+    public static final BitSet FOLLOW_LCURL_in_interface_declaration3129 = new BitSet(new long[]{0x0001E80000000E00L,0x01804008001FFFF1L});
+    public static final BitSet FOLLOW_interface_member_in_interface_declaration3134 = new BitSet(new long[]{0x0001E80000000E00L,0x01804008001FFFF1L});
     public static final BitSet FOLLOW_RCURL_in_interface_declaration3139 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_LT_in_type_parameters3151 = new BitSet(new long[]{0xFC01EE0080000420L,0x00000007FFFFFFFFL});
+    public static final BitSet FOLLOW_LT_in_type_parameters3151 = new BitSet(new long[]{0xFC01EE0080000420L,0x0000001FFFFFFFFFL});
     public static final BitSet FOLLOW_identifier_in_type_parameters3155 = new BitSet(new long[]{0x0000004000000040L});
-    public static final BitSet FOLLOW_COMMA_in_type_parameters3159 = new BitSet(new long[]{0xFC01EE0080000420L,0x00000007FFFFFFFFL});
+    public static final BitSet FOLLOW_COMMA_in_type_parameters3159 = new BitSet(new long[]{0xFC01EE0080000420L,0x0000001FFFFFFFFFL});
     public static final BitSet FOLLOW_identifier_in_type_parameters3161 = new BitSet(new long[]{0x0000004000000040L});
     public static final BitSet FOLLOW_GT_in_type_parameters3167 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_attributes_in_interface_member3178 = new BitSet(new long[]{0x0001E80000000E00L,0x01C00000001FFFF1L});
+    public static final BitSet FOLLOW_attributes_in_interface_member3178 = new BitSet(new long[]{0x0001E80000000E00L,0x01800008001FFFF1L});
     public static final BitSet FOLLOW_class_declaration_in_interface_member3187 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_struct_declaration_in_interface_member3192 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_enum_declaration_in_interface_member3198 = new BitSet(new long[]{0x0000000000000002L});
@@ -26263,21 +26280,21 @@ public class ValaParser extends Parser {
     public static final BitSet FOLLOW_constant_declaration_in_interface_member3228 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_property_declaration_in_interface_member3234 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_KW_NAMESPACE_in_namespace_declaration3248 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
-    public static final BitSet FOLLOW_symbol_in_namespace_declaration3251 = new BitSet(new long[]{0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_LCURL_in_namespace_declaration3255 = new BitSet(new long[]{0x0001E80000000E20L,0x01401000001FFFF1L});
-    public static final BitSet FOLLOW_using_directive_in_namespace_declaration3261 = new BitSet(new long[]{0x0001E80000000E20L,0x01401000001FFFF1L});
-    public static final BitSet FOLLOW_namespace_member_in_namespace_declaration3268 = new BitSet(new long[]{0x0001E80000000E00L,0x01401000001FFFF1L});
+    public static final BitSet FOLLOW_symbol_in_namespace_declaration3251 = new BitSet(new long[]{0x0000000000000000L,0x0000200000000000L});
+    public static final BitSet FOLLOW_LCURL_in_namespace_declaration3255 = new BitSet(new long[]{0x0001E80000000E20L,0x01804000001FFFF1L});
+    public static final BitSet FOLLOW_using_directive_in_namespace_declaration3261 = new BitSet(new long[]{0x0001E80000000E20L,0x01804000001FFFF1L});
+    public static final BitSet FOLLOW_namespace_member_in_namespace_declaration3268 = new BitSet(new long[]{0x0001E80000000E00L,0x01804000001FFFF1L});
     public static final BitSet FOLLOW_RCURL_in_namespace_declaration3274 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_access_modifier_in_struct_declaration3287 = new BitSet(new long[]{0x0000000000000000L,0x00000000000006C0L});
     public static final BitSet FOLLOW_type_declaration_modifiers_in_struct_declaration3294 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000040L});
     public static final BitSet FOLLOW_KW_STRUCT_in_struct_declaration3300 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
-    public static final BitSet FOLLOW_symbol_in_struct_declaration3303 = new BitSet(new long[]{0x0000000008000000L,0x0000080000000000L});
+    public static final BitSet FOLLOW_symbol_in_struct_declaration3303 = new BitSet(new long[]{0x0000000008000000L,0x0000200000000000L});
     public static final BitSet FOLLOW_COLON_in_struct_declaration3314 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
-    public static final BitSet FOLLOW_base_types_in_struct_declaration3316 = new BitSet(new long[]{0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_LCURL_in_struct_declaration3329 = new BitSet(new long[]{0xFC81EE0080000E20L,0x01C01007FFFFFFFFL});
-    public static final BitSet FOLLOW_struct_member_in_struct_declaration3341 = new BitSet(new long[]{0xFC81EE0080000E20L,0x01C01007FFFFFFFFL});
+    public static final BitSet FOLLOW_base_types_in_struct_declaration3316 = new BitSet(new long[]{0x0000000000000000L,0x0000200000000000L});
+    public static final BitSet FOLLOW_LCURL_in_struct_declaration3329 = new BitSet(new long[]{0xFC81EE0080000E20L,0x0180401FFFFFFFFFL});
+    public static final BitSet FOLLOW_struct_member_in_struct_declaration3341 = new BitSet(new long[]{0xFC81EE0080000E20L,0x0180401FFFFFFFFFL});
     public static final BitSet FOLLOW_RCURL_in_struct_declaration3354 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_attributes_in_struct_member3367 = new BitSet(new long[]{0xFC81EE0080000E20L,0x01C00007FFFFFFFFL});
+    public static final BitSet FOLLOW_attributes_in_struct_member3367 = new BitSet(new long[]{0xFC81EE0080000E20L,0x0180001FFFFFFFFFL});
     public static final BitSet FOLLOW_method_declaration_in_struct_member3378 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_field_declaration_in_struct_member3385 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_constant_declaration_in_struct_member3392 = new BitSet(new long[]{0x0000000000000002L});
@@ -26287,73 +26304,73 @@ public class ValaParser extends Parser {
     public static final BitSet FOLLOW_access_modifier_in_creation_method_declaration3427 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
     public static final BitSet FOLLOW_constructor_declaration_modifiers_in_creation_method_declaration3434 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
     public static final BitSet FOLLOW_symbol_in_creation_method_declaration3440 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_parameters_in_creation_method_declaration3444 = new BitSet(new long[]{0xFFCDFE04800026A0L,0x002DAFF7FFFFFFFFL});
-    public static final BitSet FOLLOW_throws_part_in_creation_method_declaration3449 = new BitSet(new long[]{0xFFCDFE04800026A0L,0x0029AFF7FFFFFFFFL});
-    public static final BitSet FOLLOW_requires_decl_in_creation_method_declaration3456 = new BitSet(new long[]{0xFFCDFE04800026A0L,0x0021AFF7FFFFFFFFL});
-    public static final BitSet FOLLOW_ensures_decl_in_creation_method_declaration3463 = new BitSet(new long[]{0xFFCDFE04800026A0L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_parameters_in_creation_method_declaration3444 = new BitSet(new long[]{0xFFCDFE04800026A0L,0x0056BFDFFFFFFFFFL});
+    public static final BitSet FOLLOW_throws_part_in_creation_method_declaration3449 = new BitSet(new long[]{0xFFCDFE04800026A0L,0x0046BFDFFFFFFFFFL});
+    public static final BitSet FOLLOW_requires_decl_in_creation_method_declaration3456 = new BitSet(new long[]{0xFFCDFE04800026A0L,0x0046BFDFFFFFFFFFL});
+    public static final BitSet FOLLOW_ensures_decl_in_creation_method_declaration3463 = new BitSet(new long[]{0xFFCDFE04800026A0L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_SEMICOLON_in_creation_method_declaration3470 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_block_in_creation_method_declaration3474 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_KW_THROWS_in_throws_part3486 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
     public static final BitSet FOLLOW_type_in_throws_part3489 = new BitSet(new long[]{0x0000000000000042L});
     public static final BitSet FOLLOW_COMMA_in_throws_part3494 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
     public static final BitSet FOLLOW_type_in_throws_part3496 = new BitSet(new long[]{0x0000000000000042L});
-    public static final BitSet FOLLOW_LPAREN_in_parameters3510 = new BitSet(new long[]{0x0001E80000004E00L,0x0010000000E1FFB1L});
+    public static final BitSet FOLLOW_LPAREN_in_parameters3510 = new BitSet(new long[]{0x0001E80000004E00L,0x0020000000E1FFB1L});
     public static final BitSet FOLLOW_parameters_decl_in_parameters3515 = new BitSet(new long[]{0x0000000000004000L});
     public static final BitSet FOLLOW_RPAREN_in_parameters3520 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_parameter_in_parameters_decl3530 = new BitSet(new long[]{0x0000000000000042L});
-    public static final BitSet FOLLOW_COMMA_in_parameters_decl3534 = new BitSet(new long[]{0x0001E80000000E00L,0x0010000000E1FFB1L});
+    public static final BitSet FOLLOW_COMMA_in_parameters_decl3534 = new BitSet(new long[]{0x0001E80000000E00L,0x0020000000E1FFB1L});
     public static final BitSet FOLLOW_parameter_in_parameters_decl3536 = new BitSet(new long[]{0x0000000000000042L});
     public static final BitSet FOLLOW_KW_REQUIRES_in_requires_decl3554 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_LPAREN_in_requires_decl3557 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_LPAREN_in_requires_decl3557 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_expression_in_requires_decl3561 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_RPAREN_in_requires_decl3565 = new BitSet(new long[]{0x0000000000000002L,0x0008000000000000L});
+    public static final BitSet FOLLOW_RPAREN_in_requires_decl3565 = new BitSet(new long[]{0x0000000000000002L,0x0000001000000000L});
     public static final BitSet FOLLOW_requires_decl_in_requires_decl3569 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_attributes_in_parameter3585 = new BitSet(new long[]{0x0001E80000000600L,0x0010000000E1FFB1L});
+    public static final BitSet FOLLOW_attributes_in_parameter3585 = new BitSet(new long[]{0x0001E80000000600L,0x0020000000E1FFB1L});
     public static final BitSet FOLLOW_ELIPSIS_in_parameter3597 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_KW_PARAMS_in_parameter3614 = new BitSet(new long[]{0x0001E80000000600L,0x000000000061FFB1L});
     public static final BitSet FOLLOW_KW_OWNED_in_parameter3623 = new BitSet(new long[]{0x0001E80000000600L,0x000000000061FFB1L});
     public static final BitSet FOLLOW_KW_UNOWNED_in_parameter3629 = new BitSet(new long[]{0x0001E80000000600L,0x000000000061FFB1L});
     public static final BitSet FOLLOW_KW_REF_in_parameter3639 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
     public static final BitSet FOLLOW_KW_OUT_in_parameter3645 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
-    public static final BitSet FOLLOW_type_in_parameter3653 = new BitSet(new long[]{0xFC01EE0080000420L,0x00000007FFFFFFFFL});
+    public static final BitSet FOLLOW_type_in_parameter3653 = new BitSet(new long[]{0xFC01EE0080000420L,0x0000001FFFFFFFFFL});
     public static final BitSet FOLLOW_identifier_in_parameter3659 = new BitSet(new long[]{0x0000000000008002L});
-    public static final BitSet FOLLOW_ASSIGNMENT_in_parameter3666 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_ASSIGNMENT_in_parameter3666 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_expression_in_parameter3668 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_KW_ENSURES_in_ensures_decl3691 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_LPAREN_in_ensures_decl3696 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_LPAREN_in_ensures_decl3696 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_expression_in_ensures_decl3700 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_RPAREN_in_ensures_decl3704 = new BitSet(new long[]{0x0000000000000002L,0x0020000000000000L});
+    public static final BitSet FOLLOW_RPAREN_in_ensures_decl3704 = new BitSet(new long[]{0x0000000000000002L,0x0040000000000000L});
     public static final BitSet FOLLOW_ensures_decl_in_ensures_decl3710 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_access_modifier_in_delegate_declaration3725 = new BitSet(new long[]{0x0000000000000000L,0x0040000000001FB0L});
-    public static final BitSet FOLLOW_delegate_declaration_modifiers_in_delegate_declaration3732 = new BitSet(new long[]{0x0000000000000000L,0x0040000000000000L});
+    public static final BitSet FOLLOW_access_modifier_in_delegate_declaration3725 = new BitSet(new long[]{0x0000000000000000L,0x0080000000001FB0L});
+    public static final BitSet FOLLOW_delegate_declaration_modifiers_in_delegate_declaration3732 = new BitSet(new long[]{0x0000000000000000L,0x0080000000000000L});
     public static final BitSet FOLLOW_KW_DELEGATE_in_delegate_declaration3738 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
     public static final BitSet FOLLOW_type_in_delegate_declaration3741 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
     public static final BitSet FOLLOW_symbol_in_delegate_declaration3745 = new BitSet(new long[]{0x0000002000002000L});
     public static final BitSet FOLLOW_type_parameters_in_delegate_declaration3750 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_parameters_in_delegate_declaration3755 = new BitSet(new long[]{0x0000000000000080L,0x0004000000000000L});
+    public static final BitSet FOLLOW_parameters_in_delegate_declaration3755 = new BitSet(new long[]{0x0000000000000080L,0x0010000000000000L});
     public static final BitSet FOLLOW_throws_part_in_delegate_declaration3759 = new BitSet(new long[]{0x0000000000000080L});
     public static final BitSet FOLLOW_SEMICOLON_in_delegate_declaration3765 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_delegate_declaration_modifier_in_delegate_declaration_modifiers3775 = new BitSet(new long[]{0x0000000000000002L,0x0000000000001FB0L});
     public static final BitSet FOLLOW_set_in_delegate_declaration_modifier0 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_access_modifier_in_signal_declaration3840 = new BitSet(new long[]{0x0000000000000000L,0x0080000000001D91L});
-    public static final BitSet FOLLOW_signal_declaration_modifiers_in_signal_declaration3847 = new BitSet(new long[]{0x0000000000000000L,0x0080000000000000L});
+    public static final BitSet FOLLOW_access_modifier_in_signal_declaration3840 = new BitSet(new long[]{0x0000000000000000L,0x0000000800001D91L});
+    public static final BitSet FOLLOW_signal_declaration_modifiers_in_signal_declaration3847 = new BitSet(new long[]{0x0000000000000000L,0x0000000800000000L});
     public static final BitSet FOLLOW_KW_SIGNAL_in_signal_declaration3853 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
     public static final BitSet FOLLOW_type_in_signal_declaration3856 = new BitSet(new long[]{0x0000000000000400L});
     public static final BitSet FOLLOW_IDENTIFIER_in_signal_declaration3860 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_parameters_in_signal_declaration3863 = new BitSet(new long[]{0xFFCDFE04800026A0L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_parameters_in_signal_declaration3863 = new BitSet(new long[]{0xFFCDFE04800026A0L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_SEMICOLON_in_signal_declaration3868 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_block_in_signal_declaration3872 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_signal_declaration_modifier_in_signal_declaration_modifiers3884 = new BitSet(new long[]{0x0000000000000002L,0x0000000000001D91L});
     public static final BitSet FOLLOW_set_in_signal_declaration_modifier0 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_access_modifier_in_method_declaration3940 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
     public static final BitSet FOLLOW_member_declaration_modifiers_in_method_declaration3947 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
-    public static final BitSet FOLLOW_type_in_method_declaration3953 = new BitSet(new long[]{0xFC01EE0080000420L,0x00000007FFFFFFFFL});
+    public static final BitSet FOLLOW_type_in_method_declaration3953 = new BitSet(new long[]{0xFC01EE0080000420L,0x0000001FFFFFFFFFL});
     public static final BitSet FOLLOW_identifier_in_method_declaration3957 = new BitSet(new long[]{0x0000002000002000L});
     public static final BitSet FOLLOW_type_parameters_in_method_declaration3962 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_parameters_in_method_declaration3975 = new BitSet(new long[]{0xFFCDFE04800026A0L,0x002DAFF7FFFFFFFFL});
-    public static final BitSet FOLLOW_throws_part_in_method_declaration3979 = new BitSet(new long[]{0xFFCDFE04800026A0L,0x0029AFF7FFFFFFFFL});
-    public static final BitSet FOLLOW_requires_decl_in_method_declaration3986 = new BitSet(new long[]{0xFFCDFE04800026A0L,0x0021AFF7FFFFFFFFL});
-    public static final BitSet FOLLOW_ensures_decl_in_method_declaration3993 = new BitSet(new long[]{0xFFCDFE04800026A0L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_parameters_in_method_declaration3975 = new BitSet(new long[]{0xFFCDFE04800026A0L,0x0056BFDFFFFFFFFFL});
+    public static final BitSet FOLLOW_throws_part_in_method_declaration3979 = new BitSet(new long[]{0xFFCDFE04800026A0L,0x0046BFDFFFFFFFFFL});
+    public static final BitSet FOLLOW_requires_decl_in_method_declaration3986 = new BitSet(new long[]{0xFFCDFE04800026A0L,0x0046BFDFFFFFFFFFL});
+    public static final BitSet FOLLOW_ensures_decl_in_method_declaration3993 = new BitSet(new long[]{0xFFCDFE04800026A0L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_SEMICOLON_in_method_declaration4001 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_block_in_method_declaration4005 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_access_modifier_in_constant_declaration4020 = new BitSet(new long[]{0x0000000000000000L,0x0100000000001FB1L});
@@ -26362,30 +26379,30 @@ public class ValaParser extends Parser {
     public static final BitSet FOLLOW_type_in_constant_declaration4036 = new BitSet(new long[]{0x0000000000000400L});
     public static final BitSet FOLLOW_IDENTIFIER_in_constant_declaration4040 = new BitSet(new long[]{0x0000000000008880L});
     public static final BitSet FOLLOW_inline_array_type_in_constant_declaration4045 = new BitSet(new long[]{0x0000000000008080L});
-    public static final BitSet FOLLOW_ASSIGNMENT_in_constant_declaration4051 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_ASSIGNMENT_in_constant_declaration4051 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_expression_in_constant_declaration4053 = new BitSet(new long[]{0x0000000000000080L});
     public static final BitSet FOLLOW_SEMICOLON_in_constant_declaration4059 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_LBRACKET_in_inline_array_type4071 = new BitSet(new long[]{0x0000000000000000L,0x0000001000000000L});
+    public static final BitSet FOLLOW_LBRACKET_in_inline_array_type4071 = new BitSet(new long[]{0x0000000000000000L,0x0000004000000000L});
     public static final BitSet FOLLOW_INTEGER_in_inline_array_type4074 = new BitSet(new long[]{0x0000000000001000L});
     public static final BitSet FOLLOW_RBRACKET_in_inline_array_type4078 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_access_modifier_in_field_declaration4091 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
     public static final BitSet FOLLOW_member_declaration_modifiers_in_field_declaration4098 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
-    public static final BitSet FOLLOW_type_in_field_declaration4104 = new BitSet(new long[]{0xFC01EE0080000420L,0x00000007FFFFFFFFL});
+    public static final BitSet FOLLOW_type_in_field_declaration4104 = new BitSet(new long[]{0xFC01EE0080000420L,0x0000001FFFFFFFFFL});
     public static final BitSet FOLLOW_identifier_in_field_declaration4108 = new BitSet(new long[]{0x0000000000008880L});
     public static final BitSet FOLLOW_LBRACKET_in_field_declaration4112 = new BitSet(new long[]{0x0000000000001000L});
     public static final BitSet FOLLOW_RBRACKET_in_field_declaration4115 = new BitSet(new long[]{0x0000000000008080L});
-    public static final BitSet FOLLOW_ASSIGNMENT_in_field_declaration4121 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_ASSIGNMENT_in_field_declaration4121 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_expression_in_field_declaration4123 = new BitSet(new long[]{0x0000000000000080L});
     public static final BitSet FOLLOW_SEMICOLON_in_field_declaration4129 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_access_modifier_in_property_declaration4142 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
     public static final BitSet FOLLOW_property_declaration_modifiers_in_property_declaration4149 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
-    public static final BitSet FOLLOW_type_in_property_declaration4155 = new BitSet(new long[]{0xFC01EE0080000420L,0x00000007FFFFFFFFL});
-    public static final BitSet FOLLOW_identifier_in_property_declaration4157 = new BitSet(new long[]{0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_LCURL_in_property_declaration4167 = new BitSet(new long[]{0x1C00000000000800L,0x020010000001E000L});
-    public static final BitSet FOLLOW_property_declaration_part_in_property_declaration4179 = new BitSet(new long[]{0x1C00000000000800L,0x020010000001E000L});
+    public static final BitSet FOLLOW_type_in_property_declaration4155 = new BitSet(new long[]{0xFC01EE0080000420L,0x0000001FFFFFFFFFL});
+    public static final BitSet FOLLOW_identifier_in_property_declaration4157 = new BitSet(new long[]{0x0000000000000000L,0x0000200000000000L});
+    public static final BitSet FOLLOW_LCURL_in_property_declaration4167 = new BitSet(new long[]{0x1C00000000000800L,0x020040000001E000L});
+    public static final BitSet FOLLOW_property_declaration_part_in_property_declaration4179 = new BitSet(new long[]{0x1C00000000000800L,0x020040000001E000L});
     public static final BitSet FOLLOW_RCURL_in_property_declaration4192 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_KW_DEFAULT_in_property_declaration_part4209 = new BitSet(new long[]{0x0000000000008000L});
-    public static final BitSet FOLLOW_ASSIGNMENT_in_property_declaration_part4213 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_ASSIGNMENT_in_property_declaration_part4213 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_expression_in_property_declaration_part4218 = new BitSet(new long[]{0x0000000000000080L});
     public static final BitSet FOLLOW_SEMICOLON_in_property_declaration_part4223 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_property_accessor_in_property_declaration_part4233 = new BitSet(new long[]{0x0000000000000002L});
@@ -26398,21 +26415,21 @@ public class ValaParser extends Parser {
     public static final BitSet FOLLOW_property_set_construct_accessor_in_property_accessor4283 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_property_get_accessor_in_property_accessor4293 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_access_modifier_in_property_get_accessor4313 = new BitSet(new long[]{0x1000000000000000L});
-    public static final BitSet FOLLOW_KW_GET_in_property_get_accessor4318 = new BitSet(new long[]{0xFFCDFE04800026A0L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_KW_GET_in_property_get_accessor4318 = new BitSet(new long[]{0xFFCDFE04800026A0L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_SEMICOLON_in_property_get_accessor4323 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_block_in_property_get_accessor4327 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_access_modifier_in_property_set_construct_accessor4346 = new BitSet(new long[]{0x0C00000000000000L});
-    public static final BitSet FOLLOW_KW_SET_in_property_set_construct_accessor4359 = new BitSet(new long[]{0xFFCDFE04800026A0L,0x0001AFF7FFFFFFFFL});
-    public static final BitSet FOLLOW_KW_CONSTRUCT_in_property_set_construct_accessor4362 = new BitSet(new long[]{0xFFCDFE04800026A0L,0x0001AFF7FFFFFFFFL});
-    public static final BitSet FOLLOW_KW_CONSTRUCT_in_property_set_construct_accessor4376 = new BitSet(new long[]{0xFFCDFE04800026A0L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_KW_SET_in_property_set_construct_accessor4359 = new BitSet(new long[]{0xFFCDFE04800026A0L,0x0006BFDFFFFFFFFFL});
+    public static final BitSet FOLLOW_KW_CONSTRUCT_in_property_set_construct_accessor4362 = new BitSet(new long[]{0xFFCDFE04800026A0L,0x0006BFDFFFFFFFFFL});
+    public static final BitSet FOLLOW_KW_CONSTRUCT_in_property_set_construct_accessor4376 = new BitSet(new long[]{0xFFCDFE04800026A0L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_KW_CONSTRUCT_in_property_set_construct_accessor4387 = new BitSet(new long[]{0x0800000000000000L});
-    public static final BitSet FOLLOW_KW_SET_in_property_set_construct_accessor4389 = new BitSet(new long[]{0xFFCDFE04800026A0L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_KW_SET_in_property_set_construct_accessor4389 = new BitSet(new long[]{0xFFCDFE04800026A0L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_SEMICOLON_in_property_set_construct_accessor4406 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_block_in_property_set_construct_accessor4413 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_property_declaration_modifier_in_property_declaration_modifiers4427 = new BitSet(new long[]{0x0000000000000002L,0x0000000000001FA1L});
     public static final BitSet FOLLOW_set_in_property_declaration_modifier0 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_LCURL_in_block4488 = new BitSet(new long[]{0xFFCDFE04800026A0L,0xD401BFF7FFFFFFFFL,0x0000000000000001L});
-    public static final BitSet FOLLOW_statement_in_block4493 = new BitSet(new long[]{0xFFCDFE04800026A0L,0xD401BFF7FFFFFFFFL,0x0000000000000001L});
+    public static final BitSet FOLLOW_LCURL_in_block4488 = new BitSet(new long[]{0xFFCDFE04800026A0L,0xD406FFDFFFFFFFFFL,0x0000000000000001L});
+    public static final BitSet FOLLOW_statement_in_block4493 = new BitSet(new long[]{0xFFCDFE04800026A0L,0xD406FFDFFFFFFFFFL,0x0000000000000001L});
     public static final BitSet FOLLOW_RCURL_in_block4499 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_block_in_statement4511 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_SEMICOLON_in_statement4517 = new BitSet(new long[]{0x0000000000000002L});
@@ -26433,11 +26450,11 @@ public class ValaParser extends Parser {
     public static final BitSet FOLLOW_local_variable_declarations_in_statement4605 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_expression_statement_in_statement4611 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_KW_IF_in_if_statement4623 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_LPAREN_in_if_statement4626 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_LPAREN_in_if_statement4626 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_expression_in_if_statement4630 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_RPAREN_in_if_statement4634 = new BitSet(new long[]{0xFFCDFE04800026A0L,0xD401AFF7FFFFFFFFL,0x0000000000000001L});
+    public static final BitSet FOLLOW_RPAREN_in_if_statement4634 = new BitSet(new long[]{0xFFCDFE04800026A0L,0xD406BFDFFFFFFFFFL,0x0000000000000001L});
     public static final BitSet FOLLOW_embedded_statement_in_if_statement4638 = new BitSet(new long[]{0x0000000000000002L,0x0800000000000000L});
-    public static final BitSet FOLLOW_KW_ELSE_in_if_statement4646 = new BitSet(new long[]{0xFFCDFE04800026A0L,0xD401AFF7FFFFFFFFL,0x0000000000000001L});
+    public static final BitSet FOLLOW_KW_ELSE_in_if_statement4646 = new BitSet(new long[]{0xFFCDFE04800026A0L,0xD406BFDFFFFFFFFFL,0x0000000000000001L});
     public static final BitSet FOLLOW_embedded_statement_in_if_statement4650 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_block_in_embedded_statement4666 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_embedded_statement_without_block_in_embedded_statement4672 = new BitSet(new long[]{0x0000000000000002L});
@@ -26458,46 +26475,46 @@ public class ValaParser extends Parser {
     public static final BitSet FOLLOW_delete_statement_in_embedded_statement_without_block4767 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_expression_statement_in_embedded_statement_without_block4773 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_KW_SWITCH_in_switch_statement4785 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_LPAREN_in_switch_statement4788 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_LPAREN_in_switch_statement4788 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_expression_in_switch_statement4792 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_RPAREN_in_switch_statement4796 = new BitSet(new long[]{0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_LCURL_in_switch_statement4801 = new BitSet(new long[]{0x0000000000000000L,0x2200100000000000L});
-    public static final BitSet FOLLOW_switch_section_in_switch_statement4806 = new BitSet(new long[]{0x0000000000000000L,0x2200100000000000L});
+    public static final BitSet FOLLOW_RPAREN_in_switch_statement4796 = new BitSet(new long[]{0x0000000000000000L,0x0000200000000000L});
+    public static final BitSet FOLLOW_LCURL_in_switch_statement4801 = new BitSet(new long[]{0x0000000000000000L,0x2200400000000000L});
+    public static final BitSet FOLLOW_switch_section_in_switch_statement4806 = new BitSet(new long[]{0x0000000000000000L,0x2200400000000000L});
     public static final BitSet FOLLOW_RCURL_in_switch_statement4812 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_KW_CASE_in_switch_section4830 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_KW_CASE_in_switch_section4830 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_expression_in_switch_section4832 = new BitSet(new long[]{0x0000000008000000L});
     public static final BitSet FOLLOW_KW_DEFAULT_in_switch_section4842 = new BitSet(new long[]{0x0000000008000000L});
-    public static final BitSet FOLLOW_COLON_in_switch_section4851 = new BitSet(new long[]{0xFFCDFE04800026A2L,0xD401AFF7FFFFFFFFL,0x0000000000000001L});
-    public static final BitSet FOLLOW_statement_in_switch_section4855 = new BitSet(new long[]{0xFFCDFE04800026A2L,0xD401AFF7FFFFFFFFL,0x0000000000000001L});
+    public static final BitSet FOLLOW_COLON_in_switch_section4851 = new BitSet(new long[]{0xFFCDFE04800026A2L,0xD406BFDFFFFFFFFFL,0x0000000000000001L});
+    public static final BitSet FOLLOW_statement_in_switch_section4855 = new BitSet(new long[]{0xFFCDFE04800026A2L,0xD406BFDFFFFFFFFFL,0x0000000000000001L});
     public static final BitSet FOLLOW_KW_BREAK_in_switch_section4861 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_KW_WHILE_in_while_statement4873 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_LPAREN_in_while_statement4876 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_LPAREN_in_while_statement4876 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_expression_in_while_statement4878 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_RPAREN_in_while_statement4880 = new BitSet(new long[]{0xFFCDFE04800026A0L,0xD401AFF7FFFFFFFFL,0x0000000000000001L});
+    public static final BitSet FOLLOW_RPAREN_in_while_statement4880 = new BitSet(new long[]{0xFFCDFE04800026A0L,0xD406BFDFFFFFFFFFL,0x0000000000000001L});
     public static final BitSet FOLLOW_embedded_statement_in_while_statement4882 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_KW_DO_in_do_statement4892 = new BitSet(new long[]{0xFFCDFE04800026A0L,0xD401AFF7FFFFFFFFL,0x0000000000000001L});
+    public static final BitSet FOLLOW_KW_DO_in_do_statement4892 = new BitSet(new long[]{0xFFCDFE04800026A0L,0xD406BFDFFFFFFFFFL,0x0000000000000001L});
     public static final BitSet FOLLOW_embedded_statement_in_do_statement4894 = new BitSet(new long[]{0x0000000000000000L,0x4000000000000000L});
     public static final BitSet FOLLOW_KW_WHILE_in_do_statement4896 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_LPAREN_in_do_statement4898 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_LPAREN_in_do_statement4898 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_expression_in_do_statement4900 = new BitSet(new long[]{0x0000000000004000L});
     public static final BitSet FOLLOW_RPAREN_in_do_statement4902 = new BitSet(new long[]{0x0000000000000080L});
     public static final BitSet FOLLOW_SEMICOLON_in_do_statement4905 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_KW_FOR_in_for_statement4918 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_LPAREN_in_for_statement4921 = new BitSet(new long[]{0xFFCDFE04800026A0L,0xD401AFF7FFFFFFFFL,0x0000000000000001L});
-    public static final BitSet FOLLOW_SEMICOLON_in_for_statement4930 = new BitSet(new long[]{0xFFCDFE04800026A0L,0x0001AFF7FFFFFFFFL});
-    public static final BitSet FOLLOW_for_initializer_in_for_statement4937 = new BitSet(new long[]{0xFFCDFE04800026A0L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_LPAREN_in_for_statement4921 = new BitSet(new long[]{0xFFCDFE04800026A0L,0xD406BFDFFFFFFFFFL,0x0000000000000001L});
+    public static final BitSet FOLLOW_SEMICOLON_in_for_statement4930 = new BitSet(new long[]{0xFFCDFE04800026A0L,0x0006BFDFFFFFFFFFL});
+    public static final BitSet FOLLOW_for_initializer_in_for_statement4937 = new BitSet(new long[]{0xFFCDFE04800026A0L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_expression_in_for_statement4945 = new BitSet(new long[]{0x0000000000000080L});
-    public static final BitSet FOLLOW_SEMICOLON_in_for_statement4951 = new BitSet(new long[]{0xFFCDFE04800066A0L,0xD401AFF7FFFFFFFFL,0x0000000000000001L});
+    public static final BitSet FOLLOW_SEMICOLON_in_for_statement4951 = new BitSet(new long[]{0xFFCDFE04800066A0L,0xD406BFDFFFFFFFFFL,0x0000000000000001L});
     public static final BitSet FOLLOW_for_iterator_in_for_statement4957 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_RPAREN_in_for_statement4963 = new BitSet(new long[]{0xFFCDFE04800026A0L,0xD401AFF7FFFFFFFFL,0x0000000000000001L});
+    public static final BitSet FOLLOW_RPAREN_in_for_statement4963 = new BitSet(new long[]{0xFFCDFE04800026A0L,0xD406BFDFFFFFFFFFL,0x0000000000000001L});
     public static final BitSet FOLLOW_embedded_statement_in_for_statement4968 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_local_variable_declarations_in_for_initializer4978 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_statement_expression_in_for_initializer4990 = new BitSet(new long[]{0x00000000000000C0L});
-    public static final BitSet FOLLOW_COMMA_in_for_initializer4996 = new BitSet(new long[]{0xFFCDFE04800026A0L,0xD401AFF7FFFFFFFFL,0x0000000000000001L});
+    public static final BitSet FOLLOW_COMMA_in_for_initializer4996 = new BitSet(new long[]{0xFFCDFE04800026A0L,0xD406BFDFFFFFFFFFL,0x0000000000000001L});
     public static final BitSet FOLLOW_statement_expression_in_for_initializer4998 = new BitSet(new long[]{0x00000000000000C0L});
     public static final BitSet FOLLOW_SEMICOLON_in_for_initializer5005 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_statement_expression_in_for_iterator5020 = new BitSet(new long[]{0x0000000000000042L});
-    public static final BitSet FOLLOW_COMMA_in_for_iterator5025 = new BitSet(new long[]{0xFFCDFE04800026A0L,0xD401AFF7FFFFFFFFL,0x0000000000000001L});
+    public static final BitSet FOLLOW_COMMA_in_for_iterator5025 = new BitSet(new long[]{0xFFCDFE04800026A0L,0xD406BFDFFFFFFFFFL,0x0000000000000001L});
     public static final BitSet FOLLOW_statement_expression_in_for_iterator5027 = new BitSet(new long[]{0x0000000000000042L});
     public static final BitSet FOLLOW_expression_in_statement_expression5039 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_KW_FOREACH_in_foreach_statement5051 = new BitSet(new long[]{0x0000000000002000L});
@@ -26505,49 +26522,49 @@ public class ValaParser extends Parser {
     public static final BitSet FOLLOW_type_in_foreach_statement5061 = new BitSet(new long[]{0x0000000000000400L});
     public static final BitSet FOLLOW_KW_VAR_in_foreach_statement5067 = new BitSet(new long[]{0x0000000000000400L});
     public static final BitSet FOLLOW_IDENTIFIER_in_foreach_statement5073 = new BitSet(new long[]{0x0000000080000000L});
-    public static final BitSet FOLLOW_KW_IN_in_foreach_statement5077 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_KW_IN_in_foreach_statement5077 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_expression_in_foreach_statement5080 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_RPAREN_in_foreach_statement5084 = new BitSet(new long[]{0xFFCDFE04800026A0L,0xD401AFF7FFFFFFFFL,0x0000000000000001L});
+    public static final BitSet FOLLOW_RPAREN_in_foreach_statement5084 = new BitSet(new long[]{0xFFCDFE04800026A0L,0xD406BFDFFFFFFFFFL,0x0000000000000001L});
     public static final BitSet FOLLOW_embedded_statement_in_foreach_statement5088 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_KW_BREAK_in_break_statement5098 = new BitSet(new long[]{0x0000000000000080L});
     public static final BitSet FOLLOW_SEMICOLON_in_break_statement5101 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_KW_CONTINUE_in_continue_statement5111 = new BitSet(new long[]{0x0000000000000080L});
     public static final BitSet FOLLOW_SEMICOLON_in_continue_statement5114 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_KW_RETURN_in_return_statement5124 = new BitSet(new long[]{0xFFCDFE04800026A0L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_KW_RETURN_in_return_statement5124 = new BitSet(new long[]{0xFFCDFE04800026A0L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_expression_in_return_statement5128 = new BitSet(new long[]{0x0000000000000080L});
     public static final BitSet FOLLOW_SEMICOLON_in_return_statement5134 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_KW_YIELD_in_yield_statement5144 = new BitSet(new long[]{0xFFCDFE04800026A0L,0xD401AFF7FFFFFFFFL,0x0000000000000001L});
+    public static final BitSet FOLLOW_KW_YIELD_in_yield_statement5144 = new BitSet(new long[]{0xFFCDFE04800026A0L,0xD406BFDFFFFFFFFFL,0x0000000000000001L});
     public static final BitSet FOLLOW_expression_statement_in_yield_statement5148 = new BitSet(new long[]{0x0000000000000080L});
-    public static final BitSet FOLLOW_KW_RETURN_in_yield_statement5152 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_KW_RETURN_in_yield_statement5152 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_expression_in_yield_statement5154 = new BitSet(new long[]{0x0000000000000080L});
     public static final BitSet FOLLOW_SEMICOLON_in_yield_statement5160 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_KW_THROW_in_throw_statement5170 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_KW_THROW_in_throw_statement5170 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_expression_in_throw_statement5172 = new BitSet(new long[]{0x0000000000000080L});
     public static final BitSet FOLLOW_SEMICOLON_in_throw_statement5174 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_KW_TRY_in_try_statement5186 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_KW_TRY_in_try_statement5186 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_block_in_try_statement5190 = new BitSet(new long[]{0x0000000000000002L,0x0000000006000000L});
     public static final BitSet FOLLOW_catch_clause_in_try_statement5195 = new BitSet(new long[]{0x0000000000000002L,0x0000000006000000L});
     public static final BitSet FOLLOW_finally_clause_in_try_statement5201 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_KW_CATCH_in_catch_clause5213 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_KW_CATCH_in_catch_clause5213 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_LPAREN_in_catch_clause5217 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
     public static final BitSet FOLLOW_type_in_catch_clause5219 = new BitSet(new long[]{0x0000000000000400L});
     public static final BitSet FOLLOW_IDENTIFIER_in_catch_clause5221 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_RPAREN_in_catch_clause5223 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_RPAREN_in_catch_clause5223 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_block_in_catch_clause5227 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_KW_FINALLY_in_finally_clause5239 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_KW_FINALLY_in_finally_clause5239 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_block_in_finally_clause5243 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_KW_LOCK_in_lock_statement5253 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_LPAREN_in_lock_statement5256 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_LPAREN_in_lock_statement5256 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_expression_in_lock_statement5258 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_RPAREN_in_lock_statement5260 = new BitSet(new long[]{0xFFCDFE04800026A0L,0xD401AFF7FFFFFFFFL,0x0000000000000001L});
+    public static final BitSet FOLLOW_RPAREN_in_lock_statement5260 = new BitSet(new long[]{0xFFCDFE04800026A0L,0xD406BFDFFFFFFFFFL,0x0000000000000001L});
     public static final BitSet FOLLOW_embedded_statement_in_lock_statement5262 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_KW_DELETE_in_delete_statement5272 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_KW_DELETE_in_delete_statement5272 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_expression_in_delete_statement5274 = new BitSet(new long[]{0x0000000000000080L});
     public static final BitSet FOLLOW_SEMICOLON_in_delete_statement5276 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_KW_VAR_in_local_variable_declarations5290 = new BitSet(new long[]{0xFC01EE0080002420L,0x00000007FFFFFFFFL});
-    public static final BitSet FOLLOW_type_in_local_variable_declarations5294 = new BitSet(new long[]{0xFC01EE0080002420L,0x00000007FFFFFFFFL});
+    public static final BitSet FOLLOW_KW_VAR_in_local_variable_declarations5290 = new BitSet(new long[]{0xFC01EE0080002420L,0x0000001FFFFFFFFFL});
+    public static final BitSet FOLLOW_type_in_local_variable_declarations5294 = new BitSet(new long[]{0xFC01EE0080002420L,0x0000001FFFFFFFFFL});
     public static final BitSet FOLLOW_local_variable_declaration_in_local_variable_declarations5300 = new BitSet(new long[]{0x00000000000000C0L});
-    public static final BitSet FOLLOW_COMMA_in_local_variable_declarations5305 = new BitSet(new long[]{0xFC01EE0080002420L,0x00000007FFFFFFFFL});
+    public static final BitSet FOLLOW_COMMA_in_local_variable_declarations5305 = new BitSet(new long[]{0xFC01EE0080002420L,0x0000001FFFFFFFFFL});
     public static final BitSet FOLLOW_local_variable_declaration_in_local_variable_declarations5307 = new BitSet(new long[]{0x00000000000000C0L});
     public static final BitSet FOLLOW_SEMICOLON_in_local_variable_declarations5313 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_local_tuple_declaration_in_local_variable_declaration5326 = new BitSet(new long[]{0x0000000000000002L});
@@ -26557,124 +26574,124 @@ public class ValaParser extends Parser {
     public static final BitSet FOLLOW_COMMA_in_local_tuple_declaration5352 = new BitSet(new long[]{0x0000000000000400L});
     public static final BitSet FOLLOW_IDENTIFIER_in_local_tuple_declaration5354 = new BitSet(new long[]{0x0000000000004040L});
     public static final BitSet FOLLOW_RPAREN_in_local_tuple_declaration5360 = new BitSet(new long[]{0x0000000000008000L});
-    public static final BitSet FOLLOW_ASSIGNMENT_in_local_tuple_declaration5365 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_ASSIGNMENT_in_local_tuple_declaration5365 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_expression_in_local_tuple_declaration5369 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_identifier_in_local_variable5381 = new BitSet(new long[]{0x0000000000008802L});
     public static final BitSet FOLLOW_inline_array_type_in_local_variable5386 = new BitSet(new long[]{0x0000000000008002L});
-    public static final BitSet FOLLOW_ASSIGNMENT_in_local_variable5393 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
+    public static final BitSet FOLLOW_ASSIGNMENT_in_local_variable5393 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
     public static final BitSet FOLLOW_expression_in_local_variable5395 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_statement_expression_in_expression_statement5409 = new BitSet(new long[]{0x0000000000000080L});
     public static final BitSet FOLLOW_SEMICOLON_in_expression_statement5411 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_identifier_in_unknown_chain5423 = new BitSet(new long[]{0xFC01EE00800004A0L,0x00000007FFFFFFFFL});
+    public static final BitSet FOLLOW_identifier_in_unknown_chain5423 = new BitSet(new long[]{0xFC01EE00800004A0L,0x0000001FFFFFFFFFL});
     public static final BitSet FOLLOW_SEMICOLON_in_unknown_chain5428 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_class_declaration_in_synpred8_Vala208 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_interface_declaration_in_synpred9_Vala214 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_struct_declaration_in_synpred10_Vala220 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_enum_declaration_in_synpred11_Vala226 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_errordomain_declaration_in_synpred12_Vala232 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_method_declaration_in_synpred13_Vala238 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_delegate_declaration_in_synpred14_Vala244 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_constant_declaration_in_synpred15_Vala250 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_assignment_operator_in_synpred20_Vala368 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
-    public static final BitSet FOLLOW_expression_in_synpred20_Vala370 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_KW_IN_in_synpred35_Vala529 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
-    public static final BitSet FOLLOW_inclusive_or_expression_in_synpred35_Vala531 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_KW_IS_in_synpred45_Vala681 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
-    public static final BitSet FOLLOW_type_in_synpred45_Vala683 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_KW_AS_in_synpred46_Vala698 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
-    public static final BitSet FOLLOW_type_in_synpred46_Vala700 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_type_arguments_in_synpred53_Vala778 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_QUESTION_in_synpred55_Vala794 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_array_type_in_synpred56_Vala802 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_QUESTION_in_synpred58_Vala836 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_unary_operator_in_synpred66_Vala986 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
-    public static final BitSet FOLLOW_unary_expression_in_synpred66_Vala988 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_literal_in_synpred79_Vala1125 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_object_or_array_creation_expression_in_synpred85_Vala1161 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_yield_expression_in_synpred86_Vala1167 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_sizeof_expression_in_synpred87_Vala1173 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_typeof_expression_in_synpred88_Vala1179 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_element_access_in_synpred92_Vala1213 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_type_arguments_in_synpred95_Vala1247 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_type_arguments_in_synpred147_Vala1593 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_KW_REF_in_synpred161_Vala1840 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_KW_OUT_in_synpred162_Vala1846 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_object_creation_expression_in_synpred165_Vala1954 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_LBRACKET_in_synpred169_Vala2062 = new BitSet(new long[]{0x0000000000001000L});
-    public static final BitSet FOLLOW_RBRACKET_in_synpred169_Vala2068 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_LBRACKET_in_synpred171_Vala2080 = new BitSet(new long[]{0xFFCDFE0480003620L,0x0001AFF7FFFFFFFFL});
-    public static final BitSet FOLLOW_array_size_in_synpred171_Vala2087 = new BitSet(new long[]{0x0000000000001000L});
-    public static final BitSet FOLLOW_RBRACKET_in_synpred171_Vala2094 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_type_arguments_in_synpred175_Vala2162 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_member_access_in_synpred176_Vala2169 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_type_arguments_in_synpred182_Vala2313 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_expression_in_synpred186_Vala2389 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_class_declaration_in_synpred213_Vala2685 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_struct_declaration_in_synpred214_Vala2691 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_enum_declaration_in_synpred215_Vala2697 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_delegate_declaration_in_synpred216_Vala2703 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_method_declaration_in_synpred217_Vala2709 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_signal_declaration_in_synpred218_Vala2715 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_field_declaration_in_synpred219_Vala2721 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_constant_declaration_in_synpred220_Vala2727 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_property_declaration_in_synpred221_Vala2733 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_constructor_declaration_in_synpred222_Vala2739 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_creation_method_declaration_in_synpred223_Vala2745 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_destructor_declaration_in_synpred224_Vala2750 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_attributes_in_synpred237_Vala2875 = new BitSet(new long[]{0xFC81EE0080000E20L,0x01C00007FFFFFFFFL});
-    public static final BitSet FOLLOW_method_declaration_in_synpred237_Vala2886 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_constant_declaration_in_synpred237_Vala2894 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_unknown_chain_in_synpred237_Vala2902 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_COMMA_in_synpred238_Vala2934 = new BitSet(new long[]{0xFC81EE0080000E20L,0x01C00007FFFFFFFFL});
-    public static final BitSet FOLLOW_enum_value_in_synpred238_Vala2936 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_class_declaration_in_synpred258_Vala3187 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_struct_declaration_in_synpred259_Vala3192 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_enum_declaration_in_synpred260_Vala3198 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_delegate_declaration_in_synpred261_Vala3204 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_method_declaration_in_synpred262_Vala3210 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_signal_declaration_in_synpred263_Vala3216 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_field_declaration_in_synpred264_Vala3222 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_constant_declaration_in_synpred265_Vala3228 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_method_declaration_in_synpred273_Vala3378 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_field_declaration_in_synpred274_Vala3385 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_constant_declaration_in_synpred275_Vala3392 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_property_declaration_in_synpred276_Vala3399 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_creation_method_declaration_in_synpred277_Vala3405 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_KW_OWNED_in_synpred291_Vala3623 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_KW_UNOWNED_in_synpred292_Vala3629 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_access_modifier_in_synpred339_Vala4253 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_property_get_accessor_in_synpred340_Vala4263 = new BitSet(new long[]{0x0C00000000000000L,0x000000000001E000L});
-    public static final BitSet FOLLOW_property_set_construct_accessor_in_synpred340_Vala4265 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_property_set_construct_accessor_in_synpred341_Vala4273 = new BitSet(new long[]{0x1000000000000000L,0x000000000001E000L});
-    public static final BitSet FOLLOW_property_get_accessor_in_synpred341_Vala4275 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_property_set_construct_accessor_in_synpred342_Vala4283 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_block_in_synpred359_Vala4511 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_foreach_statement_in_synpred366_Vala4551 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_break_statement_in_synpred367_Vala4557 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_continue_statement_in_synpred368_Vala4563 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_return_statement_in_synpred369_Vala4569 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_yield_statement_in_synpred370_Vala4575 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_throw_statement_in_synpred371_Vala4581 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_try_statement_in_synpred372_Vala4587 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_lock_statement_in_synpred373_Vala4593 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_delete_statement_in_synpred374_Vala4599 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_local_variable_declarations_in_synpred375_Vala4605 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_KW_ELSE_in_synpred376_Vala4646 = new BitSet(new long[]{0xFFCDFE04800026A0L,0xD401AFF7FFFFFFFFL,0x0000000000000001L});
-    public static final BitSet FOLLOW_embedded_statement_in_synpred376_Vala4650 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_block_in_synpred377_Vala4666 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_foreach_statement_in_synpred384_Vala4719 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_break_statement_in_synpred385_Vala4725 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_continue_statement_in_synpred386_Vala4731 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_return_statement_in_synpred387_Vala4737 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_yield_statement_in_synpred388_Vala4743 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_throw_statement_in_synpred389_Vala4749 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_try_statement_in_synpred390_Vala4755 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_lock_statement_in_synpred391_Vala4761 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_delete_statement_in_synpred392_Vala4767 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_local_variable_declarations_in_synpred400_Vala4978 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_expression_statement_in_synpred405_Vala5148 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_KW_RETURN_in_synpred406_Vala5152 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0001AFF7FFFFFFFFL});
-    public static final BitSet FOLLOW_expression_in_synpred406_Vala5154 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_catch_clause_in_synpred407_Vala5195 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_class_declaration_in_synpred8_Vala209 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_interface_declaration_in_synpred9_Vala215 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_struct_declaration_in_synpred10_Vala221 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_enum_declaration_in_synpred11_Vala227 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_errordomain_declaration_in_synpred12_Vala233 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_method_declaration_in_synpred13_Vala239 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_delegate_declaration_in_synpred14_Vala245 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_constant_declaration_in_synpred15_Vala251 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_assignment_operator_in_synpred20_Vala358 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
+    public static final BitSet FOLLOW_expression_in_synpred20_Vala360 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_KW_IN_in_synpred35_Vala519 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
+    public static final BitSet FOLLOW_inclusive_or_expression_in_synpred35_Vala521 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_KW_IS_in_synpred45_Vala671 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
+    public static final BitSet FOLLOW_type_in_synpred45_Vala673 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_KW_AS_in_synpred46_Vala688 = new BitSet(new long[]{0x0001E80000000600L,0x000000000001FFB1L});
+    public static final BitSet FOLLOW_type_in_synpred46_Vala690 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_type_arguments_in_synpred53_Vala768 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_QUESTION_in_synpred55_Vala784 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_array_type_in_synpred56_Vala792 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_QUESTION_in_synpred58_Vala826 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_unary_operator_in_synpred66_Vala976 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
+    public static final BitSet FOLLOW_unary_expression_in_synpred66_Vala978 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_literal_in_synpred79_Vala1115 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_object_or_array_creation_expression_in_synpred85_Vala1151 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_yield_expression_in_synpred86_Vala1157 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_sizeof_expression_in_synpred87_Vala1163 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_typeof_expression_in_synpred88_Vala1169 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_element_access_in_synpred92_Vala1203 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_type_arguments_in_synpred95_Vala1237 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_type_arguments_in_synpred149_Vala1593 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_KW_REF_in_synpred163_Vala1840 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_KW_OUT_in_synpred164_Vala1846 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_object_creation_expression_in_synpred167_Vala1954 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_LBRACKET_in_synpred171_Vala2062 = new BitSet(new long[]{0x0000000000001000L});
+    public static final BitSet FOLLOW_RBRACKET_in_synpred171_Vala2068 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_LBRACKET_in_synpred173_Vala2080 = new BitSet(new long[]{0xFFCDFE0480003620L,0x0006BFDFFFFFFFFFL});
+    public static final BitSet FOLLOW_array_size_in_synpred173_Vala2087 = new BitSet(new long[]{0x0000000000001000L});
+    public static final BitSet FOLLOW_RBRACKET_in_synpred173_Vala2094 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_type_arguments_in_synpred177_Vala2162 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_member_access_in_synpred178_Vala2169 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_type_arguments_in_synpred184_Vala2313 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_expression_in_synpred188_Vala2389 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_class_declaration_in_synpred215_Vala2685 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_struct_declaration_in_synpred216_Vala2691 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_enum_declaration_in_synpred217_Vala2697 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_delegate_declaration_in_synpred218_Vala2703 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_method_declaration_in_synpred219_Vala2709 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_signal_declaration_in_synpred220_Vala2715 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_field_declaration_in_synpred221_Vala2721 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_constant_declaration_in_synpred222_Vala2727 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_property_declaration_in_synpred223_Vala2733 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_constructor_declaration_in_synpred224_Vala2739 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_creation_method_declaration_in_synpred225_Vala2745 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_destructor_declaration_in_synpred226_Vala2750 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_attributes_in_synpred239_Vala2875 = new BitSet(new long[]{0xFC81EE0080000E20L,0x0180001FFFFFFFFFL});
+    public static final BitSet FOLLOW_method_declaration_in_synpred239_Vala2886 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_constant_declaration_in_synpred239_Vala2894 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_unknown_chain_in_synpred239_Vala2902 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_COMMA_in_synpred240_Vala2934 = new BitSet(new long[]{0xFC81EE0080000E20L,0x0180001FFFFFFFFFL});
+    public static final BitSet FOLLOW_enum_value_in_synpred240_Vala2936 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_class_declaration_in_synpred260_Vala3187 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_struct_declaration_in_synpred261_Vala3192 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_enum_declaration_in_synpred262_Vala3198 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_delegate_declaration_in_synpred263_Vala3204 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_method_declaration_in_synpred264_Vala3210 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_signal_declaration_in_synpred265_Vala3216 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_field_declaration_in_synpred266_Vala3222 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_constant_declaration_in_synpred267_Vala3228 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_method_declaration_in_synpred275_Vala3378 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_field_declaration_in_synpred276_Vala3385 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_constant_declaration_in_synpred277_Vala3392 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_property_declaration_in_synpred278_Vala3399 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_creation_method_declaration_in_synpred279_Vala3405 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_KW_OWNED_in_synpred293_Vala3623 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_KW_UNOWNED_in_synpred294_Vala3629 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_access_modifier_in_synpred341_Vala4253 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_property_get_accessor_in_synpred342_Vala4263 = new BitSet(new long[]{0x0C00000000000000L,0x000000000001E000L});
+    public static final BitSet FOLLOW_property_set_construct_accessor_in_synpred342_Vala4265 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_property_set_construct_accessor_in_synpred343_Vala4273 = new BitSet(new long[]{0x1000000000000000L,0x000000000001E000L});
+    public static final BitSet FOLLOW_property_get_accessor_in_synpred343_Vala4275 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_property_set_construct_accessor_in_synpred344_Vala4283 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_block_in_synpred361_Vala4511 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_foreach_statement_in_synpred368_Vala4551 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_break_statement_in_synpred369_Vala4557 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_continue_statement_in_synpred370_Vala4563 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_return_statement_in_synpred371_Vala4569 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_yield_statement_in_synpred372_Vala4575 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_throw_statement_in_synpred373_Vala4581 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_try_statement_in_synpred374_Vala4587 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_lock_statement_in_synpred375_Vala4593 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_delete_statement_in_synpred376_Vala4599 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_local_variable_declarations_in_synpred377_Vala4605 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_KW_ELSE_in_synpred378_Vala4646 = new BitSet(new long[]{0xFFCDFE04800026A0L,0xD406BFDFFFFFFFFFL,0x0000000000000001L});
+    public static final BitSet FOLLOW_embedded_statement_in_synpred378_Vala4650 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_block_in_synpred379_Vala4666 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_foreach_statement_in_synpred386_Vala4719 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_break_statement_in_synpred387_Vala4725 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_continue_statement_in_synpred388_Vala4731 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_return_statement_in_synpred389_Vala4737 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_yield_statement_in_synpred390_Vala4743 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_throw_statement_in_synpred391_Vala4749 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_try_statement_in_synpred392_Vala4755 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_lock_statement_in_synpred393_Vala4761 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_delete_statement_in_synpred394_Vala4767 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_local_variable_declarations_in_synpred402_Vala4978 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_expression_statement_in_synpred407_Vala5148 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_KW_RETURN_in_synpred408_Vala5152 = new BitSet(new long[]{0xFFCDFE0480002620L,0x0006BFDFFFFFFFFFL});
+    public static final BitSet FOLLOW_expression_in_synpred408_Vala5154 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_catch_clause_in_synpred409_Vala5195 = new BitSet(new long[]{0x0000000000000002L});
 
 }

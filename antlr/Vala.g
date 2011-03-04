@@ -11,7 +11,7 @@ tokens { UNKNOWN_CHAIN; }
 
 @header { package org.carbonfx.valaproject.antlr; }
 @lexer::header { package org.carbonfx.valaproject.antlr; }
-
+	
 @members {
 	public List<SyntaxError> syntaxErrors = new ArrayList<SyntaxError>();
 	private java.util.regex.Pattern msgPattern = java.util.regex.Pattern.compile(".*missing KW_([A-Z]*) at (.*)");
@@ -82,31 +82,31 @@ namespace_member
 	| constant_declaration	
 	| field_declaration );
 
-attributes 
+attributes
 	: (attribute
 	)+;
 
 attribute 
 	: 
-	LBRACKET 
-	identifier 
+	LBRACKET
+	identifier
 	(attribute_arguments
-	)? 
+	)?
 	RBRACKET;
 
-attribute_arguments 
-	: 
+attribute_arguments
+	:
 	LPAREN attribute_argument 
 	(COMMA attribute_argument)* 
 	RPAREN;
 
-attribute_argument 
+attribute_argument
 	: identifier ASSIGNMENT expression;
 
-expression 
-	: 
-	lambda_expression 
-	| 
+expression
+	:
+	lambda_expression
+	|
 	( conditional_expression (assignment_operator expression)? );
 
 assignment_operator 
@@ -329,7 +329,9 @@ identifier
 	| KW_RETURN
 	| KW_BREAK
 	| KW_VAR
-	| KW_THROW;
+	| KW_THROW
+	| KW_SIGNAL
+	| KW_REQUIRES;
 	
 post_increment_expression
 	: INCREMENT;
@@ -1719,6 +1721,38 @@ GLOBAL_NS
 	
 BACKSLASH 
 	: '\\';
+	
+UNICODE_CHAR
+	: '\u0024' |
+	'\u0041'..'\u005a' |
+	'\u005f' |
+	'\u0061'..'\u007a' |
+	'\u00c0'..'\u00d6' |
+	'\u00d8'..'\u00f6' |
+	'\u00f8'..'\u00ff' |
+	'\u0100'..'\u1fff' |
+	'\u3040'..'\u318f' |
+	'\u3300'..'\u337f' |
+	'\u3400'..'\u3d2d' |
+	'\u4e00'..'\u9fff' |
+	'\uf900'..'\ufaff' |
+	'\u0030'..'\u0039' |
+	'\u0660'..'\u0669' |
+	'\u06f0'..'\u06f9' |
+	'\u0966'..'\u096f' |
+	'\u09e6'..'\u09ef' |
+	'\u0a66'..'\u0a6f' |
+	'\u0ae6'..'\u0aef' |
+	'\u0b66'..'\u0b6f' |
+	'\u0be7'..'\u0bef' |
+	'\u0c66'..'\u0c6f' |
+	'\u0ce6'..'\u0cef' |
+	'\u0d66'..'\u0d6f' |
+	'\u0e50'..'\u0e59' |
+	'\u0ed0'..'\u0ed9' |
+	'\u1040'..'\u1049'
+    ;
+	
 
 // todo: implement regular expressions
 REGEX_LITERAL

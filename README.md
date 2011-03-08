@@ -34,5 +34,5 @@ If you want to support or contribute into the project please feel free to contac
 Download and Install
 -------------------------------------------------------------------------------
 
-Download plugin for Netbeans from [download section](vala-netbeans/downloads).
+Download plugin for Netbeans from [download section](netbeans-valaproject/downloads).
 Get a template project from sources (git clone code source, and copy a template folder)

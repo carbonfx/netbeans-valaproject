@@ -41,4 +41,4 @@ Acknowledgment and License
 -------------------------------------------------------------------------------
 
 The project is developed by Carbon Foundation X team with the support from [Innova Systems RU](http://www.inn.ru/).
-Source code and binaries are distributed under BSD 3-clause license ("New BSD License" or "Modified BSD License")
+Source code and binaries are distributed under BSD 3-clause license ("New BSD License" or "Modified BSD License").

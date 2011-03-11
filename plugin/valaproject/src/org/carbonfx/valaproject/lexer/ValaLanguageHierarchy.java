@@ -199,6 +199,7 @@ public class ValaLanguageHierarchy extends LanguageHierarchy<ValaTokenId> {
 		token(ValaLexer.XOR_ASSIGN, "operator"),
 		token(ValaLexer.BACKSLASH, "operator"),
 		token(ValaLexer.UNICODE_CHAR, "error"),
+		token(ValaLexer.OTHER_CHAR, "error"),
 		token(ValaLexer.UNKNOWN_CHAIN, "error"),
 	};
 

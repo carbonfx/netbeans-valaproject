@@ -90,14 +90,13 @@ attribute
 	: 
 	LBRACKET
 	identifier
-	(attribute_arguments
-	)?
+	(attribute_arguments)?
 	RBRACKET;
 
 attribute_arguments
 	:
-	LPAREN attribute_argument 
-	(COMMA attribute_argument)* 
+	LPAREN 
+	(attribute_argument (COMMA attribute_argument)*)?
 	RPAREN;
 
 attribute_argument
@@ -935,6 +934,7 @@ property_accessor
 	: 
 	(attributes)? 
 	(access_modifier)?
+	(KW_OWNED | KW_UNOWNED)?
 	(
 		(property_get_accessor property_set_construct_accessor)
 		| (property_set_construct_accessor property_get_accessor)
@@ -1752,6 +1752,9 @@ UNICODE_CHAR
 	'\u0ed0'..'\u0ed9' |
 	'\u1040'..'\u1049'
     ;
+
+OTHER_CHAR
+	: ~UNICODE_CHAR;
 	
 
 // todo: implement regular expressions

@@ -25,7 +25,6 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  *
  */
-
 package org.carbonfx.valaproject.parser;
 
 import java.util.ArrayList;
@@ -40,43 +39,43 @@ import org.netbeans.spi.editor.hints.ErrorDescription;
 import org.netbeans.spi.editor.hints.ErrorDescriptionFactory;
 import org.netbeans.spi.editor.hints.HintsController;
 import org.netbeans.spi.editor.hints.Severity;
+import org.openide.util.Exceptions;
 
-public class SyntaxErrorsHighlightingTask extends ParserResultTask  {
+public class SyntaxErrorsHighlightingTask extends ParserResultTask {
 
 	public SyntaxErrorsHighlightingTask() {
-    }
+	}
 
 	//org.carbonfx.valaproject.antlr.ValaParser
-
 	@Override
 	public void run(Result result, SchedulerEvent se) {
-		 try {
-            ValaParser.ValaParserResult r = (ValaParser.ValaParserResult) result;
-            List<SyntaxError> syntaxErrors = r.getParser().syntaxErrors;
-            Document document = result.getSnapshot().getSource().getDocument(false);
-            
+		try {
+			ValaParser.ValaParserResult r = (ValaParser.ValaParserResult) result;
+			List<SyntaxError> syntaxErrors = r.getParser().syntaxErrors;
+			Document document = result.getSnapshot().getSource().getDocument(false);
+
 			List<ErrorDescription> errors = new ArrayList<ErrorDescription>();
 
-            for (SyntaxError syntaxError : syntaxErrors) {
-                org.antlr.runtime.RecognitionException exception = syntaxError.exception;
-                String message = syntaxError.message;
+			for (SyntaxError syntaxError : syntaxErrors) {
+				org.antlr.runtime.RecognitionException exception = syntaxError.exception;
+				String message = syntaxError.message;
 
-                int line = exception.line;
-                if (line <= 0) {
-                    continue;
-                }
-                ErrorDescription errorDescription = ErrorDescriptionFactory.createErrorDescription(
-                        Severity.ERROR,
-                        message,
-                        document,
-                        line);
-                errors.add(errorDescription);
-            }
+				int line = exception.line;
+				if (line <= 0) {
+					continue;
+				}
+				ErrorDescription errorDescription = ErrorDescriptionFactory.createErrorDescription(
+						Severity.ERROR,
+						message,
+						document,
+						line);
+				errors.add(errorDescription);
+			}
 
-            HintsController.setErrors(document, "vala", errors);
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
+			HintsController.setErrors(document, "vala", errors);
+		} catch (Exception ex) {
+			Exceptions.printStackTrace(ex);
+		}
 	}
 
 	@Override
@@ -91,6 +90,5 @@ public class SyntaxErrorsHighlightingTask extends ParserResultTask  {
 
 	@Override
 	public void cancel() {
-		
 	}
 }

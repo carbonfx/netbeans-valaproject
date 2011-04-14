@@ -132,8 +132,8 @@
                 </folder>
                 <folder name="Factories">
                     <file name="VapiDataLoader.instance">
-                        <attr name="SystemFileSystem.icon" urlvalue="nbresloc:/org/carbonfx/valaproject/vapi.png"/>
                         <attr name="dataObjectClass" stringvalue="org.carbonfx.valaproject.VapiDataObject"/>
+                        <attr name="iconBase" stringvalue="org/carbonfx/valaproject/vapi.png"/>
                         <attr name="instanceCreate" methodvalue="org.openide.loaders.DataLoaderPool.factory"/>
                         <attr name="mimeType" stringvalue="text/x-vapi"/>
                     </file>
@@ -166,12 +166,12 @@
 	<folder name="Editors">
 		<folder name="text">
 			<folder name="x-vala">
-				<file name="org-netbeans-modules-editor-NbEditorKit.instance"/>
+				<attr name="displayName" bundlevalue="org.carbonfx.valaproject.Bundle#Editors/text/x-vala"/>
+                                <file name="org-netbeans-modules-editor-NbEditorKit.instance"/>
 				<file name="language.instance">
 					<attr name="instanceCreate" methodvalue="org.carbonfx.valaproject.lexer.ValaTokenId.getLanguage"/>
 					<attr name="instanceOf" stringvalue="org.netbeans.api.lexer.Language"/>
 				</file>
-				<attr name="SystemFileSystem.localizingBundle" stringvalue="org.carbonfx.valaproject.Bundle"/>
 				<folder name="FontsColors">
 					<folder name="NetBeans">
 						<folder name="Defaults">

@@ -34,7 +34,7 @@ public class ValaTokenId implements TokenId {
 
 	private final String name;
 	private final String primaryCategory;
-	private final int id;
+	private final int ordinal;
 	private static final Language<ValaTokenId> language = new ValaLanguageHierarchy().language();
 
 	ValaTokenId(
@@ -43,7 +43,7 @@ public class ValaTokenId implements TokenId {
 			int id) {
 		this.name = name;
 		this.primaryCategory = primaryCategory;
-		this.id = id;
+		this.ordinal = id;
 	}
 
 	@Override
@@ -53,7 +53,7 @@ public class ValaTokenId implements TokenId {
 
 	@Override
 	public int ordinal() {
-		return id;
+		return ordinal;
 	}
 
 	@Override

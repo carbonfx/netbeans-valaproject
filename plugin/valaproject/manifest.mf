@@ -1,6 +1,6 @@
 Manifest-Version: 0.1.2
 OpenIDE-Module: org.carbonfx.valaproject/0
+OpenIDE-Module-Implementation-Version: 1
 OpenIDE-Module-Layer: org/carbonfx/valaproject/layer.xml
 OpenIDE-Module-Localizing-Bundle: org/carbonfx/valaproject/Bundle.properties
-OpenIDE-Module-Specification-Version: 0.1.2
 

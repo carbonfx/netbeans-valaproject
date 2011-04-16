@@ -4,7 +4,7 @@
 This is a try to create plugin for Netbeans IDE to support comfortable Vala programming
 [Vala](http://live.gnome.org/Vala) is a new and modern programming language based on GObject type system.
 
-Feautures
+Features
 -------------------------------------------------------------------------------
 
 At this moment, we have implemented:

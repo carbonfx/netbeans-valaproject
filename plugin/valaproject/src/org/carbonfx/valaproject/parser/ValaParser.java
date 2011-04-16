@@ -60,12 +60,12 @@ public class ValaParser extends Parser {
 	}
 
 	@Override
-	public Result getResult(Task task) throws ParseException {
-		return new ValaParserResult(this.snapshot, this.parser);
+	public void cancel(CancelReason cr, SourceModificationEvent sme) {
 	}
 
 	@Override
-	public void cancel() {
+	public Result getResult(Task task) throws ParseException {
+		return new ValaParserResult(this.snapshot, this.parser);
 	}
 
 	@Override

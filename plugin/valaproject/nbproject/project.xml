@@ -7,6 +7,14 @@
             <standalone/>
             <module-dependencies>
                 <dependency>
+                    <code-name-base>org.netbeans.libs.antlr3.runtime</code-name-base>
+                    <build-prerequisite/>
+                    <compile-dependency/>
+                    <run-dependency>
+                        <specification-version>1.4.1.1</specification-version>
+                    </run-dependency>
+                </dependency>
+                <dependency>
                     <code-name-base>org.netbeans.libs.junit4</code-name-base>
                     <build-prerequisite/>
                     <compile-dependency/>
@@ -30,15 +38,6 @@
                     <run-dependency>
                         <release-version>3</release-version>
                         <specification-version>3.8.1.13.8</specification-version>
-                    </run-dependency>
-                </dependency>
-                <dependency>
-                    <code-name-base>org.netbeans.modules.editor.lib2</code-name-base>
-                    <build-prerequisite/>
-                    <compile-dependency/>
-                    <run-dependency>
-                        <release-version>1</release-version>
-                        <specification-version>1.39.1.8</specification-version>
                     </run-dependency>
                 </dependency>
                 <dependency>
@@ -128,15 +127,7 @@
                     </run-dependency>
                 </dependency>
             </module-dependencies>
-            <public-packages>
-                <package>org.carbonfx.valaproject.editor</package>
-                <package>org.carbonfx.valaproject.options</package>
-                <package>org.carbonfx.valaproject.parser</package>
-            </public-packages>
-            <class-path-extension>
-                <runtime-relative-path>ext/antlr-3.3-complete.jar</runtime-relative-path>
-                <binary-origin>release/modules/ext/antlr-3.3-complete.jar</binary-origin>
-            </class-path-extension>
+            <public-packages/>
         </data>
     </configuration>
 </project>

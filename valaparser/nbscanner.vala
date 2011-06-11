@@ -19,17 +19,20 @@ StartLine:Column,EndLine:Column,TokenType
 
 Lines are sorted by token position (ascending).
 
-Where TokenType is integer value of token, specified by Vala.TokenType enum in libvala.vapi
+Where TokenType is a name of token see an enum in libvala.vapi plus additional values for comments
 
 */
 
 
 const string CMD_END = "]\"\"\"end";
-const string CMD_BEGIN = "]\"\"\"begin";
-const string CMD_QUIT = "]\"\"\"quit";
+const string CMD_BEGIN = "begin";
+const string CMD_QUIT = "quit";
+const string CMD_DEBUG = "debug";
 
 const string TOKENS_BEGIN = "]tokens";
 const string TOKENS_END = "]end";
+
+bool debug_mode = false;
 
 int main(string[] args) {
 
@@ -39,9 +42,14 @@ int main(string[] args) {
 			break;
 		}
 
+		if (line == CMD_DEBUG) {
+			debug_mode = true;
+		}
+
 		if (line == CMD_BEGIN) {
 			string file_name = stdin.read_line();
 			var sb = new StringBuilder();
+			var str_array = new Gee.ArrayList<string>();	
 			while (!stdin.eof()) {
 				string? file_line = stdin.read_line ();
 		        if (file_line == CMD_END || file_line == null) {
@@ -50,8 +58,9 @@ int main(string[] args) {
 				
 				sb.append(file_line);
 				sb.append("\n");
+				str_array.add(file_line);
 			}
-			parse_file(file_name, sb.str);
+			parse_file(file_name, sb.str, str_array);
 		}
 		else {
 			stdout.printf("Please enter one of the commands: %s, %s\n", CMD_BEGIN, CMD_QUIT);
@@ -66,7 +75,7 @@ public class Token : Object {
 	public int end_line { get; set; }
 	public int begin_column { get; set; }
 	public int end_column { get; set; }
-	public int token_type { get; set; }
+	public string token_type { get; set; }
 }
 
 public int token_compare(Token a, Token b) {
@@ -87,7 +96,7 @@ void println(string format, ...) {
 	stdout.putc('\n');
 }
 
-void parse_file(string file_name, string content) {
+void parse_file(string file_name, string content, Gee.ArrayList<string> str_array) {
 	var ctx = new Vala.CodeContext();
     Vala.CodeContext.push(ctx);
     ctx.basedir = ".";
@@ -112,17 +121,64 @@ void parse_file(string file_name, string content) {
 		t.begin_column = token_begin.column;
 		t.end_line = token_end.line;
 		t.end_column = token_end.column;
-		t.token_type = (int)token;
+
+		string full_token_name = ((EnumClass)typeof (Vala.TokenType).class_ref()).get_value(token).value_name;
+		string prefix = "VALA_TOKEN_TYPE_";
+		string token_name = full_token_name;
+
+		if (full_token_name.index_of(prefix) == 0) {
+			token_name = full_token_name.substring(prefix.char_count());
+		}
+		t.token_type = token_name;
+
+		tokens.add(t);
+	}
+
+	foreach (var c in src.get_comments()) {
+		
+		Token t = new Token();
+        t.begin_line = c.source_reference.first_line;
+        t.begin_column = c.source_reference.first_column;
+
+		string s = str_array.get(t.begin_line-1);
+		s = s.substring(t.begin_column-1);
+
+		s = s.next_char();
+		unichar c2 = s.get_char();
+		
+		if (c2 == '/') {
+			t.token_type = "LINE_COMMENT";
+			t.end_line = t.begin_line;
+			t.end_column = c.content.char_count();
+		}
+		else {
+			t.token_type = "COMMENT";
+			s = c.content;
+			int line = t.begin_line;
+			int column = t.begin_column;
+			for (;;) {
+				c2 = s.get_char();
+				if (c2 == 0) break;
+				s = s.next_char();
+				if (c2 == '\n') {
+					++line;
+					column = 1;
+				}
+				else {
+					++column;
+				}
+			}
+			t.end_line = line;
+			t.end_column = column+1;
+		}
+
 		tokens.add(t);
 	}
 
 	println(TOKENS_BEGIN);
 	foreach(Token t in tokens) {
-		println("%x%x,%x:%x,%x", t.begin_line, t.begin_column, t.end_line, t.end_column, t.token_type);
+		println("%x:%x,%x:%x,%s", t.begin_line, t.begin_column, t.end_line, t.end_column, t.token_type);
 	}
 	println(TOKENS_END);
-		
-//	foreach (var c in src.get_comments()) {
-//		stdout.printf("\nComment: %s\n ref: %s\n", c.content, c.source_reference.to_string());
-//	}
 }
+

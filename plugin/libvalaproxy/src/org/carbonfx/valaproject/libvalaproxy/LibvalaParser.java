@@ -25,18 +25,14 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  *
  */
+
 package org.carbonfx.valaproject.libvalaproxy;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
-import java.io.BufferedReader;
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PipedInputStream;
-import java.io.PipedOutputStream;
 import org.apache.commons.exec.CommandLine;
-import org.apache.commons.exec.DefaultExecuteResultHandler;
 import org.apache.commons.exec.DefaultExecutor;
+import org.apache.commons.exec.ExecuteException;
 import org.apache.commons.exec.ExecuteWatchdog;
 import org.apache.commons.exec.Executor;
 import org.apache.commons.exec.PumpStreamHandler;
@@ -45,64 +41,42 @@ import org.apache.commons.exec.PumpStreamHandler;
  *
  * @author Magomed Abdurakhmanov
  */
-public class LibvalaProxy {
-
-	private String homeDirectory;
-	private String valac;
-	private String valaVersion;
-
-	public LibvalaProxy() {
-
-		this.valac = "valac";
-		this.homeDirectory = appendSubDir(System.getProperty("user.home"), ".netbeans-vala-plugin");
-
-		detectValaVersion();
-		compileProxy();
-	}
-
-	private String appendSubDir(String path, String subdir) {
-		String fileSeparator = System.getProperty("file.separator");
-		if (path.endsWith(fileSeparator)) {
-			return path + subdir;
-		} else {
-			return path + fileSeparator + subdir;
-		}
-	}
-
-	private void detectValaVersion() {
-	}
-
-	private void compileProxy() {
-	}
-
-	private String execute(String command, int timeoutInSeconds) throws IOException, InterruptedException {
-		CommandLine cl = CommandLine.parse("/bin/ls");
-		cl.addArgument("/opt");
-
-		Executor exec = new DefaultExecutor();
-		ExecuteWatchdog watchdog = new ExecuteWatchdog(timeoutInSeconds * 1000);
-		exec.setWatchdog(watchdog);
-
-		PipedOutputStream pipedOutputStream = new PipedOutputStream();
-		PumpStreamHandler psh = new PumpStreamHandler(pipedOutputStream);
-		exec.setStreamHandler(psh);
-
-		DefaultExecuteResultHandler handler = new DefaultExecuteResultHandler();
-		exec.execute(cl, handler);
-
-		int x;
-		PipedInputStream pis = new PipedInputStream(pipedOutputStream);
-		BufferedReader br = new BufferedReader(new InputStreamReader(pis));
+public class LibvalaParser {
+	
+	String parser;
+	Executor exec;
+	ByteArrayOutputStream baos;
+	
+	public LibvalaParser(String parserCommandName) throws ExecuteException, IOException {
+		this.parser = parserCommandName;
 		
-		String line = null;
-		StringBuilder result = new StringBuilder();
-		while ( (line = br.readLine()) != null) {
-			result.append(line);
-			result.append("\n");
-		}
-		br.close();
-		pis.close();
-		handler.waitFor(timeoutInSeconds * 1000);
-		return result.toString();
+		CommandLine cl = new CommandLine(parser);
+		this.exec = new DefaultExecutor();
+		this.baos = new ByteArrayOutputStream();
+		
+		PumpStreamHandler psh = new PumpStreamHandler(baos);
+		exec.setStreamHandler(psh);
+		exec.execute(cl);
 	}
+	
+	@Override
+	protected void finalize() throws Throwable {
+		try {
+			close();
+		}
+		catch (Throwable t) {
+		}
+		super.finalize();
+	}
+	
+	public void close() {
+		if (exec != null) {
+			ExecuteWatchdog watchdog = new ExecuteWatchdog(10000);
+			exec.setWatchdog(watchdog);
+			send(CMD_CLOSE);
+			exec = null;
+		}
+	}
+	
+	public OutputStream
 }

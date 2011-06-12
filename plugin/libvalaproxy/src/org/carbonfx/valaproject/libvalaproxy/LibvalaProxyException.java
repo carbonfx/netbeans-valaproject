@@ -27,52 +27,25 @@
  */
 package org.carbonfx.valaproject.libvalaproxy;
 
-import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
-import static org.junit.Assert.*;
-
 /**
  *
  * @author Magomed Abdurakhmanov
  */
-public class LibvalaProxyTest {
-	
-	static LibvalaFactory proxy;
-	
-	public LibvalaProxyTest() {
+public class LibvalaProxyException extends RuntimeException {
+
+	public LibvalaProxyException() {
+		super();
 	}
 
-	@BeforeClass
-	public static void setUpClass() throws Exception {
-		proxy = new LibvalaFactory();
+	public LibvalaProxyException(String message) {
+		super(message);
 	}
 
-	@AfterClass
-	public static void tearDownClass() throws Exception {
-		proxy.cleanup();
-		proxy = null;
-	}
-	
-	@Before
-	public void setUp() {
-		
-	}
-	
-	@After
-	public void tearDown() {
-		
+	public LibvalaProxyException(String message, Throwable cause) {
+		super(message, cause);
 	}
 
-	@Test
-	public void testExecute() throws IOException, InterruptedException {
-		
-		LibvalaParser parser = proxy.createParser();
-		assertNotNull(parser);
+	public LibvalaProxyException(Throwable cause) {
+		super(cause);
 	}
 }

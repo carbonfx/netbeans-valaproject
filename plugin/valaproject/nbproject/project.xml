@@ -121,6 +121,10 @@
                 </dependency>
             </module-dependencies>
             <public-packages/>
+            <class-path-extension>
+                <runtime-relative-path>ext/commons-exec-1.1.jar</runtime-relative-path>
+                <binary-origin>release/modules/ext/commons-exec-1.1.jar</binary-origin>
+            </class-path-extension>
         </data>
     </configuration>
 </project>

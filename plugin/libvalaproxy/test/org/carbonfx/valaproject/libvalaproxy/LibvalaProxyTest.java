@@ -25,36 +25,43 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  *
  */
+package org.carbonfx.valaproject.libvalaproxy;
 
-package org.carbonfx.valaproject;
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
 
-import java.io.IOException;
-import org.openide.filesystems.FileObject;
-import org.openide.loaders.DataNode;
-import org.openide.loaders.DataObjectExistsException;
-import org.openide.loaders.MultiDataObject;
-import org.openide.loaders.MultiFileLoader;
-import org.openide.nodes.CookieSet;
-import org.openide.nodes.Node;
-import org.openide.nodes.Children;
-import org.openide.util.Lookup;
-import org.openide.text.DataEditorSupport;
-
-public class ValaDataObject extends MultiDataObject {
-
-	public ValaDataObject(FileObject pf, MultiFileLoader loader) throws DataObjectExistsException, IOException {
-		super(pf, loader);
-		CookieSet cookies = getCookieSet();
-		cookies.add((Node.Cookie) DataEditorSupport.create(this, getPrimaryEntry(), cookies));
+/**
+ *
+ * @author Magomed Abdurakhmanov
+ */
+public class LibvalaProxyTest {
+	
+	public LibvalaProxyTest() {
 	}
 
-	@Override
-	protected Node createNodeDelegate() {
-		return new DataNode(this, Children.LEAF, getLookup());
+	@BeforeClass
+	public static void setUpClass() throws Exception {
 	}
 
-	@Override
-	public Lookup getLookup() {
-		return getCookieSet().getLookup();
+	@AfterClass
+	public static void tearDownClass() throws Exception {
+	}
+	
+	@Before
+	public void setUp() {
+	}
+	
+	@After
+	public void tearDown() {
+	}
+
+	@Test
+	public void testSomeMethod() {
+		//// TODO review the generated test code and remove the default call to fail.
+		//fail("The test case is a prototype.");
 	}
 }

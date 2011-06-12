@@ -33,25 +33,33 @@ const string TOKENS_BEGIN = "]tokens";
 const string TOKENS_END = "]end";
 
 bool debug_mode = false;
+FileOutputStream? debug_log = null;
 
 int main(string[] args) {
 
 	while (!stdin.eof()) {
-		string? line = stdin.read_line ();
+		string? line = stdin_read_line ();
 		if (line == CMD_QUIT || line == null) {
 			break;
 		}
 
 		if (line == CMD_DEBUG) {
 			debug_mode = true;
+			var f = File.new_for_path("/tmp/vala-parser.log");
+			try {
+				debug_log = f.create(FileCreateFlags.REPLACE_DESTINATION, null);
+			}
+			catch(GLib.Error io) {
+				
+			}
 		}
 
 		if (line == CMD_BEGIN) {
-			string file_name = stdin.read_line();
+			string file_name = stdin_read_line();
 			var sb = new StringBuilder();
 			var str_array = new Gee.ArrayList<string>();	
 			while (!stdin.eof()) {
-				string? file_line = stdin.read_line ();
+				string? file_line = stdin_read_line(false);
 		        if (file_line == CMD_END || file_line == null) {
 		            break;
 		        }
@@ -182,3 +190,19 @@ void parse_file(string file_name, string content, Gee.ArrayList<string> str_arra
 	println(TOKENS_END);
 }
 
+public string? stdin_read_line(bool divide = true) {
+	string? result = stdin.read_line();
+
+	if (debug_mode) {
+		try {
+			if (divide) debug_log.write("----->>\n".data);
+			debug_log.write(result.data);
+			if (divide) debug_log.write("-----\n".data);
+		}
+		catch(GLib.IOError io) {
+			
+		}
+	}
+
+	return result;
+}

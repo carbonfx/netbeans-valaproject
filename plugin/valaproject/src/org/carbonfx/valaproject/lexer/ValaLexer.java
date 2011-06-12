@@ -28,26 +28,28 @@
 
 package org.carbonfx.valaproject.lexer;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import org.netbeans.api.lexer.PartType;
 import org.netbeans.api.lexer.Token;
 import org.netbeans.spi.lexer.Lexer;
+import org.netbeans.spi.lexer.LexerInput;
 import org.netbeans.spi.lexer.LexerRestartInfo;
 
 public class ValaLexer implements Lexer<ValaTokenId> {
 
 	private LexerRestartInfo<ValaTokenId> info;
-	private org.carbonfx.valaproject.antlr.ValaLexer lexer;
-
+	private static final Logger logger = Logger.getLogger(ValaLexer.class.getName());
+	
 	public ValaLexer(LexerRestartInfo<ValaTokenId> info) {
 
         this.info = info;
-        AntlrCharStream charStream = new AntlrCharStream(info.input(), "Vala");
-		this.lexer = new org.carbonfx.valaproject.antlr.ValaLexer(charStream);
     }
 
 	@Override
 	public Token<ValaTokenId> nextToken() {
-		
+
+		/*
 		org.antlr.runtime.Token token = lexer.nextToken();
 		Token<ValaTokenId> resultToken = null;
 
@@ -59,10 +61,36 @@ public class ValaLexer implements Lexer<ValaTokenId> {
 		if (info.input().readLength() > 0) // incomplete token, return as a comment
 		{
 			ValaTokenId tokenId = ValaLanguageHierarchy.getToken(org.carbonfx.valaproject.antlr.ValaLexer.COMMENT);
-			resultToken = info.tokenFactory().createToken(tokenId, info.input().readLength(), PartType.MIDDLE);
+			
+		}*/
+		
+		StringBuilder sb = new StringBuilder();
+		for (;;) {
+			int c = info.input().read();
+			if (c != LexerInput.EOF)
+				sb.append((char)c);
+			else
+				break;
 		}
 		
+		String s = sb.toString();
+		
+		logger.log(Level.WARNING, "vala nn: " + Integer.toString(info.input().readLength()));
+		logger.log(Level.WARNING, "vala cs: " + s);
+		if (s.length() == 0) {
+			return null;
+		}
+
+		try {
+		ValaTokenId tokenId = ValaLanguageHierarchy.getToken(1);
+		Token<ValaTokenId> resultToken = info.tokenFactory().createToken(tokenId,s.length());
         return resultToken;
+		}
+		catch (Throwable t)
+		{
+			logger.log(Level.SEVERE, "Error", t);
+			return null;
+		}
 	}
 
 	@Override

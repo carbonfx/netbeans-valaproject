@@ -121,10 +121,6 @@
                 </dependency>
             </module-dependencies>
             <public-packages/>
-            <class-path-extension>
-                <runtime-relative-path>ext/antlr-3.3-complete.jar</runtime-relative-path>
-                <binary-origin>release/modules/ext/antlr-3.3-complete.jar</binary-origin>
-            </class-path-extension>
         </data>
     </configuration>
 </project>

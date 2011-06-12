@@ -29,8 +29,6 @@
 package org.carbonfx.valaproject.parser;
 
 import javax.swing.event.ChangeListener;
-import org.antlr.runtime.ANTLRStringStream;
-import org.antlr.runtime.CommonTokenStream;
 
 import org.netbeans.modules.parsing.api.Snapshot;
 import org.netbeans.modules.parsing.api.Task;
@@ -41,26 +39,25 @@ import org.netbeans.modules.parsing.spi.SourceModificationEvent;
 public class ValaParser extends Parser {
 
 	private Snapshot snapshot;
-	private org.carbonfx.valaproject.antlr.ValaParser parser;
 
 	@Override
 	public void parse(Snapshot snpsht, Task task, SourceModificationEvent sme) throws ParseException {
 		
 		this.snapshot = snpsht;
-        ANTLRStringStream input = new ANTLRStringStream(snapshot.getText().toString());
-        org.antlr.runtime.Lexer lexer = new org.carbonfx.valaproject.antlr.ValaLexer(input);
-        CommonTokenStream tokens = new CommonTokenStream(lexer);
-        this.parser = new org.carbonfx.valaproject.antlr.ValaParser(tokens);
-        try {
+        //ANTLRStringStream input = new ANTLRStringStream(snapshot.getText().toString());
+        //org.antlr.runtime.Lexer lexer = new org.carbonfx.valaproject.antlr.ValaLexer(input);
+        //CommonTokenStream tokens = new CommonTokenStream(lexer);
+        //this.parser = new org.carbonfx.valaproject.antlr.ValaParser(tokens);
+        /*try {
             this.parser.compilation_unit();
         } catch (Exception ex) {
             ex.printStackTrace();
-        }
+        }*/
 	}
 
 	@Override
 	public Result getResult(Task task) throws ParseException {
-		return new ValaParserResult(this.snapshot, this.parser);
+		return new ValaParserResult(this.snapshot/*this.parser*/);
 	}
 
 	@Override
@@ -77,21 +74,21 @@ public class ValaParser extends Parser {
 
 	public static class ValaParserResult extends Result {
 
-        private org.carbonfx.valaproject.antlr.ValaParser parser;
+        //private org.carbonfx.valaproject.antlr.ValaParser parser;
         private boolean valid = true;
 
-        ValaParserResult(Snapshot snapshot, org.carbonfx.valaproject.antlr.ValaParser parser) {
+        ValaParserResult(Snapshot snapshot/*, org.carbonfx.valaproject.antlr.ValaParser parser*/) {
             super(snapshot);
-            this.parser = parser;
+            //this.parser = parser;
         }
 
-        public org.carbonfx.valaproject.antlr.ValaParser getParser()
+        /*public org.carbonfx.valaproject.antlr.ValaParser getParser()
                 throws ParseException {
             if (!valid) {
                 throw new ParseException();
             }
             return parser;
-        }
+        }*/
 
 		@Override
         protected void invalidate() {

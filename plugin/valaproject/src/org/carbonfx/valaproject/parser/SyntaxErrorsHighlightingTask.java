@@ -31,7 +31,6 @@ package org.carbonfx.valaproject.parser;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.text.Document;
-import org.carbonfx.valaproject.antlr.ValaParser.SyntaxError;
 import org.netbeans.modules.parsing.spi.Parser.Result;
 import org.netbeans.modules.parsing.spi.ParserResultTask;
 import org.netbeans.modules.parsing.spi.Scheduler;
@@ -51,7 +50,7 @@ public class SyntaxErrorsHighlightingTask extends ParserResultTask  {
 	@Override
 	public void run(Result result, SchedulerEvent se) {
 		 try {
-            ValaParser.ValaParserResult r = (ValaParser.ValaParserResult) result;
+            /*ValaParser.ValaParserResult r = (ValaParser.ValaParserResult) result;
             List<SyntaxError> syntaxErrors = r.getParser().syntaxErrors;
             Document document = result.getSnapshot().getSource().getDocument(false);
             
@@ -73,7 +72,7 @@ public class SyntaxErrorsHighlightingTask extends ParserResultTask  {
                 errors.add(errorDescription);
             }
 
-            HintsController.setErrors(document, "vala", errors);
+            HintsController.setErrors(document, "vala", errors);*/
         } catch (Exception ex) {
             ex.printStackTrace();
         }

@@ -37,6 +37,8 @@ FileOutputStream? debug_log = null;
 
 int main(string[] args) {
 
+	enable_debug_mode(); // todo: remove after debug
+
 	while (!stdin.eof()) {
 		string? line = stdin_read_line ();
 		if (line == CMD_QUIT || line == null) {
@@ -44,16 +46,9 @@ int main(string[] args) {
 		}
 
 		if (line == CMD_DEBUG) {
-			debug_mode = true;
-			var f = File.new_for_path("/tmp/vala-parser.log");
-			try {
-				debug_log = f.create(FileCreateFlags.REPLACE_DESTINATION, null);
-			}
-			catch(GLib.Error io) {
-				
-			}
+			enable_debug_mode();
 		}
-
+		else
 		if (line == CMD_BEGIN) {
 			string file_name = stdin_read_line();
 			var sb = new StringBuilder();
@@ -205,4 +200,20 @@ public string? stdin_read_line(bool divide = true) {
 	}
 
 	return result;
+}
+
+public void enable_debug_mode() {
+	debug_mode = true;
+	var f = File.new_for_path("vala-parser.log");
+	try {
+		if(f.query_exists(null)) {
+			f.delete(null);
+		}
+
+		debug_log = f.create(FileCreateFlags.REPLACE_DESTINATION, null);
+	}
+	catch(GLib.Error error) {
+		stdout.printf("Failed to create log file: %s\nDebug mode is disabled.\n", error.message);
+		debug_mode = false;
+	}
 }

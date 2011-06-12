@@ -27,9 +27,9 @@
  */
 package org.carbonfx.valaproject.libvalaproxy;
 
+import java.io.PipedOutputStream;
+import java.io.PipedInputStream;
 import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -77,6 +77,26 @@ public class LibvalaProxyTest {
 		LibvalaParser parser = proxy.createParser();
 		assertNotNull(parser);
 		
+		parser.sendln("debug");
+		parser.sendln("quit");
+		
 		parser.close();
+	}
+	
+	@Test
+	public void test1() throws IOException{
+		
+		PipedOutputStream output = new PipedOutputStream();
+		PipedInputStream input = new PipedInputStream(output);
+		
+		
+		for (int i = 0; i < 10; ++i) {
+			if (input.available() > 0) {
+				int i2 = input.read();
+				//assertEquals(i, i2);
+			}
+			output.write(i);
+			
+		}
 	}
 }

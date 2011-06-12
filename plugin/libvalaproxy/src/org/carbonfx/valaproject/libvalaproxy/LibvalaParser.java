@@ -29,20 +29,17 @@
 package org.carbonfx.valaproject.libvalaproxy;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.ByteArrayOutputStream;
-import java.io.DataInputStream;
+import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
+import java.io.OutputStream;
 import java.io.PipedInputStream;
 import java.io.PipedOutputStream;
 import org.apache.commons.exec.CommandLine;
 import org.apache.commons.exec.DefaultExecuteResultHandler;
 import org.apache.commons.exec.DefaultExecutor;
 import org.apache.commons.exec.ExecuteException;
-import org.apache.commons.exec.ExecuteResultHandler;
 import org.apache.commons.exec.ExecuteWatchdog;
 import org.apache.commons.exec.Executor;
 import org.apache.commons.exec.PumpStreamHandler;
@@ -51,13 +48,14 @@ import org.apache.commons.exec.PumpStreamHandler;
  *
  * @author Magomed Abdurakhmanov
  */
-public class LibvalaParser {
+public final class LibvalaParser {
 	
 	String parser;
 	Executor exec;
 	BufferedReader reader;
-	BufferedWriter writer;
+	PipedOutputStream writer;
 	DefaultExecuteResultHandler execResult;
+	String consoleCharSetName;
 	
 	final String CMD_QUIT = "quit";
 	final String CMD_DEBUG = "debug";
@@ -66,24 +64,28 @@ public class LibvalaParser {
 		return reader;
 	}
 	
-	public LibvalaParser(String parserCommandName, String homeDirectory) throws ExecuteException, IOException {
+	public LibvalaParser(String parserCommandName, String homeDirectory, String consoleCharSetName) throws ExecuteException, IOException {
 		this.parser = parserCommandName;
+		this.consoleCharSetName = consoleCharSetName;
 		
 		CommandLine cl = new CommandLine(parser);
 		this.exec = new DefaultExecutor();
 		this.exec.setWorkingDirectory(new File(homeDirectory));
 		PipedOutputStream output = new PipedOutputStream();
-		PipedInputStream input = new PipedInputStream();
+		writer = new PipedOutputStream();
+		PipedInputStream input = new PipedInputStream(writer);
 		
 		reader = new BufferedReader(new InputStreamReader(new PipedInputStream(output)));
-		writer = new BufferedWriter(new OutputStreamWriter(new PipedOutputStream(input)));
+		
+		//String text = "debug\nquit\n";
+		//ByteArrayInputStream input1 = new ByteArrayInputStream(text.getBytes(consoleCharSetName));
   
 		PumpStreamHandler psh = new PumpStreamHandler(output, output, input);
 		exec.setStreamHandler(psh);
 		execResult = new DefaultExecuteResultHandler();
 		exec.setExitValue(0);
 		exec.execute(cl, execResult);
-		sendln(CMD_DEBUG);
+		//sendln(CMD_DEBUG);
 	}
 	
 	@Override
@@ -105,19 +107,19 @@ public class LibvalaParser {
 				reader.read();
 			}
 			this.execResult.waitFor(10000);
-			int value = this.execResult.getExitValue();
+			//int value = this.execResult.getExitValue();
 			exec = null;
 		}
 	}
 	
 	public void send(String command) throws IOException {
-		writer.write(command);
-		writer.flush();
+		writer.write(command.getBytes(this.consoleCharSetName));
+		//writer.flush();
 	}
 	
 	public void sendln(String command) throws IOException {
-		writer.write(command);
-		writer.write("\n");
-		writer.flush();
+		writer.write(command.getBytes(this.consoleCharSetName));
+		writer.write("\n".getBytes(this.consoleCharSetName));
+		//writer.flush();
 	}
 }

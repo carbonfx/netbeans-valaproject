@@ -51,7 +51,7 @@ public class LibvalaFactory {
 	private String homeDirectory;
 	private String valac;
 	private String valaVersion;
-	private String charSetName;
+	private String consoleCharSetName;
 	private String parser;
 	private String parserSource;
 	private final int EXEC_TIMEOUT = 60;
@@ -66,7 +66,7 @@ public class LibvalaFactory {
 			defaultCharSetName = "cp866";
 		}
 
-		this.charSetName = System.getProperty("console.encoding", defaultCharSetName);
+		this.consoleCharSetName = System.getProperty("console.encoding", defaultCharSetName);
 
 		try {
 			detectValaVersion();
@@ -157,7 +157,7 @@ public class LibvalaFactory {
 		exec.setStreamHandler(psh);
 		exec.execute(cl);
 
-		return baos.toString(this.charSetName);
+		return baos.toString(this.consoleCharSetName);
 	}
 
 	private boolean isWindows() {
@@ -166,7 +166,7 @@ public class LibvalaFactory {
 	
 	public LibvalaParser createParser() {
 		try {
-			return new LibvalaParser(this.parser, this.homeDirectory);
+			return new LibvalaParser(this.parser, this.homeDirectory, this.consoleCharSetName);
 		} catch (LibvalaProxyException le) {
 			throw le;
 		} catch (Throwable t) {

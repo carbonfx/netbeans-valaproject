@@ -129,7 +129,7 @@ public class LibvalaFactory {
             OutputStream out = new FileOutputStream(this.parserSource);
 			IOUtils.copy(in, out);
 			
-			String command = this.valac + " --pkg=libvala-0.12 --pkg=gee-1.0 vala-parser-" + this.valaVersion + ".vala";
+			String command = this.valac + " --pkg=libvala-0.12 --pkg=gee-1.0 --pkg=gio-2.0 vala-parser-" + this.valaVersion + ".vala";
 			String result = execute(command, homeDirectory, EXEC_TIMEOUT);
 			if (f.exists() && f.canExecute() && f.getTotalSpace() > 0) {
 				return;
@@ -166,7 +166,7 @@ public class LibvalaFactory {
 	
 	public LibvalaParser createParser() {
 		try {
-			return new LibvalaParser(this.parser);
+			return new LibvalaParser(this.parser, this.homeDirectory);
 		} catch (LibvalaProxyException le) {
 			throw le;
 		} catch (Throwable t) {

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="1" failures="0" hostname="nod-w" name="org.carbonfx.valaproject.libvalaproxy.LibvalaProxyTest" tests="1" time="0.0" timestamp="2011-06-12T17:59:58">
+<testsuite errors="1" failures="0" hostname="nod-w" name="org.carbonfx.valaproject.libvalaproxy.LibvalaProxyTest" tests="1" time="10.196" timestamp="2011-06-12T19:31:37">
   <properties>
     <property name="libs.jsp-compiler.javadoc" value="" />
     <property name="netbeans.autoupdate.country" value="" />
-    <property name="javac.test.classpath" value="../../thirdparty/commons-exec-1.1.jar:build/classes:/opt/devtools/netbeans-7.0/platform/modules/ext/junit-4.8.2.jar" />
+    <property name="javac.test.classpath" value="../../thirdparty/commons-exec-1.1.jar:../../thirdparty/commons-io-2.0.1.jar:build/classes:/opt/devtools/netbeans-7.0/platform/modules/ext/junit-4.8.2.jar" />
     <property name="libs.jsf20.maven-pom" value="" />
     <property name="libs.DataBindingME.src" value="/opt/devtools/netbeans-7.0/mobility/sources/netbeans_databindingme-src.zip" />
     <property name="libs.j2me_ant_ext.javadoc" value="" />
@@ -17,7 +17,7 @@
     <property name="javadoc.windowtitle" value="" />
     <property name="libs.toplink.classpath" value="/opt/devtools/netbeans-7.0/java/modules/ext/toplink/toplink-essentials.jar:/opt/devtools/netbeans-7.0/java/modules/ext/toplink/toplink-essentials-agent.jar" />
     <property name="libs.jsp-compilation.javadoc" value="" />
-    <property name="user.dir" value="/home/maqdev" />
+    <property name="user.dir" value="/home/maqdev/dev/carbonfx/netbeans-valaproject/plugin/libvalaproxy" />
     <property name="libs.hibernate-persistence.javadoc" value="" />
     <property name="libs.JMUnit4CLDC10.javadoc" value="/opt/devtools/netbeans-7.0/mobility/modules/docs/jmunit-1.2.1-api.zip" />
     <property name="java.vm.version" value="19.1-b02" />
@@ -55,11 +55,9 @@
     <property name="libs.beans-binding.classpath" value="/opt/devtools/netbeans-7.0/java/modules/ext/beansbinding-1.2.1.jar" />
     <property name="ap.proc.none.internal" value="" />
     <property name="libs.DataBindingME-SVG.javadoc" value="/opt/devtools/netbeans-7.0/mobility/modules/docs/netbeans_databindingme_svg-api.zip" />
-    <property name="org.whattf.datatype.lang-registry" value="jar:file:/opt/devtools/netbeans-7.0/ide/modules/ext/validator.jar!/nu/validator/localentities/files/www_iana_org_assignments_language_subtag_registry" />
     <property name="libs.restapi.javadoc" value="/opt/devtools/netbeans-7.0/enterprise/docs/jsr311-api-1.1.1-javadoc.zip" />
     <property name="libs.JWSAntTasks.maven-pom" value="" />
     <property name="libs.ojec-ant-utils.src" value="" />
-    <property name="nu.validator.spec.alt-advice" value="jar:file:/opt/devtools/netbeans-7.0/ide/modules/ext/validator.jar!/nu/validator/localentities/files/wiki_whatwg_org_wiki_Validator_nu_alt_advice" />
     <property name="libs.spring-webmvc3.0.src" value="" />
     <property name="libs.restapi.classpath" value="/opt/devtools/netbeans-7.0/enterprise/modules/ext/rest/jsr311-api-1.1.1.jar" />
     <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
@@ -86,7 +84,7 @@
     <property name="libs.jstl11.javadoc" value="/opt/devtools/netbeans-7.0/enterprise/docs/javaee6-doc-api.zip" />
     <property name="libs.JMUnit4CLDC11.src" value="" />
     <property name="javadoc.encoding" value="UTF-8" />
-    <property name="javac.classpath" value="../../thirdparty/commons-exec-1.1.jar" />
+    <property name="javac.classpath" value="../../thirdparty/commons-exec-1.1.jar:../../thirdparty/commons-io-2.0.1.jar" />
     <property name="libs.jsp-compilation-syscp.src" value="" />
     <property name="libs.JAVADB_DRIVER_LABEL.src" value="" />
     <property name="debug-transport" value="dt_socket" />
@@ -131,7 +129,7 @@
     <property name="libs.ActiveSync.classpath" value="/opt/devtools/netbeans-7.0/mobility/modules/ext/nbactivesync-5.0.jar" />
     <property name="libs.junit_4.maven-pom" value="" />
     <property name="mkdist.disabled" value="true" />
-    <property name="javac.test.processorpath" value="../../thirdparty/commons-exec-1.1.jar:build/classes:/opt/devtools/netbeans-7.0/platform/modules/ext/junit-4.8.2.jar" />
+    <property name="javac.test.processorpath" value="../../thirdparty/commons-exec-1.1.jar:../../thirdparty/commons-io-2.0.1.jar:build/classes:/opt/devtools/netbeans-7.0/platform/modules/ext/junit-4.8.2.jar" />
     <property name="netbeans.buildnumber" value="201104080000" />
     <property name="libs.JWSAntTasks.javadoc" value="" />
     <property name="build.generated.sources.dir" value="build/generated-sources" />
@@ -141,12 +139,13 @@
     <property name="libs.junit.classpath" value="/opt/devtools/netbeans-7.0/java/modules/ext/junit-3.8.2.jar" />
     <property name="libs.jaxb.javadoc" value="/opt/devtools/netbeans-7.0/ide/docs/jaxb-api-doc.zip" />
     <property name="libs.struts.classpath" value="/opt/devtools/netbeans-7.0/enterprise/modules/ext/struts/antlr-2.7.2.jar:/opt/devtools/netbeans-7.0/enterprise/modules/ext/struts/bsf-2.3.0.jar:/opt/devtools/netbeans-7.0/enterprise/modules/ext/struts/commons-beanutils-1.7.0.jar:/opt/devtools/netbeans-7.0/enterprise/modules/ext/struts/commons-chain-1.1.jar:/opt/devtools/netbeans-7.0/enterprise/modules/ext/struts/commons-digester-1.8.jar:/opt/devtools/netbeans-7.0/enterprise/modules/ext/struts/commons-fileupload-1.1.1.jar:/opt/devtools/netbeans-7.0/enterprise/modules/ext/struts/commons-io-1.1.jar:/opt/devtools/netbeans-7.0/enterprise/modules/ext/struts/commons-logging-1.0.4.jar:/opt/devtools/netbeans-7.0/enterprise/modules/ext/struts/commons-validator-1.3.1.jar:/opt/devtools/netbeans-7.0/enterprise/modules/ext/struts/jstl-1.0.2.jar:/opt/devtools/netbeans-7.0/enterprise/modules/ext/struts/oro-2.0.8.jar:/opt/devtools/netbeans-7.0/enterprise/modules/ext/struts/standard-1.0.2.jar:/opt/devtools/netbeans-7.0/enterprise/modules/ext/struts/struts-core-1.3.8.jar:/opt/devtools/netbeans-7.0/enterprise/modules/ext/struts/struts-el-1.3.8.jar:/opt/devtools/netbeans-7.0/enterprise/modules/ext/struts/struts-extras-1.3.8.jar:/opt/devtools/netbeans-7.0/enterprise/modules/ext/struts/struts-faces-1.3.8.jar:/opt/devtools/netbeans-7.0/enterprise/modules/ext/struts/struts-mailreader-dao-1.3.8.jar:/opt/devtools/netbeans-7.0/enterprise/modules/ext/struts/struts-scripting-1.3.8.jar:/opt/devtools/netbeans-7.0/enterprise/modules/ext/struts/struts-taglib-1.3.8.jar:/opt/devtools/netbeans-7.0/enterprise/modules/ext/struts/struts-tiles-1.3.8.jar" />
+    <property name="org.openide.awt.SwingBrowserImpl.do-not-block-awt" value="false" />
     <property name="ant.home" value="/opt/devtools/netbeans-7.0/java/ant" />
     <property name="libs.junit_4.src" value="/opt/devtools/netbeans-7.0/java/docs/junit-4.8.2-src.jar" />
     <property name="libs.ricoh-ant-utils.maven-pom" value="" />
     <property name="libs.absolutelayout.maven-pom" value="" />
     <property name="ant.java.version" value="1.6" />
-    <property name="java.library.path" value="/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/i386/client:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/i386:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/../lib/i386:/usr/java/packages/lib/i386:/lib:/usr/lib" />
+    <property name="java.library.path" value="/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/i386/server:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/i386:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/../lib/i386:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/i386/client:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/i386:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/../lib/i386:/usr/java/packages/lib/i386:/lib:/usr/lib" />
     <property name="javadoc.author" value="false" />
     <property name="libs.metro.maven-pom" value="" />
     <property name="libs.EclipseLink-GlassFish-v3.src" value="" />
@@ -170,10 +169,9 @@
     <property name="user.language" value="ru" />
     <property name="libs.spring-framework.classpath" value="/opt/devtools/netbeans-7.0/ide/modules/ext/commons-logging-1.1.jar:/opt/devtools/netbeans-7.0/java/modules/ext/cglib-2.2.jar:/opt/devtools/netbeans-7.0/java/modules/ext/spring/spring-2.5.6.SEC01.jar" />
     <property name="libs.eclipselink.maven-pom" value="" />
-    <property name="org.whattf.datatype.charset-registry" value="jar:file:/opt/devtools/netbeans-7.0/ide/modules/ext/validator.jar!/nu/validator/localentities/files/www_iana_org_assignments_character_sets" />
     <property name="libs.primefaces.javadoc" value="" />
     <property name="libs.spring-framework300.maven-pom" value="" />
-    <property name="run.test.classpath" value="../../thirdparty/commons-exec-1.1.jar:build/classes:/opt/devtools/netbeans-7.0/platform/modules/ext/junit-4.8.2.jar:build/test/classes" />
+    <property name="run.test.classpath" value="../../thirdparty/commons-exec-1.1.jar:../../thirdparty/commons-io-2.0.1.jar:build/classes:/opt/devtools/netbeans-7.0/platform/modules/ext/junit-4.8.2.jar:build/test/classes" />
     <property name="ant.project.invoked-targets" value="test" />
     <property name="useJavaUtilZip" value="true" />
     <property name="libs.swing-layout.javadoc" value="/opt/devtools/netbeans-7.0/platform/docs/swing-layout-1.0.4-doc.zip" />
@@ -209,7 +207,7 @@
     <property name="libs.ricoh-ant-utils.src" value="" />
     <property name="libs.spring-webmvc.src" value="" />
     <property name="libs.ant-contrib.javadoc" value="" />
-    <property name="debug.test.classpath" value="../../thirdparty/commons-exec-1.1.jar:build/classes:/opt/devtools/netbeans-7.0/platform/modules/ext/junit-4.8.2.jar:build/test/classes" />
+    <property name="debug.test.classpath" value="../../thirdparty/commons-exec-1.1.jar:../../thirdparty/commons-io-2.0.1.jar:build/classes:/opt/devtools/netbeans-7.0/platform/modules/ext/junit-4.8.2.jar:build/test/classes" />
     <property name="libs.javaee-endorsed-api-6.0.classpath" value="/opt/devtools/netbeans-7.0/enterprise/modules/ext/javaee6-endorsed/javax.annotation.jar:/opt/devtools/netbeans-7.0/enterprise/modules/ext/javaee6-endorsed/jaxb-api-osgi.jar:/opt/devtools/netbeans-7.0/enterprise/modules/ext/javaee6-endorsed/webservices-api-osgi.jar" />
     <property name="libs.javaee-api-6.0.src" value="" />
     <property name="netbeans.importclass" value="org.netbeans.upgrade.AutoUpgrade" />
@@ -231,7 +229,7 @@
     <property name="libs.javaee-web-api-6.0.maven-pom" value="" />
     <property name="libs.cdc-pp-awt-layout.classpath" value="/opt/devtools/netbeans-7.0/mobility/modules/ext/cdc-pp-awt-layout.jar" />
     <property name="libs.cdc-agui-swing-layout.src" value="/opt/devtools/netbeans-7.0/mobility/sources/cdc-agui-swing-layout-src.zip" />
-    <property name="run.classpath" value="../../thirdparty/commons-exec-1.1.jar:build/classes" />
+    <property name="run.classpath" value="../../thirdparty/commons-exec-1.1.jar:../../thirdparty/commons-io-2.0.1.jar:build/classes" />
     <property name="libs.hibernate-support.src" value="" />
     <property name="libs.javaee-endorsed-api-6.0.javadoc" value="/opt/devtools/netbeans-7.0/enterprise/docs/javaee6-doc-api.zip" />
     <property name="libs.JMUnit4CLDC11.classpath" value="/opt/devtools/netbeans-7.0/mobility/modules/ext/jmunit4cldc11-1.2.1.jar" />
@@ -243,12 +241,12 @@
     <property name="libs.nokiadeployment.maven-pom" value="" />
     <property name="libs.restapi.src" value="" />
     <property name="libs.NetBeans MIDP Components.javadoc" value="/opt/devtools/netbeans-7.0/mobility/modules/docs/netbeans_midp_components_basic-api.zip" />
-    <property name="sun.management.compiler" value="HotSpot Client Compiler" />
+    <property name="sun.management.compiler" value="HotSpot Tiered Compilers" />
     <property name="javac.deprecation" value="false" />
     <property name="javadoc.use" value="true" />
     <property name="sun.java2d.noddraw" value="true" />
     <property name="libs.jsp-compiler.classpath" value="/opt/devtools/netbeans-7.0/enterprise/ant/extra/jspcompile.jar" />
-    <property name="javac.processorpath" value="../../thirdparty/commons-exec-1.1.jar" />
+    <property name="javac.processorpath" value="../../thirdparty/commons-exec-1.1.jar:../../thirdparty/commons-io-2.0.1.jar" />
     <property name="libs.spring-webmvc.classpath" value="/opt/devtools/netbeans-7.0/enterprise/modules/ext/spring/spring-webmvc-2.5.6.SEC01.jar" />
     <property name="javac.compilerargs" value="" />
     <property name="ant.file" value="/home/maqdev/dev/carbonfx/netbeans-valaproject/plugin/libvalaproxy/build.xml" />
@@ -264,7 +262,7 @@
     <property name="libs.Java-EE-GlassFish-v3.embedabbleejb" value="" />
     <property name="libs.j2me_ant_ext.src" value="" />
     <property name="org.openide.major.version" value="IDE/1" />
-    <property name="java.vm.name" value="Java HotSpot(TM) Client VM" />
+    <property name="java.vm.name" value="Java HotSpot(TM) Server VM" />
     <property name="netbeans.user" value="/home/maqdev/.netbeans/7.0" />
     <property name="javadoc.additionalparam" value="" />
     <property name="libs.ricoh-ant-utils.classpath" value="/opt/devtools/netbeans-7.0/mobility/modules/ext/org-netbeans-modules-j2me-cdc-project-ricoh.jar:/opt/devtools/netbeans-7.0/mobility/modules/ext/RicohAntTasks-2.0.jar:/opt/devtools/netbeans-7.0/mobility/modules/ext/commons-httpclient-3.0.jar:/opt/devtools/netbeans-7.0/ide/modules/ext/commons-logging-1.1.jar:/opt/devtools/netbeans-7.0/mobility/modules/ext/commons-codec-1.3.jar" />
@@ -275,7 +273,7 @@
     <property name="org.openide.awt.ActionReference.completion" value="org.netbeans.modules.apisupport.project.layers.PathCompletions" />
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/i386" />
     <property name="have.sources" value="true" />
-    <property name="debug.classpath" value="../../thirdparty/commons-exec-1.1.jar:build/classes" />
+    <property name="debug.classpath" value="../../thirdparty/commons-exec-1.1.jar:../../thirdparty/commons-io-2.0.1.jar:build/classes" />
     <property name="javadoc.private" value="false" />
     <property name="test.src.dir" value="test" />
     <property name="libs.jsf20.classpath" value="/opt/devtools/netbeans-7.0/enterprise/modules/ext/jsf-2_0/jsf-api.jar:/opt/devtools/netbeans-7.0/enterprise/modules/ext/jsf-2_0/jsf-impl.jar" />
@@ -288,13 +286,13 @@
     <property name="ant.project.name" value="libvalaproxy" />
     <property name="netbeans.hash.code" value="unique=NB_CND_GFMOD_GROOVY_JAVA_MOB_PHP_TOMCAT_WEBEE02adbbcaf-47f1-4149-b826-57e56cde343c_388c2bdc-2bc8-447f-8d6f-26a8340cc1f8" />
     <property name="libs.jsp-compilation-syscp.maven-pom" value="" />
-    <property name="sun.cpu.isalist" value="" />
     <property name="libs.j2me_ant_ext.maven-pom" value="" />
+    <property name="sun.cpu.isalist" value="" />
     <property name="libs.CopyLibs.javadoc" value="" />
     <property name="org.openide.specification.version" value="6.2" />
     <property name="libs.ActiveSync.javadoc" value="" />
-    <property name="libs.DataBindingME-PIM.classpath" value="/opt/devtools/netbeans-7.0/mobility/modules/ext/netbeans_databindingme_pim.jar" />
     <property name="libs.hibernate-support.classpath" value="/opt/devtools/netbeans-7.0/java/modules/ext/hibernate/antlr-2.7.6.jar:/opt/devtools/netbeans-7.0/java/modules/ext/hibernate/asm.jar:/opt/devtools/netbeans-7.0/java/modules/ext/hibernate/asm-attrs.jar:/opt/devtools/netbeans-7.0/java/modules/ext/hibernate/cglib-2.1.3.jar:/opt/devtools/netbeans-7.0/java/modules/ext/hibernate/commons-collections-2.1.1.jar:/opt/devtools/netbeans-7.0/ide/modules/ext/commons-logging-1.1.jar:/opt/devtools/netbeans-7.0/java/modules/ext/hibernate/dom4j-1.6.1.jar:/opt/devtools/netbeans-7.0/java/modules/ext/hibernate/ehcache-1.2.3.jar:/opt/devtools/netbeans-7.0/java/modules/ext/hibernate/jdbc2_0-stdext.jar:/opt/devtools/netbeans-7.0/java/modules/ext/hibernate/jta.jar:/opt/devtools/netbeans-7.0/java/modules/ext/hibernate/hibernate3.jar:/opt/devtools/netbeans-7.0/java/modules/ext/hibernate/hibernate-tools.jar:/opt/devtools/netbeans-7.0/java/modules/ext/hibernate/hibernate-annotations.jar:/opt/devtools/netbeans-7.0/java/modules/ext/hibernate/hibernate-commons-annotations.jar:/opt/devtools/netbeans-7.0/java/modules/ext/hibernate/hibernate-entitymanager.jar:/opt/devtools/netbeans-7.0/java/modules/ext/hibernate/javassist.jar" />
+    <property name="libs.DataBindingME-PIM.classpath" value="/opt/devtools/netbeans-7.0/mobility/modules/ext/netbeans_databindingme_pim.jar" />
     <property name="user.home" value="/home/maqdev" />
     <property name="annotation.processing.processors.list" value="" />
     <property name="debug-args-line" value="-Xdebug" />
@@ -305,14 +303,12 @@
     <property name="libs.CopyLibs.maven-pom" value="" />
     <property name="jar.index" value="false" />
     <property name="libs.absolutelayout.javadoc" value="" />
-    <property name="libs.spring-framework300.javadoc" value="" />
     <property name="libs.hibernate-persistence.maven-pom" value="" />
+    <property name="libs.spring-framework300.javadoc" value="" />
     <property name="java.specification.name" value="Java Platform API Specification" />
-    <property name="guice.disable.misplaced.annotation.check" value="true" />
     <property name="libs.swing-app-framework.maven-pom" value="" />
-    <property name="nu.validator.spec.microsyntax-descriptions" value="jar:file:/opt/devtools/netbeans-7.0/ide/modules/ext/validator.jar!/nu/validator/localentities/files/wiki_whatwg_org_wiki_MicrosyntaxDescriptions" />
-    <property name="libs.jakarta_slide_ant_webdav.maven-pom" value="" />
     <property name="libs.NetBeans MIDP Components WMA.classpath" value="/opt/devtools/netbeans-7.0/mobility/modules/ext/netbeans_midp_components_wma.jar" />
+    <property name="libs.jakarta_slide_ant_webdav.maven-pom" value="" />
     <property name="libs.sjmc-ant-utils.src" value="" />
     <property name="libs.cdc-agui-swing-layout.javadoc" value="" />
     <property name="java.specification.vendor" value="Sun Microsystems Inc." />
@@ -324,8 +320,8 @@
     <property name="libs.MySQLDriver.javadoc" value="" />
     <property name="org.openide.version" value="deprecated" />
     <property name="libs.restlib_gfv3ee6.maven-pom" value="" />
-    <property name="source.encoding" value="UTF-8" />
     <property name="libs.ActiveSync.maven-pom" value="" />
+    <property name="source.encoding" value="UTF-8" />
     <property name="ap.cmd.line.internal" value="" />
     <property name="libs.eclipselinkmodelgen.maven-pom" value="" />
     <property name="libs.jsp-compilation-syscp.javadoc" value="" />
@@ -338,13 +334,13 @@
     <property name="annotation.processing.processor.options" value="" />
     <property name="libs.jaxb.src" value="" />
     <property name="libs.Java-EE-GlassFish-v3.wsgenerate" value="" />
-    <property name="work.dir" value="/home/maqdev/dev/carbonfx/netbeans-valaproject/plugin/libvalaproxy" />
     <property name="libs.cdc-ant-utils.src" value="" />
+    <property name="work.dir" value="/home/maqdev/dev/carbonfx/netbeans-valaproject/plugin/libvalaproxy" />
     <property name="libs.jaxb.classpath" value="/opt/devtools/netbeans-7.0/ide/modules/ext/jaxb/jaxb-impl.jar:/opt/devtools/netbeans-7.0/ide/modules/ext/jaxb/jaxb-xjc.jar:/opt/devtools/netbeans-7.0/ide/modules/ext/jaxb/jaxb1-impl.jar:/opt/devtools/netbeans-7.0/ide/modules/ext/jaxb/activation.jar:/opt/devtools/netbeans-7.0/ide/modules/ext/jaxb/api/jaxb-api.jar:/opt/devtools/netbeans-7.0/ide/modules/ext/jaxb/api/jsr173_api.jar" />
     <property name="do.depend" value="false" />
     <property name="dist.javadoc.dir" value="dist/javadoc" />
-    <property name="libs.spring-webmvc3.0.classpath" value="/opt/devtools/netbeans-7.0/java/modules/ext/spring-3.0/spring-webmvc-3.0.2.RELEASE.jar" />
     <property name="libs.swing-layout.classpath" value="/opt/devtools/netbeans-7.0/platform/modules/ext/swing-layout-1.0.4.jar" />
+    <property name="libs.spring-webmvc3.0.classpath" value="/opt/devtools/netbeans-7.0/java/modules/ext/spring-3.0/spring-webmvc-3.0.2.RELEASE.jar" />
     <property name="libs.restlib.src" value="" />
     <property name="javac.source" value="1.6" />
     <property name="build.generated.dir" value="build/generated" />
@@ -352,13 +348,13 @@
     <property name="line.separator" value="&#xa;" />
     <property name="libs.nb_svg_midp_components.javadoc" value="/opt/devtools/netbeans-7.0/mobility/modules/docs/nb_svg_midp_components-api.zip" />
     <property name="java.specification.version" value="1.6" />
+    <property name="java.vm.info" value="mixed mode" />
     <property name="libs.jaxws21.maven-pom" value="" />
-    <property name="java.vm.info" value="mixed mode, sharing" />
     <property name="libs.cdc-ant-utils.javadoc" value="" />
     <property name="junit.forkmode" value="perTest" />
     <property name="libs.ojec-ant-utils.classpath" value="/opt/devtools/netbeans-7.0/mobility/modules/ext/org-netbeans-modules-j2me-cdc-project-ojec.jar" />
     <property name="libs.spring-framework.maven-pom" value="" />
-    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/resources.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/rt.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/jsse.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/jce.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/charsets.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/modules/jdk.boot.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/classes" />
+    <property name="sun.boot.class.path" value="/home/maqdev/dev/carbonfx/netbeans-valaproject/plugin/libvalaproxy/${endorsed.classpath}:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/resources.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/rt.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/jsse.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/jce.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/charsets.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/modules/jdk.boot.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/classes" />
     <property name="javac.target" value="1.6" />
     <property name="built-jar.properties" value="/home/maqdev/dev/carbonfx/netbeans-valaproject/plugin/libvalaproxy/build/built-jar.properties" />
     <property name="build.test.classes.dir" value="build/test/classes" />
@@ -373,27 +369,26 @@
     <property name="nbplatform.default.netbeans.dest.dir" value="/opt/devtools/netbeans-7.0" />
     <property name="libs.struts.javadoc" value="/opt/devtools/netbeans-7.0/enterprise/docs/struts-1.3.8-javadoc.zip" />
     <property name="ignore.failing.tests" value="true" />
-    <property name="libs.Comet-GlassFish-v3.classpath" value="/C:/Java/sges-v3/glassfish/modules/grizzly-comet.jar" />
     <property name="libs.cdc-ant-utils.maven-pom" value="" />
+    <property name="libs.Comet-GlassFish-v3.classpath" value="/C:/Java/sges-v3/glassfish/modules/grizzly-comet.jar" />
     <property name="libs.restlib_gfv3ee6.javadoc" value="/C:/Java/NetBeans6.8/enterprise6/docs/jsr311-api-1.1.1-javadoc.zip:/C:/Java/NetBeans6.8/enterprise6/docs/jersey-1.1.4-javadoc.zip" />
     <property name="libs.primefaces.src" value="" />
     <property name="libs.cdc-agui-swing-layout.classpath" value="/opt/devtools/netbeans-7.0/mobility/modules/ext/cdc-agui-swing-layout.jar" />
     <property name="dist.dir" value="dist" />
     <property name="libs.groovy-all.javadoc" value="" />
-    <property name="securerandom.source" value="file:/dev/./urandom" />
-    <property name="libs.groovy-all.classpath" value="/opt/devtools/netbeans-7.0/groovy/modules/ext/groovy-all.jar" />
     <property name="javac.fork" value="false" />
     <property name="libs.sjmc-ant-utils.classpath" value="/opt/devtools/netbeans-7.0/mobility/modules/ext/org-netbeans-modules-j2me-cdc-project-sjmc.jar" />
-    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+    <property name="libs.groovy-all.classpath" value="/opt/devtools/netbeans-7.0/groovy/modules/ext/groovy-all.jar" />
     <property name="libs.JMUnit4CLDC10.classpath" value="/opt/devtools/netbeans-7.0/mobility/modules/ext/jmunit4cldc10-1.2.1.jar" />
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
     <property name="default.javac.source" value="1.6" />
     <property name="debug-transport-by-os" value="dt_socket" />
-    <property name="libs.MySQLDriver.src" value="" />
     <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="libs.MySQLDriver.src" value="" />
     <property name="libs.ant-contrib.maven-pom" value="" />
     <property name="libs.nokiadeployment.javadoc" value="" />
-    <property name="java.runtime.version" value="1.6.0_24-b07" />
     <property name="build.test.results.dir" value="build/test/results" />
+    <property name="java.runtime.version" value="1.6.0_24-b07" />
     <property name="libs.ejb3-persistence.javadoc" value="" />
     <property name="libs.NetBeans MIDP Components.src" value="/opt/devtools/netbeans-7.0/mobility/sources/netbeans_midp_components_basic-src.zip" />
     <property name="jna.platform.library.path" value="/usr/lib32:/usr/lib:/lib" />
@@ -401,24 +396,25 @@
     <property name="default.javac.target" value="1.6" />
     <property name="libs.Java-EE-GlassFish-v3.src" value="" />
     <property name="libs.junit_4.classpath" value="/opt/devtools/netbeans-7.0/platform/modules/ext/junit-4.8.2.jar" />
-    <property name="user.timezone" value="Europe/Samara" />
+    <property name="user.timezone" value="" />
     <property name="libs.ant-contrib.src" value="" />
     <property name="libs.javaee-endorsed-api-6.0.maven-pom" value="" />
     <property name="libs.JAVADB_DRIVER_LABEL.javadoc" value="" />
     <property name="netbeans.dirs" value="/opt/devtools/netbeans-7.0/nb:/opt/devtools/netbeans-7.0/ergonomics:/opt/devtools/netbeans-7.0/ide:/opt/devtools/netbeans-7.0/java:/opt/devtools/netbeans-7.0/bin/../xml:/opt/devtools/netbeans-7.0/apisupport:/opt/devtools/netbeans-7.0/bin/../webcommon:/opt/devtools/netbeans-7.0/websvccommon:/opt/devtools/netbeans-7.0/enterprise:/opt/devtools/netbeans-7.0/mobility:/opt/devtools/netbeans-7.0/profiler:/opt/devtools/netbeans-7.0/ruby:/opt/devtools/netbeans-7.0/bin/../python:/opt/devtools/netbeans-7.0/php:/opt/devtools/netbeans-7.0/bin/../visualweb:/opt/devtools/netbeans-7.0/bin/../soa:/opt/devtools/netbeans-7.0/bin/../identity:/opt/devtools/netbeans-7.0/bin/../uml:/opt/devtools/netbeans-7.0/harness:/opt/devtools/netbeans-7.0/cnd:/opt/devtools/netbeans-7.0/dlight:/opt/devtools/netbeans-7.0/groovy:/opt/devtools/netbeans-7.0/bin/../extra:/opt/devtools/netbeans-7.0/bin/../javafx:/opt/devtools/netbeans-7.0/bin/../javacard:" />
     <property name="libs.jsf20.javadoc" value="/opt/devtools/netbeans-7.0/enterprise/docs/javaee6-doc-api.zip" />
-    <property name="libs.restlib_gfv3ee6.src" value="" />
     <property name="java.ext.dirs" value="/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/ext:/usr/java/packages/lib/ext" />
+    <property name="libs.restlib_gfv3ee6.src" value="" />
     <property name="libs.metro.src" value="" />
-    <property name="libs.semc-ant-utils.src" value="" />
     <property name="libs.savaje-ant-utils.maven-pom" value="" />
+    <property name="libs.semc-ant-utils.src" value="" />
     <property name="libs.absolutelayout.classpath" value="/opt/devtools/netbeans-7.0/java/modules/ext/AbsoluteLayout.jar" />
     <property name="excludes" value="" />
-    <property name="libs.restlib.maven-pom" value="" />
     <property name="libs.metro.classpath" value="/opt/devtools/netbeans-7.0/ide/modules/ext/jaxb/activation.jar:/opt/devtools/netbeans-7.0/enterprise/modules/ext/metro/webservices-api.jar:/opt/devtools/netbeans-7.0/enterprise/modules/ext/metro/webservices-extra-api.jar:/opt/devtools/netbeans-7.0/enterprise/modules/ext/metro/webservices-extra.jar:/opt/devtools/netbeans-7.0/enterprise/modules/ext/metro/webservices-rt.jar:/opt/devtools/netbeans-7.0/enterprise/modules/ext/metro/webservices-tools.jar" />
+    <property name="libs.restlib.maven-pom" value="" />
     <property name="libs.DataBindingME.javadoc" value="/opt/devtools/netbeans-7.0/mobility/modules/docs/netbeans_databindingme-api.zip" />
     <property name="apple.laf.useScreenMenuBar" value="true" />
-    <property name="java.class.path" value="/usr/lib/jvm/java-6-sun-1.6.0.24/lib/htmlconverter.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/lib/jconsole.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/lib/tools.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/lib/sa-jdi.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/lib/dt.jar:/opt/devtools/netbeans-7.0/java/ant/lib/ant-apache-bcel.jar:/opt/devtools/netbeans-7.0/java/ant/lib/ant-apache-oro.jar:/opt/devtools/netbeans-7.0/java/ant/lib/ant-commons-net.jar:/opt/devtools/netbeans-7.0/java/ant/lib/ant-junit4.jar:/opt/devtools/netbeans-7.0/java/ant/lib/ant-apache-log4j.jar:/opt/devtools/netbeans-7.0/java/ant/lib/ant-apache-xalan2.jar:/opt/devtools/netbeans-7.0/java/ant/lib/ant.jar:/opt/devtools/netbeans-7.0/java/ant/lib/ant-launcher.jar:/opt/devtools/netbeans-7.0/java/ant/lib/ant-testutil.jar:/opt/devtools/netbeans-7.0/java/ant/lib/ant-jdepend.jar:/opt/devtools/netbeans-7.0/java/ant/lib/ant-jsch.jar:/opt/devtools/netbeans-7.0/java/ant/lib/ant-antlr.jar:/opt/devtools/netbeans-7.0/java/ant/lib/ant-jai.jar:/opt/devtools/netbeans-7.0/java/ant/lib/ant-jmf.jar:/opt/devtools/netbeans-7.0/java/ant/lib/ant-commons-logging.jar:/opt/devtools/netbeans-7.0/java/ant/lib/ant-javamail.jar:/opt/devtools/netbeans-7.0/java/ant/lib/ant-junit.jar:/opt/devtools/netbeans-7.0/java/ant/lib/ant-apache-bsf.jar:/opt/devtools/netbeans-7.0/java/ant/lib/ant-apache-regexp.jar:/opt/devtools/netbeans-7.0/java/ant/lib/ant-apache-resolver.jar:/opt/devtools/netbeans-7.0/java/ant/lib/ant-swing.jar:/opt/devtools/netbeans-7.0/java/ant/lib/ant-netrexx.jar:/opt/devtools/netbeans-7.0/ide/modules/ext/commons-net-1.4.1.jar:/opt/devtools/netbeans-7.0/ide/modules/ext/jakarta-oro-2.0.8.jar:/opt/devtools/netbeans-7.0/ide/modules/ext/jsch-0.1.43.jar" />
+    <property name="java.class.path" value="/home/maqdev/dev/carbonfx/netbeans-valaproject/thirdparty/commons-exec-1.1.jar:/home/maqdev/dev/carbonfx/netbeans-valaproject/thirdparty/commons-io-2.0.1.jar:/home/maqdev/dev/carbonfx/netbeans-valaproject/plugin/libvalaproxy/build/classes:/opt/devtools/netbeans-7.0/platform/modules/ext/junit-4.8.2.jar:/home/maqdev/dev/carbonfx/netbeans-valaproject/plugin/libvalaproxy/build/test/classes:/opt/devtools/netbeans-7.0/java/ant/lib/ant-launcher.jar:/opt/devtools/netbeans-7.0/java/ant/lib/ant.jar:/opt/devtools/netbeans-7.0/java/ant/lib/ant-junit.jar:/opt/devtools/netbeans-7.0/java/ant/lib/ant-junit4.jar" />
+    <property name="file.reference.commons-io-2.0.1.jar" value="../../thirdparty/commons-io-2.0.1.jar" />
     <property name="libs.absolutelayout.src" value="" />
     <property name="libs.cdc-pp-awt-layout.maven-pom" value="" />
     <property name="os.version" value="2.6.38-8-generic-pae" />
@@ -430,18 +426,18 @@
     <property name="libs.nb_svg_midp_components.maven-pom" value="" />
     <property name="libs.ricoh-ant-utils.javadoc" value="" />
     <property name="libs.Comet-GlassFish-v3.src" value="" />
-    <property name="libs.NetBeans MIDP Components PDA.maven-pom" value="" />
     <property name="libs.restlib.javadoc" value="/opt/devtools/netbeans-7.0/enterprise/docs/jersey-client-1.3-javadoc.zip:/opt/devtools/netbeans-7.0/enterprise/docs/jersey-core-1.1.5.1-javadoc.zip:/opt/devtools/netbeans-7.0/enterprise/docs/jersey-json-1.3-javadoc.zip:/opt/devtools/netbeans-7.0/enterprise/docs/jersey-multipart-1.3-javadoc.zip:/opt/devtools/netbeans-7.0/enterprise/docs/jersey-spring-1.3-javadoc.zip:/opt/devtools/netbeans-7.0/enterprise/docs/oauth-client-1.3-javadoc.zip:/opt/devtools/netbeans-7.0/enterprise/docs/oauth-signature-1.3-javadoc.zip" />
+    <property name="libs.NetBeans MIDP Components PDA.maven-pom" value="" />
     <property name="libs.eclipselink.classpath" value="/opt/devtools/netbeans-7.0/java/modules/ext/eclipselink/eclipselink-2.2.0.jar:/opt/devtools/netbeans-7.0/java/modules/ext/eclipselink/eclipselink-javax.persistence-2.0.jar" />
-    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
     <property name="libs.beans-binding.javadoc" value="/opt/devtools/netbeans-7.0/java/docs/beansbinding-1.2.1-doc.zip" />
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
     <property name="libs.Java-EE-GlassFish-v3.classpath" value="/C:/Java/sges-v3/glassfish/modules/endorsed/webservices-api-osgi.jar:/C:/Java/sges-v3/glassfish/modules/jsr311-api.jar:/C:/Java/sges-v3/glassfish/modules/weld-osgi-bundle.jar:/C:/Java/sges-v3/glassfish/modules/javax.ejb.jar:/C:/Java/sges-v3/glassfish/modules/endorsed/javax.annotation.jar:/C:/Java/sges-v3/glassfish/modules/javax.servlet.jsp.jar:/C:/Java/sges-v3/glassfish/modules/javax.servlet.jsp.jstl.jar:/C:/Java/sges-v3/glassfish/modules/javax.jms.jar:/C:/Java/sges-v3/glassfish/modules/endorsed/jaxb-api-osgi.jar:/C:/Java/sges-v3/glassfish/modules/jsf-impl.jar:/C:/Java/sges-v3/glassfish/modules/mail.jar:/C:/Java/sges-v3/glassfish/modules/jstl-impl.jar:/C:/Java/sges-v3/glassfish/modules/bean-validator.jar:/C:/Java/sges-v3/glassfish/modules/javax.persistence.jar:/C:/Java/sges-v3/glassfish/modules/jsf-api.jar:/C:/Java/sges-v3/glassfish/modules/javax.management.j2ee.jar:/C:/Java/sges-v3/glassfish/modules/javax.security.auth.message.jar:/C:/Java/sges-v3/glassfish/modules/javax.security.jacc.jar:/C:/Java/sges-v3/glassfish/modules/javax.servlet.jar:/C:/Java/sges-v3/glassfish/modules/javax.enterprise.deploy.jar:/C:/Java/sges-v3/glassfish/modules/javax.transaction.jar:/C:/Java/sges-v3/glassfish/modules/javax.resource.jar:/C:/Java/sges-v3/glassfish/modules/web-core.jar" />
     <property name="java.vm.vendor" value="Sun Microsystems Inc." />
     <property name="libs.CopyLibs.classpath" value="/opt/devtools/netbeans-7.0/java/ant/extra/org-netbeans-modules-java-j2seproject-copylibstask.jar" />
     <property name="libs.spring-framework300.classpath" value="/opt/devtools/netbeans-7.0/ide/modules/ext/commons-logging-1.1.jar:/opt/devtools/netbeans-7.0/java/modules/ext/cglib-2.2.jar:/opt/devtools/netbeans-7.0/java/modules/ext/spring-3.0/spring-aop-3.0.2.RELEASE.jar:/opt/devtools/netbeans-7.0/java/modules/ext/spring-3.0/spring-asm-3.0.2.RELEASE.jar:/opt/devtools/netbeans-7.0/java/modules/ext/spring-3.0/spring-aspects-3.0.2.RELEASE.jar:/opt/devtools/netbeans-7.0/java/modules/ext/spring-3.0/spring-beans-3.0.2.RELEASE.jar:/opt/devtools/netbeans-7.0/java/modules/ext/spring-3.0/spring-context-3.0.2.RELEASE.jar:/opt/devtools/netbeans-7.0/java/modules/ext/spring-3.0/spring-context-support-3.0.2.RELEASE.jar:/opt/devtools/netbeans-7.0/java/modules/ext/spring-3.0/spring-core-3.0.2.RELEASE.jar:/opt/devtools/netbeans-7.0/java/modules/ext/spring-3.0/spring-expression-3.0.2.RELEASE.jar:/opt/devtools/netbeans-7.0/java/modules/ext/spring-3.0/spring-instrument-3.0.2.RELEASE.jar:/opt/devtools/netbeans-7.0/java/modules/ext/spring-3.0/spring-instrument-tomcat-3.0.2.RELEASE.jar:/opt/devtools/netbeans-7.0/java/modules/ext/spring-3.0/spring-jdbc-3.0.2.RELEASE.jar:/opt/devtools/netbeans-7.0/java/modules/ext/spring-3.0/spring-jms-3.0.2.RELEASE.jar:/opt/devtools/netbeans-7.0/java/modules/ext/spring-3.0/spring-orm-3.0.2.RELEASE.jar:/opt/devtools/netbeans-7.0/java/modules/ext/spring-3.0/spring-oxm-3.0.2.RELEASE.jar:/opt/devtools/netbeans-7.0/java/modules/ext/spring-3.0/spring-test-3.0.2.RELEASE.jar:/opt/devtools/netbeans-7.0/java/modules/ext/spring-3.0/spring-tx-3.0.2.RELEASE.jar:/opt/devtools/netbeans-7.0/java/modules/ext/spring-3.0/spring-web-3.0.2.RELEASE.jar:/opt/devtools/netbeans-7.0/java/modules/ext/spring-3.0/spring-webmvc-portlet-3.0.2.RELEASE.jar:/opt/devtools/netbeans-7.0/java/modules/ext/spring-3.0/spring-webmvc-3.0.2.RELEASE.jar:/opt/devtools/netbeans-7.0/java/modules/ext/spring-3.0/spring-struts-3.0.2.RELEASE.jar" />
     <property name="libs.jsp-compiler.maven-pom" value="" />
-    <property name="libs.Java-EE-GlassFish-v3.wsinterop" value="" />
     <property name="libs.spring-webmvc.maven-pom" value="" />
+    <property name="libs.Java-EE-GlassFish-v3.wsinterop" value="" />
     <property name="run.jvmargs" value="" />
     <property name="libs.ejb3-persistence.classpath" value="/opt/devtools/netbeans-7.0/java/modules/ext/hibernate/ejb3-persistence.jar" />
     <property name="libs.spring-framework.javadoc" value="" />
@@ -451,8 +447,8 @@
     <property name="libs.jsf12.maven-pom" value="" />
     <property name="libs.junit.src" value="" />
     <property name="annotation.processing.source.output" value="build/generated-sources/ap-source-output" />
-    <property name="libs.CopyLibs.src" value="" />
     <property name="build.dir" value="build" />
+    <property name="libs.CopyLibs.src" value="" />
     <property name="libs.jsp-compilation.classpath" value="/opt/devtools/netbeans-7.0/java/ant/lib/ant.jar:/opt/devtools/netbeans-7.0/enterprise/modules/ext/servlet3.0-jsp2.2-api.jar:/opt/devtools/netbeans-7.0/enterprise/modules/ext/glassfish-jspparser-3.0.jar:/opt/devtools/netbeans-7.0/enterprise/modules/ext/jsf-2_0/jsf-api.jar:/opt/devtools/netbeans-7.0/enterprise/modules/ext/jstl.jar:/opt/devtools/netbeans-7.0/java/ant/lib/ant-launcher.jar" />
     <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 20 2010" />
     <property name="file.encoding" value="UTF-8" />
@@ -461,9 +457,13 @@
     <property name="javadoc.nonavbar" value="false" />
     <property name="platform.active" value="default_platform" />
   </properties>
-  <testcase classname="org.carbonfx.valaproject.libvalaproxy.LibvalaProxyTest" name="Monitor file (/home/maqdev/dev/carbonfx/netbeans-valaproject/plugin/libvalaproxy/build/junitvmwatcher8491241731138746427.properties) missing, location not writable, testcase not started or mixing ant versions?" time="0.0020">
-    <error message="Forked Java VM exited abnormally. Please note the time in the report does not reflect the time until the VM exit." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Forked Java VM exited abnormally. Please note the time in the report does not reflect the time until the VM exit.
-	at org.netbeans.core.execution.RunClassThread.run(RunClassThread.java:154)
+  <testcase classname="org.carbonfx.valaproject.libvalaproxy.LibvalaProxyTest" name="testParser" time="10.04">
+    <error message="The process has not exited yet therefore no result is available ..." type="java.lang.IllegalStateException">java.lang.IllegalStateException: The process has not exited yet therefore no result is available ...
+	at org.apache.commons.exec.DefaultExecuteResultHandler.getExitValue(DefaultExecuteResultHandler.java:89)
+	at org.carbonfx.valaproject.libvalaproxy.LibvalaParser.close(LibvalaParser.java:108)
+	at org.carbonfx.valaproject.libvalaproxy.LibvalaProxyTest.testParser(LibvalaProxyTest.java:80)
 </error>
   </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -55,8 +55,10 @@ public class LibvalaProxyTest {
 
 	@AfterClass
 	public static void tearDownClass() throws Exception {
-		proxy.cleanup();
-		proxy = null;
+		if (proxy != null) {
+			proxy.cleanup();
+			proxy = null;
+		}
 	}
 	
 	@Before
@@ -70,9 +72,11 @@ public class LibvalaProxyTest {
 	}
 
 	@Test
-	public void testExecute() throws IOException, InterruptedException {
+	public void testParser() throws IOException, InterruptedException {
 		
 		LibvalaParser parser = proxy.createParser();
 		assertNotNull(parser);
+		
+		parser.close();
 	}
 }

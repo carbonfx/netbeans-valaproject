@@ -38,18 +38,24 @@ FileOutputStream? debug_log = null;
 int main(string[] args) {
 
 	enable_debug_mode(); // todo: remove after debug
+	logd("Started");
 
 	while (!stdin.eof()) {
 		string? line = stdin_read_line ();
 		if (line == CMD_QUIT || line == null) {
+			logd("Got quit command exiting");
+			if (stdin.eof()) logd("EOF!");
+			
 			break;
 		}
 
 		if (line == CMD_DEBUG) {
 			enable_debug_mode();
+			logd("Enabled debug mode");
 		}
 		else
 		if (line == CMD_BEGIN) {
+			logd("Beginning to parse file");
 			string file_name = stdin_read_line();
 			var sb = new StringBuilder();
 			var str_array = new Gee.ArrayList<string>();	
@@ -185,20 +191,23 @@ void parse_file(string file_name, string content, Gee.ArrayList<string> str_arra
 	println(TOKENS_END);
 }
 
-public string? stdin_read_line(bool divide = true) {
-	string? result = stdin.read_line();
-
+public void logd(string msg, bool divide = false) {
 	if (debug_mode) {
 		try {
 			if (divide) debug_log.write("----->>\n".data);
-			debug_log.write(result.data);
+			debug_log.write(msg.data);
+			debug_log.write("\n".data);
 			if (divide) debug_log.write("-----\n".data);
 		}
 		catch(GLib.IOError io) {
 			
 		}
 	}
+}
 
+public string? stdin_read_line(bool divide = true) {
+	string? result = stdin.read_line();
+	logd(result, divide);
 	return result;
 }
 

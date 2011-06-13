@@ -38,6 +38,7 @@ import org.apache.commons.exec.CommandLine;
 import org.apache.commons.exec.DefaultExecutor;
 import org.apache.commons.exec.ExecuteWatchdog;
 import org.apache.commons.exec.Executor;
+import org.apache.commons.exec.OS;
 import org.apache.commons.exec.PumpStreamHandler;
 import org.apache.commons.io.IOUtils;
 
@@ -161,7 +162,7 @@ public class LibvalaFactory {
 	}
 
 	private boolean isWindows() {
-		return System.getProperty("os.name").compareToIgnoreCase("windows") == 0;
+		return OS.isFamilyWindows();
 	}
 	
 	public LibvalaParser createParser() {

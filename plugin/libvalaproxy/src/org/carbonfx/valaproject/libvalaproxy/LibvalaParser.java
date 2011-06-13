@@ -29,7 +29,6 @@
 package org.carbonfx.valaproject.libvalaproxy;
 
 import java.io.BufferedReader;
-import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -42,7 +41,6 @@ import org.apache.commons.exec.DefaultExecutor;
 import org.apache.commons.exec.ExecuteException;
 import org.apache.commons.exec.ExecuteWatchdog;
 import org.apache.commons.exec.Executor;
-import org.apache.commons.exec.PumpStreamHandler;
 
 /**
  *
@@ -53,7 +51,7 @@ public final class LibvalaParser {
 	String parser;
 	Executor exec;
 	BufferedReader reader;
-	PipedOutputStream writer;
+	PumpStreamHandlerPlainInput psh;
 	DefaultExecuteResultHandler execResult;
 	String consoleCharSetName;
 	
@@ -72,19 +70,20 @@ public final class LibvalaParser {
 		this.exec = new DefaultExecutor();
 		this.exec.setWorkingDirectory(new File(homeDirectory));
 		PipedOutputStream output = new PipedOutputStream();
-		writer = new PipedOutputStream();
-		PipedInputStream input = new PipedInputStream(writer);
-		
 		reader = new BufferedReader(new InputStreamReader(new PipedInputStream(output)));
 		
-		//String text = "debug\nquit\n";
-		//ByteArrayInputStream input1 = new ByteArrayInputStream(text.getBytes(consoleCharSetName));
-  
-		PumpStreamHandler psh = new PumpStreamHandler(output, output, input);
+		psh = new PumpStreamHandlerPlainInput(output);
 		exec.setStreamHandler(psh);
 		execResult = new DefaultExecuteResultHandler();
 		exec.setExitValue(0);
+		
+		//sendln(CMD_DEBUG);
+		psh.start();
 		exec.execute(cl, execResult);
+		
+		while (psh.getProcessOutputStream() == null) {
+				try { Thread.sleep(100); } catch (InterruptedException ie){}
+		}
 		//sendln(CMD_DEBUG);
 	}
 	
@@ -103,23 +102,35 @@ public final class LibvalaParser {
 			ExecuteWatchdog watchdog = new ExecuteWatchdog(10000);
 			exec.setWatchdog(watchdog);
 			sendln(CMD_QUIT);
+			
 			while (reader.ready()) {
 				reader.read();
 			}
 			this.execResult.waitFor(10000);
-			//int value = this.execResult.getExitValue();
+			int value = this.execResult.getExitValue();
 			exec = null;
 		}
 	}
 	
 	public void send(String command) throws IOException {
-		writer.write(command.getBytes(this.consoleCharSetName));
-		//writer.flush();
+		OutputStream writer = psh.getProcessOutputStream();
+		
+		if (writer != null) {
+			byte[] bytes = command.getBytes(this.consoleCharSetName);
+			writer.write(bytes);
+			writer.flush();
+		}
 	}
 	
 	public void sendln(String command) throws IOException {
-		writer.write(command.getBytes(this.consoleCharSetName));
-		writer.write("\n".getBytes(this.consoleCharSetName));
-		//writer.flush();
+		OutputStream writer = psh.getProcessOutputStream();
+		
+		if (writer != null) {
+			byte[] bytes = command.getBytes(this.consoleCharSetName);
+			writer.write(bytes);
+			bytes = "\n".getBytes(this.consoleCharSetName);
+			writer.write(bytes);
+			writer.flush();
+		}
 	}
 }

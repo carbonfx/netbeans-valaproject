@@ -27,9 +27,12 @@
  */
 package org.carbonfx.valaproject.libvalaproxy;
 
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.PipedOutputStream;
 import java.io.PipedInputStream;
 import java.io.IOException;
+import org.apache.commons.exec.StreamPumper;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -77,26 +80,31 @@ public class LibvalaProxyTest {
 		LibvalaParser parser = proxy.createParser();
 		assertNotNull(parser);
 		
-		parser.sendln("debug");
-		parser.sendln("quit");
+		//parser.sendln("debug");
+		//parser.sendln("quit");
 		
 		parser.close();
 	}
 	
 	@Test
-	public void test1() throws IOException{
+	public void test1() throws IOException, InterruptedException{
 		
-		PipedOutputStream output = new PipedOutputStream();
-		PipedInputStream input = new PipedInputStream(output);
+		/*ByteArrayOutputStream baos1 = new ByteArrayOutputStream();
+		
+		PipedOutputStream o = new PipedOutputStream();
+		PipedInputStream i = new PipedInputStream(o);
+		
+		StreamPumper sp = new StreamPumper(i, baos1);
+		Thread t = new Thread(sp);
+		t.start();
+		Thread.sleep(1000);
 		
 		
-		for (int i = 0; i < 10; ++i) {
-			if (input.available() > 0) {
-				int i2 = input.read();
-				//assertEquals(i, i2);
-			}
-			output.write(i);
-			
-		}
+		o.write(1);
+		o.flush();
+		//o.close();
+		byte[] a = baos1.toByteArray();
+		assertTrue(a.length > 0);
+		//t.interrupt();*/
 	}
 }

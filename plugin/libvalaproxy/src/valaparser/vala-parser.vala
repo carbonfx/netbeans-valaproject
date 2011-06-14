@@ -37,7 +37,6 @@ FileOutputStream? debug_log = null;
 
 int main(string[] args) {
 
-	enable_debug_mode(); // todo: remove after debug
 	logd("Started");
 
 	while (!stdin.eof()) {
@@ -80,16 +79,16 @@ int main(string[] args) {
 }
 
 public class Token : Object {
-	public int begin_line { get; set; }
-	public int end_line { get; set; }
-	public int begin_column { get; set; }
-	public int end_column { get; set; }
+	public int first_line { get; set; }
+	public int last_line { get; set; }
+	public int first_column { get; set; }
+	public int last_column { get; set; }
 	public string token_type { get; set; }
 }
 
 public int token_compare(Token a, Token b) {
-	int64 a64 = ((int64)a.begin_line) << 32 | (int64)a.begin_column;
-	int64 b64 = ((int64)b.begin_line) << 32 | (int64)b.begin_column;
+	int64 a64 = ((int64)a.first_line) << 32 | (int64)a.first_column;
+	int64 b64 = ((int64)b.first_line) << 32 | (int64)b.first_column;
 	if (a64 > b64)
 		return 1;
 	else
@@ -126,10 +125,10 @@ void parse_file(string file_name, string content, Gee.ArrayList<string> str_arra
 		}
 
 		Token t = new Token();
-		t.begin_line = token_begin.line;
-		t.begin_column = token_begin.column;
-		t.end_line = token_end.line;
-		t.end_column = token_end.column;
+		t.first_line = token_begin.line;
+		t.first_column = token_begin.column;
+		t.last_line = token_end.line;
+		t.last_column = token_end.column;
 
 		string full_token_name = ((EnumClass)typeof (Vala.TokenType).class_ref()).get_value(token).value_name;
 		string prefix = "VALA_TOKEN_TYPE_";
@@ -146,25 +145,25 @@ void parse_file(string file_name, string content, Gee.ArrayList<string> str_arra
 	foreach (var c in src.get_comments()) {
 		
 		Token t = new Token();
-        t.begin_line = c.source_reference.first_line;
-        t.begin_column = c.source_reference.first_column;
+        t.first_line = c.source_reference.first_line;
+        t.first_column = c.source_reference.first_column;
 
-		string s = str_array.get(t.begin_line-1);
-		s = s.substring(t.begin_column-1);
+		string s = str_array.get(t.first_line-1);
+		s = s.substring(t.first_column-1);
 
 		s = s.next_char();
 		unichar c2 = s.get_char();
 		
 		if (c2 == '/') {
 			t.token_type = "LINE_COMMENT";
-			t.end_line = t.begin_line;
-			t.end_column = c.content.char_count();
+			t.last_line = t.first_line;
+			t.last_column = c.content.char_count();
 		}
 		else {
 			t.token_type = "COMMENT";
 			s = c.content;
-			int line = t.begin_line;
-			int column = t.begin_column;
+			int line = t.first_line;
+			int column = t.first_column;
 			for (;;) {
 				c2 = s.get_char();
 				if (c2 == 0) break;
@@ -177,8 +176,8 @@ void parse_file(string file_name, string content, Gee.ArrayList<string> str_arra
 					++column;
 				}
 			}
-			t.end_line = line;
-			t.end_column = column+1;
+			t.last_line = line;
+			t.last_column = column+1;
 		}
 
 		tokens.add(t);
@@ -186,7 +185,7 @@ void parse_file(string file_name, string content, Gee.ArrayList<string> str_arra
 
 	println(TOKENS_BEGIN);
 	foreach(Token t in tokens) {
-		println("%x:%x,%x:%x,%s", t.begin_line, t.begin_column, t.end_line, t.end_column, t.token_type);
+		println("%x:%x,%x:%x,%s", t.first_line, t.first_column, t.last_line, t.last_column, t.token_type);
 	}
 	println(TOKENS_END);
 }

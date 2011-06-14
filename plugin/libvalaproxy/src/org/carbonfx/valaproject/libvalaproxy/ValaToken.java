@@ -25,49 +25,56 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  *
  */
-
 package org.carbonfx.valaproject.libvalaproxy;
-
-import java.io.OutputStream;
-import org.apache.commons.exec.PumpStreamHandler;
 
 /**
  *
- * @author maqdev
+ * @author Magomed Abdurakhmanov
  */
-public class PumpStreamHandlerPlainInput extends PumpStreamHandler {
+public class ValaToken {
+	ValaTokenType tokenType;
+	int firstLine;
+	int firstColumn;
+	int lastLine;
+	int lastColumn;
 
-	volatile OutputStream os;
-	
-	public PumpStreamHandlerPlainInput(OutputStream out) {
-		super(out,out,null);
+	public int getFirstColumn() {
+		return firstColumn;
 	}
-	
-	public OutputStream getProcessOutputStream() {
-		OutputStream result = null;
-		synchronized(this) {
-			result = this.os;
-		}
-		return result;
+
+	public void setFirstColumn(int firstColumn) {
+		this.firstColumn = firstColumn;
 	}
-	
-	@Override
-	public void setProcessInputStream(OutputStream os) {
-		synchronized(this) {
-			this.os = os;
-			this.notifyAll();
-		}
+
+	public int getFirstLine() {
+		return firstLine;
 	}
-	
-	public boolean waitForProcessOutputStream(long timeout) {
-		synchronized(this) {
-			try {
-				this.wait(timeout);
-			}
-			catch (InterruptedException ie) {
-				
-			}
-			return this.os != null;
-		}
+
+	public void setFirstLine(int firstLine) {
+		this.firstLine = firstLine;
+	}
+
+	public int getLastColumn() {
+		return lastColumn;
+	}
+
+	public void setLastColumn(int lastColumn) {
+		this.lastColumn = lastColumn;
+	}
+
+	public int getLastLine() {
+		return lastLine;
+	}
+
+	public void setLastLine(int lastLine) {
+		this.lastLine = lastLine;
+	}
+
+	public ValaTokenType getTokenType() {
+		return tokenType;
+	}
+
+	public void setTokenType(ValaTokenType tokenType) {
+		this.tokenType = tokenType;
 	}
 }

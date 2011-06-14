@@ -5,7 +5,7 @@
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
- *     * Redistributions of source code must retain the above copyright
+ *      * Redistributions of source code must retain the above copyright
  *       notice, this list of conditions and the following disclaimer.
  *     * Redistributions in binary form must reproduce the above copyright
  *       notice, this list of conditions and the following disclaimer in the
@@ -25,49 +25,22 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  *
  */
-
 package org.carbonfx.valaproject.libvalaproxy;
 
-import java.io.OutputStream;
-import org.apache.commons.exec.PumpStreamHandler;
+import java.util.ArrayList;
 
 /**
  *
- * @author maqdev
+ * @author Magomed Abdurakhmanov
  */
-public class PumpStreamHandlerPlainInput extends PumpStreamHandler {
+public class ParseResult {
+	public ArrayList<ValaToken> tokens;
 
-	volatile OutputStream os;
-	
-	public PumpStreamHandlerPlainInput(OutputStream out) {
-		super(out,out,null);
+	public ArrayList<ValaToken> getTokens() {
+		return tokens;
 	}
-	
-	public OutputStream getProcessOutputStream() {
-		OutputStream result = null;
-		synchronized(this) {
-			result = this.os;
-		}
-		return result;
-	}
-	
-	@Override
-	public void setProcessInputStream(OutputStream os) {
-		synchronized(this) {
-			this.os = os;
-			this.notifyAll();
-		}
-	}
-	
-	public boolean waitForProcessOutputStream(long timeout) {
-		synchronized(this) {
-			try {
-				this.wait(timeout);
-			}
-			catch (InterruptedException ie) {
-				
-			}
-			return this.os != null;
-		}
+
+	public void setTokens(ArrayList<ValaToken> tokens) {
+		this.tokens = tokens;
 	}
 }

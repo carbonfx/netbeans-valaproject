@@ -5,7 +5,7 @@
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
- *      * Redistributions of source code must retain the above copyright
+ *     * Redistributions of source code must retain the above copyright
  *       notice, this list of conditions and the following disclaimer.
  *     * Redistributions in binary form must reproduce the above copyright
  *       notice, this list of conditions and the following disclaimer in the
@@ -167,7 +167,7 @@ public class LibvalaFactory {
 	
 	public LibvalaParser createParser() {
 		try {
-			return new LibvalaParser(this.parser, this.homeDirectory, this.consoleCharSetName);
+			return new LibvalaParser(this.parser, this.homeDirectory, this.consoleCharSetName, true);
 		} catch (LibvalaProxyException le) {
 			throw le;
 		} catch (Throwable t) {

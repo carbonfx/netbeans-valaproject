@@ -5,7 +5,7 @@
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
- *      * Redistributions of source code must retain the above copyright
+ *     * Redistributions of source code must retain the above copyright
  *       notice, this list of conditions and the following disclaimer.
  *     * Redistributions in binary form must reproduce the above copyright
  *       notice, this list of conditions and the following disclaimer in the
@@ -35,6 +35,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.PipedInputStream;
 import java.io.PipedOutputStream;
+import java.util.ArrayList;
 import org.apache.commons.exec.CommandLine;
 import org.apache.commons.exec.DefaultExecuteResultHandler;
 import org.apache.commons.exec.DefaultExecutor;
@@ -57,12 +58,14 @@ public final class LibvalaParser {
 	
 	final String CMD_QUIT = "quit";
 	final String CMD_DEBUG = "debug";
+	final String CMD_BEGIN = "begin";
+	final String CMD_END = "]\"\"\"end";
 
 	public BufferedReader getReader() {
 		return reader;
 	}
 	
-	public LibvalaParser(String parserCommandName, String homeDirectory, String consoleCharSetName) throws ExecuteException, IOException {
+	public LibvalaParser(String parserCommandName, String homeDirectory, String consoleCharSetName, boolean debugMode) throws ExecuteException, IOException {
 		this.parser = parserCommandName;
 		this.consoleCharSetName = consoleCharSetName;
 		
@@ -77,14 +80,33 @@ public final class LibvalaParser {
 		execResult = new DefaultExecuteResultHandler();
 		exec.setExitValue(0);
 		
-		//sendln(CMD_DEBUG);
 		psh.start();
 		exec.execute(cl, execResult);
 		
-		while (psh.getProcessOutputStream() == null) {
-				try { Thread.sleep(100); } catch (InterruptedException ie){}
+		for (int i = 0; i < 20; ++i) {
+			if (psh.waitForProcessOutputStream(1000)) 
+				break;
 		}
-		//sendln(CMD_DEBUG);
+		
+		if (debugMode) {
+			sendln(CMD_DEBUG);
+		}
+	}
+	
+	public String parse(String source, String fileName) throws IOException {
+		
+		ParseResult result = new ParseResult();
+		result.setTokens(new ArrayList<ValaToken>());
+		
+		sendln(CMD_BEGIN);
+		sendln(fileName);
+		sendln(source);
+		sendln(CMD_END);
+		
+		while (true) {
+			
+			
+		}
 	}
 	
 	@Override
@@ -112,7 +134,7 @@ public final class LibvalaParser {
 		}
 	}
 	
-	public void send(String command) throws IOException {
+	private void send(String command) throws IOException {
 		OutputStream writer = psh.getProcessOutputStream();
 		
 		if (writer != null) {
@@ -122,7 +144,7 @@ public final class LibvalaParser {
 		}
 	}
 	
-	public void sendln(String command) throws IOException {
+	private void sendln(String command) throws IOException {
 		OutputStream writer = psh.getProcessOutputStream();
 		
 		if (writer != null) {

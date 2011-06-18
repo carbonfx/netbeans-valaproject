@@ -1,4 +1,32 @@
 /*
+ *	CarbonFX ValaProject is a plugin for Netbeans IDE for Vala.
+ *
+ *	Copyright (c) 2011 Carbon Foundation X. All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *     * Redistributions of source code must retain the above copyright
+ *       notice, this list of conditions and the following disclaimer.
+ *     * Redistributions in binary form must reproduce the above copyright
+ *       notice, this list of conditions and the following disclaimer in the
+ *       documentation and/or other materials provided with the distribution.
+ *     * Neither the name of the Carbon Foundation X nor the
+ *       names of its contributors may be used to endorse or promote products
+ *       derived from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL Carbon Foundation X BE LIABLE FOR ANY
+ * DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ *
+ */
+
+/*
 
 Performs lexical scan of Vala program and outputs in easy for use format (for NB Java plugin).
 
@@ -131,12 +159,20 @@ void parse_file(string file_name, string content, Gee.ArrayList<string> str_arra
 
 	while (true) {
 		scanner.parse_file_comments();
+
 		var token = scanner.read_token(out token_begin, out token_end);
+		var lc = scanner.pop_comment();
+		
+		if (lc != null) {
+			var tc = detect_comment_type(lc, str_array);
+			tokens.add(tc);
+		}
+
 		if (token == Vala.TokenType.EOF) {
 			break;
 		}
 
-		Token t = new Token();
+		var t = new Token();
 		t.first_line = token_begin.line;
 		t.first_column = token_begin.column;
 		t.last_line = token_end.line;
@@ -154,46 +190,8 @@ void parse_file(string file_name, string content, Gee.ArrayList<string> str_arra
 		tokens.add(t);
 	}
 
-	foreach (var c in src.get_comments()) {
-
-		Token t = new Token();
-		t.first_line = c.source_reference.first_line;
-		t.first_column = c.source_reference.first_column;
-
-		string s = str_array.get(t.first_line-1);
-		s = s.substring(t.first_column-1);
-
-		s = s.next_char();
-		unichar c2 = s.get_char();
-		
-		if (c2 == '/') {
-			t.token_type = "LINE_COMMENT";
-			t.last_line = t.first_line;
-			t.last_column = c.content.char_count() + t.first_column + 1;
-		}
-		else {
-			t.token_type = "COMMENT";
-			s = c.content;
-			int line = t.first_line;
-			int column = t.first_column;
-			for (;;) {
-				c2 = s.get_char();
-				if (c2 == 0) break;
-				s = s.next_char();
-				if (c2 == '\n') {
-					++line;
-					column = 0;
-				}
-				else {
-					++column;
-				}
-			}
-			t.last_line = line;
-			t.last_column = column + 2;
-		}
-
-		tokens.add(t);
-	}
+	fetch_file_comments(src, tokens, str_array);
+	fix_bug_652899(tokens);
 
 	println(TOKENS_BEGIN);
 	foreach(Token t in tokens) {
@@ -236,4 +234,90 @@ public void enable_debug_mode() {
 		stdout.printf("Failed to create log file: %s\nDebug mode is disabled.\n", error.message);
 		debug_mode = false;
 	}
+}
+
+// fixes wrong columns because of bug in Vala.Scanner, see https://bugzilla.gnome.org/show_bug.cgi?id=652899
+void fix_bug_652899(Gee.TreeSet<Token> tokens) {
+
+	int c = 0;
+	Token? prev = null;
+	bool shift = false;
+
+	foreach (var t in tokens) {
+		if (prev != null ) {
+			if (prev.first_line == t.first_line && prev.last_column >= t.first_column) {
+				shift = true;
+				c += 2;
+			}
+			else {
+				shift = false;
+				c = 0;
+			}
+		}
+		
+		if (shift){
+			t.first_column += c;
+			if (t.last_line == t.first_line) {
+				t.last_column += c;
+			}
+		}
+
+		prev = t;
+	}
+}
+
+void fetch_file_comments(Vala.SourceFile src, Gee.TreeSet<Token> tokens, Gee.ArrayList<string> str_array) {
+
+	// A hack way to get comments from the scanner
+	foreach (var c in src.get_comments()) {
+
+		Token t = detect_comment_type(c, str_array);
+
+		if (tokens.contains(t)) {
+			continue;
+		}
+
+		tokens.add(t);
+	}
+}
+
+Token detect_comment_type(Vala.Comment c, Gee.ArrayList<string> str_array) {
+
+	var t = new Token();
+	t.first_line = c.source_reference.first_line;
+	t.first_column = c.source_reference.first_column;
+
+	string s = str_array.get(t.first_line-1);
+	s = s.substring(t.first_column-1);
+
+	s = s.next_char();
+	unichar c2 = s.get_char();
+
+	if (c2 == '/') {
+		t.token_type = "LINE_COMMENT";
+		t.last_line = t.first_line;
+		t.last_column = c.content.char_count() + t.first_column + 1;
+	}
+	else {
+		t.token_type = "COMMENT";
+		s = c.content;
+		int line = t.first_line;
+		int column = t.first_column + 1;
+		for (;;) {
+			c2 = s.get_char();
+			if (c2 == 0) break;
+			s = s.next_char();
+			if (c2 == '\n') {
+				++line;
+				column = 0;
+			}
+			else {
+				++column;
+			}
+		}
+		t.last_line = line;
+		t.last_column = column + 2;
+	}
+
+	return t;
 }

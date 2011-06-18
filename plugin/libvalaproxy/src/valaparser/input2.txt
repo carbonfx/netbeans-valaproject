@@ -1,0 +1,8 @@
+begin
+test.vala
+xxx
+/*1*/abc/*1*/x/*22*/y
+/**1*/z
+0
+]"""end
+quit

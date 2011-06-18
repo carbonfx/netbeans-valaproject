@@ -8,14 +8,15 @@ Commands defined bellow as constants.
 Output format is per each line (doesn't includes divider lines):
 
 ===========================
-Tokens
+]tokens
 [TokenLine1]
 ...
 [TokenLineN]
+]end
 ===========================
 
 Format of TokenLineX is:
-StartLine:Column,EndLine:Column,TokenType
+FirstLine,FirstColumn,LastLine,LastColumn,TokenType
 
 Lines are sorted by token position (ascending).
 
@@ -42,19 +43,21 @@ int main(string[] args) {
 	while (!stdin.eof()) {
 		string? line = stdin_read_line ();
 		if (line == CMD_QUIT || line == null) {
-			logd("Got quit command exiting");
-			if (stdin.eof()) logd("EOF!");
-			
+			logd("got quit command - exiting");
+			break;
+		}
+		if (line == null) {
+			logd("stdin is closed - exiting");
 			break;
 		}
 
 		if (line == CMD_DEBUG) {
 			enable_debug_mode();
-			logd("Enabled debug mode");
+			logd("enabled debug mode");
 		}
 		else
 		if (line == CMD_BEGIN) {
-			logd("Beginning to parse file");
+			logd("beginning to parse file");
 			string file_name = stdin_read_line();
 			var sb = new StringBuilder();
 			var str_array = new Gee.ArrayList<string>();	
@@ -99,9 +102,18 @@ public int token_compare(Token a, Token b) {
 }
 
 void println(string format, ...) {
+	
 	var v = va_list();
-	stdout.vprintf(format, v);
+	var s = new StringBuilder();
+	s.vprintf(format, v);
+	
+	stdout.write(s.str.data);
 	stdout.putc('\n');
+	stdout.flush();
+
+	if (debug_mode) {
+		logd("- " + s.str);
+	}
 }
 
 void parse_file(string file_name, string content, Gee.ArrayList<string> str_array) {
@@ -143,7 +155,7 @@ void parse_file(string file_name, string content, Gee.ArrayList<string> str_arra
 	}
 
 	foreach (var c in src.get_comments()) {
-		
+
 		Token t = new Token();
         t.first_line = c.source_reference.first_line;
         t.first_column = c.source_reference.first_column;
@@ -157,7 +169,7 @@ void parse_file(string file_name, string content, Gee.ArrayList<string> str_arra
 		if (c2 == '/') {
 			t.token_type = "LINE_COMMENT";
 			t.last_line = t.first_line;
-			t.last_column = c.content.char_count();
+			t.last_column = c.content.char_count() + t.first_column + 1;
 		}
 		else {
 			t.token_type = "COMMENT";
@@ -170,14 +182,14 @@ void parse_file(string file_name, string content, Gee.ArrayList<string> str_arra
 				s = s.next_char();
 				if (c2 == '\n') {
 					++line;
-					column = 1;
+					column = 0;
 				}
 				else {
 					++column;
 				}
 			}
 			t.last_line = line;
-			t.last_column = column+1;
+			t.last_column = column + 2;
 		}
 
 		tokens.add(t);
@@ -185,7 +197,7 @@ void parse_file(string file_name, string content, Gee.ArrayList<string> str_arra
 
 	println(TOKENS_BEGIN);
 	foreach(Token t in tokens) {
-		println("%x:%x,%x:%x,%s", t.first_line, t.first_column, t.last_line, t.last_column, t.token_type);
+		println("%x,%x,%x,%x,%s", t.first_line, t.first_column, t.last_line, t.last_column, t.token_type);
 	}
 	println(TOKENS_END);
 }

@@ -27,12 +27,8 @@
  */
 package org.carbonfx.valaproject.libvalaproxy;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.PipedOutputStream;
-import java.io.PipedInputStream;
+import java.util.ArrayList;
 import java.io.IOException;
-import org.apache.commons.exec.StreamPumper;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -80,31 +76,49 @@ public class LibvalaProxyTest {
 		LibvalaParser parser = proxy.createParser();
 		assertNotNull(parser);
 		
-		//parser.sendln("debug");
-		//parser.sendln("quit");
+		ParseResult result = parser.parse("int {// aaa\n return xxgggxx 0", "test.vala");
+		assertNotNull(parser);
+
+		ArrayList<ValaToken> tokens = result.getTokens();
 		
-		parser.close();
-	}
-	
-	@Test
-	public void test1() throws IOException, InterruptedException{
+		assertTrue(tokens.size() == 6);
 		
-		/*ByteArrayOutputStream baos1 = new ByteArrayOutputStream();
+		assertTrue(tokens.get(0).getTokenType() == ValaTokenType.IDENTIFIER);
+		assertTrue(tokens.get(0).firstLine == 1);
+		assertTrue(tokens.get(0).firstColumn == 1);
+		assertTrue(tokens.get(0).lastLine == 1);
+		assertTrue(tokens.get(0).lastColumn == 3);
+
+		assertTrue(tokens.get(1).getTokenType() == ValaTokenType.OPEN_BRACE);
+		assertTrue(tokens.get(1).firstLine == 1);
+		assertTrue(tokens.get(1).firstColumn == 5);
+		assertTrue(tokens.get(1).lastLine == 1);
+		assertTrue(tokens.get(1).lastColumn == 5);
 		
-		PipedOutputStream o = new PipedOutputStream();
-		PipedInputStream i = new PipedInputStream(o);
+		assertTrue(tokens.get(2).getTokenType() == ValaTokenType.LINE_COMMENT);
+		assertTrue(tokens.get(2).firstLine == 1);
+		assertTrue(tokens.get(2).firstColumn == 6);
+		assertTrue(tokens.get(2).lastLine == 1);
+		assertTrue(tokens.get(2).lastColumn == 11);
 		
-		StreamPumper sp = new StreamPumper(i, baos1);
-		Thread t = new Thread(sp);
-		t.start();
-		Thread.sleep(1000);
+		assertTrue(tokens.get(3).getTokenType() == ValaTokenType.RETURN);
+		assertTrue(tokens.get(3).firstLine == 2);
+		assertTrue(tokens.get(3).firstColumn == 2);
+		assertTrue(tokens.get(3).lastLine == 2);
+		assertTrue(tokens.get(3).lastColumn == 7);
 		
+		assertTrue(tokens.get(4).getTokenType() == ValaTokenType.COMMENT);
+		assertTrue(tokens.get(4).firstLine == 2);
+		assertTrue(tokens.get(4).firstColumn == 9);
+		assertTrue(tokens.get(4).lastLine == 2);
+		assertTrue(tokens.get(4).lastColumn == 15);
 		
-		o.write(1);
-		o.flush();
-		//o.close();
-		byte[] a = baos1.toByteArray();
-		assertTrue(a.length > 0);
-		//t.interrupt();*/
+		assertTrue(tokens.get(5).getTokenType() == ValaTokenType.INTEGER_LITERAL);
+		assertTrue(tokens.get(5).firstLine == 2);
+		assertTrue(tokens.get(5).firstColumn == 17);
+		assertTrue(tokens.get(5).lastLine == 2);
+		assertTrue(tokens.get(5).lastColumn == 17);
+		
+		parser = null;
 	}
 }

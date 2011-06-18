@@ -28,20 +28,10 @@
 
 package org.carbonfx.valaproject.libvalaproxy;
 
-import java.io.BufferedReader;
-import java.io.File;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.io.PipedInputStream;
-import java.io.PipedOutputStream;
 import java.util.ArrayList;
-import org.apache.commons.exec.CommandLine;
-import org.apache.commons.exec.DefaultExecuteResultHandler;
-import org.apache.commons.exec.DefaultExecutor;
+import java.util.regex.Pattern;
 import org.apache.commons.exec.ExecuteException;
-import org.apache.commons.exec.ExecuteWatchdog;
-import org.apache.commons.exec.Executor;
 
 /**
  *
@@ -49,110 +39,102 @@ import org.apache.commons.exec.Executor;
  */
 public final class LibvalaParser {
 	
-	String parser;
-	Executor exec;
-	BufferedReader reader;
-	PumpStreamHandlerPlainInput psh;
-	DefaultExecuteResultHandler execResult;
-	String consoleCharSetName;
-	
-	final String CMD_QUIT = "quit";
+	public static final String CMD_QUIT = "quit";
 	final String CMD_DEBUG = "debug";
 	final String CMD_BEGIN = "begin";
 	final String CMD_END = "]\"\"\"end";
+	final String TOKENS_BEGIN = "]tokens";
+	final String TOKENS_END = "]end";
 
-	public BufferedReader getReader() {
-		return reader;
+	String parserCommandName;
+	String homeDirectory;
+	String consoleCharSetName;
+	boolean debugMode;
+	LibvalaParserProcess parserProcess;
+	
+	public LibvalaParser(String parserCommandName, String homeDirectory, String consoleCharSetName, boolean debugMode) throws ExecuteException, IOException, InterruptedException {
+		
+		this.parserCommandName = parserCommandName;
+		this.homeDirectory = homeDirectory;
+		this.consoleCharSetName = consoleCharSetName;
+		this.debugMode = debugMode;
+		
+		open();
 	}
 	
-	public LibvalaParser(String parserCommandName, String homeDirectory, String consoleCharSetName, boolean debugMode) throws ExecuteException, IOException {
-		this.parser = parserCommandName;
-		this.consoleCharSetName = consoleCharSetName;
+	public ParseResult parse(String source, String fileName) throws IOException, InterruptedException {
 		
-		CommandLine cl = new CommandLine(parser);
-		this.exec = new DefaultExecutor();
-		this.exec.setWorkingDirectory(new File(homeDirectory));
-		PipedOutputStream output = new PipedOutputStream();
-		reader = new BufferedReader(new InputStreamReader(new PipedInputStream(output)));
+		if (open()) {
+			sendln(CMD_BEGIN);
+			sendln(fileName);
+			sendln(source);
+			sendln(CMD_END);
+
+			String s = parserProcess.readLine();
+			if (!TOKENS_BEGIN.equals(s)) {
+				throw new LibvalaProxyException("Unexpected result from parser process, got: " + s + " while expecting: " + TOKENS_BEGIN);
+			}
+			
+			ParseResult result = new ParseResult();
+			result.setTokens(new ArrayList<ValaToken>());
+			
+			Pattern p = Pattern.compile(",");
+			
+			while (true) {
+				s = parserProcess.readLine();
+				if (s == null || TOKENS_END.equals(s))
+					break;
+				
+				String[] sa = p.split(s);
+				if (sa == null || sa.length != 5) {
+					throw new LibvalaProxyException("Unexpected token line from parser process, got: " + s);
+				}
+				
+				ValaToken t = new ValaToken();
+				t.firstLine = Integer.parseInt(sa[0], 16);
+				t.firstColumn = Integer.parseInt(sa[1], 16);
+				t.lastLine = Integer.parseInt(sa[2], 16);
+				t.lastColumn = Integer.parseInt(sa[3], 16);
+				t.tokenType = ValaTokenType.valueOf(sa[4]);
+				result.getTokens().add(t);
+			}
+			
+			return result;
+		}
+		else {
+			throw new LibvalaProxyException("Couldn't execute: " + parserCommandName);
+		}
+	}
+
+	private boolean open() throws IOException, InterruptedException {
+		if (parserProcess != null) {
+			return true;
+		}
 		
-		psh = new PumpStreamHandlerPlainInput(output);
-		exec.setStreamHandler(psh);
-		execResult = new DefaultExecuteResultHandler();
-		exec.setExitValue(0);
-		
-		psh.start();
-		exec.execute(cl, execResult);
-		
-		for (int i = 0; i < 20; ++i) {
-			if (psh.waitForProcessOutputStream(1000)) 
-				break;
+		parserProcess = new LibvalaParserProcess(homeDirectory, parserCommandName, consoleCharSetName);
+		if (!parserProcess.isActive()) {
+			parserProcess = null;
+			return false;
 		}
 		
 		if (debugMode) {
 			sendln(CMD_DEBUG);
 		}
-	}
-	
-	public String parse(String source, String fileName) throws IOException {
 		
-		ParseResult result = new ParseResult();
-		result.setTokens(new ArrayList<ValaToken>());
-		
-		sendln(CMD_BEGIN);
-		sendln(fileName);
-		sendln(source);
-		sendln(CMD_END);
-		
-		while (true) {
-			
-			
-		}
-	}
-	
-	@Override
-	protected void finalize() throws Throwable {
-		try {
-			close();
-		}
-		catch (Throwable t) {
-		}
-		super.finalize();
-	}
-	
-	public void close() throws IOException, InterruptedException {
-		if (exec != null) {
-			ExecuteWatchdog watchdog = new ExecuteWatchdog(10000);
-			exec.setWatchdog(watchdog);
-			sendln(CMD_QUIT);
-			
-			while (reader.ready()) {
-				reader.read();
-			}
-			this.execResult.waitFor(10000);
-			int value = this.execResult.getExitValue();
-			exec = null;
-		}
+		return true;
 	}
 	
 	private void send(String command) throws IOException {
-		OutputStream writer = psh.getProcessOutputStream();
-		
-		if (writer != null) {
-			byte[] bytes = command.getBytes(this.consoleCharSetName);
-			writer.write(bytes);
-			writer.flush();
+		if (parserProcess == null) { 
+			throw new LibvalaProxyException("Parser process is not launched");
 		}
+		parserProcess.send(command);
 	}
 	
 	private void sendln(String command) throws IOException {
-		OutputStream writer = psh.getProcessOutputStream();
-		
-		if (writer != null) {
-			byte[] bytes = command.getBytes(this.consoleCharSetName);
-			writer.write(bytes);
-			bytes = "\n".getBytes(this.consoleCharSetName);
-			writer.write(bytes);
-			writer.flush();
+		if (parserProcess == null) { 
+			throw new LibvalaProxyException("Parser process is not launched");
 		}
+		parserProcess.sendln(command);
 	}
 }

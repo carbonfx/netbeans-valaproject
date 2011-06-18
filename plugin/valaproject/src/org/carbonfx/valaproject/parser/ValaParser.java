@@ -60,9 +60,9 @@ public class ValaParser extends Parser {
 		return new ValaParserResult(this.snapshot/*this.parser*/);
 	}
 
-	@Override
+	/*@Override
 	public void cancel() {
-	}
+	}*/
 
 	@Override
 	public void addChangeListener(ChangeListener cl) {

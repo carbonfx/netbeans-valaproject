@@ -28,9 +28,14 @@
 
 package org.carbonfx.valaproject.lexer;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import org.netbeans.api.lexer.PartType;
+import org.carbonfx.valaproject.libvalaproxy.LibvalaFactory;
+import org.carbonfx.valaproject.libvalaproxy.LibvalaParser;
+import org.carbonfx.valaproject.libvalaproxy.ParseResult;
+import org.carbonfx.valaproject.libvalaproxy.ValaToken;
 import org.netbeans.api.lexer.Token;
 import org.netbeans.spi.lexer.Lexer;
 import org.netbeans.spi.lexer.LexerInput;
@@ -40,14 +45,81 @@ public class ValaLexer implements Lexer<ValaTokenId> {
 
 	private LexerRestartInfo<ValaTokenId> info;
 	private static final Logger logger = Logger.getLogger(ValaLexer.class.getName());
+	private static final LibvalaFactory libvalaFactory = new LibvalaFactory(); //@todo refactor this, could throw exception
+	private LibvalaParser valaParser = null;
 	
 	public ValaLexer(LexerRestartInfo<ValaTokenId> info) {
-
         this.info = info;
+		this.valaParser = libvalaFactory.createParser();
     }
 
+	private static class State {
+		public LinkedList<Token<ValaTokenId>> tokens;
+	}
+	
+	State state;
+ 
 	@Override
 	public Token<ValaTokenId> nextToken() {
+
+		if (state != null) {
+			if (state.tokens.isEmpty()) {
+				state = null;
+			}
+			else {
+				return state.tokens.removeFirst();
+			}
+		}
+		
+		ArrayList<String> strings = new ArrayList<String>();
+	
+		StringBuilder sb = new StringBuilder();
+		StringBuilder sbLine = new StringBuilder();
+		for (;;) {
+			int c = info.input().read();
+			if (c != LexerInput.EOF) {
+				sb.append((char)c);
+				if (c == '\n') {
+					strings.add(sbLine.toString());
+					sbLine.setLength(0);
+				}
+				else {
+					sbLine.append((char)c);
+				}
+			}
+			else {
+				strings.add(sbLine.toString());
+				break;
+			}
+		}
+		
+		String s = sb.toString();
+		
+		logger.log(Level.WARNING, "vala nn: " + Integer.toString(info.input().readLength()));
+		logger.log(Level.WARNING, "vala cs: " + s);
+		if (s.length() == 0) {
+			return null;
+		}
+
+		try {
+			
+			ParseResult result = valaParser.parse(s, "");
+			state = new State();
+			state.tokens = new LinkedList<Token<ValaTokenId>>();
+			
+			for(ValaToken t : result.tokens) {
+				ValaTokenId tokenId = ValaLanguageHierarchy.getToken(t.getTokenType());
+				int tokenLength = getTokenLength(t, strings);
+				Token<ValaTokenId> token = info.tokenFactory().createToken(tokenId, tokenLength);
+			}
+			
+			return state.tokens.removeFirst();
+		}
+		catch (Throwable t)
+		{
+			logger.log(Level.SEVERE, "Error", t);
+			return null;
+		}
 
 		/*
 		org.antlr.runtime.Token token = lexer.nextToken();
@@ -64,42 +136,36 @@ public class ValaLexer implements Lexer<ValaTokenId> {
 			
 		}*/
 		
-		StringBuilder sb = new StringBuilder();
-		for (;;) {
-			int c = info.input().read();
-			if (c != LexerInput.EOF)
-				sb.append((char)c);
-			else
-				break;
-		}
-		
-		String s = sb.toString();
-		
-		logger.log(Level.WARNING, "vala nn: " + Integer.toString(info.input().readLength()));
-		logger.log(Level.WARNING, "vala cs: " + s);
-		if (s.length() == 0) {
-			return null;
-		}
-
-		try {
-		ValaTokenId tokenId = ValaLanguageHierarchy.getToken(1);
-		Token<ValaTokenId> resultToken = info.tokenFactory().createToken(tokenId,s.length());
-        return resultToken;
-		}
-		catch (Throwable t)
-		{
-			logger.log(Level.SEVERE, "Error", t);
-			return null;
-		}
 	}
 
 	@Override
 	public Object state() {
-		return null;
+		return state;
 	}
 
 	@Override
 	public void release() {
+		state = null;
 	}
 
+	private int getTokenLength(ValaToken t, ArrayList<String> strings) {
+		int l = 0;
+		
+		if (t.getFirstLine() == t.getLastLine()) {
+			return t.getLastColumn() - t.getFirstColumn() + 1;
+		}
+		else {
+			
+			
+			l = strings.get(t.getFirstLine()-1).length()-t.getFirstColumn() + 1;
+			
+			for (int line = t.getFirstLine()+1; line < t.getLastLine(); ++line) {
+				l += strings.get(line-1).length()+1;
+			}
+			
+			l += t.getLastColumn();
+			
+			return l;
+		}
+	}
 }

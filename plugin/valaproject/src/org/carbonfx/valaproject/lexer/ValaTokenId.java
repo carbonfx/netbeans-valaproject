@@ -28,35 +28,37 @@
 
 package org.carbonfx.valaproject.lexer;
 
+import org.carbonfx.valaproject.libvalaproxy.ValaTokenType;
 import org.netbeans.api.lexer.Language;
 import org.netbeans.api.lexer.TokenId;
 
 
 public class ValaTokenId implements TokenId {
 
-	private final String        name;
-    private final String        primaryCategory;
-    private final int           id;
+	private final ValaTokenType tokenType;
+    private final String primaryCategory;
 	private static final Language<ValaTokenId> language = new ValaLanguageHierarchy().language();
 
 	 ValaTokenId (
-        String                  name,
-        String                  primaryCategory,
-        int                     id
-    ) {
-        this.name = name;
+        ValaTokenType tokenType,
+        String primaryCategory) 
+	 {
+        this.tokenType = tokenType;
         this.primaryCategory = primaryCategory;
-        this.id = id;
     }
+	 
+	public ValaTokenType tokenType() {
+		return tokenType;
+	}
 
 	@Override
 	public String name() {
-		return name;
+		return tokenType.toString();
 	}
 
 	@Override
 	public int ordinal() {
-		return id;
+		return tokenType.ordinal();
 	}
 
 	@Override

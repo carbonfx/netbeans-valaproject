@@ -55,12 +55,22 @@ public class LibvalaFactory {
 	private String consoleCharSetName;
 	private String parser;
 	private String parserSource;
+	private String parserProxyVersion = "0.0";
 	private final int EXEC_TIMEOUT = 60;
 
 	public LibvalaFactory() {
+		this(null);
+	}
+	
+	public LibvalaFactory(String pluginDir) {
 
 		this.valac = "valac";
-		this.homeDirectory = appendSubDir(System.getProperty("user.home"), ".netbeans-vala-plugin");
+		if (pluginDir != null) {
+			this.homeDirectory = pluginDir;
+		}
+		else {
+			this.homeDirectory = appendSubDir(System.getProperty("user.home"), ".netbeans-vala-plugin");
+		}
 
 		String defaultCharSetName = "utf8";
 		if (isWindows()) {
@@ -109,9 +119,10 @@ public class LibvalaFactory {
 			throw new LibvalaProxyException("Couldn't get vala version, got result: " + result);
 		}
 	}
-
+	
 	private void compileValaParser() throws FileNotFoundException, IOException, InterruptedException {
-		String baseName = this.appendSubDir(this.homeDirectory, "vala-parser-" + this.valaVersion);
+		String valaParserName = "vala-parser-" + this.valaVersion + "-" + this.parserProxyVersion;
+		String baseName = this.appendSubDir(this.homeDirectory, valaParserName);
 		this.parser = isWindows() ? baseName + ".exe" : baseName;
 		this.parserSource = baseName + ".vala";
 
@@ -130,7 +141,7 @@ public class LibvalaFactory {
             OutputStream out = new FileOutputStream(this.parserSource);
 			IOUtils.copy(in, out);
 			
-			String command = this.valac + " --pkg=libvala-0.12 --pkg=gee-1.0 --pkg=gio-2.0 vala-parser-" + this.valaVersion + ".vala";
+			String command = this.valac + " --pkg=libvala-0.12 --pkg=gee-1.0 --pkg=gio-2.0 " + valaParserName + ".vala";
 			String result = execute(command, homeDirectory, EXEC_TIMEOUT);
 			if (f.exists() && f.canExecute() && f.getTotalSpace() > 0) {
 				return;
@@ -167,7 +178,7 @@ public class LibvalaFactory {
 	
 	public LibvalaParser createParser() {
 		try {
-			return new LibvalaParser(this.parser, this.homeDirectory, this.consoleCharSetName, true);
+			return new LibvalaParser(this.parser, this.homeDirectory, this.consoleCharSetName, false);
 		} catch (LibvalaProxyException le) {
 			throw le;
 		} catch (Throwable t) {

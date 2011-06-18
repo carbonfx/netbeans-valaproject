@@ -28,6 +28,8 @@
 
 /*
 
+Author: "Magomed Abdurakhmanov" <maqdev@gmail.com>
+
 Performs lexical scan of Vala program and outputs in easy for use format (for NB Java plugin).
 
 After begin command from stdin, expected one line of file name them content with file. At the end of file content use 'end command' to stop parsing'.
@@ -164,7 +166,7 @@ void parse_file(string file_name, string content, Gee.ArrayList<string> str_arra
 		var lc = scanner.pop_comment();
 		
 		if (lc != null) {
-			var tc = detect_comment_type(lc, str_array);
+			var tc = create_comment_token(lc, str_array);
 			tokens.add(tc);
 		}
 
@@ -237,6 +239,7 @@ public void enable_debug_mode() {
 }
 
 // fixes wrong columns because of bug in Vala.Scanner, see https://bugzilla.gnome.org/show_bug.cgi?id=652899
+// sadly this is so fucking wrong fix
 void fix_bug_652899(Gee.TreeSet<Token> tokens) {
 
 	int c = 0;
@@ -244,15 +247,16 @@ void fix_bug_652899(Gee.TreeSet<Token> tokens) {
 	bool shift = false;
 
 	foreach (var t in tokens) {
-		if (prev != null ) {
-			if (prev.first_line == t.first_line && prev.last_column >= t.first_column) {
+		if (prev != null && prev.first_line == t.first_line)
+		{
+			if (prev.first_line == prev.last_line && prev.token_type == "COMMENT") {
 				shift = true;
 				c += 2;
 			}
-			else {
-				shift = false;
-				c = 0;
-			}
+		}
+		else {
+			shift = false;
+			c = 0;
 		}
 		
 		if (shift){
@@ -271,7 +275,7 @@ void fetch_file_comments(Vala.SourceFile src, Gee.TreeSet<Token> tokens, Gee.Arr
 	// A hack way to get comments from the scanner
 	foreach (var c in src.get_comments()) {
 
-		Token t = detect_comment_type(c, str_array);
+		Token t = create_comment_token(c, str_array);
 
 		if (tokens.contains(t)) {
 			continue;
@@ -281,7 +285,7 @@ void fetch_file_comments(Vala.SourceFile src, Gee.TreeSet<Token> tokens, Gee.Arr
 	}
 }
 
-Token detect_comment_type(Vala.Comment c, Gee.ArrayList<string> str_array) {
+Token create_comment_token(Vala.Comment c, Gee.ArrayList<string> str_array) {
 
 	var t = new Token();
 	t.first_line = c.source_reference.first_line;

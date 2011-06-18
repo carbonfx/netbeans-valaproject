@@ -76,7 +76,7 @@ public class LibvalaProxyTest {
 		LibvalaParser parser = proxy.createParser();
 		assertNotNull(parser);
 		
-		ParseResult result = parser.parse("int {// aaa\n return xxgggxx 0", "test.vala");
+		ParseResult result = parser.parse("int {// aaa\n return /*ggg*/ 0", "test.vala");
 		assertNotNull(parser);
 
 		ArrayList<ValaToken> tokens = result.getTokens();

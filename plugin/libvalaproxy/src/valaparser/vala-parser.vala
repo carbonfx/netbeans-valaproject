@@ -157,8 +157,8 @@ void parse_file(string file_name, string content, Gee.ArrayList<string> str_arra
 	foreach (var c in src.get_comments()) {
 
 		Token t = new Token();
-        t.first_line = c.source_reference.first_line;
-        t.first_column = c.source_reference.first_column;
+		t.first_line = c.source_reference.first_line;
+		t.first_column = c.source_reference.first_column;
 
 		string s = str_array.get(t.first_line-1);
 		s = s.substring(t.first_column-1);

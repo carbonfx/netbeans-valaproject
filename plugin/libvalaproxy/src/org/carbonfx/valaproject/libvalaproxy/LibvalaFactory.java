@@ -56,6 +56,7 @@ public class LibvalaFactory {
 	private String parser;
 	private String parserSource;
 	private String parserProxyVersion = "0.0";
+	private boolean debugMode = false;
 	private final int EXEC_TIMEOUT = 60;
 
 	public LibvalaFactory() {
@@ -178,11 +179,15 @@ public class LibvalaFactory {
 	
 	public LibvalaParser createParser() {
 		try {
-			return new LibvalaParser(this.parser, this.homeDirectory, this.consoleCharSetName, false);
+			return new LibvalaParser(this.parser, this.homeDirectory, this.consoleCharSetName, this.debugMode);
 		} catch (LibvalaProxyException le) {
 			throw le;
 		} catch (Throwable t) {
 			throw new LibvalaProxyException("Couldn't execute parser", t);
 		}
+	}
+	
+	public void setDebugMode(boolean debugMode) {
+		this.debugMode = debugMode;
 	}
 }

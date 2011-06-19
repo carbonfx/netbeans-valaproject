@@ -50,6 +50,7 @@ public class ValaLexer implements Lexer<ValaTokenId> {
 	
 	public ValaLexer(LexerRestartInfo<ValaTokenId> info) {
         this.info = info;
+		libvalaFactory.setDebugMode(true);
 		this.valaParser = libvalaFactory.createParser();
     }
 

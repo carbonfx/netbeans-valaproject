@@ -62,14 +62,14 @@
                         <attr name="position" intvalue="1200"/>
                     </file>
                 </folder>
-                <!--folder name="Factories">
+                <folder name="Factories">
                     <file name="ValaDataLoader.instance">
 						<attr name="SystemFileSystem.icon" urlvalue="nbresloc:/org/carbonfx/valaproject/vala.png"/>
                         <attr name="dataObjectClass" stringvalue="org.carbonfx.valaproject.ValaDataObject"/>
                         <attr name="instanceCreate" methodvalue="org.openide.loaders.DataLoaderPool.factory"/>
                         <attr name="mimeType" stringvalue="text/x-vala"/>
                     </file>
-                </folder-->
+                </folder>
             </folder>
             <folder name="x-vapi">
                 <folder name="Actions">

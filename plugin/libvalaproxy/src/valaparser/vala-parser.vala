@@ -46,7 +46,7 @@ Output format is per each line (doesn't includes divider lines):
 ===========================
 
 Format of TokenLineX is:
-FirstLine,FirstColumn,LastLine,LastColumn,TokenType
+FirstLine,FirstColumn,LastLine,LastColumn,offset,length,TokenType
 
 Lines are sorted by token position (ascending).
 
@@ -67,7 +67,6 @@ bool debug_mode = false;
 FileOutputStream? debug_log = null;
 
 int main(string[] args) {
-
 	logd("Started");
 
 	while (!stdin.eof()) {
@@ -90,18 +89,20 @@ int main(string[] args) {
 			logd("beginning to parse file");
 			string file_name = stdin_read_line();
 			var sb = new StringBuilder();
-			var str_array = new Gee.ArrayList<string>();	
+			var str_array = new Gee.ArrayList<string>();
+			var len_array = new Gee.ArrayList<int>();
 			while (!stdin.eof()) {
 				string? file_line = stdin_read_line(false);
 		        if (file_line == CMD_END || file_line == null) {
 		            break;
 		        }
-				
-				sb.append(file_line);
-				sb.append("\n");
-				str_array.add(file_line);
+			
+				string s = file_line + "\n";
+				sb.append(s);
+				str_array.add(s);
+				len_array.add(s.char_count());
 			}
-			parse_file(file_name, sb.str, str_array);
+			parse_file(file_name, sb.str, str_array, len_array);
 		}
 		else {
 			stdout.printf("Please enter one of the commands: %s, %s\n", CMD_BEGIN, CMD_QUIT);
@@ -116,6 +117,8 @@ public class Token : Object {
 	public int last_line { get; set; }
 	public int first_column { get; set; }
 	public int last_column { get; set; }
+	public int offset { get; set; }
+	public int length { get; set; }
 	public string token_type { get; set; }
 }
 
@@ -132,7 +135,6 @@ public int token_compare(Token a, Token b) {
 }
 
 void println(string format, ...) {
-	
 	var v = va_list();
 	var s = new StringBuilder();
 	s.vprintf(format, v);
@@ -146,7 +148,7 @@ void println(string format, ...) {
 	}
 }
 
-void parse_file(string file_name, string content, Gee.ArrayList<string> str_array) {
+void parse_file(string file_name, string content, Gee.ArrayList<string> str_array, Gee.ArrayList<int> len_array) {
 	var ctx = new Vala.CodeContext();
     Vala.CodeContext.push(ctx);
     ctx.basedir = ".";
@@ -194,10 +196,11 @@ void parse_file(string file_name, string content, Gee.ArrayList<string> str_arra
 
 	fetch_file_comments(src, tokens, str_array);
 	fix_bug_652899(tokens);
+	update_token_offsets(tokens, len_array);
 
 	println(TOKENS_BEGIN);
 	foreach(Token t in tokens) {
-		println("%x,%x,%x,%x,%s", t.first_line, t.first_column, t.last_line, t.last_column, t.token_type);
+		println("%x,%x,%x,%x,%x,%x,%s", t.first_line, t.first_column, t.last_line, t.last_column, t.offset, t.length, t.token_type);
 	}
 	println(TOKENS_END);
 }
@@ -325,3 +328,27 @@ Token create_comment_token(Vala.Comment c, Gee.ArrayList<string> str_array) {
 
 	return t;
 }
+
+void update_token_offsets(Gee.TreeSet<Token> tokens, Gee.ArrayList<int> len_array) {
+	if (len_array.size == 0) {
+		return;
+	}
+
+	int[] offsets = new int[len_array.size];
+	int total_len = 0;
+	for (int i = 0; i < len_array.size; ++i) {
+		offsets[i] = total_len;
+		total_len += len_array.get(i);
+	}
+
+	foreach (var t in tokens) {
+		t.offset = get_offset(t.first_line, t.first_column, offsets); 
+		t.length = get_offset(t.last_line, t.last_column, offsets) - t.offset + 1;
+	}
+}
+
+int get_offset(int line, int column, int[] offsets) {
+	return offsets[line-1] + column - 1;
+}
+
+

@@ -37,6 +37,8 @@ public class ValaToken {
 	int firstColumn;
 	int lastLine;
 	int lastColumn;
+	int offset;
+	int length;
 
 	public int getFirstColumn() {
 		return firstColumn;
@@ -76,5 +78,21 @@ public class ValaToken {
 
 	public void setTokenType(ValaTokenType tokenType) {
 		this.tokenType = tokenType;
+	}
+
+	public int getLength() {
+		return length;
+	}
+
+	public void setLength(int length) {
+		this.length = length;
+	}
+
+	public int getOffset() {
+		return offset;
+	}
+
+	public void setOffset(int offset) {
+		this.offset = offset;
 	}
 }

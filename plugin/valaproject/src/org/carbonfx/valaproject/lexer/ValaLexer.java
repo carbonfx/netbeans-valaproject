@@ -36,6 +36,7 @@ import org.carbonfx.valaproject.libvalaproxy.LibvalaFactory;
 import org.carbonfx.valaproject.libvalaproxy.LibvalaParser;
 import org.carbonfx.valaproject.libvalaproxy.ParseResult;
 import org.carbonfx.valaproject.libvalaproxy.ValaToken;
+import org.carbonfx.valaproject.libvalaproxy.ValaTokenType;
 import org.netbeans.api.lexer.Token;
 import org.netbeans.spi.lexer.Lexer;
 import org.netbeans.spi.lexer.LexerInput;
@@ -55,7 +56,9 @@ public class ValaLexer implements Lexer<ValaTokenId> {
     }
 
 	private static class State {
-		public LinkedList<Token<ValaTokenId>> tokens;
+		public LinkedList<ValaToken> tokens;
+		public int offset;
+		public int length;
 	}
 	
 	State state;
@@ -64,40 +67,27 @@ public class ValaLexer implements Lexer<ValaTokenId> {
 	public Token<ValaTokenId> nextToken() {
 
 		if (state != null) {
-			if (state.tokens.isEmpty()) {
-				state = null;
-			}
-			else {
-				return state.tokens.removeFirst();
+			Token<ValaTokenId> token = getNextToken();
+			if (token != null) {
+				return token;
 			}
 		}
 		
-		ArrayList<String> strings = new ArrayList<String>();
-	
 		StringBuilder sb = new StringBuilder();
-		StringBuilder sbLine = new StringBuilder();
 		for (;;) {
 			int c = info.input().read();
 			if (c != LexerInput.EOF) {
 				sb.append((char)c);
-				if (c == '\n') {
-					strings.add(sbLine.toString());
-					sbLine.setLength(0);
-				}
-				else {
-					sbLine.append((char)c);
-				}
 			}
 			else {
-				strings.add(sbLine.toString());
 				break;
 			}
 		}
 		
 		String s = sb.toString();
 		
-		logger.log(Level.WARNING, "vala nn: " + Integer.toString(info.input().readLength()));
-		logger.log(Level.WARNING, "vala cs: " + s);
+		//logger.log(Level.WARNING, "vala nn: " + Integer.toString(info.input().readLength()));
+		//logger.log(Level.WARNING, "vala cs: " + s);
 		if (s.length() == 0) {
 			return null;
 		}
@@ -106,37 +96,20 @@ public class ValaLexer implements Lexer<ValaTokenId> {
 			
 			ParseResult result = valaParser.parse(s, "");
 			state = new State();
-			state.tokens = new LinkedList<Token<ValaTokenId>>();
+			state.tokens = new LinkedList<ValaToken>();
+			state.offset = 0;
 			
 			for(ValaToken t : result.tokens) {
-				ValaTokenId tokenId = ValaLanguageHierarchy.getToken(t.getTokenType());
-				int tokenLength = getTokenLength(t, strings);
-				Token<ValaTokenId> token = info.tokenFactory().createToken(tokenId, tokenLength);
+				state.tokens.add(t);
 			}
 			
-			return state.tokens.removeFirst();
+			return getNextToken();
 		}
 		catch (Throwable t)
 		{
 			logger.log(Level.SEVERE, "Error", t);
 			return null;
 		}
-
-		/*
-		org.antlr.runtime.Token token = lexer.nextToken();
-		Token<ValaTokenId> resultToken = null;
-
-        if (token.getType() != org.carbonfx.valaproject.antlr.ValaLexer.EOF) {
-            ValaTokenId tokenId = ValaLanguageHierarchy.getToken(token.getType());
-            resultToken = info.tokenFactory().createToken(tokenId);
-        }
-		else
-		if (info.input().readLength() > 0) // incomplete token, return as a comment
-		{
-			ValaTokenId tokenId = ValaLanguageHierarchy.getToken(org.carbonfx.valaproject.antlr.ValaLexer.COMMENT);
-			
-		}*/
-		
 	}
 
 	@Override
@@ -168,5 +141,35 @@ public class ValaLexer implements Lexer<ValaTokenId> {
 			
 			return l;
 		}
+	}
+	
+	private Token<ValaTokenId> getNextToken() {
+		if (state == null) {
+			return null;
+		}
+		Token<ValaTokenId> token = null;
+		
+		if (state.tokens.isEmpty()) {
+			if (info.input().readLength() > 0) {
+				ValaTokenId tokenId = ValaLanguageHierarchy.getToken(ValaTokenType.NONE);
+				token = info.tokenFactory().createToken(tokenId, info.input().readLength());
+			}
+			state = null;
+		}
+		else {
+			ValaToken t = state.tokens.peekFirst();
+			if (t.getOffset() > state.offset) {
+				ValaTokenId tokenId = ValaLanguageHierarchy.getToken(ValaTokenType.NONE);
+				token = info.tokenFactory().createToken(tokenId, t.getOffset() - state.offset);
+				state.offset = t.getOffset();
+			}
+			else {
+				ValaTokenId tokenId = ValaLanguageHierarchy.getToken(t.getTokenType());
+				token = info.tokenFactory().createToken(tokenId, t.getLength());
+				state.offset = t.getOffset() + t.getLength();
+				state.tokens.removeFirst();
+			}
+		}
+		return token;
 	}
 }

@@ -86,7 +86,7 @@ public final class LibvalaParser {
 					break;
 				
 				String[] sa = p.split(s);
-				if (sa == null || sa.length != 5) {
+				if (sa == null || sa.length != 7) {
 					throw new LibvalaProxyException("Unexpected token line from parser process, got: " + s);
 				}
 				
@@ -95,7 +95,9 @@ public final class LibvalaParser {
 				t.firstColumn = Integer.parseInt(sa[1], 16);
 				t.lastLine = Integer.parseInt(sa[2], 16);
 				t.lastColumn = Integer.parseInt(sa[3], 16);
-				t.tokenType = ValaTokenType.valueOf(sa[4]);
+				t.offset = Integer.parseInt(sa[4], 16);
+				t.length = Integer.parseInt(sa[5], 16);
+				t.tokenType = ValaTokenType.valueOf(sa[6]);
 				result.getTokens().add(t);
 			}
 			

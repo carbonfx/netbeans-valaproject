@@ -30,6 +30,8 @@ package org.carbonfx.valaproject.libvalaproxy;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import java.util.regex.Pattern;
 import org.apache.commons.exec.ExecuteException;
 
@@ -50,7 +52,10 @@ public final class LibvalaParser {
 	String homeDirectory;
 	String consoleCharSetName;
 	boolean debugMode;
-	LibvalaParserProcess parserProcess;
+	static LibvalaParserProcess parserProcess;
+	static Object lock = new Object();
+	
+	private static final Logger logger = Logger.getLogger(LibvalaParser.class.getName());
 	
 	public LibvalaParser(String parserCommandName, String homeDirectory, String consoleCharSetName, boolean debugMode) throws ExecuteException, IOException, InterruptedException {
 		
@@ -64,47 +69,55 @@ public final class LibvalaParser {
 	
 	public ParseResult parse(String source, String fileName) throws IOException, InterruptedException {
 		
-		if (open()) {
-			sendln(CMD_BEGIN);
-			sendln(fileName);
-			sendln(source);
-			sendln(CMD_END);
+		synchronized(lock) {
+			if (open()) {
+				logger.log(Level.WARNING, "sending " + source.length() +  " chars to parser process " + System.currentTimeMillis());
+				sendln(CMD_BEGIN);
+				sendln(fileName);
+				sendln(source);
+				sendln(CMD_END);
 
-			String s = parserProcess.readLine();
-			if (!TOKENS_BEGIN.equals(s)) {
-				throw new LibvalaProxyException("Unexpected result from parser process, got: " + s + " while expecting: " + TOKENS_BEGIN);
-			}
-			
-			ParseResult result = new ParseResult();
-			result.setTokens(new ArrayList<ValaToken>());
-			
-			Pattern p = Pattern.compile(",");
-			
-			while (true) {
-				s = parserProcess.readLine();
-				if (s == null || TOKENS_END.equals(s))
-					break;
-				
-				String[] sa = p.split(s);
-				if (sa == null || sa.length != 7) {
-					throw new LibvalaProxyException("Unexpected token line from parser process, got: " + s);
+				logger.log(Level.WARNING, "waiting for answer " + System.currentTimeMillis());
+				String s = parserProcess.readLine();
+				if (!TOKENS_BEGIN.equals(s)) {
+					throw new LibvalaProxyException("Unexpected result from parser process, got: " + s + " while expecting: " + TOKENS_BEGIN);
 				}
-				
-				ValaToken t = new ValaToken();
-				t.firstLine = Integer.parseInt(sa[0], 16);
-				t.firstColumn = Integer.parseInt(sa[1], 16);
-				t.lastLine = Integer.parseInt(sa[2], 16);
-				t.lastColumn = Integer.parseInt(sa[3], 16);
-				t.offset = Integer.parseInt(sa[4], 16);
-				t.length = Integer.parseInt(sa[5], 16);
-				t.tokenType = ValaTokenType.valueOf(sa[6]);
-				result.getTokens().add(t);
+
+				logger.log(Level.WARNING, "reading tokens " + System.currentTimeMillis());
+				ParseResult result = new ParseResult();
+				result.setTokens(new ArrayList<ValaToken>());
+
+				logger.log(Level.WARNING, "parsing tokens " + System.currentTimeMillis());
+
+				Pattern p = Pattern.compile(",");
+
+				while (true) {
+					s = parserProcess.readLine();
+					if (s == null || TOKENS_END.equals(s))
+						break;
+
+					String[] sa = p.split(s);
+					if (sa == null || sa.length != 7) {
+						throw new LibvalaProxyException("Unexpected token line from parser process, got: " + s);
+					}
+
+					ValaToken t = new ValaToken();
+					t.firstLine = Integer.parseInt(sa[0], 16);
+					t.firstColumn = Integer.parseInt(sa[1], 16);
+					t.lastLine = Integer.parseInt(sa[2], 16);
+					t.lastColumn = Integer.parseInt(sa[3], 16);
+					t.offset = Integer.parseInt(sa[4], 16);
+					t.length = Integer.parseInt(sa[5], 16);
+					t.tokenType = ValaTokenType.valueOf(sa[6]);
+					result.getTokens().add(t);
+				}
+
+				logger.log(Level.WARNING, "returning tokens " + System.currentTimeMillis());
+				return result;
 			}
-			
-			return result;
-		}
-		else {
-			throw new LibvalaProxyException("Couldn't execute: " + parserCommandName);
+			else {
+				throw new LibvalaProxyException("Couldn't execute: " + parserCommandName);
+			}
 		}
 	}
 
@@ -113,6 +126,7 @@ public final class LibvalaParser {
 			return true;
 		}
 		
+		logger.log(Level.WARNING, "launching parser process " + System.currentTimeMillis());
 		parserProcess = new LibvalaParserProcess(homeDirectory, parserCommandName, consoleCharSetName);
 		if (!parserProcess.isActive()) {
 			parserProcess = null;
@@ -122,7 +136,7 @@ public final class LibvalaParser {
 		if (debugMode) {
 			sendln(CMD_DEBUG);
 		}
-		
+		logger.log(Level.WARNING, "launched parser process " + System.currentTimeMillis());
 		return true;
 	}
 	

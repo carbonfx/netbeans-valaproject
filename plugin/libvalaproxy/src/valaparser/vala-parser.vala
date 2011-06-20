@@ -161,6 +161,7 @@ void parse_file(string file_name, string content, Gee.ArrayList<string> str_arra
 
 	var tokens = new Gee.TreeSet<Token>((CompareFunc)token_compare);
 
+	logd("starting file parse");
 	while (true) {
 		scanner.parse_file_comments();
 
@@ -194,24 +195,46 @@ void parse_file(string file_name, string content, Gee.ArrayList<string> str_arra
 		tokens.add(t);
 	}
 
+	logd("fetching comments");
 	fetch_file_comments(src, tokens, str_array);
 	fix_bug_652899(tokens);
+
+	logd("updating offsets");
 	update_token_offsets(tokens, len_array);
 
+	logd("printing tokens to output stream");
 	println(TOKENS_BEGIN);
 	foreach(Token t in tokens) {
 		println("%x,%x,%x,%x,%x,%x,%s", t.first_line, t.first_column, t.last_line, t.last_column, t.offset, t.length, t.token_type);
 	}
 	println(TOKENS_END);
+	logd("printing is finished");
 }
 
-public void logd(string msg, bool divide = false) {
+public void logd(string msg, bool divide = false, bool time_of_day = true) {
 	if (debug_mode) {
 		try {
-			if (divide) debug_log.write("----->>\n".data);
-			debug_log.write(msg.data);
-			debug_log.write("\n".data);
-			if (divide) debug_log.write("-----\n".data);
+			var sb = new StringBuilder();
+
+			if (divide) {
+				sb.append("----->>\n");
+			}
+		
+			if (time_of_day) {
+				
+				var tv = TimeVal();
+				tv.get_current_time();
+
+				sb.append_printf("[%li.%li] ",tv.tv_sec,tv.tv_usec);
+			}
+
+			sb.append(msg);
+			sb.append("\n");
+			if (divide) {
+				sb.append("-----\n");
+			}
+
+			debug_log.write(sb.str.data);
 		}
 		catch(GLib.IOError io) {
 			

@@ -25,7 +25,6 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  *
  */
-
 package org.carbonfx.valaproject.parser;
 
 import java.util.Collection;
@@ -39,5 +38,4 @@ public class ValaParserFactory extends ParserFactory {
 	public Parser createParser(Collection<Snapshot> clctn) {
 		return new ValaParser();
 	}
-
 }

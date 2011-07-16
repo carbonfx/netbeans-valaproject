@@ -25,7 +25,6 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  *
  */
-
 package org.carbonfx.valaproject;
 
 import java.io.IOException;

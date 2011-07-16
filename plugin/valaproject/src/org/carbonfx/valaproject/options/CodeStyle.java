@@ -25,9 +25,7 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  *
  */
-
 package org.carbonfx.valaproject.options;
-
 
 import java.util.prefs.Preferences;
 
@@ -37,30 +35,30 @@ import static org.carbonfx.valaproject.options.FmtOptions.*;
 
 public final class CodeStyle {
 
-    private final Preferences preferences;
+	private final Preferences preferences;
 
 	public static CodeStyle getCodeStyle(Document document) {
 		CodeStyle cs = new CodeStyle(CodeStylePreferences.get(document).getPreferences());
 		return cs;
 	}
 
-    private CodeStyle(Preferences preferences) {
-        this.preferences = preferences;
-    }
+	private CodeStyle(Preferences preferences) {
+		this.preferences = preferences;
+	}
 
-    public int getIndentSize() {
-        return preferences.getInt(indentSize, getDefaultAsInt(indentSize));
-    }
+	public int getIndentSize() {
+		return preferences.getInt(indentSize, getDefaultAsInt(indentSize));
+	}
 
-    public int getTabSize() {
-        return preferences.getInt(tabSize, getDefaultAsInt(tabSize));
-    }
+	public int getTabSize() {
+		return preferences.getInt(tabSize, getDefaultAsInt(tabSize));
+	}
 
-    public boolean  getExpandTabToSpaces() {
-        return preferences.getBoolean(expandTabToSpaces, getDefaultAsBoolean(expandTabToSpaces));
-    }
+	public boolean getExpandTabToSpaces() {
+		return preferences.getBoolean(expandTabToSpaces, getDefaultAsBoolean(expandTabToSpaces));
+	}
 
-    public int getRightMargin() {
-        return preferences.getInt(rightMargin, getDefaultAsInt(rightMargin));
-    }
+	public int getRightMargin() {
+		return preferences.getInt(rightMargin, getDefaultAsInt(rightMargin));
+	}
 }

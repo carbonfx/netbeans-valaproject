@@ -25,29 +25,26 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  *
  */
-
 package org.carbonfx.valaproject.lexer;
 
 import org.netbeans.api.lexer.Language;
 import org.netbeans.api.lexer.TokenId;
 
-
 public class ValaTokenId implements TokenId {
 
-	private final String        name;
-    private final String        primaryCategory;
-    private final int           id;
+	private final String name;
+	private final String primaryCategory;
+	private final int id;
 	private static final Language<ValaTokenId> language = new ValaLanguageHierarchy().language();
 
-	 ValaTokenId (
-        String                  name,
-        String                  primaryCategory,
-        int                     id
-    ) {
-        this.name = name;
-        this.primaryCategory = primaryCategory;
-        this.id = id;
-    }
+	ValaTokenId(
+			String name,
+			String primaryCategory,
+			int id) {
+		this.name = name;
+		this.primaryCategory = primaryCategory;
+		this.id = id;
+	}
 
 	@Override
 	public String name() {
@@ -65,6 +62,6 @@ public class ValaTokenId implements TokenId {
 	}
 
 	public static Language<ValaTokenId> getLanguage() {
-        return language;
-    }
+		return language;
+	}
 }

@@ -25,7 +25,6 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  *
  */
-
 package org.carbonfx.valaproject.lexer;
 
 import org.netbeans.api.lexer.PartType;
@@ -40,29 +39,27 @@ public class ValaLexer implements Lexer<ValaTokenId> {
 
 	public ValaLexer(LexerRestartInfo<ValaTokenId> info) {
 
-        this.info = info;
-        AntlrCharStream charStream = new AntlrCharStream(info.input(), "Vala");
+		this.info = info;
+		AntlrCharStream charStream = new AntlrCharStream(info.input(), "Vala");
 		this.lexer = new org.carbonfx.valaproject.antlr.ValaLexer(charStream);
-    }
+	}
 
 	@Override
 	public Token<ValaTokenId> nextToken() {
-		
+
 		org.antlr.runtime.Token token = lexer.nextToken();
 		Token<ValaTokenId> resultToken = null;
 
-        if (token.getType() != org.carbonfx.valaproject.antlr.ValaLexer.EOF) {
-            ValaTokenId tokenId = ValaLanguageHierarchy.getToken(token.getType());
-            resultToken = info.tokenFactory().createToken(tokenId);
-        }
-		else
-		if (info.input().readLength() > 0) // incomplete token, return as a comment
+		if (token.getType() != org.carbonfx.valaproject.antlr.ValaLexer.EOF) {
+			ValaTokenId tokenId = ValaLanguageHierarchy.getToken(token.getType());
+			resultToken = info.tokenFactory().createToken(tokenId);
+		} else if (info.input().readLength() > 0) // incomplete token, return as a comment
 		{
 			ValaTokenId tokenId = ValaLanguageHierarchy.getToken(org.carbonfx.valaproject.antlr.ValaLexer.COMMENT);
 			resultToken = info.tokenFactory().createToken(tokenId, info.input().readLength(), PartType.MIDDLE);
 		}
-		
-        return resultToken;
+
+		return resultToken;
 	}
 
 	@Override
@@ -73,5 +70,4 @@ public class ValaLexer implements Lexer<ValaTokenId> {
 	@Override
 	public void release() {
 	}
-
 }

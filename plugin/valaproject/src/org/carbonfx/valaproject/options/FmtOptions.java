@@ -25,7 +25,6 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  *
  */
-
 package org.carbonfx.valaproject.options;
 
 import java.util.HashMap;
@@ -34,49 +33,47 @@ import org.netbeans.api.editor.settings.SimpleValueNames;
 
 public class FmtOptions {
 
-    public static final String expandTabToSpaces = SimpleValueNames.EXPAND_TABS;
-    public static final String tabSize = SimpleValueNames.TAB_SIZE;
+	public static final String expandTabToSpaces = SimpleValueNames.EXPAND_TABS;
+	public static final String tabSize = SimpleValueNames.TAB_SIZE;
 	public static final String indentSize = SimpleValueNames.INDENT_SHIFT_WIDTH;
-    //public static final String spacesPerTab = SimpleValueNames.SPACES_PER_TAB;
-    public static final String rightMargin = SimpleValueNames.TEXT_LIMIT_WIDTH;
+	//public static final String spacesPerTab = SimpleValueNames.SPACES_PER_TAB;
+	public static final String rightMargin = SimpleValueNames.TEXT_LIMIT_WIDTH;
 
-    private FmtOptions() {}
+	private FmtOptions() {
+	}
 
-    public static int getDefaultAsInt(String key) {
-        return Integer.parseInt(defaults.get(key));
-    }
+	public static int getDefaultAsInt(String key) {
+		return Integer.parseInt(defaults.get(key));
+	}
 
-    public static boolean getDefaultAsBoolean(String key) {
-        return Boolean.parseBoolean(defaults.get(key));
-    }
+	public static boolean getDefaultAsBoolean(String key) {
+		return Boolean.parseBoolean(defaults.get(key));
+	}
 
-    public static String getDefaultAsString(String key) {
-        return defaults.get(key);
-    }
+	public static String getDefaultAsString(String key) {
+		return defaults.get(key);
+	}
+	// Private section ---------------------------------------------------------
+	private static final String TRUE = "true";      // NOI18N
+	private static final String FALSE = "false";    // NOI18N
+	private static Map<String, String> defaults;
 
-    // Private section ---------------------------------------------------------
+	static {
+		createDefaults();
+	}
 
-    private static final String TRUE = "true";      // NOI18N
-    private static final String FALSE = "false";    // NOI18N
+	private static void createDefaults() {
+		String defaultValues[][] = {
+			{expandTabToSpaces, TRUE}, //NOI18N
+			{tabSize, "4"}, //NOI18N
+			{indentSize, "4"}, //NOI18N
+			{rightMargin, "80"}, //NOI18N
+		};
 
-    private static Map<String,String> defaults;
+		defaults = new HashMap<String, String>();
 
-    static {
-        createDefaults();
-    }
-
-    private static void createDefaults() {
-        String defaultValues[][] = {
-            { expandTabToSpaces, TRUE}, //NOI18N
-            { tabSize, "4"}, //NOI18N
-            { indentSize, "4"}, //NOI18N
-            { rightMargin, "80"}, //NOI18N
-        };
-
-        defaults = new HashMap<String,String>();
-
-        for (java.lang.String[] strings : defaultValues) {
-            defaults.put(strings[0], strings[1]);
-        }
-    }
+		for (java.lang.String[] strings : defaultValues) {
+			defaults.put(strings[0], strings[1]);
+		}
+	}
 }

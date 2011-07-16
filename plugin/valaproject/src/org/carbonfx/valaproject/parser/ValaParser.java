@@ -25,7 +25,6 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  *
  */
-
 package org.carbonfx.valaproject.parser;
 
 import javax.swing.event.ChangeListener;
@@ -45,17 +44,17 @@ public class ValaParser extends Parser {
 
 	@Override
 	public void parse(Snapshot snpsht, Task task, SourceModificationEvent sme) throws ParseException {
-		
+
 		this.snapshot = snpsht;
-        ANTLRStringStream input = new ANTLRStringStream(snapshot.getText().toString());
-        org.antlr.runtime.Lexer lexer = new org.carbonfx.valaproject.antlr.ValaLexer(input);
-        CommonTokenStream tokens = new CommonTokenStream(lexer);
-        this.parser = new org.carbonfx.valaproject.antlr.ValaParser(tokens);
-        try {
-            this.parser.compilation_unit();
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
+		ANTLRStringStream input = new ANTLRStringStream(snapshot.getText().toString());
+		org.antlr.runtime.Lexer lexer = new org.carbonfx.valaproject.antlr.ValaLexer(input);
+		CommonTokenStream tokens = new CommonTokenStream(lexer);
+		this.parser = new org.carbonfx.valaproject.antlr.ValaParser(tokens);
+		try {
+			this.parser.compilation_unit();
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
 	}
 
 	@Override
@@ -77,26 +76,25 @@ public class ValaParser extends Parser {
 
 	public static class ValaParserResult extends Result {
 
-        private org.carbonfx.valaproject.antlr.ValaParser parser;
-        private boolean valid = true;
+		private org.carbonfx.valaproject.antlr.ValaParser parser;
+		private boolean valid = true;
 
-        ValaParserResult(Snapshot snapshot, org.carbonfx.valaproject.antlr.ValaParser parser) {
-            super(snapshot);
-            this.parser = parser;
-        }
+		ValaParserResult(Snapshot snapshot, org.carbonfx.valaproject.antlr.ValaParser parser) {
+			super(snapshot);
+			this.parser = parser;
+		}
 
-        public org.carbonfx.valaproject.antlr.ValaParser getParser()
-                throws ParseException {
-            if (!valid) {
-                throw new ParseException();
-            }
-            return parser;
-        }
+		public org.carbonfx.valaproject.antlr.ValaParser getParser()
+				throws ParseException {
+			if (!valid) {
+				throw new ParseException();
+			}
+			return parser;
+		}
 
 		@Override
-        protected void invalidate() {
-            valid = false;
-        }
-    }
-
+		protected void invalidate() {
+			valid = false;
+		}
+	}
 }

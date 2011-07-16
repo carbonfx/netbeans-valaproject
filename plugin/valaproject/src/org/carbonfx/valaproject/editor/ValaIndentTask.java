@@ -25,7 +25,6 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  *
  */
-
 package org.carbonfx.valaproject.editor;
 
 import org.carbonfx.valaproject.options.CodeStyle;
@@ -41,7 +40,7 @@ public class ValaIndentTask implements IndentTask {
 	private Context context;
 	private CodeStyle codeStyle;
 
-	public ValaIndentTask(Context context){
+	public ValaIndentTask(Context context) {
 
 		this.context = context;
 		this.codeStyle = CodeStyle.getCodeStyle(context.document());
@@ -51,17 +50,16 @@ public class ValaIndentTask implements IndentTask {
 	public void reindent() throws BadLocationException {
 
 		int caretOffset = context.caretOffset();
-        int lineOffset = context.lineStartOffset(caretOffset);
+		int lineOffset = context.lineStartOffset(caretOffset);
 
-		final BaseDocument doc = (BaseDocument)context.document();
+		final BaseDocument doc = (BaseDocument) context.document();
 
 		int lastNonWhite = Utilities.getFirstNonWhiteBwd(doc, lineOffset);
 
 		IndentMode mode = getMode(lineOffset, lastNonWhite, doc);
 		int currentIndent = getCurrentIndent(lastNonWhite, doc);
 
-		switch (mode)
-		{
+		switch (mode) {
 			case NEW_BLOCK:
 				indentNewBlock(lineOffset, currentIndent);
 				break;
@@ -79,15 +77,11 @@ public class ValaIndentTask implements IndentTask {
 
 	private IndentMode getMode(int lineOffset, int lastNonWhite, BaseDocument doc) throws BadLocationException {
 		IndentMode mode = IndentMode.UNKNOWN;
-		if (lastNonWhite >= 0 && lastNonWhite < lineOffset)
-		{
-			String s = doc.getText(lastNonWhite,1);
-			if (s != null && s.equals("{"))
-			{
+		if (lastNonWhite >= 0 && lastNonWhite < lineOffset) {
+			String s = doc.getText(lastNonWhite, 1);
+			if (s != null && s.equals("{")) {
 				mode = IndentMode.NEW_BLOCK;
-			}
-			else
-			{
+			} else {
 				mode = IndentMode.SAME_LEVEL;
 			}
 		}
@@ -97,19 +91,16 @@ public class ValaIndentTask implements IndentTask {
 	private int getCurrentIndent(int lastNonWhite, BaseDocument doc) throws BadLocationException {
 		int prevLineStart = Utilities.getRowStart(doc, lastNonWhite);
 		int currentIndent = 0;
-		if (prevLineStart >= 0)
-		{
+		if (prevLineStart >= 0) {
 			int p = Utilities.getFirstNonWhiteFwd(doc, prevLineStart);
-			if (p >= 0 && p >= prevLineStart && p <= lastNonWhite)
-			{
+			if (p >= 0 && p >= prevLineStart && p <= lastNonWhite) {
 				String s = doc.getText(prevLineStart, p - prevLineStart);
-				
+
 				for (int i = 0; i < s.length(); ++i) {
 					if (s.charAt(i) == '\t') {
 						currentIndent += codeStyle.getTabSize();
-					}
-					else {
-						currentIndent ++;
+					} else {
+						currentIndent++;
 					}
 				}
 			}
@@ -118,7 +109,7 @@ public class ValaIndentTask implements IndentTask {
 	}
 
 	private void indentNewBlock(int lineOffset, int indent) throws BadLocationException {
-		final BaseDocument doc = (BaseDocument)context.document();
+		final BaseDocument doc = (BaseDocument) context.document();
 
 		int countLCurl = getCurlCount(false, lineOffset, doc);
 		int countRCurl = getCurlCount(true, lineOffset, doc);
@@ -138,7 +129,7 @@ public class ValaIndentTask implements IndentTask {
 	}
 
 	private void indentSameLevel(int lineOffset, int indent) throws BadLocationException {
-		final BaseDocument doc = (BaseDocument)context.document();
+		final BaseDocument doc = (BaseDocument) context.document();
 		String s = getIndentString(indent);
 		int newCaretPos = lineOffset + s.length();
 		doc.insertString(lineOffset, s, null);
@@ -157,8 +148,7 @@ public class ValaIndentTask implements IndentTask {
 			from = offset;
 			to = doc.getLength();
 			incval = 1;
-		}
-		else {
+		} else {
 			fwchar = '{';
 			bwchar = '}';
 			from = offset;
@@ -186,8 +176,7 @@ public class ValaIndentTask implements IndentTask {
 			if (c == '"') {
 				if (mode == 0) {
 					mode = 2;
-				}
-				else if (mode == 2) {
+				} else if (mode == 2) {
 					mode = 0;
 				}
 			}
@@ -195,8 +184,7 @@ public class ValaIndentTask implements IndentTask {
 			if (c == '\'') {
 				if (mode == 0) {
 					mode = 1;
-				}
-				else if (mode == 1) {
+				} else if (mode == 1) {
 					mode = 0;
 				}
 			}
@@ -205,8 +193,8 @@ public class ValaIndentTask implements IndentTask {
 	}
 
 	private String getIndentString(int indent) {
-		
-		StringBuilder sb = new StringBuilder(indent+2);
+
+		StringBuilder sb = new StringBuilder(indent + 2);
 
 		if (codeStyle.getExpandTabToSpaces()) {
 
@@ -214,8 +202,7 @@ public class ValaIndentTask implements IndentTask {
 				sb.append(' ');
 			}
 
-		}
-		else {
+		} else {
 
 			int tabCount = indent / codeStyle.getTabSize();
 			int spaceCount = indent % codeStyle.getTabSize();
@@ -232,8 +219,8 @@ public class ValaIndentTask implements IndentTask {
 		return sb.toString();
 	}
 
-	private enum IndentMode
-	{
+	private enum IndentMode {
+
 		UNKNOWN,
 		NEW_BLOCK,
 		SAME_LEVEL

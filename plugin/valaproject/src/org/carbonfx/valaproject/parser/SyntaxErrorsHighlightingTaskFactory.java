@@ -25,7 +25,6 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  *
  */
-
 package org.carbonfx.valaproject.parser;
 
 import java.util.Collection;
@@ -38,7 +37,6 @@ public class SyntaxErrorsHighlightingTaskFactory extends TaskFactory {
 
 	@Override
 	public Collection<? extends SchedulerTask> create(Snapshot snpsht) {
-		return Collections.singleton (new SyntaxErrorsHighlightingTask ());
+		return Collections.singleton(new SyntaxErrorsHighlightingTask());
 	}
-
 }

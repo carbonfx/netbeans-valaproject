@@ -25,18 +25,15 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  *
  */
-
 package org.carbonfx.valaproject.editor;
 
 import org.netbeans.modules.editor.indent.spi.Context;
 import org.netbeans.modules.editor.indent.spi.IndentTask;
 
-public class ValaIndentTaskFactory implements IndentTask.Factory
-{
+public class ValaIndentTaskFactory implements IndentTask.Factory {
 
 	@Override
 	public IndentTask createTask(Context cntxt) {
 		return new ValaIndentTask(cntxt);
 	}
-
 }

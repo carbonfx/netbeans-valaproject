@@ -25,7 +25,6 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  *
  */
-
 package org.carbonfx.valaproject.lexer;
 
 import java.util.Arrays;
@@ -56,11 +55,10 @@ public class ValaLanguageHierarchy extends LanguageHierarchy<ValaTokenId> {
 	}
 
 	static synchronized ValaTokenId getToken(int id) {
-        return idToToken.get(id);
-    }
-
-    private static final Map<Integer, ValaTokenId> idToToken = new HashMap<Integer, ValaTokenId>();
-    private static final ValaTokenId[] tokens = new ValaTokenId[] {
+		return idToToken.get(id);
+	}
+	private static final Map<Integer, ValaTokenId> idToToken = new HashMap<Integer, ValaTokenId>();
+	private static final ValaTokenId[] tokens = new ValaTokenId[]{
 		token(ValaLexer.AND, "operator"),
 		token(ValaLexer.AND_ASSIGN, "operator"),
 		token(ValaLexer.ASSIGNMENT, "operator"),
@@ -200,16 +198,15 @@ public class ValaLanguageHierarchy extends LanguageHierarchy<ValaTokenId> {
 		token(ValaLexer.BACKSLASH, "operator"),
 		token(ValaLexer.UNICODE_CHAR, "error"),
 		token(ValaLexer.OTHER_CHAR, "error"),
-		token(ValaLexer.UNKNOWN_CHAIN, "error"),
-	};
+		token(ValaLexer.UNKNOWN_CHAIN, "error"),};
 
 	static {
-        for (ValaTokenId token : tokens) {
-            idToToken.put(token.ordinal(), token);
-        }
-    }
+		for (ValaTokenId token : tokens) {
+			idToToken.put(token.ordinal(), token);
+		}
+	}
 
 	private static ValaTokenId token(int antlrToken, String category) {
-		return new ValaTokenId (ValaParser.tokenNames[antlrToken], category, antlrToken);
+		return new ValaTokenId(ValaParser.tokenNames[antlrToken], category, antlrToken);
 	}
 }
